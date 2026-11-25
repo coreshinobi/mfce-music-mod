@@ -12,6 +12,7 @@
 [ext_resource type="AudioStream" uid="uid://mwnthybn1hd1" path="res://music/side_a/merge - forl0beren.mod" id="8_ak8gn"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="8_ctp30"]
 [ext_resource type="AudioStream" uid="uid://beesr2xdpvddp" path="res://music/newermod/Undertale Yellow - Vigorous Terrain.ogg" id="8_jgn08"]
+[ext_resource type="AudioStream" uid="uid://biswmkj70v1gk" path="res://music/newermod/Last Legacy - Middle East.ogg" id="9_pch8q"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="9_y5kqb"]
 [ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="10_ak8gn"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="11_47wnk"]
@@ -74,12 +75,6 @@ _data = {
 }
 point_count = 2
 
-[sub_resource type="Resource" id="Resource_pch8q"]
-resource_local_to_scene = true
-script = ExtResource("27_5wdhq")
-creation_nodepack = ExtResource("24_6e13a")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_3s56x"]
 resource_local_to_scene = true
 script = ExtResource("27_5wdhq")
@@ -125,8 +120,7 @@ trans_inheritances = 7
 [sub_resource type="Resource" id="Resource_oaxtm"]
 resource_local_to_scene = true
 script = ExtResource("27_5wdhq")
-creation_fallback_node = ExtResource("29_hm0vi")
-creation_nodepack = ExtResource("30_juosk")
+creation_nodepack = ExtResource("24_6e13a")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_ue25m"]
@@ -153,6 +147,13 @@ trans_inheritances = 7
 [sub_resource type="Resource" id="Resource_qhip5"]
 resource_local_to_scene = true
 script = ExtResource("27_5wdhq")
+creation_fallback_node = ExtResource("29_hm0vi")
+creation_nodepack = ExtResource("30_juosk")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_6bqsa"]
+resource_local_to_scene = true
+script = ExtResource("27_5wdhq")
 creation_nodepack = ExtResource("32_fwcw6")
 trans_inheritances = 7
 
@@ -162,12 +163,6 @@ _data = {
 }
 point_count = 2
 
-[sub_resource type="Resource" id="Resource_6bqsa"]
-resource_local_to_scene = true
-script = ExtResource("27_5wdhq")
-creation_nodepack = ExtResource("24_6e13a")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_865li"]
 resource_local_to_scene = true
 script = ExtResource("27_5wdhq")
@@ -175,6 +170,12 @@ creation_nodepack = ExtResource("24_6e13a")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_wud57"]
+resource_local_to_scene = true
+script = ExtResource("27_5wdhq")
+creation_nodepack = ExtResource("24_6e13a")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_l580o"]
 resource_local_to_scene = true
 script = ExtResource("27_5wdhq")
 creation_nodepack = ExtResource("47_h2tbv")
@@ -206,7 +207,7 @@ script = ExtResource("4_qj5b7")
 tweaked_completion_music = ExtResource("5_mis3f")
 ignore_fade_in_tweak = false
 music_var_1 = Array[Resource]([ExtResource("8_ak8gn")])
-music_var_2 = Array[Resource]([])
+music_var_2 = Array[Resource]([ExtResource("9_pch8q")])
 music_var_3 = Array[Resource]([])
 var_1_volume_db = Array[float]([1.1])
 var_1_start_from_sec = Array[float]([0.0])
@@ -1241,60 +1242,60 @@ position = Vector2(2736, 272)
 
 [node name="QuestionBlock8" parent="." unique_id=588689596 instance=ExtResource("26_krmy7")]
 position = Vector2(8208, 272)
-result = SubResource("Resource_pch8q")
+result = SubResource("Resource_3s56x")
 
 [node name="QuestionBlock9" parent="." unique_id=692383123 instance=ExtResource("26_krmy7")]
 position = Vector2(8240, 272)
-result = SubResource("Resource_3s56x")
+result = SubResource("Resource_v8q4x")
 
 [node name="QuestionBlock2" parent="." unique_id=1597534299 instance=ExtResource("26_krmy7")]
 position = Vector2(2704, 272)
-result = SubResource("Resource_v8q4x")
+result = SubResource("Resource_432f0")
 
 [node name="QuestionBlock3" parent="." unique_id=1972220328 instance=ExtResource("26_krmy7")]
 position = Vector2(2603, 80)
-result = SubResource("Resource_432f0")
+result = SubResource("Resource_6pwwq")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock4" parent="." unique_id=557709415 instance=ExtResource("26_krmy7")]
 position = Vector2(2635, 80)
-result = SubResource("Resource_6pwwq")
+result = SubResource("Resource_el3oj")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock5" parent="." unique_id=691520022 instance=ExtResource("26_krmy7")]
 position = Vector2(2667, 80)
-result = SubResource("Resource_el3oj")
+result = SubResource("Resource_w73lj")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock6" parent="." unique_id=820806633 instance=ExtResource("26_krmy7")]
 position = Vector2(2699, 80)
-result = SubResource("Resource_w73lj")
+result = SubResource("Resource_dr7nt")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock7" parent="." unique_id=1531400933 instance=ExtResource("26_krmy7")]
 position = Vector2(2731, 80)
-result = SubResource("Resource_dr7nt")
+result = SubResource("Resource_oaxtm")
 initially_visible_and_solid = false
 
 [node name="QuestionBlockFireFlower5" parent="." unique_id=1537740343 instance=ExtResource("28_kq2n2")]
 position = Vector2(12112, 144)
-result = SubResource("Resource_oaxtm")
+result = SubResource("Resource_ue25m")
 
 [node name="QuestionBlockFireFlower4" parent="." unique_id=252518075 instance=ExtResource("28_kq2n2")]
 position = Vector2(8144, 272)
-result = SubResource("Resource_ue25m")
+result = SubResource("Resource_b5p8s")
 
 [node name="QuestionBlockFireFlower3" parent="." unique_id=2074781538 instance=ExtResource("28_kq2n2")]
 position = Vector2(3760, 304)
-result = SubResource("Resource_b5p8s")
+result = SubResource("Resource_tkvp0")
 
 [node name="QuestionBlockFireFlower2" parent="." unique_id=194303694 instance=ExtResource("28_kq2n2")]
 position = Vector2(2640, 272)
-result = SubResource("Resource_tkvp0")
+result = SubResource("Resource_qhip5")
 
 [node name="QuestionBlockLife" parent="." unique_id=1871818472 instance=ExtResource("31_hg4d7")]
 position = Vector2(2416, 16)
-result = SubResource("Resource_qhip5")
+result = SubResource("Resource_6bqsa")
 initially_visible_and_solid = false
 exists_once = true
 
@@ -1374,17 +1375,17 @@ position = Vector2(2392, 400)
 
 [node name="QuestionBlock3" parent="AE_Hard" unique_id=1387715178 instance=ExtResource("26_krmy7")]
 position = Vector2(976, 208)
-result = SubResource("Resource_6bqsa")
+result = SubResource("Resource_865li")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock4" parent="AE_Hard" unique_id=63074618 instance=ExtResource("26_krmy7")]
 position = Vector2(1040, 208)
-result = SubResource("Resource_865li")
+result = SubResource("Resource_wud57")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock5" parent="AE_Hard" unique_id=2015847105 instance=ExtResource("26_krmy7")]
 position = Vector2(1008, 208)
-result = SubResource("Resource_wud57")
+result = SubResource("Resource_l580o")
 initially_visible_and_solid = false
 
 [node name="PiranhaHead3" parent="AE_Hard" unique_id=107245204 instance=ExtResource("21_fwcw6")]
