@@ -9,13 +9,12 @@
 [ext_resource type="TileSet" uid="uid://dtvs1rult8kbe" path="res://tilesets/overworld_green/overworld_green.tres" id="6_6equq"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="6_rjpqm"]
 [ext_resource type="AudioStream" uid="uid://dh1f0wfs0gs5x" path="res://music/newermod/Jet Set Radio Future - Humming the Bassline (D.S. Remix).ogg" id="6_s32ve"]
-[ext_resource type="AudioStream" uid="uid://dfhdjdtb7xk4c" path="res://music/extra/hardcore-die-lol.ogg" id="7_4sbb6"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_ttr7m"]
 [ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="7_xbbw5"]
 [ext_resource type="PackedScene" uid="uid://b0bnba81jh6tn" path="res://engine/objects/enemies/spike_ceiling/spike_ceiling.tscn" id="8_itvuv"]
-[ext_resource type="AudioStream" uid="uid://cpy66lof7ycli" path="res://engine/objects/players/prefabs/sounds/music-die.ogg" id="8_m6fbx"]
 [ext_resource type="Texture2D" uid="uid://crgf5xxx3jvlu" path="res://engine/tilesets/overworld/gfx/hard_block_only.png" id="8_n7v7m"]
 [ext_resource type="FontFile" uid="uid://bgsavu6joui2r" path="res://engine/fonts/junebug.ttf" id="9_0deip"]
+[ext_resource type="AudioStream" uid="uid://ck2fqvlts4j2s" path="res://music/extra/new_audio_stream_synchronized.tres" id="9_ngxhq"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="10_e6fru"]
 [ext_resource type="PackedScene" uid="uid://dp2mvur34jdbv" path="res://engine/objects/enemies/paratroopas/paratroopa_green.tscn" id="10_n2bt7"]
 [ext_resource type="PackedScene" uid="uid://da16joa30w76a" path="res://engine/objects/enemies/piranha_plants/piranha_green.tscn" id="11_3ta3c"]
@@ -37,13 +36,6 @@
 [ext_resource type="Script" uid="uid://0h3x5dwndovw" path="res://engine/scripts/nodes/effects/quality_visible.gd" id="30_qp4ed"]
 [ext_resource type="Texture2D" uid="uid://vmkr0eaks2fr" path="res://gfx/fancy_graphics/bighill.png" id="31_uor01"]
 [ext_resource type="Texture2D" uid="uid://6bwpp568bmq0" path="res://gfx/fancy_graphics/giant_clouds.png" id="32_5s401"]
-
-[sub_resource type="AudioStreamSynchronized" id="AudioStreamSynchronized_d6pl4"]
-stream_count = 2
-stream_0/stream = ExtResource("7_4sbb6")
-stream_0/volume = 0.0
-stream_1/stream = ExtResource("8_m6fbx")
-stream_1/volume = 0.0
 
 [sub_resource type="Gradient" id="Gradient_01f74"]
 offsets = PackedFloat32Array(0.0666667, 1)
@@ -81,7 +73,7 @@ size = Vector2(96, 32)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t3yp2"]
 size = Vector2(128, 32)
 
-[sub_resource type="Resource" id="Resource_inqvd"]
+[sub_resource type="Resource" id="Resource_s32ve"]
 resource_local_to_scene = true
 script = ExtResource("17_5yn8p")
 creation_nodepack = ExtResource("16_ll70h")
@@ -110,15 +102,13 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-playback_pitch = 1.0
 music = Array[Resource]([ExtResource("6_s32ve")])
 
 [node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("7_xbbw5")]
-text = Array[String](["Jet Set Radio Future - Humming The Bassline (D. S. Remix)"])
 
 [node name="Mario" parent="." unique_id=937247842 instance=ExtResource("4_1ohme")]
 position = Vector2(320, 336)
-death_music_override = SubResource("AudioStreamSynchronized_d6pl4")
+death_music_override = ExtResource("9_ngxhq")
 
 [node name="PlayerCamera2D" type="Camera2D" parent="." unique_id=934491319]
 editor_draw_screen = false
@@ -825,7 +815,7 @@ position = Vector2(10064, 400)
 
 [node name="QuestionBlockLife" parent="." unique_id=386617845 instance=ExtResource("15_ajwvm")]
 position = Vector2(4912, 112)
-result = SubResource("Resource_inqvd")
+result = SubResource("Resource_s32ve")
 initially_visible_and_solid = false
 exists_once = true
 
@@ -1048,21 +1038,4 @@ position = Vector2(14064, 32)
 texture = ExtResource("32_5s401")
 centered = false
 
-[connection signal="collided_wall" from="Layer0/Goomba" to="Layer0/Goomba" method="turn_x"]
-[connection signal="collided_wall" from="Layer0/@CharacterBody2D@64867" to="Layer0/@CharacterBody2D@64867" method="turn_x"]
-[connection signal="collided_wall" from="Layer0/@CharacterBody2D@64868" to="Layer0/@CharacterBody2D@64868" method="turn_x"]
-[connection signal="collided_wall" from="Layer0/@CharacterBody2D@64869" to="Layer0/@CharacterBody2D@64869" method="turn_x"]
-[connection signal="collided_wall" from="Layer0/@CharacterBody2D@64870" to="Layer0/@CharacterBody2D@64870" method="turn_x"]
-[connection signal="collided_wall" from="Layer0/@CharacterBody2D@64871" to="Layer0/@CharacterBody2D@64871" method="turn_x"]
-[connection signal="collided_wall" from="Layer0/@CharacterBody2D@64872" to="Layer0/@CharacterBody2D@64872" method="turn_x"]
-[connection signal="collided_wall" from="Layer0/@CharacterBody2D@64873" to="Layer0/@CharacterBody2D@64873" method="turn_x"]
-[connection signal="collided_wall" from="Layer0/@CharacterBody2D@64874" to="Layer0/@CharacterBody2D@64874" method="turn_x"]
-[connection signal="collided_wall" from="Layer0/KoopaRed" to="Layer0/KoopaRed" method="turn_x"]
-[connection signal="collided_wall" from="Layer0/@CharacterBody2D@64906" to="Layer0/@CharacterBody2D@64906" method="turn_x"]
-[connection signal="collided_wall" from="Layer0/@CharacterBody2D@64907" to="Layer0/@CharacterBody2D@64907" method="turn_x"]
-[connection signal="collided_wall" from="Layer0/@CharacterBody2D@64920" to="Layer0/@CharacterBody2D@64920" method="turn_x"]
-[connection signal="collided_wall" from="Layer0/@CharacterBody2D@64921" to="Layer0/@CharacterBody2D@64921" method="turn_x"]
-[connection signal="collided_wall" from="Layer0/@CharacterBody2D@65001" to="Layer0/@CharacterBody2D@65001" method="turn_x"]
-[connection signal="collided_wall" from="Layer0/@CharacterBody2D@65010" to="Layer0/@CharacterBody2D@65010" method="turn_x"]
-[connection signal="collided_wall" from="Layer0/@CharacterBody2D@65011" to="Layer0/@CharacterBody2D@65011" method="turn_x"]
 [connection signal="timeout" from="Node2D2/VBoxContainer/Activation" to="Node2D2/VBoxContainer" method="_on_activation_timeout"]

@@ -8,11 +8,10 @@
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_ypccd"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="6_nloet"]
 [ext_resource type="AudioStream" uid="uid://vsiuftbtmu28" path="res://music/newermod/iteachvader - Objection Funk (Instrumental).ogg" id="6_roepk"]
-[ext_resource type="AudioStream" uid="uid://dfhdjdtb7xk4c" path="res://music/extra/hardcore-die-lol.ogg" id="7_56q2u"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_wjw7s"]
 [ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="7_wwy81"]
-[ext_resource type="AudioStream" uid="uid://cpy66lof7ycli" path="res://engine/objects/players/prefabs/sounds/music-die.ogg" id="8_ufujk"]
 [ext_resource type="TileSet" uid="uid://dtvs1rult8kbe" path="res://tilesets/overworld_green/overworld_green.tres" id="9_cfor1"]
+[ext_resource type="AudioStream" uid="uid://ck2fqvlts4j2s" path="res://music/extra/new_audio_stream_synchronized.tres" id="9_vkvdb"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="10_thjwp"]
 [ext_resource type="FontFile" uid="uid://bgsavu6joui2r" path="res://engine/fonts/junebug.ttf" id="12_u7feq"]
 [ext_resource type="Texture2D" uid="uid://dmv5rev5xia3u" path="res://engine/tilesets/overworld/gfx/clouds_looping.png" id="13_q6aaj"]
@@ -32,13 +31,6 @@
 [ext_resource type="Script" uid="uid://isoqwni2tg6u" path="res://stages/extra/hardcore_2/scripts/lakitu_checker.gd" id="23_w50wl"]
 [ext_resource type="Texture2D" uid="uid://6bwpp568bmq0" path="res://gfx/fancy_graphics/giant_clouds.png" id="24_0f4ut"]
 
-[sub_resource type="AudioStreamSynchronized" id="AudioStreamSynchronized_d6pl4"]
-stream_count = 2
-stream_0/stream = ExtResource("7_56q2u")
-stream_0/volume = 0.0
-stream_1/stream = ExtResource("8_ufujk")
-stream_1/volume = 0.0
-
 [sub_resource type="Gradient" id="Gradient_ehahp"]
 colors = PackedColorArray(0, 0.435294, 0.87451, 1, 0.823529, 0.917647, 0.972549, 1)
 
@@ -49,7 +41,7 @@ height = 480
 fill_from = Vector2(1, 0)
 fill_to = Vector2(1, 1)
 
-[sub_resource type="Resource" id="Resource_irnp4"]
+[sub_resource type="Resource" id="Resource_roepk"]
 resource_local_to_scene = true
 script = ExtResource("19_u3e7d")
 creation_nodepack = ExtResource("18_3ulbo")
@@ -84,16 +76,14 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-playback_pitch = 1.0
 music = Array[Resource]([ExtResource("6_roepk")])
 volume_db = Array[float]([2.5])
 
 [node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("7_wwy81")]
-text = Array[String](["iteachvader - Objection Funk (Instrumental)"])
 
 [node name="Mario" parent="." unique_id=1235946709 instance=ExtResource("4_ypccd")]
 position = Vector2(320, 400)
-death_music_override = SubResource("AudioStreamSynchronized_d6pl4")
+death_music_override = ExtResource("9_vkvdb")
 
 [node name="PlayerCamera2D" type="Camera2D" parent="." unique_id=751429244]
 editor_draw_screen = false
@@ -190,7 +180,7 @@ metadata/_edit_pinned_properties_ = [&"medium", &"minimum", &"maximum"]
 
 [node name="QuestionBlockLife" parent="." unique_id=1511535961 instance=ExtResource("17_ub02r")]
 position = Vector2(6640, 208)
-result = SubResource("Resource_irnp4")
+result = SubResource("Resource_roepk")
 initially_visible_and_solid = false
 exists_once = true
 

@@ -4,10 +4,9 @@
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_mkev3"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="2_od7xb"]
 [ext_resource type="AudioStream" uid="uid://5la87utcxm1e" path="res://music/newermod/CoreSHINOBI - speed-e jack.mod" id="4_640pv"]
+[ext_resource type="AudioStream" uid="uid://dk8v0qxmv6t0m" path="res://music/newermod/klim - halloween 1992.mod" id="4_mdjea"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_xunor"]
-[ext_resource type="AudioStream" uid="uid://dfhdjdtb7xk4c" path="res://music/extra/hardcore-die-lol.ogg" id="5_48e1c"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="5_e3eqj"]
-[ext_resource type="AudioStream" uid="uid://cpy66lof7ycli" path="res://engine/objects/players/prefabs/sounds/music-die.ogg" id="6_8g1hp"]
 [ext_resource type="PackedScene" uid="uid://cvigdw7nldify" path="res://objects/antiafk_expert_mode/antiafk_expert_mode.tscn" id="6_lqlrb"]
 [ext_resource type="Script" uid="uid://7byhkvlnfxa" path="res://components/secrets_manager/unlock_multiple.gd" id="7_640pv"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="7_dhkfc"]
@@ -16,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://djwe62jh83kf" path="res://engine/tilesets/overworld/gfx/hard_block.png" id="9_mt328"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="10_lvwc2"]
 [ext_resource type="FontFile" uid="uid://bgsavu6joui2r" path="res://engine/fonts/junebug.ttf" id="11_7tc7q"]
+[ext_resource type="AudioStream" uid="uid://ck2fqvlts4j2s" path="res://music/extra/new_audio_stream_synchronized.tres" id="11_640pv"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="12_tknhh"]
 [ext_resource type="Texture2D" uid="uid://bviqja31upt4m" path="res://engine/tilesets/overworld/gfx/green_pipe.png" id="13_qieah"]
 [ext_resource type="Texture2D" uid="uid://dmv5rev5xia3u" path="res://engine/tilesets/overworld/gfx/clouds_looping.png" id="13_wgmc0"]
@@ -72,13 +72,6 @@
 [ext_resource type="PackedScene" uid="uid://bnr3rfhkdf6j2" path="res://engine/objects/bumping_blocks/question_block/question_block.tscn" id="67_5nv28"]
 [ext_resource type="PackedScene" uid="uid://dpikli783lsya" path="res://objects/_screen_clear_item/atom_star.tscn" id="68_h3fdi"]
 [ext_resource type="Texture2D" uid="uid://br7p3i5hxmjer" path="res://gfx/misc/skull.png" id="73_mdjea"]
-
-[sub_resource type="AudioStreamSynchronized" id="AudioStreamSynchronized_d6pl4"]
-stream_count = 2
-stream_0/stream = ExtResource("5_48e1c")
-stream_0/volume = 0.0
-stream_1/stream = ExtResource("6_8g1hp")
-stream_1/volume = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0d6ml"]
 texture = ExtResource("8_465tr")
@@ -487,6 +480,7 @@ jump_to_scene = "uid://cgcbk2ubafoth"
 
 [node name="MusicLoader" type="Node" parent="." unique_id=1066930412]
 script = ExtResource("2_od7xb")
+music_var_1 = Array[Resource]([ExtResource("4_mdjea")])
 music = Array[Resource]([ExtResource("4_640pv")])
 volume_db = Array[float]([0.7])
 
@@ -505,11 +499,10 @@ progress_secret_mode_ids = Array[int]([1])
 progress_reset_on_complete = false
 
 [node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("8_mdjea")]
-text = Array[String](["CoreSHINOBI - Speed-E Jack (Sample Replacement XD)"])
 
 [node name="Mario" parent="." unique_id=453239317 instance=ExtResource("4_xunor")]
 position = Vector2(224, 400)
-death_music_override = SubResource("AudioStreamSynchronized_d6pl4")
+death_music_override = ExtResource("11_640pv")
 
 [node name="PlayerCamera2D" type="Camera2D" parent="." unique_id=1742723486]
 limit_left = 0
@@ -1422,8 +1415,6 @@ script = ExtResource("15_trra6")
 medium = true
 
 [node name="VisibleOnScreenNotifier2D" parent="PiranhaPink" index="3" unique_id=933789772]
-position = Vector2(0, 0)
-scale = Vector2(1, 1)
 rect = Rect2(-64, -64, 96, 64)
 
 [node name="Sprite2" type="AnimatedSprite2D" parent="PiranhaPink" unique_id=921776124]
@@ -1457,8 +1448,6 @@ script = ExtResource("15_trra6")
 medium = true
 
 [node name="VisibleOnScreenNotifier2D" parent="PiranhaPink2" index="3" unique_id=933789772]
-position = Vector2(0, 0)
-scale = Vector2(1, 1)
 rect = Rect2(-64, -64, 96, 64)
 
 [node name="Sprite2" type="AnimatedSprite2D" parent="PiranhaPink2" unique_id=1504018847]

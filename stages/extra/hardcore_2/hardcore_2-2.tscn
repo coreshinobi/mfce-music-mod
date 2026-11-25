@@ -8,10 +8,9 @@
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_5i4tl"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="6_5ryfy"]
 [ext_resource type="AudioStream" uid="uid://b733ciwu0w3ul" path="res://music/newermod/Jet Set Radio Future - Shape Da Future.ogg" id="6_atvq3"]
-[ext_resource type="AudioStream" uid="uid://dfhdjdtb7xk4c" path="res://music/extra/hardcore-die-lol.ogg" id="7_ix0pq"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_rtar1"]
 [ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="7_ry5j8"]
-[ext_resource type="AudioStream" uid="uid://cpy66lof7ycli" path="res://engine/objects/players/prefabs/sounds/music-die.ogg" id="8_8b6mj"]
+[ext_resource type="AudioStream" uid="uid://ck2fqvlts4j2s" path="res://music/extra/new_audio_stream_synchronized.tres" id="9_jc4sx"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="10_fc27p"]
 [ext_resource type="TileSet" uid="uid://dtvs1rult8kbe" path="res://tilesets/overworld_green/overworld_green.tres" id="10_qu6p2"]
 [ext_resource type="FontFile" uid="uid://bgsavu6joui2r" path="res://engine/fonts/junebug.ttf" id="13_cl8o8"]
@@ -33,13 +32,6 @@
 [ext_resource type="Texture2D" uid="uid://vmkr0eaks2fr" path="res://gfx/fancy_graphics/bighill.png" id="26_10p52"]
 [ext_resource type="Texture2D" uid="uid://6bwpp568bmq0" path="res://gfx/fancy_graphics/giant_clouds.png" id="27_36rr5"]
 [ext_resource type="Texture2D" uid="uid://bviqja31upt4m" path="res://engine/tilesets/overworld/gfx/green_pipe.png" id="32_jc4sx"]
-
-[sub_resource type="AudioStreamSynchronized" id="AudioStreamSynchronized_d6pl4"]
-stream_count = 2
-stream_0/stream = ExtResource("7_ix0pq")
-stream_0/volume = 0.0
-stream_1/stream = ExtResource("8_8b6mj")
-stream_1/volume = 0.0
 
 [sub_resource type="Gradient" id="Gradient_ehahp"]
 colors = PackedColorArray(0, 0.435294, 0.87451, 1, 0.823529, 0.917647, 0.972549, 1)
@@ -77,15 +69,13 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-playback_pitch = 1.0
 music = Array[Resource]([ExtResource("6_atvq3")])
 
 [node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("7_ry5j8")]
-text = Array[String](["Jet Set Radio Future - Shape Da Future"])
 
 [node name="Mario" parent="." unique_id=768237132 instance=ExtResource("4_5i4tl")]
 position = Vector2(320, 144)
-death_music_override = SubResource("AudioStreamSynchronized_d6pl4")
+death_music_override = ExtResource("9_jc4sx")
 
 [node name="PlayerCamera2D" type="Camera2D" parent="." unique_id=111219080]
 editor_draw_screen = false

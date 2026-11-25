@@ -8,11 +8,10 @@
 [ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="5_a7f7s"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="5_vupbl"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="6_l2g1y"]
-[ext_resource type="AudioStream" uid="uid://dfhdjdtb7xk4c" path="res://music/extra/hardcore-die-lol.ogg" id="6_lvjcw"]
 [ext_resource type="Script" uid="uid://c6b531vw33sbg" path="res://stages/extra/lost_map/scripts/delete_suspended_progress.gd" id="6_y4vo8"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_8l0d0"]
-[ext_resource type="AudioStream" uid="uid://cpy66lof7ycli" path="res://engine/objects/players/prefabs/sounds/music-die.ogg" id="7_ky5if"]
 [ext_resource type="PackedScene" uid="uid://diivlwjl0y1i7" path="res://engine/objects/bosses/bowser/bowser_trigger.tscn" id="8_u7gpi"]
+[ext_resource type="AudioStream" uid="uid://ck2fqvlts4j2s" path="res://music/extra/new_audio_stream_synchronized.tres" id="9_oio3g"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="10_1dls5"]
 [ext_resource type="TileSet" uid="uid://co4kwf1fb2y5i" path="res://tilesets/castle/castle_tileset.tres" id="10_pmyf7"]
 [ext_resource type="FontFile" uid="uid://bgsavu6joui2r" path="res://engine/fonts/junebug.ttf" id="13_ktots"]
@@ -52,23 +51,23 @@
 [ext_resource type="PackedScene" uid="uid://72feht11cer2" path="res://engine/components/audio_area/audio_area_cave.tscn" id="43_sgnuv"]
 [ext_resource type="Material" uid="uid://bqbnhvliq3s32" path="res://engine/shaders/add_unshaded_effect.tres" id="47_ipyby"]
 
-[sub_resource type="AudioStreamSynchronized" id="AudioStreamSynchronized_d6pl4"]
-stream_count = 2
-stream_0/stream = ExtResource("6_lvjcw")
-stream_0/volume = 0.0
-stream_1/stream = ExtResource("7_ky5if")
-stream_1/volume = 0.0
-
 [sub_resource type="Curve2D" id="Curve2D_0x2h0"]
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 540, 0)
 }
 point_count = 2
 
-[sub_resource type="Resource" id="Resource_a7f7s"]
+[sub_resource type="Resource" id="Resource_mupoc"]
 resource_local_to_scene = true
 script = ExtResource("18_luttc")
 creation_nodepack = ExtResource("17_0fptf")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_a7f7s"]
+resource_local_to_scene = true
+script = ExtResource("18_luttc")
+creation_fallback_node = ExtResource("19_viuba")
+creation_nodepack = ExtResource("20_r78lw")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_d7cwx"]
@@ -81,36 +80,29 @@ trans_inheritances = 7
 [sub_resource type="Resource" id="Resource_h80v0"]
 resource_local_to_scene = true
 script = ExtResource("18_luttc")
-creation_fallback_node = ExtResource("19_viuba")
-creation_nodepack = ExtResource("20_r78lw")
+creation_nodepack = ExtResource("17_0fptf")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_lgdnu"]
 resource_local_to_scene = true
 script = ExtResource("18_luttc")
-creation_nodepack = ExtResource("17_0fptf")
+creation_fallback_node = ExtResource("19_viuba")
+creation_nodepack = ExtResource("20_r78lw")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_dmgsa"]
 resource_local_to_scene = true
 script = ExtResource("18_luttc")
-creation_fallback_node = ExtResource("19_viuba")
-creation_nodepack = ExtResource("20_r78lw")
+creation_nodepack = ExtResource("27_slmbe")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_oskje"]
 resource_local_to_scene = true
 script = ExtResource("18_luttc")
-creation_nodepack = ExtResource("27_slmbe")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_ey3bm"]
-resource_local_to_scene = true
-script = ExtResource("18_luttc")
 creation_nodepack = ExtResource("17_0fptf")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_jvqgp"]
+[sub_resource type="Resource" id="Resource_ey3bm"]
 resource_local_to_scene = true
 script = ExtResource("18_luttc")
 creation_fallback_node = ExtResource("19_viuba")
@@ -188,7 +180,6 @@ music = Array[Resource]([ExtResource("4_mupoc")])
 volume_db = Array[float]([1.1])
 
 [node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("5_a7f7s")]
-text = Array[String](["Toby Fox - Petal Dance"])
 
 [node name="SecretUnlocker" parent="." unique_id=1861062779 instance=ExtResource("5_vupbl")]
 secrets = Array[String](["hardcore worlds finished", "hardcore 2 secret mode"])
@@ -200,7 +191,7 @@ script = ExtResource("6_y4vo8")
 
 [node name="Mario" parent="." unique_id=225290433 instance=ExtResource("4_o3fis")]
 position = Vector2(104, 336)
-death_music_override = SubResource("AudioStreamSynchronized_d6pl4")
+death_music_override = ExtResource("9_oio3g")
 
 [node name="PlayerCamera2D" type="Camera2D" parent="." unique_id=1106039843]
 editor_draw_screen = false
@@ -293,15 +284,15 @@ position = Vector2(240, 208)
 
 [node name="QuestionBlock" parent="." unique_id=693448262 instance=ExtResource("16_h4v6p")]
 position = Vector2(336, 208)
-result = SubResource("Resource_a7f7s")
+result = SubResource("Resource_mupoc")
 
 [node name="QuestionBlock2" parent="." unique_id=1913570086 instance=ExtResource("16_h4v6p")]
 position = Vector2(304, 208)
-result = SubResource("Resource_d7cwx")
+result = SubResource("Resource_a7f7s")
 
 [node name="QuestionBlock7" parent="." unique_id=973690273 instance=ExtResource("16_h4v6p")]
 position = Vector2(7616, 224)
-result = SubResource("Resource_h80v0")
+result = SubResource("Resource_d7cwx")
 
 [node name="Lavafall" parent="." unique_id=569620920 instance=ExtResource("21_qxvpb")]
 position = Vector2(1408, 0)
@@ -367,15 +358,15 @@ position = Vector2(1136, 240)
 
 [node name="QuestionBlock3" parent="." unique_id=1435313479 instance=ExtResource("16_h4v6p")]
 position = Vector2(1232, 240)
-result = SubResource("Resource_lgdnu")
+result = SubResource("Resource_h80v0")
 
 [node name="QuestionBlock4" parent="." unique_id=642080407 instance=ExtResource("16_h4v6p")]
 position = Vector2(1200, 240)
-result = SubResource("Resource_dmgsa")
+result = SubResource("Resource_lgdnu")
 
 [node name="QuestionBlock8" parent="." unique_id=1709847041 instance=ExtResource("16_h4v6p")]
 position = Vector2(1840, 208)
-result = SubResource("Resource_oskje")
+result = SubResource("Resource_dmgsa")
 initially_visible_and_solid = false
 exists_once = true
 
@@ -390,11 +381,11 @@ position = Vector2(1136, 112)
 
 [node name="QuestionBlock5" parent="." unique_id=855689726 instance=ExtResource("16_h4v6p")]
 position = Vector2(1232, 112)
-result = SubResource("Resource_ey3bm")
+result = SubResource("Resource_oskje")
 
 [node name="QuestionBlock6" parent="." unique_id=1958707145 instance=ExtResource("16_h4v6p")]
 position = Vector2(1200, 112)
-result = SubResource("Resource_jvqgp")
+result = SubResource("Resource_ey3bm")
 
 [node name="KoopaRed" parent="." unique_id=1274737675 instance=ExtResource("25_1tiyb")]
 position = Vector2(5552, 368)

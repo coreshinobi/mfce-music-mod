@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="4_7wc2a"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="5_8abwc"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="5_lw5oq"]
+[ext_resource type="AudioStream" uid="uid://bbq01b44ynk0w" path="res://music/newermod/Davy C. - Tetraman Le Saveour.xm" id="6_amf7n"]
 [ext_resource type="AudioStream" uid="uid://tip25r4j1yrq" path="res://music/newermod/Accelerator (AoS2) - Ribbon.ogg" id="6_pqola"]
 [ext_resource type="PackedScene" uid="uid://cvigdw7nldify" path="res://objects/antiafk_expert_mode/antiafk_expert_mode.tscn" id="7_84yus"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="7_w3rux"]
@@ -73,7 +74,7 @@ metadata/_custom_type_script = "uid://dh7ob1sbo8lx7"
 script = ExtResource("4_7wc2a")
 tweaked_completion_music = ExtResource("5_8abwc")
 ignore_fade_in_tweak = false
-music_var_1 = Array[Resource]([])
+music_var_1 = Array[Resource]([ExtResource("6_amf7n")])
 music_var_2 = Array[Resource]([])
 music_var_3 = Array[Resource]([])
 var_1_volume_db = Array[float]([0.0])
@@ -87,7 +88,6 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-playback_pitch = 1.0
 music = Array[Resource]([ExtResource("6_pqola")])
 stop_all_music_on_start = false
 play_globally = 1
@@ -110,7 +110,6 @@ progress_secret_mode_ids = Array[int]([1])
 progress_reset_on_complete = false
 
 [node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("10_076dt")]
-text = Array[String](["Accelerator [AoS2] - Ribbon"])
 
 [node name="SecretUnlocker3" parent="." unique_id=1413501882 instance=ExtResource("7_w3rux")]
 secrets = Array[String](["otherworld easter eggs"])
