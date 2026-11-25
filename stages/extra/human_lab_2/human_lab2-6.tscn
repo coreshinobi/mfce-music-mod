@@ -3,7 +3,8 @@
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_4ks13"]
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_1ejaq"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_e4nh3"]
-[ext_resource type="AudioStream" uid="uid://deh17a6e0foba" path="res://music/extra/human_lab_2/smrpg-wineriver.ogg" id="4_x87dj"]
+[ext_resource type="AudioStream" uid="uid://3hqjufmuwqo1" path="res://music/newermod/Phoenix Wright Ace Attorney - Maya Fey - Turnabout Sisters 2001.ogg" id="4_q33jv"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="5_36el0"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="5_khbxc"]
 [ext_resource type="Script" uid="uid://c6b531vw33sbg" path="res://stages/extra/lost_map/scripts/delete_suspended_progress.gd" id="6_77l01"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="7_jxokj"]
@@ -826,7 +827,11 @@ jump_to_scene = "uid://bjekywldkrrfs"
 
 [node name="MusicLoader" type="Node" parent="." unique_id=846264171]
 script = ExtResource("3_e4nh3")
-music = Array[Resource]([ExtResource("4_x87dj")])
+music = Array[Resource]([ExtResource("4_q33jv")])
+volume_db = Array[float]([0.8])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("5_36el0")]
+text = Array[String](["Phoenix Wright: Ace Attorney - Maya Fey - Turnabout Sisters 2001"])
 
 [node name="SecretUnlocker" parent="." unique_id=1859665357 instance=ExtResource("5_khbxc")]
 secrets = Array[String](["human laboratory 2 completed", "human lab 2 in secret mode"])

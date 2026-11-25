@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://begj3vym4jxv1"
+path="res://.godot/imported/Alien Soldier - Galaxy Desert.ogg-c17317901a3233462e446bfb68ecc8b2.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Alien Soldier - Galaxy Desert.ogg"
+dest_files=["res://.godot/imported/Alien Soldier - Galaxy Desert.ogg-c17317901a3233462e446bfb68ecc8b2.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

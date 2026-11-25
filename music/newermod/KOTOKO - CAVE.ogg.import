@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bni4r5xujtmuv"
+path="res://.godot/imported/KOTOKO - CAVE.ogg-9dd7abe6d0de9d23509303e7dd636b8c.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/KOTOKO - CAVE.ogg"
+dest_files=["res://.godot/imported/KOTOKO - CAVE.ogg-9dd7abe6d0de9d23509303e7dd636b8c.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=28.75
+bpm=0.0
+beat_count=0
+bar_beats=4

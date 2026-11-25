@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://tbi44x2okk7p"
+path="res://.godot/imported/Mamono Hunter Yohko Makai kara no Tenkousei - Track 23.ogg-9a619e1ee8f0a49ac641a727545e4eca.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Mamono Hunter Yohko Makai kara no Tenkousei - Track 23.ogg"
+dest_files=["res://.godot/imported/Mamono Hunter Yohko Makai kara no Tenkousei - Track 23.ogg-9a619e1ee8f0a49ac641a727545e4eca.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

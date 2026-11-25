@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://c167brx55f3gj"
+path="res://.godot/imported/emax - denied love.mod-b92bb9249393b8ad6c574dd288cd0ae2.res"
+
+[deps]
+
+source_file="res://music/newermod/emax - denied love.mod"
+dest_files=["res://.godot/imported/emax - denied love.mod-b92bb9249393b8ad6c574dd288cd0ae2.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

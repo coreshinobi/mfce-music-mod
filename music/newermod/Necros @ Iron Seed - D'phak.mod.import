@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://b41itxydfbbhr"
+path="res://.godot/imported/Necros @ Iron Seed - D'phak.mod-4a0ab2c6be5138290ff1c2260c0a3a9e.res"
+
+[deps]
+
+source_file="res://music/newermod/Necros @ Iron Seed - D'phak.mod"
+dest_files=["res://.godot/imported/Necros @ Iron Seed - D'phak.mod-4a0ab2c6be5138290ff1c2260c0a3a9e.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

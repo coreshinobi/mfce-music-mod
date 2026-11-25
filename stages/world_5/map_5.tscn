@@ -3,8 +3,10 @@
 [ext_resource type="Script" uid="uid://b2miajjwaop0p" path="res://engine/scenes/map/scripts/map.gd" id="1_xv1n3"]
 [ext_resource type="Texture2D" uid="uid://usm6n80msr7n" path="res://engine/scenes/map/textures/bg.png" id="2_sugu3"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_2mber"]
-[ext_resource type="AudioStream" uid="uid://b1cq6e0hbhau1" path="res://music/in_the_kitchen_loop.mod" id="3_5jxra"]
 [ext_resource type="PackedScene" uid="uid://w4jc7nb1lcsy" path="res://engine/scenes/map/prefabs/player.tscn" id="3_jlcop"]
+[ext_resource type="AudioStream" uid="uid://noyt0vcjlj05" path="res://music/side_a/archangel - chrom is burning.mod" id="3_rs6q1"]
+[ext_resource type="AudioStream" uid="uid://p7aj0jemygms" path="res://music/newermod/Algorithm - Double Crucifixion.ogg" id="3_yvs0r"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="4_rs6q1"]
 [ext_resource type="PackedScene" uid="uid://beu6ovtvrvpfc" path="res://engine/scenes/map/prefabs/dot.tscn" id="4_yxixm"]
 [ext_resource type="Texture2D" uid="uid://bl8cqvygascrb" path="res://gfx/map/maps/map5.png" id="5_dh4v2"]
 [ext_resource type="Texture2D" uid="uid://b6hnnpa1sdewh" path="res://engine/scenes/map/textures/mario_icon.png" id="5_t07mr"]
@@ -42,7 +44,12 @@ metadata/_edit_lock_ = true
 
 [node name="MusicLoader" type="Node" parent="." unique_id=1077212384]
 script = ExtResource("3_2mber")
-music = Array[Resource]([ExtResource("3_5jxra")])
+music_var_1 = Array[Resource]([ExtResource("3_rs6q1")])
+var_1_volume_db = Array[float]([2.1])
+music = Array[Resource]([ExtResource("3_yvs0r")])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("4_rs6q1")]
+displaying_mode = 1
 
 [node name="Bg" type="Sprite2D" parent="." unique_id=2077299165]
 texture = ExtResource("2_sugu3")

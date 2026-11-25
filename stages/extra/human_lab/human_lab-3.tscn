@@ -1,13 +1,15 @@
 [gd_scene format=4 uid="uid://wscrrfeil4p5"]
 
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_ld2mg"]
-[ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_i7i6y"]
+[ext_resource type="AudioStream" uid="uid://lskqu7a66ntk" path="res://music/newermod/Hi Hi Puffy AmiYumi Kaznapped - Stage Clear.ogg" id="2_yj8f3"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_oh6c0"]
-[ext_resource type="AudioStream" uid="uid://no8rqi6mwk8c" path="res://music/smw-overworld.ogg" id="4_fjun4"]
-[ext_resource type="AudioStream" uid="uid://dcnjbvyhhir5r" path="res://music/one_fine_day.xm" id="4_o8vu3"]
+[ext_resource type="AudioStream" uid="uid://62w11tdon5rl" path="res://music/side_b/Dustbin - Walking Under The Rain.xm" id="4_wb1g1"]
+[ext_resource type="AudioStream" uid="uid://4b414sshnppd" path="res://music/side_a/retrokidknuckles - round 3.ogg" id="4_yj8f3"]
 [ext_resource type="AudioStream" uid="uid://dwcak56md3who" path="res://music/smw-underground.ogg" id="5_4xru0"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="5_fd8l8"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="6_n1m1k"]
+[ext_resource type="AudioStream" uid="uid://bleg6f7dfv8ph" path="res://music/newermod/Hi Hi Puffy AmiYumi Kaznapped - World 4 - Desert Island.ogg" id="6_wb1g1"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="7_yj8f3"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="8_sb7xw"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="9_ulqjw"]
 [ext_resource type="FontFile" uid="uid://8het0yea87eq" path="res://gfx/fonts/tahomabd.ttf" id="11_7xhic"]
@@ -24,13 +26,13 @@
 [ext_resource type="PackedScene" uid="uid://cv7p8xyw12pbx" path="res://engine/objects/bumping_blocks/question_block/templates/Life Mushroom Question Block.tscn" id="21_61v82"]
 [ext_resource type="PackedScene" uid="uid://ltoqkqmxpt65" path="res://engine/objects/powerups/life_mushroom/life_mushroom.tscn" id="22_rbbk8"]
 [ext_resource type="Script" uid="uid://chvjy6okoognf" path="res://engine/objects/powerups/instance_powerup.gd" id="23_qwxxa"]
-[ext_resource type="PackedScene" uid="uid://bpdl22ol10045" path="res://engine/objects/enemies/human_lab/koopa_bro/big_human_clone_b.tscn" id="24_d3gec"]
+[ext_resource type="PackedScene" uid="uid://c3vc7mk4fnxu6" path="res://objects/hhpayclones/julie_clone/julie_clone.tscn" id="24_d3gec"]
 [ext_resource type="PackedScene" uid="uid://b8kgbn8f7lvf0" path="res://engine/objects/items/coin/coin.tscn" id="24_skcsq"]
 [ext_resource type="PackedScene" uid="uid://dbpihjuw0gc01" path="res://engine/objects/bumping_blocks/question_block/templates/Beetroot Question Block.tscn" id="24_xj6xa"]
 [ext_resource type="PackedScene" uid="uid://8a7nemgi0b6q" path="res://engine/objects/powerups/beetroot/beetroot.tscn" id="25_3g4ha"]
 [ext_resource type="PackedScene" uid="uid://b6e661f0ry38p" path="res://engine/objects/bumping_blocks/brick/templates/Coin Brick.tscn" id="25_qeebr"]
-[ext_resource type="PackedScene" uid="uid://dxqjmbtsadabq" path="res://engine/objects/enemies/human_lab/spiny/clone_spiny.tscn" id="26_yuiu7"]
-[ext_resource type="PackedScene" uid="uid://clnvxc3co85ls" path="res://engine/objects/enemies/human_lab/koopa_troopa/coder_clone.tscn" id="27_7ff13"]
+[ext_resource type="PackedScene" uid="uid://ciwccydxt7mpv" path="res://objects/hhpayclones/harmony_clone/harmony_clone.tscn" id="26_yuiu7"]
+[ext_resource type="PackedScene" uid="uid://ctbgmug4ek5tf" path="res://objects/hhpayclones/yumi_clone/yumi_clone.tscn" id="27_7ff13"]
 [ext_resource type="PackedScene" uid="uid://dgcgfl28trox0" path="res://engine/objects/springboard/springboard.tscn" id="27_ibqop"]
 [ext_resource type="PackedScene" uid="uid://ddwxc43m3q1c6" path="res://engine/objects/core/checkpoint/checkpoint.tscn" id="30_ek8af"]
 [ext_resource type="PackedScene" uid="uid://rhrex2vth7at" path="res://engine/objects/platform/platform_path.tscn" id="31_hlq1e"]
@@ -79,26 +81,26 @@ fill_to = Vector2(0.857143, 0.142857)
 metadata/_snap_enabled = true
 metadata/_snap_count = 7
 
-[sub_resource type="Resource" id="Resource_fjun4"]
+[sub_resource type="Resource" id="Resource_45grd"]
 resource_local_to_scene = true
 script = ExtResource("23_qwxxa")
 creation_nodepack = ExtResource("22_rbbk8")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_wb1g1"]
+[sub_resource type="Resource" id="Resource_dc3th"]
 resource_local_to_scene = true
 script = ExtResource("23_qwxxa")
 creation_nodepack = ExtResource("22_rbbk8")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_yj8f3"]
+[sub_resource type="Resource" id="Resource_lqmj6"]
 resource_local_to_scene = true
 script = ExtResource("23_qwxxa")
 creation_fallback_node = ExtResource("17_hg2f8")
 creation_nodepack = ExtResource("25_3g4ha")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_45grd"]
+[sub_resource type="Resource" id="Resource_t0mgk"]
 resource_local_to_scene = true
 script = ExtResource("23_qwxxa")
 creation_fallback_node = ExtResource("17_hg2f8")
@@ -108,16 +110,23 @@ trans_inheritances = 7
 [node name="HumanLab-3" type="Node2D" unique_id=1841908741]
 script = ExtResource("1_ld2mg")
 time = -1
-completion_music = ExtResource("2_i7i6y")
+completion_music = ExtResource("2_yj8f3")
 jump_to_scene = "res://stages/extra/human_lab/human_lab_map.tscn"
+completion_music_delay_sec = 3.0
 lighting_force_hide_on_start = false
 
 [node name="MusicLoader" type="Node" parent="." unique_id=1619387454]
 script = ExtResource("3_oh6c0")
-music_var_2 = Array[Resource]([ExtResource("4_fjun4")])
+tweaked_completion_music = ExtResource("2_yj8f3")
+music_var_1 = Array[Resource]([ExtResource("4_yj8f3")])
+music_var_2 = Array[Resource]([ExtResource("4_wb1g1")])
 music_var_3 = Array[Resource]([ExtResource("5_4xru0")])
-var_2_volume_db = Array[float]([4.0])
-music = Array[Resource]([ExtResource("4_o8vu3")])
+var_1_volume_db = Array[float]([0.9])
+var_2_volume_db = Array[float]([5.02])
+music = Array[Resource]([ExtResource("6_wb1g1")])
+volume_db = Array[float]([0.8])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("7_yj8f3")]
 
 [node name="SecretUnlocker" parent="." unique_id=780284888 instance=ExtResource("5_fd8l8")]
 secrets = Array[String](["secret human lab level"])
@@ -647,11 +656,11 @@ position = Vector2(2000, 336)
 
 [node name="QuestionBlockLife" parent="." unique_id=353411810 instance=ExtResource("21_61v82")]
 position = Vector2(1200, 272)
-result = SubResource("Resource_fjun4")
+result = SubResource("Resource_45grd")
 
 [node name="QuestionBlockLife2" parent="." unique_id=1569761597 instance=ExtResource("21_61v82")]
 position = Vector2(1232, 272)
-result = SubResource("Resource_wb1g1")
+result = SubResource("Resource_dc3th")
 
 [node name="Coin" parent="." unique_id=1270107121 instance=ExtResource("24_skcsq")]
 position = Vector2(1424, 16)
@@ -883,11 +892,11 @@ position = Vector2(4400, 80)
 
 [node name="QuestionBlockBeetroot" parent="." unique_id=961188738 instance=ExtResource("24_xj6xa")]
 position = Vector2(4368, 80)
-result = SubResource("Resource_yj8f3")
+result = SubResource("Resource_lqmj6")
 
 [node name="QuestionBlockBeetroot2" parent="." unique_id=2103439830 instance=ExtResource("24_xj6xa")]
 position = Vector2(5072, 80)
-result = SubResource("Resource_45grd")
+result = SubResource("Resource_t0mgk")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=400584997]
 color = Color(0.69, 0.69, 0.69, 1)

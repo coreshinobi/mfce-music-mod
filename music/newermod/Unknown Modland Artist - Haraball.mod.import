@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://cb1ykv8huefwd"
+path="res://.godot/imported/Unknown Modland Artist - Haraball.mod-ff8690261ce35c73c5d4ce4a473e790b.res"
+
+[deps]
+
+source_file="res://music/newermod/Unknown Modland Artist - Haraball.mod"
+dest_files=["res://.godot/imported/Unknown Modland Artist - Haraball.mod-ff8690261ce35c73c5d4ce4a473e790b.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

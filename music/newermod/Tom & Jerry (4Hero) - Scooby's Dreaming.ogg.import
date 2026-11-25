@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dax1p80jnfokt"
+path="res://.godot/imported/Tom & Jerry (4Hero) - Scooby's Dreaming.ogg-869c0c14b00813ef1c4b8d58b849c930.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Tom & Jerry (4Hero) - Scooby's Dreaming.ogg"
+dest_files=["res://.godot/imported/Tom & Jerry (4Hero) - Scooby's Dreaming.ogg-869c0c14b00813ef1c4b8d58b849c930.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

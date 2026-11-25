@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://c1xokb1lbv0rd"
+path="res://.godot/imported/4-mat - eclipse.mod-9b83e4ee9f889203ef0d36be38bba481.res"
+
+[deps]
+
+source_file="res://music/side_b/4-mat - eclipse.mod"
+dest_files=["res://.godot/imported/4-mat - eclipse.mod-9b83e4ee9f889203ef0d36be38bba481.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

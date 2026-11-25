@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bbvxe3pfq3abw"
+path="res://.godot/imported/Ojousama Sousamou - Track 08.ogg-dbff8f15f8b27564a295bec43f01080c.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_b/Ojousama Sousamou - Track 08.ogg"
+dest_files=["res://.godot/imported/Ojousama Sousamou - Track 08.ogg-dbff8f15f8b27564a295bec43f01080c.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.67
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://de0omfehegx4r"
+path="res://.godot/imported/hoffman - jungle love.mod-422460be96bde2fb08561482110a6b80.res"
+
+[deps]
+
+source_file="res://music/newermod/hoffman - jungle love.mod"
+dest_files=["res://.godot/imported/hoffman - jungle love.mod-422460be96bde2fb08561482110a6b80.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

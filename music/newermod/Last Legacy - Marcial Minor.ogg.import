@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dtvyvo3bh6tih"
+path="res://.godot/imported/Last Legacy - Marcial Minor.ogg-f3c8703282e7783298640715f6ec10d8.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Last Legacy - Marcial Minor.ogg"
+dest_files=["res://.godot/imported/Last Legacy - Marcial Minor.ogg-f3c8703282e7783298640715f6ec10d8.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

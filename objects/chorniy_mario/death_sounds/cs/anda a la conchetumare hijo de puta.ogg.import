@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d1hivcn7u3yvd"
+path="res://.godot/imported/anda a la conchetumare hijo de puta.ogg-652c8844992074d8199a42980445b3b6.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/anda a la conchetumare hijo de puta.ogg"
+dest_files=["res://.godot/imported/anda a la conchetumare hijo de puta.ogg-652c8844992074d8199a42980445b3b6.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b63qgvawj1toa"
+path="res://.godot/imported/Leone's DELTARUNE Take - Ice Palace.ogg-402eaf399fd29c8429b927b9c0058f0a.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Leone's DELTARUNE Take - Ice Palace.ogg"
+dest_files=["res://.godot/imported/Leone's DELTARUNE Take - Ice Palace.ogg-402eaf399fd29c8429b927b9c0058f0a.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=141.46
+beat_count=0
+bar_beats=4

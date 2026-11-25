@@ -2,7 +2,9 @@
 
 [ext_resource type="Script" uid="uid://b2miajjwaop0p" path="res://engine/scenes/map/scripts/map.gd" id="1_uv8wv"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="2_opdl7"]
-[ext_resource type="AudioStream" uid="uid://jo70eadvfffs" path="res://music/extra/world_12_syzx/map_12.mp3" id="3_pf3s4"]
+[ext_resource type="AudioStream" uid="uid://r3wdgegqc6j4" path="res://music/newermod/Phoenix Wright Ace Attorney - Jake Marshall.ogg" id="3_lnj6w"]
+[ext_resource type="AudioStream" uid="uid://b0uqt7j6quxif" path="res://music/side_a/merge - desert dream.mod" id="3_obw3p"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="4_obw3p"]
 [ext_resource type="Texture2D" uid="uid://usm6n80msr7n" path="res://engine/scenes/map/textures/bg.png" id="5_bmcc5"]
 [ext_resource type="Texture2D" uid="uid://bb05kwgnyd1e8" path="res://gfx/map/maps/map12.png" id="5_pf3s4"]
 [ext_resource type="Script" uid="uid://cpbjc7dmw7me5" path="res://stages/extra/world_9_syzx/advanced_ed_map.gd" id="6_sjfom"]
@@ -95,9 +97,14 @@ metadata/_edit_lock_ = true
 
 [node name="MusicLoader" type="Node" parent="." unique_id=1192248842]
 script = ExtResource("2_opdl7")
-music = Array[Resource]([ExtResource("3_pf3s4")])
-volume_db = Array[float]([0.0])
+music_var_1 = Array[Resource]([ExtResource("3_obw3p")])
+var_1_volume_db = Array[float]([2.1])
+music = Array[Resource]([ExtResource("3_lnj6w")])
+volume_db = Array[float]([1.5])
 start_from_sec = Array[float]([0.5])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("4_obw3p")]
+displaying_mode = 1
 
 [node name="Bg" type="Sprite2D" parent="." unique_id=520407767]
 texture = ExtResource("5_bmcc5")

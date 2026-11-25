@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cwaqyxc1bdvv6"
+path="res://.godot/imported/angry german kid.ogg-9a67c2330bf7c95297f1b38719b370d8.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/angry german kid.ogg"
+dest_files=["res://.godot/imported/angry german kid.ogg-9a67c2330bf7c95297f1b38719b370d8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

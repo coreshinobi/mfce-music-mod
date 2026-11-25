@@ -4,8 +4,11 @@
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="2_m5nw4"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_hcrsp"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="4_v72wn"]
-[ext_resource type="AudioStream" uid="uid://c4uts4uk1eqv1" path="res://music/extra/world_u/35map.mp3" id="5_76fgq"]
+[ext_resource type="AudioStream" uid="uid://bhjg2y1e5ilkt" path="res://music/side_b/quasian - the whispering rain.s3m" id="5_23a8u"]
+[ext_resource type="AudioStream" uid="uid://dgm7358v3cu1r" path="res://music/side_a/The Lawnmower Man (SNES) - Main Theme.ogg" id="5_smqea"]
 [ext_resource type="Texture2D" uid="uid://ngpm61labj4v" path="res://gfx/map/extra_decos/map_u_bg.png" id="6_b4dp1"]
+[ext_resource type="AudioStream" uid="uid://byfctclkl3784" path="res://music/newermod/Last Legacy - Charge.ogg" id="6_guswh"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="7_guswh"]
 [ext_resource type="Texture2D" uid="uid://d188qq2x8yjml" path="res://gfx/map/maps/mapunooverlay.png" id="7_o5k7m"]
 [ext_resource type="Texture2D" uid="uid://bwfpxvqox7s3b" path="res://gfx/map/maps/overlay/mapunormal.png" id="8_b46dr"]
 [ext_resource type="PackedScene" uid="uid://w4jc7nb1lcsy" path="res://engine/scenes/map/prefabs/player.tscn" id="8_exrna"]
@@ -55,12 +58,12 @@ metadata/_edit_lock_ = true
 script = ExtResource("3_hcrsp")
 tweaked_completion_music = ExtResource("4_v72wn")
 ignore_fade_in_tweak = false
-music_var_1 = Array[Resource]([])
-music_var_2 = Array[Resource]([])
+music_var_1 = Array[Resource]([ExtResource("5_smqea")])
+music_var_2 = Array[Resource]([ExtResource("5_23a8u")])
 music_var_3 = Array[Resource]([])
 var_1_volume_db = Array[float]([0.0])
 var_1_start_from_sec = Array[float]([0.0])
-var_2_volume_db = Array[float]([0.0])
+var_2_volume_db = Array[float]([0.8])
 var_2_start_from_sec = Array[float]([0.0])
 var_3_volume_db = Array[float]([0.0])
 var_3_start_from_sec = Array[float]([0.0])
@@ -69,8 +72,11 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("5_76fgq")])
-volume_db = Array[float]([-1.0])
+music = Array[Resource]([ExtResource("6_guswh")])
+volume_db = Array[float]([3.5])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("7_guswh")]
+displaying_mode = 1
 
 [node name="Bg" type="Sprite2D" parent="." unique_id=1087852396]
 texture_repeat = 2

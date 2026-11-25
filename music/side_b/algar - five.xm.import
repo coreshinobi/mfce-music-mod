@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://b8k6vaakixyyf"
+path="res://.godot/imported/algar - five.xm-26dba673f179bd99fa0b56f3dbfac886.res"
+
+[deps]
+
+source_file="res://music/side_b/algar - five.xm"
+dest_files=["res://.godot/imported/algar - five.xm-26dba673f179bd99fa0b56f3dbfac886.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

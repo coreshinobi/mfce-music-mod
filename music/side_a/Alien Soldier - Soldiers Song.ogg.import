@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bbj275nkwpnmf"
+path="res://.godot/imported/Alien Soldier - Soldiers Song.ogg-022d8b72d5acf90a0d7527773bc63659.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Alien Soldier - Soldiers Song.ogg"
+dest_files=["res://.godot/imported/Alien Soldier - Soldiers Song.ogg-022d8b72d5acf90a0d7527773bc63659.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=18.3
+bpm=0.0
+beat_count=0
+bar_beats=4

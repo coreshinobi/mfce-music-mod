@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://r4kx4ejh1js"
+path="res://.godot/imported/Toby Fox - The Second Sanctuary.ogg-8c885f8c161f0b42eeb5aa18c8a60e3d.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Toby Fox - The Second Sanctuary.ogg"
+dest_files=["res://.godot/imported/Toby Fox - The Second Sanctuary.ogg-8c885f8c161f0b42eeb5aa18c8a60e3d.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=25.43
+bpm=0.0
+beat_count=0
+bar_beats=4

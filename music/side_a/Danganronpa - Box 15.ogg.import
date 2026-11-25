@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dwo1a0laaemuw"
+path="res://.godot/imported/Danganronpa - Box 15.ogg-216b3a130ab85a63f1457179b02ed939.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Danganronpa - Box 15.ogg"
+dest_files=["res://.godot/imported/Danganronpa - Box 15.ogg-216b3a130ab85a63f1457179b02ed939.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=37.05
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -6,10 +6,14 @@
 [ext_resource type="AudioStream" uid="uid://bo1yufj7ga7ha" path="res://music/interference.mod" id="4_06r4f"]
 [ext_resource type="AudioStream" uid="uid://cwgcnfy74k2gv" path="res://music/smw2-athletic.ogg" id="4_bxry6"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_ik0p5"]
-[ext_resource type="AudioStream" uid="uid://evmrvyewk0qq" path="res://music/smw2-overworld.ogg" id="4_si613"]
+[ext_resource type="AudioStream" uid="uid://begj3vym4jxv1" path="res://music/side_a/Alien Soldier - Galaxy Desert.ogg" id="4_vuie5"]
+[ext_resource type="AudioStream" uid="uid://b7jxkekqonq5r" path="res://music/side_a/ResQ - 3D Bonus Section.ogg" id="5_2vf4a"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="6_dla4d"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="6_mp1bp"]
+[ext_resource type="AudioStream" uid="uid://c7c3qh45bshfr" path="res://music/newermod/Tom & Jerry (4Hero) - Strings & Me.ogg" id="6_s3bpf"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_eukde"]
+[ext_resource type="AudioStream" uid="uid://dsbo3s5e2sxdn" path="res://music/newermod/toal nkor - forest dream.mod" id="7_khok6"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="8_vuie5"]
 [ext_resource type="TileSet" uid="uid://dtvs1rult8kbe" path="res://tilesets/overworld_green/overworld_green.tres" id="10_0tpke"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="10_278bf"]
 [ext_resource type="PackedScene" uid="uid://cv7p8xyw12pbx" path="res://engine/objects/bumping_blocks/question_block/templates/Life Mushroom Question Block.tscn" id="10_aurfo"]
@@ -58,42 +62,6 @@ colors = PackedColorArray(0.231373, 0.482353, 0.639216, 1, 0.94902, 0.992157, 0.
 gradient = SubResource("Gradient_qyhhw")
 width = 480
 
-[sub_resource type="Resource" id="Resource_pjun6"]
-resource_local_to_scene = true
-script = ExtResource("12_bn6nr")
-creation_nodepack = ExtResource("14_t7o3y")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_lyj5j"]
-resource_local_to_scene = true
-script = ExtResource("12_bn6nr")
-creation_nodepack = ExtResource("14_t7o3y")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_s3bpf"]
-resource_local_to_scene = true
-script = ExtResource("12_bn6nr")
-creation_nodepack = ExtResource("14_t7o3y")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_khok6"]
-resource_local_to_scene = true
-script = ExtResource("12_bn6nr")
-creation_nodepack = ExtResource("14_t7o3y")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_vuie5"]
-resource_local_to_scene = true
-script = ExtResource("12_bn6nr")
-creation_nodepack = ExtResource("14_t7o3y")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_2vf4a"]
-resource_local_to_scene = true
-script = ExtResource("12_bn6nr")
-creation_nodepack = ExtResource("14_t7o3y")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_lrq1i"]
 resource_local_to_scene = true
 script = ExtResource("12_bn6nr")
@@ -107,6 +75,42 @@ creation_nodepack = ExtResource("14_t7o3y")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_i4gu5"]
+resource_local_to_scene = true
+script = ExtResource("12_bn6nr")
+creation_nodepack = ExtResource("14_t7o3y")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_6b5ej"]
+resource_local_to_scene = true
+script = ExtResource("12_bn6nr")
+creation_nodepack = ExtResource("14_t7o3y")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_ddp3t"]
+resource_local_to_scene = true
+script = ExtResource("12_bn6nr")
+creation_nodepack = ExtResource("14_t7o3y")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_e110c"]
+resource_local_to_scene = true
+script = ExtResource("12_bn6nr")
+creation_nodepack = ExtResource("14_t7o3y")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_srh78"]
+resource_local_to_scene = true
+script = ExtResource("12_bn6nr")
+creation_nodepack = ExtResource("14_t7o3y")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_ln2yy"]
+resource_local_to_scene = true
+script = ExtResource("12_bn6nr")
+creation_nodepack = ExtResource("14_t7o3y")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_fpea8"]
 resource_local_to_scene = true
 script = ExtResource("12_bn6nr")
 creation_nodepack = ExtResource("14_t7o3y")
@@ -204,19 +208,19 @@ animations = [{
 "speed": 40.0
 }]
 
-[sub_resource type="Resource" id="Resource_6b5ej"]
+[sub_resource type="Resource" id="Resource_50py0"]
 resource_local_to_scene = true
 script = ExtResource("12_bn6nr")
 creation_nodepack = ExtResource("11_omcq4")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_ddp3t"]
+[sub_resource type="Resource" id="Resource_jfejj"]
 resource_local_to_scene = true
 script = ExtResource("12_bn6nr")
 creation_nodepack = ExtResource("14_t7o3y")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_e110c"]
+[sub_resource type="Resource" id="Resource_bmpcy"]
 resource_local_to_scene = true
 script = ExtResource("12_bn6nr")
 creation_fallback_node = ExtResource("18_d7d04")
@@ -248,8 +252,11 @@ jump_to_scene = "res://stages/world_4/map_4.tscn"
 
 [node name="MusicLoader" type="Node" parent="." unique_id=1920945183]
 script = ExtResource("3_65n3d")
+music_var_1 = Array[Resource]([ExtResource("4_vuie5"), ExtResource("5_2vf4a")])
 music_var_3 = Array[Resource]([ExtResource("4_06r4f"), ExtResource("4_bxry6")])
-music = Array[Resource]([ExtResource("4_si613"), ExtResource("4_bxry6")])
+music = Array[Resource]([ExtResource("6_s3bpf"), ExtResource("7_khok6")])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("8_vuie5")]
 
 [node name="SecretUnlocker" parent="." unique_id=1069484540 instance=ExtResource("6_mp1bp")]
 secrets = Array[String](["all secret rooms found"])
@@ -597,39 +604,39 @@ position = Vector2(10288, 176)
 
 [node name="QuestionBlock2" parent="CoinChecker" unique_id=1459185410 instance=ExtResource("13_g1x0f")]
 position = Vector2(368, 144)
-result = SubResource("Resource_pjun6")
+result = SubResource("Resource_lrq1i")
 
 [node name="QuestionBlock3" parent="CoinChecker" unique_id=532625240 instance=ExtResource("13_g1x0f")]
 position = Vector2(400, 144)
-result = SubResource("Resource_lyj5j")
+result = SubResource("Resource_tjpup")
 
 [node name="QuestionBlock4" parent="CoinChecker" unique_id=526025820 instance=ExtResource("13_g1x0f")]
 position = Vector2(464, 144)
-result = SubResource("Resource_s3bpf")
+result = SubResource("Resource_i4gu5")
 
 [node name="QuestionBlock5" parent="CoinChecker" unique_id=827153201 instance=ExtResource("13_g1x0f")]
 position = Vector2(496, 144)
-result = SubResource("Resource_khok6")
+result = SubResource("Resource_6b5ej")
 
 [node name="QuestionBlock6" parent="CoinChecker" unique_id=2021727629 instance=ExtResource("13_g1x0f")]
 position = Vector2(528, 144)
-result = SubResource("Resource_vuie5")
+result = SubResource("Resource_ddp3t")
 
 [node name="QuestionBlock7" parent="CoinChecker" unique_id=1182486743 instance=ExtResource("13_g1x0f")]
 position = Vector2(4464, 144)
-result = SubResource("Resource_2vf4a")
+result = SubResource("Resource_e110c")
 
 [node name="QuestionBlock8" parent="CoinChecker" unique_id=1659942504 instance=ExtResource("13_g1x0f")]
 position = Vector2(5296, 144)
-result = SubResource("Resource_lrq1i")
+result = SubResource("Resource_srh78")
 
 [node name="QuestionBlock9" parent="CoinChecker" unique_id=2135464767 instance=ExtResource("13_g1x0f")]
 position = Vector2(5328, 144)
-result = SubResource("Resource_tjpup")
+result = SubResource("Resource_ln2yy")
 
 [node name="QuestionBlock10" parent="CoinChecker" unique_id=846938580 instance=ExtResource("13_g1x0f")]
 position = Vector2(5360, 144)
-result = SubResource("Resource_i4gu5")
+result = SubResource("Resource_fpea8")
 
 [node name="BigClouds" type="Sprite2D" parent="." unique_id=635823426]
 z_index = -50
@@ -750,13 +757,13 @@ centered = false
 
 [node name="QuestionBlockLife" parent="." unique_id=652899687 instance=ExtResource("10_aurfo")]
 position = Vector2(48, 80)
-result = SubResource("Resource_6b5ej")
+result = SubResource("Resource_50py0")
 initially_visible_and_solid = false
 exists_once = true
 
 [node name="QuestionBlock" parent="." unique_id=194855615 instance=ExtResource("13_g1x0f")]
 position = Vector2(48, 240)
-result = SubResource("Resource_ddp3t")
+result = SubResource("Resource_jfejj")
 initially_visible_and_solid = false
 exists_once = true
 
@@ -876,7 +883,7 @@ position = Vector2(336, 144)
 
 [node name="QuestionBlockFireFlower" parent="." unique_id=1027003839 instance=ExtResource("17_bqiqj")]
 position = Vector2(432, 144)
-result = SubResource("Resource_e110c")
+result = SubResource("Resource_bmpcy")
 
 [node name="KoopaGreen" parent="." unique_id=523827770 instance=ExtResource("24_in30j")]
 position = Vector2(3238, 112)
@@ -1231,5 +1238,6 @@ texture = ExtResource("50_pjun6")
 region_enabled = true
 region_rect = Rect2(0, 32, 64, 32)
 
+[connection signal="music_started" from="MusicLoader" to="MusicOverlay" method="play"]
 [connection signal="coin_checked_success" from="CoinChecker" to="SecretUnlocker2" method="progress_secret"]
 [connection signal="warp_started" from="PipeIn" to="SecretUnlocker" method="progress_secret"]

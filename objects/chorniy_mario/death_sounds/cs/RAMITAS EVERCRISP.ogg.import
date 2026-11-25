@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c1f8rhp7452j6"
+path="res://.godot/imported/RAMITAS EVERCRISP.ogg-e6c66a443f8509fe9ce0aba8e25561fc.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/RAMITAS EVERCRISP.ogg"
+dest_files=["res://.godot/imported/RAMITAS EVERCRISP.ogg-e6c66a443f8509fe9ce0aba8e25561fc.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

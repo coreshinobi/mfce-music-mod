@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b8mk7qrq6jnji"
+path="res://.godot/imported/Bandurin and Vashukov - Chastushki (Instrumental).ogg-1f1246f109b63fdd1b805cdd600f5c75.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Bandurin and Vashukov - Chastushki (Instrumental).ogg"
+dest_files=["res://.godot/imported/Bandurin and Vashukov - Chastushki (Instrumental).ogg-1f1246f109b63fdd1b805cdd600f5c75.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

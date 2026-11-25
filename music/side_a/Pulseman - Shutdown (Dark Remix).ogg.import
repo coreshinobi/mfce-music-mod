@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dq6q7ar1xl1sq"
+path="res://.godot/imported/Pulseman - Shutdown (Dark Remix).ogg-4732cbfe7fc183359e0fe45d8cdcbd1f.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Pulseman - Shutdown (Dark Remix).ogg"
+dest_files=["res://.godot/imported/Pulseman - Shutdown (Dark Remix).ogg-4732cbfe7fc183359e0fe45d8cdcbd1f.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=28.48
+bpm=0.0
+beat_count=0
+bar_beats=4

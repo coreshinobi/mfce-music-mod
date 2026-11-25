@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://dm76neoq0npnx"
+path="res://.godot/imported/Caesar - Nocturnal Tempest.xm-9839cdba424e580808123a147293ea5d.res"
+
+[deps]
+
+source_file="res://music/side_b/Caesar - Nocturnal Tempest.xm"
+dest_files=["res://.godot/imported/Caesar - Nocturnal Tempest.xm-9839cdba424e580808123a147293ea5d.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

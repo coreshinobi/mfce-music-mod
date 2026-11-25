@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cwlx1b7oq6hda"
+path="res://.godot/imported/Danganronpa - Beautiful Death.ogg-9c09cdf8fbf3e161e7d9158a497ef371.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Danganronpa - Beautiful Death.ogg"
+dest_files=["res://.godot/imported/Danganronpa - Beautiful Death.ogg-9c09cdf8fbf3e161e7d9158a497ef371.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=68.56
+bpm=0.0
+beat_count=0
+bar_beats=4

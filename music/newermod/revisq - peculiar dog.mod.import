@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://mtm4q73e8trv"
+path="res://.godot/imported/revisq - peculiar dog.mod-93e3d756bb8984b8e65d76fb4165f1a0.res"
+
+[deps]
+
+source_file="res://music/newermod/revisq - peculiar dog.mod"
+dest_files=["res://.godot/imported/revisq - peculiar dog.mod-93e3d756bb8984b8e65d76fb4165f1a0.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

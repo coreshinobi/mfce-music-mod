@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bbrxwlug00d4o"
+path="res://.godot/imported/dj mayhem - inesse.ogg-8778b9ce5f03f5a4471cb7308a17f3ba.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/dj mayhem - inesse.ogg"
+dest_files=["res://.godot/imported/dj mayhem - inesse.ogg-8778b9ce5f03f5a4471cb7308a17f3ba.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=179.78
+bpm=0.0
+beat_count=0
+bar_beats=4

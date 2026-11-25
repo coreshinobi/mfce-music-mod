@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bryelv3g1l6l3"
+path="res://.godot/imported/johan brodd - sharp's theme.ogg-a52e45f39df88a9629786f8e4987d99d.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/johan brodd - sharp's theme.ogg"
+dest_files=["res://.godot/imported/johan brodd - sharp's theme.ogg-a52e45f39df88a9629786f8e4987d99d.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

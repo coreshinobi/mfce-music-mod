@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://cku3sc2qqm63o"
+path="res://.godot/imported/Saxxonpike - Ode To Tracker.xm-a3b637e229aa705b26eca9b9be33ad04.res"
+
+[deps]
+
+source_file="res://music/newermod/Saxxonpike - Ode To Tracker.xm"
+dest_files=["res://.godot/imported/Saxxonpike - Ode To Tracker.xm-a3b637e229aa705b26eca9b9be33ad04.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

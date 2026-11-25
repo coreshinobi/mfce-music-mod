@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://bbq01b44ynk0w"
+path="res://.godot/imported/Davy C. - Tetraman Le Saveour.xm-645cfb610e79665dab2609bc52a43a0d.res"
+
+[deps]
+
+source_file="res://music/newermod/Davy C. - Tetraman Le Saveour.xm"
+dest_files=["res://.godot/imported/Davy C. - Tetraman Le Saveour.xm-645cfb610e79665dab2609bc52a43a0d.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

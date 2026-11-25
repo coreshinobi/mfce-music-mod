@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://dsbo3s5e2sxdn"
+path="res://.godot/imported/toal nkor - forest dream.mod-d280d6df26ea98006dbee40c3e1deea6.res"
+
+[deps]
+
+source_file="res://music/newermod/toal nkor - forest dream.mod"
+dest_files=["res://.godot/imported/toal nkor - forest dream.mod-d280d6df26ea98006dbee40c3e1deea6.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

@@ -20,7 +20,7 @@ func _physics_process(delta: float) -> void:
 		var row: int = playback.get_current_row()
 		if row == old_row: return
 		old_row = row
-		if row % 8 == 0:
+		if row % 2 == 0:
 			_syncevent()
 
 func _syncevent():

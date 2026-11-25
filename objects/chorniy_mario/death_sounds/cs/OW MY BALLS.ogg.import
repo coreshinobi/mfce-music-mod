@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c1vdx2pbuh62d"
+path="res://.godot/imported/OW MY BALLS.ogg-dab64ec650c49e099c6b70df29335456.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/OW MY BALLS.ogg"
+dest_files=["res://.godot/imported/OW MY BALLS.ogg-dab64ec650c49e099c6b70df29335456.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cqna434268pff"
+path="res://.godot/imported/callate la boca.ogg-9675de531ccafa141f03dddc6e90f20b.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/callate la boca.ogg"
+dest_files=["res://.godot/imported/callate la boca.ogg-9675de531ccafa141f03dddc6e90f20b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

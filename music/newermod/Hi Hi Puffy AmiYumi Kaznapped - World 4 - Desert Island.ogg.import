@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bleg6f7dfv8ph"
+path="res://.godot/imported/Hi Hi Puffy AmiYumi Kaznapped - World 4 - Desert Island.ogg-b4e50a87af502ae9eacf8ade27a2989a.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Hi Hi Puffy AmiYumi Kaznapped - World 4 - Desert Island.ogg"
+dest_files=["res://.godot/imported/Hi Hi Puffy AmiYumi Kaznapped - World 4 - Desert Island.ogg-b4e50a87af502ae9eacf8ade27a2989a.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.92
+bpm=0.0
+beat_count=0
+bar_beats=4

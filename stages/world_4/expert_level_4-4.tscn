@@ -4,15 +4,16 @@
 [ext_resource type="PackedScene" uid="uid://b8kgbn8f7lvf0" path="res://engine/objects/items/coin/coin.tscn" id="2_4ursp"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="2_bv08p"]
 [ext_resource type="PackedScene" uid="uid://cvigdw7nldify" path="res://objects/antiafk_expert_mode/antiafk_expert_mode.tscn" id="2_oatgc"]
-[ext_resource type="AudioStream" uid="uid://bexk1qd4psene" path="res://engine/objects/bosses/bowser/music/music_bowser_battle.mod" id="3_npbi2"]
+[ext_resource type="AudioStream" uid="uid://b4rre2yw1cvkc" path="res://music/newermod/quasian - damask rose.it" id="3_ddthl"]
 [ext_resource type="Script" uid="uid://chvjy6okoognf" path="res://engine/objects/powerups/instance_powerup.gd" id="3_rxp6c"]
 [ext_resource type="PackedScene" uid="uid://oe7i3cief0g" path="res://engine/objects/enemies/_dead/enemy_killed.tscn" id="4_4k0vp"]
 [ext_resource type="PackedScene" uid="uid://d3x5itop6w8qu" path="res://engine/objects/powerups/poisonous_mushroom/poisonous_mushroom.tscn" id="4_4sf5c"]
-[ext_resource type="AudioStream" uid="uid://bd7r5d5eb275q" path="res://music/smw-haunted-house.ogg" id="4_ddthl"]
+[ext_resource type="AudioStream" uid="uid://dtvyxwaix73fj" path="res://music/newermod/Vision Crew - Ghosts and Ghouxls.ogg" id="4_bv08p"]
 [ext_resource type="Script" uid="uid://du32vchaulqj6" path="res://engine/objects/enemies/_dead/prefabs/do_killed.gd" id="5_1jxfc"]
 [ext_resource type="PackedScene" uid="uid://c4enqp3bwybyh" path="res://engine/objects/platform/castle_platforms/8-3_platform_path.tscn" id="6_1hcpg"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="6_2q3wu"]
 [ext_resource type="Script" uid="uid://bm81fg3h4j8sj" path="res://engine/scripts/resources/instance_node2d/instance_node2d.gd" id="6_j2xeh"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="6_npbi2"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="7_nsy56"]
 [ext_resource type="Script" uid="uid://hudtgs00uuv3" path="res://stages/extra/click_bonus_game/scripts/star_path_follow.gd" id="7_pqygm"]
 [ext_resource type="PackedScene" uid="uid://cy7wyb2fljl2l" path="res://stages/world_1/objects/1-4_castle_brick_small.tscn" id="8_18r5d"]
@@ -33,7 +34,7 @@
 [ext_resource type="PackedScene" uid="uid://b71msw28e37a" path="res://engine/objects/powerups/red_mushroom/red_mushroom.tscn" id="18_edprj"]
 [ext_resource type="PackedScene" uid="uid://bsdcxwngf5hru" path="res://engine/objects/powerups/fire_flower/fire_flower.tscn" id="19_nfs23"]
 [ext_resource type="PackedScene" uid="uid://diivlwjl0y1i7" path="res://engine/objects/bosses/bowser/bowser_trigger.tscn" id="26_nsax6"]
-[ext_resource type="AudioStream" uid="uid://cnn040q2lodum" path="res://music/smrpg-bowser.ogg" id="27_xiu7k"]
+[ext_resource type="AudioStream" uid="uid://1hn5ya163xfh" path="res://music/newermod/The Impaler - Temple of Knowledge 8.xm" id="27_bv08p"]
 [ext_resource type="PackedScene" uid="uid://b8q8ngpgfgjl5" path="res://engine/objects/bosses/bowser/bowser.tscn" id="28_lu67p"]
 [ext_resource type="PackedScene" uid="uid://bq45lxt7bqoma" path="res://engine/objects/bosses/bowser/bowser_edge.tscn" id="29_3h3dk"]
 [ext_resource type="Script" uid="uid://0h3x5dwndovw" path="res://engine/scripts/nodes/effects/quality_visible.gd" id="30_q7vqg"]
@@ -50,24 +51,6 @@
 [ext_resource type="PackedScene" uid="uid://d13yixatuidg5" path="res://stages/world_1/objects/1-4_castle_brick_alt.tscn" id="46_8nkp3"]
 [ext_resource type="PackedScene" uid="uid://c7exym08nvs2x" path="res://stages/extra/expert_mode/objects/4_4_moving_blocks/animatable_single_block.tscn" id="48_npbi2"]
 [ext_resource type="PackedScene" uid="uid://yndj5otlk0nw" path="res://stages/extra/expert_mode/objects/4_4_moving_blocks/animatable_double_block.tscn" id="52_ddthl"]
-
-[sub_resource type="Resource" id="Resource_6najm"]
-resource_local_to_scene = true
-script = ExtResource("3_rxp6c")
-creation_nodepack = ExtResource("2_4ursp")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_bv08p"]
-resource_local_to_scene = true
-script = ExtResource("3_rxp6c")
-creation_nodepack = ExtResource("2_4ursp")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_npbi2"]
-resource_local_to_scene = true
-script = ExtResource("3_rxp6c")
-creation_nodepack = ExtResource("2_4ursp")
-trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_ddthl"]
 resource_local_to_scene = true
@@ -148,6 +131,24 @@ creation_nodepack = ExtResource("2_4ursp")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_f2gk2"]
+resource_local_to_scene = true
+script = ExtResource("3_rxp6c")
+creation_nodepack = ExtResource("2_4ursp")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_nsax6"]
+resource_local_to_scene = true
+script = ExtResource("3_rxp6c")
+creation_nodepack = ExtResource("2_4ursp")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_xiu7k"]
+resource_local_to_scene = true
+script = ExtResource("3_rxp6c")
+creation_nodepack = ExtResource("2_4ursp")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_lu67p"]
 resource_local_to_scene = true
 script = ExtResource("3_rxp6c")
 creation_nodepack = ExtResource("2_4ursp")
@@ -383,10 +384,14 @@ completion_center_on_player_after_transition = true
 
 [node name="MusicLoader" type="Node" parent="." unique_id=621568615]
 script = ExtResource("2_bv08p")
-boss_music_var_1 = ExtResource("3_npbi2")
-music = Array[Resource]([ExtResource("4_ddthl")])
+music_var_2 = Array[Resource]([ExtResource("3_ddthl")])
+music = Array[Resource]([ExtResource("4_bv08p")])
+volume_db = Array[float]([1.3])
 
 [node name="AntiafkExpertMode" parent="MusicLoader" unique_id=89706966 instance=ExtResource("2_oatgc")]
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("6_npbi2")]
+text = Array[String](["Vision Crew - Ghosts and Ghouxls"])
 
 [node name="Mario" parent="." unique_id=1118220128 instance=ExtResource("6_2q3wu")]
 position = Vector2(240, 176)
@@ -438,71 +443,71 @@ horizontal_alignment = 1
 
 [node name="QuestionBlock9" parent="." unique_id=1460596408 instance=ExtResource("13_ah3gk")]
 position = Vector2(752, 112)
-result = SubResource("Resource_6najm")
+result = SubResource("Resource_ddthl")
 
 [node name="QuestionBlock29" parent="." unique_id=929488821 instance=ExtResource("13_ah3gk")]
 position = Vector2(2192, 48)
-result = SubResource("Resource_bv08p")
+result = SubResource("Resource_2q3wu")
 
 [node name="QuestionBlock12" parent="." unique_id=996914189 instance=ExtResource("13_ah3gk")]
 position = Vector2(3024, 80)
-result = SubResource("Resource_npbi2")
+result = SubResource("Resource_nsy56")
 
 [node name="QuestionBlock13" parent="." unique_id=177244395 instance=ExtResource("13_ah3gk")]
 position = Vector2(3056, 80)
-result = SubResource("Resource_ddthl")
+result = SubResource("Resource_cpxco")
 
 [node name="QuestionBlock14" parent="." unique_id=975831981 instance=ExtResource("13_ah3gk")]
 position = Vector2(3088, 80)
-result = SubResource("Resource_2q3wu")
+result = SubResource("Resource_b3keo")
 
 [node name="QuestionBlock15" parent="." unique_id=2012235768 instance=ExtResource("13_ah3gk")]
 position = Vector2(3120, 80)
-result = SubResource("Resource_nsy56")
+result = SubResource("Resource_7pt64")
 
 [node name="QuestionBlock16" parent="." unique_id=1964926663 instance=ExtResource("13_ah3gk")]
 position = Vector2(3152, 80)
-result = SubResource("Resource_cpxco")
+result = SubResource("Resource_fiavm")
 
 [node name="QuestionBlock17" parent="." unique_id=2007247787 instance=ExtResource("13_ah3gk")]
 position = Vector2(3248, 80)
-result = SubResource("Resource_b3keo")
+result = SubResource("Resource_8wf5b")
 
 [node name="QuestionBlock18" parent="." unique_id=684414280 instance=ExtResource("13_ah3gk")]
 position = Vector2(3408, 144)
-result = SubResource("Resource_7pt64")
+result = SubResource("Resource_ah3gk")
 
 [node name="QuestionBlock19" parent="." unique_id=685401801 instance=ExtResource("13_ah3gk")]
 position = Vector2(3440, 144)
-result = SubResource("Resource_fiavm")
+result = SubResource("Resource_iwaqv")
 
 [node name="QuestionBlock20" parent="." unique_id=1697222586 instance=ExtResource("13_ah3gk")]
 position = Vector2(3472, 144)
-result = SubResource("Resource_8wf5b")
+result = SubResource("Resource_edprj")
 
 [node name="QuestionBlock21" parent="." unique_id=287109958 instance=ExtResource("13_ah3gk")]
 position = Vector2(3504, 144)
-result = SubResource("Resource_ah3gk")
+result = SubResource("Resource_nfs23")
 
 [node name="QuestionBlock24" parent="." unique_id=1767409714 instance=ExtResource("13_ah3gk")]
 position = Vector2(7408, 240)
-result = SubResource("Resource_iwaqv")
+result = SubResource("Resource_68dn5")
 
 [node name="QuestionBlock30" parent="." unique_id=1944930602 instance=ExtResource("13_ah3gk")]
 position = Vector2(7056, 272)
-result = SubResource("Resource_edprj")
+result = SubResource("Resource_f2gk2")
 
 [node name="QuestionBlock25" parent="." unique_id=1179966820 instance=ExtResource("13_ah3gk")]
 position = Vector2(7440, 240)
-result = SubResource("Resource_nfs23")
+result = SubResource("Resource_nsax6")
 
 [node name="QuestionBlock27" parent="." unique_id=1060297563 instance=ExtResource("13_ah3gk")]
 position = Vector2(5872, 80)
-result = SubResource("Resource_68dn5")
+result = SubResource("Resource_xiu7k")
 
 [node name="QuestionBlock28" parent="." unique_id=1536339185 instance=ExtResource("13_ah3gk")]
 position = Vector2(5904, 80)
-result = SubResource("Resource_f2gk2")
+result = SubResource("Resource_lu67p")
 
 [node name="QuestionBlock23" parent="." unique_id=1795483322 instance=ExtResource("13_ah3gk")]
 position = Vector2(4688, 144)
@@ -676,7 +681,8 @@ position = Vector2(8096, 224)
 curve = SubResource("Curve2D_s4opk")
 trigger_area = Rect2(0, 0, 32, 960)
 trigger_bowser = NodePath("../Bowser")
-boss_music = ExtResource("27_xiu7k")
+boss_music = ExtResource("27_bv08p")
+boss_music_volume = 1.0
 
 [node name="Bowser" parent="." unique_id=1090807781 instance=ExtResource("28_lu67p")]
 position = Vector2(8800, 256)

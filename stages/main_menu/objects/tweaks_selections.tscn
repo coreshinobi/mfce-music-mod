@@ -788,11 +788,11 @@ theme_override_styles/separator = SubResource("StyleBoxLine_4hroi")
 layout_mode = 2
 script = ExtResource("2_eijug")
 tweak_name = "bgm_as_in_version"
-tweak_description_text = "Select which version of Mario Forever the soundtrack should be based upon.
+tweak_description_text = "Select which mixtape do you want to listen.
 
-A \"Mixed\" soundtrack is a mix of these versions, which is generally based on the version period between 2.16 and 4.4, but with a few additions from 7.02.
+Main Mixtape is all mostly my picks with a few suggestions mixed in.
 
-The following levels are affected: 2-2, 2-3, 4-3, 6-2, 7-2, Hardcore 1-4, Human Laboratory (all levels), the Mario Minix \"Classic\" soundtrack type, all Bowser battles, and some custom levels from the community edition zone."
+SIDE A TO C arrange from other types of soundtracks that didn't make the main mixtape cut!"
 
 [node name="Label" type="Label" parent="Aesthetic/HBoxContainerSoundtrack" unique_id=1238771265]
 layout_mode = 2
@@ -824,7 +824,7 @@ theme_override_constants/shadow_offset_y = 3
 theme_override_constants/outline_size = 4
 theme_override_fonts/font = ExtResource("4_u65r8")
 theme_override_font_sizes/font_size = 22
-text = "mixed"
+text = "Main Mixtape"
 uppercase = true
 
 [node name="arrow" type="Label" parent="Aesthetic/HBoxContainerSoundtrack/HBoxContainer/Value" unique_id=1240180221]

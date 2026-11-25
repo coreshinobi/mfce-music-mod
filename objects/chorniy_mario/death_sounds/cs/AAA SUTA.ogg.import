@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://noyfeg0fqhas"
+path="res://.godot/imported/AAA SUTA.ogg-bd38c43a0bbcaba4160b1b1429a2637b.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/AAA SUTA.ogg"
+dest_files=["res://.godot/imported/AAA SUTA.ogg-bd38c43a0bbcaba4160b1b1429a2637b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

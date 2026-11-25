@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dsue8wfpkrn1l"
+path="res://.godot/imported/Toby Fox - Rouxls Kaard.ogg-87657ab83827300b1f1624de83f7d01a.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Toby Fox - Rouxls Kaard.ogg"
+dest_files=["res://.godot/imported/Toby Fox - Rouxls Kaard.ogg-87657ab83827300b1f1624de83f7d01a.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

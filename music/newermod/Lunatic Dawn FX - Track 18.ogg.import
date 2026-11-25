@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://brvnv62n1g221"
+path="res://.godot/imported/Lunatic Dawn FX - Track 18.ogg-abc9469c61e2d0c5c76a22a01499d63d.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Lunatic Dawn FX - Track 18.ogg"
+dest_files=["res://.godot/imported/Lunatic Dawn FX - Track 18.ogg-abc9469c61e2d0c5c76a22a01499d63d.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=6.99
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -6,8 +6,8 @@
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_bpf0y"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_cti5d"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="4_i0ch1"]
-[ext_resource type="AudioStream" uid="uid://ckoryl246ypn3" path="res://music/apoplexy.mod" id="4_pkb87"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="6_0i4xc"]
+[ext_resource type="AudioStream" uid="uid://c167brx55f3gj" path="res://music/newermod/emax - denied love.mod" id="6_4alpe"]
 [ext_resource type="Script" uid="uid://dc824j5folagw" path="res://engine/objects/players/player_camera_autoscroll.gd" id="7_3y7yb"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_4ffdu"]
 [ext_resource type="TileSet" uid="uid://c40wyx3trs5d2" path="res://tilesets/tanks/tank_tileset.tres" id="9_8wvps"]
@@ -39,6 +39,8 @@
 [ext_resource type="PackedScene" uid="uid://b8kgbn8f7lvf0" path="res://engine/objects/items/coin/coin.tscn" id="34_r2ckk"]
 [ext_resource type="PackedScene" uid="uid://dfm7d4qtja67b" path="res://engine/objects/core/finish_line/finish_line.tscn" id="35_ewn0k"]
 [ext_resource type="PackedScene" uid="uid://oja3uy1y4hpl" path="res://engine/objects/enemies/piranha_plants/piranha_pink.tscn" id="36_618h6"]
+[ext_resource type="Script" uid="uid://clm1anrf3fw3j" path="res://engine/scripts/nodes/general_movement/circle_movement.gd" id="40_4alpe"]
+[ext_resource type="FontVariation" uid="uid://4h0cbbutybo2" path="res://engine/fonts/font_variations/mister_earl_variation.tres" id="40_bpghm"]
 
 [sub_resource type="Curve2D" id="Curve2D_8qimj"]
 _data = {
@@ -64,7 +66,7 @@ script = ExtResource("20_5dmca")
 creation_nodepack = ExtResource("22_avhyk")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_bpghm"]
+[sub_resource type="Resource" id="Resource_pfqni"]
 resource_local_to_scene = true
 script = ExtResource("20_5dmca")
 creation_nodepack = ExtResource("34_r2ckk")
@@ -106,7 +108,7 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("4_pkb87")])
+music = Array[Resource]([ExtResource("6_4alpe")])
 
 [node name="Mario" parent="." unique_id=1262910017 instance=ExtResource("4_cti5d")]
 position = Vector2(80, 400)
@@ -232,7 +234,7 @@ result = SubResource("Resource_d01xr")
 
 [node name="QuestionBlock20" parent="." unique_id=1273342436 instance=ExtResource("16_hr2j7")]
 position = Vector2(5840, 240)
-result = SubResource("Resource_bpghm")
+result = SubResource("Resource_pfqni")
 initially_visible_and_solid = false
 
 [node name="BulletLauncher" parent="." unique_id=1248148372 instance=ExtResource("13_8rhq7")]
@@ -538,3 +540,229 @@ script = ExtResource("17_1kvbu")
 
 [node name="PiranhaPink" parent="." unique_id=76325285 instance=ExtResource("36_618h6")]
 position = Vector2(6464, 256)
+
+[node name="DENIED LOVE" type="Node2D" parent="." unique_id=781919082]
+script = ExtResource("40_4alpe")
+amplitude = Vector2(0, 23)
+frequency = 1.8
+
+[node name="Label11" type="Label" parent="DENIED LOVE" unique_id=1254292551]
+modulate = Color(1, 1, 1, 0.21176471)
+offset_left = 1373.0
+offset_top = 234.0
+offset_right = 1533.0
+offset_bottom = 288.0
+theme_override_colors/font_outline_color = Color(0, 0, 0.470588, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("40_bpghm")
+theme_override_font_sizes/font_size = 28
+text = "LOST... IN THE PATH?"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="DENIED LOVE" unique_id=606267819]
+modulate = Color(1, 1, 1, 0.21176471)
+offset_left = 944.0
+offset_top = 279.0
+offset_right = 1063.0
+offset_bottom = 333.0
+theme_override_colors/font_outline_color = Color(0, 0, 0.470588, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("40_bpghm")
+theme_override_font_sizes/font_size = 28
+text = "ARE YOU LOST?"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label3" type="Label" parent="DENIED LOVE" unique_id=349195911]
+modulate = Color(1, 1, 1, 0.21176471)
+offset_left = 2046.0
+offset_top = 153.0
+offset_right = 2459.0
+offset_bottom = 207.0
+theme_override_colors/font_outline_color = Color(0, 0, 0.470588, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("40_bpghm")
+theme_override_font_sizes/font_size = 28
+text = "OR PERHAPS, YOU'RE GOING IN THE RIGHT DIRECTION"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label4" type="Label" parent="DENIED LOVE" unique_id=319583866]
+modulate = Color(1, 1, 1, 0.21176471)
+offset_left = 2042.0
+offset_top = 169.0
+offset_right = 2455.0
+offset_bottom = 223.0
+theme_override_colors/font_outline_color = Color(0, 0, 0.470588, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("40_bpghm")
+theme_override_font_sizes/font_size = 28
+text = "AND JUST DIDN'T KNOW IT?"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label5" type="Label" parent="DENIED LOVE" unique_id=1826637638]
+modulate = Color(1, 1, 1, 0.21176471)
+offset_left = 2779.0
+offset_top = 176.0
+offset_right = 3192.0
+offset_bottom = 230.0
+theme_override_colors/font_outline_color = Color(0, 0, 0.470588, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("40_bpghm")
+theme_override_font_sizes/font_size = 28
+text = "I hope you know well."
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label6" type="Label" parent="DENIED LOVE" unique_id=147763004]
+modulate = Color(1, 1, 1, 0.21176471)
+offset_left = 3480.0
+offset_top = 150.0
+offset_right = 3893.0
+offset_bottom = 204.0
+theme_override_colors/font_outline_color = Color(0, 0, 0.470588, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("40_bpghm")
+theme_override_font_sizes/font_size = 28
+text = "YOUR CHOICES IN THIS WORLD"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label7" type="Label" parent="DENIED LOVE" unique_id=1970648042]
+modulate = Color(1, 1, 1, 0.21176471)
+offset_left = 3480.0
+offset_top = 167.0
+offset_right = 3893.0
+offset_bottom = 221.0
+theme_override_colors/font_outline_color = Color(0, 0, 0.470588, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("40_bpghm")
+theme_override_font_sizes/font_size = 28
+text = "WILL DETERMINE THE FATE OF YOUR KINGDOM"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label8" type="Label" parent="DENIED LOVE" unique_id=1720997055]
+modulate = Color(1, 1, 1, 0.21176471)
+offset_left = 4434.0
+offset_top = 239.0
+offset_right = 4847.0
+offset_bottom = 293.0
+theme_override_colors/font_outline_color = Color(0, 0, 0.470588, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("40_bpghm")
+theme_override_font_sizes/font_size = 28
+text = "There is no right or wrong"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label9" type="Label" parent="DENIED LOVE" unique_id=140133669]
+modulate = Color(1, 1, 1, 0.21176471)
+offset_left = 5003.0
+offset_top = 253.0
+offset_right = 5416.0
+offset_bottom = 307.0
+theme_override_colors/font_outline_color = Color(0, 0, 0.470588, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("40_bpghm")
+theme_override_font_sizes/font_size = 28
+text = "it's only a matter of time"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label10" type="Label" parent="DENIED LOVE" unique_id=119255341]
+modulate = Color(1, 1, 1, 0.21176471)
+offset_left = 6050.0
+offset_top = 262.0
+offset_right = 6463.0
+offset_bottom = 316.0
+theme_override_colors/font_outline_color = Color(0, 0, 0.470588, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("40_bpghm")
+theme_override_font_sizes/font_size = 28
+text = "It will only come down"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label12" type="Label" parent="DENIED LOVE" unique_id=22996096]
+modulate = Color(1, 1, 1, 0.21176471)
+offset_left = 6049.0
+offset_top = 277.0
+offset_right = 6462.0
+offset_bottom = 331.0
+theme_override_colors/font_outline_color = Color(0, 0, 0.470588, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("40_bpghm")
+theme_override_font_sizes/font_size = 28
+text = "if you let your inactivities win"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label13" type="Label" parent="DENIED LOVE" unique_id=42319951]
+modulate = Color(1, 1, 1, 0.21176471)
+offset_left = 7153.0
+offset_top = 145.0
+offset_right = 7566.0
+offset_bottom = 199.0
+theme_override_colors/font_outline_color = Color(0, 0, 0.470588, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("40_bpghm")
+theme_override_font_sizes/font_size = 28
+text = "one day you will understand"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label14" type="Label" parent="DENIED LOVE" unique_id=1222800264]
+modulate = Color(1, 1, 1, 0.21176471)
+offset_left = 7152.0
+offset_top = 159.0
+offset_right = 7565.0
+offset_bottom = 213.0
+theme_override_colors/font_outline_color = Color(0, 0, 0.470588, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("40_bpghm")
+theme_override_font_sizes/font_size = 41
+text = "AND REMEMBER MY WORDS"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true

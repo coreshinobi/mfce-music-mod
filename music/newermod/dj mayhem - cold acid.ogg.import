@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://db3fhslyhwmxw"
+path="res://.godot/imported/dj mayhem - cold acid.ogg-a5ad0fe43be1577f765c9db2cd2628a4.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/dj mayhem - cold acid.ogg"
+dest_files=["res://.godot/imported/dj mayhem - cold acid.ogg-a5ad0fe43be1577f765c9db2cd2628a4.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

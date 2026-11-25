@@ -5,9 +5,11 @@
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="3_h5p1e"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="4_570sk"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="5_ngfaa"]
-[ext_resource type="AudioStream" uid="uid://bo1yufj7ga7ha" path="res://music/interference.mod" id="6_eqwuc"]
+[ext_resource type="AudioStream" uid="uid://br5bcrjcrr6s1" path="res://music/newermod/revisq - bombastic.mod" id="6_jkvcm"]
+[ext_resource type="AudioStream" uid="uid://db4t6ycfgg1yi" path="res://music/side_a/bartesek - naked carrion.mod" id="6_wrs7u"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="7_5jobj"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="7_h5p1e"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="7_wrs7u"]
 [ext_resource type="Script" uid="uid://7byhkvlnfxa" path="res://components/secrets_manager/unlock_multiple.gd" id="8_570sk"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="8_bg2x0"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="9_eikbu"]
@@ -74,33 +76,33 @@ shader_parameter/hue = -0.455
 shader_parameter/saturation = 0.0
 shader_parameter/value = 0.0
 
-[sub_resource type="Resource" id="Resource_fpnjk"]
-resource_local_to_scene = true
-script = ExtResource("23_jej8e")
-creation_nodepack = ExtResource("22_agdhc")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_jkvcm"]
-resource_local_to_scene = true
-script = ExtResource("23_jej8e")
-creation_nodepack = ExtResource("22_agdhc")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_wrs7u"]
-resource_local_to_scene = true
-script = ExtResource("23_jej8e")
-creation_fallback_node = ExtResource("25_e6yw4")
-creation_nodepack = ExtResource("26_q26ql")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_iwreq"]
 resource_local_to_scene = true
 script = ExtResource("23_jej8e")
+creation_nodepack = ExtResource("22_agdhc")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_35aq2"]
+resource_local_to_scene = true
+script = ExtResource("23_jej8e")
+creation_nodepack = ExtResource("22_agdhc")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_ayruq"]
+resource_local_to_scene = true
+script = ExtResource("23_jej8e")
 creation_fallback_node = ExtResource("25_e6yw4")
 creation_nodepack = ExtResource("26_q26ql")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_35aq2"]
+[sub_resource type="Resource" id="Resource_g1ajn"]
+resource_local_to_scene = true
+script = ExtResource("23_jej8e")
+creation_fallback_node = ExtResource("25_e6yw4")
+creation_nodepack = ExtResource("26_q26ql")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_qi60p"]
 resource_local_to_scene = true
 script = ExtResource("23_jej8e")
 creation_nodepack = ExtResource("28_o1gt3")
@@ -109,7 +111,7 @@ trans_inheritances = 7
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6ct1h"]
 size = Vector2(16, 512)
 
-[sub_resource type="Resource" id="Resource_ayruq"]
+[sub_resource type="Resource" id="Resource_hgyqh"]
 resource_local_to_scene = true
 script = ExtResource("23_jej8e")
 creation_fallback_node = ExtResource("25_e6yw4")
@@ -128,7 +130,7 @@ _data = {
 }
 point_count = 2
 
-[sub_resource type="Resource" id="Resource_g1ajn"]
+[sub_resource type="Resource" id="Resource_rcdsa"]
 resource_local_to_scene = true
 script = ExtResource("23_jej8e")
 creation_nodepack = ExtResource("47_hkk6c")
@@ -144,7 +146,7 @@ jump_to_scene = "uid://3n51dk5tlv3t"
 script = ExtResource("4_570sk")
 tweaked_completion_music = ExtResource("5_ngfaa")
 ignore_fade_in_tweak = false
-music_var_1 = Array[Resource]([])
+music_var_1 = Array[Resource]([ExtResource("6_wrs7u")])
 music_var_2 = Array[Resource]([])
 music_var_3 = Array[Resource]([])
 var_1_volume_db = Array[float]([0.0])
@@ -158,7 +160,10 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("6_eqwuc")])
+music = Array[Resource]([ExtResource("6_jkvcm")])
+volume_db = Array[float]([2.2])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("7_wrs7u")]
 
 [node name="SecretUnlocker" parent="." unique_id=1169717390 instance=ExtResource("7_h5p1e")]
 secrets = Array[String](["world u secret levels finished", "world u secret levels in kevin mode"])
@@ -393,24 +398,24 @@ position = Vector2(528, 432)
 
 [node name="QuestionBlockPoisonous" parent="." unique_id=1072439000 instance=ExtResource("21_q5w6d")]
 position = Vector2(336, 304)
-result = SubResource("Resource_fpnjk")
+result = SubResource("Resource_iwreq")
 
 [node name="QuestionBlockPoisonous2" parent="." unique_id=1764459903 instance=ExtResource("21_q5w6d")]
 position = Vector2(560, 432)
-result = SubResource("Resource_jkvcm")
+result = SubResource("Resource_35aq2")
 
 [node name="QuestionBlockBeetroot" parent="." unique_id=2015857868 instance=ExtResource("24_ni7l5")]
 position = Vector2(3728, 272)
-result = SubResource("Resource_wrs7u")
+result = SubResource("Resource_ayruq")
 
 [node name="QuestionBlockBeetroot2" parent="." unique_id=1247010280 instance=ExtResource("24_ni7l5")]
 position = Vector2(3728, 112)
-result = SubResource("Resource_iwreq")
+result = SubResource("Resource_g1ajn")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock" parent="." unique_id=974967160 instance=ExtResource("27_cedxm")]
 position = Vector2(656, 304)
-result = SubResource("Resource_35aq2")
+result = SubResource("Resource_qi60p")
 
 [node name="PiranhaGreen" parent="." unique_id=1230699636 instance=ExtResource("29_cmxu1")]
 position = Vector2(384, 160)
@@ -657,7 +662,7 @@ frequency = -50.0
 
 [node name="QuestionBlockGreenLui2" parent="." unique_id=1045225579 instance=ExtResource("40_81bn5")]
 position = Vector2(624, 304)
-result = SubResource("Resource_ayruq")
+result = SubResource("Resource_hgyqh")
 
 [node name="PipeIn" parent="." unique_id=567714050 instance=ExtResource("42_1avxm")]
 position = Vector2(6032, 80)
@@ -708,7 +713,7 @@ collision = false
 
 [node name="QuestionBlockLife" parent="." unique_id=38060426 instance=ExtResource("46_5v5f6")]
 position = Vector2(2096, 144)
-result = SubResource("Resource_g1ajn")
+result = SubResource("Resource_rcdsa")
 
 [node name="HammerBroJumpMarker" parent="." unique_id=1352118717 instance=ExtResource("48_xj3pr")]
 position = Vector2(3776, 224)
@@ -783,5 +788,5 @@ texture = ExtResource("57_wrs7u")
 
 [connection signal="level_completed" from="." to="SecretUnlocker/UnlockMultiple" method="perform_checks_and_unlock"]
 [connection signal="collided_wall" from="Layer3/SpinyRed" to="Layer3/SpinyRed" method="turn_x"]
-[connection signal="collided_wall" from="Layer3/@CharacterBody2D@255290" to="Layer3/@CharacterBody2D@255290" method="turn_x"]
-[connection signal="collided_wall" from="Layer3/@CharacterBody2D@255339" to="Layer3/@CharacterBody2D@255339" method="turn_x"]
+[connection signal="collided_wall" from="Layer3/@CharacterBody2D@304455" to="Layer3/@CharacterBody2D@304455" method="turn_x"]
+[connection signal="collided_wall" from="Layer3/@CharacterBody2D@304504" to="Layer3/@CharacterBody2D@304504" method="turn_x"]

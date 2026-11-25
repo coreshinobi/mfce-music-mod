@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://bhidfadfavhqe"
+path="res://.godot/imported/Sonic DOS Homebrew - Eggman (Extended Edit).mod-91d993610f832feb5d867c397fc1ed66.res"
+
+[deps]
+
+source_file="res://music/newermod/Sonic DOS Homebrew - Eggman (Extended Edit).mod"
+dest_files=["res://.godot/imported/Sonic DOS Homebrew - Eggman (Extended Edit).mod-91d993610f832feb5d867c397fc1ed66.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

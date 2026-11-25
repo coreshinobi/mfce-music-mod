@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://b5om41hp2paed"
+path="res://.godot/imported/Slaze - Virtual Journey.mod-2370884d71df9da176db82856b0b54d3.res"
+
+[deps]
+
+source_file="res://music/newermod/Slaze - Virtual Journey.mod"
+dest_files=["res://.godot/imported/Slaze - Virtual Journey.mod-2370884d71df9da176db82856b0b54d3.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

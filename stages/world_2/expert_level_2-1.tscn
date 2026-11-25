@@ -3,18 +3,19 @@
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_h5g0p"]
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_dnbt1"]
 [ext_resource type="PackedScene" uid="uid://cvigdw7nldify" path="res://objects/antiafk_expert_mode/antiafk_expert_mode.tscn" id="2_xfwtl"]
-[ext_resource type="AudioStream" uid="uid://no8rqi6mwk8c" path="res://music/smw-overworld.ogg" id="2_ymhnp"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_20gr1"]
-[ext_resource type="AudioStream" uid="uid://64jswpbcm2pj" path="res://music/extra/expert_mode/underwater.mod" id="3_h00ah"]
 [ext_resource type="PackedScene" uid="uid://b8kgbn8f7lvf0" path="res://engine/objects/items/coin/coin.tscn" id="3_iicyx"]
 [ext_resource type="TileSet" uid="uid://dtvs1rult8kbe" path="res://tilesets/overworld_green/overworld_green.tres" id="3_wqomn"]
 [ext_resource type="Script" uid="uid://chvjy6okoognf" path="res://engine/objects/powerups/instance_powerup.gd" id="4_3x62e"]
+[ext_resource type="AudioStream" uid="uid://cgu6t4jn0p1tg" path="res://music/newermod/Phoenix Wright Ace Attorney - Tricks and Deductions.OGG" id="4_dnbt1"]
 [ext_resource type="PackedScene" uid="uid://b71msw28e37a" path="res://engine/objects/powerups/red_mushroom/red_mushroom.tscn" id="5_0plmf"]
+[ext_resource type="AudioStream" uid="uid://5l57amya4qhu" path="res://music/newermod/Tuomo Saloranta - The Glory of God.xm" id="5_20gr1"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="5_ksv65"]
 [ext_resource type="PackedScene" uid="uid://2yepdgrhpmj3" path="res://engine/objects/bumping_blocks/brick/brick.tscn" id="5_paw5n"]
 [ext_resource type="Script" uid="uid://cnfd33smv2dqc" path="res://stages/world_2/scripts/subspace_node.gd" id="6_h00ah"]
 [ext_resource type="PackedScene" uid="uid://bsdcxwngf5hru" path="res://engine/objects/powerups/fire_flower/fire_flower.tscn" id="6_xi3v7"]
 [ext_resource type="PackedScene" uid="uid://8a7nemgi0b6q" path="res://engine/objects/powerups/beetroot/beetroot.tscn" id="7_2nceu"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="7_20gr1"]
 [ext_resource type="PackedScene" uid="uid://da16joa30w76a" path="res://engine/objects/enemies/piranha_plants/piranha_green.tscn" id="7_yei60"]
 [ext_resource type="PackedScene" uid="uid://o3k018cbex8g" path="res://engine/objects/powerups/green_lui/green_lui.tscn" id="8_jk0ik"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="8_ygf80"]
@@ -87,20 +88,6 @@ colors = PackedColorArray(0.0525, 0.105, 0.21, 1, 0.12549, 0.25098, 0.501961, 1,
 gradient = SubResource("Gradient_ymhnp")
 width = 480
 
-[sub_resource type="Resource" id="Resource_dnbt1"]
-resource_local_to_scene = true
-script = ExtResource("4_3x62e")
-creation_fallback_node = ExtResource("5_0plmf")
-creation_nodepack = ExtResource("6_xi3v7")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_20gr1"]
-resource_local_to_scene = true
-script = ExtResource("4_3x62e")
-creation_fallback_node = ExtResource("5_0plmf")
-creation_nodepack = ExtResource("6_xi3v7")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_ygf80"]
 resource_local_to_scene = true
 script = ExtResource("4_3x62e")
@@ -140,51 +127,53 @@ trans_inheritances = 7
 resource_local_to_scene = true
 script = ExtResource("4_3x62e")
 creation_fallback_node = ExtResource("5_0plmf")
-creation_nodepack = ExtResource("8_jk0ik")
+creation_nodepack = ExtResource("6_xi3v7")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_fabjo"]
 resource_local_to_scene = true
 script = ExtResource("4_3x62e")
 creation_fallback_node = ExtResource("5_0plmf")
-creation_nodepack = ExtResource("14_ksv65")
+creation_nodepack = ExtResource("6_xi3v7")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_507cj"]
 resource_local_to_scene = true
 script = ExtResource("4_3x62e")
-creation_nodepack = ExtResource("3_iicyx")
+creation_fallback_node = ExtResource("5_0plmf")
+creation_nodepack = ExtResource("8_jk0ik")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_2r6ta"]
 resource_local_to_scene = true
 script = ExtResource("4_3x62e")
-creation_nodepack = ExtResource("18_07njh")
+creation_fallback_node = ExtResource("5_0plmf")
+creation_nodepack = ExtResource("14_ksv65")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_65uao"]
 resource_local_to_scene = true
 script = ExtResource("4_3x62e")
-creation_nodepack = ExtResource("10_w3x7l")
+creation_nodepack = ExtResource("3_iicyx")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_jjeis"]
 resource_local_to_scene = true
 script = ExtResource("4_3x62e")
-creation_fallback_node = ExtResource("5_0plmf")
-creation_nodepack = ExtResource("7_2nceu")
+creation_nodepack = ExtResource("18_07njh")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_rgiw1"]
 resource_local_to_scene = true
 script = ExtResource("4_3x62e")
-creation_nodepack = ExtResource("10_o6w2q")
+creation_nodepack = ExtResource("10_w3x7l")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_gdmsw"]
 resource_local_to_scene = true
 script = ExtResource("4_3x62e")
-creation_nodepack = ExtResource("10_o6w2q")
+creation_fallback_node = ExtResource("5_0plmf")
+creation_nodepack = ExtResource("7_2nceu")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_vheai"]
@@ -220,31 +209,43 @@ trans_inheritances = 7
 [sub_resource type="Resource" id="Resource_5vp0i"]
 resource_local_to_scene = true
 script = ExtResource("4_3x62e")
-creation_fallback_node = ExtResource("5_0plmf")
-creation_nodepack = ExtResource("6_xi3v7")
+creation_nodepack = ExtResource("10_o6w2q")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_g2cfh"]
 resource_local_to_scene = true
 script = ExtResource("4_3x62e")
-creation_nodepack = ExtResource("10_w3x7l")
+creation_nodepack = ExtResource("10_o6w2q")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_12tgg"]
 resource_local_to_scene = true
 script = ExtResource("4_3x62e")
 creation_fallback_node = ExtResource("5_0plmf")
-creation_nodepack = ExtResource("8_jk0ik")
+creation_nodepack = ExtResource("6_xi3v7")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_k7gky"]
+resource_local_to_scene = true
+script = ExtResource("4_3x62e")
+creation_nodepack = ExtResource("10_w3x7l")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_ypm8q"]
+resource_local_to_scene = true
+script = ExtResource("4_3x62e")
+creation_fallback_node = ExtResource("5_0plmf")
+creation_nodepack = ExtResource("8_jk0ik")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_bq714"]
 resource_local_to_scene = true
 script = ExtResource("4_3x62e")
 creation_fallback_node = ExtResource("5_0plmf")
 creation_nodepack = ExtResource("6_xi3v7")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_ypm8q"]
+[sub_resource type="Resource" id="Resource_3rmlo"]
 resource_local_to_scene = true
 script = ExtResource("4_3x62e")
 creation_fallback_node = ExtResource("5_0plmf")
@@ -255,45 +256,45 @@ trans_inheritances = 7
 script = ExtResource("4_3x62e")
 creation_nodepack = ExtResource("3_iicyx")
 
-[sub_resource type="Resource" id="Resource_bq714"]
-resource_local_to_scene = true
-script = ExtResource("4_3x62e")
-creation_nodepack = ExtResource("10_o6w2q")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_3rmlo"]
-resource_local_to_scene = true
-script = ExtResource("4_3x62e")
-creation_nodepack = ExtResource("10_o6w2q")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_43gyy"]
 resource_local_to_scene = true
 script = ExtResource("4_3x62e")
-creation_nodepack = ExtResource("18_07njh")
+creation_nodepack = ExtResource("10_o6w2q")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_lb3ce"]
 resource_local_to_scene = true
 script = ExtResource("4_3x62e")
-creation_nodepack = ExtResource("3_iicyx")
+creation_nodepack = ExtResource("10_o6w2q")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_5ri8c"]
 resource_local_to_scene = true
 script = ExtResource("4_3x62e")
-creation_fallback_node = ExtResource("5_0plmf")
-creation_nodepack = ExtResource("6_xi3v7")
+creation_nodepack = ExtResource("18_07njh")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_sfyef"]
+resource_local_to_scene = true
+script = ExtResource("4_3x62e")
+creation_nodepack = ExtResource("3_iicyx")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_nypyg"]
 resource_local_to_scene = true
 script = ExtResource("4_3x62e")
 creation_fallback_node = ExtResource("5_0plmf")
 creation_nodepack = ExtResource("6_xi3v7")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_nypyg"]
+[sub_resource type="Resource" id="Resource_j7p46"]
+resource_local_to_scene = true
+script = ExtResource("4_3x62e")
+creation_fallback_node = ExtResource("5_0plmf")
+creation_nodepack = ExtResource("6_xi3v7")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_ocyeh"]
 resource_local_to_scene = true
 script = ExtResource("4_3x62e")
 creation_nodepack = ExtResource("10_w3x7l")
@@ -310,11 +311,14 @@ jump_to_scene = "res://stages/world_2/expert_map_2.tscn"
 
 [node name="MusicLoader" type="Node" parent="." unique_id=772467187]
 script = ExtResource("3_20gr1")
-music = Array[Resource]([ExtResource("2_ymhnp"), ExtResource("3_h00ah")])
-volume_db = Array[float]([4.0, -59.0])
+music = Array[Resource]([ExtResource("4_dnbt1"), ExtResource("5_20gr1")])
+volume_db = Array[float]([1.2, -59.0])
 start_from_sec = Array[float]([0.0, 0.0])
 
 [node name="AntiafkExpertMode" parent="MusicLoader" unique_id=1077505937 instance=ExtResource("2_xfwtl")]
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("7_20gr1")]
+text = Array[String](["Phoenix Wright: Ace Attorney - Tricks and Deductions", "Tuomo Saloranta - The Glory of God"])
 
 [node name="SecretUnlocker" parent="." unique_id=1071989744 instance=ExtResource("5_ksv65")]
 secrets = Array[String](["bowser the devastator", "all secret rooms found"])
@@ -552,49 +556,49 @@ scale = Vector2(-1, 1)
 
 [node name="QuestionBlock2" parent="SubSpace" unique_id=1009793379 instance=ExtResource("21_f1235")]
 position = Vector2(6864, -912)
-result = SubResource("Resource_dnbt1")
+result = SubResource("Resource_ygf80")
 
 [node name="QuestionBlock3" parent="SubSpace" unique_id=1167707176 instance=ExtResource("21_f1235")]
 position = Vector2(6608, -784)
-result = SubResource("Resource_20gr1")
+result = SubResource("Resource_pi7jm")
 
 [node name="QuestionBlock4" parent="SubSpace" unique_id=303115401 instance=ExtResource("21_f1235")]
 position = Vector2(4848, -752)
-result = SubResource("Resource_ygf80")
+result = SubResource("Resource_jyxyh")
 
 [node name="QuestionBlock5" parent="SubSpace" unique_id=324840551 instance=ExtResource("21_f1235")]
 position = Vector2(4784, -752)
-result = SubResource("Resource_pi7jm")
+result = SubResource("Resource_iibqo")
 
 [node name="QuestionBlock6" parent="SubSpace" unique_id=174913037 instance=ExtResource("21_f1235")]
 position = Vector2(4720, -752)
-result = SubResource("Resource_jyxyh")
+result = SubResource("Resource_hqajk")
 
 [node name="QuestionBlock8" parent="SubSpace" unique_id=1457538595 instance=ExtResource("21_f1235")]
 position = Vector2(4432, -816)
-result = SubResource("Resource_iibqo")
+result = SubResource("Resource_ouc5e")
 
 [node name="QuestionBlock10" parent="SubSpace" unique_id=1953563282 instance=ExtResource("21_f1235")]
 position = Vector2(1744, -848)
-result = SubResource("Resource_hqajk")
+result = SubResource("Resource_fabjo")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock9" parent="SubSpace" unique_id=1884325173 instance=ExtResource("21_f1235")]
 position = Vector2(2032, -816)
-result = SubResource("Resource_ouc5e")
+result = SubResource("Resource_507cj")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock7" parent="SubSpace" unique_id=20534872 instance=ExtResource("21_f1235")]
 position = Vector2(4656, -752)
-result = SubResource("Resource_fabjo")
+result = SubResource("Resource_2r6ta")
 
 [node name="QuestionBlock12" parent="SubSpace" unique_id=1696717281 instance=ExtResource("21_f1235")]
 position = Vector2(592, -816)
-result = SubResource("Resource_507cj")
+result = SubResource("Resource_65uao")
 
 [node name="QuestionBlock13" parent="SubSpace" unique_id=1304809672 instance=ExtResource("21_f1235")]
 position = Vector2(688, -816)
-result = SubResource("Resource_2r6ta")
+result = SubResource("Resource_jjeis")
 
 [node name="PipeSnow17" type="Sprite2D" parent="SubSpace" unique_id=2057862442]
 z_index = -1
@@ -634,7 +638,7 @@ position = Vector2(2160, 304)
 position = Vector2(2128, 304)
 result_counter_value = 1.0
 max_items = 1
-result = SubResource("Resource_65uao")
+result = SubResource("Resource_rgiw1")
 
 [node name="Brick27" parent="." unique_id=1340340591 instance=ExtResource("5_paw5n")]
 position = Vector2(2224, 304)
@@ -642,7 +646,7 @@ position = Vector2(2224, 304)
 [node name="Brick28" parent="." unique_id=1799236493 instance=ExtResource("5_paw5n")]
 position = Vector2(2192, 304)
 max_items = 1
-result = SubResource("Resource_jjeis")
+result = SubResource("Resource_gdmsw")
 
 [node name="Brick39" parent="." unique_id=763154474 instance=ExtResource("5_paw5n")]
 position = Vector2(2256, 304)
@@ -668,7 +672,7 @@ position = Vector2(3344, 272)
 [node name="Brick4" parent="." unique_id=813551602 instance=ExtResource("5_paw5n")]
 position = Vector2(1488, 240)
 result_counter_value = 1.0
-result = SubResource("Resource_rgiw1")
+result = SubResource("Resource_vheai")
 
 [node name="Brick5" parent="." unique_id=1406771551 instance=ExtResource("5_paw5n")]
 position = Vector2(1424, 240)
@@ -677,13 +681,13 @@ position = Vector2(1424, 240)
 position = Vector2(4784, 208)
 result_counter_value = 1.0
 max_items = 1
-result = SubResource("Resource_gdmsw")
+result = SubResource("Resource_xfui5")
 
 [node name="Brick29" parent="." unique_id=1767862393 instance=ExtResource("5_paw5n")]
 position = Vector2(1584, 240)
 result_counter_value = 1.0
 max_items = 1
-result = SubResource("Resource_vheai")
+result = SubResource("Resource_5ilxl")
 
 [node name="Brick30" parent="." unique_id=956170158 instance=ExtResource("5_paw5n")]
 position = Vector2(1520, 240)
@@ -711,23 +715,23 @@ position = Vector2(1456, 112)
 
 [node name="QuestionBlock3" parent="." unique_id=1023207082 instance=ExtResource("19_p68ce")]
 position = Vector2(3184, 272)
-result = SubResource("Resource_xfui5")
+result = SubResource("Resource_3f525")
 
 [node name="QuestionBlock4" parent="." unique_id=1135115591 instance=ExtResource("19_p68ce")]
 position = Vector2(3312, 272)
-result = SubResource("Resource_5ilxl")
+result = SubResource("Resource_wrrat")
 
 [node name="QuestionBlock38" parent="." unique_id=1560173314 instance=ExtResource("19_p68ce")]
 position = Vector2(3600, 208)
-result = SubResource("Resource_3f525")
+result = SubResource("Resource_5vp0i")
 
 [node name="QuestionBlock37" parent="." unique_id=80185868 instance=ExtResource("19_p68ce")]
 position = Vector2(3248, 272)
-result = SubResource("Resource_wrrat")
+result = SubResource("Resource_g2cfh")
 
 [node name="QuestionBlockFireFlower" parent="." unique_id=1668327517 instance=ExtResource("39_xfui5")]
 position = Vector2(3376, 272)
-result = SubResource("Resource_5vp0i")
+result = SubResource("Resource_12tgg")
 
 [node name="Coin" parent="." unique_id=1120593689 instance=ExtResource("3_iicyx")]
 position = Vector2(2480, 240)
@@ -855,11 +859,11 @@ script = ExtResource("30_3mged")
 
 [node name="QuestionBlockBeetroot" parent="." unique_id=1412794191 instance=ExtResource("46_5vp0i")]
 position = Vector2(1392, 240)
-result = SubResource("Resource_g2cfh")
+result = SubResource("Resource_k7gky")
 
 [node name="QuestionBlockGreenLui" parent="." unique_id=2046138972 instance=ExtResource("47_g2cfh")]
 position = Vector2(6000, 208)
-result = SubResource("Resource_12tgg")
+result = SubResource("Resource_ypm8q")
 initially_visible_and_solid = false
 exists_once = true
 
@@ -1024,7 +1028,7 @@ modulate = Color(0.12549, 0.25098, 0.501961, 1)
 position = Vector2(6416, -784)
 debris_effect = ExtResource("18_nnbjf")
 max_items = 1
-result = SubResource("Resource_k7gky")
+result = SubResource("Resource_bq714")
 
 [node name="Brick19" parent="." unique_id=1393026407 instance=ExtResource("21_cvd8u")]
 modulate = Color(0.12549, 0.25098, 0.501961, 1)
@@ -1041,7 +1045,7 @@ modulate = Color(0.12549, 0.25098, 0.501961, 1)
 position = Vector2(6512, -784)
 debris_effect = ExtResource("18_nnbjf")
 max_items = 1
-result = SubResource("Resource_ypm8q")
+result = SubResource("Resource_3rmlo")
 
 [node name="Brick22" parent="." unique_id=1347323002 instance=ExtResource("21_cvd8u")]
 modulate = Color(0.12549, 0.25098, 0.501961, 1)
@@ -1062,13 +1066,13 @@ result = SubResource("Resource_v1n70")
 
 [node name="QuestionBlockPoisonous" parent="." unique_id=1613675942 instance=ExtResource("9_24t7v")]
 position = Vector2(6288, 176)
-result = SubResource("Resource_bq714")
+result = SubResource("Resource_43gyy")
 initially_visible_and_solid = false
 exists_once = true
 
 [node name="QuestionBlockPoisonous4" parent="." unique_id=140486225 instance=ExtResource("9_24t7v")]
 position = Vector2(1168, 112)
-result = SubResource("Resource_3rmlo")
+result = SubResource("Resource_lb3ce")
 
 [node name="SpinyRed" parent="." unique_id=549516620 instance=ExtResource("11_gkma6")]
 position = Vector2(624, 400)
@@ -1166,13 +1170,13 @@ texture = ExtResource("14_hffg2")
 
 [node name="QuestionBlockLife" parent="." unique_id=1676423304 instance=ExtResource("17_1fcx1")]
 position = Vector2(7344, 208)
-result = SubResource("Resource_43gyy")
+result = SubResource("Resource_5ri8c")
 initially_visible_and_solid = false
 exists_once = true
 
 [node name="QuestionBlock" parent="." unique_id=2017657736 instance=ExtResource("19_p68ce")]
 position = Vector2(7440, 208)
-result = SubResource("Resource_lb3ce")
+result = SubResource("Resource_sfyef")
 initially_visible_and_solid = false
 exists_once = true
 
@@ -1197,14 +1201,14 @@ modulate = Color(0.12549, 0.25098, 0.501961, 1)
 position = Vector2(5840, -720)
 debris_effect = ExtResource("18_nnbjf")
 max_items = 1
-result = SubResource("Resource_5ri8c")
+result = SubResource("Resource_nypyg")
 
 [node name="Brick46" parent="." unique_id=498773019 instance=ExtResource("21_cvd8u")]
 modulate = Color(0.12549, 0.25098, 0.501961, 1)
 position = Vector2(3248, -816)
 debris_effect = ExtResource("18_nnbjf")
 max_items = 1
-result = SubResource("Resource_sfyef")
+result = SubResource("Resource_j7p46")
 
 [node name="Brick43" parent="." unique_id=1527680348 instance=ExtResource("21_cvd8u")]
 modulate = Color(0.12549, 0.25098, 0.501961, 1)
@@ -1217,7 +1221,7 @@ modulate = Color(0.12549, 0.25098, 0.501961, 1)
 position = Vector2(5904, -720)
 debris_effect = ExtResource("18_nnbjf")
 max_items = 1
-result = SubResource("Resource_nypyg")
+result = SubResource("Resource_ocyeh")
 
 [node name="Brick45" parent="." unique_id=1229058665 instance=ExtResource("21_cvd8u")]
 modulate = Color(0.12549, 0.25098, 0.501961, 1)
@@ -1309,6 +1313,7 @@ texture = ExtResource("33_dnbt1")
 region_enabled = true
 region_rect = Rect2(0, 32, 64, 32)
 
+[connection signal="music_started" from="MusicLoader" to="MusicOverlay" method="play"]
 [connection signal="view_section_changed" from="CamArea4" to="CamArea4/Node" method="_on_cam_area_4_view_section_changed"]
 [connection signal="view_section_changed" from="CamArea4" to="SecretUnlocker3" method="progress_secret" binds= [0, false]]
 [connection signal="view_section_changed" from="CamArea3" to="CamArea4/Node" method="_on_cam_area_3_view_section_changed"]

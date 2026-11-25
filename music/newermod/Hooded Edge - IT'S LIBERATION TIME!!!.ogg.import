@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bgc0abrtbuur7"
+path="res://.godot/imported/Hooded Edge - IT'S LIBERATION TIME!!!.ogg-c37581ef594c7bf1861c5377a31b1d2c.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Hooded Edge - IT'S LIBERATION TIME!!!.ogg"
+dest_files=["res://.godot/imported/Hooded Edge - IT'S LIBERATION TIME!!!.ogg-c37581ef594c7bf1861c5377a31b1d2c.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=8.28
+bpm=0.0
+beat_count=0
+bar_beats=4

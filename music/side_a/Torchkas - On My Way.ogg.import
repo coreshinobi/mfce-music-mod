@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dsivg262c1ihh"
+path="res://.godot/imported/Torchkas - On My Way.ogg-2b853f1dd554cfbc9aaa5e23e449b066.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Torchkas - On My Way.ogg"
+dest_files=["res://.godot/imported/Torchkas - On My Way.ogg-2b853f1dd554cfbc9aaa5e23e449b066.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=2.881
+bpm=0.0
+beat_count=0
+bar_beats=4

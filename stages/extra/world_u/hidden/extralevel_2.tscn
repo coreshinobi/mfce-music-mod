@@ -6,12 +6,15 @@
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="4_bbwpv"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="5_maofm"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="5_smnd8"]
-[ext_resource type="AudioStream" uid="uid://bs2tujgc67d1r" path="res://music/smw2-flower-garden.ogg" id="6_bbwpv"]
+[ext_resource type="AudioStream" uid="uid://cf1i7ytxitgtf" path="res://music/side_b/dippy - a new start.it" id="6_5rpp6"]
+[ext_resource type="AudioStream" uid="uid://7gpqfm6f0d15" path="res://music/side_a/GODS - The City (Level 1).ogg" id="6_b8iiv"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="7_1jx4p"]
+[ext_resource type="AudioStream" uid="uid://b8i0x6pwpoal5" path="res://music/newermod/pete_h - the beatifull.it" id="7_o6ulo"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="8_33wpv"]
 [ext_resource type="Script" uid="uid://7byhkvlnfxa" path="res://components/secrets_manager/unlock_multiple.gd" id="8_ks07o"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="8_maofm"]
 [ext_resource type="PackedScene" uid="uid://b7tkooebfam48" path="res://engine/objects/bumping_blocks/question_block/templates/Fire Flower Question Block.tscn" id="8_mssfw"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="8_o6ulo"]
 [ext_resource type="PackedScene" uid="uid://b71msw28e37a" path="res://engine/objects/powerups/red_mushroom/red_mushroom.tscn" id="9_1rpsu"]
 [ext_resource type="Script" uid="uid://b08oplaactm6f" path="res://stages/extra/world_u/hidden/hidden_levels_node.gd" id="9_u5kpj"]
 [ext_resource type="Texture2D" uid="uid://c2xfexiy1rnqh" path="res://engine/tilesets/overworld/gfx/overworld_classic.png" id="9_xg2oj"]
@@ -27,17 +30,17 @@
 [ext_resource type="Texture2D" uid="uid://3f6efhfdu374" path="res://engine/tilesets/overworld/gfx/fence.png" id="14_pqu1i"]
 [ext_resource type="Texture2D" uid="uid://bnb5am431a3u8" path="res://engine/tilesets/overworld/gfx/woods.png" id="15_8dv2e"]
 [ext_resource type="PackedScene" uid="uid://53qlewhfad5" path="res://tilesets/overworld_green/scenes/cloud.tscn" id="16_ajn6g"]
-[ext_resource type="PackedScene" uid="uid://tcf0l7fpwwp1" path="res://engine/objects/enemies/human_lab/piranha/jaws_clone.tscn" id="17_d5ogo"]
+[ext_resource type="PackedScene" uid="uid://btg740vdsjvn" path="res://objects/hhpayclones/kaz_clone/kaz_clone.tscn" id="17_d5ogo"]
 [ext_resource type="Script" uid="uid://0h3x5dwndovw" path="res://engine/scripts/nodes/effects/quality_visible.gd" id="20_6xj3u"]
 [ext_resource type="Texture2D" uid="uid://0atqoof1v43b" path="res://gfx/fancy_graphics/746.png" id="21_fhrev"]
 [ext_resource type="Texture2D" uid="uid://vmkr0eaks2fr" path="res://gfx/fancy_graphics/bighill.png" id="22_i8jc0"]
 [ext_resource type="PackedScene" uid="uid://bnr3rfhkdf6j2" path="res://engine/objects/bumping_blocks/question_block/question_block.tscn" id="22_jatlb"]
 [ext_resource type="Texture2D" uid="uid://6bwpp568bmq0" path="res://gfx/fancy_graphics/giant_clouds.png" id="23_7r6sv"]
 [ext_resource type="PackedScene" uid="uid://b8kgbn8f7lvf0" path="res://engine/objects/items/coin/coin.tscn" id="23_bprtv"]
-[ext_resource type="PackedScene" uid="uid://bi2hg5giakfce" path="res://engine/objects/enemies/human_lab/goomba/goomba_clone.tscn" id="24_l7fxa"]
-[ext_resource type="PackedScene" uid="uid://clnvxc3co85ls" path="res://engine/objects/enemies/human_lab/koopa_troopa/coder_clone.tscn" id="26_jatlb"]
+[ext_resource type="PackedScene" uid="uid://qcjbejcppc1f" path="res://objects/hhpayclones/ami_clone/ami_clone.tscn" id="24_l7fxa"]
+[ext_resource type="PackedScene" uid="uid://ctbgmug4ek5tf" path="res://objects/hhpayclones/yumi_clone/yumi_clone.tscn" id="26_jatlb"]
 [ext_resource type="PackedScene" uid="uid://my2f0v28dykx" path="res://engine/objects/enemies/bullet_bill/launcher/bullet_launcher_neo.tscn" id="27_bprtv"]
-[ext_resource type="PackedScene" uid="uid://g6ed3enqcx1d" path="res://engine/objects/enemies/human_lab/bullet_bill/bullet_bill_clone.tscn" id="30_f03gr"]
+[ext_resource type="PackedScene" uid="uid://x46witsu6d5e" path="res://objects/hhpayclones/atchan_clone/atchan_clone.tscn" id="30_f03gr"]
 [ext_resource type="Script" uid="uid://bm81fg3h4j8sj" path="res://engine/scripts/resources/instance_node2d/instance_node2d.gd" id="31_0tkbc"]
 [ext_resource type="PackedScene" uid="uid://dor0tmdd8itya" path="res://tilesets/overworld_green/scenes/grass.tscn" id="32_0tkbc"]
 [ext_resource type="PackedScene" uid="uid://rhrex2vth7at" path="res://engine/objects/platform/platform_path.tscn" id="33_amy62"]
@@ -46,18 +49,18 @@
 [ext_resource type="PackedScene" uid="uid://b6e661f0ry38p" path="res://engine/objects/bumping_blocks/brick/templates/Coin Brick.tscn" id="35_eavkw"]
 [ext_resource type="PackedScene" uid="uid://5i7dre6a0q0u" path="res://engine/objects/enemies/human_lab/piranha_head/jaws_head_clone.tscn" id="36_hanp6"]
 [ext_resource type="PackedScene" uid="uid://cem1tcrhqrauj" path="res://engine/objects/enemies/hammer_bros/hammer_bro_jump_marker.tscn" id="38_ab2ro"]
-[ext_resource type="PackedScene" uid="uid://bpdl22ol10045" path="res://engine/objects/enemies/human_lab/koopa_bro/big_human_clone_b.tscn" id="39_8c024"]
+[ext_resource type="PackedScene" uid="uid://c3vc7mk4fnxu6" path="res://objects/hhpayclones/julie_clone/julie_clone.tscn" id="39_8c024"]
 [ext_resource type="PackedScene" uid="uid://dfm7d4qtja67b" path="res://engine/objects/core/finish_line/finish_line.tscn" id="40_8c024"]
 [ext_resource type="FontFile" uid="uid://dod5x6pna7fub" path="res://engine/fonts/comix_heavy.ttf" id="41_fdjxq"]
 [ext_resource type="Texture2D" uid="uid://cfl32xhp20q7x" path="res://engine/scenes/castle_cutscene/textures/castle_big.png" id="41_vve3l"]
 [ext_resource type="PackedScene" uid="uid://ckblbi2g1ps1y" path="res://engine/objects/enemies/human_lab/container/container_bubbles.tscn" id="45_qqpx6"]
-[ext_resource type="Texture2D" uid="uid://hd10qceb1lo0" path="res://engine/objects/enemies/human_lab/container/textures/clones/big_clone_human_b.png" id="46_eocpf"]
-[ext_resource type="Texture2D" uid="uid://dbysvvbn2nr4l" path="res://engine/objects/enemies/human_lab/container/textures/clones/cascadeur.png" id="47_oifgn"]
 [ext_resource type="Script" uid="uid://cn0a7wob2414p" path="res://engine/objects/detectors/player_detection.gd" id="48_bopn2"]
 [ext_resource type="Texture2D" uid="uid://0kdlt7lc7g6d" path="res://gfx/sign/sign_small_upside_down.png" id="48_qt53x"]
 [ext_resource type="Texture2D" uid="uid://dii887xxrfhqi" path="res://gfx/fancy_graphics/cloud_light_effect.png" id="48_vkddd"]
 [ext_resource type="Script" uid="uid://dpnc0xvkxt846" path="res://engine/objects/enemies/human_lab/container/container_area_node.gd" id="49_1k26s"]
 [ext_resource type="Script" uid="uid://cp4xamvr25vij" path="res://objects/name_node/name_node.gd" id="51_maofm"]
+[ext_resource type="Texture2D" uid="uid://bkgqyhm5ritng" path="res://objects/hhpayclones/container/julie_clone_container.png" id="55_o6ulo"]
+[ext_resource type="Texture2D" uid="uid://bqql0n7a38u4j" path="res://objects/hhpayclones/container/atchan_clone_container.png" id="56_b8iiv"]
 [ext_resource type="PackedScene" uid="uid://bkaivnr6tufb" path="res://engine/objects/enemies/bullet_bill/launcher/bullet_launcher_base.tscn" id="57_ixkea"]
 [ext_resource type="FontVariation" uid="uid://qyudyhura28u" path="res://gfx/fonts/comixheavy_condensed.tres" id="60_3tgja"]
 [ext_resource type="Texture2D" uid="uid://q8l5ujr14min" path="res://gfx/sign/sign_leg.png" id="61_5rpp6"]
@@ -565,20 +568,20 @@ sources/3 = SubResource("TileSetAtlasSource_eavkw")
 sources/4 = SubResource("TileSetAtlasSource_hanp6")
 sources/5 = SubResource("TileSetScenesCollectionSource_6xj3u")
 
-[sub_resource type="Resource" id="Resource_3tgja"]
+[sub_resource type="Resource" id="Resource_o6ulo"]
 resource_local_to_scene = true
 script = ExtResource("11_ouui0")
 creation_fallback_node = ExtResource("9_1rpsu")
 creation_nodepack = ExtResource("10_mu7v5")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_5rpp6"]
+[sub_resource type="Resource" id="Resource_b8iiv"]
 resource_local_to_scene = true
 script = ExtResource("11_ouui0")
 creation_nodepack = ExtResource("23_bprtv")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_o6ulo"]
+[sub_resource type="Resource" id="Resource_4oj8x"]
 resource_local_to_scene = true
 script = ExtResource("11_ouui0")
 creation_nodepack = ExtResource("23_bprtv")
@@ -589,7 +592,7 @@ script = ExtResource("31_0tkbc")
 creation_nodepack = ExtResource("30_f03gr")
 metadata/_custom_type_script = "uid://bm81fg3h4j8sj"
 
-[sub_resource type="Resource" id="Resource_b8iiv"]
+[sub_resource type="Resource" id="Resource_uyc5v"]
 resource_local_to_scene = true
 script = ExtResource("11_ouui0")
 creation_nodepack = ExtResource("23_bprtv")
@@ -600,18 +603,6 @@ _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 16, -264, 0, 0, 0, 0, 16, 24)
 }
 point_count = 2
-
-[sub_resource type="Resource" id="Resource_4oj8x"]
-resource_local_to_scene = true
-script = ExtResource("11_ouui0")
-creation_nodepack = ExtResource("23_bprtv")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_uyc5v"]
-resource_local_to_scene = true
-script = ExtResource("11_ouui0")
-creation_nodepack = ExtResource("23_bprtv")
-trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_bouvx"]
 resource_local_to_scene = true
@@ -625,12 +616,6 @@ script = ExtResource("11_ouui0")
 creation_nodepack = ExtResource("23_bprtv")
 trans_inheritances = 7
 
-[sub_resource type="Curve2D" id="Curve2D_ab2ro"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 5296, 352, 0, 0, 0, 0, 5680, 352)
-}
-point_count = 2
-
 [sub_resource type="Resource" id="Resource_6mtck"]
 resource_local_to_scene = true
 script = ExtResource("11_ouui0")
@@ -643,6 +628,12 @@ script = ExtResource("11_ouui0")
 creation_nodepack = ExtResource("23_bprtv")
 trans_inheritances = 7
 
+[sub_resource type="Curve2D" id="Curve2D_ab2ro"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 5296, 352, 0, 0, 0, 0, 5680, 352)
+}
+point_count = 2
+
 [sub_resource type="Resource" id="Resource_3afgi"]
 resource_local_to_scene = true
 script = ExtResource("11_ouui0")
@@ -650,6 +641,18 @@ creation_nodepack = ExtResource("23_bprtv")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_clal1"]
+resource_local_to_scene = true
+script = ExtResource("11_ouui0")
+creation_nodepack = ExtResource("23_bprtv")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_hl3n0"]
+resource_local_to_scene = true
+script = ExtResource("11_ouui0")
+creation_nodepack = ExtResource("23_bprtv")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_cnubg"]
 resource_local_to_scene = true
 script = ExtResource("11_ouui0")
 creation_fallback_node = ExtResource("9_1rpsu")
@@ -686,12 +689,12 @@ jump_to_scene = "uid://cs8qcm3hsw0jp"
 script = ExtResource("4_bbwpv")
 tweaked_completion_music = ExtResource("5_maofm")
 ignore_fade_in_tweak = false
-music_var_1 = Array[Resource]([])
-music_var_2 = Array[Resource]([])
+music_var_1 = Array[Resource]([ExtResource("6_b8iiv")])
+music_var_2 = Array[Resource]([ExtResource("6_5rpp6")])
 music_var_3 = Array[Resource]([])
 var_1_volume_db = Array[float]([0.0])
 var_1_start_from_sec = Array[float]([0.0])
-var_2_volume_db = Array[float]([0.0])
+var_2_volume_db = Array[float]([2.8])
 var_2_start_from_sec = Array[float]([0.0])
 var_3_volume_db = Array[float]([0.0])
 var_3_start_from_sec = Array[float]([0.0])
@@ -700,9 +703,11 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("6_bbwpv")])
-volume_db = Array[float]([0.0])
+music = Array[Resource]([ExtResource("7_o6ulo")])
+volume_db = Array[float]([0.2])
 start_from_sec = Array[float]([0.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("8_o6ulo")]
 
 [node name="SecretUnlocker" parent="." unique_id=4894360 instance=ExtResource("7_1jx4p")]
 secrets = Array[String](["world u secret levels finished", "world u secret levels in kevin mode"])
@@ -758,8 +763,8 @@ theme_override_constants/line_spacing = 3
 theme_override_constants/outline_size = 8
 theme_override_fonts/font = ExtResource("13_8rx6p")
 theme_override_font_sizes/font_size = 12
-text = "HUMAN LAB
-1.2"
+text = "HI HI PUFFY
+REBOOTED"
 horizontal_alignment = 1
 
 [node name="Node2D" type="Node2D" parent="." unique_id=1108081153]
@@ -921,15 +926,15 @@ position = Vector2(480, 320)
 
 [node name="QuestionBlockFireFlower" parent="." unique_id=1233223080 instance=ExtResource("8_mssfw")]
 position = Vector2(720, 272)
-result = SubResource("Resource_3tgja")
+result = SubResource("Resource_o6ulo")
 
 [node name="QuestionBlock" parent="." unique_id=1448291086 instance=ExtResource("22_jatlb")]
 position = Vector2(688, 272)
-result = SubResource("Resource_5rpp6")
+result = SubResource("Resource_b8iiv")
 
 [node name="QuestionBlock2" parent="." unique_id=418625201 instance=ExtResource("22_jatlb")]
 position = Vector2(752, 272)
-result = SubResource("Resource_o6ulo")
+result = SubResource("Resource_4oj8x")
 
 [node name="Clone01" parent="." unique_id=1259760654 instance=ExtResource("24_l7fxa")]
 position = Vector2(816, 384)
@@ -988,7 +993,7 @@ position = Vector2(1552, 400)
 
 [node name="QuestionBlock3" parent="." unique_id=843450083 instance=ExtResource("22_jatlb")]
 position = Vector2(2736, 272)
-result = SubResource("Resource_b8iiv")
+result = SubResource("Resource_uyc5v")
 
 [node name="JawsClone4" parent="." unique_id=2032226844 instance=ExtResource("17_d5ogo")]
 position = Vector2(2784, 256)
@@ -1042,19 +1047,19 @@ position = Vector2(4048, 304)
 
 [node name="QuestionBlock4" parent="." unique_id=1133977372 instance=ExtResource("22_jatlb")]
 position = Vector2(3824, 304)
-result = SubResource("Resource_4oj8x")
+result = SubResource("Resource_bouvx")
 
 [node name="QuestionBlock5" parent="." unique_id=826799388 instance=ExtResource("22_jatlb")]
 position = Vector2(3856, 304)
-result = SubResource("Resource_uyc5v")
+result = SubResource("Resource_saqbn")
 
 [node name="QuestionBlock6" parent="." unique_id=2049451384 instance=ExtResource("22_jatlb")]
 position = Vector2(3984, 304)
-result = SubResource("Resource_bouvx")
+result = SubResource("Resource_6mtck")
 
 [node name="QuestionBlock7" parent="." unique_id=1965173420 instance=ExtResource("22_jatlb")]
 position = Vector2(4016, 304)
-result = SubResource("Resource_saqbn")
+result = SubResource("Resource_8maxo")
 
 [node name="HeadJawsClone" parent="." unique_id=1420937003 instance=ExtResource("36_hanp6")]
 position = Vector2(4752, 400)
@@ -1225,11 +1230,11 @@ position = Vector2(6864, 272)
 
 [node name="QuestionBlock10" parent="." unique_id=755821152 instance=ExtResource("22_jatlb")]
 position = Vector2(6928, 272)
-result = SubResource("Resource_6mtck")
+result = SubResource("Resource_3afgi")
 
 [node name="QuestionBlock11" parent="." unique_id=620118993 instance=ExtResource("22_jatlb")]
 position = Vector2(7024, 272)
-result = SubResource("Resource_8maxo")
+result = SubResource("Resource_clal1")
 
 [node name="Brick13" parent="." unique_id=1596241530 instance=ExtResource("34_bmhgb")]
 position = Vector2(10416, 272)
@@ -1296,11 +1301,11 @@ position = Vector2(11024, 176)
 
 [node name="QuestionBlock12" parent="." unique_id=1691795566 instance=ExtResource("22_jatlb")]
 position = Vector2(10384, 272)
-result = SubResource("Resource_3afgi")
+result = SubResource("Resource_hl3n0")
 
 [node name="QuestionBlockFireFlower2" parent="." unique_id=565132974 instance=ExtResource("8_mssfw")]
 position = Vector2(6960, 272)
-result = SubResource("Resource_clal1")
+result = SubResource("Resource_cnubg")
 
 [node name="CoderClone3" parent="." unique_id=439028733 instance=ExtResource("26_jatlb")]
 position = Vector2(7728, 384)
@@ -1391,11 +1396,11 @@ position = Vector2(9840, 368)
 
 [node name="ContainerBubbles9" parent="." unique_id=1250449418 instance=ExtResource("45_qqpx6")]
 position = Vector2(3344, 124)
-sprite = ExtResource("46_eocpf")
+sprite = ExtResource("55_o6ulo")
 
 [node name="ContainerBubbles10" parent="." unique_id=1279723017 instance=ExtResource("45_qqpx6")]
 position = Vector2(911, 124)
-sprite = ExtResource("47_oifgn")
+sprite = ExtResource("56_b8iiv")
 
 [node name="SignSmallUpsideDown8" type="Sprite2D" parent="." unique_id=820525854]
 position = Vector2(3344, 218)
@@ -1405,7 +1410,7 @@ texture = ExtResource("48_qt53x")
 script = ExtResource("51_maofm")
 inverted = true
 
-[node name="Label2" type="Label" parent="SignSmallUpsideDown8/Node2D" unique_id=1532923786]
+[node name="Label4" type="Label" parent="SignSmallUpsideDown8/Node2D" unique_id=1957757237]
 offset_left = -46.0
 offset_top = -11.0
 offset_right = 46.0
@@ -1415,8 +1420,8 @@ theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("41_fdjxq")
 theme_override_font_sizes/font_size = 11
-text = "big clone
-human b"
+text = "Julie
+Clone"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
@@ -1425,17 +1430,33 @@ metadata/_edit_use_anchors_ = true
 [node name="Node2D2" type="Node2D" parent="SignSmallUpsideDown8" unique_id=2096458404]
 script = ExtResource("51_maofm")
 
-[node name="Label2" type="Label" parent="SignSmallUpsideDown8/Node2D2" unique_id=1207826839]
+[node name="Label2" type="Label" parent="SignSmallUpsideDown8/Node2D2" unique_id=1802231731]
 offset_left = -46.0
-offset_top = -11.0
+offset_top = -16.0
 offset_right = 46.0
-offset_bottom = 43.0
+offset_bottom = 38.0
 theme_override_colors/font_outline_color = Color(0, 0, 0.356863, 1)
 theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("41_fdjxq")
 theme_override_font_sizes/font_size = 11
-text = "MISIEK"
+text = "Julie"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label4" type="Label" parent="SignSmallUpsideDown8/Node2D2" unique_id=1361825143]
+offset_left = -46.0
+offset_top = -6.0
+offset_right = 46.0
+offset_bottom = 48.0
+theme_override_colors/font_outline_color = Color(0, 0, 0.356863, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("41_fdjxq")
+theme_override_font_sizes/font_size = 11
+text = "Hinikawa"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
@@ -1449,18 +1470,18 @@ texture = ExtResource("48_qt53x")
 script = ExtResource("51_maofm")
 inverted = true
 
-[node name="Label2" type="Label" parent="SignSmallUpsideDown9/Node2D" unique_id=1387606903]
-offset_left = -46.0
-offset_top = -11.0
-offset_right = 46.0
-offset_bottom = 43.0
+[node name="Label3" type="Label" parent="SignSmallUpsideDown9/Node2D" unique_id=910986028]
+offset_left = -45.0
+offset_top = -12.0
+offset_right = 47.0
+offset_bottom = 42.0
 theme_override_colors/font_outline_color = Color(0, 0, 0.356863, 1)
 theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("41_fdjxq")
 theme_override_font_sizes/font_size = 11
-text = "stuntman
-clone 2/a"
+text = "atchan
+clone"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
@@ -1469,18 +1490,33 @@ metadata/_edit_use_anchors_ = true
 [node name="Node2D2" type="Node2D" parent="SignSmallUpsideDown9" unique_id=98654717]
 script = ExtResource("51_maofm")
 
-[node name="Label2" type="Label" parent="SignSmallUpsideDown9/Node2D2" unique_id=329971018]
-offset_left = -46.0
-offset_top = -11.0
-offset_right = 46.0
-offset_bottom = 43.0
+[node name="Label3" type="Label" parent="SignSmallUpsideDown9/Node2D2" unique_id=8139724]
+offset_left = -45.0
+offset_top = -15.0
+offset_right = 47.0
+offset_bottom = 39.0
 theme_override_colors/font_outline_color = Color(0, 0, 0.356863, 1)
 theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("41_fdjxq")
-theme_override_font_sizes/font_size = 11
-text = "MISIEK
-KAL-EL"
+theme_override_font_sizes/font_size = 13
+text = "atchan is"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label4" type="Label" parent="SignSmallUpsideDown9/Node2D2" unique_id=2117970797]
+offset_left = -45.0
+offset_top = -5.0
+offset_right = 47.0
+offset_bottom = 49.0
+theme_override_colors/font_outline_color = Color(0, 0, 0.356863, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("41_fdjxq")
+theme_override_font_sizes/font_size = 10
+text = "now a clone!"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true

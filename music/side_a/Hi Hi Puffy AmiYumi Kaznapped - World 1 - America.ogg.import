@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d8lkyfqm0okt"
+path="res://.godot/imported/Hi Hi Puffy AmiYumi Kaznapped - World 1 - America.ogg-e4c41c56911e1479a93dda33fdb6c775.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Hi Hi Puffy AmiYumi Kaznapped - World 1 - America.ogg"
+dest_files=["res://.godot/imported/Hi Hi Puffy AmiYumi Kaznapped - World 1 - America.ogg-e4c41c56911e1479a93dda33fdb6c775.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

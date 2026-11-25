@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b8r3vku005nah"
+path="res://.godot/imported/Knurpy Samba Extracted.ogg-6180795f837d41a35b3c88b8d563358f.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Knurpy Samba Extracted.ogg"
+dest_files=["res://.godot/imported/Knurpy Samba Extracted.ogg-6180795f837d41a35b3c88b8d563358f.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=7.32
+bpm=0.0
+beat_count=0
+bar_beats=4

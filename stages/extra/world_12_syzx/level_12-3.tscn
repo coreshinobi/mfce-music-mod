@@ -7,11 +7,14 @@
 [ext_resource type="Script" uid="uid://7byhkvlnfxa" path="res://components/secrets_manager/unlock_multiple.gd" id="4_072vr"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="4_da1t1"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="5_0lu52"]
-[ext_resource type="AudioStream" uid="uid://cxearnku7s8cs" path="res://music/extra/world_12_syzx/12-3.ogg" id="5_pgmot"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="5_wa6ms"]
-[ext_resource type="AudioStream" uid="uid://dh3wk6flr1yiv" path="res://music/extra/world_12_syzx/12-3-2.ogg" id="5_we5cy"]
+[ext_resource type="AudioStream" uid="uid://dxwfhm3erls6p" path="res://music/side_a/Fun Factory - Close To You (Modland Lite).mod" id="8_i7oc2"]
+[ext_resource type="AudioStream" uid="uid://bk2k548mxbjte" path="res://music/newermod/Felix - Don't You Want Me (Kefmania Mix).mod" id="8_vleli"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="8_wq321"]
+[ext_resource type="AudioStream" uid="uid://coudf3dkedx4o" path="res://music/newermod/Jacx - keftales.mod" id="9_2obhy"]
+[ext_resource type="AudioStream" uid="uid://uv38lbjcymer" path="res://music/side_a/chromag - spacebubbles.mod" id="9_ak0pk"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="9_da1t1"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="10_i7oc2"]
 [ext_resource type="TileSet" uid="uid://dafmidvn0tyc1" path="res://tilesets/desert/desert.tres" id="10_pgrgs"]
 [ext_resource type="TileSet" uid="uid://7ahm7i5kbbn6" path="res://engine/tilesets/underwater/underwater.tres" id="11_330kp"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="11_jx82v"]
@@ -147,36 +150,6 @@ gradient = SubResource("Gradient_qj5b7")
 height = 288
 fill_to = Vector2(0, 1)
 
-[sub_resource type="Resource" id="Resource_072vr"]
-resource_local_to_scene = true
-script = ExtResource("37_jnvmi")
-creation_nodepack = ExtResource("36_f80du")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_vleli"]
-resource_local_to_scene = true
-script = ExtResource("37_jnvmi")
-creation_nodepack = ExtResource("36_f80du")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_2obhy"]
-resource_local_to_scene = true
-script = ExtResource("37_jnvmi")
-creation_nodepack = ExtResource("36_f80du")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_i7oc2"]
-resource_local_to_scene = true
-script = ExtResource("37_jnvmi")
-creation_nodepack = ExtResource("36_f80du")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_ak0pk"]
-resource_local_to_scene = true
-script = ExtResource("37_jnvmi")
-creation_nodepack = ExtResource("36_f80du")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_ytbna"]
 resource_local_to_scene = true
 script = ExtResource("37_jnvmi")
@@ -190,6 +163,36 @@ creation_nodepack = ExtResource("36_f80du")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_n17ca"]
+resource_local_to_scene = true
+script = ExtResource("37_jnvmi")
+creation_nodepack = ExtResource("36_f80du")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_64lvc"]
+resource_local_to_scene = true
+script = ExtResource("37_jnvmi")
+creation_nodepack = ExtResource("36_f80du")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_wuetq"]
+resource_local_to_scene = true
+script = ExtResource("37_jnvmi")
+creation_nodepack = ExtResource("36_f80du")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_82s20"]
+resource_local_to_scene = true
+script = ExtResource("37_jnvmi")
+creation_nodepack = ExtResource("36_f80du")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_7dkdh"]
+resource_local_to_scene = true
+script = ExtResource("37_jnvmi")
+creation_nodepack = ExtResource("36_f80du")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_tlb2l"]
 resource_local_to_scene = true
 script = ExtResource("37_jnvmi")
 creation_fallback_node = ExtResource("38_fatb7")
@@ -221,10 +224,10 @@ softendo_progress_secret_mode_ids = Array[int]([3])
 script = ExtResource("4_da1t1")
 tweaked_completion_music = ExtResource("5_wa6ms")
 ignore_fade_in_tweak = false
-music_var_1 = Array[Resource]([])
+music_var_1 = Array[Resource]([ExtResource("8_i7oc2"), ExtResource("9_ak0pk")])
 music_var_2 = Array[Resource]([])
 music_var_3 = Array[Resource]([])
-var_1_volume_db = Array[float]([0.0])
+var_1_volume_db = Array[float]([1.8, 0.9])
 var_1_start_from_sec = Array[float]([0.0])
 var_2_volume_db = Array[float]([0.0])
 var_2_start_from_sec = Array[float]([0.0])
@@ -235,7 +238,10 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("5_pgmot"), ExtResource("5_we5cy")])
+music = Array[Resource]([ExtResource("8_vleli"), ExtResource("9_2obhy")])
+volume_db = Array[float]([3.5, 2.8])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("10_i7oc2")]
 
 [node name="Player" parent="." unique_id=443890044 instance=ExtResource("5_0lu52")]
 position = Vector2(352, 1840)
@@ -914,40 +920,40 @@ position = Vector2(11856, 496)
 
 [node name="QuestionBlockLife" parent="." unique_id=292850241 instance=ExtResource("35_wplj4")]
 position = Vector2(80, 80)
-result = SubResource("Resource_072vr")
+result = SubResource("Resource_ytbna")
 initially_visible_and_solid = false
 exists_once = true
 
 [node name="QuestionBlockLife2" parent="." unique_id=277865280 instance=ExtResource("35_wplj4")]
 position = Vector2(11888, 432)
-result = SubResource("Resource_vleli")
+result = SubResource("Resource_7mxc1")
 initially_visible_and_solid = false
 exists_once = true
 
 [node name="QuestionBlockLife3" parent="." unique_id=2039826791 instance=ExtResource("35_wplj4")]
 position = Vector2(11920, 432)
-result = SubResource("Resource_2obhy")
+result = SubResource("Resource_n17ca")
 initially_visible_and_solid = false
 
 [node name="QuestionBlockLife4" parent="." unique_id=722899047 instance=ExtResource("35_wplj4")]
 position = Vector2(11920, 624)
-result = SubResource("Resource_i7oc2")
+result = SubResource("Resource_64lvc")
 
 [node name="QuestionBlockLife5" parent="." unique_id=1892119730 instance=ExtResource("35_wplj4")]
 position = Vector2(11888, 624)
-result = SubResource("Resource_ak0pk")
+result = SubResource("Resource_wuetq")
 
 [node name="QuestionBlockLife6" parent="." unique_id=733390635 instance=ExtResource("35_wplj4")]
 position = Vector2(11856, 624)
-result = SubResource("Resource_ytbna")
+result = SubResource("Resource_82s20")
 
 [node name="QuestionBlockLife7" parent="." unique_id=1662859379 instance=ExtResource("35_wplj4")]
 position = Vector2(8720, 976)
-result = SubResource("Resource_7mxc1")
+result = SubResource("Resource_7dkdh")
 
 [node name="QuestionBlockFireFlower" parent="." unique_id=940665263 instance=ExtResource("37_iiwok")]
 position = Vector2(8112, 976)
-result = SubResource("Resource_n17ca")
+result = SubResource("Resource_tlb2l")
 
 [node name="BlueCheepCheeps" type="Node2D" parent="." unique_id=1522535039]
 script = ExtResource("41_f80du")
@@ -1612,6 +1618,7 @@ visible = false
 medium = false
 
 [connection signal="level_completed" from="." to="SecretUnlocker2/UnlockMultiple" method="perform_checks_and_unlock"]
+[connection signal="music_started" from="MusicLoader" to="MusicOverlay" method="play"]
 [connection signal="tweak_enabled" from="AdvancedEdition_Hard" to="BlueCheepCheeps" method="activate"]
 [connection signal="tweak_enabled" from="AdvancedEdition_Hard" to="YellowCheepCheeps" method="activate"]
 

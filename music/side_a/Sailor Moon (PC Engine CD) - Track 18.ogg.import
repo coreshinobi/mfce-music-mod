@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://kue24jrggoeq"
+path="res://.godot/imported/Sailor Moon (PC Engine CD) - Track 18.ogg-351210b2079d4fec284de7fde7212bd6.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Sailor Moon (PC Engine CD) - Track 18.ogg"
+dest_files=["res://.godot/imported/Sailor Moon (PC Engine CD) - Track 18.ogg-351210b2079d4fec284de7fde7212bd6.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=104.96
+bpm=0.0
+beat_count=0
+bar_beats=4

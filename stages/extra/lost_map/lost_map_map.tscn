@@ -4,7 +4,10 @@
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="2_u64n0"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_rggqv"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="4_h6qy3"]
-[ext_resource type="AudioStream" uid="uid://d30cscjrbol0s" path="res://music/lostmap/lostmap_map.ogg" id="5_2t6aj"]
+[ext_resource type="AudioStream" uid="uid://csrseg040t7e7" path="res://music/side_a/Linde - SkelettIGarderoben.ogg" id="5_iisbp"]
+[ext_resource type="AudioStream" uid="uid://brvnv62n1g221" path="res://music/newermod/Lunatic Dawn FX - Track 18.ogg" id="5_tksix"]
+[ext_resource type="AudioStream" uid="uid://bbvxe3pfq3abw" path="res://music/side_b/Ojousama Sousamou - Track 08.ogg" id="6_i1yoc"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="6_iisbp"]
 [ext_resource type="Texture2D" uid="uid://usm6n80msr7n" path="res://engine/scenes/map/textures/bg.png" id="6_y1ber"]
 [ext_resource type="Texture2D" uid="uid://b2i8hafnh5tje" path="res://gfx/map/maps/maplost.png" id="7_2mdsx"]
 [ext_resource type="PackedScene" uid="uid://w4jc7nb1lcsy" path="res://engine/scenes/map/prefabs/player.tscn" id="8_xjabj"]
@@ -54,8 +57,8 @@ metadata/_edit_lock_ = true
 script = ExtResource("3_rggqv")
 tweaked_completion_music = ExtResource("4_h6qy3")
 ignore_fade_in_tweak = false
-music_var_1 = Array[Resource]([])
-music_var_2 = Array[Resource]([])
+music_var_1 = Array[Resource]([ExtResource("5_iisbp")])
+music_var_2 = Array[Resource]([ExtResource("6_i1yoc")])
 music_var_3 = Array[Resource]([])
 var_1_volume_db = Array[float]([0.0])
 var_1_start_from_sec = Array[float]([0.0])
@@ -68,8 +71,11 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("5_2t6aj")])
-volume_db = Array[float]([-1.0])
+music = Array[Resource]([ExtResource("5_tksix")])
+volume_db = Array[float]([1.2])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("6_iisbp")]
+displaying_mode = 1
 
 [node name="Bg" type="Sprite2D" parent="." unique_id=2075443636]
 texture = ExtResource("6_y1ber")

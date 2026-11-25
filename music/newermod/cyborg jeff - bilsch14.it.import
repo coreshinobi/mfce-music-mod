@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://ree58wlw6tye"
+path="res://.godot/imported/cyborg jeff - bilsch14.it-21301407f7a2971eb4d1fb201f37b606.res"
+
+[deps]
+
+source_file="res://music/newermod/cyborg jeff - bilsch14.it"
+dest_files=["res://.godot/imported/cyborg jeff - bilsch14.it-21301407f7a2971eb4d1fb201f37b606.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

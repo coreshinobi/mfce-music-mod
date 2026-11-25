@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://fc5ww2rx2eqh"
+path="res://.godot/imported/Alien Soldier - Title Theme.ogg-81aee31dea651557901dcd7ba36ed31c.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_c/Alien Soldier - Title Theme.ogg"
+dest_files=["res://.godot/imported/Alien Soldier - Title Theme.ogg-81aee31dea651557901dcd7ba36ed31c.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,250 @@
+[gd_scene format=3 uid="uid://b6ulux7lueoko"]
+
+[ext_resource type="Script" uid="uid://dmcn56u26b38a" path="res://engine/objects/enemies/hammer_bros/hammer_bro_base.gd" id="1_040fr"]
+[ext_resource type="PackedScene" uid="uid://cyc1bxpexyxtw" path="res://objects/human_lab_at_home/genocide_jack_doppelganger/projectile/genocidejackscissors.tscn" id="2_2ya46"]
+[ext_resource type="Script" uid="uid://fdxatwkqrg77" path="res://engine/objects/enemies/hammer_bros/hammer_bro_throwing.gd" id="3_nsu26"]
+[ext_resource type="PackedScene" uid="uid://oe7i3cief0g" path="res://engine/objects/enemies/_dead/enemy_killed.tscn" id="3_t4k2k"]
+[ext_resource type="Script" uid="uid://du32vchaulqj6" path="res://engine/objects/enemies/_dead/prefabs/do_killed.gd" id="4_a4kf8"]
+[ext_resource type="Script" uid="uid://bm81fg3h4j8sj" path="res://engine/scripts/resources/instance_node2d/instance_node2d.gd" id="5_70civ"]
+[ext_resource type="AudioStream" uid="uid://fjctm5w7kdox" path="res://objects/human_lab_at_home/genocide_jack_doppelganger/sfx/genocidejack_throw.wav" id="5_cj24l"]
+[ext_resource type="Script" uid="uid://1n3p7ctv1snn" path="res://engine/scripts/nodes/enemies/enemy_attacked.gd" id="6_tjb4d"]
+[ext_resource type="AudioStream" uid="uid://b541o6tc3jr0x" path="res://objects/human_lab_at_home/genocide_jack_doppelganger/sfx/genocidejack_die.wav" id="9_040fr"]
+[ext_resource type="Script" uid="uid://d0ir2qr4v6lu7" path="res://engine/objects/enemies/human_lab/goomba/scripts/legs_script.gd" id="10_8lmx8"]
+[ext_resource type="Texture2D" uid="uid://c78wgweo14hbs" path="res://objects/human_lab_at_home/genocide_jack_doppelganger/gfx/attack.png" id="10_222wh"]
+[ext_resource type="Texture2D" uid="uid://bfxmn7dud1jdh" path="res://objects/human_lab_at_home/genocide_jack_doppelganger/gfx/clone_body.png" id="11_p0qrb"]
+[ext_resource type="Texture2D" uid="uid://cn461kw6k2nvr" path="res://objects/human_lab_at_home/genocide_jack_doppelganger/gfx/walk.png" id="12_f2tox"]
+[ext_resource type="Texture2D" uid="uid://bcwi7a2033yqs" path="res://objects/human_lab_at_home/genocide_jack_doppelganger/gfx/idle.png" id="13_c54o3"]
+[ext_resource type="Script" uid="uid://doq0qyrr5ihr6" path="res://engine/scripts/nodes/vision/vision.gd" id="15_chpp5"]
+
+[sub_resource type="Resource" id="Resource_ag0ps"]
+script = ExtResource("5_70civ")
+creation_nodepack = ExtResource("2_2ya46")
+trans_inheritances = 6
+custom_vars = {
+"speed_max": Vector2(250, -500),
+"speed_min": Vector2(50, -300)
+}
+custom_script = ExtResource("3_nsu26")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gepp8"]
+size = Vector2(32, 56)
+
+[sub_resource type="Resource" id="Resource_e3ga0"]
+resource_local_to_scene = true
+script = ExtResource("5_70civ")
+creation_nodepack = ExtResource("3_t4k2k")
+trans_inheritances = 7
+visi_z_index = 1
+custom_vars = {
+"death": NodePath("../../Sprite"),
+"death_speed": Vector2(0, 0)
+}
+custom_script = ExtResource("4_a4kf8")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ssorn"]
+atlas = ExtResource("10_222wh")
+region = Rect2(0, 0, 55, 86)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_glnf5"]
+atlas = ExtResource("11_p0qrb")
+region = Rect2(0, 0, 55, 86)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jwl4n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ssorn")
+}],
+"loop": 1,
+"name": &"attack",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_glnf5")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wlwo8"]
+atlas = ExtResource("12_f2tox")
+region = Rect2(0, 0, 55, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6b6v1"]
+atlas = ExtResource("12_f2tox")
+region = Rect2(55, 0, 55, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_im6b8"]
+atlas = ExtResource("12_f2tox")
+region = Rect2(110, 0, 55, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qy3bi"]
+atlas = ExtResource("12_f2tox")
+region = Rect2(165, 0, 55, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_75wre"]
+atlas = ExtResource("12_f2tox")
+region = Rect2(220, 0, 55, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h8557"]
+atlas = ExtResource("12_f2tox")
+region = Rect2(275, 0, 55, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wbvgi"]
+atlas = ExtResource("12_f2tox")
+region = Rect2(330, 0, 55, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5e2cr"]
+atlas = ExtResource("12_f2tox")
+region = Rect2(385, 0, 55, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y21rn"]
+atlas = ExtResource("13_c54o3")
+region = Rect2(0, 0, 55, 18)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bhxi4"]
+animations = [{
+"frames": [{
+"duration": 4.3,
+"texture": SubResource("AtlasTexture_wlwo8")
+}, {
+"duration": 4.3,
+"texture": SubResource("AtlasTexture_6b6v1")
+}, {
+"duration": 4.3,
+"texture": SubResource("AtlasTexture_im6b8")
+}, {
+"duration": 4.3,
+"texture": SubResource("AtlasTexture_qy3bi")
+}, {
+"duration": 4.3,
+"texture": SubResource("AtlasTexture_75wre")
+}, {
+"duration": 4.3,
+"texture": SubResource("AtlasTexture_h8557")
+}, {
+"duration": 4.3,
+"texture": SubResource("AtlasTexture_wbvgi")
+}, {
+"duration": 4.3,
+"texture": SubResource("AtlasTexture_5e2cr")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 50.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y21rn")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1wgod"]
+size = Vector2(32, 32)
+
+[node name="GenocideJackDoppelganger" type="CharacterBody2D" unique_id=105640848 groups=["koopa_bro"]]
+collision_layer = 2
+collision_mask = 32
+platform_on_leave = 2
+script = ExtResource("1_040fr")
+projectile = SubResource("Resource_ag0ps")
+sound = ExtResource("5_cj24l")
+speed = Vector2(100, 0)
+gravity_scale = 0.2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1436643882]
+visible = false
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_gepp8")
+
+[node name="Body" type="Area2D" parent="." unique_id=177313346]
+process_mode = 3
+collision_layer = 2
+collision_mask = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Body" unique_id=1107433309]
+visible = false
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_gepp8")
+debug_color = Color(0, 0.7, 0.09333341, 0.41960785)
+
+[node name="EnemyAttacked" type="Node" parent="Body" unique_id=1833375533]
+script = ExtResource("6_tjb4d")
+stomping_offset = Vector2(0, 8)
+stomping_creation = SubResource("Resource_e3ga0")
+stomping_scores = 200
+stomping_sound = ExtResource("9_040fr")
+killing_creation = SubResource("Resource_e3ga0")
+killing_scores = 200
+killing_sound_succeeded = ExtResource("9_040fr")
+ice_sprite = NodePath("../../Sprite")
+sound_ignore_pitch_modification = true
+
+[node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=1016435817]
+position = Vector2(0, -11)
+sprite_frames = SubResource("SpriteFrames_jwl4n")
+autoplay = "default"
+
+[node name="ActiveNOGI" type="AnimatedSprite2D" parent="Sprite" unique_id=1352428202]
+position = Vector2(0, 34)
+sprite_frames = SubResource("SpriteFrames_bhxi4")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.10035186
+script = ExtResource("10_8lmx8")
+enemy_center_node = NodePath("../..")
+can_idle = true
+can_move_both_ways = true
+idle_offset = Vector2(1, 0)
+
+[node name="SpriteProjectile" type="Sprite2D" parent="." unique_id=1835548326]
+visible = false
+position = Vector2(-12, 6)
+scale = Vector2(-1, 1)
+
+[node name="PosAttack" type="Marker2D" parent="." unique_id=233206360]
+visible = false
+position = Vector2(-14, 7)
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="." unique_id=433977246]
+self_modulate = Color(1, 1, 1, 0.0196078)
+rect = Rect2(-20, -32, 40, 64)
+script = ExtResource("15_chpp5")
+metadata/_edit_lock_ = true
+
+[node name="Walk" type="Timer" parent="." unique_id=2128633472]
+process_callback = 0
+one_shot = true
+
+[node name="Attack" type="Timer" parent="." unique_id=330216011]
+process_callback = 0
+wait_time = 0.06
+autostart = true
+
+[node name="Jump" type="Timer" parent="." unique_id=1937479340]
+process_callback = 0
+wait_time = 0.24
+autostart = true
+
+[node name="ShapeCast2D" type="ShapeCast2D" parent="." unique_id=1319335921]
+visible = false
+enabled = false
+shape = SubResource("RectangleShape2D_1wgod")
+target_position = Vector2(0, 0)
+max_results = 2
+collision_mask = 32
+
+[connection signal="killed_succeeded" from="Body/EnemyAttacked" to="." method="queue_free"]
+[connection signal="killed_succeeded" from="Body/EnemyAttacked" to="Sprite" method="set_speed_scale" binds= [0.0]]
+[connection signal="killed_succeeded" from="Body/EnemyAttacked" to="Sprite/ActiveNOGI" method="set_animation" binds= ["idle"]]
+[connection signal="stomped_succeeded" from="Body/EnemyAttacked" to="." method="queue_free"]
+[connection signal="stomped_succeeded" from="Body/EnemyAttacked" to="Sprite" method="set_speed_scale" binds= [0.0]]
+[connection signal="stomped_succeeded" from="Body/EnemyAttacked" to="Sprite/ActiveNOGI" method="set_animation" binds= ["idle"]]
+[connection signal="timeout" from="Walk" to="." method="_on_walk_timeout"]
+[connection signal="timeout" from="Attack" to="." method="_on_attack_timeout"]
+[connection signal="timeout" from="Jump" to="." method="_on_jump"]

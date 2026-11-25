@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b25sd555ff04"
+path="res://.godot/imported/Toby Fox, Spy Trolling - Petal Dance (1980s Arrangement).ogg-44fe0f22d30c2b5091c215bbd4f5ea62.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Toby Fox, Spy Trolling - Petal Dance (1980s Arrangement).ogg"
+dest_files=["res://.godot/imported/Toby Fox, Spy Trolling - Petal Dance (1980s Arrangement).ogg-44fe0f22d30c2b5091c215bbd4f5ea62.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=3.31
+bpm=0.0
+beat_count=0
+bar_beats=4

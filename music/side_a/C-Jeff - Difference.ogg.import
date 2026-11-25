@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d4fja253hums5"
+path="res://.godot/imported/C-Jeff - Difference.ogg-93a445d48c5fd3f99a7fa32ebf996ffe.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/C-Jeff - Difference.ogg"
+dest_files=["res://.godot/imported/C-Jeff - Difference.ogg-93a445d48c5fd3f99a7fa32ebf996ffe.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

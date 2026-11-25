@@ -5,14 +5,15 @@
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_sklqv"]
 [ext_resource type="PackedScene" uid="uid://b71msw28e37a" path="res://engine/objects/powerups/red_mushroom/red_mushroom.tscn" id="3_iqfr0"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_xb6qv"]
-[ext_resource type="AudioStream" uid="uid://cguj8gp1e7unu" path="res://music/extra/expert_mode/patrick_phelan_-_zoolrave.mod" id="4_odop8"]
+[ext_resource type="AudioStream" uid="uid://dhea0ki8meano" path="res://music/newermod/Koji Kondo, Veer Nales - Underwater Mario (Illadome Remix).ogg" id="4_ylvna"]
 [ext_resource type="Script" uid="uid://chvjy6okoognf" path="res://engine/objects/powerups/instance_powerup.gd" id="5_3vig6"]
-[ext_resource type="AudioStream" uid="uid://no8rqi6mwk8c" path="res://music/smw-overworld.ogg" id="5_eipiu"]
+[ext_resource type="AudioStream" uid="uid://7hl3tiuynny" path="res://music/newermod/Jayze @ Berrywitched! - Rotten Fruit.ogg" id="5_atoc5"]
 [ext_resource type="PackedScene" uid="uid://dnyk0ph5vd52a" path="res://engine/objects/enemies/cheeps/cheep_blue.tscn" id="6_x25me"]
 [ext_resource type="PackedScene" uid="uid://0ugpa0ybv34g" path="res://engine/objects/enemies/rotos/roto_center.tscn" id="7_ofoha"]
 [ext_resource type="PackedScene" uid="uid://cforx4e0v73a7" path="res://engine/objects/enemies/rotos/roto_red.tscn" id="8_7ol3h"]
 [ext_resource type="Script" uid="uid://7byhkvlnfxa" path="res://components/secrets_manager/unlock_multiple.gd" id="8_eipiu"]
 [ext_resource type="PackedScene" uid="uid://dvmtgtjgrqsap" path="res://objects/underwater_push_platform/platform_underwater.tscn" id="9_8uk2c"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="9_xxpxx"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="9_ylvna"]
 [ext_resource type="PackedScene" uid="uid://b8kgbn8f7lvf0" path="res://engine/objects/items/coin/coin.tscn" id="10_66a2o"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="10_atoc5"]
@@ -117,14 +118,14 @@ size = Vector2(7904, 412)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4x4c5"]
 size = Vector2(20, 58)
 
-[sub_resource type="Resource" id="Resource_4x4c5"]
+[sub_resource type="Resource" id="Resource_xnqbs"]
 resource_local_to_scene = true
 script = ExtResource("5_3vig6")
 creation_fallback_node = ExtResource("3_iqfr0")
 creation_nodepack = ExtResource("51_xb6qv")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_ylvna"]
+[sub_resource type="Resource" id="Resource_12k1s"]
 resource_local_to_scene = true
 script = ExtResource("5_3vig6")
 creation_fallback_node = ExtResource("3_iqfr0")
@@ -139,8 +140,8 @@ jump_to_scene = "res://stages/world_2/expert_map_2.tscn"
 
 [node name="MusicLoader" type="Node" parent="." unique_id=1922404925]
 script = ExtResource("3_xb6qv")
-music = Array[Resource]([ExtResource("4_odop8"), ExtResource("5_eipiu")])
-volume_db = Array[float]([0.0, 4.0])
+music = Array[Resource]([ExtResource("4_ylvna"), ExtResource("5_atoc5")])
+volume_db = Array[float]([0.8, 0.2])
 
 [node name="AntiafkExpertMode" parent="MusicLoader" unique_id=2005752850 instance=ExtResource("2_gnmdq")]
 is_expert_mode = false
@@ -155,6 +156,9 @@ script = ExtResource("8_eipiu")
 progress_ids = Array[int]([0])
 progress_secret_mode_ids = Array[int]([1])
 progress_reset_on_complete = false
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("9_xxpxx")]
+text = Array[String](["Koji Kondo, Veer Nales - Underwater Mario (Illadome Remix)", "jayze @ Berrywitched - Rotten Fruit"])
 
 [node name="SecretUnlocker" parent="." unique_id=498275079 instance=ExtResource("9_ylvna")]
 secrets = Array[String](["all toad houses found"])
@@ -720,10 +724,7 @@ loop = true
 loop_backwards = false
 warp_objects_on_end = false
 
-[node name="Block" parent="Path2D/PathFollow2D3" index="0" unique_id=1383566008]
-collision_layer = 80
-
-[node name="Coin16" parent="Path2D/PathFollow2D3/Block" index="2" unique_id=542985406 instance=ExtResource("10_66a2o")]
+[node name="Coin16" parent="Path2D/PathFollow2D3/Block" parent_id_path=PackedInt32Array(1907811512, 1383566008) index="2" unique_id=542985406 instance=ExtResource("10_66a2o")]
 position = Vector2(0, -32)
 
 [node name="PathFollow2D4" parent="Path2D" unique_id=1866742274 instance=ExtResource("9_8uk2c")]
@@ -733,10 +734,7 @@ loop = true
 loop_backwards = false
 warp_objects_on_end = false
 
-[node name="Block" parent="Path2D/PathFollow2D4" index="0" unique_id=1383566008]
-collision_layer = 80
-
-[node name="Coin16" parent="Path2D/PathFollow2D4/Block" index="2" unique_id=1811434756 instance=ExtResource("10_66a2o")]
+[node name="Coin16" parent="Path2D/PathFollow2D4/Block" parent_id_path=PackedInt32Array(1866742274, 1383566008) index="2" unique_id=1811434756 instance=ExtResource("10_66a2o")]
 position = Vector2(0, -32)
 
 [node name="PathFollow2D5" parent="Path2D" unique_id=619433120 instance=ExtResource("9_8uk2c")]
@@ -785,16 +783,13 @@ loop = true
 loop_backwards = false
 warp_objects_on_end = false
 
-[node name="Block" parent="Path2D/PathFollow2D12" index="0" unique_id=1383566008]
-collision_layer = 80
-
-[node name="Coin42" parent="Path2D/PathFollow2D12/Block" index="2" unique_id=932710008 instance=ExtResource("10_66a2o")]
+[node name="Coin42" parent="Path2D/PathFollow2D12/Block" parent_id_path=PackedInt32Array(840045140, 1383566008) index="2" unique_id=932710008 instance=ExtResource("10_66a2o")]
 position = Vector2(0, -32)
 
-[node name="Coin43" parent="Path2D/PathFollow2D12/Block" index="3" unique_id=713270830 instance=ExtResource("10_66a2o")]
+[node name="Coin43" parent="Path2D/PathFollow2D12/Block" parent_id_path=PackedInt32Array(840045140, 1383566008) index="3" unique_id=713270830 instance=ExtResource("10_66a2o")]
 position = Vector2(-32, -32)
 
-[node name="Coin44" parent="Path2D/PathFollow2D12/Block" index="4" unique_id=556895196 instance=ExtResource("10_66a2o")]
+[node name="Coin44" parent="Path2D/PathFollow2D12/Block" parent_id_path=PackedInt32Array(840045140, 1383566008) index="4" unique_id=556895196 instance=ExtResource("10_66a2o")]
 position = Vector2(32, -32)
 
 [node name="PathFollow2D7" parent="Path2D" unique_id=859145034 instance=ExtResource("9_8uk2c")]
@@ -805,16 +800,13 @@ loop = true
 loop_backwards = false
 warp_objects_on_end = false
 
-[node name="Block" parent="Path2D/PathFollow2D7" index="0" unique_id=1383566008]
-collision_layer = 80
-
-[node name="Coin42" parent="Path2D/PathFollow2D7/Block" index="2" unique_id=845044109 instance=ExtResource("10_66a2o")]
+[node name="Coin42" parent="Path2D/PathFollow2D7/Block" parent_id_path=PackedInt32Array(859145034, 1383566008) index="2" unique_id=845044109 instance=ExtResource("10_66a2o")]
 position = Vector2(0, -32)
 
-[node name="Coin43" parent="Path2D/PathFollow2D7/Block" index="3" unique_id=1706497515 instance=ExtResource("10_66a2o")]
+[node name="Coin43" parent="Path2D/PathFollow2D7/Block" parent_id_path=PackedInt32Array(859145034, 1383566008) index="3" unique_id=1706497515 instance=ExtResource("10_66a2o")]
 position = Vector2(-32, -32)
 
-[node name="Coin44" parent="Path2D/PathFollow2D7/Block" index="4" unique_id=1285229418 instance=ExtResource("10_66a2o")]
+[node name="Coin44" parent="Path2D/PathFollow2D7/Block" parent_id_path=PackedInt32Array(859145034, 1383566008) index="4" unique_id=1285229418 instance=ExtResource("10_66a2o")]
 position = Vector2(32, -32)
 
 [node name="PathFollow2D8" parent="Path2D" unique_id=645792277 instance=ExtResource("9_8uk2c")]
@@ -907,11 +899,11 @@ script = ExtResource("52_d8ap7")
 
 [node name="QuestionBlockBeetroot" parent="." unique_id=1927192353 instance=ExtResource("49_sklqv")]
 position = Vector2(464, 336)
-result = SubResource("Resource_4x4c5")
+result = SubResource("Resource_xnqbs")
 
 [node name="QuestionBlockBeetroot2" parent="." unique_id=1781509050 instance=ExtResource("49_sklqv")]
 position = Vector2(4080, 272)
-result = SubResource("Resource_ylvna")
+result = SubResource("Resource_12k1s")
 
 [node name="GreenPipeEnteringAnother" type="Sprite2D" parent="." unique_id=52777218]
 position = Vector2(7104, -608)
@@ -943,6 +935,7 @@ position = Vector2(7696, -592)
 texture = ExtResource("57_4x4c5")
 
 [connection signal="level_completed" from="." to="MusicLoader/SecretUnlocker/UnlockMultiple" method="perform_checks_and_unlock"]
+[connection signal="music_started" from="MusicLoader" to="MusicOverlay" method="play"]
 [connection signal="warp_started" from="PipeIn" to="Node" method="disable"]
 [connection signal="player_enter" from="Area2D2" to="Area2D2/Marker2D" method="activate"]
 [connection signal="entered_castle" from="Area2D2/Marker2D" to="Area2D2/Marker2D" method="_on_level_completed"]

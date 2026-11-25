@@ -5,16 +5,16 @@
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_bjxd1"]
 [ext_resource type="AudioStream" uid="uid://bqeophqiakq4k" path="res://music/smw2-castle.ogg" id="3_3dxb1"]
 [ext_resource type="AudioStream" uid="uid://bexk1qd4psene" path="res://engine/objects/bosses/bowser/music/music_bowser_battle.mod" id="4_7yek2"]
-[ext_resource type="AudioStream" uid="uid://bvwok20bs75yd" path="res://music/extra/smw-hardcore-1-4.ogg" id="5_jf145"]
+[ext_resource type="AudioStream" uid="uid://bpnebg13jtl40" path="res://music/newermod/Koji Kondo - Castle & Fortress (Monicastle Death Madness).it" id="6_2oh88"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="6_txbbn"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="6_uh4e0"]
 [ext_resource type="Script" uid="uid://cfpyjxx0phndx" path="res://stages/extra/hardcore_1/scripts/show_label.gd" id="7_7ry8r"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="7_l2608"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="7_lymnc"]
 [ext_resource type="AudioStream" uid="uid://dfhdjdtb7xk4c" path="res://music/extra/hardcore-die-lol.ogg" id="8_e8oto"]
 [ext_resource type="Script" uid="uid://c6b531vw33sbg" path="res://stages/extra/lost_map/scripts/delete_suspended_progress.gd" id="8_u6fs1"]
 [ext_resource type="PackedScene" uid="uid://diivlwjl0y1i7" path="res://engine/objects/bosses/bowser/bowser_trigger.tscn" id="8_w5dxm"]
 [ext_resource type="AudioStream" uid="uid://cpy66lof7ycli" path="res://engine/objects/players/prefabs/sounds/music-die.ogg" id="9_33f04"]
-[ext_resource type="AudioStream" uid="uid://cnn040q2lodum" path="res://music/smrpg-bowser.ogg" id="9_rb8so"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="10_4rafo"]
 [ext_resource type="TileSet" uid="uid://co4kwf1fb2y5i" path="res://tilesets/castle/castle_tileset.tres" id="11_0fcf6"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="12_w1krt"]
@@ -22,6 +22,7 @@
 [ext_resource type="FontFile" uid="uid://bgsavu6joui2r" path="res://engine/fonts/junebug.ttf" id="14_o3u24"]
 [ext_resource type="Texture2D" uid="uid://bm62kwqcqdgkl" path="res://engine/tilesets/castle/gfx/BGCastle.png" id="15_1ws36"]
 [ext_resource type="FontFile" uid="uid://8het0yea87eq" path="res://gfx/fonts/tahomabd.ttf" id="16_h1i52"]
+[ext_resource type="AudioStream" uid="uid://cvn305vyxp3q8" path="res://music/newermod/DefectionX.it" id="16_lymnc"]
 [ext_resource type="PackedScene" uid="uid://dvmhwh1khygq6" path="res://engine/objects/bumping_blocks/brick/brick_gray.tscn" id="16_mnrwk"]
 [ext_resource type="Script" uid="uid://ck8etkhldnph8" path="res://stages/world_1/scripts/text_secret_passage.gd" id="17_2lp83"]
 [ext_resource type="PackedScene" uid="uid://0ugpa0ybv34g" path="res://engine/objects/enemies/rotos/roto_center.tscn" id="17_rq10x"]
@@ -103,12 +104,6 @@ fill_to = Vector2(0, 0)
 script = ExtResource("21_3l6vv")
 creation_nodepack = ExtResource("20_yspjk")
 
-[sub_resource type="Resource" id="Resource_2oh88"]
-resource_local_to_scene = true
-script = ExtResource("21_3l6vv")
-creation_nodepack = ExtResource("20_yspjk")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_lymnc"]
 resource_local_to_scene = true
 script = ExtResource("21_3l6vv")
@@ -145,13 +140,19 @@ script = ExtResource("21_3l6vv")
 creation_nodepack = ExtResource("20_yspjk")
 trans_inheritances = 7
 
+[sub_resource type="Resource" id="Resource_1n3cj"]
+resource_local_to_scene = true
+script = ExtResource("21_3l6vv")
+creation_nodepack = ExtResource("20_yspjk")
+trans_inheritances = 7
+
 [sub_resource type="Resource" id="Resource_iegj4"]
 script = ExtResource("21_3l6vv")
 creation_fallback_node = ExtResource("23_edubq")
 creation_nodepack = ExtResource("24_sijj3")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_1n3cj"]
+[sub_resource type="Resource" id="Resource_pti0n"]
 resource_local_to_scene = true
 script = ExtResource("21_3l6vv")
 creation_nodepack = ExtResource("38_ve0qo")
@@ -211,7 +212,7 @@ script = ExtResource("21_3l6vv")
 creation_nodepack = ExtResource("38_ve0qo")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_pti0n"]
+[sub_resource type="Resource" id="Resource_71241"]
 resource_local_to_scene = true
 script = ExtResource("21_3l6vv")
 creation_nodepack = ExtResource("38_ve0qo")
@@ -285,7 +286,11 @@ script = ExtResource("2_5u3wi")
 music_var_2 = Array[Resource]([ExtResource("3_3dxb1")])
 music_var_3 = Array[Resource]([ExtResource("3_3dxb1")])
 boss_music_var_1 = ExtResource("4_7yek2")
-music = Array[Resource]([ExtResource("5_jf145")])
+music = Array[Resource]([ExtResource("6_2oh88")])
+volume_db = Array[float]([9.4])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("7_lymnc")]
+text = Array[String](["Koji Kondo - Castle & Fortress (Monicastle Death Madness)"])
 
 [node name="SecretUnlocker" parent="." unique_id=567931752 instance=ExtResource("6_uh4e0")]
 secrets = Array[String](["passage to hardcore 2", "hardcore 1 secret mode"])
@@ -312,7 +317,8 @@ position = Vector2(12672, 224)
 curve = SubResource("Curve2D_k5i2x")
 trigger_area = Rect2(0, 0, 32, 960)
 trigger_bowser = NodePath("../BowserWithCannon")
-boss_music = ExtResource("9_rb8so")
+boss_music = ExtResource("16_lymnc")
+boss_music_volume = 1.2
 
 [node name="CameraArea" parent="." unique_id=1431588446 instance=ExtResource("10_4rafo")]
 offset_right = 13725.0
@@ -615,31 +621,31 @@ result = SubResource("Resource_uttvg")
 
 [node name="QuestionBlock14" parent="." unique_id=456438235 instance=ExtResource("22_02731")]
 position = Vector2(720, 112)
-result = SubResource("Resource_2oh88")
+result = SubResource("Resource_lymnc")
 
 [node name="QuestionBlock15" parent="." unique_id=2032235452 instance=ExtResource("22_02731")]
 position = Vector2(784, 112)
-result = SubResource("Resource_lymnc")
+result = SubResource("Resource_xjser")
 
 [node name="QuestionBlock16" parent="." unique_id=2018760572 instance=ExtResource("22_02731")]
 position = Vector2(1488, 208)
-result = SubResource("Resource_xjser")
+result = SubResource("Resource_ayk3a")
 
 [node name="QuestionBlock17" parent="." unique_id=1661881435 instance=ExtResource("22_02731")]
 position = Vector2(1520, 208)
-result = SubResource("Resource_ayk3a")
+result = SubResource("Resource_vm0yi")
 
 [node name="QuestionBlock18" parent="." unique_id=1026964998 instance=ExtResource("22_02731")]
 position = Vector2(4624, 80)
-result = SubResource("Resource_vm0yi")
+result = SubResource("Resource_8uuaa")
 
 [node name="QuestionBlock19" parent="." unique_id=1814887016 instance=ExtResource("22_02731")]
 position = Vector2(7152, 176)
-result = SubResource("Resource_8uuaa")
+result = SubResource("Resource_aih61")
 
 [node name="QuestionBlock24" parent="." unique_id=1172743358 instance=ExtResource("22_02731")]
 position = Vector2(7216, 176)
-result = SubResource("Resource_aih61")
+result = SubResource("Resource_1n3cj")
 
 [node name="QuestionBlock26" parent="." unique_id=681022132 instance=ExtResource("22_02731")]
 position = Vector2(12464, 144)
@@ -667,7 +673,7 @@ result = SubResource("Resource_iegj4")
 
 [node name="QuestionBlock32" parent="." unique_id=2013687079 instance=ExtResource("22_02731")]
 position = Vector2(15888, 912)
-result = SubResource("Resource_1n3cj")
+result = SubResource("Resource_pti0n")
 initially_visible_and_solid = false
 
 [node name="Lavafall" parent="." unique_id=796970035 instance=ExtResource("25_jke4c")]
@@ -1776,7 +1782,7 @@ exists_once = true
 
 [node name="QuestionBlockLifeFarAway" parent="." unique_id=1008279120 instance=ExtResource("57_6be4i")]
 position = Vector2(2960, -112)
-result = SubResource("Resource_pti0n")
+result = SubResource("Resource_71241")
 
 [node name="Water2" parent="." unique_id=781793004 instance=ExtResource("57_mdajx")]
 position = Vector2(0, 1056)

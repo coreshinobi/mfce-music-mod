@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b3fxlr38fqgho"
+path="res://.godot/imported/The Binding of Isaac - Divine Combat.ogg-f3737d4f32630b4e96ccec161597ed6e.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_c/The Binding of Isaac - Divine Combat.ogg"
+dest_files=["res://.godot/imported/The Binding of Isaac - Divine Combat.ogg-f3737d4f32630b4e96ccec161597ed6e.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=6.554
+bpm=0.0
+beat_count=0
+bar_beats=4

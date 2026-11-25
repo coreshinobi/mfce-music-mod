@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bpv1vcugvwa2f"
+path="res://.godot/imported/Penumbra - Run!.ogg-76f2a2aa14b9b2cc8b4736d1c6ad1ee7.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_b/Penumbra - Run!.ogg"
+dest_files=["res://.godot/imported/Penumbra - Run!.ogg-76f2a2aa14b9b2cc8b4736d1c6ad1ee7.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

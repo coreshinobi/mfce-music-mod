@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dat2ltlk3fgom"
+path="res://.godot/imported/Danganronpa V3 - V3 Argument -Break-.ogg-77d96761e85b1146a815640d7e484a07.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Danganronpa V3 - V3 Argument -Break-.ogg"
+dest_files=["res://.godot/imported/Danganronpa V3 - V3 Argument -Break-.ogg-77d96761e85b1146a815640d7e484a07.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=3.67
+bpm=0.0
+beat_count=0
+bar_beats=4

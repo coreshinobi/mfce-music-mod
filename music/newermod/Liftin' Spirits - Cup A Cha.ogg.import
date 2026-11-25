@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dc1sdb20ygqw"
+path="res://.godot/imported/Liftin' Spirits - Cup A Cha.ogg-fe5b184c9c41e5b12cbe597fbdafe43b.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Liftin' Spirits - Cup A Cha.ogg"
+dest_files=["res://.godot/imported/Liftin' Spirits - Cup A Cha.ogg-fe5b184c9c41e5b12cbe597fbdafe43b.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

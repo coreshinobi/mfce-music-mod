@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b1md2sqy0uvtb"
+path="res://.godot/imported/Hi Hi Puffy AmiYumi The Genie & the Amp - Roman.ogg-5fb8f54dfbed62c55d6bda90f73d1bcb.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Hi Hi Puffy AmiYumi The Genie & the Amp - Roman.ogg"
+dest_files=["res://.godot/imported/Hi Hi Puffy AmiYumi The Genie & the Amp - Roman.ogg-5fb8f54dfbed62c55d6bda90f73d1bcb.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

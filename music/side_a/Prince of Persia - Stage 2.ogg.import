@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dr8ui1b8oycnp"
+path="res://.godot/imported/Prince of Persia - Stage 2.ogg-4da3ee436490eb6e0fb904cfa925c737.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Prince of Persia - Stage 2.ogg"
+dest_files=["res://.godot/imported/Prince of Persia - Stage 2.ogg-4da3ee436490eb6e0fb904cfa925c737.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=1.75
+bpm=0.0
+beat_count=0
+bar_beats=4

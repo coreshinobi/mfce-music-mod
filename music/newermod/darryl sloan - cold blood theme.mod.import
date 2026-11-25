@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://bp1tlsedrercc"
+path="res://.godot/imported/darryl sloan - cold blood theme.mod-175e4ec1673e831d272e2a33b09fe47c.res"
+
+[deps]
+
+source_file="res://music/newermod/darryl sloan - cold blood theme.mod"
+dest_files=["res://.godot/imported/darryl sloan - cold blood theme.mod-175e4ec1673e831d272e2a33b09fe47c.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

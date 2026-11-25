@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://ch60x7sbjqh8o"
+path="res://.godot/imported/vegard - elektronparbinding.mod-54ea5c1b9a34677a46336fb65e818fc5.res"
+
+[deps]
+
+source_file="res://music/side_b/vegard - elektronparbinding.mod"
+dest_files=["res://.godot/imported/vegard - elektronparbinding.mod-54ea5c1b9a34677a46336fb65e818fc5.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

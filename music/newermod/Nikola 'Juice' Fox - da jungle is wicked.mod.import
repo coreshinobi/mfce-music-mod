@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://cla2a0l5hq0al"
+path="res://.godot/imported/Nikola 'Juice' Fox - da jungle is wicked.mod-b300ddeeaa9b5f40bdad9f56af23ab9c.res"
+
+[deps]
+
+source_file="res://music/newermod/Nikola 'Juice' Fox - da jungle is wicked.mod"
+dest_files=["res://.godot/imported/Nikola 'Juice' Fox - da jungle is wicked.mod-b300ddeeaa9b5f40bdad9f56af23ab9c.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

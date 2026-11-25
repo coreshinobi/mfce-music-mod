@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://pmcg7ksffmnh"
+path="res://.godot/imported/retrokidknuckles - the mon demo 1991.ogg-2cf0935b797368686b1a1a2d7023a365.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/retrokidknuckles - the mon demo 1991.ogg"
+dest_files=["res://.godot/imported/retrokidknuckles - the mon demo 1991.ogg-2cf0935b797368686b1a1a2d7023a365.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.71
+bpm=0.0
+beat_count=0
+bar_beats=4

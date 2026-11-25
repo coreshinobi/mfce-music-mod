@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://tajhnb8c2y43"
+path="res://.godot/imported/i-win - Chaos Revolving Magic.ogg-68ca54791edc9e816f8833c79ca9a97c.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/i-win - Chaos Revolving Magic.ogg"
+dest_files=["res://.godot/imported/i-win - Chaos Revolving Magic.ogg-68ca54791edc9e816f8833c79ca9a97c.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

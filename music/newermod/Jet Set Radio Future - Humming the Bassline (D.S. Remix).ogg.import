@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dh1f0wfs0gs5x"
+path="res://.godot/imported/Jet Set Radio Future - Humming the Bassline (D.S. Remix).ogg-0f21162248ceac88bb8981aa84ba350b.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Jet Set Radio Future - Humming the Bassline (D.S. Remix).ogg"
+dest_files=["res://.godot/imported/Jet Set Radio Future - Humming the Bassline (D.S. Remix).ogg-0f21162248ceac88bb8981aa84ba350b.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

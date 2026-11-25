@@ -6,14 +6,20 @@
 [ext_resource type="Script" uid="uid://7byhkvlnfxa" path="res://components/secrets_manager/unlock_multiple.gd" id="4_8m77t"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="4_hj53k"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_ld3ml"]
-[ext_resource type="AudioStream" uid="uid://5uqbprtu0qb4" path="res://music/extra/world_9/looper231_-_fuel-dump.mod" id="4_yirwi"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="5_7un8d"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="7_gdtnc"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_th0is"]
+[ext_resource type="AudioStream" uid="uid://bpv1vcugvwa2f" path="res://music/side_b/Penumbra - Run!.ogg" id="8_8xrmb"]
+[ext_resource type="AudioStream" uid="uid://dxy5lxrtuxrqt" path="res://music/newermod/Danganronpa Ultra Despair Girls - Warriors of Hope.ogg" id="8_gvxf8"]
 [ext_resource type="PackedScene" uid="uid://bcgt87mbq40gx" path="res://engine/objects/enemies/thwomp/thwomp.tscn" id="9_732sa"]
+[ext_resource type="AudioStream" uid="uid://er5575xa3hh8" path="res://music/newermod/Danganronpa Ultra Despair Girls - Alice in Childrenland.ogg" id="9_esm03"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="9_gdtnc"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="9_pb8n0"]
+[ext_resource type="AudioStream" uid="uid://c8xbtrsgjlqwm" path="res://music/side_b/Alexander 'Siren' Brandon @ unreal - flightcastle.it" id="9_xugma"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="10_3t2fd"]
+[ext_resource type="AudioStream" uid="uid://dg25sfbsuw18" path="res://music/side_c/Ridiculon - Hell Toupe (Hell Dark).ogg" id="10_hynut"]
 [ext_resource type="Texture2D" uid="uid://iungoiwgrqth" path="res://engine/objects/players/prefabs/textures/mario/mario_dead.png" id="11_0sxyr"]
+[ext_resource type="AudioStream" uid="uid://b3fxlr38fqgho" path="res://music/side_c/The Binding of Isaac - Divine Combat.ogg" id="11_ordq5"]
 [ext_resource type="Texture2D" uid="uid://dfi4d7levruc4" path="res://gfx/backgrounds/smasvolcanoresize.png" id="12_47vb5"]
 [ext_resource type="Script" uid="uid://dvhscoyla00d0" path="res://engine/objects/effects/player_death_hud.gd" id="12_dqhvv"]
 [ext_resource type="Material" uid="uid://buxudaaft4i5o" path="res://materials/level_8-3.tres" id="13_8b1lq"]
@@ -197,46 +203,46 @@ script = ExtResource("30_jd5so")
 creation_nodepack = ExtResource("16_0uh6d")
 metadata/_custom_type_script = "uid://chvjy6okoognf"
 
-[sub_resource type="Resource" id="Resource_ri1qc"]
+[sub_resource type="Resource" id="Resource_exvna"]
 resource_local_to_scene = true
 script = ExtResource("30_jd5so")
 creation_fallback_node = ExtResource("28_q4q3a")
 creation_nodepack = ExtResource("29_r73d2")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_gvxf8"]
+[sub_resource type="Resource" id="Resource_d1bb3"]
 resource_local_to_scene = true
 script = ExtResource("30_jd5so")
 creation_fallback_node = ExtResource("28_q4q3a")
 creation_nodepack = ExtResource("29_r73d2")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_pb8n0"]
+[sub_resource type="Resource" id="Resource_paeeq"]
 resource_local_to_scene = true
 script = ExtResource("30_jd5so")
 creation_nodepack = ExtResource("36_101y3")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_esm03"]
+[sub_resource type="Resource" id="Resource_4qqx3"]
 resource_local_to_scene = true
 script = ExtResource("30_jd5so")
 creation_nodepack = ExtResource("16_0uh6d")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_8xrmb"]
+[sub_resource type="Resource" id="Resource_ubv7b"]
 resource_local_to_scene = true
 script = ExtResource("30_jd5so")
 creation_fallback_node = ExtResource("28_q4q3a")
 creation_nodepack = ExtResource("29_r73d2")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_xugma"]
+[sub_resource type="Resource" id="Resource_k3e10"]
 resource_local_to_scene = true
 script = ExtResource("30_jd5so")
 creation_nodepack = ExtResource("43_b2d30")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_hynut"]
+[sub_resource type="Resource" id="Resource_6jrkb"]
 resource_local_to_scene = true
 script = ExtResource("30_jd5so")
 creation_nodepack = ExtResource("43_b2d30")
@@ -757,11 +763,11 @@ script = ExtResource("4_hj53k")
 tweaked_completion_music = ExtResource("5_7un8d")
 ignore_fade_in_tweak = false
 music_var_1 = Array[Resource]([])
-music_var_2 = Array[Resource]([])
-music_var_3 = Array[Resource]([])
+music_var_2 = Array[Resource]([ExtResource("8_8xrmb"), ExtResource("9_xugma")])
+music_var_3 = Array[Resource]([ExtResource("10_hynut"), ExtResource("11_ordq5")])
 var_1_volume_db = Array[float]([0.0])
 var_1_start_from_sec = Array[float]([0.0])
-var_2_volume_db = Array[float]([0.0])
+var_2_volume_db = Array[float]([2.2, 6.9])
 var_2_start_from_sec = Array[float]([0.0])
 var_3_volume_db = Array[float]([0.0])
 var_3_start_from_sec = Array[float]([0.0])
@@ -770,7 +776,10 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("4_yirwi")])
+music = Array[Resource]([ExtResource("8_gvxf8"), ExtResource("9_esm03")])
+volume_db = Array[float]([-1.2, -1.2])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("9_pb8n0")]
 
 [node name="Mario" parent="." unique_id=885551737 instance=ExtResource("4_ld3ml")]
 position = Vector2(112, 400)
@@ -783,12 +792,17 @@ metadata/_edit_lock_ = true
 [node name="CameraArea" parent="." unique_id=749848269 instance=ExtResource("7_th0is")]
 offset_right = 10112.0
 offset_bottom = 480.0
+change_music = true
+set_music_index = 0
+music_loader_ref = NodePath("../MusicLoader")
 metadata/_edit_lock_ = true
 
 [node name="CamArea" parent="." unique_id=679200375 instance=ExtResource("7_th0is")]
 offset_left = 10816.0
 offset_right = 18784.0
 offset_bottom = 480.0
+change_music = true
+music_loader_ref = NodePath("../MusicLoader")
 metadata/_edit_lock_ = true
 
 [node name="Node2D2" type="Node2D" parent="." unique_id=694679298]
@@ -1978,34 +1992,34 @@ result = SubResource("Resource_oydpa")
 [node name="Brick11" parent="." unique_id=865645039 instance=ExtResource("38_hyv55")]
 position = Vector2(13328, 240)
 max_items = 1
-result = SubResource("Resource_ri1qc")
+result = SubResource("Resource_exvna")
 
 [node name="QuestionBlock2" parent="." unique_id=1357205895 instance=ExtResource("39_fd2nv")]
 position = Vector2(272, 144)
-result = SubResource("Resource_gvxf8")
+result = SubResource("Resource_d1bb3")
 
 [node name="QuestionBlock4" parent="." unique_id=598619919 instance=ExtResource("39_fd2nv")]
 position = Vector2(2320, 144)
-result = SubResource("Resource_pb8n0")
+result = SubResource("Resource_paeeq")
 initially_visible_and_solid = false
 exists_once = true
 
 [node name="QuestionBlock5" parent="." unique_id=1508562026 instance=ExtResource("39_fd2nv")]
 position = Vector2(2480, 176)
-result = SubResource("Resource_esm03")
+result = SubResource("Resource_4qqx3")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock6" parent="." unique_id=443928869 instance=ExtResource("39_fd2nv")]
 position = Vector2(7568, 208)
-result = SubResource("Resource_8xrmb")
+result = SubResource("Resource_ubv7b")
 
 [node name="QuestionBlock7" parent="." unique_id=1878913091 instance=ExtResource("39_fd2nv")]
 position = Vector2(12816, 208)
-result = SubResource("Resource_xugma")
+result = SubResource("Resource_k3e10")
 
 [node name="QuestionBlock8" parent="." unique_id=1552625391 instance=ExtResource("39_fd2nv")]
 position = Vector2(15536, 176)
-result = SubResource("Resource_hynut")
+result = SubResource("Resource_6jrkb")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=539844214]
 collision_layer = 0

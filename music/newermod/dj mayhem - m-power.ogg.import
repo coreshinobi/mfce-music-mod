@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://yrrodqfoj3as"
+path="res://.godot/imported/dj mayhem - m-power.ogg-720eaa28ad6754571c818fc63f28efcc.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/dj mayhem - m-power.ogg"
+dest_files=["res://.godot/imported/dj mayhem - m-power.ogg-720eaa28ad6754571c818fc63f28efcc.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -1,16 +1,17 @@
 [gd_scene format=4 uid="uid://ht5id10ochxu"]
 
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_gugln"]
-[ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_jfyga"]
+[ext_resource type="AudioStream" uid="uid://bqgcjjju08h3l" path="res://music/newermod/Azumanga Daioh Eye Catch 2.ogg" id="2_bc3dy"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_hi7ol"]
+[ext_resource type="AudioStream" uid="uid://dprnlfl0uylkt" path="res://music/side_a/Battletoads & Double Dragon - Roper.ogg" id="4_2lqlv"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_p0ll4"]
-[ext_resource type="AudioStream" uid="uid://c6dc6y4bvfej4" path="res://music/smas-underwater.mp3" id="4_xum7a"]
-[ext_resource type="AudioStream" uid="uid://diuf7iidscu13" path="res://music/smw-underwater.ogg" id="5_tpq7d"]
-[ext_resource type="AudioStream" uid="uid://no8rqi6mwk8c" path="res://music/smw-overworld.ogg" id="6_j7p04"]
+[ext_resource type="AudioStream" uid="uid://dqy48h5qo343n" path="res://music/side_a/Azumanga Daioh - Genki...ya de.ogg" id="5_gaujv"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="6_k14ad"]
-[ext_resource type="AudioStream" uid="uid://co70gdke0u16k" path="res://music/smb3-underwater.ogg" id="7_g1g5x"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="6_nmmfv"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="7_id3b8"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_k5rv5"]
+[ext_resource type="AudioStream" uid="uid://k1uw0ka6y13g" path="res://music/newermod/dj mayhem - let me tell you something.ogg" id="7_msora"]
+[ext_resource type="AudioStream" uid="uid://dsbo3s5e2sxdn" path="res://music/newermod/toal nkor - forest dream.mod" id="8_bc3dy"]
 [ext_resource type="TileSet" uid="uid://7ahm7i5kbbn6" path="res://engine/tilesets/underwater/underwater.tres" id="9_ivf0b"]
 [ext_resource type="TileSet" uid="uid://dtvs1rult8kbe" path="res://tilesets/overworld_green/overworld_green.tres" id="10_fok48"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="10_ta0g1"]
@@ -116,14 +117,14 @@ gradient = SubResource("Gradient_cfp1v")
 height = 16
 fill_to = Vector2(0, 1)
 
-[sub_resource type="Resource" id="Resource_msora"]
+[sub_resource type="Resource" id="Resource_2kf4y"]
 resource_local_to_scene = true
 script = ExtResource("23_46wvn")
 creation_fallback_node = ExtResource("21_togic")
 creation_nodepack = ExtResource("22_3xo1v")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_bc3dy"]
+[sub_resource type="Resource" id="Resource_g60sq"]
 resource_local_to_scene = true
 script = ExtResource("23_46wvn")
 creation_nodepack = ExtResource("51_nmmfv")
@@ -131,17 +132,19 @@ trans_inheritances = 7
 
 [node name="Level2-2" type="Node2D" unique_id=1921638329]
 script = ExtResource("1_gugln")
-completion_music = ExtResource("2_jfyga")
+completion_music = ExtResource("2_bc3dy")
 jump_to_scene = "res://stages/world_2/map_2.tscn"
+completion_music_delay_sec = 4.18
 
 [node name="MusicLoader" type="Node" parent="." unique_id=705412251]
 script = ExtResource("3_hi7ol")
-music_var_2 = Array[Resource]([ExtResource("5_tpq7d"), ExtResource("6_j7p04")])
-music_var_3 = Array[Resource]([ExtResource("7_g1g5x"), ExtResource("6_j7p04")])
+music_var_1 = Array[Resource]([ExtResource("4_2lqlv"), ExtResource("5_gaujv")])
 var_2_volume_db = Array[float]([0.0, 4.0])
 var_3_volume_db = Array[float]([0.0, 4.0])
-music = Array[Resource]([ExtResource("4_xum7a"), ExtResource("6_j7p04")])
+music = Array[Resource]([ExtResource("7_msora"), ExtResource("8_bc3dy")])
 volume_db = Array[float]([0.0, 4.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("6_nmmfv")]
 
 [node name="SecretUnlocker" parent="." unique_id=181356156 instance=ExtResource("7_id3b8")]
 secrets = Array[String](["all toad houses found"])
@@ -598,7 +601,7 @@ position = Vector2(1296, 208)
 [node name="QuestionBlockFireFlower" parent="." unique_id=1172674307 instance=ExtResource("20_uga5i")]
 position = Vector2(464, 336)
 disable_mode = 0
-result = SubResource("Resource_msora")
+result = SubResource("Resource_2kf4y")
 
 [node name="CheepBlue" parent="." unique_id=1181613168 instance=ExtResource("31_mffwr")]
 position = Vector2(5200, 192)
@@ -790,7 +793,7 @@ position = Vector2(4432, -816)
 
 [node name="QuestionBlockLife" parent="HarderDesignNode" unique_id=1181572690 instance=ExtResource("50_cvtfh")]
 position = Vector2(3888, -848)
-result = SubResource("Resource_bc3dy")
+result = SubResource("Resource_g60sq")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="HarderDesignNode" unique_id=100528696]
 tile_map_data = PackedByteArray("AADKAPD/AAACAAIAAADKAO//AAACAAEAAADKAO7/AAACAAAAAADJAPD/AAABAAIAAADJAO//AAABAAEAAADJAO7/AAABAAAAAADIAPD/AAABAAIAAADIAO//AAABAAEAAADIAO7/AAABAAAAAADHAPD/AAABAAIAAADHAO//AAABAAEAAADHAO7/AAABAAAAAADGAPD/AAABAAIAAADGAO//AAABAAEAAADGAO7/AAABAAAAAADFAPD/AAABAAIAAADFAO//AAABAAEAAADFAO7/AAABAAAAAADEAPD/AAAAAAIAAADEAO//AAAAAAEAAADEAO7/AAAAAAAAAAC9APD/AAACAAIAAAC9AO//AAACAAEAAAC9AO7/AAACAAAAAAC8APD/AAABAAIAAAC8AO//AAABAAEAAAC8AO7/AAABAAAAAAC7APD/AAABAAIAAAC7AO//AAABAAEAAAC7AO7/AAABAAAAAAC6APD/AAABAAIAAAC6AO//AAABAAEAAAC6AO7/AAABAAAAAAC5APD/AAABAAIAAAC5AO//AAABAAEAAAC5AO7/AAABAAAAAAC4APD/AAABAAIAAAC4AO//AAABAAEAAAC4AO7/AAABAAAAAAC3APD/AAAAAAIAAAC3AO//AAAAAAEAAAC3AO7/AAAAAAAAAACyAOv/AQAAAAAAAACxAOv/AQAAAAAAAACsAOn/AQAAAAAAAACrAOn/AQAAAAAAAAC8AO3/AgAAAAAAAQC6AO3/AgAAAAAAAQDHAO3/AgAAAAAAAQCmAOf/AQAAAAAAAAClAOf/AQAAAAAAAACgAOn/AQAAAAAAAACfAOn/AQAAAAAAAACaAOr/AQAAAAAAAACZAOr/AQAAAAAAAACSAOr/AQAAAAAAAACRAOr/AQAAAAAAAACLAOr/AQAAAAAAAACLAOv/AQAAAAAAAACLAOz/AQAAAAAAAACLAO3/AQAAAAAAAACLAO7/AQAAAAAAAACLAO//AQAAAAAAAACLAPD/AQAAAAAAAACKAOr/AQAAAAAAAACJAOr/AQAAAAAAAACIAOr/AQAAAAAAAACHAOr/AQAAAAAAAACGAOr/AQAAAAAAAACFAOr/AQAAAAAAAACEAOr/AQAAAAAAAACDAOr/AQAAAAAAAACCAOr/AQAAAAAAAACBAOr/AQAAAAAAAACAAOr/AQAAAAAAAAB/AOr/AQAAAAAAAAB+AOr/AQAAAAAAAAB9AOr/AQAAAAAAAAB9AOn/AQAAAAAAAAB9AOj/AQAAAAAAAAB8AOn/AQAAAAAAAAB8AOr/AQAAAAAAAAB7AOr/AQAAAAAAAAB6AOr/AQAAAAAAAAB4AOr/AQAAAAAAAAB3AOr/AQAAAAAAAAB2AOn/AQAAAAAAAAB1AOn/AQAAAAAAAAB1AOj/AQAAAAAAAAB1AOr/AQAAAAAAAAB1AOv/AQAAAAAAAAB1AOz/AQAAAAAAAAB1AO3/AQAAAAAAAAB1AO7/AQAAAAAAAAB1AO//AQAAAAAAAAB1APD/AQAAAAAAAAB2AOr/AQAAAAAAAAB5AOr/AQAAAAAAAABwAOj/AgAAAAAAAgB9AOP/AgAAAAAAAgB0AOL/AgAAAAAAAgCNAOz/AgAAAAAAAgCSAOL/AgAAAAAAAgCXAOf/AgAAAAAAAgCgAOP/AgAAAAAAAgCpAOb/AgAAAAAAAgClAOz/AgAAAAAAAgCGAOb/AgAAAAAAAgC0AOX/AgAAAAAAAgC7AOH/AgAAAAAAAgC/AOf/AgAAAAAAAgC1AO//AgAAAAAACwDCAO//AgAAAAAABAA=")
@@ -798,6 +801,7 @@ tile_set = ExtResource("10_fok48")
 occlusion_enabled = false
 navigation_enabled = false
 
+[connection signal="music_started" from="MusicLoader" to="MusicOverlay" method="play"]
 [connection signal="coin_checked_success" from="CoinChecker" to="SecretUnlocker" method="progress_secret"]
 [connection signal="warp_started" from="PipeIn" to="Node" method="disable"]
 

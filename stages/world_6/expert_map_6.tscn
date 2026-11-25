@@ -3,10 +3,13 @@
 [ext_resource type="Script" uid="uid://b2miajjwaop0p" path="res://engine/scenes/map/scripts/map.gd" id="1_cmigl"]
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="2_33iu6"]
 [ext_resource type="Texture2D" uid="uid://ocb4wtdb7c1l" path="res://gfx/map/expert_mode_maps/map6.png" id="2_c5wpo"]
-[ext_resource type="AudioStream" uid="uid://10g2fxbhrgpq" path="res://music/extra/expert_mode/AGAiN - Scrabble Solution 2.01 kg.xm" id="2_melhx"]
 [ext_resource type="Script" uid="uid://bgm1hm3784ld7" path="res://engine/scenes/map/scripts/map_player_marker.gd" id="3_4hc74"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_ck2rk"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="4_dxcy6"]
+[ext_resource type="AudioStream" uid="uid://0w7xvryu2ihh" path="res://music/newermod/Toby Fox - Pink.ogg" id="5_cmigl"]
+[ext_resource type="AudioStream" uid="uid://drpyruutjqask" path="res://music/side_a/Megurine Luka - Sacred Secret (Prelude Edit).ogg" id="5_rfaw3"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="6_33iu6"]
+[ext_resource type="AudioStream" uid="uid://b12englh4x3ya" path="res://music/side_a/Hatsune Miku - Spiral Staircase (Prelude Loop).ogg" id="6_oi3qm"]
 [ext_resource type="Texture2D" uid="uid://usm6n80msr7n" path="res://engine/scenes/map/textures/bg.png" id="6_rfaw3"]
 [ext_resource type="PackedScene" uid="uid://w4jc7nb1lcsy" path="res://engine/scenes/map/prefabs/player.tscn" id="8_oi3qm"]
 [ext_resource type="PackedScene" uid="uid://beu6ovtvrvpfc" path="res://engine/scenes/map/prefabs/dot.tscn" id="9_q2f56"]
@@ -18,6 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://cri6ax5vkgp6w" path="res://gfx/fancy_graphics/world_texts/MARIO_WORLD_bigger.png" id="15_bs3pe"]
 [ext_resource type="Texture2D" uid="uid://ba2l3s3q7xnv3" path="res://gfx/fancy_graphics/world_texts/world_atlas_numbers.png" id="16_5dj4s"]
 [ext_resource type="Texture2D" uid="uid://b6hnnpa1sdewh" path="res://engine/scenes/map/textures/mario_icon.png" id="17_gt5rj"]
+[ext_resource type="FontVariation" uid="uid://4h0cbbutybo2" path="res://engine/fonts/font_variations/mister_earl_variation.tres" id="18_ck2rk"]
 [ext_resource type="Script" uid="uid://84tklnoxykkh" path="res://engine/scenes/map/scripts/player_icon.gd" id="18_hy8qr"]
 [ext_resource type="Script" uid="uid://dxfohdq1ugjpj" path="res://engine/scenes/map/scripts/start_text.gd" id="19_r1jxo"]
 [ext_resource type="Texture2D" uid="uid://h5k1m7htt20h" path="res://engine/scenes/map/textures/press_start.png" id="20_1il6l"]
@@ -48,7 +52,7 @@ metadata/_edit_lock_ = true
 script = ExtResource("3_ck2rk")
 tweaked_completion_music = ExtResource("4_dxcy6")
 ignore_fade_in_tweak = false
-music_var_1 = Array[Resource]([])
+music_var_1 = Array[Resource]([ExtResource("5_rfaw3"), ExtResource("6_oi3qm")])
 music_var_2 = Array[Resource]([])
 music_var_3 = Array[Resource]([])
 var_1_volume_db = Array[float]([0.0])
@@ -62,7 +66,11 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("2_melhx")])
+music = Array[Resource]([ExtResource("5_cmigl"), ExtResource("5_cmigl")])
+start_from_sec = Array[float]([0.0, 29.53])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("6_33iu6")]
+displaying_mode = 1
 
 [node name="Bg" type="Sprite2D" parent="." unique_id=643924231]
 texture = ExtResource("6_rfaw3")
@@ -127,6 +135,22 @@ script = ExtResource("12_3jslw")
 [node name="FancyNumber" type="Sprite2D" parent="GUI2/WorldText/FancyWorld" unique_id=1097498126]
 position = Vector2(111, 0)
 texture = SubResource("AtlasTexture_p7l54")
+
+[node name="Label2" type="Label" parent="GUI2/WorldText" unique_id=775197828]
+offset_left = -146.0
+offset_top = 12.0
+offset_right = 153.0
+offset_bottom = 66.0
+theme_override_colors/font_outline_color = Color(1, 0.42225724, 0.7903408, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("18_ck2rk")
+theme_override_font_sizes/font_size = 50
+text = "OOPS! ALL MEW MEW!"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
 
 [node name="MarioIcon" type="Sprite2D" parent="GUI2" unique_id=1116145348]
 position = Vector2(581, 436)
@@ -281,6 +305,8 @@ position = Vector2(1440, 283)
 rotation = -1.57068
 script = ExtResource("3_4hc74")
 level = "res://stages/world_6/expert_level_6-3.tscn"
+music_loader_ref = NodePath("../../MusicLoader")
+change_music_index = 1
 
 [node name="MapPlayerMarker10" type="Marker2D" parent="MarkerSpace" unique_id=285936991]
 show_behind_parent = true

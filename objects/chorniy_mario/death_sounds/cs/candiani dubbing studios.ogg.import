@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cgh0fpojl8hbg"
+path="res://.godot/imported/candiani dubbing studios.ogg-069f9e62c135a3df35a2275719ff1b05.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/candiani dubbing studios.ogg"
+dest_files=["res://.godot/imported/candiani dubbing studios.ogg-069f9e62c135a3df35a2275719ff1b05.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

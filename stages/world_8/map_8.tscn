@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://b6r0c5ki0fat4"]
 
 [ext_resource type="Script" uid="uid://b2miajjwaop0p" path="res://engine/scenes/map/scripts/map.gd" id="1_2u162"]
-[ext_resource type="AudioStream" uid="uid://d3uvv7yymwfwi" path="res://music/map8.mod" id="3_5is33"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_ngtoq"]
+[ext_resource type="AudioStream" uid="uid://bwgv4sibxic78" path="res://music/newermod/justmakil - some crumbling tower inspired thing.ogg" id="3_q7vsx"]
 [ext_resource type="Texture2D" uid="uid://usm6n80msr7n" path="res://engine/scenes/map/textures/bg.png" id="4_1w7g1"]
 [ext_resource type="Material" uid="uid://b0fr7piwjuxt2" path="res://materials/map_8_hsv.tres" id="4_6uxq0"]
+[ext_resource type="AudioStream" uid="uid://kd47dkvxchx5" path="res://music/newermod/Toby Fox - Crumbling Tower.ogg" id="4_q7vsx"]
 [ext_resource type="PackedScene" uid="uid://w4jc7nb1lcsy" path="res://engine/scenes/map/prefabs/player.tscn" id="5_b8mn7"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="5_t8xpr"]
 [ext_resource type="Texture2D" uid="uid://b75120vukokyu" path="res://gfx/map/maps/map8.png" id="5_x71yg"]
 [ext_resource type="PackedScene" uid="uid://beu6ovtvrvpfc" path="res://engine/scenes/map/prefabs/dot.tscn" id="6_2m4ja"]
 [ext_resource type="Script" uid="uid://w38wmhi8lagh" path="res://engine/scenes/map/scripts/map_camera.gd" id="7_lqwgw"]
@@ -47,8 +49,12 @@ metadata/_edit_lock_ = true
 
 [node name="MusicLoader" type="Node" parent="." unique_id=958726623]
 script = ExtResource("3_ngtoq")
-music = Array[Resource]([ExtResource("3_5is33"), ExtResource("3_5is33")])
-start_from_sec = Array[float]([0.0, 43.8])
+music = Array[Resource]([ExtResource("3_q7vsx"), ExtResource("4_q7vsx")])
+start_from_sec = Array[float]([0.0, 0.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("5_t8xpr")]
+displaying_mode = 1
+text = Array[String](["JustMakil - some crumbling tower inspired thing", "Toby Fox - Crumbling Tower"])
 
 [node name="Bg" type="Sprite2D" parent="." unique_id=257309689]
 z_index = -1
@@ -451,3 +457,5 @@ position = Vector2(181.419, -112.44)
 rotation = -1.0472
 texture = ExtResource("31_3s0c1")
 flip_h = true
+
+[connection signal="music_started" from="MusicLoader" to="MusicOverlay" method="play"]

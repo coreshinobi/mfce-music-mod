@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cx2op8w07wma"
+path="res://.godot/imported/Imagine dying.ogg-6a1a6d4f5c3af83604d2b185b83fb4ee.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/Imagine dying.ogg"
+dest_files=["res://.godot/imported/Imagine dying.ogg-6a1a6d4f5c3af83604d2b185b83fb4ee.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

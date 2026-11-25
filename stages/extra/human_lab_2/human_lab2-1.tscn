@@ -3,7 +3,9 @@
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_nnlco"]
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_013kg"]
 [ext_resource type="PackedScene" uid="uid://b636po6fa0tfj" path="res://objects/music_loader_custom/music_loader_custom.tscn" id="3_0cgxy"]
-[ext_resource type="AudioStream" uid="uid://dosakutbmnyqg" path="res://music/extra/human_lab_2/super_mario_bros.mo3" id="4_hcc5f"]
+[ext_resource type="AudioStream" uid="uid://dgih2arbhq4kr" path="res://music/side_b/red_stealth_-_ghost9.xm" id="4_cjlxw"]
+[ext_resource type="AudioStream" uid="uid://d23ptj4gwlpc8" path="res://music/newermod/Eurobeat Brony - Discord (EuroChaos Mix) ft. Odyssey.ogg" id="4_la2xr"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="5_einat"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="6_einat"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="7_cjlxw"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="8_sqmfm"]
@@ -81,26 +83,26 @@ shader_parameter/value = 0.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o1uof"]
 size = Vector2(1304, 781)
 
-[sub_resource type="Resource" id="Resource_hcc5f"]
+[sub_resource type="Resource" id="Resource_einat"]
 resource_local_to_scene = true
 script = ExtResource("36_xq7qy")
 creation_fallback_node = ExtResource("34_todo3")
 creation_nodepack = ExtResource("35_v34tt")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_la2xr"]
-resource_local_to_scene = true
-script = ExtResource("36_xq7qy")
-creation_nodepack = ExtResource("38_nko8o")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_einat"]
-resource_local_to_scene = true
-script = ExtResource("36_xq7qy")
-creation_nodepack = ExtResource("38_nko8o")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_cjlxw"]
+resource_local_to_scene = true
+script = ExtResource("36_xq7qy")
+creation_nodepack = ExtResource("38_nko8o")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_sqmfm"]
+resource_local_to_scene = true
+script = ExtResource("36_xq7qy")
+creation_nodepack = ExtResource("38_nko8o")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_ma81l"]
 resource_local_to_scene = true
 script = ExtResource("36_xq7qy")
 creation_fallback_node = ExtResource("34_todo3")
@@ -112,18 +114,6 @@ _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 10416, 128, 0, 0, 0, 0, 10752, 128)
 }
 point_count = 2
-
-[sub_resource type="Resource" id="Resource_sqmfm"]
-resource_local_to_scene = true
-script = ExtResource("36_xq7qy")
-creation_nodepack = ExtResource("38_nko8o")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_ma81l"]
-resource_local_to_scene = true
-script = ExtResource("36_xq7qy")
-creation_nodepack = ExtResource("38_nko8o")
-trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_j7ysf"]
 resource_local_to_scene = true
@@ -152,8 +142,7 @@ trans_inheritances = 7
 [sub_resource type="Resource" id="Resource_l28qh"]
 resource_local_to_scene = true
 script = ExtResource("36_xq7qy")
-creation_fallback_node = ExtResource("34_todo3")
-creation_nodepack = ExtResource("35_v34tt")
+creation_nodepack = ExtResource("38_nko8o")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_uosrp"]
@@ -163,6 +152,19 @@ creation_nodepack = ExtResource("38_nko8o")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_noai0"]
+resource_local_to_scene = true
+script = ExtResource("36_xq7qy")
+creation_fallback_node = ExtResource("34_todo3")
+creation_nodepack = ExtResource("35_v34tt")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_4rb5l"]
+resource_local_to_scene = true
+script = ExtResource("36_xq7qy")
+creation_nodepack = ExtResource("38_nko8o")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_h1mdc"]
 resource_local_to_scene = true
 script = ExtResource("36_xq7qy")
 creation_nodepack = ExtResource("59_xhxqc")
@@ -175,8 +177,14 @@ completion_music = ExtResource("2_013kg")
 jump_to_scene = "uid://vrcvq5215e4b"
 
 [node name="MusicLoader" parent="." unique_id=715357955 instance=ExtResource("3_0cgxy")]
-music = Array[Resource]([ExtResource("4_hcc5f")])
-volume_db = Array[float]([1.0])
+music_var_2 = Array[Resource]([ExtResource("4_cjlxw")])
+var_2_volume_db = Array[float]([2.7])
+playback_pitch = 1.0
+music = Array[Resource]([ExtResource("4_la2xr")])
+volume_db = Array[float]([1.5])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("5_einat")]
+text = Array[String](["Eurobeat Brony - Discord (EuroChaos Mix)"])
 
 [node name="Player" parent="." unique_id=1090254440 instance=ExtResource("6_einat")]
 position = Vector2(80, 400)
@@ -903,11 +911,11 @@ metadata/_edit_pinned_properties_ = [&"medium", &"minimum", &"maximum"]
 
 [node name="QuestionBlockFireFlower" parent="." unique_id=2147292177 instance=ExtResource("33_bjm4c")]
 position = Vector2(240, 288)
-result = SubResource("Resource_hcc5f")
+result = SubResource("Resource_einat")
 
 [node name="QuestionBlock" parent="." unique_id=638033028 instance=ExtResource("37_kairf")]
 position = Vector2(272, 288)
-result = SubResource("Resource_la2xr")
+result = SubResource("Resource_cjlxw")
 
 [node name="Clone01" parent="." unique_id=1372505786 instance=ExtResource("39_d4el0")]
 position = Vector2(1296, 384)
@@ -950,7 +958,7 @@ position = Vector2(4880, 400)
 
 [node name="QuestionBlock2" parent="." unique_id=2106204239 instance=ExtResource("37_kairf")]
 position = Vector2(4720, 304)
-result = SubResource("Resource_einat")
+result = SubResource("Resource_sqmfm")
 
 [node name="Brick" parent="." unique_id=2045947550 instance=ExtResource("43_bhj78")]
 position = Vector2(4688, 304)
@@ -963,7 +971,7 @@ position = Vector2(8240, 240)
 
 [node name="QuestionBlockFireFlower2" parent="." unique_id=878727154 instance=ExtResource("33_bjm4c")]
 position = Vector2(4752, 304)
-result = SubResource("Resource_cjlxw")
+result = SubResource("Resource_ma81l")
 
 [node name="Scenery" type="Node2D" parent="." unique_id=257870569]
 position = Vector2(192, 400)
@@ -1587,11 +1595,11 @@ position = Vector2(6560, 144)
 
 [node name="QuestionBlock5" parent="." unique_id=541108196 instance=ExtResource("37_kairf")]
 position = Vector2(8272, 240)
-result = SubResource("Resource_sqmfm")
+result = SubResource("Resource_j7ysf")
 
 [node name="QuestionBlock6" parent="." unique_id=1991703975 instance=ExtResource("37_kairf")]
 position = Vector2(8208, 240)
-result = SubResource("Resource_ma81l")
+result = SubResource("Resource_b51su")
 
 [node name="Brick3" parent="." unique_id=786183528 instance=ExtResource("43_bhj78")]
 position = Vector2(2896, 272)
@@ -1622,27 +1630,27 @@ position = Vector2(3032, 384)
 
 [node name="QuestionBlock3" parent="." unique_id=592193576 instance=ExtResource("37_kairf")]
 position = Vector2(2960, 112)
-result = SubResource("Resource_j7ysf")
+result = SubResource("Resource_t5kgw")
 
 [node name="QuestionBlock7" parent="." unique_id=1856925475 instance=ExtResource("37_kairf")]
 position = Vector2(2992, 112)
-result = SubResource("Resource_b51su")
+result = SubResource("Resource_543im")
 
 [node name="QuestionBlock8" parent="." unique_id=409876790 instance=ExtResource("37_kairf")]
 position = Vector2(3024, 112)
-result = SubResource("Resource_t5kgw")
+result = SubResource("Resource_l28qh")
 
 [node name="QuestionBlock4" parent="." unique_id=1309695430 instance=ExtResource("37_kairf")]
 position = Vector2(3056, 112)
-result = SubResource("Resource_543im")
+result = SubResource("Resource_uosrp")
 
 [node name="QuestionBlockFireFlower3" parent="." unique_id=2051855872 instance=ExtResource("33_bjm4c")]
 position = Vector2(9584, 336)
-result = SubResource("Resource_l28qh")
+result = SubResource("Resource_noai0")
 
 [node name="QuestionBlock9" parent="." unique_id=1782606548 instance=ExtResource("37_kairf")]
 position = Vector2(9616, 336)
-result = SubResource("Resource_uosrp")
+result = SubResource("Resource_4rb5l")
 
 [node name="Treebig" type="Sprite2D" parent="." unique_id=882140909]
 z_index = -1
@@ -1715,5 +1723,5 @@ position = Vector2(2888, 384)
 
 [node name="QuestionBlockLife" parent="." unique_id=1814161857 instance=ExtResource("58_iq0sr")]
 position = Vector2(11256, 232)
-result = SubResource("Resource_noai0")
+result = SubResource("Resource_h1mdc")
 initially_visible_and_solid = false

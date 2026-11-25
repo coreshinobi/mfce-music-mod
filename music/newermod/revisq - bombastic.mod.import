@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://br5bcrjcrr6s1"
+path="res://.godot/imported/revisq - bombastic.mod-56038462da626df94b42a0db61a1f6f3.res"
+
+[deps]
+
+source_file="res://music/newermod/revisq - bombastic.mod"
+dest_files=["res://.godot/imported/revisq - bombastic.mod-56038462da626df94b42a0db61a1f6f3.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

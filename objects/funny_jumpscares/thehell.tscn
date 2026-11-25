@@ -1,0 +1,97 @@
+[gd_scene format=3 uid="uid://cqfw7adgfk2b"]
+
+[ext_resource type="Script" uid="uid://nfpc8cqvfadl" path="res://objects/funny_jumpscares/thehell.gd" id="1_ox42q"]
+[ext_resource type="Script" uid="uid://cway2863r5lkh" path="res://engine/objects/enemies/spikes/spike.gd" id="2_0qhcf"]
+[ext_resource type="Texture2D" uid="uid://byh31sh7asxss" path="res://objects/funny_jumpscares/akaneowari.png" id="3_0qhcf"]
+[ext_resource type="Script" uid="uid://doq0qyrr5ihr6" path="res://engine/scripts/nodes/vision/vision.gd" id="9_3nrcu"]
+[ext_resource type="Script" uid="uid://bq7icuvs1dilb" path="res://engine/scripts/classes/effecters/point_light_2d_appear.gd" id="10_5s6kk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8kc8x"]
+radius = 74.00676
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_83vdk"]
+atlas = ExtResource("3_0qhcf")
+region = Rect2(0, 0, 213, 329)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3qlj3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_83vdk")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 25.0
+}]
+
+[sub_resource type="Gradient" id="Gradient_j7rb0"]
+colors = PackedColorArray(1, 1, 1, 0.501961, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_pces4"]
+gradient = SubResource("Gradient_j7rb0")
+width = 160
+height = 160
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.8, 0.1)
+metadata/_snap_enabled = true
+
+[node name="Akane" type="CharacterBody2D" unique_id=1884896969]
+collision_layer = 2
+collision_mask = 0
+platform_on_leave = 2
+script = ExtResource("1_ox42q")
+interval = 0.1
+jumping_height = 264.0
+one_shot = true
+type = null
+ignore_starman = null
+sprite = NodePath("Sprite")
+gravity_scale = 0.4
+collision = false
+metadata/_edit_pinned_properties_ = [&"sprite", &"gravity_scale", &"collision"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=245007787]
+visible = false
+shape = SubResource("CircleShape2D_8kc8x")
+
+[node name="Body" type="Area2D" parent="." unique_id=742747390]
+collision_layer = 2
+collision_mask = 5
+script = ExtResource("2_0qhcf")
+type = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Body" unique_id=1258490158]
+position = Vector2(0, 52.000004)
+scale = Vector2(0.775, 1.685)
+shape = SubResource("CircleShape2D_8kc8x")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=1254466292]
+sprite_frames = SubResource("SpriteFrames_3qlj3")
+autoplay = "default"
+offset = Vector2(-18.835, 71.33)
+metadata/_edit_lock_ = true
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenEnabler2D" parent="." unique_id=1144169519]
+modulate = Color(1, 1, 1, 0.0196078)
+rect = Rect2(-32, -32, 64, 64)
+enable_node_path = NodePath("../Interval")
+script = ExtResource("9_3nrcu")
+new_rect = Rect2(-128, -128, 256, 256)
+metadata/_edit_lock_ = true
+
+[node name="Interval" type="Timer" parent="." unique_id=776601093]
+process_callback = 0
+wait_time = 3.0
+one_shot = true
+autostart = true
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1109579457]
+blend_mode = 2
+range_layer_min = -100
+texture = SubResource("GradientTexture2D_pces4")
+texture_scale = 0.01
+script = ExtResource("10_5s6kk")
+duration = 0.15
+
+[connection signal="timeout" from="Interval" to="." method="_on_jump"]

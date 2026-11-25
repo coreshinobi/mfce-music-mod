@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://x6uetob88vx"
+path="res://.godot/imported/revisq - bl.mod-782a2ed393764f27740ad9435416b3dd.res"
+
+[deps]
+
+source_file="res://music/side_b/revisq - bl.mod"
+dest_files=["res://.godot/imported/revisq - bl.mod-782a2ed393764f27740ad9435416b3dd.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

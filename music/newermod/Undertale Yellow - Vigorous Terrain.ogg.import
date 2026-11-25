@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://beesr2xdpvddp"
+path="res://.godot/imported/Undertale Yellow - Vigorous Terrain.ogg-985b0d9d4534e24476e607bacc6338bb.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Undertale Yellow - Vigorous Terrain.ogg"
+dest_files=["res://.godot/imported/Undertale Yellow - Vigorous Terrain.ogg-985b0d9d4534e24476e607bacc6338bb.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://ssj1gntak2l1"]
+
+[ext_resource type="Script" uid="uid://c0bfh8mobga1r" path="res://engine/objects/projectiles/hammer/hammer.gd" id="1_r8n85"]
+[ext_resource type="Texture2D" uid="uid://qke58caaork6" path="res://objects/hhpayclones/julie_clone/textures/projectile.png" id="2_x7m3c"]
+[ext_resource type="Script" uid="uid://ctnllsiq4nuie" path="res://engine/objects/projectiles/projectile_attack.gd" id="3_610rl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vdifp"]
+radius = 11.0
+
+[node name="MusicNote" type="CharacterBody2D" unique_id=849311763]
+collision_layer = 4
+collision_mask = 64
+platform_on_leave = 2
+script = ExtResource("1_r8n85")
+sprite = NodePath("Texture")
+speed = Vector2(387.5, 0)
+gravity_scale = 0.3
+collision = false
+metadata/_edit_pinned_properties_ = [&"sprite", &"collision"]
+
+[node name="Texture" type="Sprite2D" parent="." unique_id=500841750]
+texture = ExtResource("2_x7m3c")
+
+[node name="Attack" type="ShapeCast2D" parent="." unique_id=280540818]
+visible = false
+position = Vector2(0, 3)
+shape = SubResource("CircleShape2D_vdifp")
+target_position = Vector2(0, 0)
+max_results = 8
+collision_mask = 3
+collide_with_areas = true
+script = ExtResource("3_610rl")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1510496244]
+modulate = Color(1, 1, 1, 0.0196078)
+rect = Rect2(-64, -64, 128, 128)
+metadata/_edit_lock_ = true
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="queue_free"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dk46q8ww3jdfe"
+path="res://.godot/imported/DJ Ron - Mo Musik (African Chant).ogg-2bd1cfaf142670e835b2a8edab6c94c1.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/DJ Ron - Mo Musik (African Chant).ogg"
+dest_files=["res://.godot/imported/DJ Ron - Mo Musik (African Chant).ogg-2bd1cfaf142670e835b2a8edab6c94c1.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

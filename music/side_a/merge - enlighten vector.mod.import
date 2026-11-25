@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://cpkwongi6tg3"
+path="res://.godot/imported/merge - enlighten vector.mod-8cc66cc24ffd80a848c3945b63497875.res"
+
+[deps]
+
+source_file="res://music/side_a/merge - enlighten vector.mod"
+dest_files=["res://.godot/imported/merge - enlighten vector.mod-8cc66cc24ffd80a848c3945b63497875.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

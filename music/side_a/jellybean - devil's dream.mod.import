@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://dm5racgw435uv"
+path="res://.godot/imported/jellybean - devil's dream.mod-ea5e5e4fd91eee23c91a29a5886ef37a.res"
+
+[deps]
+
+source_file="res://music/side_a/jellybean - devil's dream.mod"
+dest_files=["res://.godot/imported/jellybean - devil's dream.mod-ea5e5e4fd91eee23c91a29a5886ef37a.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

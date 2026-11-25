@@ -5,16 +5,19 @@
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_mqq8i"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_grkyt"]
 [ext_resource type="Script" uid="uid://7byhkvlnfxa" path="res://components/secrets_manager/unlock_multiple.gd" id="4_isa53"]
-[ext_resource type="AudioStream" uid="uid://wnal0dldwd3m" path="res://music/extra/world_9/anorexia.mod" id="4_loc5n"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="4_pfqbp"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="5_awmfc"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="6_84p2s"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="7_awmfc"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_dda70"]
+[ext_resource type="AudioStream" uid="uid://wsb3fbblnyd0" path="res://music/newermod/Prikol Software @ Doom2D - Prostota.xm" id="8_b11xh"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="8_cf1df"]
 [ext_resource type="FontFile" uid="uid://b1pi0t5byork2" path="res://engine/components/hud/hud_font.fnt" id="8_lswib"]
+[ext_resource type="AudioStream" uid="uid://d26xygjwfd3kx" path="res://music/side_b/Alexander 'Siren' Brandon @ unreal - nali chant.it" id="8_lx6ro"]
 [ext_resource type="PackedScene" uid="uid://df5i2eol1nrof" path="res://engine/objects/enemies/volcano/volcano.tscn" id="8_xw81v"]
 [ext_resource type="Texture2D" uid="uid://dfi4d7levruc4" path="res://gfx/backgrounds/smasvolcanoresize.png" id="9_o3ieb"]
 [ext_resource type="TileSet" uid="uid://cisrnptu4w3tf" path="res://tilesets/volcano/volcano.tres" id="9_r4abr"]
+[ext_resource type="AudioStream" uid="uid://c2fkfca52smxm" path="res://music/side_c/virgill - elef on the olef.mod" id="9_r5c0o"]
 [ext_resource type="PackedScene" uid="uid://cnnn6g6x2r6uq" path="res://objects/dragon_coin/dragon_coin_control.tscn" id="10_jdfe0"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="10_lch24"]
 [ext_resource type="PackedScene" uid="uid://cvt7wr4xv4m6j" path="res://objects/dragon_coin/dragon_coin.tscn" id="11_loc5n"]
@@ -60,30 +63,6 @@ point_count = 2
 script = ExtResource("19_ib6v3")
 creation_nodepack = ExtResource("20_usvvk")
 
-[sub_resource type="Resource" id="Resource_cf1df"]
-resource_local_to_scene = true
-script = ExtResource("19_ib6v3")
-creation_nodepack = ExtResource("20_usvvk")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_b11xh"]
-resource_local_to_scene = true
-script = ExtResource("19_ib6v3")
-creation_nodepack = ExtResource("20_usvvk")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_lx6ro"]
-resource_local_to_scene = true
-script = ExtResource("19_ib6v3")
-creation_nodepack = ExtResource("20_usvvk")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_r5c0o"]
-resource_local_to_scene = true
-script = ExtResource("19_ib6v3")
-creation_nodepack = ExtResource("20_usvvk")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_el7kp"]
 resource_local_to_scene = true
 script = ExtResource("19_ib6v3")
@@ -97,6 +76,30 @@ creation_nodepack = ExtResource("20_usvvk")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_5cha6"]
+resource_local_to_scene = true
+script = ExtResource("19_ib6v3")
+creation_nodepack = ExtResource("20_usvvk")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_ea3j7"]
+resource_local_to_scene = true
+script = ExtResource("19_ib6v3")
+creation_nodepack = ExtResource("20_usvvk")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_k1bwu"]
+resource_local_to_scene = true
+script = ExtResource("19_ib6v3")
+creation_nodepack = ExtResource("20_usvvk")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_524k2"]
+resource_local_to_scene = true
+script = ExtResource("19_ib6v3")
+creation_nodepack = ExtResource("20_usvvk")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_rd6dx"]
 resource_local_to_scene = true
 script = ExtResource("19_ib6v3")
 creation_nodepack = ExtResource("20_usvvk")
@@ -141,20 +144,23 @@ script = ExtResource("4_pfqbp")
 tweaked_completion_music = ExtResource("5_awmfc")
 ignore_fade_in_tweak = false
 music_var_1 = Array[Resource]([])
-music_var_2 = Array[Resource]([])
-music_var_3 = Array[Resource]([])
+music_var_2 = Array[Resource]([ExtResource("8_lx6ro")])
+music_var_3 = Array[Resource]([ExtResource("9_r5c0o")])
 var_1_volume_db = Array[float]([0.0])
 var_1_start_from_sec = Array[float]([0.0])
-var_2_volume_db = Array[float]([0.0])
+var_2_volume_db = Array[float]([5.9])
 var_2_start_from_sec = Array[float]([0.0])
-var_3_volume_db = Array[float]([0.0])
+var_3_volume_db = Array[float]([2.1])
 var_3_start_from_sec = Array[float]([0.0])
 boss_music_var_1 = null
 boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("4_loc5n")])
+music = Array[Resource]([ExtResource("8_b11xh")])
+volume_db = Array[float]([4.5])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("8_cf1df")]
 
 [node name="Mario" parent="." unique_id=2127880724 instance=ExtResource("4_grkyt")]
 position = Vector2(112, 400)
@@ -935,31 +941,31 @@ result = SubResource("Resource_v1n70")
 
 [node name="QuestionBlock9" parent="." unique_id=653267895 instance=ExtResource("28_jdfe0")]
 position = Vector2(2960, 240)
-result = SubResource("Resource_cf1df")
+result = SubResource("Resource_el7kp")
 
 [node name="QuestionBlock11" parent="." unique_id=894268475 instance=ExtResource("28_jdfe0")]
 position = Vector2(2992, 240)
-result = SubResource("Resource_b11xh")
+result = SubResource("Resource_vmejs")
 
 [node name="QuestionBlock12" parent="." unique_id=1836381529 instance=ExtResource("28_jdfe0")]
 position = Vector2(3312, 336)
-result = SubResource("Resource_lx6ro")
+result = SubResource("Resource_5cha6")
 
 [node name="QuestionBlock13" parent="." unique_id=668762310 instance=ExtResource("28_jdfe0")]
 position = Vector2(3344, 336)
-result = SubResource("Resource_r5c0o")
+result = SubResource("Resource_ea3j7")
 
 [node name="QuestionBlock14" parent="." unique_id=482654372 instance=ExtResource("28_jdfe0")]
 position = Vector2(5488, 272)
-result = SubResource("Resource_el7kp")
+result = SubResource("Resource_k1bwu")
 
 [node name="QuestionBlock15" parent="." unique_id=1747702560 instance=ExtResource("28_jdfe0")]
 position = Vector2(7600, 240)
-result = SubResource("Resource_vmejs")
+result = SubResource("Resource_524k2")
 
 [node name="QuestionBlock16" parent="." unique_id=1070071163 instance=ExtResource("28_jdfe0")]
 position = Vector2(7664, 240)
-result = SubResource("Resource_5cha6")
+result = SubResource("Resource_rd6dx")
 
 [node name="QuestionBlock10" parent="." unique_id=1285981129 instance=ExtResource("28_jdfe0")]
 position = Vector2(336, 176)

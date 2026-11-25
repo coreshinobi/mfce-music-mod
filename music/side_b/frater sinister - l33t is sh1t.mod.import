@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://ce70uunnittol"
+path="res://.godot/imported/frater sinister - l33t is sh1t.mod-198de31ff4e8d11577621952104198b5.res"
+
+[deps]
+
+source_file="res://music/side_b/frater sinister - l33t is sh1t.mod"
+dest_files=["res://.godot/imported/frater sinister - l33t is sh1t.mod-198de31ff4e8d11577621952104198b5.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

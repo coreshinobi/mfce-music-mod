@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://by50qvo70fvrp"
+path="res://.godot/imported/infinity (de) - shortie12 (mario.exe edit).mod-aa62e2d98814cf3e7d0a97bb79e64284.res"
+
+[deps]
+
+source_file="res://music/newermod/infinity (de) - shortie12 (mario.exe edit).mod"
+dest_files=["res://.godot/imported/infinity (de) - shortie12 (mario.exe edit).mod-aa62e2d98814cf3e7d0a97bb79e64284.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

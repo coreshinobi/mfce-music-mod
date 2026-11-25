@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://mwuntio6bqu4"
+path="res://.godot/imported/pete h - always on my mind.it-a91f03bd61cd4ea0590cdb9c95e876b9.res"
+
+[deps]
+
+source_file="res://music/newermod/pete h - always on my mind.it"
+dest_files=["res://.godot/imported/pete h - always on my mind.it-a91f03bd61cd4ea0590cdb9c95e876b9.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

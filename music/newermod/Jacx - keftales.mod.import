@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://coudf3dkedx4o"
+path="res://.godot/imported/Jacx - keftales.mod-fff917b44ffbfbf124f48ed5dcc55109.res"
+
+[deps]
+
+source_file="res://music/newermod/Jacx - keftales.mod"
+dest_files=["res://.godot/imported/Jacx - keftales.mod-fff917b44ffbfbf124f48ed5dcc55109.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

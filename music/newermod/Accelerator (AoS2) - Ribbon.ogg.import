@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://tip25r4j1yrq"
+path="res://.godot/imported/Accelerator (AoS2) - Ribbon.ogg-53369aaa5242a351218e4a8a80559395.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Accelerator (AoS2) - Ribbon.ogg"
+dest_files=["res://.godot/imported/Accelerator (AoS2) - Ribbon.ogg-53369aaa5242a351218e4a8a80559395.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

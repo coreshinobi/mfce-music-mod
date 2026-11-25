@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://c4jvp2ygmttwd"
+path="res://.godot/imported/Gopher - Return to Nebula 9.xm-83014bbb1aaec5744860f9756f9aa508.res"
+
+[deps]
+
+source_file="res://music/newermod/Gopher - Return to Nebula 9.xm"
+dest_files=["res://.godot/imported/Gopher - Return to Nebula 9.xm-83014bbb1aaec5744860f9756f9aa508.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

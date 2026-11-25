@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://0w7xvryu2ihh"
+path="res://.godot/imported/Toby Fox - Pink.ogg-811617d014ad283867b43716a72a68a8.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Toby Fox - Pink.ogg"
+dest_files=["res://.godot/imported/Toby Fox - Pink.ogg-811617d014ad283867b43716a72a68a8.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

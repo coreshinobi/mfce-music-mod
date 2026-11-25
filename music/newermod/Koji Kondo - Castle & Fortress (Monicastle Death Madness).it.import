@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://bpnebg13jtl40"
+path="res://.godot/imported/Koji Kondo - Castle & Fortress (Monicastle Death Madness).it-734959fd9bd524e82d09a2fa3d4570c7.res"
+
+[deps]
+
+source_file="res://music/newermod/Koji Kondo - Castle & Fortress (Monicastle Death Madness).it"
+dest_files=["res://.godot/imported/Koji Kondo - Castle & Fortress (Monicastle Death Madness).it-734959fd9bd524e82d09a2fa3d4570c7.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

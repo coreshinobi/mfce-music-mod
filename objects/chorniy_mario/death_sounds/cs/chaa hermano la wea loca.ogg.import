@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bfpkdodec140l"
+path="res://.godot/imported/chaa hermano la wea loca.ogg-8f299ed018617cfa4995803cf7e0f7f6.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/chaa hermano la wea loca.ogg"
+dest_files=["res://.godot/imported/chaa hermano la wea loca.ogg-8f299ed018617cfa4995803cf7e0f7f6.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

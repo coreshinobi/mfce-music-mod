@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cf302kxc3vdqa"
+path="res://.godot/imported/The Lawnmower Man (SNES) - Virtual Space Industries.ogg-ace779703a3290af03fd36f234199792.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/The Lawnmower Man (SNES) - Virtual Space Industries.ogg"
+dest_files=["res://.godot/imported/The Lawnmower Man (SNES) - Virtual Space Industries.ogg-ace779703a3290af03fd36f234199792.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=7.29
+bpm=0.0
+beat_count=0
+bar_beats=4

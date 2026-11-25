@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://by0sft02equf2"
+path="res://.godot/imported/Toby Fox, Spy Trolling - Attack of the Killer Queen (Early 90's Pop Mix).ogg-62ef02240972e12e20bfb64cfb548d00.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Toby Fox, Spy Trolling - Attack of the Killer Queen (Early 90's Pop Mix).ogg"
+dest_files=["res://.godot/imported/Toby Fox, Spy Trolling - Attack of the Killer Queen (Early 90's Pop Mix).ogg-62ef02240972e12e20bfb64cfb548d00.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

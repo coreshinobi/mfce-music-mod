@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://cjjmn0hosppcu"
+path="res://.godot/imported/Saint Sinner - Trippin Hard.mod-8ab3ac4e0510af55eb9b13b0f4484051.res"
+
+[deps]
+
+source_file="res://music/newermod/Saint Sinner - Trippin Hard.mod"
+dest_files=["res://.godot/imported/Saint Sinner - Trippin Hard.mod-8ab3ac4e0510af55eb9b13b0f4484051.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

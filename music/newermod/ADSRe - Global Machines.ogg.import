@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c7lbqqwc415v"
+path="res://.godot/imported/ADSRe - Global Machines.ogg-4faa29a6bcd2bbe4758b860b48fcdb6b.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/ADSRe - Global Machines.ogg"
+dest_files=["res://.godot/imported/ADSRe - Global Machines.ogg-4faa29a6bcd2bbe4758b860b48fcdb6b.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ds4kjbei3lsui"
+path="res://.godot/imported/Danganronpa - Hangman's Gambit.ogg-1c0ad52a87b2bfa74ec87716ee02205c.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Danganronpa - Hangman's Gambit.ogg"
+dest_files=["res://.godot/imported/Danganronpa - Hangman's Gambit.ogg-1c0ad52a87b2bfa74ec87716ee02205c.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=28.68
+bpm=0.0
+beat_count=0
+bar_beats=4

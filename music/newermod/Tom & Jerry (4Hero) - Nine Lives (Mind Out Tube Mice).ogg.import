@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dyfs81bqjx2tf"
+path="res://.godot/imported/Tom & Jerry (4Hero) - Nine Lives (Mind Out Tube Mice).ogg-d0627b3726692b2de141b55b58d8da2e.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Tom & Jerry (4Hero) - Nine Lives (Mind Out Tube Mice).ogg"
+dest_files=["res://.godot/imported/Tom & Jerry (4Hero) - Nine Lives (Mind Out Tube Mice).ogg-d0627b3726692b2de141b55b58d8da2e.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bf1k46ey7pgry"
+path="res://.godot/imported/imps give me gas.wav-62a89ddd28f38de34b81638bcbd07eaf.sample"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/imps give me gas.wav"
+dest_files=["res://.godot/imported/imps give me gas.wav-62a89ddd28f38de34b81638bcbd07eaf.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

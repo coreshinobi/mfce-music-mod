@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bym2ya3o210cd"
+path="res://.godot/imported/Alien Soldier - From Objector.ogg-74e83cc2ff79ff8ec54041e515cbef0c.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Alien Soldier - From Objector.ogg"
+dest_files=["res://.godot/imported/Alien Soldier - From Objector.ogg-74e83cc2ff79ff8ec54041e515cbef0c.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=20.85
+bpm=0.0
+beat_count=0
+bar_beats=4

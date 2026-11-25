@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cnarefafmytmq" path="res://stages/extra/expert_mode/scripts/goomba_party_expert.gd" id="1_5bnwl"]
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="2_qyo2b"]
-[ext_resource type="AudioStream" uid="uid://c0my5mvbviwhg" path="res://stages/extra/expert_mode/peachtitle.ogg" id="3_yomkb"]
+[ext_resource type="AudioStream" uid="uid://2u1nipwhirhf" path="res://music/newermod/Pokemon Black & White - Bianca's Theme.ogg" id="3_h0edx"]
 [ext_resource type="PackedScene" uid="uid://7c2he87yl367" path="res://objects/music_loader_custom/music_pitch_changer.tscn" id="4_h0edx"]
 [ext_resource type="Texture2D" uid="uid://cfl32xhp20q7x" path="res://engine/scenes/castle_cutscene/textures/castle_big.png" id="4_qw1c7"]
 [ext_resource type="Texture2D" uid="uid://dydqbjxrnmy8p" path="res://stages/extra/lost_map/gfx/lostmap_title_mario.png" id="5_ifblm"]
@@ -12,11 +12,11 @@
 [ext_resource type="Texture2D" uid="uid://0riss0l4eu14" path="res://gfx/texts/toad_logo.png" id="9_8omgk"]
 [ext_resource type="Texture2D" uid="uid://ooahkkmluqw8" path="res://gfx/texts/super_mario.png" id="10_v31qk"]
 [ext_resource type="Texture2D" uid="uid://b6i0laheaghh6" path="res://gfx/fancy_graphics/sparkle_giant.png" id="11_335li"]
-[ext_resource type="Texture2D" uid="uid://cw83ugt64lqqh" path="res://gfx/texts/super_mario_2.png" id="11_sxr0b"]
+[ext_resource type="VideoStream" uid="uid://cb0rfno4ba6kh" path="res://stages/extra/expert_mode/Віддай-сало-｜-Отдай-сало-｜•-Прикол-Illia-Sivylskiy-_480p_-h264_.ogv" id="11_h0edx"]
 [ext_resource type="Script" uid="uid://0h3x5dwndovw" path="res://engine/scripts/nodes/effects/quality_visible.gd" id="12_sl7sw"]
 [ext_resource type="Texture2D" uid="uid://6bwpp568bmq0" path="res://gfx/fancy_graphics/giant_clouds.png" id="13_71yrv"]
 [ext_resource type="FontFile" uid="uid://dod5x6pna7fub" path="res://engine/fonts/comix_heavy.ttf" id="14_uhha6"]
-[ext_resource type="VideoStream" uid="uid://bm06ox3fcfqbx" path="res://stages/extra/expert_mode/outwantitnow.ogv" id="16_3osou"]
+[ext_resource type="Texture2D" uid="uid://4j3ogh6xo48q" path="res://gfx/texts/lopunny_lopunny.png" id="15_b0mm5"]
 
 [sub_resource type="Gradient" id="Gradient_hwhno"]
 colors = PackedColorArray(0, 0.152941, 0.811765, 1, 0, 0.654902, 0.937255, 1)
@@ -61,8 +61,8 @@ script = ExtResource("1_5bnwl")
 goto_scene = "res://stages/world_1/expert_map_1.tscn"
 
 [node name="MusicLoader" parent="." unique_id=760879550 instance=ExtResource("2_qyo2b")]
-music = Array[Resource]([ExtResource("3_yomkb")])
-volume_db = Array[float]([-2.0])
+music = Array[Resource]([ExtResource("3_h0edx")])
+volume_db = Array[float]([0.0])
 start_from_sec = Array[float]([0.0])
 
 [node name="MusicPitchChanger" parent="MusicLoader" unique_id=477654642 instance=ExtResource("4_h0edx")]
@@ -227,8 +227,8 @@ offset_left = 80.0
 offset_top = 224.0
 offset_right = 560.0
 offset_bottom = 480.0
-stream = ExtResource("16_3osou")
-volume_db = -7.9999995
+stream = ExtResource("11_h0edx")
+volume_db = -7.999998
 bus = &"1D Sound"
 
 [node name="ToadLogo" type="Sprite2D" parent="." unique_id=1154949942]
@@ -249,7 +249,8 @@ process_material = SubResource("ParticleProcessMaterial_bgo6w")
 
 [node name="SuperMario2" type="Sprite2D" parent="." unique_id=1969140051]
 position = Vector2(1120, -496)
-texture = ExtResource("11_sxr0b")
+texture = ExtResource("15_b0mm5")
+offset = Vector2(10, 13)
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="SuperMario2" unique_id=1240250878]
 texture = ExtResource("11_335li")

@@ -8,23 +8,24 @@
 [ext_resource type="Script" uid="uid://chvjy6okoognf" path="res://engine/objects/powerups/instance_powerup.gd" id="3_fs733"]
 [ext_resource type="Texture2D" uid="uid://bo2xvxjfs64bl" path="res://engine/tilesets/castle/gfx/1-4_castle.png" id="3_j8vm3"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="3_sberb"]
-[ext_resource type="AudioStream" uid="uid://bexk1qd4psene" path="res://engine/objects/bosses/bowser/music/music_bowser_battle.mod" id="3_vcmse"]
+[ext_resource type="AudioStream" uid="uid://b54dxvvoojpr3" path="res://music/newermod/Toby Fox @ Pokemon Sword & Shield - Battle! (Battle Tower).ogg" id="4_2b6yg"]
 [ext_resource type="PackedScene" uid="uid://0ugpa0ybv34g" path="res://engine/objects/enemies/rotos/roto_center.tscn" id="4_20yxp"]
 [ext_resource type="PackedScene" uid="uid://boprmwc4aw1lr" path="res://engine/objects/bumping_blocks/question_block/templates/gray/Gray Coin Question Block.tscn" id="4_i54l6"]
-[ext_resource type="AudioStream" uid="uid://bqeophqiakq4k" path="res://music/smw2-castle.ogg" id="4_lrhs3"]
 [ext_resource type="PackedScene" uid="uid://oe7i3cief0g" path="res://engine/objects/enemies/_dead/enemy_killed.tscn" id="4_ulana"]
 [ext_resource type="PackedScene" uid="uid://cforx4e0v73a7" path="res://engine/objects/enemies/rotos/roto_red.tscn" id="5_lgnjk"]
 [ext_resource type="Script" uid="uid://du32vchaulqj6" path="res://engine/objects/enemies/_dead/prefabs/do_killed.gd" id="5_rv7dg"]
+[ext_resource type="AudioStream" uid="uid://d1722c1q278ry" path="res://music/newermod/mildewy - caf4.mod" id="5_vcmse"]
 [ext_resource type="Script" uid="uid://bm81fg3h4j8sj" path="res://engine/scripts/resources/instance_node2d/instance_node2d.gd" id="6_qqbc6"]
 [ext_resource type="PackedScene" uid="uid://dpikli783lsya" path="res://objects/_screen_clear_item/atom_star.tscn" id="7_2uno1"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="7_j32o4"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="7_lrhs3"]
 [ext_resource type="PackedScene" uid="uid://uhf6frao7p1m" path="res://engine/objects/enemies/podoboo/podoboo.tscn" id="7_tji6w"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="8_5brxk"]
 [ext_resource type="PackedScene" uid="uid://d0121yqkw7b6i" path="res://engine/objects/fluid/lava_area.tscn" id="8_i1nhr"]
 [ext_resource type="PackedScene" uid="uid://diivlwjl0y1i7" path="res://engine/objects/bosses/bowser/bowser_trigger.tscn" id="9_1h1sc"]
 [ext_resource type="Material" uid="uid://bqbnhvliq3s32" path="res://engine/shaders/add_unshaded_effect.tres" id="9_m7gpm"]
-[ext_resource type="AudioStream" uid="uid://cnn040q2lodum" path="res://music/smrpg-bowser.ogg" id="10_6gg8f"]
 [ext_resource type="PackedScene" uid="uid://bcgt87mbq40gx" path="res://engine/objects/enemies/thwomp/thwomp.tscn" id="10_iot4h"]
+[ext_resource type="AudioStream" uid="uid://dawtbrxhwdhcf" path="res://music/newermod/A-Tush - Meatgrinder.xm" id="11_60js1"]
 [ext_resource type="PackedScene" uid="uid://d3x5itop6w8qu" path="res://engine/objects/powerups/poisonous_mushroom/poisonous_mushroom.tscn" id="12_57nns"]
 [ext_resource type="Script" uid="uid://b66w23lsb1766" path="res://gfx/fancy_graphics/scripts/lava_light_pulse.gd" id="12_lk5dq"]
 [ext_resource type="PackedScene" uid="uid://db85vh72kcsmg" path="res://engine/objects/effects/lavafall/lavafall.tscn" id="12_nechx"]
@@ -84,31 +85,6 @@ gradient = SubResource("Gradient_hjlnd")
 fill_to = Vector2(0, 1)
 metadata/_snap_enabled = true
 
-[sub_resource type="Resource" id="Resource_vrlvw"]
-resource_local_to_scene = true
-script = ExtResource("3_fs733")
-creation_nodepack = ExtResource("2_elsn0")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_60js1"]
-resource_local_to_scene = true
-script = ExtResource("3_fs733")
-creation_nodepack = ExtResource("2_elsn0")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_2b6yg"]
-resource_local_to_scene = true
-script = ExtResource("3_fs733")
-creation_nodepack = ExtResource("2_elsn0")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_lrhs3"]
-resource_local_to_scene = true
-script = ExtResource("3_fs733")
-creation_fallback_node = ExtResource("12_57nns")
-creation_nodepack = ExtResource("25_60js1")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_j32o4"]
 resource_local_to_scene = true
 script = ExtResource("3_fs733")
@@ -118,7 +94,7 @@ trans_inheritances = 7
 [sub_resource type="Resource" id="Resource_5brxk"]
 resource_local_to_scene = true
 script = ExtResource("3_fs733")
-creation_nodepack = ExtResource("7_2uno1")
+creation_nodepack = ExtResource("2_elsn0")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_1h1sc"]
@@ -130,19 +106,20 @@ trans_inheritances = 7
 [sub_resource type="Resource" id="Resource_6gg8f"]
 resource_local_to_scene = true
 script = ExtResource("3_fs733")
-creation_nodepack = ExtResource("12_57nns")
+creation_fallback_node = ExtResource("12_57nns")
+creation_nodepack = ExtResource("25_60js1")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_vf1ru"]
 resource_local_to_scene = true
 script = ExtResource("3_fs733")
-creation_nodepack = ExtResource("12_57nns")
+creation_nodepack = ExtResource("2_elsn0")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_s0r2h"]
 resource_local_to_scene = true
 script = ExtResource("3_fs733")
-creation_nodepack = ExtResource("12_57nns")
+creation_nodepack = ExtResource("7_2uno1")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_scy5l"]
@@ -154,10 +131,34 @@ trans_inheritances = 7
 [sub_resource type="Resource" id="Resource_0c0lq"]
 resource_local_to_scene = true
 script = ExtResource("3_fs733")
-creation_nodepack = ExtResource("2_elsn0")
+creation_nodepack = ExtResource("12_57nns")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_83vtu"]
+resource_local_to_scene = true
+script = ExtResource("3_fs733")
+creation_nodepack = ExtResource("12_57nns")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_folwi"]
+resource_local_to_scene = true
+script = ExtResource("3_fs733")
+creation_nodepack = ExtResource("12_57nns")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_56ru0"]
+resource_local_to_scene = true
+script = ExtResource("3_fs733")
+creation_nodepack = ExtResource("2_elsn0")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_uwhlu"]
+resource_local_to_scene = true
+script = ExtResource("3_fs733")
+creation_nodepack = ExtResource("2_elsn0")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_48eg2"]
 resource_local_to_scene = true
 script = ExtResource("3_fs733")
 creation_nodepack = ExtResource("2_elsn0")
@@ -322,7 +323,7 @@ creation_fallback_node = ExtResource("32_6f210")
 creation_nodepack = ExtResource("33_pa2gx")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_folwi"]
+[sub_resource type="Resource" id="Resource_rkdpg"]
 resource_local_to_scene = true
 script = ExtResource("3_fs733")
 creation_fallback_node = ExtResource("32_6f210")
@@ -350,10 +351,13 @@ metadata/_edit_lock_ = true
 
 [node name="MusicLoader" type="Node" parent="." unique_id=1017057996]
 script = ExtResource("2_2b6yg")
-boss_music_var_1 = ExtResource("3_vcmse")
-music = Array[Resource]([ExtResource("4_lrhs3")])
+music = Array[Resource]([ExtResource("4_2b6yg"), ExtResource("5_vcmse")])
+volume_db = Array[float]([0.0, 1.5])
 
 [node name="AntiafkExpertMode" parent="MusicLoader" unique_id=493531855 instance=ExtResource("2_01e5q")]
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("7_lrhs3")]
+text = Array[String](["Toby Fox @ Pokemon Sword and Shield - Battle! (Battle Tower)", "mildewy - caf4"])
 
 [node name="SecretUnlocker" parent="." unique_id=1499381818 instance=ExtResource("3_sberb")]
 secrets = Array[String](["passage to world 3"])
@@ -376,11 +380,15 @@ position = Vector2(8000, 224)
 curve = SubResource("Curve2D_125xa")
 trigger_area = Rect2(0, 0, 32, 960)
 trigger_bowser = NodePath("../Bowser")
-boss_music = ExtResource("10_6gg8f")
+boss_music = ExtResource("11_60js1")
+boss_music_volume = 1.7
 
 [node name="CameraArea" parent="." unique_id=1286926787 instance=ExtResource("22_vufph")]
 offset_right = 11008.0
 offset_bottom = 480.0
+change_music = true
+set_music_index = 0
+music_loader_ref = NodePath("../MusicLoader")
 metadata/_edit_lock_ = true
 
 [node name="Layer0" type="TileMapLayer" parent="." unique_id=1554227961]
@@ -691,61 +699,61 @@ collision_mask = 0
 
 [node name="QuestionBlock9" parent="." unique_id=897908767 instance=ExtResource("4_i54l6")]
 position = Vector2(1232, 208)
-result = SubResource("Resource_vrlvw")
+result = SubResource("Resource_j32o4")
 
 [node name="QuestionBlock13" parent="." unique_id=475618089 instance=ExtResource("4_i54l6")]
 position = Vector2(3440, 176)
-result = SubResource("Resource_60js1")
+result = SubResource("Resource_5brxk")
 
 [node name="QuestionBlock14" parent="." unique_id=92072813 instance=ExtResource("4_i54l6")]
 position = Vector2(3472, 176)
-result = SubResource("Resource_2b6yg")
+result = SubResource("Resource_1h1sc")
 
 [node name="QuestionBlock15" parent="." unique_id=1583706323 instance=ExtResource("4_i54l6")]
 position = Vector2(3728, 16)
-result = SubResource("Resource_lrhs3")
+result = SubResource("Resource_6gg8f")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock16" parent="." unique_id=760968545 instance=ExtResource("4_i54l6")]
 position = Vector2(6096, 272)
-result = SubResource("Resource_j32o4")
+result = SubResource("Resource_vf1ru")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock23" parent="." unique_id=1061893578 instance=ExtResource("4_i54l6")]
 position = Vector2(6064, 144)
-result = SubResource("Resource_5brxk")
+result = SubResource("Resource_s0r2h")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock24" parent="." unique_id=1498502080 instance=ExtResource("4_i54l6")]
 position = Vector2(6256, 144)
-result = SubResource("Resource_1h1sc")
+result = SubResource("Resource_scy5l")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock20" parent="." unique_id=849431918 instance=ExtResource("4_i54l6")]
 position = Vector2(5872, 272)
-result = SubResource("Resource_6gg8f")
+result = SubResource("Resource_0c0lq")
 
 [node name="QuestionBlock22" parent="." unique_id=1607930513 instance=ExtResource("4_i54l6")]
 position = Vector2(6640, 272)
-result = SubResource("Resource_vf1ru")
+result = SubResource("Resource_83vtu")
 
 [node name="QuestionBlock21" parent="." unique_id=1412684631 instance=ExtResource("4_i54l6")]
 position = Vector2(5584, 272)
-result = SubResource("Resource_s0r2h")
+result = SubResource("Resource_folwi")
 
 [node name="QuestionBlock17" parent="." unique_id=1596332655 instance=ExtResource("4_i54l6")]
 position = Vector2(6160, 272)
-result = SubResource("Resource_scy5l")
+result = SubResource("Resource_56ru0")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock18" parent="." unique_id=1585148539 instance=ExtResource("4_i54l6")]
 position = Vector2(6224, 272)
-result = SubResource("Resource_0c0lq")
+result = SubResource("Resource_uwhlu")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock25" parent="." unique_id=2132436877 instance=ExtResource("4_i54l6")]
 position = Vector2(6288, 272)
-result = SubResource("Resource_83vtu")
+result = SubResource("Resource_48eg2")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock10" parent="." unique_id=470416077 instance=ExtResource("4_i54l6")]
@@ -1589,6 +1597,8 @@ scale = Vector2(-1, 1)
 offset_left = -768.0
 offset_right = -128.0
 offset_bottom = 480.0
+change_music = true
+music_loader_ref = NodePath("../MusicLoader")
 metadata/_edit_lock_ = true
 
 [node name="PipeIn" parent="." unique_id=1364913625 instance=ExtResource("25_jshax")]
@@ -1623,7 +1633,7 @@ result = SubResource("Resource_s51nj")
 
 [node name="QuestionBlock19" parent="." unique_id=1473848879 instance=ExtResource("4_i54l6")]
 position = Vector2(7552, 224)
-result = SubResource("Resource_folwi")
+result = SubResource("Resource_rkdpg")
 
 [node name="LavaHeat14" type="Sprite2D" parent="." unique_id=1495981852]
 position = Vector2(608, 400)
@@ -1703,10 +1713,11 @@ texture = SubResource("GradientTexture2D_vf1ru")
 flip_h = true
 region_rect = Rect2(0, 0, 32, 32)
 
+[connection signal="music_started" from="MusicLoader" to="MusicOverlay" method="play"]
 [connection signal="bowser_triggered" from="BowserTrigger" to="Marker2D" method="_on_bowser_trigger_bowser_triggered"]
 [connection signal="warp_started" from="PipeIn3" to="SecretUnlocker" method="unlock_secret"]
-[connection signal="warp_started" from="PipeIn3" to="HUD/Label" method="activate"]
 [connection signal="warp_started" from="PipeIn3" to="HUD/Label" method="warp_split"]
+[connection signal="warp_started" from="PipeIn3" to="HUD/Label" method="activate"]
 [connection signal="warp_started" from="PipeIn3" to="SecretUnlocker" method="add_shit_to_profile" binds= ["warped"]]
 [connection signal="timeout" from="Marker2D/Timer" to="Marker2D" method="_on_timer_timeout"]
 [connection signal="warp_ended" from="PipeIn2" to="HUD/Label/Node" method="activate"]

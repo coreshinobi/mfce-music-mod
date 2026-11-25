@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://da88q8kaayept"
+path="res://.godot/imported/beathawk - blue banana.xm-ec2f2cde65436aee14de0736cecfed7e.res"
+
+[deps]
+
+source_file="res://music/side_b/beathawk - blue banana.xm"
+dest_files=["res://.godot/imported/beathawk - blue banana.xm-ec2f2cde65436aee14de0736cecfed7e.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

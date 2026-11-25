@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" uid="uid://b2miajjwaop0p" path="res://engine/scenes/map/scripts/map.gd" id="1_k1t4f"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="2_g6pib"]
-[ext_resource type="AudioStream" uid="uid://ds107ka88xua" path="res://music/extra/world_10_syzx/map10-start.ogg" id="3_n4qvy"]
+[ext_resource type="AudioStream" uid="uid://211i34872hpj" path="res://music/newermod/Lizard - It's So Cool!!!.mod" id="3_dgvor"]
 [ext_resource type="Texture2D" uid="uid://usm6n80msr7n" path="res://engine/scenes/map/textures/bg.png" id="4_buv3v"]
-[ext_resource type="AudioStream" uid="uid://dlnliot3i2jkx" path="res://music/extra/world_10_syzx/map10-middle-.ogg" id="4_n4qvy"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="4_hmp2b"]
 [ext_resource type="Texture2D" uid="uid://cgrpgm46it7j4" path="res://gfx/map/maps/map10.png" id="5_ffoy6"]
 [ext_resource type="PackedScene" uid="uid://w4jc7nb1lcsy" path="res://engine/scenes/map/prefabs/player.tscn" id="6_nphae"]
 [ext_resource type="Script" uid="uid://cpbjc7dmw7me5" path="res://stages/extra/world_9_syzx/advanced_ed_map.gd" id="7_8lo3l"]
@@ -44,12 +44,6 @@
 [ext_resource type="Script" uid="uid://b8puhalomggbj" path="res://engine/scenes/map/scripts/map_swim_area.gd" id="37_1xomx"]
 [ext_resource type="Texture2D" uid="uid://cxehpyutvchyp" path="res://gfx/map/maps/overlay/map10water.png" id="43_hmp2b"]
 
-[sub_resource type="AudioStreamPlaylist" id="AudioStreamPlaylist_1xomx"]
-fade_time = 0.0
-stream_count = 2
-stream_0 = ExtResource("3_n4qvy")
-stream_1 = ExtResource("4_n4qvy")
-
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_0mn0p"]
 shader = ExtResource("14_n4qvy")
 shader_parameter/hue = 0.183
@@ -71,9 +65,13 @@ metadata/_edit_lock_ = true
 
 [node name="MusicLoader" type="Node" parent="." unique_id=1657340064]
 script = ExtResource("2_g6pib")
-music = Array[Resource]([SubResource("AudioStreamPlaylist_1xomx")])
-volume_db = Array[float]([0.0])
+music = Array[Resource]([ExtResource("3_dgvor")])
+volume_db = Array[float]([2.2])
 start_from_sec = Array[float]([0.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("4_hmp2b")]
+displaying_mode = 1
+text = Array[String](["Lizard - It's So Cool!!!"])
 
 [node name="Bg" type="Sprite2D" parent="." unique_id=249296828]
 texture = ExtResource("4_buv3v")

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dv6u8eu0oyuvn"
+path="res://.godot/imported/GODS - The Temple (Level 2).ogg-8064be0c6d99924a5ce73a8339f69105.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/GODS - The Temple (Level 2).ogg"
+dest_files=["res://.godot/imported/GODS - The Temple (Level 2).ogg-8064be0c6d99924a5ce73a8339f69105.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=31.7
+bpm=0.0
+beat_count=0
+bar_beats=4

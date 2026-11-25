@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://bq5ydb612c03"
+path="res://.godot/imported/revisq - orangexcs!.xm-c132d90d54e0c670b141f5d63a792625.res"
+
+[deps]
+
+source_file="res://music/newermod/revisq - orangexcs!.xm"
+dest_files=["res://.godot/imported/revisq - orangexcs!.xm-c132d90d54e0c670b141f5d63a792625.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

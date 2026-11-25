@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://bhxowhovk731d"
+path="res://.godot/imported/Holy-Blood - Blood on the Sword.xm-dd87baac5ddb5411b8f40f28e8af63fb.res"
+
+[deps]
+
+source_file="res://music/newermod/Holy-Blood - Blood on the Sword.xm"
+dest_files=["res://.godot/imported/Holy-Blood - Blood on the Sword.xm-dd87baac5ddb5411b8f40f28e8af63fb.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

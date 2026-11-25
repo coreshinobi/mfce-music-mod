@@ -19,8 +19,10 @@
 [ext_resource type="TileSet" uid="uid://dtvs1rult8kbe" path="res://tilesets/overworld_green/overworld_green.tres" id="6_jdowe"]
 [ext_resource type="PackedScene" uid="uid://cforx4e0v73a7" path="res://engine/objects/enemies/rotos/roto_red.tscn" id="7_0d0om"]
 [ext_resource type="PackedScene" uid="uid://dnyk0ph5vd52a" path="res://engine/objects/enemies/cheeps/cheep_blue.tscn" id="7_5mgao"]
-[ext_resource type="AudioStream" uid="uid://c6dc6y4bvfej4" path="res://music/smas-underwater.mp3" id="7_kfjkc"]
+[ext_resource type="AudioStream" uid="uid://di4efeymysact" path="res://music/newermod/Apollo Justice Ace Attorney - Psyche-Locks 2007.ogg" id="7_dths0"]
+[ext_resource type="AudioStream" uid="uid://dsbo3s5e2sxdn" path="res://music/newermod/toal nkor - forest dream.mod" id="8_n7v1q"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="9_uihe0"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="10_g10ld"]
 [ext_resource type="PackedScene" uid="uid://dvmtgtjgrqsap" path="res://objects/underwater_push_platform/platform_underwater.tscn" id="10_mhx2e"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="11_ym84v"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="12_8fbdq"]
@@ -131,7 +133,7 @@ gradient = SubResource("Gradient_cfp1v")
 height = 16
 fill_to = Vector2(0, 1)
 
-[sub_resource type="Resource" id="Resource_t40h7"]
+[sub_resource type="Resource" id="Resource_madm4"]
 resource_local_to_scene = true
 script = ExtResource("5_f731h")
 creation_fallback_node = ExtResource("3_nb7ib")
@@ -144,7 +146,7 @@ _data = {
 }
 point_count = 2
 
-[sub_resource type="Resource" id="Resource_dths0"]
+[sub_resource type="Resource" id="Resource_mljo6"]
 resource_local_to_scene = true
 script = ExtResource("5_f731h")
 creation_nodepack = ExtResource("19_mnapb")
@@ -161,10 +163,13 @@ music_var_2 = Array[Resource]([ExtResource("4_madm4"), ExtResource("5_mljo6")])
 music_var_3 = Array[Resource]([ExtResource("6_hu3h3"), ExtResource("5_mljo6")])
 var_2_volume_db = Array[float]([0.0, 4.0])
 var_3_volume_db = Array[float]([0.0, 4.0])
-music = Array[Resource]([ExtResource("7_kfjkc"), ExtResource("5_mljo6")])
-volume_db = Array[float]([0.0, 4.0])
+music = Array[Resource]([ExtResource("7_dths0"), ExtResource("8_n7v1q")])
+volume_db = Array[float]([1.7, 3.5])
 
 [node name="AntiafkExpertMode" parent="MusicLoader" unique_id=1428742224 instance=ExtResource("3_xnnua")]
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("10_g10ld")]
+text = Array[String](["Apollo Justice: Ace Attorney - Psyche-Locks 2007", "Toal Nkor - Forest Dream"])
 
 [node name="SecretUnlocker" parent="." unique_id=1685948768 instance=ExtResource("9_uihe0")]
 secrets = Array[String](["all toad houses found"])
@@ -268,7 +273,7 @@ theme_override_constants/line_spacing = 1
 theme_override_constants/outline_size = 8
 theme_override_fonts/font = ExtResource("5_ay83c")
 theme_override_font_sizes/font_size = 12
-text = "you have found a weird twin of this level!"
+text = "GROW WINGS AND FLY TO THE OTHER SIDE OF THE LAVA"
 horizontal_alignment = 1
 uppercase = true
 script = ExtResource("6_7mnor")
@@ -662,7 +667,7 @@ metadata/_edit_lock_ = true
 [node name="QuestionBlockFireFlower" parent="." unique_id=1287956312 instance=ExtResource("42_xee7k")]
 position = Vector2(464, 336)
 disable_mode = 0
-result = SubResource("Resource_t40h7")
+result = SubResource("Resource_madm4")
 
 [node name="CheepBlue" parent="." unique_id=93165486 instance=ExtResource("7_5mgao")]
 position = Vector2(5200, 192)
@@ -852,10 +857,7 @@ loop = true
 loop_backwards = false
 warp_objects_on_end = false
 
-[node name="Block" parent="Path2D/PathFollow2D3" index="0" unique_id=1383566008]
-collision_layer = 80
-
-[node name="Coin16" parent="Path2D/PathFollow2D3/Block" index="2" unique_id=1871438072 instance=ExtResource("3_kkct6")]
+[node name="Coin16" parent="Path2D/PathFollow2D3/Block" parent_id_path=PackedInt32Array(1240413957, 1383566008) index="2" unique_id=1871438072 instance=ExtResource("3_kkct6")]
 position = Vector2(0, -32)
 
 [node name="PathFollow2D4" parent="Path2D" unique_id=1056125610 instance=ExtResource("10_mhx2e")]
@@ -865,10 +867,7 @@ loop = true
 loop_backwards = false
 warp_objects_on_end = false
 
-[node name="Block" parent="Path2D/PathFollow2D4" index="0" unique_id=1383566008]
-collision_layer = 80
-
-[node name="Coin16" parent="Path2D/PathFollow2D4/Block" index="2" unique_id=817043432 instance=ExtResource("3_kkct6")]
+[node name="Coin16" parent="Path2D/PathFollow2D4/Block" parent_id_path=PackedInt32Array(1056125610, 1383566008) index="2" unique_id=817043432 instance=ExtResource("3_kkct6")]
 position = Vector2(0, -32)
 
 [node name="PathFollow2D5" parent="Path2D" unique_id=283399367 instance=ExtResource("10_mhx2e")]
@@ -917,16 +916,13 @@ loop = true
 loop_backwards = false
 warp_objects_on_end = false
 
-[node name="Block" parent="Path2D/PathFollow2D12" index="0" unique_id=1383566008]
-collision_layer = 80
-
-[node name="Coin42" parent="Path2D/PathFollow2D12/Block" index="2" unique_id=1115398368 instance=ExtResource("3_kkct6")]
+[node name="Coin42" parent="Path2D/PathFollow2D12/Block" parent_id_path=PackedInt32Array(74621340, 1383566008) index="2" unique_id=1115398368 instance=ExtResource("3_kkct6")]
 position = Vector2(0, -32)
 
-[node name="Coin43" parent="Path2D/PathFollow2D12/Block" index="3" unique_id=1663744652 instance=ExtResource("3_kkct6")]
+[node name="Coin43" parent="Path2D/PathFollow2D12/Block" parent_id_path=PackedInt32Array(74621340, 1383566008) index="3" unique_id=1663744652 instance=ExtResource("3_kkct6")]
 position = Vector2(-32, -32)
 
-[node name="Coin44" parent="Path2D/PathFollow2D12/Block" index="4" unique_id=197642891 instance=ExtResource("3_kkct6")]
+[node name="Coin44" parent="Path2D/PathFollow2D12/Block" parent_id_path=PackedInt32Array(74621340, 1383566008) index="4" unique_id=197642891 instance=ExtResource("3_kkct6")]
 position = Vector2(32, -32)
 
 [node name="PathFollow2D7" parent="Path2D" unique_id=38447085 instance=ExtResource("10_mhx2e")]
@@ -937,16 +933,13 @@ loop = true
 loop_backwards = false
 warp_objects_on_end = false
 
-[node name="Block" parent="Path2D/PathFollow2D7" index="0" unique_id=1383566008]
-collision_layer = 80
-
-[node name="Coin42" parent="Path2D/PathFollow2D7/Block" index="2" unique_id=1955052839 instance=ExtResource("3_kkct6")]
+[node name="Coin42" parent="Path2D/PathFollow2D7/Block" parent_id_path=PackedInt32Array(38447085, 1383566008) index="2" unique_id=1955052839 instance=ExtResource("3_kkct6")]
 position = Vector2(0, -32)
 
-[node name="Coin43" parent="Path2D/PathFollow2D7/Block" index="3" unique_id=338590130 instance=ExtResource("3_kkct6")]
+[node name="Coin43" parent="Path2D/PathFollow2D7/Block" parent_id_path=PackedInt32Array(38447085, 1383566008) index="3" unique_id=338590130 instance=ExtResource("3_kkct6")]
 position = Vector2(-32, -32)
 
-[node name="Coin44" parent="Path2D/PathFollow2D7/Block" index="4" unique_id=12910306 instance=ExtResource("3_kkct6")]
+[node name="Coin44" parent="Path2D/PathFollow2D7/Block" parent_id_path=PackedInt32Array(38447085, 1383566008) index="4" unique_id=12910306 instance=ExtResource("3_kkct6")]
 position = Vector2(32, -32)
 
 [node name="PathFollow2D8" parent="Path2D" unique_id=1502932378 instance=ExtResource("10_mhx2e")]
@@ -963,7 +956,7 @@ script = ExtResource("14_7mnor")
 
 [node name="QuestionBlock" parent="." unique_id=928724188 instance=ExtResource("18_7mnor")]
 position = Vector2(1328, 240)
-result = SubResource("Resource_dths0")
+result = SubResource("Resource_mljo6")
 initially_visible_and_solid = false
 
 [node name="Checkpoint" parent="." unique_id=1943319696 instance=ExtResource("58_4dsm3")]
@@ -974,6 +967,7 @@ position = Vector2(7104, -608)
 scale = Vector2(-1, 1)
 texture = ExtResource("59_h25sh")
 
+[connection signal="music_started" from="MusicLoader" to="MusicOverlay" method="play"]
 [connection signal="coin_checked_success" from="CoinChecker" to="SecretUnlocker" method="progress_secret"]
 [connection signal="warp_started" from="PipeIn" to="Node" method="disable"]
 [connection signal="tried_to_enter" from="PipeIn2" to="SecretUnlockerOther2" method="tried_to_warp"]

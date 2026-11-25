@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://csrseg040t7e7"
+path="res://.godot/imported/Linde - SkelettIGarderoben.ogg-6a9dd4374f08fdaa77f73b2c3dcf9a4e.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Linde - SkelettIGarderoben.ogg"
+dest_files=["res://.godot/imported/Linde - SkelettIGarderoben.ogg-6a9dd4374f08fdaa77f73b2c3dcf9a4e.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

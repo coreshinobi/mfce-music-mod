@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bufntn3ewlcyj"
+path="res://.godot/imported/Prince of Persia - Stage 6.ogg-0c493a6b7f8e8e54650974c31521cd8f.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Prince of Persia - Stage 6.ogg"
+dest_files=["res://.godot/imported/Prince of Persia - Stage 6.ogg-0c493a6b7f8e8e54650974c31521cd8f.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=1.06
+bpm=0.0
+beat_count=0
+bar_beats=4

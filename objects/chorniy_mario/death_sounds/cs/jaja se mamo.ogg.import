@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://07blv0iod24b"
+path="res://.godot/imported/jaja se mamo.ogg-00b55c947b052e579482b46ab27767b2.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/jaja se mamo.ogg"
+dest_files=["res://.godot/imported/jaja se mamo.ogg-00b55c947b052e579482b46ab27767b2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

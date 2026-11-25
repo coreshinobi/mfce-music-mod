@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cb2et7vnfpqcr"
+path="res://.godot/imported/Super Mario Bros 3 Editable - Splash.ogg-e77d3eb6ae9a3673924b9865ef393af6.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Super Mario Bros 3 Editable - Splash.ogg"
+dest_files=["res://.godot/imported/Super Mario Bros 3 Editable - Splash.ogg-e77d3eb6ae9a3673924b9865ef393af6.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

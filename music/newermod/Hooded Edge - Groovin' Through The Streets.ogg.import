@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dr7mjd8wpjyho"
+path="res://.godot/imported/Hooded Edge - Groovin' Through The Streets.ogg-6694976666446f5ea80582e5593ea062.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Hooded Edge - Groovin' Through The Streets.ogg"
+dest_files=["res://.godot/imported/Hooded Edge - Groovin' Through The Streets.ogg-6694976666446f5ea80582e5593ea062.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=4.98
+bpm=0.0
+beat_count=0
+bar_beats=4

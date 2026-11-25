@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dbsokcqtihg46"
+path="res://.godot/imported/Super Mario Bros 3 Editable - Cavernas.ogg-fee6d03e6c8222fbbd3ef16705aa1b83.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Super Mario Bros 3 Editable - Cavernas.ogg"
+dest_files=["res://.godot/imported/Super Mario Bros 3 Editable - Cavernas.ogg-fee6d03e6c8222fbbd3ef16705aa1b83.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=8.56
+bpm=0.0
+beat_count=0
+bar_beats=4

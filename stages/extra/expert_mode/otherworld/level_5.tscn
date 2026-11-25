@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="4_7wc2a"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="5_8abwc"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="5_lw5oq"]
-[ext_resource type="AudioStream" uid="uid://bw01qdkagruhy" path="res://music/extra/expert_mode/kolobki.xm" id="6_7bf7k"]
+[ext_resource type="AudioStream" uid="uid://tip25r4j1yrq" path="res://music/newermod/Accelerator (AoS2) - Ribbon.ogg" id="6_pqola"]
 [ext_resource type="PackedScene" uid="uid://cvigdw7nldify" path="res://objects/antiafk_expert_mode/antiafk_expert_mode.tscn" id="7_84yus"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="7_w3rux"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="8_7cvf6"]
@@ -14,6 +14,7 @@
 [ext_resource type="Script" uid="uid://dpx2er7pami53" path="res://stages/extra/expert_mode/otherworld/scripts/level_5_part_loader.gd" id="9_3g4p8"]
 [ext_resource type="Script" uid="uid://7byhkvlnfxa" path="res://components/secrets_manager/unlock_multiple.gd" id="9_8bm8e"]
 [ext_resource type="AudioStream" uid="uid://cusrgc7jqf7qy" path="res://music/extra/expert_mode/short-die.ogg" id="9_26qhm"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="10_076dt"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="11_ayg6p"]
 [ext_resource type="TileSet" uid="uid://cc4wmng1l7suo" path="res://tilesets/snowland_red/snowland_red.tres" id="12_r5r1s"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="13_gpyc5"]
@@ -23,14 +24,17 @@
 [ext_resource type="FontFile" uid="uid://bgsavu6joui2r" path="res://engine/fonts/junebug.ttf" id="19_yo8q4"]
 [ext_resource type="Texture2D" uid="uid://c01vgmf6fq0xg" path="res://tilesets/snowland_red/gfx/snow_castle_1.png" id="25_8abwc"]
 [ext_resource type="Script" uid="uid://chvjy6okoognf" path="res://engine/objects/powerups/instance_powerup.gd" id="27_7pk5b"]
+[ext_resource type="AudioStream" uid="uid://1q0mh121gk7t" path="res://sfx/paganicarajo.ogg" id="32_e5c1q"]
+[ext_resource type="AudioStream" uid="uid://db0iy7xkjafll" path="res://sfx/paganinumero.ogg" id="33_46h3b"]
 [ext_resource type="Texture2D" uid="uid://dii887xxrfhqi" path="res://gfx/fancy_graphics/cloud_light_effect.png" id="33_f5tqs"]
+[ext_resource type="AudioStream" uid="uid://bcvc7g3vsiqxv" path="res://sfx/paganitramposo.ogg" id="34_46h3b"]
 [ext_resource type="Script" uid="uid://0h3x5dwndovw" path="res://engine/scripts/nodes/effects/quality_visible.gd" id="34_ql7qq"]
+[ext_resource type="AudioStream" uid="uid://co1n2wciallvf" path="res://sfx/paganiviejatramposa.ogg" id="35_amf7n"]
 [ext_resource type="Texture2D" uid="uid://ds505eluh8own" path="res://tilesets/snowland_red/gfx/pipe_snow.png" id="35_ql7qq"]
 [ext_resource type="Script" uid="uid://cn0a7wob2414p" path="res://engine/objects/detectors/player_detection.gd" id="37_fwbc1"]
 [ext_resource type="PackedScene" uid="uid://u6gxj4cj5m4f" path="res://engine/objects/bumping_blocks/message_block/message_block.tscn" id="38_uwt8f"]
 [ext_resource type="PackedScene" uid="uid://bffho8gu8hyga" path="res://objects/otherworld/fred_the_killer/nostaliga.tscn" id="39_qcfmd"]
 [ext_resource type="PackedScene" uid="uid://ddwxc43m3q1c6" path="res://engine/objects/core/checkpoint/checkpoint.tscn" id="41_rlnuy"]
-[ext_resource type="AudioStream" uid="uid://cf8bbc1is1pwp" path="res://sfx/ris.wav" id="42_cxhdm"]
 [ext_resource type="PackedScene" uid="uid://dh4kf1w7jyseo" path="res://engine/objects/warps/pipe_in.tscn" id="47_kcq0t"]
 [ext_resource type="PackedScene" uid="uid://u383towqhd0i" path="res://engine/objects/warps/pipe_out.tscn" id="48_jk3fn"]
 [ext_resource type="Script" uid="uid://crwuhdl2ox5y" path="res://stages/extra/expert_mode/otherworld/scripts/complete_win_anim_marker.gd" id="52_vnb7i"]
@@ -83,7 +87,8 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("6_7bf7k")])
+playback_pitch = 1.0
+music = Array[Resource]([ExtResource("6_pqola")])
 stop_all_music_on_start = false
 play_globally = 1
 volume_db = Array[float]([0.0])
@@ -103,6 +108,9 @@ script = ExtResource("9_8bm8e")
 progress_ids = Array[int]([0])
 progress_secret_mode_ids = Array[int]([1])
 progress_reset_on_complete = false
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("10_076dt")]
+text = Array[String](["Accelerator [AoS2] - Ribbon"])
 
 [node name="SecretUnlocker3" parent="." unique_id=1413501882 instance=ExtResource("7_w3rux")]
 secrets = Array[String](["otherworld easter eggs"])
@@ -226,12 +234,12 @@ warp_direction = 1
 
 [node name="Checkpoint" parent="." unique_id=204307092 instance=ExtResource("41_rlnuy")]
 position = Vector2(5088, 256)
-voice_lines = Array[AudioStream]([ExtResource("42_cxhdm")])
+voice_lines = Array[AudioStream]([ExtResource("32_e5c1q"), ExtResource("33_46h3b")])
 
 [node name="Checkpoint2" parent="." unique_id=303948583 instance=ExtResource("41_rlnuy")]
 position = Vector2(8544, 1312)
 id = 1
-voice_lines = Array[AudioStream]([ExtResource("42_cxhdm")])
+voice_lines = Array[AudioStream]([ExtResource("32_e5c1q"), ExtResource("33_46h3b"), ExtResource("34_46h3b"), ExtResource("35_amf7n")])
 
 [node name="FinishLine" parent="." unique_id=441571856 instance=ExtResource("53_w3jco")]
 position = Vector2(11072, 1440)

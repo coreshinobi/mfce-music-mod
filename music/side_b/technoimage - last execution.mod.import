@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://dwufu0tg1ptqn"
+path="res://.godot/imported/technoimage - last execution.mod-508bb494f1ade71000c64588c36a3ece.res"
+
+[deps]
+
+source_file="res://music/side_b/technoimage - last execution.mod"
+dest_files=["res://.godot/imported/technoimage - last execution.mod-508bb494f1ade71000c64588c36a3ece.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

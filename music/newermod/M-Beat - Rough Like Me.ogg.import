@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cfego1y63gkws"
+path="res://.godot/imported/M-Beat - Rough Like Me.ogg-371da496a22898898f145aea233d47db.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/M-Beat - Rough Like Me.ogg"
+dest_files=["res://.godot/imported/M-Beat - Rough Like Me.ogg-371da496a22898898f145aea233d47db.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

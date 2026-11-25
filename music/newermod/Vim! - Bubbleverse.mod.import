@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://dsokfpv72nvgg"
+path="res://.godot/imported/Vim! - Bubbleverse.mod-48be3e134192fc6f8d0170384abc1611.res"
+
+[deps]
+
+source_file="res://music/newermod/Vim! - Bubbleverse.mod"
+dest_files=["res://.godot/imported/Vim! - Bubbleverse.mod-48be3e134192fc6f8d0170384abc1611.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

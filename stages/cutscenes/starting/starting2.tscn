@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" uid="uid://vulplighh31p" path="res://stages/cutscenes/starting/scripts/starting2.gd" id="1_ui2qe"]
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="2_b8gud"]
-[ext_resource type="AudioStream" uid="uid://c76c7vsep2l71" path="res://music/cutscene/smw-starting_part_2.ogg" id="3_1bemg"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_5xf2w"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="4_du8ja"]
+[ext_resource type="AudioStream" uid="uid://c40d60thvkvn6" path="res://music/newermod/phoenix wright ace attorney - suspense.ogg" id="5_6orey"]
 [ext_resource type="Script" uid="uid://dqpjvnpaib56" path="res://stages/cutscenes/starting/scripts/camera_part2.gd" id="5_3553e"]
 [ext_resource type="AudioStream" uid="uid://oduel0qr6anh" path="res://sfx/ending_anim_2.ogg" id="6_lr2is"]
 [ext_resource type="TileSet" uid="uid://dtvs1rult8kbe" path="res://tilesets/overworld_green/overworld_green.tres" id="13_nqm37"]
@@ -151,12 +151,12 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("3_1bemg")])
+music = Array[Resource]([ExtResource("5_6orey")])
 channel_id = 36
 play_immediately = false
 stop_all_music_on_start = false
 play_globally = 2
-volume_db = Array[float]([-4.0])
+volume_db = Array[float]([0.5])
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=566726939]
 

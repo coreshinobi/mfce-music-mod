@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://cgyerbe3gfeo3"
+path="res://.godot/imported/syserr - bdmus04.it-c33614ee13901f493e0a3874e23035c2.res"
+
+[deps]
+
+source_file="res://music/side_a/syserr - bdmus04.it"
+dest_files=["res://.godot/imported/syserr - bdmus04.it-c33614ee13901f493e0a3874e23035c2.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

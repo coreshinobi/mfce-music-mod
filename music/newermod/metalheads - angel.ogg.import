@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bkdl5y0swaqb7"
+path="res://.godot/imported/metalheads - angel.ogg-fe8bc098ae9e4feab0576bc314c50d20.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/metalheads - angel.ogg"
+dest_files=["res://.godot/imported/metalheads - angel.ogg-fe8bc098ae9e4feab0576bc314c50d20.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

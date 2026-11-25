@@ -8,9 +8,9 @@
 [ext_resource type="Script" uid="uid://cugmax5psc2oo" path="res://engine/objects/players/player_camera_2d.gd" id="5_tlkm3"]
 [ext_resource type="Script" uid="uid://7byhkvlnfxa" path="res://components/secrets_manager/unlock_multiple.gd" id="5_xlnfs"]
 [ext_resource type="PackedScene" uid="uid://diivlwjl0y1i7" path="res://engine/objects/bosses/bowser/bowser_trigger.tscn" id="6_ioejj"]
-[ext_resource type="AudioStream" uid="uid://c4qgs76bb4a2k" path="res://music/extra/world_u/ultimate_koopa.ogg" id="7_tmoyo"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="8_v8c33"]
 [ext_resource type="TileSet" uid="uid://co4kwf1fb2y5i" path="res://tilesets/castle/castle_tileset.tres" id="9_3jv3i"]
+[ext_resource type="AudioStream" uid="uid://csawnxb82rt7d" path="res://music/newermod/Last Legacy - Aminor Boss Battle.ogg" id="9_ntwva"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="10_uk7lv"]
 [ext_resource type="FontFile" uid="uid://b1pi0t5byork2" path="res://engine/components/hud/hud_font.fnt" id="11_7hum5"]
 [ext_resource type="Texture2D" uid="uid://cyetrjnc0k5oh" path="res://engine/tilesets/castle/gfx/bowser_portrait.png" id="12_x7tgq"]
@@ -130,14 +130,14 @@ colors = PackedColorArray(0, 0, 0, 0.792157, 0, 0, 0, 0)
 gradient = SubResource("Gradient_rft62")
 width = 112
 
-[sub_resource type="Resource" id="Resource_ntwva"]
+[sub_resource type="Resource" id="Resource_xlnfs"]
 resource_local_to_scene = true
 script = ExtResource("22_hejco")
 creation_fallback_node = ExtResource("20_uoiu7")
 creation_nodepack = ExtResource("21_qv3w3")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_xlnfs"]
+[sub_resource type="Resource" id="Resource_d415q"]
 resource_local_to_scene = true
 script = ExtResource("22_hejco")
 creation_fallback_node = ExtResource("20_uoiu7")
@@ -193,7 +193,8 @@ position = Vector2(1284, 240)
 curve = SubResource("Curve2D_41u8e")
 trigger_area = Rect2(-6, -32, 40, 544)
 trigger_bowser = NodePath("../BowserPoison")
-boss_music = ExtResource("7_tmoyo")
+boss_music = ExtResource("9_ntwva")
+boss_music_volume = 1.5
 
 [node name="CameraArea" parent="." unique_id=1880550987 instance=ExtResource("8_v8c33")]
 offset_right = 1586.0
@@ -313,11 +314,11 @@ centered = false
 
 [node name="QuestionBlock" parent="." unique_id=2087986001 instance=ExtResource("19_uondc")]
 position = Vector2(144, 240)
-result = SubResource("Resource_ntwva")
+result = SubResource("Resource_xlnfs")
 
 [node name="QuestionBlock2" parent="." unique_id=1463688284 instance=ExtResource("19_uondc")]
 position = Vector2(272, 240)
-result = SubResource("Resource_xlnfs")
+result = SubResource("Resource_d415q")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=163849078]
 collision_layer = 112

@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://cel85xnv3ueg1"
+path="res://.godot/imported/michiel van den bos @ unreal - main title.it-0f7c3eac1606275aa1ae3d13d71953ca.res"
+
+[deps]
+
+source_file="res://music/side_b/michiel van den bos @ unreal - main title.it"
+dest_files=["res://.godot/imported/michiel van den bos @ unreal - main title.it-0f7c3eac1606275aa1ae3d13d71953ca.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

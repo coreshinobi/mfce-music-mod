@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://b0uqt7j6quxif"
+path="res://.godot/imported/merge - desert dream.mod-c24df30fcfc39cb9cdc85f4f183081ba.res"
+
+[deps]
+
+source_file="res://music/side_a/merge - desert dream.mod"
+dest_files=["res://.godot/imported/merge - desert dream.mod-c24df30fcfc39cb9cdc85f4f183081ba.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://cgxthd0n65myi"
+path="res://.godot/imported/buddha - battle cry.mod-10530db757b181c5dbc28ba8b392ff51.res"
+
+[deps]
+
+source_file="res://music/newermod/buddha - battle cry.mod"
+dest_files=["res://.godot/imported/buddha - battle cry.mod-10530db757b181c5dbc28ba8b392ff51.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://veoemjp67hy8"
+path="res://.godot/imported/semen - malkavian jungle.xm-9a5d4460f601ac04269f05cc01c2c92b.res"
+
+[deps]
+
+source_file="res://music/newermod/semen - malkavian jungle.xm"
+dest_files=["res://.godot/imported/semen - malkavian jungle.xm-9a5d4460f601ac04269f05cc01c2c92b.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://df1666ky73vh"
+path="res://.godot/imported/oxbow - sweet killing.mod-45a5cbe9c94f1b523a5d045a8b93999f.res"
+
+[deps]
+
+source_file="res://music/side_c/oxbow - sweet killing.mod"
+dest_files=["res://.godot/imported/oxbow - sweet killing.mod-45a5cbe9c94f1b523a5d045a8b93999f.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

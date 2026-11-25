@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://dxo7i84y8wnnb"
+path="res://.godot/imported/CoreSHINOBI - Mysticalwave.it-bd1f6bd49088721a4f5b4e75b166e373.res"
+
+[deps]
+
+source_file="res://music/newermod/CoreSHINOBI - Mysticalwave.it"
+dest_files=["res://.godot/imported/CoreSHINOBI - Mysticalwave.it-bd1f6bd49088721a4f5b4e75b166e373.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

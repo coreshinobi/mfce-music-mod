@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://8ls5iu68x0lr"
+path="res://.godot/imported/Alien Soldier - Runner AD2025.ogg-75f2a8e73e257628e99bf5be3b3c3594.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Alien Soldier - Runner AD2025.ogg"
+dest_files=["res://.godot/imported/Alien Soldier - Runner AD2025.ogg-75f2a8e73e257628e99bf5be3b3c3594.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=1.6400000000000001
+bpm=0.0
+beat_count=0
+bar_beats=4

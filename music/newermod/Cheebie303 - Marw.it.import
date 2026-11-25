@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://uwbpajlhdp6a"
+path="res://.godot/imported/Cheebie303 - Marw.it-93f5242d7b4fe00c9d4ba3b4649b8cd9.res"
+
+[deps]
+
+source_file="res://music/newermod/Cheebie303 - Marw.it"
+dest_files=["res://.godot/imported/Cheebie303 - Marw.it-93f5242d7b4fe00c9d4ba3b4649b8cd9.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

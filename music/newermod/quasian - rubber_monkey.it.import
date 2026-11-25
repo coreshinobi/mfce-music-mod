@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://bni1c5ofjgvrb"
+path="res://.godot/imported/quasian - rubber_monkey.it-c8844a83e651e6a85dd20925d4412e33.res"
+
+[deps]
+
+source_file="res://music/newermod/quasian - rubber_monkey.it"
+dest_files=["res://.godot/imported/quasian - rubber_monkey.it-c8844a83e651e6a85dd20925d4412e33.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

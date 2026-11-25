@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b6raeewppitns"
+path="res://.godot/imported/SilverstepP and JoePotato28 - boss.ogg-0e56b880808428d7e15841d5188eefd9.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/SilverstepP and JoePotato28 - boss.ogg"
+dest_files=["res://.godot/imported/SilverstepP and JoePotato28 - boss.ogg-0e56b880808428d7e15841d5188eefd9.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

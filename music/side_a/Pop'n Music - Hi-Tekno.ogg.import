@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dnx5qw85fyss1"
+path="res://.godot/imported/Pop'n Music - Hi-Tekno.ogg-6f917edc265de933366774ed53fd2dad.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Pop'n Music - Hi-Tekno.ogg"
+dest_files=["res://.godot/imported/Pop'n Music - Hi-Tekno.ogg-6f917edc265de933366774ed53fd2dad.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

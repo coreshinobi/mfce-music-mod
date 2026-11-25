@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://in8xfsxg8stx"
+path="res://.godot/imported/teque @ utopos - mesmerizer.mod-4173541e2e12fc0a6e75953000da5b9e.res"
+
+[deps]
+
+source_file="res://music/side_b/teque @ utopos - mesmerizer.mod"
+dest_files=["res://.godot/imported/teque @ utopos - mesmerizer.mod-4173541e2e12fc0a6e75953000da5b9e.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

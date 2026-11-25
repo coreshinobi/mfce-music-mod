@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c34y86fbl87xp"
+path="res://.godot/imported/ohhh shit.ogg-d5ebca4c7810f102a76f4a883c47a7d4.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/ohhh shit.ogg"
+dest_files=["res://.godot/imported/ohhh shit.ogg-d5ebca4c7810f102a76f4a883c47a7d4.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

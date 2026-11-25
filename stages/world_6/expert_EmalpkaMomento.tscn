@@ -3,8 +3,10 @@
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_qtijx"]
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_e30dy"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_bvaqg"]
-[ext_resource type="AudioStream" uid="uid://bjxgnmvy3r7cs" path="res://music/smas-bowser.ogg" id="4_1jvw0"]
+[ext_resource type="AudioStream" uid="uid://cuj12iyqkypbk" path="res://music/side_a/Hachi - Matryoshka.ogg" id="4_4rpye"]
+[ext_resource type="AudioStream" uid="uid://i70i0p7pk60h" path="res://music/newermod/DELTARUMIX - Mad Mew Mew Magic.ogg" id="4_blk54"]
 [ext_resource type="PackedScene" uid="uid://cvigdw7nldify" path="res://objects/antiafk_expert_mode/antiafk_expert_mode.tscn" id="5_1jvw0"]
+[ext_resource type="AudioStream" uid="uid://7by0n5se0v3g" path="res://music/newermod/Toby Fox - Pink (Sped Up).ogg" id="5_4rpye"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="5_w6022"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="6_blk54"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_4rpye"]
@@ -48,20 +50,20 @@ fill_to = Vector2(1, 1)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x50b1"]
 size = Vector2(32, 544)
 
-[sub_resource type="Resource" id="Resource_w6022"]
+[sub_resource type="Resource" id="Resource_j6wt8"]
 resource_local_to_scene = true
 script = ExtResource("23_gkej8")
 creation_fallback_node = ExtResource("21_mcsdk")
 creation_nodepack = ExtResource("22_wah3w")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_blk54"]
+[sub_resource type="Resource" id="Resource_x43k2"]
 resource_local_to_scene = true
 script = ExtResource("23_gkej8")
 creation_nodepack = ExtResource("24_bvaqg")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_4rpye"]
+[sub_resource type="Resource" id="Resource_wg1ho"]
 resource_local_to_scene = true
 script = ExtResource("23_gkej8")
 creation_fallback_node = ExtResource("21_mcsdk")
@@ -81,8 +83,10 @@ jump_to_scene = "uid://dmagom1u0shqm"
 
 [node name="MusicLoader" type="Node" parent="." unique_id=217958621]
 script = ExtResource("3_bvaqg")
-music = Array[Resource]([ExtResource("4_1jvw0")])
-volume_db = Array[float]([3.0])
+music_var_1 = Array[Resource]([ExtResource("4_4rpye")])
+music_var_2 = Array[Resource]([ExtResource("4_blk54")])
+music = Array[Resource]([ExtResource("5_4rpye")])
+volume_db = Array[float]([1.1])
 
 [node name="AntiafkExpertMode" parent="MusicLoader" unique_id=1613361023 instance=ExtResource("5_1jvw0")]
 item_store_enabled = false
@@ -324,12 +328,12 @@ rotation = 3.14159
 
 [node name="QuestionBlockGreenLui" parent="." unique_id=1226517467 instance=ExtResource("20_4b17n")]
 position = Vector2(48, 272)
-result = SubResource("Resource_w6022")
+result = SubResource("Resource_j6wt8")
 initially_visible_and_solid = false
 
 [node name="QuestionBlockGreenLui2" parent="." unique_id=740137929 instance=ExtResource("20_4b17n")]
 position = Vector2(1136, 144)
-result = SubResource("Resource_blk54")
+result = SubResource("Resource_x43k2")
 initially_visible_and_solid = false
 
 [node name="Goomba" parent="." unique_id=445957557 instance=ExtResource("24_4o334")]
@@ -343,7 +347,7 @@ position = Vector2(1872, 400)
 
 [node name="QuestionBlockFireFlower" parent="." unique_id=162041721 instance=ExtResource("26_6uwpj")]
 position = Vector2(1392, 272)
-result = SubResource("Resource_4rpye")
+result = SubResource("Resource_wg1ho")
 
 [node name="ArrowsignR" type="Sprite2D" parent="." unique_id=1046030136]
 z_index = -3

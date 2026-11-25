@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dxy5lxrtuxrqt"
+path="res://.godot/imported/Danganronpa Ultra Despair Girls - Warriors of Hope.ogg-e303e8dd43266c083961c3c7e6074a41.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Danganronpa Ultra Despair Girls - Warriors of Hope.ogg"
+dest_files=["res://.godot/imported/Danganronpa Ultra Despair Girls - Warriors of Hope.ogg-e303e8dd43266c083961c3c7e6074a41.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=20.42
+bpm=0.0
+beat_count=0
+bar_beats=4

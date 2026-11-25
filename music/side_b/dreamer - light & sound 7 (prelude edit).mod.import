@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://ca516j4t127bm"
+path="res://.godot/imported/dreamer - light & sound 7 (prelude edit).mod-8828a2b5c1a0dda4a4190d146b811172.res"
+
+[deps]
+
+source_file="res://music/side_b/dreamer - light & sound 7 (prelude edit).mod"
+dest_files=["res://.godot/imported/dreamer - light & sound 7 (prelude edit).mod-8828a2b5c1a0dda4a4190d146b811172.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

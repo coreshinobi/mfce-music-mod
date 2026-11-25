@@ -3,10 +3,12 @@
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_ebj5x"]
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_466nc"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_4o0yg"]
-[ext_resource type="AudioStream" uid="uid://kp5t70hfci6c" path="res://music/ykyrococ.mod" id="3_mbm8a"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_75tr1"]
+[ext_resource type="AudioStream" uid="uid://2nxgnbb8vqof" path="res://music/newermod/Algorithm - Bioluminescence.ogg" id="4_j48a7"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="4_rdafg"]
+[ext_resource type="AudioStream" uid="uid://bv5yjkgosira2" path="res://music/side_b/teque - suffocation in 1992.mod" id="4_ua3vw"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="5_52gfd"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="5_m3dp4"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="6_e434v"]
 [ext_resource type="TileSet" uid="uid://dtvs1rult8kbe" path="res://tilesets/overworld_green/overworld_green.tres" id="7_1wl85"]
 [ext_resource type="PackedScene" uid="uid://chn6sxklw0ntb" path="res://components/secrets_manager/coin_checker.tscn" id="8_3ofjh"]
@@ -51,46 +53,46 @@ height = 480
 fill_from = Vector2(1, 0)
 fill_to = Vector2(1, 1)
 
-[sub_resource type="Resource" id="Resource_j48a7"]
+[sub_resource type="Resource" id="Resource_w4xhh"]
 resource_local_to_scene = true
 script = ExtResource("13_8ms2m")
 creation_fallback_node = ExtResource("11_c3ym6")
 creation_nodepack = ExtResource("34_cn8b3")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_m3dp4"]
+[sub_resource type="Resource" id="Resource_ypj0h"]
 resource_local_to_scene = true
 script = ExtResource("13_8ms2m")
 creation_fallback_node = ExtResource("11_c3ym6")
 creation_nodepack = ExtResource("34_cn8b3")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_ua3vw"]
+[sub_resource type="Resource" id="Resource_lqpro"]
 resource_local_to_scene = true
 script = ExtResource("13_8ms2m")
 creation_fallback_node = ExtResource("11_c3ym6")
 creation_nodepack = ExtResource("19_crd4r")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_w4xhh"]
-resource_local_to_scene = true
-script = ExtResource("13_8ms2m")
-creation_nodepack = ExtResource("24_5le21")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_ypj0h"]
-resource_local_to_scene = true
-script = ExtResource("13_8ms2m")
-creation_nodepack = ExtResource("24_5le21")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_lqpro"]
-resource_local_to_scene = true
-script = ExtResource("13_8ms2m")
-creation_nodepack = ExtResource("24_5le21")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_rkew0"]
+resource_local_to_scene = true
+script = ExtResource("13_8ms2m")
+creation_nodepack = ExtResource("24_5le21")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_ikm4m"]
+resource_local_to_scene = true
+script = ExtResource("13_8ms2m")
+creation_nodepack = ExtResource("24_5le21")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_kgxps"]
+resource_local_to_scene = true
+script = ExtResource("13_8ms2m")
+creation_nodepack = ExtResource("24_5le21")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_y80tg"]
 resource_local_to_scene = true
 script = ExtResource("13_8ms2m")
 creation_nodepack = ExtResource("24_5le21")
@@ -115,7 +117,10 @@ jump_to_scene = "res://stages/world_7/map_7.tscn"
 
 [node name="MusicLoader" type="Node" parent="." unique_id=2011578111]
 script = ExtResource("3_4o0yg")
-music = Array[Resource]([ExtResource("3_mbm8a")])
+music_var_2 = Array[Resource]([ExtResource("4_ua3vw")])
+music = Array[Resource]([ExtResource("4_j48a7")])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("5_m3dp4")]
 
 [node name="SecretUnlocker" parent="." unique_id=266378090 instance=ExtResource("4_rdafg")]
 secrets = Array[String](["all toad houses found"])
@@ -443,35 +448,35 @@ texture = ExtResource("37_fc4w4")
 
 [node name="QuestionBlockFireFlower" parent="." unique_id=1619731260 instance=ExtResource("33_85ocg")]
 position = Vector2(368, 48)
-result = SubResource("Resource_j48a7")
+result = SubResource("Resource_w4xhh")
 
 [node name="QuestionBlockFireFlower2" parent="." unique_id=781060617 instance=ExtResource("33_85ocg")]
 position = Vector2(3280, 48)
-result = SubResource("Resource_m3dp4")
+result = SubResource("Resource_ypj0h")
 
 [node name="QuestionBlockBeetroot" parent="." unique_id=1911170462 instance=ExtResource("18_545bl")]
 position = Vector2(176, 48)
-result = SubResource("Resource_ua3vw")
+result = SubResource("Resource_lqpro")
 
 [node name="QuestionBlockLife" parent="." unique_id=856973287 instance=ExtResource("23_y7pl5")]
 position = Vector2(272, 48)
-result = SubResource("Resource_w4xhh")
+result = SubResource("Resource_rkew0")
 
 [node name="QuestionBlockLife2" parent="." unique_id=593196240 instance=ExtResource("23_y7pl5")]
 position = Vector2(2064, 304)
-result = SubResource("Resource_ypj0h")
+result = SubResource("Resource_ikm4m")
 initially_visible_and_solid = false
 exists_once = true
 
 [node name="QuestionBlockLife3" parent="." unique_id=1408412683 instance=ExtResource("23_y7pl5")]
 position = Vector2(2096, 304)
-result = SubResource("Resource_lqpro")
+result = SubResource("Resource_kgxps")
 initially_visible_and_solid = false
 exists_once = true
 
 [node name="QuestionBlockLife4" parent="." unique_id=26814240 instance=ExtResource("23_y7pl5")]
 position = Vector2(2128, 304)
-result = SubResource("Resource_rkew0")
+result = SubResource("Resource_y80tg")
 initially_visible_and_solid = false
 exists_once = true
 

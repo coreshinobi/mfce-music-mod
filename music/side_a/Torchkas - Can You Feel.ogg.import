@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://btjq1wxs0j4st"
+path="res://.godot/imported/Torchkas - Can You Feel.ogg-c709835bb2a0a35db7735edf1c927a9e.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Torchkas - Can You Feel.ogg"
+dest_files=["res://.godot/imported/Torchkas - Can You Feel.ogg-c709835bb2a0a35db7735edf1c927a9e.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=16.146
+bpm=0.0
+beat_count=0
+bar_beats=4

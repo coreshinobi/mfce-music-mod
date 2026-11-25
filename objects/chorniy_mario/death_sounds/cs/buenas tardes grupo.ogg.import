@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ml3pgt00v1ip"
+path="res://.godot/imported/buenas tardes grupo.ogg-00399b40c75cbce53fbd675054ece477.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/buenas tardes grupo.ogg"
+dest_files=["res://.godot/imported/buenas tardes grupo.ogg-00399b40c75cbce53fbd675054ece477.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bujbkq35bova3"
+path="res://.godot/imported/Ridiculon - Dream Meater (Rapture Dark).ogg-33ab4fccab4b94283f381ab967d4e231.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Ridiculon - Dream Meater (Rapture Dark).ogg"
+dest_files=["res://.godot/imported/Ridiculon - Dream Meater (Rapture Dark).ogg-33ab4fccab4b94283f381ab967d4e231.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=30.87
+bpm=0.0
+beat_count=0
+bar_beats=4

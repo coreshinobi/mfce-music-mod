@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c40d60thvkvn6"
+path="res://.godot/imported/phoenix wright ace attorney - suspense.ogg-a5af5e2b40ca379cc55342d64c708e9e.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/phoenix wright ace attorney - suspense.ogg"
+dest_files=["res://.godot/imported/phoenix wright ace attorney - suspense.ogg-a5af5e2b40ca379cc55342d64c708e9e.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=34.29
+bpm=0.0
+beat_count=0
+bar_beats=4

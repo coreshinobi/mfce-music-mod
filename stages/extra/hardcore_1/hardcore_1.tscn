@@ -2,9 +2,10 @@
 
 [ext_resource type="Script" uid="uid://b2miajjwaop0p" path="res://engine/scenes/map/scripts/map.gd" id="1_ltkg7"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="2_2s72r"]
-[ext_resource type="AudioStream" uid="uid://dwf4yy3s5iha0" path="res://music/extra/rsectro.mod" id="3_v0cfv"]
+[ext_resource type="AudioStream" uid="uid://dm3c1d75b2nas" path="res://music/newermod/Toby Fox - Who You Might Be.ogg" id="3_itpqs"]
 [ext_resource type="Texture2D" uid="uid://dnrl17sekrmvi" path="res://gfx/map/maps/bg_extended.png" id="4_hutd7"]
 [ext_resource type="Texture2D" uid="uid://usm6n80msr7n" path="res://engine/scenes/map/textures/bg.png" id="4_o0xcr"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="4_y7iwv"]
 [ext_resource type="Texture2D" uid="uid://dqc0xavg0oqdu" path="res://gfx/map/maps/maphardcore.png" id="5_ey0pl"]
 [ext_resource type="PackedScene" uid="uid://w4jc7nb1lcsy" path="res://engine/scenes/map/prefabs/player.tscn" id="6_6onvl"]
 [ext_resource type="PackedScene" uid="uid://beu6ovtvrvpfc" path="res://engine/scenes/map/prefabs/dot.tscn" id="7_5rifs"]
@@ -41,7 +42,11 @@ metadata/_edit_lock_ = true
 
 [node name="MusicLoader" type="Node" parent="." unique_id=688802258]
 script = ExtResource("2_2s72r")
-music = Array[Resource]([ExtResource("3_v0cfv")])
+music = Array[Resource]([ExtResource("3_itpqs")])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("4_y7iwv")]
+displaying_mode = 1
+text = Array[String](["Toby Fox - Who you might be?"])
 
 [node name="Bg" type="Sprite2D" parent="." unique_id=820692692]
 texture = ExtResource("4_hutd7")

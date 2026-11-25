@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://jrqlc4kw1rdp"
+path="res://.godot/imported/CoreSHINOBI - Ryukenden Instinct.xm-7ad1145334e2d4137d23523e7817495a.res"
+
+[deps]
+
+source_file="res://music/newermod/CoreSHINOBI - Ryukenden Instinct.xm"
+dest_files=["res://.godot/imported/CoreSHINOBI - Ryukenden Instinct.xm-7ad1145334e2d4137d23523e7817495a.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

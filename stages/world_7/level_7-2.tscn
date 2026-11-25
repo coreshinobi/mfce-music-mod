@@ -3,14 +3,17 @@
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_f3t4r"]
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_hci3h"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_ct0he"]
-[ext_resource type="AudioStream" uid="uid://c6dc6y4bvfej4" path="res://music/smas-underwater.mp3" id="3_nfpdo"]
+[ext_resource type="AudioStream" uid="uid://cgg287oy70wgr" path="res://music/side_b/raytrayza - wahn+vorstellung.xm" id="4_454mw"]
+[ext_resource type="AudioStream" uid="uid://c1v0nt8kavmjb" path="res://music/side_b/revisq - carnage remix (prelude edit).mod" id="5_flcpn"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="5_u2ge6"]
-[ext_resource type="AudioStream" uid="uid://diuf7iidscu13" path="res://music/smw-underwater.ogg" id="5_w25ey"]
 [ext_resource type="AudioStream" uid="uid://no8rqi6mwk8c" path="res://music/smw-overworld.ogg" id="6_2nuco"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="6_ahjuh"]
+[ext_resource type="AudioStream" uid="uid://bxyrlxn43534u" path="res://music/newermod/Saxxonpike - Ode To Tracker (TinyToon.EXE Pitch).xm" id="7_faqon"]
 [ext_resource type="AudioStream" uid="uid://co70gdke0u16k" path="res://music/smb3-underwater.ogg" id="7_kfhc0"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_n5kdq"]
+[ext_resource type="AudioStream" uid="uid://dsbo3s5e2sxdn" path="res://music/newermod/toal nkor - forest dream.mod" id="8_454mw"]
 [ext_resource type="TileSet" uid="uid://7ahm7i5kbbn6" path="res://engine/tilesets/underwater/underwater.tres" id="8_lwnfr"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="9_flcpn"]
 [ext_resource type="TileSet" uid="uid://dtvs1rult8kbe" path="res://tilesets/overworld_green/overworld_green.tres" id="9_xomgh"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="10_m8i25"]
 [ext_resource type="FontFile" uid="uid://b1pi0t5byork2" path="res://engine/components/hud/hud_font.fnt" id="11_xgwno"]
@@ -121,7 +124,7 @@ gradient = SubResource("Gradient_nyxro")
 height = 16
 fill_to = Vector2(0, 1)
 
-[sub_resource type="Resource" id="Resource_tuhdb"]
+[sub_resource type="Resource" id="Resource_berl3"]
 resource_local_to_scene = true
 script = ExtResource("29_jo7ww")
 creation_fallback_node = ExtResource("27_cybmm")
@@ -135,13 +138,15 @@ jump_to_scene = "res://stages/world_7/map_7.tscn"
 
 [node name="MusicLoader" type="Node" parent="." unique_id=49782533]
 script = ExtResource("3_ct0he")
-music_var_2 = Array[Resource]([ExtResource("5_w25ey"), ExtResource("6_2nuco")])
+music_var_2 = Array[Resource]([ExtResource("4_454mw"), ExtResource("5_flcpn")])
 music_var_3 = Array[Resource]([ExtResource("7_kfhc0"), ExtResource("6_2nuco")])
 var_1_volume_db = Array[float]([0.0, 4.0])
-var_2_volume_db = Array[float]([0.0, 4.0])
+var_2_volume_db = Array[float]([2.6, 9.8])
 var_3_volume_db = Array[float]([0.0, 4.0])
-music = Array[Resource]([ExtResource("3_nfpdo"), ExtResource("6_2nuco")])
-volume_db = Array[float]([0.0, 4.0])
+music = Array[Resource]([ExtResource("7_faqon"), ExtResource("8_454mw")])
+volume_db = Array[float]([16.0, 4.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("9_flcpn")]
 
 [node name="Mario" parent="." unique_id=454383682 instance=ExtResource("5_u2ge6")]
 position = Vector2(80, 0)
@@ -401,7 +406,7 @@ minimum = true
 
 [node name="QuestionBlockFireFlower" parent="." unique_id=281518348 instance=ExtResource("26_2f7s0")]
 position = Vector2(464, 336)
-result = SubResource("Resource_tuhdb")
+result = SubResource("Resource_berl3")
 
 [node name="Coin25" parent="." unique_id=303298822 instance=ExtResource("30_yt20p")]
 position = Vector2(6016, -656)
@@ -616,6 +621,7 @@ position = Vector2(7104, -608)
 texture = ExtResource("48_4mcr1")
 flip_h = true
 
+[connection signal="music_started" from="MusicLoader" to="MusicOverlay" method="play"]
 [connection signal="warp_started" from="PipeIn" to="Node" method="disable"]
 
 [editable path="Water"]

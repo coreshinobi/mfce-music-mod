@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://cflb5uoyh4f2o"
+path="res://.godot/imported/djzip & ragOOn - white coffee.xm-dc404d511de2ef5dd7e56fa996040ecc.res"
+
+[deps]
+
+source_file="res://music/newermod/djzip & ragOOn - white coffee.xm"
+dest_files=["res://.godot/imported/djzip & ragOOn - white coffee.xm-dc404d511de2ef5dd7e56fa996040ecc.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

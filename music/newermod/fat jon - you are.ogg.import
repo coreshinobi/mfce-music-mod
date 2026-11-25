@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://5sngcqj4o2e4"
+path="res://.godot/imported/fat jon - you are.ogg-c220d88365fb3333a621f0d01dd1f599.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/fat jon - you are.ogg"
+dest_files=["res://.godot/imported/fat jon - you are.ogg-c220d88365fb3333a621f0d01dd1f599.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

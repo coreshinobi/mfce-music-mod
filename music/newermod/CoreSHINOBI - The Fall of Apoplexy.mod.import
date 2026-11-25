@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://1u711kfxetb7"
+path="res://.godot/imported/CoreSHINOBI - The Fall of Apoplexy.mod-9f1ba50bc1800755fa2a615c356320e9.res"
+
+[deps]
+
+source_file="res://music/newermod/CoreSHINOBI - The Fall of Apoplexy.mod"
+dest_files=["res://.godot/imported/CoreSHINOBI - The Fall of Apoplexy.mod-9f1ba50bc1800755fa2a615c356320e9.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

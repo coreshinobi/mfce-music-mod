@@ -1,10 +1,10 @@
 extends MenuSelection
 
 var STRING: Array = [
-	"mixed",
-	"as in version 2.16 / 4.4",
-	"as in version 5.0",
-	"as in version 7.02",
+	"Main Mixtape",
+	"Mixtape SIDE A",
+	"Mixtape SIDE B",
+	"Mixtape SIDE C",
 ]
 
 @export var tweak_name: String

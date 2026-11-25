@@ -6,13 +6,15 @@
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="3_soduh"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="4_l87rr"]
 [ext_resource type="Script" uid="uid://7byhkvlnfxa" path="res://components/secrets_manager/unlock_multiple.gd" id="4_no00w"]
-[ext_resource type="AudioStream" uid="uid://dbse42h4h6u1h" path="res://music/extra/new_year/SouthParkRally_Track7.it" id="4_vpq8m"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="5_248gf"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="5_nuytg"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_83xlr"]
 [ext_resource type="TileSet" uid="uid://b64c2na1dguy6" path="res://stages/extra/new_year_world/objects/tileset_ny.tres" id="8_dia7w"]
+[ext_resource type="AudioStream" uid="uid://5hejs306hoqp" path="res://music/newermod/Kiyommy + Seiya - Pink Rose (Instrumental).ogg" id="8_hj4sh"]
+[ext_resource type="AudioStream" uid="uid://c6phll0n1e5bq" path="res://music/side_a/Kulor - Ocean Floor.ogg" id="8_pjsgu"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="8_soduh"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="9_lrnkm"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="9_pjsgu"]
 [ext_resource type="Texture2D" uid="uid://capd7pyi3rpul" path="res://stages/extra/new_year_world/gfx/bg_clouds.png" id="10_f87ba"]
 [ext_resource type="Texture2D" uid="uid://b06d80hy5s0l0" path="res://stages/extra/new_year_world/gfx/bg_stars0.png" id="10_vpq8m"]
 [ext_resource type="Texture2D" uid="uid://dbuqox80rp2i8" path="res://stages/extra/new_year_world/gfx/bg_stars1.png" id="11_e3u6x"]
@@ -424,7 +426,7 @@ progress_secret_mode_ids = Array[int]([1])
 script = ExtResource("4_l87rr")
 tweaked_completion_music = ExtResource("5_248gf")
 ignore_fade_in_tweak = false
-music_var_1 = Array[Resource]([])
+music_var_1 = Array[Resource]([ExtResource("8_pjsgu")])
 music_var_2 = Array[Resource]([])
 music_var_3 = Array[Resource]([])
 var_1_volume_db = Array[float]([0.0])
@@ -438,8 +440,10 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("4_vpq8m")])
-volume_db = Array[float]([4.0])
+music = Array[Resource]([ExtResource("8_hj4sh")])
+volume_db = Array[float]([-1.8])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("9_pjsgu")]
 
 [node name="Player" parent="." unique_id=63637127 instance=ExtResource("5_nuytg")]
 position = Vector2(112, 400)

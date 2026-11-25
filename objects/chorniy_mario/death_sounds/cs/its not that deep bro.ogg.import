@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://3hi24p5pb68"
+path="res://.godot/imported/its not that deep bro.ogg-5ffd8e44efe7e6c6ce718b75377ace4a.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/its not that deep bro.ogg"
+dest_files=["res://.godot/imported/its not that deep bro.ogg-5ffd8e44efe7e6c6ce718b75377ace4a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

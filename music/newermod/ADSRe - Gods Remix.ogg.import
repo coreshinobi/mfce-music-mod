@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b27wypn3gw8m2"
+path="res://.godot/imported/ADSRe - Gods Remix.ogg-5bac7fea73b1d0d675d0fa1f5ab0037c.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/ADSRe - Gods Remix.ogg"
+dest_files=["res://.godot/imported/ADSRe - Gods Remix.ogg-5bac7fea73b1d0d675d0fa1f5ab0037c.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

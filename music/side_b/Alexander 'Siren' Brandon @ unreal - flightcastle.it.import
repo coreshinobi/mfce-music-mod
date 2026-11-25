@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://c8xbtrsgjlqwm"
+path="res://.godot/imported/Alexander 'Siren' Brandon @ unreal - flightcastle.it-0381d4417347d745edf88ee36d828072.res"
+
+[deps]
+
+source_file="res://music/side_b/Alexander 'Siren' Brandon @ unreal - flightcastle.it"
+dest_files=["res://.godot/imported/Alexander 'Siren' Brandon @ unreal - flightcastle.it-0381d4417347d745edf88ee36d828072.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

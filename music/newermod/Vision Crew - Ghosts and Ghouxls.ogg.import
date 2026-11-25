@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dtvyxwaix73fj"
+path="res://.godot/imported/Vision Crew - Ghosts and Ghouxls.ogg-c0694b6193e375dad28e51d060c8fe1e.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Vision Crew - Ghosts and Ghouxls.ogg"
+dest_files=["res://.godot/imported/Vision Crew - Ghosts and Ghouxls.ogg-c0694b6193e375dad28e51d060c8fe1e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://d0w7hmj1dnot0"
+path="res://.godot/imported/maf 464 - moondust.mod-f00234f7cbbea807e7f1efe5d813b83e.res"
+
+[deps]
+
+source_file="res://music/newermod/maf 464 - moondust.mod"
+dest_files=["res://.godot/imported/maf 464 - moondust.mod-f00234f7cbbea807e7f1efe5d813b83e.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

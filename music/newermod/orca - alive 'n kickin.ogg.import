@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bvwhci4g4704m"
+path="res://.godot/imported/orca - alive 'n kickin.ogg-a8bead219eaad61eb555493cccda752e.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/orca - alive 'n kickin.ogg"
+dest_files=["res://.godot/imported/orca - alive 'n kickin.ogg-a8bead219eaad61eb555493cccda752e.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://d2mmjl2y6qitm"
+path="res://.godot/imported/Strobo - Bullshit.mod-0cfc610f8213074f151cf5fd4dfa5467.res"
+
+[deps]
+
+source_file="res://music/side_b/Strobo - Bullshit.mod"
+dest_files=["res://.godot/imported/Strobo - Bullshit.mod-0cfc610f8213074f151cf5fd4dfa5467.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

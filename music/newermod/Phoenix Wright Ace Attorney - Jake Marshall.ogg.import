@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://r3wdgegqc6j4"
+path="res://.godot/imported/Phoenix Wright Ace Attorney - Jake Marshall.ogg-ef0af9b7c768d2ec80c85842fd25c595.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Phoenix Wright Ace Attorney - Jake Marshall.ogg"
+dest_files=["res://.godot/imported/Phoenix Wright Ace Attorney - Jake Marshall.ogg-ef0af9b7c768d2ec80c85842fd25c595.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=4.89
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dp7jv1piq853m"
+path="res://.godot/imported/wake up call.ogg-48aef44934d995de2feabf8aa0b687f2.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/wake up call.ogg"
+dest_files=["res://.godot/imported/wake up call.ogg-48aef44934d995de2feabf8aa0b687f2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

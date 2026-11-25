@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://7lx1jtvg7bo0"
+path="res://.godot/imported/Tricktrax - Condifentiality.mod-ce94cf92bc1c0fb3b2a78847f5cedf6d.res"
+
+[deps]
+
+source_file="res://music/newermod/Tricktrax - Condifentiality.mod"
+dest_files=["res://.godot/imported/Tricktrax - Condifentiality.mod-ce94cf92bc1c0fb3b2a78847f5cedf6d.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

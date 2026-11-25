@@ -10,14 +10,14 @@
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="3_inatc"]
 [ext_resource type="Script" uid="uid://bvmuncyek1tsx" path="res://stages/extra/expert_mode/scripts/bowser_advance_checker.gd" id="3_ltjmr"]
 [ext_resource type="Script" uid="uid://chvjy6okoognf" path="res://engine/objects/powerups/instance_powerup.gd" id="4_jeef1"]
-[ext_resource type="AudioStream" uid="uid://bexk1qd4psene" path="res://engine/objects/bosses/bowser/music/music_bowser_battle.mod" id="4_rfm4i"]
-[ext_resource type="AudioStream" uid="uid://bd7r5d5eb275q" path="res://music/smw-haunted-house.ogg" id="5_3yrav"]
+[ext_resource type="AudioStream" uid="uid://wt5v0eqxjvbm" path="res://music/newermod/Danganronpa V3 - V3 Argument -Panic-.ogg" id="5_1epgr"]
 [ext_resource type="TileSet" uid="uid://co4kwf1fb2y5i" path="res://tilesets/castle/castle_tileset.tres" id="5_34pn1"]
 [ext_resource type="PackedScene" uid="uid://b8kgbn8f7lvf0" path="res://engine/objects/items/coin/coin.tscn" id="5_jxdww"]
 [ext_resource type="PackedScene" uid="uid://oe7i3cief0g" path="res://engine/objects/enemies/_dead/enemy_killed.tscn" id="6_4oddl"]
 [ext_resource type="PackedScene" uid="uid://c58i0gaq0il4o" path="res://engine/objects/enemies/spinies/spiny_red.tscn" id="6_83w51"]
 [ext_resource type="Script" uid="uid://du32vchaulqj6" path="res://engine/objects/enemies/_dead/prefabs/do_killed.gd" id="7_d3nvv"]
 [ext_resource type="PackedScene" uid="uid://b8q8ngpgfgjl5" path="res://engine/objects/bosses/bowser/bowser.tscn" id="7_n6wm8"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="7_rfm4i"]
 [ext_resource type="PackedScene" uid="uid://0ugpa0ybv34g" path="res://engine/objects/enemies/rotos/roto_center.tscn" id="7_xft44"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="8_jgdip"]
 [ext_resource type="PackedScene" uid="uid://cforx4e0v73a7" path="res://engine/objects/enemies/rotos/roto_red.tscn" id="8_nkte3"]
@@ -29,7 +29,7 @@
 [ext_resource type="PackedScene" uid="uid://dpikli783lsya" path="res://objects/_screen_clear_item/atom_star.tscn" id="10_34pn1"]
 [ext_resource type="PackedScene" uid="uid://vqn6y17pt5mx" path="res://engine/objects/enemies/goombas/goomba.tscn" id="10_nmb52"]
 [ext_resource type="Script" uid="uid://cegxr45ywjae2" path="res://stages/extra/expert_mode/scripts/bowser_fake_reveal_w2.gd" id="12_c4cq6"]
-[ext_resource type="AudioStream" uid="uid://cnn040q2lodum" path="res://music/smrpg-bowser.ogg" id="12_gqhaf"]
+[ext_resource type="AudioStream" uid="uid://bfmxavsj8e4ok" path="res://music/newermod/Danganronpa V3 - Hyper Final Ultra a.A..ogg" id="12_oowqm"]
 [ext_resource type="Texture2D" uid="uid://bg2k5gya1fsae" path="res://tilesets/castle/gfx/gray_pipe_entering_another.png" id="15_c3u82"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="16_8ucer"]
 [ext_resource type="Texture2D" uid="uid://dwgb38fjcwjhp" path="res://engine/objects/enemies/koopas/textures/shell_red.png" id="16_wq6cu"]
@@ -63,7 +63,9 @@
 [ext_resource type="PackedScene" uid="uid://72feht11cer2" path="res://engine/components/audio_area/audio_area_cave.tscn" id="48_3l6rr"]
 [ext_resource type="PackedScene" uid="uid://cx0wdn3m2f25y" path="res://engine/objects/bosses/bowser/bowser_lava_template.tscn" id="49_s26hq"]
 [ext_resource type="Script" uid="uid://b66w23lsb1766" path="res://gfx/fancy_graphics/scripts/lava_light_pulse.gd" id="50_j301e"]
-[ext_resource type="Texture2D" uid="uid://dfrouvuwj4hk0" path="res://engine/objects/enemies/koopas/textures/shell_green.png" id="55_58exh"]
+[ext_resource type="Texture2D" uid="uid://bybonym5oyvbt" path="res://gfx/texts/komaru_1.png" id="55_1epgr"]
+[ext_resource type="Texture2D" uid="uid://dfrouvuwj4hk0" path="res://engine/objects/enemies/koopas/textures/shell_green.png" id="55_rfm4i"]
+[ext_resource type="Texture2D" uid="uid://d0jljkydh0r15" path="res://gfx/texts/komaru_2.png" id="56_rfm4i"]
 [ext_resource type="Script" uid="uid://cn0a7wob2414p" path="res://engine/objects/detectors/player_detection.gd" id="65_oowqm"]
 
 [sub_resource type="Curve2D" id="Curve2D_aapar"]
@@ -72,13 +74,13 @@ _data = {
 }
 point_count = 2
 
-[sub_resource type="Resource" id="Resource_1epgr"]
+[sub_resource type="Resource" id="Resource_3yrav"]
 resource_local_to_scene = true
 script = ExtResource("4_jeef1")
 creation_nodepack = ExtResource("5_jxdww")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_rfm4i"]
+[sub_resource type="Resource" id="Resource_jgdip"]
 resource_local_to_scene = true
 script = ExtResource("4_jeef1")
 creation_nodepack = ExtResource("5_jxdww")
@@ -96,13 +98,13 @@ creation_fallback_node = ExtResource("2_3fdkw")
 creation_nodepack = ExtResource("3_bbgpc")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_3yrav"]
+[sub_resource type="Resource" id="Resource_71n1w"]
 resource_local_to_scene = true
 script = ExtResource("4_jeef1")
 creation_nodepack = ExtResource("5_jxdww")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_jgdip"]
+[sub_resource type="Resource" id="Resource_7i2ly"]
 resource_local_to_scene = true
 script = ExtResource("4_jeef1")
 creation_nodepack = ExtResource("10_34pn1")
@@ -162,15 +164,15 @@ custom_vars = {
 }
 custom_script = ExtResource("7_d3nvv")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_umkjp"]
-atlas = ExtResource("55_58exh")
+[sub_resource type="AtlasTexture" id="AtlasTexture_gqhaf"]
+atlas = ExtResource("55_rfm4i")
 region = Rect2(96, 0, 32, 28)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dbiqa"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_umkjp")
+"texture": SubResource("AtlasTexture_gqhaf")
 }],
 "loop": 1,
 "name": &"default",
@@ -189,6 +191,25 @@ animations = [{
 }],
 "loop": 1,
 "name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8ucer"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("55_1epgr")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("56_rfm4i")
+}],
+"loop": 1,
+"name": &"tokiiiiii",
 "speed": 5.0
 }]
 
@@ -500,10 +521,12 @@ completion_center_on_player_after_transition = true
 
 [node name="MusicLoader" type="Node" parent="." unique_id=670252914]
 script = ExtResource("3_1epgr")
-boss_music_var_1 = ExtResource("4_rfm4i")
-music = Array[Resource]([ExtResource("5_3yrav")])
+music = Array[Resource]([ExtResource("5_1epgr")])
 
 [node name="AntiafkExpertMode" parent="MusicLoader" unique_id=1598836614 instance=ExtResource("2_tj7dm")]
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("7_rfm4i")]
+text = Array[String](["Danganronpa V3 - Argument -Panic-"])
 
 [node name="SecretUnlocker2" parent="." unique_id=1822734934 instance=ExtResource("3_inatc")]
 secrets = Array[String](["expert mode easter eggs"])
@@ -525,7 +548,8 @@ script = ExtResource("2_ptdga")
 trigger_bowser_2 = NodePath("../Bowser2")
 trigger_area = Rect2(0, 0, 32, 960)
 trigger_bowser = NodePath("../Bowser")
-boss_music = ExtResource("12_gqhaf")
+boss_music = ExtResource("12_oowqm")
+boss_music_volume = -0.8
 
 [node name="Node" type="Node" parent="BowserTrigger" unique_id=1445404168]
 script = ExtResource("3_ltjmr")
@@ -694,11 +718,11 @@ position = Vector2(5200, 304)
 
 [node name="QuestionBlock14" parent="." unique_id=2127377926 instance=ExtResource("9_a3v0t")]
 position = Vector2(3280, 176)
-result = SubResource("Resource_1epgr")
+result = SubResource("Resource_3yrav")
 
 [node name="QuestionBlock15" parent="." unique_id=1683432457 instance=ExtResource("9_a3v0t")]
 position = Vector2(3248, 176)
-result = SubResource("Resource_rfm4i")
+result = SubResource("Resource_jgdip")
 
 [node name="QuestionBlock16" parent="." unique_id=400085170 instance=ExtResource("9_a3v0t")]
 position = Vector2(7888, 144)
@@ -712,12 +736,12 @@ initially_visible_and_solid = false
 
 [node name="QuestionBlock17" parent="." unique_id=766742025 instance=ExtResource("9_a3v0t")]
 position = Vector2(496, 176)
-result = SubResource("Resource_3yrav")
+result = SubResource("Resource_71n1w")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock18" parent="." unique_id=757671819 instance=ExtResource("9_a3v0t")]
 position = Vector2(272, 176)
-result = SubResource("Resource_jgdip")
+result = SubResource("Resource_7i2ly")
 initially_visible_and_solid = false
 
 [node name="Bowser2" parent="." unique_id=622524411 instance=ExtResource("7_n6wm8")]
@@ -1259,6 +1283,10 @@ process_mode = 4
 visible = false
 position = Vector2(-16, 288)
 
+[node name="komaru" type="AnimatedSprite2D" parent="secret" unique_id=747369339]
+position = Vector2(-428, 743)
+sprite_frames = SubResource("SpriteFrames_8ucer")
+
 [node name="expl" type="AnimatedSprite2D" parent="secret" unique_id=1631721175]
 position = Vector2(16, 864)
 sprite_frames = SubResource("SpriteFrames_trsto")
@@ -1266,6 +1294,7 @@ autoplay = "default"
 speed_scale = 1.2
 
 [node name="art" type="Sprite2D" parent="secret" unique_id=1763065311]
+visible = false
 position = Vector2(-448, 528)
 skew = 1.56905
 texture = ExtResource("25_ptyjo")
@@ -1274,6 +1303,7 @@ region_enabled = true
 region_rect = Rect2(0, 0, 388, 143)
 
 [node name="art2" type="Sprite2D" parent="secret" unique_id=156818576]
+visible = false
 position = Vector2(-256, 720)
 scale = Vector2(1e-05, 1)
 texture = ExtResource("25_ptyjo")
@@ -1282,6 +1312,7 @@ region_enabled = true
 region_rect = Rect2(0, 145, 388, 80)
 
 [node name="art3" type="Sprite2D" parent="secret" unique_id=762396294]
+visible = false
 position = Vector2(-256, 880)
 scale = Vector2(1e-05, 1e-05)
 texture = ExtResource("25_ptyjo")

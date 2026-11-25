@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ludiencq0sli"
+path="res://.godot/imported/Radiati0nal, psychadoeic - megaLoVania [RADIATI0NAL REMIX].ogg-d28225974a81d1afb01adc02214c63d7.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_b/Radiati0nal, psychadoeic - megaLoVania [RADIATI0NAL REMIX].ogg"
+dest_files=["res://.godot/imported/Radiati0nal, psychadoeic - megaLoVania [RADIATI0NAL REMIX].ogg-d28225974a81d1afb01adc02214c63d7.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=17.08
+bpm=0.0
+beat_count=0
+bar_beats=4

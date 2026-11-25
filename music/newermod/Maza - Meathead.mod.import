@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://bgnm3ln780py3"
+path="res://.godot/imported/Maza - Meathead.mod-8e6e20cb368b8aa6b960a26cacd0e86f.res"
+
+[deps]
+
+source_file="res://music/newermod/Maza - Meathead.mod"
+dest_files=["res://.godot/imported/Maza - Meathead.mod-8e6e20cb368b8aa6b960a26cacd0e86f.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

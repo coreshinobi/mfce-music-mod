@@ -7,7 +7,8 @@
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="5_d1gie"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="5_smnd8"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="5_v5vmp"]
-[ext_resource type="AudioStream" uid="uid://bc76id74m5qwx" path="res://music/extra/world_13_syzx/13-3-1.ogg" id="6_h61lq"]
+[ext_resource type="AudioStream" uid="uid://c0ap1u3l7vttd" path="res://music/newermod/Toby Fox, Spy Trolling - Spawn (1990’s arrangement).ogg" id="6_vkbpu"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="7_645im"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="8_33wpv"]
 [ext_resource type="FontFile" uid="uid://b1pi0t5byork2" path="res://engine/components/hud/hud_font.fnt" id="9_5ai5j"]
 [ext_resource type="Texture2D" uid="uid://djwe62jh83kf" path="res://engine/tilesets/overworld/gfx/hard_block.png" id="10_vj0s4"]
@@ -295,18 +296,6 @@ sources/1 = SubResource("TileSetAtlasSource_v8rl4")
 sources/2 = SubResource("TileSetAtlasSource_v5vmp")
 sources/3 = SubResource("TileSetAtlasSource_cgnn4")
 
-[sub_resource type="Resource" id="Resource_vkbpu"]
-resource_local_to_scene = true
-script = ExtResource("14_mssfw")
-creation_nodepack = ExtResource("13_s7dgs")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_645im"]
-resource_local_to_scene = true
-script = ExtResource("14_mssfw")
-creation_nodepack = ExtResource("13_s7dgs")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_3ridx"]
 resource_local_to_scene = true
 script = ExtResource("14_mssfw")
@@ -316,14 +305,13 @@ trans_inheritances = 7
 [sub_resource type="Resource" id="Resource_tr8if"]
 resource_local_to_scene = true
 script = ExtResource("14_mssfw")
-creation_fallback_node = ExtResource("20_lraa1")
-creation_nodepack = ExtResource("21_pyhpp")
+creation_nodepack = ExtResource("13_s7dgs")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_vtud2"]
 resource_local_to_scene = true
 script = ExtResource("14_mssfw")
-creation_nodepack = ExtResource("22_ipk6v")
+creation_nodepack = ExtResource("13_s7dgs")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_4gqlj"]
@@ -336,13 +324,14 @@ trans_inheritances = 7
 [sub_resource type="Resource" id="Resource_i5jlq"]
 resource_local_to_scene = true
 script = ExtResource("14_mssfw")
-creation_nodepack = ExtResource("13_s7dgs")
+creation_nodepack = ExtResource("22_ipk6v")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_k1i1b"]
 resource_local_to_scene = true
 script = ExtResource("14_mssfw")
-creation_nodepack = ExtResource("22_ipk6v")
+creation_fallback_node = ExtResource("20_lraa1")
+creation_nodepack = ExtResource("21_pyhpp")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_j2q71"]
@@ -354,17 +343,29 @@ trans_inheritances = 7
 [sub_resource type="Resource" id="Resource_oh3xl"]
 resource_local_to_scene = true
 script = ExtResource("14_mssfw")
-creation_nodepack = ExtResource("13_s7dgs")
+creation_nodepack = ExtResource("22_ipk6v")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_ci24a"]
+resource_local_to_scene = true
+script = ExtResource("14_mssfw")
+creation_nodepack = ExtResource("13_s7dgs")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_4o55c"]
+resource_local_to_scene = true
+script = ExtResource("14_mssfw")
+creation_nodepack = ExtResource("13_s7dgs")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_gko43"]
 resource_local_to_scene = true
 script = ExtResource("14_mssfw")
 creation_fallback_node = ExtResource("20_lraa1")
 creation_nodepack = ExtResource("21_pyhpp")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_4o55c"]
+[sub_resource type="Resource" id="Resource_stm25"]
 resource_local_to_scene = true
 script = ExtResource("14_mssfw")
 creation_nodepack = ExtResource("22_ipk6v")
@@ -396,9 +397,13 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("6_h61lq")])
-volume_db = Array[float]([-6.0])
+playback_pitch = 1.0
+music = Array[Resource]([ExtResource("6_vkbpu")])
+volume_db = Array[float]([1.1])
 start_from_sec = Array[float]([0.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("7_645im")]
+text = Array[String](["Toby Fox, Spy Trolling - Spawn (1990s Arrangement)"])
 
 [node name="Player" parent="." unique_id=1501117284 instance=ExtResource("5_smnd8")]
 position = Vector2(200, 304)
@@ -709,55 +714,55 @@ position = Vector2(5808, 48)
 
 [node name="QuestionBlock" parent="." unique_id=1319373763 instance=ExtResource("13_8xgvv")]
 position = Vector2(464, 144)
-result = SubResource("Resource_vkbpu")
+result = SubResource("Resource_3ridx")
 
 [node name="QuestionBlock2" parent="." unique_id=2044284468 instance=ExtResource("13_8xgvv")]
 position = Vector2(496, 144)
-result = SubResource("Resource_645im")
+result = SubResource("Resource_tr8if")
 
 [node name="QuestionBlock3" parent="." unique_id=794395242 instance=ExtResource("13_8xgvv")]
 position = Vector2(1712, 176)
-result = SubResource("Resource_3ridx")
+result = SubResource("Resource_vtud2")
 
 [node name="QuestionBlock4" parent="." unique_id=1713637485 instance=ExtResource("13_8xgvv")]
 position = Vector2(1744, 176)
-result = SubResource("Resource_tr8if")
+result = SubResource("Resource_4gqlj")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock5" parent="." unique_id=597627370 instance=ExtResource("13_8xgvv")]
 position = Vector2(3952, 240)
-result = SubResource("Resource_vtud2")
+result = SubResource("Resource_i5jlq")
 initially_visible_and_solid = false
 exists_once = true
 
 [node name="QuestionBlock6" parent="." unique_id=1317838523 instance=ExtResource("13_8xgvv")]
 position = Vector2(5424, 208)
-result = SubResource("Resource_4gqlj")
+result = SubResource("Resource_k1i1b")
 
 [node name="QuestionBlock7" parent="." unique_id=979557236 instance=ExtResource("13_8xgvv")]
 position = Vector2(6032, 272)
-result = SubResource("Resource_i5jlq")
+result = SubResource("Resource_j2q71")
 
 [node name="QuestionBlock8" parent="." unique_id=1538746695 instance=ExtResource("13_8xgvv")]
 position = Vector2(6000, 272)
-result = SubResource("Resource_k1i1b")
+result = SubResource("Resource_oh3xl")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock9" parent="." unique_id=248485977 instance=ExtResource("13_8xgvv")]
 position = Vector2(8656, 48)
-result = SubResource("Resource_j2q71")
+result = SubResource("Resource_ci24a")
 
 [node name="QuestionBlock10" parent="." unique_id=646104585 instance=ExtResource("13_8xgvv")]
 position = Vector2(8688, 48)
-result = SubResource("Resource_oh3xl")
+result = SubResource("Resource_4o55c")
 
 [node name="QuestionBlock11" parent="." unique_id=1020375326 instance=ExtResource("13_8xgvv")]
 position = Vector2(8720, 48)
-result = SubResource("Resource_ci24a")
+result = SubResource("Resource_gko43")
 
 [node name="QuestionBlock12" parent="." unique_id=913983221 instance=ExtResource("13_8xgvv")]
 position = Vector2(8624, 48)
-result = SubResource("Resource_4o55c")
+result = SubResource("Resource_stm25")
 initially_visible_and_solid = false
 
 [node name="AdvEd_Easy" type="Node2D" parent="." unique_id=1399332138]

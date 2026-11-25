@@ -5,12 +5,17 @@
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="3_1rth5"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="4_lxasv"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="5_yetqa"]
-[ext_resource type="AudioStream" uid="uid://dvjer3bl0ftxm" path="res://music/extra/world_u/smw-brinstar.ogg" id="6_wa777"]
-[ext_resource type="AudioStream" uid="uid://c7pyddl2w766u" path="res://music/extra/world_u/smw-vanilla.ogg" id="7_h2ury"]
+[ext_resource type="AudioStream" uid="uid://dsivg262c1ihh" path="res://music/side_a/Torchkas - On My Way.ogg" id="6_i3s6s"]
+[ext_resource type="AudioStream" uid="uid://c34gxcomuyf4p" path="res://music/side_b/virgill - nosehole.mod" id="6_yj7b2"]
+[ext_resource type="AudioStream" uid="uid://btjq1wxs0j4st" path="res://music/side_a/Torchkas - Can You Feel.ogg" id="7_abgq4"]
+[ext_resource type="AudioStream" uid="uid://bmewcth6gnafo" path="res://music/side_b/virgill - 1993 called.mod" id="7_gb0jk"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="8_5p6js"]
+[ext_resource type="AudioStream" uid="uid://dqtinxiyo2vdn" path="res://music/newermod/supernao - cnn weather report.mod" id="8_vpvon"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="8_ywlu2"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="9_eevos"]
+[ext_resource type="AudioStream" uid="uid://c63v4ebgfjkvs" path="res://music/newermod/seth - sense of dreams.mod" id="9_i3s6s"]
 [ext_resource type="Script" uid="uid://7byhkvlnfxa" path="res://components/secrets_manager/unlock_multiple.gd" id="9_w4vyl"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="10_gb0jk"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="10_ygph4"]
 [ext_resource type="TileSet" uid="uid://b5c17g3cwebar" path="res://tilesets/underground/underground.tres" id="11_q8b2o"]
 [ext_resource type="TileSet" uid="uid://bkc31edmhu6n3" path="res://engine/tilesets/underground/blue_platforms.tres" id="12_luyn0"]
@@ -111,19 +116,19 @@ width = 640
 height = 400
 fill_to = Vector2(0, 1)
 
-[sub_resource type="Resource" id="Resource_ytq5l"]
+[sub_resource type="Resource" id="Resource_dntak"]
 resource_local_to_scene = true
 script = ExtResource("31_3eqib")
 creation_nodepack = ExtResource("30_wpd1i")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_lpyaa"]
+[sub_resource type="Resource" id="Resource_m3cfg"]
 resource_local_to_scene = true
 script = ExtResource("31_3eqib")
 creation_nodepack = ExtResource("30_wpd1i")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_g8t3h"]
+[sub_resource type="Resource" id="Resource_wne7r"]
 resource_local_to_scene = true
 script = ExtResource("31_3eqib")
 creation_nodepack = ExtResource("30_wpd1i")
@@ -160,7 +165,7 @@ metadata/_snap_enabled = true
 gradient = SubResource("Gradient_is7fa")
 width = 32
 
-[sub_resource type="Resource" id="Resource_yj7b2"]
+[sub_resource type="Resource" id="Resource_trp0c"]
 resource_local_to_scene = true
 script = ExtResource("31_3eqib")
 creation_nodepack = ExtResource("52_p707y")
@@ -234,12 +239,12 @@ metadata/_custom_type_script = "uid://dh7ob1sbo8lx7"
 script = ExtResource("4_lxasv")
 tweaked_completion_music = ExtResource("5_yetqa")
 ignore_fade_in_tweak = false
-music_var_1 = Array[Resource]([])
-music_var_2 = Array[Resource]([])
+music_var_1 = Array[Resource]([ExtResource("6_i3s6s"), ExtResource("7_abgq4")])
+music_var_2 = Array[Resource]([ExtResource("6_yj7b2"), ExtResource("7_gb0jk")])
 music_var_3 = Array[Resource]([])
 var_1_volume_db = Array[float]([0.0])
 var_1_start_from_sec = Array[float]([0.0])
-var_2_volume_db = Array[float]([0.0])
+var_2_volume_db = Array[float]([0.8, 0.8])
 var_2_start_from_sec = Array[float]([0.0])
 var_3_volume_db = Array[float]([0.0])
 var_3_start_from_sec = Array[float]([0.0])
@@ -248,8 +253,10 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("6_wa777"), ExtResource("7_h2ury")])
-volume_db = Array[float]([5.0, 3.0])
+music = Array[Resource]([ExtResource("8_vpvon"), ExtResource("9_i3s6s")])
+volume_db = Array[float]([3.5, 2.5])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("10_gb0jk")]
 
 [node name="SecretUnlocker" parent="." unique_id=596987888 instance=ExtResource("8_5p6js")]
 secrets = Array[String](["world u easy in kevin mode"])
@@ -644,15 +651,15 @@ position = Vector2(2352, 336)
 
 [node name="QuestionBlock" parent="." unique_id=1213461535 instance=ExtResource("29_d5h5e")]
 position = Vector2(1648, 272)
-result = SubResource("Resource_ytq5l")
+result = SubResource("Resource_dntak")
 
 [node name="QuestionBlock2" parent="." unique_id=1153143142 instance=ExtResource("29_d5h5e")]
 position = Vector2(1840, 144)
-result = SubResource("Resource_lpyaa")
+result = SubResource("Resource_m3cfg")
 
 [node name="QuestionBlock3" parent="." unique_id=433427471 instance=ExtResource("29_d5h5e")]
 position = Vector2(2896, 48)
-result = SubResource("Resource_g8t3h")
+result = SubResource("Resource_wne7r")
 
 [node name="RotoCenter" parent="." unique_id=580551205 instance=ExtResource("32_jakek")]
 position = Vector2(1648, 272)
@@ -1328,7 +1335,7 @@ jumping_height = 300.0
 
 [node name="QuestionBlockLife" parent="." unique_id=156537586 instance=ExtResource("51_2tgx7")]
 position = Vector2(6704, 1232)
-result = SubResource("Resource_yj7b2")
+result = SubResource("Resource_trp0c")
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="." unique_id=1683137808]
 position = Vector2(6288, 1408)

@@ -5,11 +5,12 @@
 [ext_resource type="PackedScene" uid="uid://ltoqkqmxpt65" path="res://engine/objects/powerups/life_mushroom/life_mushroom.tscn" id="3_clnq5"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_clwu6"]
 [ext_resource type="Script" uid="uid://chvjy6okoognf" path="res://engine/objects/powerups/instance_powerup.gd" id="4_3f51l"]
-[ext_resource type="AudioStream" uid="uid://cd00jvhxl1uyf" path="res://music/extra/expert_mode/strobo_-_no_future.mod" id="5_kqtka"]
+[ext_resource type="AudioStream" uid="uid://dfuw2wmaye242" path="res://music/newermod/DJ Mayhem - Matrix The Remix.ogg" id="4_clwu6"]
 [ext_resource type="PackedScene" uid="uid://b8kgbn8f7lvf0" path="res://engine/objects/items/coin/coin.tscn" id="5_vi4m4"]
 [ext_resource type="PackedScene" uid="uid://cvigdw7nldify" path="res://objects/antiafk_expert_mode/antiafk_expert_mode.tscn" id="6_bj6vk"]
 [ext_resource type="PackedScene" uid="uid://b71msw28e37a" path="res://engine/objects/powerups/red_mushroom/red_mushroom.tscn" id="6_i3ysy"]
 [ext_resource type="Script" uid="uid://cig57y4jvtsyn" path="res://stages/extra/expert_mode/scripts/expert_autoscroll_follow.gd" id="6_oaryf"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="6_soxpw"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="6_ylgli"]
 [ext_resource type="PackedScene" uid="uid://8a7nemgi0b6q" path="res://engine/objects/powerups/beetroot/beetroot.tscn" id="7_hbi4h"]
 [ext_resource type="Script" uid="uid://cn0a7wob2414p" path="res://engine/objects/detectors/player_detection.gd" id="7_rt17w"]
@@ -611,40 +612,16 @@ colors = PackedColorArray(0.188235, 0.529412, 0.607843, 1, 0.94902, 0.992157, 0.
 gradient = SubResource("Gradient_yydt0")
 width = 480
 
-[sub_resource type="Resource" id="Resource_ktpky"]
-resource_local_to_scene = true
-script = ExtResource("4_3f51l")
-creation_nodepack = ExtResource("3_clnq5")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_clwu6"]
-resource_local_to_scene = true
-script = ExtResource("4_3f51l")
-creation_nodepack = ExtResource("3_clnq5")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_ylgli"]
-resource_local_to_scene = true
-script = ExtResource("4_3f51l")
-creation_nodepack = ExtResource("5_vi4m4")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_soxpw"]
-resource_local_to_scene = true
-script = ExtResource("4_3f51l")
-creation_nodepack = ExtResource("5_vi4m4")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_npunt"]
 resource_local_to_scene = true
 script = ExtResource("4_3f51l")
-creation_nodepack = ExtResource("5_vi4m4")
+creation_nodepack = ExtResource("3_clnq5")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_j7pmp"]
 resource_local_to_scene = true
 script = ExtResource("4_3f51l")
-creation_nodepack = ExtResource("5_vi4m4")
+creation_nodepack = ExtResource("3_clnq5")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_3pltk"]
@@ -656,18 +633,42 @@ trans_inheritances = 7
 [sub_resource type="Resource" id="Resource_ebip5"]
 resource_local_to_scene = true
 script = ExtResource("4_3f51l")
-creation_fallback_node = ExtResource("6_i3ysy")
-creation_nodepack = ExtResource("7_hbi4h")
+creation_nodepack = ExtResource("5_vi4m4")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_syloj"]
+resource_local_to_scene = true
+script = ExtResource("4_3f51l")
+creation_nodepack = ExtResource("5_vi4m4")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_hj0nu"]
+resource_local_to_scene = true
+script = ExtResource("4_3f51l")
+creation_nodepack = ExtResource("5_vi4m4")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_r5aeq"]
+resource_local_to_scene = true
+script = ExtResource("4_3f51l")
+creation_nodepack = ExtResource("5_vi4m4")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_kgwdx"]
 resource_local_to_scene = true
 script = ExtResource("4_3f51l")
 creation_fallback_node = ExtResource("6_i3ysy")
 creation_nodepack = ExtResource("7_hbi4h")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_hj0nu"]
+[sub_resource type="Resource" id="Resource_8d38j"]
+resource_local_to_scene = true
+script = ExtResource("4_3f51l")
+creation_fallback_node = ExtResource("6_i3ysy")
+creation_nodepack = ExtResource("7_hbi4h")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_broc1"]
 resource_local_to_scene = true
 script = ExtResource("4_3f51l")
 creation_nodepack = ExtResource("8_jqyur")
@@ -1333,9 +1334,13 @@ metadata/_edit_vertical_guides_ = [5632.0]
 
 [node name="MusicLoader" type="Node" parent="." unique_id=1356075365]
 script = ExtResource("3_clwu6")
-music = Array[Resource]([ExtResource("5_kqtka")])
+music = Array[Resource]([ExtResource("4_clwu6")])
+volume_db = Array[float]([2.1])
 
 [node name="AntiafkExpertMode" parent="MusicLoader" unique_id=1790048624 instance=ExtResource("6_bj6vk")]
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("6_soxpw")]
+text = Array[String](["DJ Mayhem - Matrix: The Remix"])
 
 [node name="Mario" parent="." unique_id=45815830 instance=ExtResource("6_ylgli")]
 position = Vector2(336, 400)
@@ -1438,19 +1443,19 @@ color = Color(0.94902, 0.992157, 0.988235, 1)
 
 [node name="QuestionBlockLife" parent="FreeAfterCP" unique_id=2114849440 instance=ExtResource("35_ebip5")]
 position = Vector2(240, 240)
-result = SubResource("Resource_ktpky")
+result = SubResource("Resource_npunt")
 initially_visible_and_solid = false
 exists_once = true
 
 [node name="QuestionBlockLife2" parent="FreeAfterCP" unique_id=480707776 instance=ExtResource("35_ebip5")]
 position = Vector2(304, 240)
-result = SubResource("Resource_clwu6")
+result = SubResource("Resource_j7pmp")
 initially_visible_and_solid = false
 exists_once = true
 
 [node name="QuestionBlockLife3" parent="FreeAfterCP" unique_id=672812355 instance=ExtResource("35_ebip5")]
 position = Vector2(272, 240)
-result = SubResource("Resource_ylgli")
+result = SubResource("Resource_3pltk")
 initially_visible_and_solid = false
 exists_once = true
 
@@ -1633,29 +1638,29 @@ position = Vector2(2384, -144)
 
 [node name="QuestionBlock2" parent="." unique_id=385195821 instance=ExtResource("10_7ssy5")]
 position = Vector2(2320, -112)
-result = SubResource("Resource_soxpw")
+result = SubResource("Resource_ebip5")
 
 [node name="QuestionBlock3" parent="." unique_id=985000346 instance=ExtResource("10_7ssy5")]
 position = Vector2(2256, -112)
-result = SubResource("Resource_npunt")
+result = SubResource("Resource_syloj")
 
 [node name="QuestionBlock4" parent="." unique_id=397437659 instance=ExtResource("10_7ssy5")]
 position = Vector2(3568, -272)
-result = SubResource("Resource_j7pmp")
+result = SubResource("Resource_hj0nu")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock5" parent="." unique_id=1097009095 instance=ExtResource("10_7ssy5")]
 position = Vector2(3632, -272)
-result = SubResource("Resource_3pltk")
+result = SubResource("Resource_r5aeq")
 initially_visible_and_solid = false
 
 [node name="QuestionBlockBeetroot" parent="." unique_id=479586802 instance=ExtResource("13_y1tyh")]
 position = Vector2(2288, -112)
-result = SubResource("Resource_ebip5")
+result = SubResource("Resource_kgwdx")
 
 [node name="QuestionBlockBeetroot2" parent="." unique_id=1369915282 instance=ExtResource("13_y1tyh")]
 position = Vector2(9712, -720)
-result = SubResource("Resource_syloj")
+result = SubResource("Resource_8d38j")
 
 [node name="SpinyRed" parent="." unique_id=1476215415 instance=ExtResource("12_jtht6")]
 position = Vector2(2640, -112)
@@ -1722,7 +1727,7 @@ position = Vector2(8496, -624)
 
 [node name="QuestionBlockStar" parent="." unique_id=1736633938 instance=ExtResource("47_syloj")]
 position = Vector2(3600, -272)
-result = SubResource("Resource_hj0nu")
+result = SubResource("Resource_broc1")
 initially_visible_and_solid = false
 
 [node name="Path2D" type="Path2D" parent="." unique_id=57879707]

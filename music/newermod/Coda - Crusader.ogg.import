@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b6e3n7yb857gm"
+path="res://.godot/imported/Coda - Crusader.ogg-190c2e6f97e087c1ff1e5af107686a30.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Coda - Crusader.ogg"
+dest_files=["res://.godot/imported/Coda - Crusader.ogg-190c2e6f97e087c1ff1e5af107686a30.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

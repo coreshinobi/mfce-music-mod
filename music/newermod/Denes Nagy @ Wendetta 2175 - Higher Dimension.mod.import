@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://csj1o452pk5ts"
+path="res://.godot/imported/Denes Nagy @ Wendetta 2175 - Higher Dimension.mod-69c98d880608f42a20ac1e4d5b01e884.res"
+
+[deps]
+
+source_file="res://music/newermod/Denes Nagy @ Wendetta 2175 - Higher Dimension.mod"
+dest_files=["res://.godot/imported/Denes Nagy @ Wendetta 2175 - Higher Dimension.mod-69c98d880608f42a20ac1e4d5b01e884.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

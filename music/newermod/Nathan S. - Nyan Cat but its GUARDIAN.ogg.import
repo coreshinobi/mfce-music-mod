@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ctfbgcxg6frk3"
+path="res://.godot/imported/Nathan S. - Nyan Cat but its GUARDIAN.ogg-35e96c3eb0287bf90421974330a04c32.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Nathan S. - Nyan Cat but its GUARDIAN.ogg"
+dest_files=["res://.godot/imported/Nathan S. - Nyan Cat but its GUARDIAN.ogg-35e96c3eb0287bf90421974330a04c32.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=3.43
+bpm=0.0
+beat_count=0
+bar_beats=4

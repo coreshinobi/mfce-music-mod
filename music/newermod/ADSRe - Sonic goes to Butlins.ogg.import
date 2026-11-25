@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dgioe1vi5iqgv"
+path="res://.godot/imported/ADSRe - Sonic goes to Butlins.ogg-2ab16fa28cc6404b6684d3b0bf945033.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/ADSRe - Sonic goes to Butlins.ogg"
+dest_files=["res://.godot/imported/ADSRe - Sonic goes to Butlins.ogg-2ab16fa28cc6404b6684d3b0bf945033.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=3.15
+bpm=0.0
+beat_count=0
+bar_beats=4

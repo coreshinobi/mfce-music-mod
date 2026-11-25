@@ -15,7 +15,7 @@ general/accessibility_driver="dummy"
 
 [application]
 
-config/name="Mario Forever: Community Edition"
+config/name="MFCE: Shinobic Mixtape Mod"
 config/version="2.2.2.0"
 config/tags=PackedStringArray("game", "mario_forever")
 run/main_scene="res://stages/intro/intro.tscn"

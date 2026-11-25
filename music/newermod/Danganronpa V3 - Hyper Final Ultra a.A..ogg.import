@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bfmxavsj8e4ok"
+path="res://.godot/imported/Danganronpa V3 - Hyper Final Ultra a.A..ogg-ff7786513d283692385b02960573690e.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Danganronpa V3 - Hyper Final Ultra a.A..ogg"
+dest_files=["res://.godot/imported/Danganronpa V3 - Hyper Final Ultra a.A..ogg-ff7786513d283692385b02960573690e.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.19
+bpm=0.0
+beat_count=0
+bar_beats=4

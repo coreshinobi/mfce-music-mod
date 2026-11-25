@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://7hl3tiuynny"
+path="res://.godot/imported/Jayze @ Berrywitched! - Rotten Fruit.ogg-951bc2a07234297618620fa4ce2dfda2.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Jayze @ Berrywitched! - Rotten Fruit.ogg"
+dest_files=["res://.godot/imported/Jayze @ Berrywitched! - Rotten Fruit.ogg-951bc2a07234297618620fa4ce2dfda2.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=24.824
+bpm=0.0
+beat_count=0
+bar_beats=4

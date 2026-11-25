@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bew4ndx7x5vha"
+path="res://.godot/imported/Bass Selective - Jessica's Jaw.ogg-e84869e4f3483a828394cd6b9a5aeb6c.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Bass Selective - Jessica's Jaw.ogg"
+dest_files=["res://.godot/imported/Bass Selective - Jessica's Jaw.ogg-e84869e4f3483a828394cd6b9a5aeb6c.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

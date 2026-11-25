@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://v48iikjnafou"
+path="res://.godot/imported/Prince of Persia - Stage 9.ogg-0fd924b754abb4123ad8177252a3266f.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Prince of Persia - Stage 9.ogg"
+dest_files=["res://.godot/imported/Prince of Persia - Stage 9.ogg-0fd924b754abb4123ad8177252a3266f.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=3.15
+bpm=0.0
+beat_count=0
+bar_beats=4

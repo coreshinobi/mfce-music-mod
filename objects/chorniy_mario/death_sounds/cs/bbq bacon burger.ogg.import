@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://snxk0183pgjq"
+path="res://.godot/imported/bbq bacon burger.ogg-7300c6429de381dd9d6eb3d30010bf3f.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/bbq bacon burger.ogg"
+dest_files=["res://.godot/imported/bbq bacon burger.ogg-7300c6429de381dd9d6eb3d30010bf3f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

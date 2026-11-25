@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://5hejs306hoqp"
+path="res://.godot/imported/Kiyommy + Seiya - Pink Rose (Instrumental).ogg-98422a607d48b5a7eb3c72a04b14ee83.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Kiyommy + Seiya - Pink Rose (Instrumental).ogg"
+dest_files=["res://.godot/imported/Kiyommy + Seiya - Pink Rose (Instrumental).ogg-98422a607d48b5a7eb3c72a04b14ee83.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=1.65
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bwgv4sibxic78"
+path="res://.godot/imported/justmakil - some crumbling tower inspired thing.ogg-bec1caabf5ef3409bf2dc23be2020567.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/justmakil - some crumbling tower inspired thing.ogg"
+dest_files=["res://.godot/imported/justmakil - some crumbling tower inspired thing.ogg-bec1caabf5ef3409bf2dc23be2020567.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

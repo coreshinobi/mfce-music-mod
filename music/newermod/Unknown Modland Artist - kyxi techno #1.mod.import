@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://dmbh6d44c76af"
+path="res://.godot/imported/Unknown Modland Artist - kyxi techno #1.mod-ee531939727e46eb00bf94a0041ed3a2.res"
+
+[deps]
+
+source_file="res://music/newermod/Unknown Modland Artist - kyxi techno #1.mod"
+dest_files=["res://.godot/imported/Unknown Modland Artist - kyxi techno #1.mod-ee531939727e46eb00bf94a0041ed3a2.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

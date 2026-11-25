@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cvou21564lp55"
+path="res://.godot/imported/Chuki Beats - Real Chill Old School Hip Hop Instrumentals Rap Beat #3.ogg-6a3a0f271754c8fb9535ef695e24bfed.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Chuki Beats - Real Chill Old School Hip Hop Instrumentals Rap Beat #3.ogg"
+dest_files=["res://.godot/imported/Chuki Beats - Real Chill Old School Hip Hop Instrumentals Rap Beat #3.ogg-6a3a0f271754c8fb9535ef695e24bfed.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

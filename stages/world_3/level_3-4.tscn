@@ -2,17 +2,21 @@
 
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_morq1"]
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_jqfyc"]
-[ext_resource type="AudioStream" uid="uid://b8pcdleki0b86" path="res://music/smw-fortress.ogg" id="3_k02uv"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_mt3gq"]
+[ext_resource type="AudioStream" uid="uid://bmuvwlbhd56cs" path="res://music/side_a/celsius - look up, look up.mod" id="4_alh14"]
+[ext_resource type="AudioStream" uid="uid://dbsokcqtihg46" path="res://music/side_a/Super Mario Bros 3 Editable - Cavernas.ogg" id="4_c6ttk"]
+[ext_resource type="AudioStream" uid="uid://d2hymw2kom88v" path="res://music/side_b/superfml - carnage.mod" id="4_h2wuo"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_t6cwn"]
 [ext_resource type="PackedScene" uid="uid://diivlwjl0y1i7" path="res://engine/objects/bosses/bowser/bowser_trigger.tscn" id="5_7rvvr"]
-[ext_resource type="AudioStream" uid="uid://bexk1qd4psene" path="res://engine/objects/bosses/bowser/music/music_bowser_battle.mod" id="5_471td"]
-[ext_resource type="AudioStream" uid="uid://cnn040q2lodum" path="res://music/smrpg-bowser.ogg" id="6_5cirm"]
+[ext_resource type="AudioStream" uid="uid://cml3636yxmrkp" path="res://music/side_b/cybelius - fix it later.s3m" id="5_h2wuo"]
+[ext_resource type="AudioStream" uid="uid://bfhhchmk3cqi1" path="res://music/newermod/Spirits From An Urban Jungle - Prologue To Freedom.ogg" id="5_wcpw1"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="6_h2wuo"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="6_hatcb"]
 [ext_resource type="TileSet" uid="uid://co4kwf1fb2y5i" path="res://tilesets/castle/castle_tileset.tres" id="6_vtbbg"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_u78ep"]
 [ext_resource type="FontFile" uid="uid://b1pi0t5byork2" path="res://engine/components/hud/hud_font.fnt" id="9_h2pde"]
 [ext_resource type="Texture2D" uid="uid://bm62kwqcqdgkl" path="res://engine/tilesets/castle/gfx/BGCastle.png" id="9_hbpw7"]
+[ext_resource type="AudioStream" uid="uid://cgxthd0n65myi" path="res://music/newermod/buddha - battle cry.mod" id="10_c6ttk"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="10_r6uip"]
 [ext_resource type="PackedScene" uid="uid://dvmhwh1khygq6" path="res://engine/objects/bumping_blocks/brick/brick_gray.tscn" id="10_x0cjd"]
 [ext_resource type="PackedScene" uid="uid://b71msw28e37a" path="res://engine/objects/powerups/red_mushroom/red_mushroom.tscn" id="12_bgjxm"]
@@ -162,8 +166,15 @@ lighting_force_hide_on_start = false
 
 [node name="MusicLoader" type="Node" parent="." unique_id=73330508]
 script = ExtResource("3_mt3gq")
-boss_music_var_1 = ExtResource("5_471td")
-music = Array[Resource]([ExtResource("3_k02uv")])
+music_var_1 = Array[Resource]([ExtResource("4_c6ttk")])
+music_var_2 = Array[Resource]([ExtResource("4_h2wuo")])
+var_2_volume_db = Array[float]([3.6])
+boss_music_var_1 = ExtResource("4_alh14")
+boss_music_var_2 = ExtResource("5_h2wuo")
+boss_music_volume_db = Array[float]([0.0, 3.8])
+music = Array[Resource]([ExtResource("5_wcpw1")])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("6_h2wuo")]
 
 [node name="Mario" parent="." unique_id=1031439463 instance=ExtResource("4_t6cwn")]
 position = Vector2(272, 336)
@@ -178,7 +189,7 @@ position = Vector2(11392, 224)
 curve = SubResource("Curve2D_aapar")
 trigger_area = Rect2(0, 0, 32, 960)
 trigger_bowser = NodePath("../Bowser")
-boss_music = ExtResource("6_5cirm")
+boss_music = ExtResource("10_c6ttk")
 
 [node name="CameraArea" parent="." unique_id=658513247 instance=ExtResource("7_u78ep")]
 offset_right = 12225.0

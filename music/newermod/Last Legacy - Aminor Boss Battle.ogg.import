@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://csawnxb82rt7d"
+path="res://.godot/imported/Last Legacy - Aminor Boss Battle.ogg-a2c288546b77dd57018fa5bad7bc5304.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Last Legacy - Aminor Boss Battle.ogg"
+dest_files=["res://.godot/imported/Last Legacy - Aminor Boss Battle.ogg-a2c288546b77dd57018fa5bad7bc5304.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=15.1
+bpm=0.0
+beat_count=0
+bar_beats=4

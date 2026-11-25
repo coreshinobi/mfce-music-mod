@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d0atmwsjyr4"
+path="res://.godot/imported/vale perfecto.ogg-8e2a21997fadeac411e4bab49877afb7.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/vale perfecto.ogg"
+dest_files=["res://.godot/imported/vale perfecto.ogg-8e2a21997fadeac411e4bab49877afb7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

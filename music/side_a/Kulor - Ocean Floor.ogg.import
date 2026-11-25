@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c6phll0n1e5bq"
+path="res://.godot/imported/Kulor - Ocean Floor.ogg-7abf24e624d803d6057aebf73d27c99b.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Kulor - Ocean Floor.ogg"
+dest_files=["res://.godot/imported/Kulor - Ocean Floor.ogg-7abf24e624d803d6057aebf73d27c99b.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=13.25
+bpm=0.0
+beat_count=0
+bar_beats=4

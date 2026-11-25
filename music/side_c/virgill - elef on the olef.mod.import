@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://c2fkfca52smxm"
+path="res://.godot/imported/virgill - elef on the olef.mod-bc8a952ab1f9599d4e60e3560c6df8fc.res"
+
+[deps]
+
+source_file="res://music/side_c/virgill - elef on the olef.mod"
+dest_files=["res://.godot/imported/virgill - elef on the olef.mod-bc8a952ab1f9599d4e60e3560c6df8fc.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dcgwrv3xx2rgi"
+path="res://.godot/imported/Brutal Sonic - Raining Blood (Slayer).ogg-5c3cc2b7b9f325c78732873fad8ed28d.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Brutal Sonic - Raining Blood (Slayer).ogg"
+dest_files=["res://.godot/imported/Brutal Sonic - Raining Blood (Slayer).ogg-5c3cc2b7b9f325c78732873fad8ed28d.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=32.01
+bpm=0.0
+beat_count=0
+bar_beats=4

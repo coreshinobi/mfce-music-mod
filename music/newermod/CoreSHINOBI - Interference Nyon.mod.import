@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://blw562hv4n5pj"
+path="res://.godot/imported/CoreSHINOBI - Interference Nyon.mod-afc951f0468924ee7d8caf03b23e2283.res"
+
+[deps]
+
+source_file="res://music/newermod/CoreSHINOBI - Interference Nyon.mod"
+dest_files=["res://.godot/imported/CoreSHINOBI - Interference Nyon.mod-afc951f0468924ee7d8caf03b23e2283.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

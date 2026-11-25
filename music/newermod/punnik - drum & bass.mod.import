@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://drhdpd4cdu1cf"
+path="res://.godot/imported/punnik - drum & bass.mod-27193b9693d6b7b8a15aa12da12279c5.res"
+
+[deps]
+
+source_file="res://music/newermod/punnik - drum & bass.mod"
+dest_files=["res://.godot/imported/punnik - drum & bass.mod-27193b9693d6b7b8a15aa12da12279c5.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

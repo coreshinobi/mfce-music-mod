@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://dm8f6pp6eurk0"
+path="res://.godot/imported/teque - doubt of existence (2nd version).mod-3ffcc4a530e5514f8324285792e5dc1f.res"
+
+[deps]
+
+source_file="res://music/side_c/teque - doubt of existence (2nd version).mod"
+dest_files=["res://.godot/imported/teque - doubt of existence (2nd version).mod-3ffcc4a530e5514f8324285792e5dc1f.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

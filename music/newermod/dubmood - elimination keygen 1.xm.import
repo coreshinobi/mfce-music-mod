@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://cii4c1phwjhgo"
+path="res://.godot/imported/dubmood - elimination keygen 1.xm-c6c8b76943464b7b6d0284b416c2e87b.res"
+
+[deps]
+
+source_file="res://music/newermod/dubmood - elimination keygen 1.xm"
+dest_files=["res://.godot/imported/dubmood - elimination keygen 1.xm-c6c8b76943464b7b6d0284b416c2e87b.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

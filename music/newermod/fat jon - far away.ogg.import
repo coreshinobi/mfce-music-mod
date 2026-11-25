@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c6a4n6ffkngwe"
+path="res://.godot/imported/fat jon - far away.ogg-03e3b4584551fdf8c508d1131e72813c.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/fat jon - far away.ogg"
+dest_files=["res://.godot/imported/fat jon - far away.ogg-03e3b4584551fdf8c508d1131e72813c.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=10.39
+bpm=0.0
+beat_count=0
+bar_beats=4

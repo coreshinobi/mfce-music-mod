@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d0m2qkfb8a8hq"
+path="res://.godot/imported/Danganronpa V3 - Closing Argument V3.ogg-de28aa3cf27c871cd229ff9614bb8bec.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Danganronpa V3 - Closing Argument V3.ogg"
+dest_files=["res://.godot/imported/Danganronpa V3 - Closing Argument V3.ogg-de28aa3cf27c871cd229ff9614bb8bec.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=17.6
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://dxwfhm3erls6p"
+path="res://.godot/imported/Fun Factory - Close To You (Modland Lite).mod-a1845e9332507f1349e33204ab0e75ac.res"
+
+[deps]
+
+source_file="res://music/side_a/Fun Factory - Close To You (Modland Lite).mod"
+dest_files=["res://.godot/imported/Fun Factory - Close To You (Modland Lite).mod-a1845e9332507f1349e33204ab0e75ac.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dr7bobxetog7n"
+path="res://.godot/imported/Skool Of Hard Knocks - Dressback.ogg-d8493be1d2823a4dd5821a2a139220d1.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Skool Of Hard Knocks - Dressback.ogg"
+dest_files=["res://.godot/imported/Skool Of Hard Knocks - Dressback.ogg-d8493be1d2823a4dd5821a2a139220d1.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

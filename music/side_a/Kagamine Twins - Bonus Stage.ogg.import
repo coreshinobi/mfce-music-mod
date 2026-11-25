@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://83jv0mb4ouvr"
+path="res://.godot/imported/Kagamine Twins - Bonus Stage.ogg-3eb5db1fc47fb731007ba001cfd62920.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Kagamine Twins - Bonus Stage.ogg"
+dest_files=["res://.godot/imported/Kagamine Twins - Bonus Stage.ogg-3eb5db1fc47fb731007ba001cfd62920.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bs3643afoy1oj"
+path="res://.godot/imported/king meteor studios - wacky workbench P mix US.ogg-8e85f6fd4d5fdd0142848c3e47f2ab04.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_b/king meteor studios - wacky workbench P mix US.ogg"
+dest_files=["res://.godot/imported/king meteor studios - wacky workbench P mix US.ogg-8e85f6fd4d5fdd0142848c3e47f2ab04.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

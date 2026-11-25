@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://sfjysn116a2w"
+path="res://.godot/imported/Tailsgenesis - Aqua Dagger (Vs. Aqua).ogg-9f8ee4fcd24785795a0e589eb402d612.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Tailsgenesis - Aqua Dagger (Vs. Aqua).ogg"
+dest_files=["res://.godot/imported/Tailsgenesis - Aqua Dagger (Vs. Aqua).ogg-9f8ee4fcd24785795a0e589eb402d612.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

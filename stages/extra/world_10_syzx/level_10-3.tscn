@@ -6,11 +6,12 @@
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="3_ikr4u"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="4_4vv7p"]
 [ext_resource type="Script" uid="uid://7byhkvlnfxa" path="res://components/secrets_manager/unlock_multiple.gd" id="4_uq5wl"]
-[ext_resource type="AudioStream" uid="uid://cpxdgasfv8gt8" path="res://music/extra/world_10_syzx/world10_3.ogg" id="5_g3p1r"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="5_h1qpr"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="5_oom7b"]
+[ext_resource type="AudioStream" uid="uid://c4jvp2ygmttwd" path="res://music/newermod/Gopher - Return to Nebula 9.xm" id="8_4ey7i"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="8_aha2q"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="8_oom7b"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="9_tbc1k"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="11_6n2kh"]
 [ext_resource type="TileSet" uid="uid://dtvs1rult8kbe" path="res://tilesets/overworld_green/overworld_green.tres" id="11_m15f1"]
 [ext_resource type="TileSet" uid="uid://b5c17g3cwebar" path="res://tilesets/underground/underground.tres" id="12_ie4xm"]
@@ -134,25 +135,25 @@ size = Vector2(4984, 656)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_flab0"]
 size = Vector2(16256, 1088)
 
-[sub_resource type="Resource" id="Resource_18f0u"]
+[sub_resource type="Resource" id="Resource_radcm"]
 resource_local_to_scene = true
 script = ExtResource("28_r18fi")
 creation_nodepack = ExtResource("25_jhe6c")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_4ey7i"]
+[sub_resource type="Resource" id="Resource_4g7ca"]
 resource_local_to_scene = true
 script = ExtResource("28_r18fi")
 creation_nodepack = ExtResource("27_flab0")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_tbc1k"]
+[sub_resource type="Resource" id="Resource_4i0h2"]
 resource_local_to_scene = true
 script = ExtResource("28_r18fi")
 creation_nodepack = ExtResource("27_flab0")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_radcm"]
+[sub_resource type="Resource" id="Resource_qjhh2"]
 resource_local_to_scene = true
 script = ExtResource("28_r18fi")
 creation_nodepack = ExtResource("27_flab0")
@@ -224,24 +225,6 @@ point_count = 2
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oom7b"]
 size = Vector2(29, 64)
 
-[sub_resource type="Resource" id="Resource_4g7ca"]
-resource_local_to_scene = true
-script = ExtResource("28_r18fi")
-creation_nodepack = ExtResource("25_jhe6c")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_4i0h2"]
-resource_local_to_scene = true
-script = ExtResource("28_r18fi")
-creation_nodepack = ExtResource("25_jhe6c")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_qjhh2"]
-resource_local_to_scene = true
-script = ExtResource("28_r18fi")
-creation_nodepack = ExtResource("25_jhe6c")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_1lw0s"]
 resource_local_to_scene = true
 script = ExtResource("28_r18fi")
@@ -251,20 +234,22 @@ trans_inheritances = 7
 [sub_resource type="Resource" id="Resource_kpn4l"]
 resource_local_to_scene = true
 script = ExtResource("28_r18fi")
-creation_fallback_node = ExtResource("36_h78ma")
-creation_nodepack = ExtResource("37_8b5t1")
+creation_nodepack = ExtResource("25_jhe6c")
 trans_inheritances = 7
-metadata/_custom_type_script = "uid://chvjy6okoognf"
 
 [sub_resource type="Resource" id="Resource_m587m"]
 resource_local_to_scene = true
 script = ExtResource("28_r18fi")
-creation_fallback_node = ExtResource("36_h78ma")
-creation_nodepack = ExtResource("37_8b5t1")
+creation_nodepack = ExtResource("25_jhe6c")
 trans_inheritances = 7
-metadata/_custom_type_script = "uid://chvjy6okoognf"
 
 [sub_resource type="Resource" id="Resource_swgjh"]
+resource_local_to_scene = true
+script = ExtResource("28_r18fi")
+creation_nodepack = ExtResource("25_jhe6c")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_mk0ck"]
 resource_local_to_scene = true
 script = ExtResource("28_r18fi")
 creation_fallback_node = ExtResource("36_h78ma")
@@ -272,39 +257,33 @@ creation_nodepack = ExtResource("37_8b5t1")
 trans_inheritances = 7
 metadata/_custom_type_script = "uid://chvjy6okoognf"
 
-[sub_resource type="Resource" id="Resource_mk0ck"]
+[sub_resource type="Resource" id="Resource_6kjio"]
+resource_local_to_scene = true
+script = ExtResource("28_r18fi")
+creation_fallback_node = ExtResource("36_h78ma")
+creation_nodepack = ExtResource("37_8b5t1")
+trans_inheritances = 7
+metadata/_custom_type_script = "uid://chvjy6okoognf"
+
+[sub_resource type="Resource" id="Resource_h5vnu"]
+resource_local_to_scene = true
+script = ExtResource("28_r18fi")
+creation_fallback_node = ExtResource("36_h78ma")
+creation_nodepack = ExtResource("37_8b5t1")
+trans_inheritances = 7
+metadata/_custom_type_script = "uid://chvjy6okoognf"
+
+[sub_resource type="Resource" id="Resource_tsmov"]
 resource_local_to_scene = true
 script = ExtResource("28_r18fi")
 creation_nodepack = ExtResource("27_flab0")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_6kjio"]
-resource_local_to_scene = true
-script = ExtResource("28_r18fi")
-creation_nodepack = ExtResource("25_jhe6c")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_h5vnu"]
-resource_local_to_scene = true
-script = ExtResource("28_r18fi")
-creation_nodepack = ExtResource("25_jhe6c")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_tsmov"]
-resource_local_to_scene = true
-script = ExtResource("28_r18fi")
-creation_fallback_node = ExtResource("36_h78ma")
-creation_nodepack = ExtResource("37_8b5t1")
-trans_inheritances = 7
-metadata/_custom_type_script = "uid://chvjy6okoognf"
-
 [sub_resource type="Resource" id="Resource_kujke"]
 resource_local_to_scene = true
 script = ExtResource("28_r18fi")
-creation_fallback_node = ExtResource("36_h78ma")
-creation_nodepack = ExtResource("37_8b5t1")
+creation_nodepack = ExtResource("25_jhe6c")
 trans_inheritances = 7
-metadata/_custom_type_script = "uid://chvjy6okoognf"
 
 [sub_resource type="Resource" id="Resource_jjhgj"]
 resource_local_to_scene = true
@@ -315,10 +294,32 @@ trans_inheritances = 7
 [sub_resource type="Resource" id="Resource_hmxdk"]
 resource_local_to_scene = true
 script = ExtResource("28_r18fi")
+creation_fallback_node = ExtResource("36_h78ma")
+creation_nodepack = ExtResource("37_8b5t1")
+trans_inheritances = 7
+metadata/_custom_type_script = "uid://chvjy6okoognf"
+
+[sub_resource type="Resource" id="Resource_jqogc"]
+resource_local_to_scene = true
+script = ExtResource("28_r18fi")
+creation_fallback_node = ExtResource("36_h78ma")
+creation_nodepack = ExtResource("37_8b5t1")
+trans_inheritances = 7
+metadata/_custom_type_script = "uid://chvjy6okoognf"
+
+[sub_resource type="Resource" id="Resource_8eejj"]
+resource_local_to_scene = true
+script = ExtResource("28_r18fi")
 creation_nodepack = ExtResource("25_jhe6c")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_jqogc"]
+[sub_resource type="Resource" id="Resource_s2tn5"]
+resource_local_to_scene = true
+script = ExtResource("28_r18fi")
+creation_nodepack = ExtResource("25_jhe6c")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_ww4b6"]
 resource_local_to_scene = true
 script = ExtResource("28_r18fi")
 creation_nodepack = ExtResource("25_jhe6c")
@@ -365,9 +366,13 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("5_g3p1r")])
-volume_db = Array[float]([0.0])
+playback_pitch = 1.0
+music = Array[Resource]([ExtResource("8_4ey7i")])
+volume_db = Array[float]([0.8])
 start_from_sec = Array[float]([0.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("9_tbc1k")]
+text = Array[String](["Gopher - Return to Nebula 9"])
 
 [node name="Player" parent="." unique_id=185021644 instance=ExtResource("5_h1qpr")]
 position = Vector2(160, -80)
@@ -888,7 +893,7 @@ position = Vector2(880, 400)
 
 [node name="QuestionBlock3" parent="EasierDesignNode" unique_id=803479812 instance=ExtResource("49_xn8yd")]
 position = Vector2(816, 240)
-result = SubResource("Resource_18f0u")
+result = SubResource("Resource_radcm")
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="EasierDesignNode" unique_id=1356636033]
 tile_map_data = PackedByteArray("AABtAAUABAAAAAIAAABuAAUABAABAAIAAABtAAQABAAAAAEAAABuAAQABAABAAEAAAA=")
@@ -903,16 +908,16 @@ position = Vector2(816, 208)
 
 [node name="QuestionBlock3" parent="HarderDesignNode" unique_id=839586599 instance=ExtResource("49_xn8yd")]
 position = Vector2(816, 240)
-result = SubResource("Resource_4ey7i")
+result = SubResource("Resource_4g7ca")
 
 [node name="QuestionBlock4" parent="HarderDesignNode" unique_id=688560071 instance=ExtResource("49_xn8yd")]
 position = Vector2(5392, 176)
-result = SubResource("Resource_tbc1k")
+result = SubResource("Resource_4i0h2")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock5" parent="HarderDesignNode" unique_id=1373974668 instance=ExtResource("49_xn8yd")]
 position = Vector2(9104, 80)
-result = SubResource("Resource_radcm")
+result = SubResource("Resource_qjhh2")
 initially_visible_and_solid = false
 
 [node name="BulletLauncher" parent="HarderDesignNode" unique_id=387830591 instance=ExtResource("43_inwqk")]
@@ -1455,60 +1460,60 @@ region_rect = Rect2(0, 0, 64, 480)
 
 [node name="QuestionBlock" parent="." unique_id=1735923970 instance=ExtResource("49_xn8yd")]
 position = Vector2(752, 240)
-result = SubResource("Resource_4g7ca")
+result = SubResource("Resource_1lw0s")
 
 [node name="QuestionBlock2" parent="." unique_id=1436044644 instance=ExtResource("49_xn8yd")]
 position = Vector2(784, 240)
-result = SubResource("Resource_4i0h2")
+result = SubResource("Resource_kpn4l")
 
 [node name="QuestionBlock4" parent="." unique_id=462517230 instance=ExtResource("49_xn8yd")]
 position = Vector2(848, 240)
-result = SubResource("Resource_qjhh2")
+result = SubResource("Resource_m587m")
 
 [node name="QuestionBlock5" parent="." unique_id=881668035 instance=ExtResource("49_xn8yd")]
 position = Vector2(1232, 240)
-result = SubResource("Resource_1lw0s")
+result = SubResource("Resource_swgjh")
 
 [node name="QuestionBlock6" parent="." unique_id=1135120358 instance=ExtResource("49_xn8yd")]
 position = Vector2(1264, 240)
-result = SubResource("Resource_kpn4l")
+result = SubResource("Resource_mk0ck")
 
 [node name="QuestionBlock11" parent="." unique_id=718881599 instance=ExtResource("49_xn8yd")]
 position = Vector2(10512, 16)
-result = SubResource("Resource_m587m")
+result = SubResource("Resource_6kjio")
 
 [node name="QuestionBlock10" parent="." unique_id=1882176777 instance=ExtResource("49_xn8yd")]
 position = Vector2(2384, 112)
-result = SubResource("Resource_swgjh")
+result = SubResource("Resource_h5vnu")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock9" parent="." unique_id=1972095876 instance=ExtResource("49_xn8yd")]
 position = Vector2(1968, 176)
-result = SubResource("Resource_mk0ck")
+result = SubResource("Resource_tsmov")
 
 [node name="QuestionBlock7" parent="." unique_id=1836541690 instance=ExtResource("49_xn8yd")]
 position = Vector2(1296, 240)
-result = SubResource("Resource_6kjio")
+result = SubResource("Resource_kujke")
 
 [node name="QuestionBlock8" parent="." unique_id=1007907985 instance=ExtResource("49_xn8yd")]
 position = Vector2(1328, 240)
-result = SubResource("Resource_h5vnu")
+result = SubResource("Resource_jjhgj")
 
 [node name="QuestionBlock12" parent="." unique_id=1781512489 instance=ExtResource("49_xn8yd")]
 position = Vector2(5616, 176)
-result = SubResource("Resource_tsmov")
+result = SubResource("Resource_hmxdk")
 
 [node name="QuestionBlock15" parent="." unique_id=1614999149 instance=ExtResource("49_xn8yd")]
 position = Vector2(8880, 304)
-result = SubResource("Resource_kujke")
+result = SubResource("Resource_jqogc")
 
 [node name="QuestionBlock13" parent="." unique_id=607824780 instance=ExtResource("49_xn8yd")]
 position = Vector2(8944, 304)
-result = SubResource("Resource_jjhgj")
+result = SubResource("Resource_8eejj")
 
 [node name="QuestionBlock14" parent="." unique_id=150727198 instance=ExtResource("49_xn8yd")]
 position = Vector2(8976, 304)
-result = SubResource("Resource_hmxdk")
+result = SubResource("Resource_s2tn5")
 
 [node name="Brick" parent="." unique_id=1858416724 instance=ExtResource("54_j4tfq")]
 position = Vector2(8912, 304)
@@ -1521,7 +1526,7 @@ position = Vector2(9040, 304)
 
 [node name="Brick4" parent="." unique_id=1974577563 instance=ExtResource("54_j4tfq")]
 position = Vector2(9072, 304)
-result = SubResource("Resource_jqogc")
+result = SubResource("Resource_ww4b6")
 
 [node name="BluePlatform" type="Sprite2D" parent="." unique_id=485840073]
 z_index = -1

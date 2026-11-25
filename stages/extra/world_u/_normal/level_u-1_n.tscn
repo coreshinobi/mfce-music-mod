@@ -5,9 +5,11 @@
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="3_vjwt6"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="4_7esgh"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="5_77phl"]
-[ext_resource type="AudioStream" uid="uid://cxh66hhdkpcuq" path="res://music/extra/world_u/underground_ocremix.mp3" id="6_i13lk"]
+[ext_resource type="AudioStream" uid="uid://cxs0nje2e0svh" path="res://music/newermod/viraxor - round borin.xm" id="6_iq133"]
+[ext_resource type="AudioStream" uid="uid://ytmgfmxkwst3" path="res://music/side_a/The Lawnmower Man (SNES) - The Cyber Tube.ogg" id="6_xorvk"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="7_mts2t"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="7_rwvr0"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="7_uw3yh"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="8_6bhok"]
 [ext_resource type="Script" uid="uid://7byhkvlnfxa" path="res://components/secrets_manager/unlock_multiple.gd" id="8_iq133"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="9_4idkq"]
@@ -116,14 +118,14 @@ _data = {
 }
 point_count = 2
 
-[sub_resource type="Resource" id="Resource_iq133"]
+[sub_resource type="Resource" id="Resource_d37np"]
 resource_local_to_scene = true
 script = ExtResource("40_xrkuv")
 creation_fallback_node = ExtResource("38_cn7bd")
 creation_nodepack = ExtResource("39_8y474")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_uw3yh"]
+[sub_resource type="Resource" id="Resource_yquj1"]
 resource_local_to_scene = true
 script = ExtResource("40_xrkuv")
 creation_nodepack = ExtResource("41_f0377")
@@ -146,7 +148,7 @@ metadata/_custom_type_script = "uid://dh7ob1sbo8lx7"
 script = ExtResource("4_7esgh")
 tweaked_completion_music = ExtResource("5_77phl")
 ignore_fade_in_tweak = false
-music_var_1 = Array[Resource]([])
+music_var_1 = Array[Resource]([ExtResource("6_xorvk")])
 music_var_2 = Array[Resource]([])
 music_var_3 = Array[Resource]([])
 var_1_volume_db = Array[float]([0.0])
@@ -160,8 +162,10 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("6_i13lk")])
-volume_db = Array[float]([-1.0])
+music = Array[Resource]([ExtResource("6_iq133")])
+volume_db = Array[float]([1.1])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("7_uw3yh")]
 
 [node name="SecretUnlocker" parent="." unique_id=596987888 instance=ExtResource("7_rwvr0")]
 secrets = Array[String](["world u normal in kevin mode"])
@@ -986,11 +990,11 @@ position = Vector2(4624, 1120)
 
 [node name="QuestionBlock" parent="." unique_id=84768197 instance=ExtResource("37_2sbjq")]
 position = Vector2(2800, 1232)
-result = SubResource("Resource_iq133")
+result = SubResource("Resource_d37np")
 
 [node name="QuestionBlock2" parent="." unique_id=950985671 instance=ExtResource("37_2sbjq")]
 position = Vector2(3088, 1264)
-result = SubResource("Resource_uw3yh")
+result = SubResource("Resource_yquj1")
 initially_visible_and_solid = false
 exists_once = true
 

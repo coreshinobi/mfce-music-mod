@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://b8rwnll6o0aqt"
+path="res://.godot/imported/Terry - Baby Chip.mod-3deb99bdac331ee86cad1725dabd7394.res"
+
+[deps]
+
+source_file="res://music/side_b/Terry - Baby Chip.mod"
+dest_files=["res://.godot/imported/Terry - Baby Chip.mod-3deb99bdac331ee86cad1725dabd7394.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

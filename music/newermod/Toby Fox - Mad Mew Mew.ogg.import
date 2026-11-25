@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c3wbhsfifwbyr"
+path="res://.godot/imported/Toby Fox - Mad Mew Mew.ogg-cdde8ff5eb8acd302c53c37488c7c18b.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Toby Fox - Mad Mew Mew.ogg"
+dest_files=["res://.godot/imported/Toby Fox - Mad Mew Mew.ogg-cdde8ff5eb8acd302c53c37488c7c18b.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

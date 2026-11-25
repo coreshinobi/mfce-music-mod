@@ -5,13 +5,18 @@
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="3_rghtf"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="4_llams"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="5_lhgex"]
-[ext_resource type="AudioStream" uid="uid://hjy24yffgitp" path="res://music/extra/world_u/dire_dire_docks.ogg" id="6_3miit"]
-[ext_resource type="AudioStream" uid="uid://dvjer3bl0ftxm" path="res://music/extra/world_u/smw-brinstar.ogg" id="7_oij5c"]
+[ext_resource type="AudioStream" uid="uid://bebdik3tvrs0w" path="res://music/side_a/The Adventures of Batman and Robin - Two-Face's Theme.ogg" id="6_c2mch"]
+[ext_resource type="AudioStream" uid="uid://cwlx1b7oq6hda" path="res://music/side_a/Danganronpa - Beautiful Death.ogg" id="7_xmgsw"]
+[ext_resource type="AudioStream" uid="uid://dyxc0wk7s628s" path="res://music/side_b/revisq - shitonme.xm" id="8_44dvk"]
+[ext_resource type="AudioStream" uid="uid://cnlwhv761d0sb" path="res://music/newermod/Hooded Edge - Remilia, Mistress beyond the Stairway.ogg" id="8_fm0s8"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="8_hx23i"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="8_p1xeu"]
+[ext_resource type="AudioStream" uid="uid://x6uetob88vx" path="res://music/side_b/revisq - bl.mod" id="9_6gpou"]
+[ext_resource type="AudioStream" uid="uid://biswmkj70v1gk" path="res://music/newermod/Last Legacy - Middle East.ogg" id="9_44dvk"]
 [ext_resource type="Script" uid="uid://7byhkvlnfxa" path="res://components/secrets_manager/unlock_multiple.gd" id="9_kp6ti"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="9_rvsec"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="10_4lyrb"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="10_xmgsw"]
 [ext_resource type="TileSet" uid="uid://bkax37l1q8oni" path="res://engine/tilesets/underground/underground.tres" id="11_pugry"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="12_6tw4w"]
 [ext_resource type="FontFile" uid="uid://b1pi0t5byork2" path="res://engine/components/hud/hud_font.fnt" id="13_c3068"]
@@ -102,13 +107,13 @@ gradient = SubResource("Gradient_cfxbo")
 height = 18
 fill_to = Vector2(0, 1)
 
-[sub_resource type="Resource" id="Resource_kp6ti"]
+[sub_resource type="Resource" id="Resource_r7umn"]
 resource_local_to_scene = true
 script = ExtResource("27_743m8")
 creation_nodepack = ExtResource("26_0su00")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_8r8py"]
+[sub_resource type="Resource" id="Resource_k250h"]
 resource_local_to_scene = true
 script = ExtResource("27_743m8")
 creation_fallback_node = ExtResource("28_2mx6d")
@@ -217,12 +222,12 @@ metadata/_custom_type_script = "uid://dh7ob1sbo8lx7"
 script = ExtResource("4_llams")
 tweaked_completion_music = ExtResource("5_lhgex")
 ignore_fade_in_tweak = false
-music_var_1 = Array[Resource]([])
-music_var_2 = Array[Resource]([])
+music_var_1 = Array[Resource]([ExtResource("6_c2mch"), ExtResource("6_c2mch"), ExtResource("7_xmgsw")])
+music_var_2 = Array[Resource]([ExtResource("8_44dvk"), ExtResource("8_44dvk"), ExtResource("9_6gpou")])
 music_var_3 = Array[Resource]([])
 var_1_volume_db = Array[float]([0.0])
 var_1_start_from_sec = Array[float]([0.0])
-var_2_volume_db = Array[float]([0.0])
+var_2_volume_db = Array[float]([0.9, 0.9, 2.2])
 var_2_start_from_sec = Array[float]([0.0])
 var_3_volume_db = Array[float]([0.0])
 var_3_start_from_sec = Array[float]([0.0])
@@ -231,9 +236,11 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("6_3miit"), ExtResource("6_3miit"), ExtResource("7_oij5c")])
+music = Array[Resource]([ExtResource("8_fm0s8"), ExtResource("8_fm0s8"), ExtResource("9_44dvk")])
 volume_db = Array[float]([0.0, 0.0, 5.0])
 start_from_sec = Array[float]([0.0, 108.52, 0.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("10_xmgsw")]
 
 [node name="SecretUnlocker" parent="." unique_id=596987888 instance=ExtResource("8_p1xeu")]
 secrets = Array[String](["world u hard in kevin mode"])
@@ -1533,11 +1540,11 @@ position = Vector2(592, 112)
 
 [node name="QuestionBlock" parent="." unique_id=1343117640 instance=ExtResource("25_2ri8s")]
 position = Vector2(592, 304)
-result = SubResource("Resource_kp6ti")
+result = SubResource("Resource_r7umn")
 
 [node name="QuestionBlock2" parent="." unique_id=899925071 instance=ExtResource("25_2ri8s")]
 position = Vector2(4240, 176)
-result = SubResource("Resource_8r8py")
+result = SubResource("Resource_k250h")
 
 [node name="CheepBlue" parent="." unique_id=162070024 instance=ExtResource("30_hgjd0")]
 position = Vector2(976, 336)

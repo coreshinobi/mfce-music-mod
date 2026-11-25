@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://d2g2pt7v0ov1r"
+path="res://.godot/imported/Alexander 'Siren' Brandon @ Unreal - Vortex Rikers.s3m-c5a40e8f200284d99c5a7704b810b6f7.res"
+
+[deps]
+
+source_file="res://music/newermod/Alexander 'Siren' Brandon @ Unreal - Vortex Rikers.s3m"
+dest_files=["res://.godot/imported/Alexander 'Siren' Brandon @ Unreal - Vortex Rikers.s3m-c5a40e8f200284d99c5a7704b810b6f7.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

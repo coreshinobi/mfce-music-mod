@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://d2s8lde5ndlqo"
+path="res://.godot/imported/maf 464 - bouto loop 9.xm-3e1a07a10998b1db1bbe3b52c667d359.res"
+
+[deps]
+
+source_file="res://music/newermod/maf 464 - bouto loop 9.xm"
+dest_files=["res://.godot/imported/maf 464 - bouto loop 9.xm-3e1a07a10998b1db1bbe3b52c667d359.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

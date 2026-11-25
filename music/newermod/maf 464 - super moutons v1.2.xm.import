@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://7gmmnwlf41xh"
+path="res://.godot/imported/maf 464 - super moutons v1.2.xm-7f40949ef095667b4cd9a3c9b161e0f1.res"
+
+[deps]
+
+source_file="res://music/newermod/maf 464 - super moutons v1.2.xm"
+dest_files=["res://.godot/imported/maf 464 - super moutons v1.2.xm-7f40949ef095667b4cd9a3c9b161e0f1.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

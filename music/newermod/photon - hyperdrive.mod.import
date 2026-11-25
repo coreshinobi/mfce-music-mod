@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://cw0jb8kfll164"
+path="res://.godot/imported/photon - hyperdrive.mod-1e883caf39451d73d521942f01c6daaf.res"
+
+[deps]
+
+source_file="res://music/newermod/photon - hyperdrive.mod"
+dest_files=["res://.godot/imported/photon - hyperdrive.mod-1e883caf39451d73d521942f01c6daaf.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

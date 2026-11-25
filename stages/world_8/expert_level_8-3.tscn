@@ -6,8 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="3_fipib"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="4_vbxse"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="5_8l5mj"]
-[ext_resource type="AudioStream" uid="uid://bambnfev0g7pr" path="res://music/extra/expert_mode/dusty_bottle.mod" id="7_ue808"]
+[ext_resource type="AudioStream" uid="uid://by0sft02equf2" path="res://music/newermod/Toby Fox, Spy Trolling - Attack of the Killer Queen (Early 90's Pop Mix).ogg" id="6_h43nk"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="8_8l1nh"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="8_80hea"]
 [ext_resource type="PackedScene" uid="uid://dw54kg4ssaj3o" path="res://objects/otherworld/secret_otherworld_unlocker_choicer.tscn" id="8_mj82y"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="9_0ftex"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="10_jjp1h"]
@@ -348,10 +349,14 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("7_ue808")])
-volume_db = Array[float]([-3.0])
+playback_pitch = 1.0
+music = Array[Resource]([ExtResource("6_h43nk")])
+volume_db = Array[float]([0.2])
 
 [node name="AntiafkExpertMode" parent="MusicLoader" unique_id=1027450119 instance=ExtResource("2_y61n0")]
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("8_80hea")]
+text = Array[String](["Toby Fox, Spy Trolling - Attack of the Killer Queen (Early 90's Pop Mix)"])
 
 [node name="SecretUnlockerOther2" parent="." unique_id=789675881 instance=ExtResource("8_mj82y")]
 you_found_text = "the last otherworld level (8)!
@@ -456,7 +461,7 @@ theme_override_constants/line_spacing = 1
 theme_override_constants/outline_size = 8
 theme_override_fonts/font = ExtResource("21_80hea")
 theme_override_font_sizes/font_size = 12
-text = "The 2077 has called. they want their 8 - 4 back."
+text = "If there's one thing you should know, YOU DON'T FUCK WITH THE LOGANG!!"
 horizontal_alignment = 1
 uppercase = true
 script = ExtResource("22_hxpbk")

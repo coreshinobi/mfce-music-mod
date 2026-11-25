@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bqqq7hfavjhwe"
+path="res://.godot/imported/Roudi in the Dark - Big Mew Mew Shot.ogg-19b5c58e99a8ebfb070b98fc0bf2c4c9.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_b/Roudi in the Dark - Big Mew Mew Shot.ogg"
+dest_files=["res://.godot/imported/Roudi in the Dark - Big Mew Mew Shot.ogg-19b5c58e99a8ebfb070b98fc0bf2c4c9.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

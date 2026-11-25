@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cdsfmgq7v1i0q"
+path="res://.godot/imported/Algorithm - Pressure.ogg-c9879e7775d82df55b4eec3046501981.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Algorithm - Pressure.ogg"
+dest_files=["res://.godot/imported/Algorithm - Pressure.ogg-c9879e7775d82df55b4eec3046501981.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

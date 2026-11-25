@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://5l57amya4qhu"
+path="res://.godot/imported/Tuomo Saloranta - The Glory of God.xm-00bc2837d6b165be4b7d158c16b03dce.res"
+
+[deps]
+
+source_file="res://music/newermod/Tuomo Saloranta - The Glory of God.xm"
+dest_files=["res://.godot/imported/Tuomo Saloranta - The Glory of God.xm-00bc2837d6b165be4b7d158c16b03dce.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

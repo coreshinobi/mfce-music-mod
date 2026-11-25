@@ -1,0 +1,732 @@
+[gd_scene format=4 uid="uid://bwmojmg616oxq"]
+
+[ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_x5g7s"]
+[ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_v7303"]
+[ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="3_6ksyy"]
+[ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="4_3cpbb"]
+[ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="5_6e3fw"]
+[ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="5_maqcs"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="6_6e3fw"]
+[ext_resource type="AudioStream" uid="uid://d0w7hmj1dnot0" path="res://music/newermod/maf 464 - moondust.mod" id="6_ks3gt"]
+[ext_resource type="AudioStream" uid="uid://bx7daf218qf1s" path="res://music/side_a/maF 464 - Virtual Mouton (Cut).xm" id="6_po6oc"]
+[ext_resource type="Script" uid="uid://cugmax5psc2oo" path="res://engine/objects/players/player_camera_2d.gd" id="7_2alqd"]
+[ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="8_jvful"]
+[ext_resource type="AudioStream" uid="uid://cusrgc7jqf7qy" path="res://music/extra/expert_mode/short-die.ogg" id="9_0s3s3"]
+[ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="11_f7rj8"]
+[ext_resource type="TileSet" uid="uid://dtvs1rult8kbe" path="res://tilesets/overworld_green/overworld_green.tres" id="11_v7303"]
+[ext_resource type="Texture2D" uid="uid://dmv5rev5xia3u" path="res://engine/tilesets/overworld/gfx/clouds_looping.png" id="13_egwn8"]
+[ext_resource type="Texture2D" uid="uid://mpdkiuduprqj" path="res://gfx/fancy_graphics/clouds_looping_alpha.png" id="14_maqcs"]
+[ext_resource type="Script" uid="uid://0h3x5dwndovw" path="res://engine/scripts/nodes/effects/quality_visible.gd" id="15_1b85b"]
+[ext_resource type="FontFile" uid="uid://dacnp4qwdpr2r" path="res://engine/fonts/mister_earl.otf" id="16_jvful"]
+[ext_resource type="Texture2D" uid="uid://b1np0g85qupxr" path="res://gfx/fancy_graphics/bighill_witheyes.png" id="19_0s3s3"]
+[ext_resource type="Texture2D" uid="uid://6bwpp568bmq0" path="res://gfx/fancy_graphics/giant_clouds.png" id="20_2alqd"]
+[ext_resource type="Texture2D" uid="uid://0atqoof1v43b" path="res://gfx/fancy_graphics/746.png" id="21_2alqd"]
+[ext_resource type="Texture2D" uid="uid://b1eidf0c7348v" path="res://gfx/fancy_graphics/sceneria_drzowatne.png" id="22_803np"]
+[ext_resource type="Texture2D" uid="uid://bxrtju4bs3pr6" path="res://engine/tilesets/overworld/gfx/hill.png" id="22_f7rj8"]
+[ext_resource type="Texture2D" uid="uid://d7bguquxitp5" path="res://engine/tilesets/overworld/gfx/tree_short.png" id="23_5n8xm"]
+[ext_resource type="Texture2D" uid="uid://ckfb3opqbapyi" path="res://engine/tilesets/overworld/gfx/tree_tall.png" id="24_egwn8"]
+[ext_resource type="PackedScene" uid="uid://b8kgbn8f7lvf0" path="res://engine/objects/items/coin/coin.tscn" id="26_5n8xm"]
+[ext_resource type="PackedScene" uid="uid://c7wepa7gbtfh0" path="res://stages/extra/world_of_stupidity/chmurka_debil/stupidity_cloud.tscn" id="27_egwn8"]
+[ext_resource type="PackedScene" uid="uid://dywfh3t3hg6is" path="res://stages/extra/world_of_stupidity/falling_qblock/falling_qblock.tscn" id="28_maqcs"]
+[ext_resource type="PackedScene" uid="uid://cu8ldxhlj3e1l" path="res://stages/extra/world_of_stupidity/chmurka_debil/stupidity_cloud_hidden.tscn" id="29_1b85b"]
+[ext_resource type="PackedScene" uid="uid://d2jlt7lgbffg7" path="res://objects/funny_jumpscares/ze trigger area.tscn" id="29_803np"]
+[ext_resource type="PackedScene" uid="uid://b1ta344iwb83q" path="res://engine/objects/enemies/hammer_bros/koopa_bro.tscn" id="30_ks3gt"]
+[ext_resource type="PackedScene" uid="uid://brkhmn6vdf25a" path="res://engine/objects/bumping_blocks/question_block/templates/Poison Mushroom Question Block.tscn" id="31_672el"]
+[ext_resource type="PackedScene" uid="uid://dnga66pn23va0" path="res://stages/extra/world_of_stupidity/following_poison_mushroom/following_poison_mushroom.tscn" id="32_6jv06"]
+[ext_resource type="Script" uid="uid://chvjy6okoognf" path="res://engine/objects/powerups/instance_powerup.gd" id="33_7qhns"]
+[ext_resource type="PackedScene" uid="uid://chmx1h5asmnqr" path="res://stages/extra/world_of_stupidity/hidden_piranha_head/piranha_head_hidden.tscn" id="34_672el"]
+[ext_resource type="Script" uid="uid://dslecxylamg3n" path="res://objects/funny_jumpscares/ze trigger area lower.gd" id="35_6jv06"]
+[ext_resource type="PackedScene" uid="uid://ddwxc43m3q1c6" path="res://engine/objects/core/checkpoint/checkpoint.tscn" id="36_ka31u"]
+[ext_resource type="AudioStream" uid="uid://dif7pckjdmili" path="res://objects/chorniy_mario/death_sounds/cs/amatsuki_fishies.ogg" id="37_po6oc"]
+[ext_resource type="AudioStream" uid="uid://x47meb0gwsdw" path="res://objects/chorniy_mario/death_sounds/cs/amatsuki_bankaccount.ogg" id="38_57s0f"]
+[ext_resource type="AudioStream" uid="uid://56pnwb6lq163" path="res://objects/chorniy_mario/death_sounds/cs/amatsuki_noattend.ogg" id="39_mxyfi"]
+
+[sub_resource type="FontVariation" id="FontVariation_okntd"]
+base_font = ExtResource("16_jvful")
+variation_embolden = 0.3
+variation_transform = Transform2D(1.2, 0, 0, 0.6, 0, 0)
+spacing_glyph = 2
+spacing_top = -8
+spacing_bottom = -2
+
+[sub_resource type="Gradient" id="Gradient_33x6y"]
+colors = PackedColorArray(0.490196, 0.619608, 0.752941, 1, 0.94902, 0.992157, 0.988235, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_2ncfm"]
+gradient = SubResource("Gradient_33x6y")
+fill_to = Vector2(0, 1)
+
+[sub_resource type="Resource" id="Resource_57s0f"]
+resource_local_to_scene = true
+script = ExtResource("33_7qhns")
+creation_nodepack = ExtResource("32_6jv06")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_mxyfi"]
+resource_local_to_scene = true
+script = ExtResource("33_7qhns")
+creation_nodepack = ExtResource("32_6jv06")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_v3pjh"]
+resource_local_to_scene = true
+script = ExtResource("33_7qhns")
+creation_nodepack = ExtResource("32_6jv06")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_l0mlq"]
+resource_local_to_scene = true
+script = ExtResource("33_7qhns")
+creation_nodepack = ExtResource("32_6jv06")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_806ny"]
+resource_local_to_scene = true
+script = ExtResource("33_7qhns")
+creation_nodepack = ExtResource("32_6jv06")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_dvylo"]
+resource_local_to_scene = true
+script = ExtResource("33_7qhns")
+creation_nodepack = ExtResource("32_6jv06")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_lc8n4"]
+resource_local_to_scene = true
+script = ExtResource("33_7qhns")
+creation_nodepack = ExtResource("32_6jv06")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_02hij"]
+resource_local_to_scene = true
+script = ExtResource("33_7qhns")
+creation_nodepack = ExtResource("32_6jv06")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_qrfnp"]
+resource_local_to_scene = true
+script = ExtResource("33_7qhns")
+creation_nodepack = ExtResource("32_6jv06")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_pwoqo"]
+resource_local_to_scene = true
+script = ExtResource("33_7qhns")
+creation_nodepack = ExtResource("32_6jv06")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_gpcn0"]
+resource_local_to_scene = true
+script = ExtResource("33_7qhns")
+creation_nodepack = ExtResource("32_6jv06")
+trans_inheritances = 7
+
+[node name="Level" type="Node2D" unique_id=2083640226]
+script = ExtResource("1_x5g7s")
+time = -1
+completion_music = ExtResource("2_v7303")
+metadata/_custom_type_script = "uid://dh7ob1sbo8lx7"
+
+[node name="MusicLoader" parent="." unique_id=1674830763 instance=ExtResource("3_6ksyy")]
+script = ExtResource("4_3cpbb")
+tweaked_completion_music = ExtResource("5_maqcs")
+ignore_fade_in_tweak = false
+music_var_1 = Array[Resource]([ExtResource("6_po6oc")])
+music_var_2 = Array[Resource]([])
+music_var_3 = Array[Resource]([])
+var_1_volume_db = Array[float]([5.5])
+var_1_start_from_sec = Array[float]([0.0])
+var_2_volume_db = Array[float]([0.0])
+var_2_start_from_sec = Array[float]([0.0])
+var_3_volume_db = Array[float]([0.0])
+var_3_start_from_sec = Array[float]([0.0])
+boss_music_var_1 = null
+boss_music_var_2 = null
+boss_music_var_3 = null
+boss_music_volume_db = Array[float]([0.0])
+boss_music_start_from_sec = Array[float]([0.0])
+music = Array[Resource]([ExtResource("6_ks3gt")])
+play_globally = 1
+volume_db = Array[float]([6.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("6_6e3fw")]
+
+[node name="Player" parent="." unique_id=169935397 instance=ExtResource("5_6e3fw")]
+position = Vector2(80, 400)
+death_music_override = ExtResource("9_0s3s3")
+death_wait_time = 0.0
+death_check_for_lives = false
+death_stop_music = false
+
+[node name="PlayerCamera2D" type="Camera2D" parent="." unique_id=838848860]
+editor_draw_screen = false
+script = ExtResource("7_2alqd")
+metadata/_edit_lock_ = true
+
+[node name="CameraArea" parent="." unique_id=1790766850 instance=ExtResource("8_jvful")]
+offset_right = 11008.0
+offset_bottom = 480.0
+metadata/_edit_lock_ = true
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1447286077]
+tile_map_data = PackedByteArray("AAAAAA0AAAABAAAAAAABAA0AAAABAAAAAAACAA0AAAABAAAAAAADAA0AAAABAAAAAAAEAA0AAAABAAAAAAAFAA0AAAABAAAAAAAHAA0AAAABAAAAAAAIAA0AAAABAAAAAAAJAA0AAAABAAAAAAAKAA0AAAABAAAAAAALAA0AAAABAAAAAAAMAA0AAAABAAAAAAAOAA0AAAABAAAAAAAPAA0AAAABAAAAAAAQAA0AAAABAAAAAAARAA0AAAABAAAAAAASAA0AAAABAAAAAAATAA0AAAABAAAAAAAUAA0AAAABAAAAAAAVAA0AAAABAAAAAAAWAA0AAAABAAAAAAAXAA0AAAABAAAAAAAYAA0AAAABAAAAAAAZAA0AAAABAAAAAAAaAA0AAAACAAAAAAAaAA4AAAACAAEAAAAZAA4AAAABAAEAAAAYAA4AAAABAAEAAAAXAA4AAAABAAEAAAAWAA4AAAABAAEAAAAVAA4AAAABAAEAAAAUAA4AAAABAAEAAAATAA4AAAABAAEAAAASAA4AAAABAAEAAAARAA4AAAABAAEAAAAQAA4AAAABAAEAAAAPAA4AAAABAAEAAAAOAA4AAAABAAEAAAANAA4AAAABAAEAAAAMAA4AAAABAAEAAAALAA4AAAABAAEAAAAKAA4AAAABAAEAAAAJAA4AAAABAAEAAAAIAA4AAAABAAEAAAAHAA4AAAABAAEAAAAGAA4AAAABAAEAAAAFAA4AAAABAAEAAAAEAA4AAAABAAEAAAADAA4AAAABAAEAAAACAA4AAAABAAEAAAABAA4AAAABAAEAAAAAAA4AAAABAAEAAAAaAA8AAAACAAIAAAAZAA8AAAABAAIAAAAYAA8AAAABAAIAAAAXAA8AAAABAAIAAAAWAA8AAAABAAIAAAAVAA8AAAABAAIAAAAUAA8AAAABAAIAAAATAA8AAAABAAIAAAASAA8AAAABAAIAAAARAA8AAAABAAIAAAAQAA8AAAABAAIAAAAPAA8AAAABAAIAAAAOAA8AAAABAAIAAAANAA8AAAABAAIAAAAMAA8AAAABAAIAAAALAA8AAAABAAIAAAAKAA8AAAABAAIAAAAJAA8AAAABAAIAAAAIAA8AAAABAAIAAAAHAA8AAAABAAIAAAAGAA8AAAABAAIAAAABAA8AAAABAAIAAAACAA8AAAABAAIAAAADAA8AAAABAAIAAAAEAA8AAAABAAIAAAAFAA8AAAABAAIAAAAAAA8AAAABAAIAAAD//w8AAAACAAQAAAD//w4AAAAAAAEAAAD//w0AAAAKAAAAAAD//wwAAAADAAEAAAD//wsAAAADAAEAAAD//woAAAADAAEAAAD//wkAAAADAAEAAAD//wgAAAADAAEAAAD//wcAAAADAAEAAAD//wYAAAADAAEAAAD//wUAAAADAAEAAAD//wQAAAADAAEAAAD//wMAAAADAAEAAAD//wIAAAADAAEAAAD//wEAAAADAAEAAAD//wAAAAADAAEAAAD/////AAADAAEAAAD///7/AAADAAEAAAD///3/AAADAAEAAAD///z/AAADAAEAAAD///v/AAADAAEAAAD///r/AAADAAEAAAD///n/AAADAAAAAAD//xAAAAADAAEAAAD//xEAAAADAAEAAAD//xIAAAADAAEAAAD//xMAAAADAAEAAAD//xQAAAADAAEAAAD//xUAAAADAAEAAAD//xYAAAADAAEAAAD//xcAAAADAAEAAAD//xgAAAADAAEAAAD//xkAAAADAAEAAAD//xoAAAADAAEAAAD//xsAAAADAAEAAAD//x0AAAADAAIAAAD//xwAAAADAAEAAAABAAMAAgAAAAAAAgAEAAEAAgAAAAAAAgAKAAUAAgAAAAAAAgABAAwAAgAAAAAAAQAGAA0AAAABAAAAAAAbAA0AAQAAAAAAAAAcAAwAAQAAAAAAAAAdAAsAAQAAAAAAAAAeAAoAAQAAAAAAAAAfAAkAAQAAAAAAAAAgAAkAAQAAAAAAAAAfAAoAAQAAAAAAAAAeAAsAAQAAAAAAAAAdAAwAAQAAAAAAAAAcAA0AAQAAAAAAAAAbAA4AAQAAAAAAAAAnAAkAAQAAAAAAAAAuAAkAAQAAAAAAAAAuAAoAAQAAAAAAAAAuAAsAAQAAAAAAAAAuAAwAAQAAAAAAAAAuAA0AAQAAAAAAAAAuAA4AAQAAAAAAAAA0AAYAAQAAAAAAAAA0AAcAAQAAAAAAAAA0AAgAAQAAAAAAAAA0AAkAAQAAAAAAAAA0AAoAAQAAAAAAAAA0AAsAAQAAAAAAAAA0AAwAAQAAAAAAAAA0AA0AAQAAAAAAAAA0AA4AAQAAAAAAAAA7AAgAAQAAAAAAAAA7AAkAAQAAAAAAAAA7AAoAAQAAAAAAAAA7AAsAAQAAAAAAAAA7AAwAAQAAAAAAAAA7AA0AAQAAAAAAAAA7AA4AAQAAAAAAAABAAA0AAAAAAAAAAABAAA4AAAAAAAEAAABAAA8AAAAAAAIAAABBAA8AAAABAAIAAABCAA8AAAABAAIAAABDAA8AAAABAAIAAABEAA8AAAABAAIAAABFAA8AAAABAAIAAABGAA8AAAABAAIAAABHAA8AAAABAAIAAABIAA8AAAABAAIAAABJAA8AAAABAAIAAABKAA8AAAABAAIAAABLAA8AAAABAAIAAABMAA8AAAABAAIAAABNAA8AAAABAAIAAABOAA8AAAABAAIAAABPAA8AAAABAAIAAABQAA8AAAABAAIAAABRAA8AAAABAAIAAABSAA8AAAABAAIAAABTAA8AAAABAAIAAABUAA8AAAABAAIAAABVAA8AAAABAAIAAABWAA8AAAABAAIAAABXAA8AAAABAAIAAABYAA8AAAACAAIAAABBAA0AAAABAAAAAABCAA0AAAABAAAAAABDAA0AAAABAAAAAABEAA0AAAABAAAAAABFAA0AAAABAAAAAABGAA0AAAABAAAAAABHAA0AAAABAAAAAABIAA0AAAABAAAAAABJAA0AAAABAAAAAABKAA0AAAABAAAAAABLAA0AAAABAAAAAABMAA0AAAABAAAAAABNAA0AAAABAAAAAABOAA0AAAABAAAAAABPAA0AAAABAAAAAABQAA0AAAABAAAAAABRAA0AAAABAAAAAABSAA0AAAABAAAAAABTAA0AAAABAAAAAABUAA0AAAABAAAAAABVAA0AAAABAAAAAABWAA0AAAABAAAAAABXAA0AAAABAAAAAABYAA0AAAACAAAAAABYAA4AAAACAAEAAABXAA4AAAABAAEAAABWAA4AAAABAAEAAABVAA4AAAABAAEAAABUAA4AAAABAAEAAABTAA4AAAABAAEAAABSAA4AAAABAAEAAABRAA4AAAABAAEAAABQAA4AAAABAAEAAABPAA4AAAABAAEAAABOAA4AAAABAAEAAABNAA4AAAABAAEAAABMAA4AAAABAAEAAABLAA4AAAABAAEAAABKAA4AAAABAAEAAABJAA4AAAABAAEAAABIAA4AAAABAAEAAABHAA4AAAABAAEAAABGAA4AAAABAAEAAABFAA4AAAABAAEAAABEAA4AAAABAAEAAABDAA4AAAABAAEAAABCAA4AAAABAAEAAABBAA4AAAABAAEAAAARAAMAAgAAAAAAAgAXAAUAAgAAAAAAAgAhAAIAAgAAAAAAAgAkAAkAAgAAAAAAAgAsAAYAAgAAAAAAAgA2AAgAAgAAAAAAAgA/AAIAAgAAAAAAAgBDAAYAAgAAAAAAAgBTAAIAAgAAAAAAAgBLAAQAAgAAAAAAAgBZAAUAAgAAAAAAAgANAA0AAAABAAAAAAANAAwAAgAAAAAAAQBEAAwAAgAAAAAAAQBQAAwAAgAAAAAAAQBXAAwAAgAAAAAAAQBiAAgAAAAAAAAAAABiAAkAAAAAAAEAAABiAAoAAAAAAAEAAABiAAsAAAAAAAEAAABiAAwAAAAAAAEAAABiAA0AAAAAAAEAAABiAA4AAAAAAAEAAABiAA8AAAAAAAIAAABjAA8AAAACAAIAAABjAA4AAAACAAEAAABjAA0AAAACAAEAAABjAAwAAAACAAEAAABjAAsAAAACAAEAAABjAAoAAAACAAEAAABjAAkAAAACAAEAAABjAAgAAAACAAAAAABoAAQAAAAAAAAAAABoAAUAAAAAAAEAAABoAAYAAAAAAAEAAABoAAcAAAAFAAAAAABoAAgAAAABAAEAAABoAAkAAAABAAEAAABoAAoAAAABAAEAAABoAAsAAAABAAEAAABoAAwAAAABAAEAAABoAA0AAAABAAEAAABoAA4AAAABAAEAAABoAA8AAAABAAIAAABpAA8AAAACAAIAAABpAA4AAAACAAEAAABpAA0AAAACAAEAAABpAAwAAAACAAEAAABpAAsAAAACAAEAAABpAAoAAAACAAEAAABpAAkAAAACAAEAAABpAAgAAAACAAEAAABpAAcAAAACAAEAAABpAAYAAAACAAEAAABpAAUAAAACAAEAAABpAAQAAAACAAAAAABnAAcAAAABAAAAAABmAAcAAAAAAAAAAABmAAgAAAAAAAEAAABnAAgAAAABAAEAAABnAAkAAAABAAEAAABnAAoAAAABAAEAAABnAAsAAAABAAEAAABnAAwAAAABAAEAAABnAA0AAAABAAEAAABnAA4AAAABAAEAAABmAA4AAAAAAAEAAABmAA0AAAAAAAEAAABmAAwAAAAAAAEAAABmAAsAAAAAAAEAAABmAAoAAAAAAAEAAABmAAkAAAAAAAEAAABmAA8AAAAAAAIAAABnAA8AAAABAAIAAABpAAAAAAACAAIAAABoAAAAAAABAAIAAABnAAAAAAABAAIAAABmAAAAAAAAAAIAAABmAP//AAAAAAEAAABnAP//AAABAAEAAABoAP//AAABAAEAAABpAP//AAACAAEAAABpAP7/AAACAAEAAABoAP7/AAABAAEAAABnAP7/AAABAAEAAABmAP7/AAAAAAEAAABmAP3/AAAAAAAAAABnAP3/AAABAAAAAABoAP3/AAABAAAAAABpAP3/AAACAAAAAABgAAQAAgAAAAAAAgBsAAcAAgAAAAAAAgByAA0AAAAAAAAAAAByAA4AAAAAAAEAAAByAA8AAAAAAAIAAABzAA8AAAABAAIAAAB0AA8AAAABAAIAAAB1AA8AAAABAAIAAAB2AA8AAAABAAIAAAB3AA8AAAABAAIAAAB4AA8AAAABAAIAAAB5AA8AAAABAAIAAAB6AA8AAAABAAIAAAB7AA8AAAABAAIAAAB8AA8AAAABAAIAAAB9AA8AAAABAAIAAAB+AA8AAAABAAIAAAB/AA8AAAABAAIAAACAAA8AAAABAAIAAACBAA8AAAABAAIAAACCAA8AAAABAAIAAACDAA8AAAABAAIAAACEAA8AAAABAAIAAACFAA8AAAABAAIAAACGAA8AAAABAAIAAACHAA8AAAABAAIAAACIAA8AAAABAAIAAACJAA8AAAABAAIAAACKAA8AAAABAAIAAACLAA8AAAABAAIAAACMAA8AAAABAAIAAACMAA4AAAABAAEAAACNAA4AAAACAAEAAACNAA0AAAACAAAAAACMAA0AAAABAAAAAACLAA0AAAABAAAAAACKAA0AAAABAAAAAACAAA0AAAABAAAAAAB/AA0AAAABAAAAAAB+AA0AAAABAAAAAAB9AA0AAAABAAAAAAB8AA0AAAABAAAAAAB7AA0AAAABAAAAAAB6AA0AAAABAAAAAAB5AA0AAAABAAAAAAB4AA0AAAABAAAAAAB3AA0AAAABAAAAAAB2AA0AAAABAAAAAAB1AA0AAAABAAAAAAB0AA0AAAABAAAAAABzAA0AAAABAAAAAABzAA4AAAABAAEAAAB0AA4AAAABAAEAAAB1AA4AAAABAAEAAAB2AA4AAAABAAEAAAB3AA4AAAABAAEAAAB4AA4AAAABAAEAAAB5AA4AAAABAAEAAAB6AA4AAAABAAEAAAB7AA4AAAABAAEAAAB8AA4AAAABAAEAAAB9AA4AAAABAAEAAAB+AA4AAAABAAEAAAB/AA4AAAABAAEAAACAAA4AAAABAAEAAACBAA4AAAABAAEAAACCAA4AAAABAAEAAACDAA4AAAABAAEAAACEAA4AAAABAAEAAACFAA4AAAABAAEAAACGAA4AAAABAAEAAACHAA4AAAABAAEAAACIAA4AAAABAAEAAACJAA4AAAABAAEAAACKAA4AAAABAAEAAACNAA8AAAACAAIAAACLAA4AAAABAAEAAACJAA0AAAABAAAAAACIAA0AAAABAAAAAACHAA0AAAABAAAAAACGAA0AAAABAAAAAACFAA0AAAABAAAAAACEAA0AAAABAAAAAACDAA0AAAABAAAAAACCAA0AAAABAAAAAACBAA0AAAABAAAAAAB1AAwAAgAAAAAAAQCFAAwAAgAAAAAAAQB+AAwAAgAAAAAAAQByAAIAAgAAAAAAAgB7AAUAAgAAAAAAAgCHAAEAAgAAAAAAAgCQAAQAAgAAAAAAAgCJAAQAAgAAAAAAAgCKAAIAAgAAAAAAAgB3AAMAAgAAAAAAAgCOAA4AAQAAAAAAAACOAA0AAQAAAAAAAACOAAwAAQAAAAAAAACOAAsAAQAAAAAAAACOAAcAAQAAAAAAAACOAAYAAQAAAAAAAACOAAUAAQAAAAAAAACOAAQAAQAAAAAAAACOAAMAAQAAAAAAAACOAAIAAQAAAAAAAACOAAEAAQAAAAAAAACOAAAAAQAAAAAAAACOAP//AQAAAAAAAACOAP7/AQAAAAAAAACOAP3/AQAAAAAAAACOAPz/AQAAAAAAAACOAPv/AQAAAAAAAACOAPr/AQAAAAAAAACTAAoAAQAAAAAAAACTAAsAAQAAAAAAAACTAAwAAQAAAAAAAACTAA0AAQAAAAAAAACTAA4AAQAAAAAAAACUAAoAAQAAAAAAAACVAAoAAQAAAAAAAACYAAgAAQAAAAAAAACYAAkAAQAAAAAAAACYAAoAAQAAAAAAAACYAAsAAQAAAAAAAACYAAwAAQAAAAAAAACYAA4AAQAAAAAAAACYAA0AAQAAAAAAAACZAAgAAQAAAAAAAACaAAgAAQAAAAAAAACcAAQAAQAAAAAAAACcAAUAAQAAAAAAAACcAAYAAQAAAAAAAACcAAcAAQAAAAAAAACcAAgAAQAAAAAAAACcAAkAAQAAAAAAAACcAAoAAQAAAAAAAACcAAsAAQAAAAAAAACcAAwAAQAAAAAAAACcAA0AAQAAAAAAAACcAA4AAQAAAAAAAACdAAQAAQAAAAAAAACeAAQAAQAAAAAAAACoAAsAAAABAAAAAACnAAsAAAABAAAAAACmAAsAAAABAAAAAAClAAsAAAAAAAAAAAClAAwAAAAAAAEAAAClAA0AAAAAAAEAAAClAA4AAAAAAAEAAACmAA4AAAABAAEAAACnAA4AAAABAAEAAACoAA4AAAABAAEAAACpAA4AAAABAAEAAACqAA4AAAABAAEAAACrAA4AAAABAAEAAACsAA4AAAABAAEAAACsAA0AAAABAAEAAACtAA0AAAACAAEAAACtAAwAAAACAAEAAACtAAsAAAACAAAAAACsAAsAAAABAAAAAACrAAsAAAABAAAAAACqAAsAAAABAAAAAACpAAsAAAABAAAAAACoAAwAAAABAAEAAACnAAwAAAABAAEAAACmAAwAAAABAAEAAACpAAwAAAABAAEAAACqAAwAAAABAAEAAACrAAwAAAABAAEAAACsAAwAAAABAAEAAACrAA0AAAABAAEAAACqAA0AAAABAAEAAACpAA0AAAABAAEAAACoAA0AAAABAAEAAACnAA0AAAABAAEAAACmAA0AAAABAAEAAACtAA4AAAACAAEAAACtAA8AAAACAAIAAACsAA8AAAABAAIAAACrAA8AAAABAAIAAACqAA8AAAABAAIAAACpAA8AAAABAAIAAACoAA8AAAABAAIAAACnAA8AAAABAAIAAACmAA8AAAABAAIAAAClAA8AAAAAAAIAAAA=")
+tile_set = ExtResource("11_v7303")
+
+[node name="HUD" parent="." unique_id=469826780 instance=ExtResource("11_f7rj8")]
+
+[node name="Label7" type="Label" parent="HUD" unique_id=1357062463]
+offset_left = 359.0
+offset_top = 6.0
+offset_right = 467.0
+offset_bottom = 40.0
+size_flags_horizontal = 3
+size_flags_vertical = 8
+theme_override_colors/font_outline_color = Color(0, 0, 0.368627, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = SubResource("FontVariation_okntd")
+theme_override_font_sizes/font_size = 25
+text = "Even More"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="Label8" type="Label" parent="HUD" unique_id=479083573]
+offset_left = 347.0
+offset_top = 20.0
+offset_right = 481.0
+offset_bottom = 54.0
+size_flags_horizontal = 3
+size_flags_vertical = 8
+theme_override_colors/font_outline_color = Color(0, 0, 0.368627, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = SubResource("FontVariation_okntd")
+theme_override_font_sizes/font_size = 36
+text = "stupidity!"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1035267992]
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground" unique_id=1378594629]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 70.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_2ncfm")
+metadata/_edit_lock_ = true
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=132927968]
+z_index = -100
+metadata/_edit_lock_ = true
+
+[node name="CloudsLooping" type="Sprite2D" parent="." unique_id=287241221]
+z_index = -15
+texture_repeat = 2
+texture = ExtResource("13_egwn8")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 11008, 28)
+
+[node name="CloudsLoopingAlpha" type="Sprite2D" parent="." unique_id=314823550]
+z_index = -15
+texture_repeat = 2
+texture = ExtResource("14_maqcs")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 11008, 48)
+script = ExtResource("15_1b85b")
+
+[node name="Softendo GFX" type="Node2D" parent="." unique_id=142666430]
+z_index = -20
+script = ExtResource("15_1b85b")
+
+[node name="BighillWitheyes" type="Sprite2D" parent="Softendo GFX" unique_id=1812384528]
+position = Vector2(244, 284)
+texture = ExtResource("19_0s3s3")
+
+[node name="BighillWitheyes2" type="Sprite2D" parent="Softendo GFX" unique_id=527164044]
+position = Vector2(658, 384)
+texture = ExtResource("19_0s3s3")
+
+[node name="BighillWitheyes3" type="Sprite2D" parent="Softendo GFX" unique_id=453239443]
+position = Vector2(1296, 344)
+texture = ExtResource("19_0s3s3")
+
+[node name="BighillWitheyes4" type="Sprite2D" parent="Softendo GFX" unique_id=2056395374]
+position = Vector2(2080, 440)
+texture = ExtResource("19_0s3s3")
+
+[node name="BighillWitheyes5" type="Sprite2D" parent="Softendo GFX" unique_id=178791123]
+position = Vector2(2576, 280)
+texture = ExtResource("19_0s3s3")
+
+[node name="BighillWitheyes6" type="Sprite2D" parent="Softendo GFX" unique_id=1409924306]
+position = Vector2(3512, 376)
+texture = ExtResource("19_0s3s3")
+
+[node name="BighillWitheyes7" type="Sprite2D" parent="Softendo GFX" unique_id=457963023]
+position = Vector2(4264, 376)
+texture = ExtResource("19_0s3s3")
+
+[node name="GiantClouds" type="Sprite2D" parent="Softendo GFX" unique_id=1547357470]
+position = Vector2(481, 278)
+texture = ExtResource("20_2alqd")
+
+[node name="GiantClouds2" type="Sprite2D" parent="Softendo GFX" unique_id=1330185640]
+position = Vector2(1544, 296)
+texture = ExtResource("20_2alqd")
+
+[node name="GiantClouds3" type="Sprite2D" parent="Softendo GFX" unique_id=2136807502]
+position = Vector2(2640, 248)
+texture = ExtResource("20_2alqd")
+
+[node name="GiantClouds4" type="Sprite2D" parent="Softendo GFX" unique_id=1914125494]
+position = Vector2(4056, 248)
+texture = ExtResource("20_2alqd")
+
+[node name="SceneriaDrzowatne" type="Sprite2D" parent="Softendo GFX" unique_id=2119313118]
+position = Vector2(144, 176)
+texture = ExtResource("22_803np")
+centered = false
+
+[node name="SceneriaDrzowatne2" type="Sprite2D" parent="Softendo GFX" unique_id=1509807663]
+position = Vector2(1312, 256)
+texture = ExtResource("22_803np")
+centered = false
+
+[node name="SceneriaDrzowatne3" type="Sprite2D" parent="Softendo GFX" unique_id=12782598]
+position = Vector2(2184, 224)
+texture = ExtResource("22_803np")
+centered = false
+
+[node name="SceneriaDrzowatne4" type="Sprite2D" parent="Softendo GFX" unique_id=1317097189]
+position = Vector2(3416, 304)
+texture = ExtResource("22_803np")
+centered = false
+
+[node name="SceneriaDrzowatne5" type="Sprite2D" parent="Softendo GFX" unique_id=1384979710]
+position = Vector2(4176, 248)
+texture = ExtResource("22_803np")
+centered = false
+
+[node name="BGs" type="Node2D" parent="." unique_id=1175629806]
+z_index = -12
+
+[node name="Hill" type="Sprite2D" parent="BGs" unique_id=1896158575]
+position = Vector2(182, 348)
+texture = ExtResource("22_f7rj8")
+
+[node name="Hill2" type="Sprite2D" parent="BGs" unique_id=1980018078]
+position = Vector2(697, 391)
+texture = ExtResource("22_f7rj8")
+
+[node name="Hill3" type="Sprite2D" parent="BGs" unique_id=2082197450]
+position = Vector2(1192, 448)
+texture = ExtResource("22_f7rj8")
+
+[node name="Hill4" type="Sprite2D" parent="BGs" unique_id=515604440]
+position = Vector2(1920, 424)
+texture = ExtResource("22_f7rj8")
+
+[node name="Hill5" type="Sprite2D" parent="BGs" unique_id=2133272967]
+position = Vector2(2656, 352)
+texture = ExtResource("22_f7rj8")
+
+[node name="Hill6" type="Sprite2D" parent="BGs" unique_id=583673532]
+position = Vector2(3056, 456)
+texture = ExtResource("22_f7rj8")
+
+[node name="Hill7" type="Sprite2D" parent="BGs" unique_id=766508348]
+position = Vector2(3440, 400)
+texture = ExtResource("22_f7rj8")
+
+[node name="Hill8" type="Sprite2D" parent="BGs" unique_id=2141587493]
+position = Vector2(3928, 352)
+texture = ExtResource("22_f7rj8")
+
+[node name="Hill9" type="Sprite2D" parent="BGs" unique_id=1876514926]
+position = Vector2(4424, 400)
+texture = ExtResource("22_f7rj8")
+
+[node name="TreeShort" type="Sprite2D" parent="BGs" unique_id=94337098]
+position = Vector2(224, 384)
+texture = ExtResource("23_5n8xm")
+
+[node name="TreeShort2" type="Sprite2D" parent="BGs" unique_id=1256029921]
+position = Vector2(736, 384)
+texture = ExtResource("23_5n8xm")
+
+[node name="TreeShort3" type="Sprite2D" parent="BGs" unique_id=871822120]
+position = Vector2(2096, 384)
+texture = ExtResource("23_5n8xm")
+
+[node name="TreeShort4" type="Sprite2D" parent="BGs" unique_id=354041472]
+position = Vector2(2448, 384)
+texture = ExtResource("23_5n8xm")
+
+[node name="TreeShort5" type="Sprite2D" parent="BGs" unique_id=172125767]
+position = Vector2(3280, 192)
+texture = ExtResource("23_5n8xm")
+
+[node name="TreeShort6" type="Sprite2D" parent="BGs" unique_id=2146495070]
+position = Vector2(3792, 384)
+texture = ExtResource("23_5n8xm")
+
+[node name="TreeTall" type="Sprite2D" parent="BGs" unique_id=215346284]
+position = Vector2(363, 367)
+texture = ExtResource("24_egwn8")
+
+[node name="TreeTall2" type="Sprite2D" parent="BGs" unique_id=641195581]
+position = Vector2(851, 367)
+texture = ExtResource("24_egwn8")
+
+[node name="TreeTall3" type="Sprite2D" parent="BGs" unique_id=1628838695]
+position = Vector2(2384, 368)
+texture = ExtResource("24_egwn8")
+
+[node name="TreeTall4" type="Sprite2D" parent="BGs" unique_id=2141382229]
+position = Vector2(4080, 368)
+texture = ExtResource("24_egwn8")
+
+[node name="TreeTall5" type="Sprite2D" parent="BGs" unique_id=916062386]
+position = Vector2(4528, 368)
+texture = ExtResource("24_egwn8")
+
+[node name="Softendo GFX (Front)" type="Node2D" parent="." unique_id=1042607510]
+script = ExtResource("15_1b85b")
+
+[node name="746" type="Sprite2D" parent="Softendo GFX (Front)" unique_id=1753897448]
+position = Vector2(41, 455)
+texture = ExtResource("21_2alqd")
+
+[node name="747" type="Sprite2D" parent="Softendo GFX (Front)" unique_id=1422006719]
+position = Vector2(274, 455)
+texture = ExtResource("21_2alqd")
+
+[node name="748" type="Sprite2D" parent="Softendo GFX (Front)" unique_id=981228584]
+position = Vector2(578, 392)
+texture = ExtResource("21_2alqd")
+
+[node name="749" type="Sprite2D" parent="Softendo GFX (Front)" unique_id=268955445]
+position = Vector2(1048, 456)
+texture = ExtResource("21_2alqd")
+
+[node name="750" type="Sprite2D" parent="Softendo GFX (Front)" unique_id=689715369]
+position = Vector2(1712, 456)
+texture = ExtResource("21_2alqd")
+
+[node name="751" type="Sprite2D" parent="Softendo GFX (Front)" unique_id=233420224]
+position = Vector2(2304, 392)
+texture = ExtResource("21_2alqd")
+
+[node name="752" type="Sprite2D" parent="Softendo GFX (Front)" unique_id=1140346100]
+position = Vector2(2712, 448)
+texture = ExtResource("21_2alqd")
+
+[node name="753" type="Sprite2D" parent="Softendo GFX (Front)" unique_id=2104668542]
+position = Vector2(3192, 456)
+texture = ExtResource("21_2alqd")
+
+[node name="754" type="Sprite2D" parent="Softendo GFX (Front)" unique_id=431784011]
+position = Vector2(3328, 456)
+texture = ExtResource("21_2alqd")
+
+[node name="Coin" parent="." unique_id=829951400 instance=ExtResource("26_5n8xm")]
+position = Vector2(256, 256)
+
+[node name="Coin2" parent="." unique_id=1816881032 instance=ExtResource("26_5n8xm")]
+position = Vector2(288, 256)
+
+[node name="Coin3" parent="." unique_id=1722068890 instance=ExtResource("26_5n8xm")]
+position = Vector2(320, 256)
+
+[node name="Coin4" parent="." unique_id=483630235 instance=ExtResource("26_5n8xm")]
+position = Vector2(352, 256)
+
+[node name="Coin5" parent="." unique_id=1224812665 instance=ExtResource("26_5n8xm")]
+position = Vector2(384, 256)
+
+[node name="StupidityCloud" parent="." unique_id=1413130031 instance=ExtResource("27_egwn8")]
+position = Vector2(480, 352)
+
+[node name="StupidityCloud2" parent="." unique_id=1979037707 instance=ExtResource("27_egwn8")]
+position = Vector2(480, 288)
+
+[node name="StupidityCloud3" parent="." unique_id=1899711608 instance=ExtResource("27_egwn8")]
+position = Vector2(480, 128)
+
+[node name="StupidityCloud4" parent="." unique_id=451188413 instance=ExtResource("27_egwn8")]
+position = Vector2(448, 64)
+
+[node name="StupidityCloud5" parent="." unique_id=1543965428 instance=ExtResource("27_egwn8")]
+position = Vector2(384, 32)
+
+[node name="FallingQBlock" parent="." unique_id=1009282355 instance=ExtResource("28_maqcs")]
+position = Vector2(656, 240)
+
+[node name="FallingQBlock2" parent="." unique_id=1980973547 instance=ExtResource("28_maqcs")]
+position = Vector2(688, 240)
+
+[node name="FallingQBlock3" parent="." unique_id=1422240771 instance=ExtResource("28_maqcs")]
+position = Vector2(752, 112)
+
+[node name="FallingQBlock4" parent="." unique_id=968937990 instance=ExtResource("28_maqcs")]
+position = Vector2(880, 80)
+
+[node name="FallingQBlock5" parent="." unique_id=1439008124 instance=ExtResource("28_maqcs")]
+position = Vector2(912, 48)
+
+[node name="FallingQBlock6" parent="." unique_id=769433254 instance=ExtResource("28_maqcs")]
+position = Vector2(944, 16)
+
+[node name="FallingQBlock7" parent="." unique_id=1987027583 instance=ExtResource("28_maqcs")]
+position = Vector2(976, -16)
+
+[node name="FallingQBlock8" parent="." unique_id=180571988 instance=ExtResource("28_maqcs")]
+position = Vector2(1008, -48)
+
+[node name="FallingQBlock9" parent="." unique_id=2033273270 instance=ExtResource("28_maqcs")]
+position = Vector2(880, -16)
+
+[node name="FallingQBlock10" parent="." unique_id=226872335 instance=ExtResource("28_maqcs")]
+position = Vector2(912, -48)
+
+[node name="FallingQBlock11" parent="." unique_id=436520464 instance=ExtResource("28_maqcs")]
+position = Vector2(944, -80)
+
+[node name="FallingQBlock12" parent="." unique_id=1067492171 instance=ExtResource("28_maqcs")]
+position = Vector2(976, -112)
+
+[node name="FallingQBlock13" parent="." unique_id=1748292764 instance=ExtResource("28_maqcs")]
+position = Vector2(1008, -144)
+
+[node name="StupidityCloudHidden" parent="." unique_id=1646354042 instance=ExtResource("29_1b85b")]
+position = Vector2(1048, 224)
+
+[node name="TriggerArea" parent="." unique_id=1320607729 instance=ExtResource("29_803np")]
+position = Vector2(1224, 254)
+
+[node name="Coin6" parent="." unique_id=1548427930 instance=ExtResource("26_5n8xm")]
+position = Vector2(1488, 208)
+
+[node name="Coin7" parent="." unique_id=1610438427 instance=ExtResource("26_5n8xm")]
+position = Vector2(1488, 176)
+
+[node name="Coin8" parent="." unique_id=1175965407 instance=ExtResource("26_5n8xm")]
+position = Vector2(1680, 112)
+
+[node name="Coin9" parent="." unique_id=1223133383 instance=ExtResource("26_5n8xm")]
+position = Vector2(1680, 80)
+
+[node name="Coin10" parent="." unique_id=2054255167 instance=ExtResource("26_5n8xm")]
+position = Vector2(1904, 208)
+
+[node name="Coin11" parent="." unique_id=2131115378 instance=ExtResource("26_5n8xm")]
+position = Vector2(1904, 176)
+
+[node name="StupidityCloudHidden2" parent="." unique_id=984737091 instance=ExtResource("29_1b85b")]
+position = Vector2(1496, 216)
+
+[node name="StupidityCloudHidden3" parent="." unique_id=2101399655 instance=ExtResource("29_1b85b")]
+position = Vector2(1688, 120)
+
+[node name="StupidityCloudHidden4" parent="." unique_id=1866659937 instance=ExtResource("29_1b85b")]
+position = Vector2(1898, 184)
+
+[node name="KoopaBro" parent="." unique_id=1360507668 instance=ExtResource("30_ks3gt")]
+position = Vector2(2160, 400)
+
+[node name="KoopaBro2" parent="." unique_id=1183139489 instance=ExtResource("30_ks3gt")]
+position = Vector2(2736, 400)
+
+[node name="QuestionBlockPoisonous" parent="." unique_id=1077108751 instance=ExtResource("31_672el")]
+position = Vector2(2256, 272)
+result = SubResource("Resource_57s0f")
+initially_visible_and_solid = false
+
+[node name="QuestionBlockPoisonous2" parent="." unique_id=1716704158 instance=ExtResource("31_672el")]
+position = Vector2(2608, 272)
+result = SubResource("Resource_mxyfi")
+initially_visible_and_solid = false
+
+[node name="QuestionBlockPoisonous3" parent="." unique_id=1660288025 instance=ExtResource("31_672el")]
+position = Vector2(2800, 272)
+result = SubResource("Resource_v3pjh")
+
+[node name="QuestionBlockPoisonous4" parent="." unique_id=2052252208 instance=ExtResource("31_672el")]
+position = Vector2(2864, 272)
+result = SubResource("Resource_l0mlq")
+
+[node name="QuestionBlockPoisonous5" parent="." unique_id=499109460 instance=ExtResource("31_672el")]
+position = Vector2(2832, 144)
+result = SubResource("Resource_806ny")
+
+[node name="QuestionBlockPoisonous6" parent="." unique_id=985926559 instance=ExtResource("31_672el")]
+position = Vector2(2864, 144)
+result = SubResource("Resource_dvylo")
+
+[node name="QuestionBlockPoisonous7" parent="." unique_id=1595343013 instance=ExtResource("31_672el")]
+position = Vector2(2896, 144)
+result = SubResource("Resource_lc8n4")
+
+[node name="QuestionBlockPoisonous8" parent="." unique_id=537171677 instance=ExtResource("31_672el")]
+position = Vector2(2960, 48)
+result = SubResource("Resource_02hij")
+
+[node name="QuestionBlockPoisonous9" parent="." unique_id=109312049 instance=ExtResource("31_672el")]
+position = Vector2(2992, 16)
+result = SubResource("Resource_qrfnp")
+
+[node name="QuestionBlockPoisonous10" parent="." unique_id=385579805 instance=ExtResource("31_672el")]
+position = Vector2(2960, 112)
+result = SubResource("Resource_pwoqo")
+
+[node name="QuestionBlockPoisonous11" parent="." unique_id=1217560959 instance=ExtResource("31_672el")]
+position = Vector2(2992, 176)
+result = SubResource("Resource_gpcn0")
+
+[node name="FallingQBlock14" parent="." unique_id=1012752737 instance=ExtResource("28_maqcs")]
+position = Vector2(2352, -16)
+trigger_area = Rect2(-36, -320, 40, 4839.865)
+
+[node name="FallingQBlock15" parent="." unique_id=1736460483 instance=ExtResource("28_maqcs")]
+position = Vector2(2384, -48)
+trigger_area = Rect2(-36, -320, 40, 4839.865)
+
+[node name="FallingQBlock16" parent="." unique_id=1327161048 instance=ExtResource("28_maqcs")]
+position = Vector2(2416, -16)
+trigger_area = Rect2(-36, -320, 40, 4839.865)
+
+[node name="FallingQBlock17" parent="." unique_id=512047543 instance=ExtResource("28_maqcs")]
+position = Vector2(2448, -48)
+trigger_area = Rect2(-36, -320, 40, 4839.865)
+
+[node name="FallingQBlock18" parent="." unique_id=440697276 instance=ExtResource("28_maqcs")]
+position = Vector2(2480, -16)
+trigger_area = Rect2(-36, -320, 40, 4839.865)
+
+[node name="FallingQBlock19" parent="." unique_id=82719395 instance=ExtResource("28_maqcs")]
+position = Vector2(2352, -80)
+trigger_area = Rect2(-36, -320, 40, 4839.865)
+
+[node name="FallingQBlock20" parent="." unique_id=588076015 instance=ExtResource("28_maqcs")]
+position = Vector2(2384, -112)
+trigger_area = Rect2(-36, -320, 40, 4839.865)
+
+[node name="FallingQBlock21" parent="." unique_id=970856581 instance=ExtResource("28_maqcs")]
+position = Vector2(2416, -80)
+trigger_area = Rect2(-36, -320, 40, 4839.865)
+
+[node name="FallingQBlock22" parent="." unique_id=1836360670 instance=ExtResource("28_maqcs")]
+position = Vector2(2448, -112)
+trigger_area = Rect2(-36, -320, 40, 4839.865)
+
+[node name="FallingQBlock23" parent="." unique_id=1126780912 instance=ExtResource("28_maqcs")]
+position = Vector2(2480, -80)
+trigger_area = Rect2(-36, -320, 40, 4839.865)
+
+[node name="FallingQBlock24" parent="." unique_id=1616111967 instance=ExtResource("28_maqcs")]
+position = Vector2(2352, -144)
+trigger_area = Rect2(-36, -320, 40, 4839.865)
+
+[node name="FallingQBlock25" parent="." unique_id=325969659 instance=ExtResource("28_maqcs")]
+position = Vector2(2384, -176)
+trigger_area = Rect2(-36, -320, 40, 4839.865)
+
+[node name="FallingQBlock26" parent="." unique_id=1941209071 instance=ExtResource("28_maqcs")]
+position = Vector2(2416, -144)
+trigger_area = Rect2(-36, -320, 40, 4839.865)
+
+[node name="FallingQBlock27" parent="." unique_id=1997109752 instance=ExtResource("28_maqcs")]
+position = Vector2(2448, -176)
+trigger_area = Rect2(-36, -320, 40, 4839.865)
+
+[node name="FallingQBlock28" parent="." unique_id=375908299 instance=ExtResource("28_maqcs")]
+position = Vector2(2480, -144)
+trigger_area = Rect2(-36, -320, 40, 4839.865)
+
+[node name="FallingQBlock29" parent="." unique_id=668512834 instance=ExtResource("28_maqcs")]
+position = Vector2(2352, -208)
+trigger_area = Rect2(-36, -320, 40, 4839.865)
+
+[node name="FallingQBlock30" parent="." unique_id=358603898 instance=ExtResource("28_maqcs")]
+position = Vector2(2416, -208)
+trigger_area = Rect2(-36, -320, 40, 4839.865)
+
+[node name="FallingQBlock31" parent="." unique_id=1893285007 instance=ExtResource("28_maqcs")]
+position = Vector2(2480, -208)
+trigger_area = Rect2(-36, -320, 40, 4839.865)
+
+[node name="FallingQBlock32" parent="." unique_id=1207787645 instance=ExtResource("28_maqcs")]
+position = Vector2(2384, -240)
+trigger_area = Rect2(-36, -320, 40, 4839.865)
+
+[node name="FallingQBlock33" parent="." unique_id=375849276 instance=ExtResource("28_maqcs")]
+position = Vector2(2448, -240)
+trigger_area = Rect2(-36, -320, 40, 4839.865)
+
+[node name="PiranhaHeadHidden" parent="." unique_id=128789419 instance=ExtResource("34_672el")]
+position = Vector2(2832, 400)
+
+[node name="PiranhaHeadHidden2" parent="." unique_id=1199530718 instance=ExtResource("34_672el")]
+position = Vector2(3184, 240)
+
+[node name="PiranhaHeadHidden3" parent="." unique_id=1975499480 instance=ExtResource("34_672el")]
+position = Vector2(3312, 208)
+
+[node name="PiranhaHeadHidden4" parent="." unique_id=854636791 instance=ExtResource("34_672el")]
+position = Vector2(3344, 112)
+
+[node name="FallingQBlock34" parent="." unique_id=1592685515 instance=ExtResource("28_maqcs")]
+position = Vector2(3760, -16)
+
+[node name="FallingQBlock35" parent="." unique_id=882372525 instance=ExtResource("28_maqcs")]
+position = Vector2(4016, -16)
+
+[node name="FallingQBlock36" parent="." unique_id=1852816767 instance=ExtResource("28_maqcs")]
+position = Vector2(4016, -48)
+
+[node name="StupidityCloud6" parent="." unique_id=1111075395 instance=ExtResource("27_egwn8")]
+position = Vector2(3840, 344)
+
+[node name="StupidityCloud7" parent="." unique_id=2116647645 instance=ExtResource("27_egwn8")]
+position = Vector2(3840, 288)
+
+[node name="StupidityCloud8" parent="." unique_id=2104822143 instance=ExtResource("27_egwn8")]
+position = Vector2(3840, 232)
+
+[node name="StupidityCloud9" parent="." unique_id=1251386166 instance=ExtResource("27_egwn8")]
+position = Vector2(4120, 352)
+
+[node name="StupidityCloud10" parent="." unique_id=266137847 instance=ExtResource("27_egwn8")]
+position = Vector2(4120, 160)
+
+[node name="StupidityCloud11" parent="." unique_id=593347445 instance=ExtResource("27_egwn8")]
+position = Vector2(4120, 104)
+
+[node name="StupidityCloud12" parent="." unique_id=66414276 instance=ExtResource("27_egwn8")]
+position = Vector2(4120, 48)
+
+[node name="StupidityCloud13" parent="." unique_id=339979441 instance=ExtResource("27_egwn8")]
+position = Vector2(4120, -8)
+
+[node name="TriggerArea2" parent="." unique_id=2079814447 instance=ExtResource("29_803np")]
+position = Vector2(4409, 348)
+script = ExtResource("35_6jv06")
+
+[node name="StupidityCloudHidden5" parent="." unique_id=2061080519 instance=ExtResource("29_1b85b")]
+position = Vector2(4716, 247)
+
+[node name="StupidityCloudHidden6" parent="." unique_id=1365634217 instance=ExtResource("29_1b85b")]
+position = Vector2(4877, 186)
+
+[node name="StupidityCloudHidden7" parent="." unique_id=1030584221 instance=ExtResource("29_1b85b")]
+position = Vector2(5007, 57)
+
+[node name="Checkpoint" parent="." unique_id=1170161289 instance=ExtResource("36_ka31u")]
+position = Vector2(5440, 352)
+voice_lines = Array[AudioStream]([ExtResource("37_po6oc"), ExtResource("38_57s0f"), ExtResource("39_mxyfi")])

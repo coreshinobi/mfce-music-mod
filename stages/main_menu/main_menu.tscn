@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://dukosa3hw8lff" path="res://stages/save_game_room/scripts/restore_tweaks_from_minix.gd" id="1_0nl34"]
 [ext_resource type="Script" uid="uid://d2esh46nc5aqc" path="res://stages/main_menu/scripts/zoom_camera_transition.gd" id="1_tc10h"]
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="1_xf83d"]
-[ext_resource type="AudioStream" uid="uid://ckvsfjusfv75o" path="res://engine/scenes/main_menu/music/main_menu.xm" id="2_2u7nk"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="2_c40jm"]
 [ext_resource type="Script" uid="uid://dk3oyvnb88bnr" path="res://stages/main_menu/scripts/notification_emitter.gd" id="2_pto04"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="3_yfcxo"]
@@ -44,7 +43,11 @@
 [ext_resource type="Script" uid="uid://dsk58sf1jip6x" path="res://stages/extra/minix/scripts/minix_selectors_anim.gd" id="29_sb5lk"]
 [ext_resource type="SpriteFrames" uid="uid://br3qktscdu8fx" path="res://engine/objects/players/prefabs/animations/mario/selector.tres" id="30_ccf2u"]
 [ext_resource type="Script" uid="uid://b1fji5ve3eoe0" path="res://engine/components/ui/generic/selector_player_animation.gd" id="31_uoq2x"]
+[ext_resource type="AudioStream" uid="uid://dmgwx2wnd0wto" path="res://music/newermod/revisq - c64 conversion.mod" id="33_03i18"]
 [ext_resource type="FontFile" uid="uid://dod5x6pna7fub" path="res://engine/fonts/comix_heavy.ttf" id="33_axkr8"]
+[ext_resource type="AudioStream" uid="uid://dol545tw3y8qp" path="res://music/side_a/Double Dribble The Playoff Edition - Main Menu.ogg" id="33_h74ns"]
+[ext_resource type="AudioStream" uid="uid://b5p4uabd5mi2d" path="res://music/side_b/teque @ guntech - gunkan intro.xm" id="34_102uj"]
+[ext_resource type="AudioStream" uid="uid://b8aoo444efotc" path="res://music/side_c/coreshinobi - clown forever.xm" id="35_ryex0"]
 [ext_resource type="PackedScene" uid="uid://bj3fvmd6bah6d" path="res://engine/fonts/templates/mister_earl_font.tscn" id="43_qdsgx"]
 [ext_resource type="Script" uid="uid://cn67joohcklbn" path="res://engine/components/ui/generic/menu_items_controller.gd" id="44_agpdy"]
 [ext_resource type="Texture2D" uid="uid://cb24ytv72ue4t" path="res://engine/scenes/main_menu/textures/restart_cancel.png" id="45_1uype"]
@@ -384,10 +387,10 @@ metadata/_edit_lock_ = true
 script = ExtResource("2_c40jm")
 tweaked_completion_music = ExtResource("3_yfcxo")
 ignore_fade_in_tweak = false
-music_var_1 = Array[Resource]([])
-music_var_2 = Array[Resource]([])
-music_var_3 = Array[Resource]([])
-var_1_volume_db = Array[float]([0.0])
+music_var_1 = Array[Resource]([ExtResource("33_h74ns")])
+music_var_2 = Array[Resource]([ExtResource("34_102uj")])
+music_var_3 = Array[Resource]([ExtResource("35_ryex0")])
+var_1_volume_db = Array[float]([1.6])
 var_1_start_from_sec = Array[float]([0.0])
 var_2_volume_db = Array[float]([0.0])
 var_2_start_from_sec = Array[float]([0.0])
@@ -398,10 +401,10 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("2_2u7nk")])
+music = Array[Resource]([ExtResource("33_03i18")])
 channel_id = 0
 play_immediately = false
-volume_db = Array[float]([-2.0])
+volume_db = Array[float]([3.0])
 
 [node name="Menuitemsbg" type="Sprite2D" parent="Menu" unique_id=975074049]
 modulate = Color(1, 1, 1, 0.745098)
@@ -473,7 +476,6 @@ offset_left = -640.0
 offset_top = 480.0
 offset_right = -640.0
 offset_bottom = 480.0
-metadata/_edit_lock_ = true
 
 [node name="Version" type="Label" parent="." unique_id=851989379]
 layout_mode = 1

@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://ki2v7scfm0qc"
+path="res://.godot/imported/dreamfish - street jungle.mod-1c893d06b8b4c86043a98d1becc9d96f.res"
+
+[deps]
+
+source_file="res://music/newermod/dreamfish - street jungle.mod"
+dest_files=["res://.godot/imported/dreamfish - street jungle.mod-1c893d06b8b4c86043a98d1becc9d96f.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://7r2hqa1rrsu7"
+path="res://.godot/imported/OHH NOOOO.ogg-83537bde6110becc1c7d55d032ed737f.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/OHH NOOOO.ogg"
+dest_files=["res://.godot/imported/OHH NOOOO.ogg-83537bde6110becc1c7d55d032ed737f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

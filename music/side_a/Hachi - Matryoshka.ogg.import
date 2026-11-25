@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cuj12iyqkypbk"
+path="res://.godot/imported/Hachi - Matryoshka.ogg-82d119e4156b24b474cbb9346b5e6962.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Hachi - Matryoshka.ogg"
+dest_files=["res://.godot/imported/Hachi - Matryoshka.ogg-82d119e4156b24b474cbb9346b5e6962.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=9.36
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -3,10 +3,11 @@
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_v3tqj"]
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_l3flv"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_nge5m"]
-[ext_resource type="AudioStream" uid="uid://c75d1f8e57gpt" path="res://music/extra/expert_mode/experience.mod" id="4_dnklc"]
-[ext_resource type="AudioStream" uid="uid://no8rqi6mwk8c" path="res://music/smw-overworld.ogg" id="5_5q7cw"]
+[ext_resource type="AudioStream" uid="uid://dgioe1vi5iqgv" path="res://music/newermod/ADSRe - Sonic goes to Butlins.ogg" id="4_bvkpc"]
+[ext_resource type="AudioStream" uid="uid://dsbo3s5e2sxdn" path="res://music/newermod/toal nkor - forest dream.mod" id="5_87m61"]
 [ext_resource type="Script" uid="uid://pnegwh5bhy7i" path="res://objects/music_loader_custom/music_pitch_changer.gd" id="7_hvqlc"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="8_ceyaw"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="8_dfyhf"]
 [ext_resource type="PackedScene" uid="uid://cvigdw7nldify" path="res://objects/antiafk_expert_mode/antiafk_expert_mode.tscn" id="8_l3flv"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="9_jt2ca"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="9_vtnks"]
@@ -134,51 +135,51 @@ gradient = SubResource("Gradient_nyxro")
 height = 16
 fill_to = Vector2(0, 1)
 
-[sub_resource type="Resource" id="Resource_vtnks"]
+[sub_resource type="Resource" id="Resource_3pm4l"]
 resource_local_to_scene = true
 script = ExtResource("34_rn7tp")
 creation_fallback_node = ExtResource("32_x1hbc")
 creation_nodepack = ExtResource("33_dmi8u")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_0j0en"]
+[sub_resource type="Resource" id="Resource_16f5e"]
 resource_local_to_scene = true
 script = ExtResource("34_rn7tp")
 creation_nodepack = ExtResource("37_w6s1m")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_te5ot"]
+[sub_resource type="Resource" id="Resource_onip3"]
 resource_local_to_scene = true
 script = ExtResource("34_rn7tp")
 creation_nodepack = ExtResource("35_yreda")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_bvkpc"]
+[sub_resource type="Resource" id="Resource_0jl10"]
 resource_local_to_scene = true
 script = ExtResource("34_rn7tp")
 creation_nodepack = ExtResource("35_yreda")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_87m61"]
+[sub_resource type="Resource" id="Resource_drro0"]
 resource_local_to_scene = true
 script = ExtResource("34_rn7tp")
 creation_fallback_node = ExtResource("32_x1hbc")
 creation_nodepack = ExtResource("52_jt2ca")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_dfyhf"]
+[sub_resource type="Resource" id="Resource_pjsi5"]
 resource_local_to_scene = true
 script = ExtResource("34_rn7tp")
 creation_nodepack = ExtResource("55_dnklc")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_3pm4l"]
+[sub_resource type="Resource" id="Resource_nwx32"]
 resource_local_to_scene = true
 script = ExtResource("34_rn7tp")
 creation_nodepack = ExtResource("55_dnklc")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_16f5e"]
+[sub_resource type="Resource" id="Resource_uqku6"]
 resource_local_to_scene = true
 script = ExtResource("34_rn7tp")
 creation_nodepack = ExtResource("55_dnklc")
@@ -191,14 +192,17 @@ jump_to_scene = "uid://bwo0bl46a73w8"
 
 [node name="MusicLoader" type="Node" parent="." unique_id=736087312]
 script = ExtResource("3_nge5m")
-music = Array[Resource]([ExtResource("4_dnklc"), ExtResource("5_5q7cw")])
-volume_db = Array[float]([6.0, 4.0])
+music = Array[Resource]([ExtResource("4_bvkpc"), ExtResource("5_87m61")])
+volume_db = Array[float]([0.4, 4.0])
 
 [node name="AntiafkExpertMode" parent="MusicLoader" unique_id=992447034 instance=ExtResource("8_l3flv")]
 antiafk_enabled = false
 
 [node name="MusicPitchChanger" type="Node" parent="MusicLoader" unique_id=2146370719]
 script = ExtResource("7_hvqlc")
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("8_dfyhf")]
+text = Array[String](["ADSRe - Sonic goes to Butlins", "Toal Nkor - Forest Dream"])
 
 [node name="SecretUnlocker" parent="." unique_id=682154192 instance=ExtResource("9_vtnks")]
 secrets = Array[String](["passage to expert world 8"])
@@ -516,19 +520,19 @@ minimum = true
 
 [node name="QuestionBlockFireFlower" parent="." unique_id=700745174 instance=ExtResource("31_r3uhm")]
 position = Vector2(464, 336)
-result = SubResource("Resource_vtnks")
+result = SubResource("Resource_3pm4l")
 
 [node name="QuestionBlockFireFlower2" parent="." unique_id=2021283027 instance=ExtResource("31_r3uhm")]
 position = Vector2(2992, 240)
-result = SubResource("Resource_0j0en")
+result = SubResource("Resource_16f5e")
 
 [node name="QuestionBlock" parent="." unique_id=796784937 instance=ExtResource("50_2ejs6")]
 position = Vector2(2960, 240)
-result = SubResource("Resource_te5ot")
+result = SubResource("Resource_onip3")
 
 [node name="QuestionBlock2" parent="." unique_id=258906896 instance=ExtResource("50_2ejs6")]
 position = Vector2(3024, 240)
-result = SubResource("Resource_bvkpc")
+result = SubResource("Resource_0jl10")
 
 [node name="CheepBlue6" parent="." unique_id=1702813876 instance=ExtResource("36_rm1em")]
 position = Vector2(6928, 144)
@@ -941,7 +945,7 @@ rotation = 3.14159
 
 [node name="QuestionBlockFrogSuit" parent="." unique_id=1685301046 instance=ExtResource("51_ceyaw")]
 position = Vector2(4816, 336)
-result = SubResource("Resource_87m61")
+result = SubResource("Resource_drro0")
 initially_visible_and_solid = false
 
 [node name="GreenPipeEnteringAnother2" type="Sprite2D" parent="." unique_id=262000251]
@@ -999,16 +1003,16 @@ position = Vector2(5424, -752)
 
 [node name="QuestionBlockLife" parent="." unique_id=2099002894 instance=ExtResource("54_8ho1t")]
 position = Vector2(4912, -752)
-result = SubResource("Resource_dfyhf")
+result = SubResource("Resource_pjsi5")
 
 [node name="QuestionBlockLife2" parent="." unique_id=82444742 instance=ExtResource("54_8ho1t")]
 position = Vector2(4912, -944)
-result = SubResource("Resource_3pm4l")
+result = SubResource("Resource_nwx32")
 initially_visible_and_solid = false
 
 [node name="QuestionBlockLife3" parent="." unique_id=945648999 instance=ExtResource("54_8ho1t")]
 position = Vector2(2224, 17)
-result = SubResource("Resource_16f5e")
+result = SubResource("Resource_uqku6")
 initially_visible_and_solid = false
 
 [node name="Expert8Warp" type="Node2D" parent="." unique_id=1986504733]
@@ -1031,11 +1035,12 @@ warp_direction = 0
 [node name="Node" type="Node" parent="MainMenuWarp/PipeIn3" unique_id=1986504736]
 script = ExtResource("57_delsus")
 
+[connection signal="music_started" from="MusicLoader" to="MusicOverlay" method="play"]
 [connection signal="warp_started" from="PipeIn" to="Node" method="disable"]
 [connection signal="warp_started" from="PipeIn" to="Node2" method="disable"]
 [connection signal="warp_started" from="Expert8Warp/PipeIn2" to="SecretUnlocker" method="unlock_secret"]
-[connection signal="warp_started" from="Expert8Warp/PipeIn2" to="HUD/ExpWorld8Warp" method="activate"]
 [connection signal="warp_started" from="Expert8Warp/PipeIn2" to="HUD/ExpWorld8Warp" method="warp_split"]
+[connection signal="warp_started" from="Expert8Warp/PipeIn2" to="HUD/ExpWorld8Warp" method="activate"]
 [connection signal="warp_started" from="Expert8Warp/PipeIn2" to="SecretUnlocker" method="add_shit_to_profile" binds= ["warped", true]]
 [connection signal="warp_started" from="MainMenuWarp/PipeIn3" to="HUD/MasterWarp" method="activate"]
 [connection signal="warp_started" from="MainMenuWarp/PipeIn3" to="MainMenuWarp/PipeIn3/Node" method="delete_suspended"]

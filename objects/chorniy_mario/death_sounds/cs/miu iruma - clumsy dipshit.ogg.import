@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c8v7ia7d1dox6"
+path="res://.godot/imported/miu iruma - clumsy dipshit.ogg-05505d90f3c565971f31941697f3df68.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/miu iruma - clumsy dipshit.ogg"
+dest_files=["res://.godot/imported/miu iruma - clumsy dipshit.ogg-05505d90f3c565971f31941697f3df68.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

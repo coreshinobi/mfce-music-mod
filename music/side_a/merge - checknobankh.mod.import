@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://c2ibr6x8k6y5a"
+path="res://.godot/imported/merge - checknobankh.mod-fdfe84463d49b54ee763b934b3e1e843.res"
+
+[deps]
+
+source_file="res://music/side_a/merge - checknobankh.mod"
+dest_files=["res://.godot/imported/merge - checknobankh.mod-fdfe84463d49b54ee763b934b3e1e843.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

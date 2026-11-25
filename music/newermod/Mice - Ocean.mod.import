@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://dn1d1c2541j6c"
+path="res://.godot/imported/Mice - Ocean.mod-49a8bda6df347ee7d9538560dae5be90.res"
+
+[deps]
+
+source_file="res://music/newermod/Mice - Ocean.mod"
+dest_files=["res://.godot/imported/Mice - Ocean.mod-49a8bda6df347ee7d9538560dae5be90.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

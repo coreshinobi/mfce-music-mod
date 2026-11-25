@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://db4t6ycfgg1yi"
+path="res://.godot/imported/bartesek - naked carrion.mod-ec11a1e0ecb42badbe76f89835e60e8a.res"
+
+[deps]
+
+source_file="res://music/side_a/bartesek - naked carrion.mod"
+dest_files=["res://.godot/imported/bartesek - naked carrion.mod-ec11a1e0ecb42badbe76f89835e60e8a.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

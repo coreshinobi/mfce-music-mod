@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bxj84167y5i4k"
+path="res://.godot/imported/KROOL OH MY GOD.ogg-01da01fce5c4ecb8bda63d42dbeb9061.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/KROOL OH MY GOD.ogg"
+dest_files=["res://.godot/imported/KROOL OH MY GOD.ogg-01da01fce5c4ecb8bda63d42dbeb9061.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

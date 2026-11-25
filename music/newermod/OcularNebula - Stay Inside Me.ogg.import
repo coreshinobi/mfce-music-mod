@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bwiia806yrnyh"
+path="res://.godot/imported/OcularNebula - Stay Inside Me.ogg-4baebe41658a02cf24ae61be020a244a.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/OcularNebula - Stay Inside Me.ogg"
+dest_files=["res://.godot/imported/OcularNebula - Stay Inside Me.ogg-4baebe41658a02cf24ae61be020a244a.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=29.71
+bpm=128.07
+beat_count=0
+bar_beats=4

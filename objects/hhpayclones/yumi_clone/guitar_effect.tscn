@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cmbiem82o7lg6"]
+
+[ext_resource type="Script" uid="uid://ctggojyi618up" path="res://engine/objects/enemies/_dead/enemy_killed.gd" id="1_aww1s"]
+[ext_resource type="Texture2D" uid="uid://sliy3laj13n7" path="res://objects/hhpayclones/yumi_clone/textures/guitar.png" id="2_tqnq7"]
+
+[node name="KeyboardEffect" type="CharacterBody2D" unique_id=212685711]
+collision_layer = 0
+collision_mask = 0
+platform_on_leave = 2
+script = ExtResource("1_aww1s")
+turn_sprite = false
+sprite = NodePath("Sprite2D")
+speed = Vector2(150, -350)
+gravity_dir_rotation = false
+gravity_scale = 0.5
+max_falling_speed = 1000.0
+collision = false
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=96335402]
+texture = ExtResource("2_tqnq7")

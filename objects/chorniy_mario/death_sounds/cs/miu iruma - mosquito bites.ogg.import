@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://boykenvqdopub"
+path="res://.godot/imported/miu iruma - mosquito bites.ogg-86be039511bad9cb6bc5ddb20d16f858.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/miu iruma - mosquito bites.ogg"
+dest_files=["res://.godot/imported/miu iruma - mosquito bites.ogg-86be039511bad9cb6bc5ddb20d16f858.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

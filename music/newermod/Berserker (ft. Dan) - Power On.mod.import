@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://cedym7rat7cd4"
+path="res://.godot/imported/Berserker (ft. Dan) - Power On.mod-4869a25281ba827050434c170f9a23ad.res"
+
+[deps]
+
+source_file="res://music/newermod/Berserker (ft. Dan) - Power On.mod"
+dest_files=["res://.godot/imported/Berserker (ft. Dan) - Power On.mod-4869a25281ba827050434c170f9a23ad.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

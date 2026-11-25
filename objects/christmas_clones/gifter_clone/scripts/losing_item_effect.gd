@@ -20,3 +20,7 @@ func create() -> void:
 	Scenes.current_scene.add_child(keyboard)
 	keyboard.position = global_position
 	keyboard.reset_physics_interpolation()
+
+
+func _on_enemy_attacked_killed_succeeded() -> void:
+	pass # Replace with function body.

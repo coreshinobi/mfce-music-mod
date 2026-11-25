@@ -2,8 +2,9 @@
 
 [ext_resource type="Script" uid="uid://b2miajjwaop0p" path="res://engine/scenes/map/scripts/map.gd" id="1_ki6fk"]
 [ext_resource type="Texture2D" uid="uid://bkw0h4g3jfwg2" path="res://gfx/map/expert_mode_maps/map7.png" id="2_1hhel"]
-[ext_resource type="AudioStream" uid="uid://c0ljmfkub2cxm" path="res://music/extra/expert_mode/cs127_-_qz_hybrid_synthwave_cover.mo3" id="2_2ch2p"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="2_u2amj"]
+[ext_resource type="AudioStream" uid="uid://b4oxqi66iicgu" path="res://music/newermod/open surge - waterworks.ogg" id="3_u2amj"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="4_bnn7n"]
 [ext_resource type="Texture2D" uid="uid://usm6n80msr7n" path="res://engine/scenes/map/textures/bg.png" id="4_qk6bf"]
 [ext_resource type="PackedScene" uid="uid://w4jc7nb1lcsy" path="res://engine/scenes/map/prefabs/player.tscn" id="6_bnn7n"]
 [ext_resource type="PackedScene" uid="uid://beu6ovtvrvpfc" path="res://engine/scenes/map/prefabs/dot.tscn" id="7_h2dld"]
@@ -48,8 +49,13 @@ metadata/_edit_lock_ = true
 
 [node name="MusicLoader" type="Node" parent="." unique_id=108900578]
 script = ExtResource("2_u2amj")
-music = Array[Resource]([ExtResource("2_2ch2p")])
+music = Array[Resource]([ExtResource("3_u2amj")])
+volume_db = Array[float]([1.4])
 start_from_sec = Array[float]([0.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("4_bnn7n")]
+displaying_mode = 1
+text = Array[String](["Open Surge - Waterworks"])
 
 [node name="Bg" type="Sprite2D" parent="." unique_id=584951290]
 texture = ExtResource("4_qk6bf")

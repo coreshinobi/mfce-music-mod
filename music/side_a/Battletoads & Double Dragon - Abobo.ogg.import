@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c5lynuq17ucqa"
+path="res://.godot/imported/Battletoads & Double Dragon - Abobo.ogg-12c6c35291f0f4a948117416ce97102b.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Battletoads & Double Dragon - Abobo.ogg"
+dest_files=["res://.godot/imported/Battletoads & Double Dragon - Abobo.ogg-12c6c35291f0f4a948117416ce97102b.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=28.21
+bpm=0.0
+beat_count=0
+bar_beats=4

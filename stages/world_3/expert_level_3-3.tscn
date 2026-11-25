@@ -4,7 +4,6 @@
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_5acq5"]
 [ext_resource type="PackedScene" uid="uid://12ak5pa7cf8u" path="res://engine/objects/powerups/super_star/super_star.tscn" id="3_0l66k"]
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="3_4gdu6"]
-[ext_resource type="AudioStream" uid="uid://c6vvmdj1ql7dd" path="res://music/extra/expert_mode/turrican2_lev5.mod" id="3_js5yg"]
 [ext_resource type="PackedScene" uid="uid://dw54kg4ssaj3o" path="res://objects/otherworld/secret_otherworld_unlocker_choicer.tscn" id="4_d6oxt"]
 [ext_resource type="PackedScene" uid="uid://b1aibpt7836h7" path="res://engine/objects/enemies/hammer_bros/hammer_bro.tscn" id="4_iufe7"]
 [ext_resource type="Script" uid="uid://bpk2hgvmc1f4q" path="res://stages/extra/expert_mode/scripts/world_3_3_starfall_generator.gd" id="4_vkxfi"]
@@ -15,9 +14,11 @@
 [ext_resource type="PackedScene" uid="uid://b8kgbn8f7lvf0" path="res://engine/objects/items/coin/coin.tscn" id="5_ncvxr"]
 [ext_resource type="PackedScene" uid="uid://dgcgfl28trox0" path="res://engine/objects/springboard/springboard.tscn" id="6_d0c6s"]
 [ext_resource type="FontFile" uid="uid://8het0yea87eq" path="res://gfx/fonts/tahomabd.ttf" id="6_llauh"]
+[ext_resource type="AudioStream" uid="uid://bb0l0fdxdv51w" path="res://music/newermod/Garvoxious - Knurpy Samba.ogg" id="6_xr3vd"]
 [ext_resource type="FontVariation" uid="uid://4h0cbbutybo2" path="res://engine/fonts/font_variations/mister_earl_variation.tres" id="7_88ke4"]
 [ext_resource type="Script" uid="uid://ck8etkhldnph8" path="res://stages/world_1/scripts/text_secret_passage.gd" id="7_d6oxt"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="8_3hoe8"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="8_cp6sa"]
 [ext_resource type="PackedScene" uid="uid://c58i0gaq0il4o" path="res://engine/objects/enemies/spinies/spiny_red.tscn" id="8_uurei"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="10_tx5cv"]
 [ext_resource type="PackedScene" uid="uid://cv4oxp3hprpfk" path="res://engine/objects/enemies/piranha_plants/piranha_long_pink.tscn" id="11_c03tm"]
@@ -355,28 +356,6 @@ fill_to = Vector2(0.875, 0.25)
 metadata/_snap_enabled = true
 metadata/_snap_count = 8
 
-[sub_resource type="Resource" id="Resource_yi20g"]
-resource_local_to_scene = true
-script = ExtResource("4_xu06v")
-creation_nodepack = ExtResource("5_ncvxr")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_5acq5"]
-resource_local_to_scene = true
-script = ExtResource("4_xu06v")
-creation_nodepack = ExtResource("3_0l66k")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_c4a6i"]
-script = ExtResource("4_xu06v")
-creation_nodepack = ExtResource("5_ncvxr")
-
-[sub_resource type="Resource" id="Resource_4gdu6"]
-resource_local_to_scene = true
-script = ExtResource("4_xu06v")
-creation_nodepack = ExtResource("5_ncvxr")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_xr3vd"]
 resource_local_to_scene = true
 script = ExtResource("4_xu06v")
@@ -386,8 +365,12 @@ trans_inheritances = 7
 [sub_resource type="Resource" id="Resource_cp6sa"]
 resource_local_to_scene = true
 script = ExtResource("4_xu06v")
-creation_nodepack = ExtResource("5_ncvxr")
+creation_nodepack = ExtResource("3_0l66k")
 trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_c4a6i"]
+script = ExtResource("4_xu06v")
+creation_nodepack = ExtResource("5_ncvxr")
 
 [sub_resource type="Resource" id="Resource_3hoe8"]
 resource_local_to_scene = true
@@ -467,11 +450,29 @@ script = ExtResource("4_xu06v")
 creation_nodepack = ExtResource("5_ncvxr")
 trans_inheritances = 7
 
+[sub_resource type="Resource" id="Resource_6axqh"]
+resource_local_to_scene = true
+script = ExtResource("4_xu06v")
+creation_nodepack = ExtResource("5_ncvxr")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_rw0cm"]
+resource_local_to_scene = true
+script = ExtResource("4_xu06v")
+creation_nodepack = ExtResource("5_ncvxr")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_p4hsf"]
+resource_local_to_scene = true
+script = ExtResource("4_xu06v")
+creation_nodepack = ExtResource("5_ncvxr")
+trans_inheritances = 7
+
 [sub_resource type="Resource" id="Resource_nlj3o"]
 script = ExtResource("4_xu06v")
 creation_nodepack = ExtResource("5_ncvxr")
 
-[sub_resource type="Resource" id="Resource_6axqh"]
+[sub_resource type="Resource" id="Resource_fmpwu"]
 resource_local_to_scene = true
 script = ExtResource("4_xu06v")
 creation_fallback_node = ExtResource("16_30bjn")
@@ -538,9 +539,14 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("3_js5yg")])
+playback_pitch = 1.0
+music = Array[Resource]([ExtResource("6_xr3vd")])
+volume_db = Array[float]([0.8])
 
 [node name="AntiafkExpertMode" parent="MusicLoader" unique_id=1170647745 instance=ExtResource("4_wgx1y")]
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("8_cp6sa")]
+text = Array[String](["Garvoxious - Knurpy Samba"])
 
 [node name="SecretUnlocker" parent="." unique_id=124787625 instance=ExtResource("8_3hoe8")]
 secrets = Array[String](["all toad houses found", "expert 3-3 with high star drop rate", "passage to expert world 7"])
@@ -1551,11 +1557,11 @@ script = ExtResource("21_ctsxo")
 
 [node name="QuestionBlock" parent="." unique_id=1347794570 instance=ExtResource("22_d6oxt")]
 position = Vector2(2640, 144)
-result = SubResource("Resource_yi20g")
+result = SubResource("Resource_xr3vd")
 
 [node name="QuestionBlock2" parent="." unique_id=248926419 instance=ExtResource("22_d6oxt")]
 position = Vector2(2608, 144)
-result = SubResource("Resource_5acq5")
+result = SubResource("Resource_cp6sa")
 
 [node name="Brick" parent="." unique_id=459066344 instance=ExtResource("21_llauh")]
 position = Vector2(2352, 144)
@@ -1563,78 +1569,78 @@ result = SubResource("Resource_c4a6i")
 
 [node name="QuestionBlock3" parent="." unique_id=952621783 instance=ExtResource("22_d6oxt")]
 position = Vector2(6032, 176)
-result = SubResource("Resource_4gdu6")
+result = SubResource("Resource_3hoe8")
 
 [node name="QuestionBlock4" parent="." unique_id=525840696 instance=ExtResource("22_d6oxt")]
 position = Vector2(6064, 176)
-result = SubResource("Resource_xr3vd")
+result = SubResource("Resource_tx5cv")
 
 [node name="QuestionBlock5" parent="." unique_id=1172526343 instance=ExtResource("22_d6oxt")]
 position = Vector2(6096, 176)
-result = SubResource("Resource_cp6sa")
+result = SubResource("Resource_uwjxc")
 
 [node name="QuestionBlock6" parent="." unique_id=157259527 instance=ExtResource("22_d6oxt")]
 position = Vector2(6128, 176)
-result = SubResource("Resource_3hoe8")
+result = SubResource("Resource_s5uyc")
 
 [node name="QuestionBlock7" parent="." unique_id=1309677385 instance=ExtResource("22_d6oxt")]
 position = Vector2(6032, 16)
-result = SubResource("Resource_tx5cv")
+result = SubResource("Resource_ugcjb")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock8" parent="." unique_id=1429501218 instance=ExtResource("22_d6oxt")]
 position = Vector2(6064, 16)
-result = SubResource("Resource_uwjxc")
+result = SubResource("Resource_nww23")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock9" parent="." unique_id=1265732451 instance=ExtResource("22_d6oxt")]
 position = Vector2(6096, 16)
-result = SubResource("Resource_s5uyc")
+result = SubResource("Resource_1f2io")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock10" parent="." unique_id=1028625915 instance=ExtResource("22_d6oxt")]
 position = Vector2(6128, 16)
-result = SubResource("Resource_ugcjb")
+result = SubResource("Resource_v2q0q")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock11" parent="." unique_id=1163611572 instance=ExtResource("22_d6oxt")]
 position = Vector2(6832, 48)
-result = SubResource("Resource_nww23")
+result = SubResource("Resource_2neew")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock12" parent="." unique_id=423798305 instance=ExtResource("22_d6oxt")]
 position = Vector2(6864, 48)
-result = SubResource("Resource_1f2io")
+result = SubResource("Resource_qaxfm")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock13" parent="." unique_id=1773590104 instance=ExtResource("22_d6oxt")]
 position = Vector2(6896, 48)
-result = SubResource("Resource_v2q0q")
+result = SubResource("Resource_lpav2")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock14" parent="." unique_id=1435916508 instance=ExtResource("22_d6oxt")]
 position = Vector2(6928, 48)
-result = SubResource("Resource_2neew")
+result = SubResource("Resource_tv6xq")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock15" parent="." unique_id=1788336802 instance=ExtResource("22_d6oxt")]
 position = Vector2(6832, 240)
-result = SubResource("Resource_qaxfm")
+result = SubResource("Resource_f841p")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock16" parent="." unique_id=328043069 instance=ExtResource("22_d6oxt")]
 position = Vector2(6864, 240)
-result = SubResource("Resource_lpav2")
+result = SubResource("Resource_6axqh")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock17" parent="." unique_id=1007422078 instance=ExtResource("22_d6oxt")]
 position = Vector2(6896, 240)
-result = SubResource("Resource_tv6xq")
+result = SubResource("Resource_rw0cm")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock18" parent="." unique_id=1489558134 instance=ExtResource("22_d6oxt")]
 position = Vector2(6928, 240)
-result = SubResource("Resource_f841p")
+result = SubResource("Resource_p4hsf")
 initially_visible_and_solid = false
 
 [node name="Brick2" parent="." unique_id=1250184926 instance=ExtResource("21_llauh")]
@@ -1673,7 +1679,7 @@ result = SubResource("Resource_nlj3o")
 
 [node name="QuestionBlock19" parent="." unique_id=2055261363 instance=ExtResource("22_d6oxt")]
 position = Vector2(4368, 208)
-result = SubResource("Resource_6axqh")
+result = SubResource("Resource_fmpwu")
 
 [node name="Sign" type="Sprite2D" parent="." unique_id=115799901]
 z_index = -15

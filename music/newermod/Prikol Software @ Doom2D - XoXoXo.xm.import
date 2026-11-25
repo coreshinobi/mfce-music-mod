@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://b7ke8wsdtewmv"
+path="res://.godot/imported/Prikol Software @ Doom2D - XoXoXo.xm-8cae169de6c74ac4056bcf0454e038fa.res"
+
+[deps]
+
+source_file="res://music/newermod/Prikol Software @ Doom2D - XoXoXo.xm"
+dest_files=["res://.godot/imported/Prikol Software @ Doom2D - XoXoXo.xm-8cae169de6c74ac4056bcf0454e038fa.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

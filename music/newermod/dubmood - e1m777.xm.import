@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://bhkxbk2j370ux"
+path="res://.godot/imported/dubmood - e1m777.xm-ad39a65fb5ab082e4ef5845262e7197f.res"
+
+[deps]
+
+source_file="res://music/newermod/dubmood - e1m777.xm"
+dest_files=["res://.godot/imported/dubmood - e1m777.xm-ad39a65fb5ab082e4ef5845262e7197f.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

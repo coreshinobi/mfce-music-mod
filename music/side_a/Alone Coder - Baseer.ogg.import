@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://drd7w8tq5ag3r"
+path="res://.godot/imported/Alone Coder - Baseer.ogg-bfe4b673041f91e76ef37054114e67be.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Alone Coder - Baseer.ogg"
+dest_files=["res://.godot/imported/Alone Coder - Baseer.ogg-bfe4b673041f91e76ef37054114e67be.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

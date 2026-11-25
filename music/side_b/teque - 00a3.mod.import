@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://bbcxbj3vr62dc"
+path="res://.godot/imported/teque - 00a3.mod-95d96cbac76e02bd22e4420a58b21aaf.res"
+
+[deps]
+
+source_file="res://music/side_b/teque - 00a3.mod"
+dest_files=["res://.godot/imported/teque - 00a3.mod-95d96cbac76e02bd22e4420a58b21aaf.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

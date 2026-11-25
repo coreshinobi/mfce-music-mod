@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dnmjeg77g80l3"
+path="res://.godot/imported/Vectorman 2 - Lava River (Scene 5 - Fired).ogg-386c98e7ba36e9b908536376e512e757.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Vectorman 2 - Lava River (Scene 5 - Fired).ogg"
+dest_files=["res://.godot/imported/Vectorman 2 - Lava River (Scene 5 - Fired).ogg-386c98e7ba36e9b908536376e512e757.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

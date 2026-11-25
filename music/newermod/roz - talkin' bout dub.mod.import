@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://bcrtq14h58r35"
+path="res://.godot/imported/roz - talkin' bout dub.mod-cf82c888979b86a6d48478f3f72ad241.res"
+
+[deps]
+
+source_file="res://music/newermod/roz - talkin' bout dub.mod"
+dest_files=["res://.godot/imported/roz - talkin' bout dub.mod-cf82c888979b86a6d48478f3f72ad241.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

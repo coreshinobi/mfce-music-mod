@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://i2pldhxh0v2x"
+path="res://.godot/imported/DELTARUMIX - Cute Mew Mew.ogg-f34d5c785f17d3be706da32e1a92d73c.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/DELTARUMIX - Cute Mew Mew.ogg"
+dest_files=["res://.godot/imported/DELTARUMIX - Cute Mew Mew.ogg-f34d5c785f17d3be706da32e1a92d73c.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

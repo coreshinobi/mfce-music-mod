@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://d26xygjwfd3kx"
+path="res://.godot/imported/Alexander 'Siren' Brandon @ unreal - nali chant.it-21d85685b2fc8dfb93e3c78e61e89e85.res"
+
+[deps]
+
+source_file="res://music/side_b/Alexander 'Siren' Brandon @ unreal - nali chant.it"
+dest_files=["res://.godot/imported/Alexander 'Siren' Brandon @ unreal - nali chant.it-21d85685b2fc8dfb93e3c78e61e89e85.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

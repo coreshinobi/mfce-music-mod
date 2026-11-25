@@ -3,14 +3,15 @@
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_at1jr"]
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_txgab"]
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="3_oy6t3"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="4_fe6rt"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_v5d83"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="4_wfd38"]
 [ext_resource type="Script" uid="uid://cugmax5psc2oo" path="res://engine/objects/players/player_camera_2d.gd" id="5_358cv"]
 [ext_resource type="Script" uid="uid://7byhkvlnfxa" path="res://components/secrets_manager/unlock_multiple.gd" id="5_fe6rt"]
 [ext_resource type="PackedScene" uid="uid://diivlwjl0y1i7" path="res://engine/objects/bosses/bowser/bowser_trigger.tscn" id="6_coe6e"]
-[ext_resource type="AudioStream" uid="uid://c4qgs76bb4a2k" path="res://music/extra/world_u/ultimate_koopa.ogg" id="7_s7y86"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="8_22jmk"]
 [ext_resource type="TileSet" uid="uid://co4kwf1fb2y5i" path="res://tilesets/castle/castle_tileset.tres" id="9_7osku"]
+[ext_resource type="AudioStream" uid="uid://csawnxb82rt7d" path="res://music/newermod/Last Legacy - Aminor Boss Battle.ogg" id="9_wfd38"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="10_gqsop"]
 [ext_resource type="FontFile" uid="uid://b1pi0t5byork2" path="res://engine/components/hud/hud_font.fnt" id="11_yrmbm"]
 [ext_resource type="Texture2D" uid="uid://cyetrjnc0k5oh" path="res://engine/tilesets/castle/gfx/bowser_portrait.png" id="12_868iq"]
@@ -171,14 +172,14 @@ colors = PackedColorArray(0, 0, 0, 0.792157, 0, 0, 0, 0)
 gradient = SubResource("Gradient_rft62")
 width = 112
 
-[sub_resource type="Resource" id="Resource_wfd38"]
+[sub_resource type="Resource" id="Resource_fe6rt"]
 resource_local_to_scene = true
 script = ExtResource("22_eedvc")
 creation_fallback_node = ExtResource("20_dn1a1")
 creation_nodepack = ExtResource("21_ka5y3")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_fe6rt"]
+[sub_resource type="Resource" id="Resource_mffvg"]
 resource_local_to_scene = true
 script = ExtResource("22_eedvc")
 creation_fallback_node = ExtResource("20_dn1a1")
@@ -208,6 +209,8 @@ metadata/_edit_vertical_guides_ = [2000.0]
 
 [node name="MusicLoader" parent="." unique_id=619612557 instance=ExtResource("3_oy6t3")]
 
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("4_fe6rt")]
+
 [node name="SecretUnlocker" parent="." unique_id=596987888 instance=ExtResource("4_wfd38")]
 secrets = Array[String](["world u good ending", "world u good ending in kevin mode", "world u easy completed", "world u easy in kevin mode"])
 unlock_kevin_even_if_from_middle = true
@@ -234,7 +237,8 @@ position = Vector2(1284, 240)
 curve = SubResource("Curve2D_41u8e")
 trigger_area = Rect2(-6, -32, 40, 544)
 trigger_bowser = NodePath("../BowserPoison")
-boss_music = ExtResource("7_s7y86")
+boss_music = ExtResource("9_wfd38")
+boss_music_volume = 0.5
 
 [node name="CameraArea" parent="." unique_id=1655348940 instance=ExtResource("8_22jmk")]
 offset_right = 1586.0
@@ -354,11 +358,11 @@ centered = false
 
 [node name="QuestionBlock" parent="." unique_id=2123551148 instance=ExtResource("19_4og7x")]
 position = Vector2(144, 240)
-result = SubResource("Resource_wfd38")
+result = SubResource("Resource_fe6rt")
 
 [node name="QuestionBlock2" parent="." unique_id=1275168295 instance=ExtResource("19_4og7x")]
 position = Vector2(272, 240)
-result = SubResource("Resource_fe6rt")
+result = SubResource("Resource_mffvg")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=606116812]
 collision_layer = 112

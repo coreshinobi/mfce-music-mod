@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://co0o6w51qctkn"
+path="res://.godot/imported/Algorithm - Final Application.ogg-7fcb61f925a795fba0bd71671c1039c2.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Algorithm - Final Application.ogg"
+dest_files=["res://.godot/imported/Algorithm - Final Application.ogg-7fcb61f925a795fba0bd71671c1039c2.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

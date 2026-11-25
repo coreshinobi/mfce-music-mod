@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b20dpcrtwx0g0"
+path="res://.godot/imported/Toby Fox, Spy Trolling - Death By Glamour (Early 90's Pop Mix).ogg-a67bf1490a1c590ad2f55fa72ae7567d.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Toby Fox, Spy Trolling - Death By Glamour (Early 90's Pop Mix).ogg"
+dest_files=["res://.godot/imported/Toby Fox, Spy Trolling - Death By Glamour (Early 90's Pop Mix).ogg-a67bf1490a1c590ad2f55fa72ae7567d.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=4.065
+bpm=0.0
+beat_count=0
+bar_beats=4

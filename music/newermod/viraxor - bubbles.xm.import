@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://cxv2xcu5eagh0"
+path="res://.godot/imported/viraxor - bubbles.xm-c390eedf8ef7c5b958b24a616a6bf5ab.res"
+
+[deps]
+
+source_file="res://music/newermod/viraxor - bubbles.xm"
+dest_files=["res://.godot/imported/viraxor - bubbles.xm-c390eedf8ef7c5b958b24a616a6bf5ab.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

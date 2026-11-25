@@ -3,9 +3,11 @@
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_mmr3n"]
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_t7i6p"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_8nqb1"]
-[ext_resource type="AudioStream" uid="uid://bs2tujgc67d1r" path="res://music/smw2-flower-garden.ogg" id="3_dmq0p"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_dpbmj"]
+[ext_resource type="AudioStream" uid="uid://b2dxckawy1l5f" path="res://music/newermod/J Majik (Innervsions) & Sudden Def - Aquarius.ogg" id="4_mhjp6"]
+[ext_resource type="AudioStream" uid="uid://dg0f3xmko7olx" path="res://music/side_b/raytrayza - the zebra crossing.xm" id="4_rpfqw"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="5_l6hd6"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="5_rpfqw"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="6_bytsw"]
 [ext_resource type="TileSet" uid="uid://dtvs1rult8kbe" path="res://tilesets/overworld_green/overworld_green.tres" id="7_7niwp"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="8_jhi4l"]
@@ -52,24 +54,6 @@ height = 480
 fill_from = Vector2(1, 0)
 fill_to = Vector2(1, 1)
 
-[sub_resource type="Resource" id="Resource_pfn8r"]
-resource_local_to_scene = true
-script = ExtResource("12_iquf5")
-creation_nodepack = ExtResource("11_5paw0")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_mhjp6"]
-resource_local_to_scene = true
-script = ExtResource("12_iquf5")
-creation_nodepack = ExtResource("11_5paw0")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_rpfqw"]
-resource_local_to_scene = true
-script = ExtResource("12_iquf5")
-creation_nodepack = ExtResource("11_5paw0")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_ebuan"]
 resource_local_to_scene = true
 script = ExtResource("12_iquf5")
@@ -79,14 +63,13 @@ trans_inheritances = 7
 [sub_resource type="Resource" id="Resource_dfqdv"]
 resource_local_to_scene = true
 script = ExtResource("12_iquf5")
-creation_fallback_node = ExtResource("14_bpm76")
-creation_nodepack = ExtResource("15_6sdmt")
+creation_nodepack = ExtResource("11_5paw0")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_htbk5"]
 resource_local_to_scene = true
 script = ExtResource("12_iquf5")
-creation_nodepack = ExtResource("22_cbgsf")
+creation_nodepack = ExtResource("11_5paw0")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_g4cq3"]
@@ -96,6 +79,25 @@ creation_nodepack = ExtResource("11_5paw0")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_1tlnd"]
+resource_local_to_scene = true
+script = ExtResource("12_iquf5")
+creation_fallback_node = ExtResource("14_bpm76")
+creation_nodepack = ExtResource("15_6sdmt")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_buh6u"]
+resource_local_to_scene = true
+script = ExtResource("12_iquf5")
+creation_nodepack = ExtResource("22_cbgsf")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_sycdl"]
+resource_local_to_scene = true
+script = ExtResource("12_iquf5")
+creation_nodepack = ExtResource("11_5paw0")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_i402o"]
 resource_local_to_scene = true
 script = ExtResource("12_iquf5")
 creation_nodepack = ExtResource("11_5paw0")
@@ -108,9 +110,14 @@ jump_to_scene = "res://stages/world_7/map_7.tscn"
 
 [node name="MusicLoader" type="Node" parent="." unique_id=1175842681]
 script = ExtResource("3_8nqb1")
-music = Array[Resource]([ExtResource("3_dmq0p")])
+music_var_2 = Array[Resource]([ExtResource("4_rpfqw")])
+var_2_volume_db = Array[float]([2.2])
+var_2_start_from_sec = Array[float]([8.3])
+music = Array[Resource]([ExtResource("4_mhjp6")])
 volume_db = Array[float]([0.0])
 start_from_sec = Array[float]([0.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("5_rpfqw")]
 
 [node name="Mario" parent="." unique_id=775318353 instance=ExtResource("4_dpbmj")]
 position = Vector2(144, 400)
@@ -231,27 +238,27 @@ phase = 147.82
 
 [node name="QuestionBlock" parent="." unique_id=1580065785 instance=ExtResource("10_or3bo")]
 position = Vector2(1392, 336)
-result = SubResource("Resource_pfn8r")
+result = SubResource("Resource_ebuan")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock2" parent="." unique_id=1188153584 instance=ExtResource("10_or3bo")]
 position = Vector2(1424, 336)
-result = SubResource("Resource_mhjp6")
+result = SubResource("Resource_dfqdv")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock3" parent="." unique_id=1269321923 instance=ExtResource("10_or3bo")]
 position = Vector2(1456, 336)
-result = SubResource("Resource_rpfqw")
+result = SubResource("Resource_htbk5")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock4" parent="." unique_id=25962333 instance=ExtResource("10_or3bo")]
 position = Vector2(1488, 336)
-result = SubResource("Resource_ebuan")
+result = SubResource("Resource_g4cq3")
 initially_visible_and_solid = false
 
 [node name="QuestionBlockFireFlower" parent="." unique_id=570828124 instance=ExtResource("13_2m5j2")]
 position = Vector2(5296, 272)
-result = SubResource("Resource_dfqdv")
+result = SubResource("Resource_1tlnd")
 
 [node name="KoopaRed" parent="." unique_id=1578894159 instance=ExtResource("19_yuahi")]
 position = Vector2(912, 400)
@@ -261,7 +268,7 @@ position = Vector2(1040, 400)
 
 [node name="QuestionBlockStar" parent="." unique_id=2023838998 instance=ExtResource("21_nbdxu")]
 position = Vector2(1328, 336)
-result = SubResource("Resource_htbk5")
+result = SubResource("Resource_buh6u")
 initially_visible_and_solid = false
 
 [node name="Brick" parent="." unique_id=1418385460 instance=ExtResource("23_vc08i")]
@@ -269,11 +276,11 @@ position = Vector2(5360, 272)
 
 [node name="QuestionBlock5" parent="." unique_id=1431863081 instance=ExtResource("10_or3bo")]
 position = Vector2(5392, 272)
-result = SubResource("Resource_g4cq3")
+result = SubResource("Resource_sycdl")
 
 [node name="QuestionBlock6" parent="." unique_id=2128949407 instance=ExtResource("10_or3bo")]
 position = Vector2(5328, 272)
-result = SubResource("Resource_1tlnd")
+result = SubResource("Resource_i402o")
 
 [node name="Coin" parent="." unique_id=971119114 instance=ExtResource("11_5paw0")]
 position = Vector2(2384, 304)

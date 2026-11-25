@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://du0ka3j6j18fx"
+path="res://.godot/imported/fireboy - no joke with the k (cut).mod-529c44825d01bb691eced6387c64ad99.res"
+
+[deps]
+
+source_file="res://music/side_c/fireboy - no joke with the k (cut).mod"
+dest_files=["res://.godot/imported/fireboy - no joke with the k (cut).mod-529c44825d01bb691eced6387c64ad99.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cf4sdq4d0rsyf"
+path="res://.godot/imported/ADSRe - Envious Eyes.ogg-9f6a2e8d1bd680c682a5f4800e98d61c.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/ADSRe - Envious Eyes.ogg"
+dest_files=["res://.godot/imported/ADSRe - Envious Eyes.ogg-9f6a2e8d1bd680c682a5f4800e98d61c.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

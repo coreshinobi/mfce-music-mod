@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://deiscf7r63ilc"
+path="res://.godot/imported/Algorithm - The Chasm.ogg-f09d47b5af21436b3a5ee73b55ce287e.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Algorithm - The Chasm.ogg"
+dest_files=["res://.godot/imported/Algorithm - The Chasm.ogg-f09d47b5af21436b3a5ee73b55ce287e.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

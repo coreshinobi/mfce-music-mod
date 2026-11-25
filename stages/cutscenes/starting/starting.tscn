@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" uid="uid://bjpekmrx5xnob" path="res://stages/cutscenes/starting/scripts/starting.gd" id="1_1cb5a"]
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="1_v8bnp"]
-[ext_resource type="AudioStream" uid="uid://86lfvmd71tb0" path="res://music/cutscene/smw-starting_part_1.ogg" id="2_sqrb7"]
 [ext_resource type="FontVariation" uid="uid://4h0cbbutybo2" path="res://engine/fonts/font_variations/mister_earl_variation.tres" id="3_0s5t3"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_tcdwv"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="4_8m2vr"]
+[ext_resource type="AudioStream" uid="uid://d1xpy0vj21n4u" path="res://music/newermod/apollo justice ace attorney - court is now in session.ogg" id="5_timhl"]
 [ext_resource type="Script" uid="uid://c35urvf32qeud" path="res://stages/cutscenes/starting/scripts/cloud_bg.gd" id="9_qfqn8"]
 [ext_resource type="Script" uid="uid://rh8bbo0ntugd" path="res://stages/cutscenes/starting/scripts/camera_path.gd" id="10_kxwd7"]
 [ext_resource type="Texture2D" uid="uid://dlcqe8o0t0uih" path="res://engine/tilesets/overworld/gfx/cloud.png" id="10_mrmqq"]
@@ -298,7 +298,7 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("2_sqrb7")])
+music = Array[Resource]([ExtResource("5_timhl")])
 play_immediately = false
 stop_all_music_on_start = false
 play_globally = 2

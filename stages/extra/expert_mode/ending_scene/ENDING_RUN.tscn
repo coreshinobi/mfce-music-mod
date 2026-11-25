@@ -3,11 +3,13 @@
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_vb6jv"]
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_iss6s"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_1xlnr"]
-[ext_resource type="AudioStream" uid="uid://pjo0ppg6i6lu" path="res://music/extra/expert_mode/overdrive.s3m" id="4_2kxpu"]
+[ext_resource type="AudioStream" uid="uid://dbdahe66kvtao" path="res://music/newermod/panik - b00m-crash-m00.mod" id="4_lgipb"]
+[ext_resource type="AudioStream" uid="uid://b2eyd8ihd8qpn" path="res://music/newermod/Unknown Modland Artist - Fuck You.mod.mod" id="4_mvw6i"]
 [ext_resource type="PackedScene" uid="uid://cvigdw7nldify" path="res://objects/antiafk_expert_mode/antiafk_expert_mode.tscn" id="5_6j0rj"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="6_7q0yb"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="6_86jr5"]
 [ext_resource type="AudioStream" uid="uid://oduel0qr6anh" path="res://sfx/ending_anim_2.ogg" id="6_dekc4"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="6_lgipb"]
 [ext_resource type="AudioStream" uid="uid://cusrgc7jqf7qy" path="res://music/extra/expert_mode/short-die.ogg" id="7_idbb7"]
 [ext_resource type="PackedScene" uid="uid://byc6nhxi3as3a" path="res://objects/burning_surface_modifier/burning_surface.tscn" id="9_0cp38"]
 [ext_resource type="PackedScene" uid="uid://dtfxrtsyih4dm" path="res://objects/burning_surface_modifier/burning_surface_modifier.tscn" id="10_y8iwr"]
@@ -531,13 +533,17 @@ metadata/_edit_lock_ = true
 
 [node name="MusicLoader" type="Node" parent="." unique_id=106102719]
 script = ExtResource("3_1xlnr")
-music = Array[Resource]([ExtResource("4_2kxpu")])
+music_var_2 = Array[Resource]([ExtResource("4_lgipb")])
+music = Array[Resource]([ExtResource("4_mvw6i")])
 can_pause = true
-volume_db = Array[float]([-2.5])
+volume_db = Array[float]([-0.6])
 
 [node name="AntiafkExpertMode" parent="MusicLoader" unique_id=1638051861 instance=ExtResource("5_6j0rj")]
 layer = 11
 item_store_enabled = false
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("6_lgipb")]
+text = Array[String](["Unknown Modland Artist - FUCK YOU.MOD"])
 
 [node name="Destruction" type="AudioStreamPlayer" parent="." unique_id=2146479631]
 stream = ExtResource("6_dekc4")

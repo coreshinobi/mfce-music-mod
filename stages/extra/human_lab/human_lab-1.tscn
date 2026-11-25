@@ -1,10 +1,13 @@
 [gd_scene format=4 uid="uid://bj4v7y1ejl7wc"]
 
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_00qvl"]
-[ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_pf3is"]
+[ext_resource type="AudioStream" uid="uid://lskqu7a66ntk" path="res://music/newermod/Hi Hi Puffy AmiYumi Kaznapped - Stage Clear.ogg" id="2_5xx68"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_r3aea"]
+[ext_resource type="AudioStream" uid="uid://b8rwnll6o0aqt" path="res://music/side_b/Terry - Baby Chip.mod" id="4_5jsjl"]
+[ext_resource type="AudioStream" uid="uid://1evbl885ffit" path="res://music/side_a/retrokidknuckles - handling the ropes.ogg" id="4_5xx68"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_45dvo"]
-[ext_resource type="AudioStream" uid="uid://no8rqi6mwk8c" path="res://music/smw-overworld.ogg" id="5_kwu5x"]
+[ext_resource type="AudioStream" uid="uid://d8lkyfqm0okt" path="res://music/side_a/Hi Hi Puffy AmiYumi Kaznapped - World 1 - America.ogg" id="4_chs7e"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="5_5jsjl"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="6_71fge"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_egiyb"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="10_fl8a3"]
@@ -16,30 +19,31 @@
 [ext_resource type="Script" uid="uid://0h3x5dwndovw" path="res://engine/scripts/nodes/effects/quality_visible.gd" id="15_q5qps"]
 [ext_resource type="Texture2D" uid="uid://vmkr0eaks2fr" path="res://gfx/fancy_graphics/bighill.png" id="16_78ypd"]
 [ext_resource type="Script" uid="uid://cn0a7wob2414p" path="res://engine/objects/detectors/player_detection.gd" id="16_v0cmt"]
-[ext_resource type="PackedScene" uid="uid://bi2hg5giakfce" path="res://engine/objects/enemies/human_lab/goomba/goomba_clone.tscn" id="16_v2pui"]
+[ext_resource type="PackedScene" uid="uid://qcjbejcppc1f" path="res://objects/hhpayclones/ami_clone/ami_clone.tscn" id="16_v2pui"]
 [ext_resource type="Texture2D" uid="uid://6bwpp568bmq0" path="res://gfx/fancy_graphics/giant_clouds.png" id="17_m8wan"]
 [ext_resource type="Texture2D" uid="uid://bmasn65vobox6" path="res://engine/tilesets/overworld/gfx/tree_animated.png" id="17_obamp"]
 [ext_resource type="Script" uid="uid://dpnc0xvkxt846" path="res://engine/objects/enemies/human_lab/container/container_area_node.gd" id="17_r34gu"]
 [ext_resource type="PackedScene" uid="uid://ckblbi2g1ps1y" path="res://engine/objects/enemies/human_lab/container/container_bubbles.tscn" id="18_5roe1"]
 [ext_resource type="PackedScene" uid="uid://bwy11odywkm4d" path="res://engine/objects/enemies/human_lab/container/container.tscn" id="18_uvm2i"]
-[ext_resource type="Texture2D" uid="uid://do6qdoyrmjh1t" path="res://engine/objects/enemies/human_lab/container/textures/clones/clone_01.png" id="19_q8i1c"]
-[ext_resource type="Texture2D" uid="uid://b3vs8it84iaxo" path="res://engine/objects/enemies/human_lab/container/textures/clones/clone_coder.png" id="20_8v78s"]
 [ext_resource type="Texture2D" uid="uid://b05pg40drmew" path="res://engine/objects/signs/sign.png" id="21_6l852"]
-[ext_resource type="Texture2D" uid="uid://df0q636r4vatc" path="res://engine/objects/enemies/human_lab/container/textures/clones/clone_jaws.png" id="21_hwknv"]
 [ext_resource type="Texture2D" uid="uid://cxr600uhxycvv" path="res://engine/objects/enemies/human_lab/container/textures/clones/mutant.png" id="22_hcco7"]
 [ext_resource type="Texture2D" uid="uid://0kdlt7lc7g6d" path="res://gfx/sign/sign_small_upside_down.png" id="22_n1lgl"]
 [ext_resource type="Texture2D" uid="uid://dbxt1cl71fxix" path="res://gfx/sign/sign_small_upside_down_broken.png" id="23_qrt5d"]
+[ext_resource type="Texture2D" uid="uid://c8gg4cakt1bwf" path="res://objects/hhpayclones/container/ami_clone_container.png" id="25_5xx68"]
 [ext_resource type="Texture2D" uid="uid://cgjvhllg1j8bq" path="res://engine/objects/enemies/human_lab/container/textures/clones/zorro.png" id="25_epbcx"]
+[ext_resource type="Texture2D" uid="uid://dydtjcgikjv06" path="res://objects/hhpayclones/container/yumi_clone_container.png" id="26_5xx68"]
 [ext_resource type="Texture2D" uid="uid://clo8fqwt6rp3h" path="res://engine/objects/enemies/human_lab/container/textures/clones/star_closed.png" id="26_g3nn6"]
+[ext_resource type="Texture2D" uid="uid://bsxyl3qrdty0m" path="res://objects/hhpayclones/container/kaz_clone_container.png" id="27_6jg50"]
 [ext_resource type="FontFile" uid="uid://dod5x6pna7fub" path="res://engine/fonts/comix_heavy.ttf" id="27_ayka0"]
-[ext_resource type="Texture2D" uid="uid://doakxepear2fk" path="res://engine/objects/enemies/human_lab/container/textures/clones/spiny.png" id="27_kbvkp"]
-[ext_resource type="Texture2D" uid="uid://hd10qceb1lo0" path="res://engine/objects/enemies/human_lab/container/textures/clones/big_clone_human_b.png" id="28_y54hd"]
-[ext_resource type="Texture2D" uid="uid://dbysvvbn2nr4l" path="res://engine/objects/enemies/human_lab/container/textures/clones/cascadeur.png" id="29_nqq2v"]
+[ext_resource type="Texture2D" uid="uid://bjuitnqhj2uvm" path="res://objects/hhpayclones/container/harmony_clone_container.png" id="31_dfia7"]
+[ext_resource type="Texture2D" uid="uid://bkgqyhm5ritng" path="res://objects/hhpayclones/container/julie_clone_container.png" id="32_5xx68"]
+[ext_resource type="Texture2D" uid="uid://bqql0n7a38u4j" path="res://objects/hhpayclones/container/atchan_clone_container.png" id="33_5xx68"]
 [ext_resource type="FontVariation" uid="uid://qyudyhura28u" path="res://gfx/fonts/comixheavy_condensed.tres" id="34_uduht"]
 [ext_resource type="PackedScene" uid="uid://b8kgbn8f7lvf0" path="res://engine/objects/items/coin/coin.tscn" id="35_1ubmy"]
 [ext_resource type="PackedScene" uid="uid://b84orv5gcw2h7" path="res://objects/name_node/name_node.tscn" id="35_ixwpr"]
 [ext_resource type="PackedScene" uid="uid://dor0tmdd8itya" path="res://tilesets/overworld_green/scenes/grass.tscn" id="36_bbs2h"]
 [ext_resource type="Script" uid="uid://cp4xamvr25vij" path="res://objects/name_node/name_node.gd" id="36_chs7e"]
+[ext_resource type="Texture2D" uid="uid://bgvmhpdvcdrpp" path="res://gfx/sign/sign_minix_welcome.png" id="37_6jg50"]
 [ext_resource type="PackedScene" uid="uid://rhrex2vth7at" path="res://engine/objects/platform/platform_path.tscn" id="37_ire83"]
 [ext_resource type="PackedScene" uid="uid://b7tkooebfam48" path="res://engine/objects/bumping_blocks/question_block/templates/Fire Flower Question Block.tscn" id="38_se21n"]
 [ext_resource type="PackedScene" uid="uid://b71msw28e37a" path="res://engine/objects/powerups/red_mushroom/red_mushroom.tscn" id="39_dngmd"]
@@ -52,8 +56,8 @@
 [ext_resource type="PackedScene" uid="uid://cv7p8xyw12pbx" path="res://engine/objects/bumping_blocks/question_block/templates/Life Mushroom Question Block.tscn" id="46_r5ogb"]
 [ext_resource type="PackedScene" uid="uid://ltoqkqmxpt65" path="res://engine/objects/powerups/life_mushroom/life_mushroom.tscn" id="47_x6qjo"]
 [ext_resource type="PackedScene" uid="uid://dfm7d4qtja67b" path="res://engine/objects/core/finish_line/finish_line.tscn" id="48_u7rur"]
-[ext_resource type="PackedScene" uid="uid://bpdl22ol10045" path="res://engine/objects/enemies/human_lab/koopa_bro/big_human_clone_b.tscn" id="49_hehds"]
-[ext_resource type="PackedScene" uid="uid://tcf0l7fpwwp1" path="res://engine/objects/enemies/human_lab/piranha/jaws_clone.tscn" id="49_m5k5p"]
+[ext_resource type="PackedScene" uid="uid://c3vc7mk4fnxu6" path="res://objects/hhpayclones/julie_clone/julie_clone.tscn" id="49_hehds"]
+[ext_resource type="PackedScene" uid="uid://btg740vdsjvn" path="res://objects/hhpayclones/kaz_clone/kaz_clone.tscn" id="49_m5k5p"]
 [ext_resource type="Texture2D" uid="uid://ba6e7modacog2" path="res://engine/objects/enemies/human_lab/container/textures/container_broken.png" id="51_5n4l6"]
 [ext_resource type="PackedScene" uid="uid://ddwxc43m3q1c6" path="res://engine/objects/core/checkpoint/checkpoint.tscn" id="51_7uixo"]
 [ext_resource type="PackedScene" uid="uid://cem1tcrhqrauj" path="res://engine/objects/enemies/hammer_bros/hammer_bro_jump_marker.tscn" id="54_7bocs"]
@@ -136,55 +140,25 @@ animations = [{
 "speed": 8.0
 }]
 
-[sub_resource type="Resource" id="Resource_iogux"]
-resource_local_to_scene = true
-script = ExtResource("41_ya28q")
-creation_fallback_node = ExtResource("39_dngmd")
-creation_nodepack = ExtResource("40_bs2ta")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_chs7e"]
-resource_local_to_scene = true
-script = ExtResource("41_ya28q")
-creation_fallback_node = ExtResource("39_dngmd")
-creation_nodepack = ExtResource("40_bs2ta")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_5jsjl"]
-resource_local_to_scene = true
-script = ExtResource("41_ya28q")
-creation_fallback_node = ExtResource("39_dngmd")
-creation_nodepack = ExtResource("40_bs2ta")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_5xx68"]
-resource_local_to_scene = true
-script = ExtResource("41_ya28q")
-creation_nodepack = ExtResource("35_1ubmy")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_6jg50"]
-resource_local_to_scene = true
-script = ExtResource("41_ya28q")
-creation_nodepack = ExtResource("35_1ubmy")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_dfia7"]
 resource_local_to_scene = true
 script = ExtResource("41_ya28q")
-creation_nodepack = ExtResource("35_1ubmy")
+creation_fallback_node = ExtResource("39_dngmd")
+creation_nodepack = ExtResource("40_bs2ta")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_1djkt"]
 resource_local_to_scene = true
 script = ExtResource("41_ya28q")
-creation_nodepack = ExtResource("35_1ubmy")
+creation_fallback_node = ExtResource("39_dngmd")
+creation_nodepack = ExtResource("40_bs2ta")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_x8oft"]
 resource_local_to_scene = true
 script = ExtResource("41_ya28q")
-creation_nodepack = ExtResource("35_1ubmy")
+creation_fallback_node = ExtResource("39_dngmd")
+creation_nodepack = ExtResource("40_bs2ta")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_16qbn"]
@@ -220,13 +194,13 @@ trans_inheritances = 7
 [sub_resource type="Resource" id="Resource_s41ji"]
 resource_local_to_scene = true
 script = ExtResource("41_ya28q")
-creation_nodepack = ExtResource("45_y5xj3")
+creation_nodepack = ExtResource("35_1ubmy")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_8ixw1"]
 resource_local_to_scene = true
 script = ExtResource("41_ya28q")
-creation_nodepack = ExtResource("47_x6qjo")
+creation_nodepack = ExtResource("35_1ubmy")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_r38as"]
@@ -241,16 +215,54 @@ script = ExtResource("41_ya28q")
 creation_nodepack = ExtResource("35_1ubmy")
 trans_inheritances = 7
 
+[sub_resource type="Resource" id="Resource_sw0to"]
+resource_local_to_scene = true
+script = ExtResource("41_ya28q")
+creation_nodepack = ExtResource("35_1ubmy")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_o4lq4"]
+resource_local_to_scene = true
+script = ExtResource("41_ya28q")
+creation_nodepack = ExtResource("45_y5xj3")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_0wukc"]
+resource_local_to_scene = true
+script = ExtResource("41_ya28q")
+creation_nodepack = ExtResource("47_x6qjo")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_lu1u8"]
+resource_local_to_scene = true
+script = ExtResource("41_ya28q")
+creation_nodepack = ExtResource("35_1ubmy")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_7b8et"]
+resource_local_to_scene = true
+script = ExtResource("41_ya28q")
+creation_nodepack = ExtResource("35_1ubmy")
+trans_inheritances = 7
+
 [node name="HumanLab-1" type="Node2D" unique_id=2027187811]
 script = ExtResource("1_00qvl")
 time = -1
-completion_music = ExtResource("2_pf3is")
+completion_music = ExtResource("2_5xx68")
 jump_to_scene = "res://stages/extra/human_lab/human_lab_map.tscn"
+completion_music_delay_sec = 3.0
 
 [node name="MusicLoader" type="Node" parent="." unique_id=1413585134]
 script = ExtResource("3_r3aea")
-music = Array[Resource]([ExtResource("5_kwu5x")])
-volume_db = Array[float]([4.0])
+tweaked_completion_music = ExtResource("2_5xx68")
+music_var_1 = Array[Resource]([ExtResource("4_5xx68")])
+music_var_2 = Array[Resource]([ExtResource("4_5jsjl")])
+var_1_volume_db = Array[float]([0.8])
+var_2_volume_db = Array[float]([1.5])
+music = Array[Resource]([ExtResource("4_chs7e")])
+volume_db = Array[float]([0.9])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("5_5jsjl")]
 
 [node name="Mario" parent="." unique_id=816650972 instance=ExtResource("4_45dvo")]
 position = Vector2(112, 400)
@@ -657,18 +669,18 @@ centered = false
 
 [node name="ContainerBubbles4" parent="." unique_id=689263291 instance=ExtResource("18_5roe1")]
 position = Vector2(848, 124)
-sprite = ExtResource("19_q8i1c")
+sprite = ExtResource("25_5xx68")
 
 [node name="ContainerBubbles" parent="." unique_id=277460060 instance=ExtResource("18_5roe1")]
 position = Vector2(944, 124)
 
 [node name="ContainerBubbles2" parent="." unique_id=343901929 instance=ExtResource("18_5roe1")]
 position = Vector2(1040, 124)
-sprite = ExtResource("20_8v78s")
+sprite = ExtResource("26_5xx68")
 
 [node name="ContainerBubbles3" parent="." unique_id=2059498139 instance=ExtResource("18_5roe1")]
 position = Vector2(1136, 124)
-sprite = ExtResource("21_hwknv")
+sprite = ExtResource("27_6jg50")
 
 [node name="ContainerBubbles5" parent="." unique_id=1783323440 instance=ExtResource("18_5roe1")]
 position = Vector2(2096, 124)
@@ -684,15 +696,15 @@ sprite = ExtResource("26_g3nn6")
 
 [node name="ContainerBubbles8" parent="." unique_id=1033496164 instance=ExtResource("18_5roe1")]
 position = Vector2(2384, 124)
-sprite = ExtResource("27_kbvkp")
+sprite = ExtResource("31_dfia7")
 
 [node name="ContainerBubbles9" parent="." unique_id=1664329471 instance=ExtResource("18_5roe1")]
 position = Vector2(2480, 124)
-sprite = ExtResource("28_y54hd")
+sprite = ExtResource("32_5xx68")
 
 [node name="ContainerBubbles10" parent="." unique_id=1580668686 instance=ExtResource("18_5roe1")]
 position = Vector2(2576, 124)
-sprite = ExtResource("29_nqq2v")
+sprite = ExtResource("33_5xx68")
 
 [node name="Container" parent="." unique_id=1215113586 instance=ExtResource("18_uvm2i")]
 position = Vector2(1296, 356)
@@ -722,9 +734,83 @@ theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("27_ayka0")
 theme_override_font_sizes/font_size = 11
-text = "human
-laboratory
-world"
+text = "hi hi puffy
+amiyumi
+clones!!!"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Sign2" type="Sprite2D" parent="signs" unique_id=746378334]
+z_index = 2
+position = Vector2(990, 41)
+texture = ExtResource("37_6jg50")
+
+[node name="Label" type="Label" parent="signs/Sign2" unique_id=659024755]
+offset_left = -75.0
+offset_top = -26.0
+offset_right = 76.0
+offset_bottom = 28.0
+theme_override_colors/font_outline_color = Color(0, 0, 0.360784, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("27_ayka0")
+theme_override_font_sizes/font_size = 17
+text = "THE MAIN CAST!"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Sign3" type="Sprite2D" parent="signs" unique_id=1210816399]
+z_index = 2
+position = Vector2(2334, 40)
+texture = ExtResource("37_6jg50")
+
+[node name="Label" type="Label" parent="signs/Sign3" unique_id=1980466039]
+offset_left = -75.0
+offset_top = -35.0
+offset_right = 76.0
+offset_bottom = 19.0
+theme_override_colors/font_outline_color = Color(0, 0, 0.360784, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("27_ayka0")
+theme_override_font_sizes/font_size = 13
+text = "Main cast Pt. 2"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="signs/Sign3" unique_id=1730392014]
+offset_left = -75.0
+offset_top = -25.0
+offset_right = 76.0
+offset_bottom = 29.0
+theme_override_colors/font_outline_color = Color(0, 0, 0.360784, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("27_ayka0")
+theme_override_font_sizes/font_size = 8
+text = "And some honorable"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label3" type="Label" parent="signs/Sign3" unique_id=1092409194]
+offset_left = -75.0
+offset_top = -18.0
+offset_right = 76.0
+offset_bottom = 36.0
+theme_override_colors/font_outline_color = Color(0, 0, 0.360784, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("27_ayka0")
+theme_override_font_sizes/font_size = 8
+text = "mentions :P"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
@@ -748,7 +834,8 @@ theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("27_ayka0")
 theme_override_font_sizes/font_size = 11
-text = "clone 1"
+text = "Ami
+Clone"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
@@ -759,32 +846,32 @@ position = Vector2(-848, -218)
 
 [node name="Label2" type="Label" parent="signs/SignSmallUpsideDown/NameNode2" unique_id=908057232]
 offset_left = 802.0
-offset_top = 203.0
+offset_top = 202.0
 offset_right = 894.0
-offset_bottom = 257.0
+offset_bottom = 256.0
 theme_override_colors/font_outline_color = Color(0, 0, 0.356863, 1)
 theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("27_ayka0")
 theme_override_font_sizes/font_size = 11
-text = "RAMIREY"
+text = "AMI"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Label3" type="Label" parent="signs/SignSmallUpsideDown/NameNode2" unique_id=1869097705]
-offset_left = 802.0
-offset_top = 206.0
-offset_right = 894.0
-offset_bottom = 260.0
+offset_left = 801.0
+offset_top = 204.0
+offset_right = 893.0
+offset_bottom = 258.0
 theme_override_colors/font_outline_color = Color(0, 0, 0.356863, 1)
 theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("27_ayka0")
 theme_override_font_sizes/font_size = 11
 text = "
-V0.2"
+ONUKI"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
@@ -808,8 +895,8 @@ theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("27_ayka0")
 theme_override_font_sizes/font_size = 11
-text = "coder
-clone b"
+text = "Yumi
+Clone"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
@@ -819,33 +906,33 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(-848, -218)
 
 [node name="Label2" type="Label" parent="signs/SignSmallUpsideDown2/NameNode2" unique_id=184440261]
-offset_left = 802.0
-offset_top = 203.0
-offset_right = 894.0
-offset_bottom = 257.0
+offset_left = 801.0
+offset_top = 202.0
+offset_right = 893.0
+offset_bottom = 256.0
 theme_override_colors/font_outline_color = Color(0, 0, 0.356863, 1)
 theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("27_ayka0")
 theme_override_font_sizes/font_size = 11
-text = "PITI"
+text = "YUMI"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Label3" type="Label" parent="signs/SignSmallUpsideDown2/NameNode2" unique_id=24922781]
-offset_left = 813.0
-offset_top = 214.0
-offset_right = 913.0
-offset_bottom = 268.0
+offset_left = 810.99994
+offset_top = 211.0
+offset_right = 910.99994
+offset_bottom = 265.0
 scale = Vector2(0.72, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0.356863, 1)
 theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("27_ayka0")
 theme_override_font_sizes/font_size = 11
-text = "SYSTEM FAILURE"
+text = "YOSHIMURA"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
@@ -868,8 +955,8 @@ theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("27_ayka0")
 theme_override_font_sizes/font_size = 11
-text = "jaws
-clone"
+text = "Kaz
+Clone"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
@@ -879,33 +966,32 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(-848, -218)
 
 [node name="Label2" type="Label" parent="signs/SignSmallUpsideDown3/NameNode2" unique_id=823525625]
-offset_left = 802.0
-offset_top = 205.0
-offset_right = 894.0
-offset_bottom = 259.0
+offset_left = 803.0
+offset_top = 202.0
+offset_right = 895.0
+offset_bottom = 256.0
 theme_override_colors/font_outline_color = Color(0, 0, 0.356863, 1)
 theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("27_ayka0")
 theme_override_font_sizes/font_size = 11
-text = "JAKOO"
+text = "KAZ"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
 metadata/_edit_use_anchors_ = true
 
-[node name="Label3" type="Label" parent="signs/SignSmallUpsideDown3/NameNode2" unique_id=1772521599]
-offset_left = 887.0
-offset_top = 195.0
-offset_right = 979.0
-offset_bottom = 249.0
-rotation = 1.57079
+[node name="Label4" type="Label" parent="signs/SignSmallUpsideDown3/NameNode2" unique_id=638173151]
+offset_left = 803.0
+offset_top = 211.0
+offset_right = 895.0
+offset_bottom = 265.0
 theme_override_colors/font_outline_color = Color(0, 0, 0.356863, 1)
 theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("27_ayka0")
-theme_override_font_sizes/font_size = 19
-text = ")"
+theme_override_font_sizes/font_size = 11
+text = "HARADA"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
@@ -1128,7 +1214,8 @@ theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("27_ayka0")
 theme_override_font_sizes/font_size = 11
-text = "clone 3/a"
+text = "Harmony
+clone"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
@@ -1138,33 +1225,32 @@ metadata/_edit_use_anchors_ = true
 script = ExtResource("36_chs7e")
 
 [node name="Label2" type="Label" parent="signs/SignSmallUpsideDown7/Node2D2" unique_id=1181385859]
-offset_left = -65.0
-offset_top = -9.0
-offset_right = 27.0
-offset_bottom = 45.0
+offset_left = -45.0
+offset_top = -18.0
+offset_right = 47.0
+offset_bottom = 36.0
 theme_override_colors/font_outline_color = Color(0, 0, 0.356863, 1)
 theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("27_ayka0")
 theme_override_font_sizes/font_size = 8
-text = "SIR"
+text = "I'm your #1"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Label3" type="Label" parent="signs/SignSmallUpsideDown7/Node2D2" unique_id=1074287368]
-offset_left = -8.0
-offset_top = -4.0
-offset_right = 84.0
-offset_bottom = 50.0
+offset_left = -14.0
+offset_top = -8.0
+offset_right = 78.0
+offset_bottom = 46.0
 theme_override_colors/font_outline_color = Color(0, 0, 0.356863, 1)
 theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("27_ayka0")
-theme_override_font_sizes/font_size = 11
-text = "ARTUS
-"
+theme_override_font_sizes/font_size = 16
+text = "FAN"
 vertical_alignment = 1
 uppercase = true
 metadata/_edit_use_anchors_ = true
@@ -1187,8 +1273,8 @@ theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("27_ayka0")
 theme_override_font_sizes/font_size = 11
-text = "big clone
-human b"
+text = "Julie
+Clone"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
@@ -1199,15 +1285,31 @@ script = ExtResource("36_chs7e")
 
 [node name="Label2" type="Label" parent="signs/SignSmallUpsideDown8/Node2D2" unique_id=1744153896]
 offset_left = -46.0
-offset_top = -11.0
+offset_top = -16.0
 offset_right = 46.0
-offset_bottom = 43.0
+offset_bottom = 38.0
 theme_override_colors/font_outline_color = Color(0, 0, 0.356863, 1)
 theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("27_ayka0")
 theme_override_font_sizes/font_size = 11
-text = "MISIEK"
+text = "Julie"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label3" type="Label" parent="signs/SignSmallUpsideDown8/Node2D2" unique_id=1423511422]
+offset_left = -46.0
+offset_top = -6.0
+offset_right = 46.0
+offset_bottom = 48.0
+theme_override_colors/font_outline_color = Color(0, 0, 0.356863, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("27_ayka0")
+theme_override_font_sizes/font_size = 11
+text = "Hinikawa"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
@@ -1231,8 +1333,8 @@ theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("27_ayka0")
 theme_override_font_sizes/font_size = 11
-text = "stuntman
-clone 2/a"
+text = "atchan
+clone"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
@@ -1242,17 +1344,32 @@ metadata/_edit_use_anchors_ = true
 script = ExtResource("36_chs7e")
 
 [node name="Label2" type="Label" parent="signs/SignSmallUpsideDown9/Node2D2" unique_id=705222489]
-offset_left = -46.0
-offset_top = -11.0
-offset_right = 46.0
-offset_bottom = 43.0
+offset_left = -45.0
+offset_top = -15.0
+offset_right = 47.0
+offset_bottom = 39.0
 theme_override_colors/font_outline_color = Color(0, 0, 0.356863, 1)
 theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("27_ayka0")
-theme_override_font_sizes/font_size = 11
-text = "MISIEK
-KAL-EL"
+theme_override_font_sizes/font_size = 13
+text = "atchan is"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label3" type="Label" parent="signs/SignSmallUpsideDown9/Node2D2" unique_id=1158088499]
+offset_left = -45.0
+offset_top = -5.0
+offset_right = 47.0
+offset_bottom = 49.0
+theme_override_colors/font_outline_color = Color(0, 0, 0.356863, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("27_ayka0")
+theme_override_font_sizes/font_size = 10
+text = "now a clone!"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
@@ -1276,16 +1393,16 @@ falling_enabled = true
 
 [node name="QuestionBlockFireFlower" parent="." unique_id=38338004 instance=ExtResource("38_se21n")]
 position = Vector2(4208, 272)
-result = SubResource("Resource_iogux")
+result = SubResource("Resource_dfia7")
 
 [node name="QuestionBlockFireFlower2" parent="." unique_id=1364481540 instance=ExtResource("38_se21n")]
 position = Vector2(8816, 144)
-result = SubResource("Resource_chs7e")
+result = SubResource("Resource_1djkt")
 initially_visible_and_solid = false
 
 [node name="QuestionBlockFireFlower3" parent="." unique_id=1976838478 instance=ExtResource("38_se21n")]
 position = Vector2(8912, 304)
-result = SubResource("Resource_5jsjl")
+result = SubResource("Resource_x8oft")
 initially_visible_and_solid = false
 
 [node name="Node2D2" type="Node2D" parent="." unique_id=1041019998]
@@ -1703,62 +1820,62 @@ position = Vector2(5328, 48)
 
 [node name="QuestionBlock" parent="Node2D2" unique_id=785838906 instance=ExtResource("43_quut6")]
 position = Vector2(7248, 112)
-result = SubResource("Resource_5xx68")
+result = SubResource("Resource_16qbn")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock5" parent="Node2D2" unique_id=915158567 instance=ExtResource("43_quut6")]
 position = Vector2(7248, 272)
-result = SubResource("Resource_6jg50")
+result = SubResource("Resource_uxenu")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock6" parent="Node2D2" unique_id=719114415 instance=ExtResource("43_quut6")]
 position = Vector2(7280, 272)
-result = SubResource("Resource_dfia7")
+result = SubResource("Resource_2u77x")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock7" parent="Node2D2" unique_id=56301717 instance=ExtResource("43_quut6")]
 position = Vector2(7344, 272)
-result = SubResource("Resource_1djkt")
+result = SubResource("Resource_hsfgs")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock8" parent="Node2D2" unique_id=2129727040 instance=ExtResource("43_quut6")]
 position = Vector2(7440, 112)
-result = SubResource("Resource_x8oft")
+result = SubResource("Resource_875n4")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock2" parent="Node2D2" unique_id=1517260089 instance=ExtResource("43_quut6")]
 position = Vector2(7280, 112)
-result = SubResource("Resource_16qbn")
+result = SubResource("Resource_s41ji")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock3" parent="Node2D2" unique_id=63174898 instance=ExtResource("43_quut6")]
 position = Vector2(7312, 112)
-result = SubResource("Resource_uxenu")
+result = SubResource("Resource_8ixw1")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock4" parent="Node2D2" unique_id=1512482748 instance=ExtResource("43_quut6")]
 position = Vector2(7344, 112)
-result = SubResource("Resource_2u77x")
+result = SubResource("Resource_r38as")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock9" parent="Node2D2" unique_id=1740057098 instance=ExtResource("43_quut6")]
 position = Vector2(7440, 272)
-result = SubResource("Resource_hsfgs")
+result = SubResource("Resource_e5thd")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock10" parent="Node2D2" unique_id=881266395 instance=ExtResource("43_quut6")]
 position = Vector2(7472, 272)
-result = SubResource("Resource_875n4")
+result = SubResource("Resource_sw0to")
 initially_visible_and_solid = false
 
 [node name="QuestionBlockStar" parent="Node2D2" unique_id=1343493054 instance=ExtResource("44_gnnej")]
 position = Vector2(7472, 112)
-result = SubResource("Resource_s41ji")
+result = SubResource("Resource_o4lq4")
 initially_visible_and_solid = false
 
 [node name="QuestionBlockLife" parent="Node2D2" unique_id=615108307 instance=ExtResource("46_r5ogb")]
 position = Vector2(7312, 272)
-result = SubResource("Resource_8ixw1")
+result = SubResource("Resource_0wukc")
 initially_visible_and_solid = false
 
 [node name="BigHumanCloneB" parent="." unique_id=154484708 instance=ExtResource("49_hehds")]
@@ -1849,10 +1966,10 @@ hammer_bros_jumping_type = 1
 
 [node name="QuestionBlock" parent="." unique_id=784369943 instance=ExtResource("43_quut6")]
 position = Vector2(3888, 400)
-result = SubResource("Resource_r38as")
+result = SubResource("Resource_lu1u8")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock2" parent="." unique_id=1956765354 instance=ExtResource("43_quut6")]
 position = Vector2(3920, 400)
-result = SubResource("Resource_e5thd")
+result = SubResource("Resource_7b8et")
 initially_visible_and_solid = false

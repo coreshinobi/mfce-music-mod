@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://df8b7hrvqm6v1"
+path="res://.godot/imported/Toby Fox (ft. Camellia) - Cutie Mew Mew Magic.ogg-cc9a3f260ccf104a88b47a95f2decf42.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Toby Fox (ft. Camellia) - Cutie Mew Mew Magic.ogg"
+dest_files=["res://.godot/imported/Toby Fox (ft. Camellia) - Cutie Mew Mew Magic.ogg-cc9a3f260ccf104a88b47a95f2decf42.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://cgg287oy70wgr"
+path="res://.godot/imported/raytrayza - wahn+vorstellung.xm-be0adfe8cf1223dfbe5fc7c29d2c958c.res"
+
+[deps]
+
+source_file="res://music/side_b/raytrayza - wahn+vorstellung.xm"
+dest_files=["res://.godot/imported/raytrayza - wahn+vorstellung.xm-be0adfe8cf1223dfbe5fc7c29d2c958c.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

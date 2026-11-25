@@ -1,5 +1,9 @@
 extends "res://engine/objects/core/music_loader/music_loader.gd"
 
+signal mixtape_a_started#(music_id: int)
+signal mixtape_b_started#(music_id: int)
+signal mixtape_c_started#(music_id: int)
+
 const PITCH_PREFIXES: Array = ["smw2-", "smw-", "smas-", "smrpg-", "smb-", "smb3-", "save_g", "smb_", "smb1"]
 
 @export_category("Tweaks")
@@ -205,6 +209,13 @@ func _change_music(ind: int, ch_id: int) -> void:
 		options[2].subsong = 1
 	if play_immediately:
 		music_started.emit(ind)
+		bgm_tweak = SettingsManager.get_tweak("bgm_as_in_version", 0)
+		if bgm_tweak == 1:
+			mixtape_a_started.emit()#ind
+		if bgm_tweak == 2:
+			mixtape_b_started.emit()#ind
+		if bgm_tweak == 3:
+			mixtape_b_started.emit()#ind
 		var _trans = TransitionManager.current_transition
 		if _crossfade && is_instance_valid(_trans) && _trans.name == "crossfade_transition":
 			await _trans.end

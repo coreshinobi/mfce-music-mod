@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://bfnh0ohk73nx6"
+path="res://.godot/imported/matrix cubed - red sands.xm-dd5acfe506514bb245fec0bf0c67aa3e.res"
+
+[deps]
+
+source_file="res://music/newermod/matrix cubed - red sands.xm"
+dest_files=["res://.godot/imported/matrix cubed - red sands.xm-dd5acfe506514bb245fec0bf0c67aa3e.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

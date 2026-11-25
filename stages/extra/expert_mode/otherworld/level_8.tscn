@@ -3,11 +3,13 @@
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_yv082"]
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_6uhfe"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_csfh4"]
-[ext_resource type="AudioStream" uid="uid://b55f5bsnlrjs" path="res://music/extra/expert_mode/apoplexy_sparta.it" id="4_ci46v"]
+[ext_resource type="AudioStream" uid="uid://1u711kfxetb7" path="res://music/newermod/CoreSHINOBI - The Fall of Apoplexy.mod" id="4_bvktt"]
 [ext_resource type="PackedScene" uid="uid://cvigdw7nldify" path="res://objects/antiafk_expert_mode/antiafk_expert_mode.tscn" id="5_0opou"]
+[ext_resource type="AudioStream" uid="uid://cnu7278tdh0r1" path="res://music/newermod/the fall of apoplexy - lyrics.ogg" id="5_bvktt"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="5_k2qwk"]
 [ext_resource type="Script" uid="uid://dc824j5folagw" path="res://engine/objects/players/player_camera_autoscroll.gd" id="6_ud7yp"]
 [ext_resource type="AudioStream" uid="uid://cusrgc7jqf7qy" path="res://music/extra/expert_mode/short-die.ogg" id="7_bkord"]
+[ext_resource type="PackedScene" uid="uid://plwu5cvfuyab" path="res://components/music_overlay/music_overlay_synchronizefailsafe.tscn" id="7_bvktt"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="7_nvefh"]
 [ext_resource type="Script" uid="uid://ck0i5tcbxjott" path="res://engine/objects/platform/platform_path.gd" id="9_byyey"]
 [ext_resource type="Script" uid="uid://dr6il33yar063" path="res://stages/extra/expert_mode/otherworld/scripts/84scroll_stopper.gd" id="9_ci46v"]
@@ -58,6 +60,13 @@
 [ext_resource type="Script" uid="uid://b03mfsh5rvxsr" path="res://stages/extra/expert_mode/otherworld/scripts/level8_kevin.gd" id="56_i6dqp"]
 [ext_resource type="PackedScene" uid="uid://bj3fvmd6bah6d" path="res://engine/fonts/templates/mister_earl_font.tscn" id="57_uwrsc"]
 
+[sub_resource type="AudioStreamSynchronized" id="AudioStreamSynchronized_djipu"]
+stream_count = 2
+stream_0/stream = ExtResource("4_bvktt")
+stream_0/volume = 2.3
+stream_1/stream = ExtResource("5_bvktt")
+stream_1/volume = -2.2
+
 [sub_resource type="Curve2D" id="Curve2D_fbsdy"]
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 320, 240, 0, 0, 0, 0, 7504, 240)
@@ -87,25 +96,25 @@ trans_inheritances = 7
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0ycrm"]
 size = Vector2(26, 352)
 
-[sub_resource type="Resource" id="Resource_uwrsc"]
-resource_local_to_scene = true
-script = ExtResource("20_y3043")
-creation_nodepack = ExtResource("46_1r7q0")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_i6dqp"]
-resource_local_to_scene = true
-script = ExtResource("20_y3043")
-creation_nodepack = ExtResource("46_1r7q0")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_bvktt"]
-resource_local_to_scene = true
-script = ExtResource("20_y3043")
-creation_nodepack = ExtResource("46_1r7q0")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_djipu"]
+resource_local_to_scene = true
+script = ExtResource("20_y3043")
+creation_nodepack = ExtResource("46_1r7q0")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_i5rdm"]
+resource_local_to_scene = true
+script = ExtResource("20_y3043")
+creation_nodepack = ExtResource("46_1r7q0")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_l0v3a"]
+resource_local_to_scene = true
+script = ExtResource("20_y3043")
+creation_nodepack = ExtResource("46_1r7q0")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_yj0ng"]
 resource_local_to_scene = true
 script = ExtResource("20_y3043")
 creation_nodepack = ExtResource("46_1r7q0")
@@ -120,12 +129,15 @@ metadata/_edit_lock_ = true
 
 [node name="MusicLoader" type="Node" parent="." unique_id=622492729]
 script = ExtResource("3_csfh4")
-music = Array[Resource]([ExtResource("4_ci46v")])
+music = Array[Resource]([SubResource("AudioStreamSynchronized_djipu")])
 
 [node name="AntiafkExpertMode" parent="MusicLoader" unique_id=2112042400 instance=ExtResource("5_0opou")]
 is_expert_mode = false
 item_store_enabled = false
 antiafk_enabled = false
+
+[node name="MusicOverlay2" parent="." unique_id=1155586920 instance=ExtResource("7_bvktt")]
+text = Array[String](["CoreSHINOBI - The Fall of Apoplexy"])
 
 [node name="Mario" parent="." unique_id=1104337063 instance=ExtResource("5_k2qwk")]
 position = Vector2(80, 400)
@@ -764,17 +776,64 @@ rotation = -0.0767945
 texture = ExtResource("44_8ql22")
 
 [node name="Label" type="Label" parent="Sign" unique_id=210016413]
-offset_left = -60.0
-offset_top = -56.0
-offset_right = 49.0
-offset_bottom = -5.0
+anchors_preset = -1
+anchor_left = -0.69374466
+anchor_top = -0.16666667
+anchor_right = -0.69374466
+anchor_bottom = -0.16666667
+offset_left = -6.818756
+offset_top = -42.665894
+offset_right = 143.18124
+offset_bottom = 8.334106
 theme_override_colors/font_outline_color = Color(0, 0, 0.360784, 1)
 theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("45_0ycrm")
 theme_override_font_sizes/font_size = 13
-text = "the legend
-is back."
+text = "you don't
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="Sign" unique_id=2014019554]
+anchors_preset = -1
+anchor_left = -0.69374466
+anchor_top = -0.32393607
+anchor_right = -0.6937446
+anchor_bottom = -0.32393607
+offset_left = -3.2908478
+offset_top = -18.447937
+offset_right = 146.70914
+offset_bottom = 32.552063
+theme_override_colors/font_outline_color = Color(0, 0, 0.360784, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("45_0ycrm")
+theme_override_font_sizes/font_size = 24
+text = "FUCK"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label3" type="Label" parent="Sign" unique_id=1438953427]
+anchors_preset = -1
+anchor_left = -0.69374466
+anchor_top = -0.32393607
+anchor_right = -0.6937446
+anchor_bottom = -0.32393607
+offset_left = -4.2881775
+offset_top = -5.4863205
+offset_right = 145.71182
+offset_bottom = 45.51368
+theme_override_colors/font_outline_color = Color(0, 0, 0.360784, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("45_0ycrm")
+theme_override_font_sizes/font_size = 9
+text = "WITH THE LOGANG!"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
@@ -878,21 +937,21 @@ position = Vector2(4688, 304)
 
 [node name="QuestionBlock" parent="." unique_id=447306649 instance=ExtResource("17_ax5ta")]
 position = Vector2(1776, 208)
-result = SubResource("Resource_uwrsc")
+result = SubResource("Resource_djipu")
 
 [node name="QuestionBlock3" parent="." unique_id=1062191143 instance=ExtResource("17_ax5ta")]
 position = Vector2(1712, 208)
-result = SubResource("Resource_i6dqp")
+result = SubResource("Resource_i5rdm")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock4" parent="." unique_id=1663540196 instance=ExtResource("17_ax5ta")]
 position = Vector2(1648, 208)
-result = SubResource("Resource_bvktt")
+result = SubResource("Resource_l0v3a")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock2" parent="." unique_id=1818283557 instance=ExtResource("17_ax5ta")]
 position = Vector2(912, 304)
-result = SubResource("Resource_djipu")
+result = SubResource("Resource_yj0ng")
 
 [node name="Coin" parent="." unique_id=502595507 instance=ExtResource("50_n5aq1")]
 position = Vector2(1680, 128)

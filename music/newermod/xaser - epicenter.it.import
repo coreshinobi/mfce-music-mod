@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://c4a6y7y44k2vc"
+path="res://.godot/imported/xaser - epicenter.it-3ef9737046e15266dfb001ad2bee44b1.res"
+
+[deps]
+
+source_file="res://music/newermod/xaser - epicenter.it"
+dest_files=["res://.godot/imported/xaser - epicenter.it-3ef9737046e15266dfb001ad2bee44b1.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

@@ -2,10 +2,11 @@
 
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_y8slg"]
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_dqq54"]
-[ext_resource type="AudioStream" uid="uid://bjxgnmvy3r7cs" path="res://music/smas-bowser.ogg" id="3_jldek"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_miqs7"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_2ntyi"]
+[ext_resource type="AudioStream" uid="uid://llejanvs8aux" path="res://music/newermod/rufferto - cunfuzion.mod" id="4_33jni"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="5_6b0g1"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="5_rhu3d"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="6_hk11d"]
 [ext_resource type="TileSet" uid="uid://dtvs1rult8kbe" path="res://tilesets/overworld_green/overworld_green.tres" id="7_0iafa"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="8_e786u"]
@@ -34,7 +35,7 @@ colors = PackedColorArray(0.231373, 0.482353, 0.639216, 1, 0.94902, 0.992157, 0.
 gradient = SubResource("Gradient_yisdg")
 width = 480
 
-[sub_resource type="Resource" id="Resource_33jni"]
+[sub_resource type="Resource" id="Resource_c7ciw"]
 resource_local_to_scene = true
 script = ExtResource("16_4esep")
 creation_fallback_node = ExtResource("14_ve82v")
@@ -54,8 +55,11 @@ jump_to_scene = "res://stages/world_2/map_2.tscn"
 
 [node name="MusicLoader" type="Node" parent="." unique_id=2039995037]
 script = ExtResource("3_miqs7")
-music = Array[Resource]([ExtResource("3_jldek")])
-volume_db = Array[float]([3.0])
+music = Array[Resource]([ExtResource("4_33jni")])
+volume_db = Array[float]([1.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("5_rhu3d")]
+text = Array[String](["Rufferto - Cunfuzion"])
 
 [node name="Mario" parent="." unique_id=243284861 instance=ExtResource("4_2ntyi")]
 position = Vector2(80, 400)
@@ -139,7 +143,7 @@ speed = 100.0
 
 [node name="QuestionBlockBeetroot" parent="." unique_id=849086130 instance=ExtResource("13_ioru6")]
 position = Vector2(48, 240)
-result = SubResource("Resource_33jni")
+result = SubResource("Resource_c7ciw")
 initially_visible_and_solid = false
 
 [node name="Brick" parent="." unique_id=74291415 instance=ExtResource("17_81u2j")]

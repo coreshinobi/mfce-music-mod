@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://7s5e7m0ri2p6"
+path="res://.godot/imported/Nayutalien (ft. Hatsune Miku) - Dance of Venus.ogg-65a11f4e0742021209efa065b32902c4.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Nayutalien (ft. Hatsune Miku) - Dance of Venus.ogg"
+dest_files=["res://.godot/imported/Nayutalien (ft. Hatsune Miku) - Dance of Venus.ogg-65a11f4e0742021209efa065b32902c4.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=2.81
+bpm=0.0
+beat_count=0
+bar_beats=4

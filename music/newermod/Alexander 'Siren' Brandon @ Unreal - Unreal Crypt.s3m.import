@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://dun5ui14yvvsq"
+path="res://.godot/imported/Alexander 'Siren' Brandon @ Unreal - Unreal Crypt.s3m-de4d6c41991a80b0b89abe8f9cc4e53c.res"
+
+[deps]
+
+source_file="res://music/newermod/Alexander 'Siren' Brandon @ Unreal - Unreal Crypt.s3m"
+dest_files=["res://.godot/imported/Alexander 'Siren' Brandon @ Unreal - Unreal Crypt.s3m-de4d6c41991a80b0b89abe8f9cc4e53c.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

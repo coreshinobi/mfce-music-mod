@@ -8,11 +8,12 @@
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_7njjp"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="4_a7012"]
 [ext_resource type="Script" uid="uid://7byhkvlnfxa" path="res://components/secrets_manager/unlock_multiple.gd" id="4_bfajh"]
-[ext_resource type="AudioStream" uid="uid://c54m13b157yo7" path="res://engine/scenes/credits/music/credits.mod" id="4_ndnur"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="6_l0rrj"]
 [ext_resource type="Script" uid="uid://g4dqn5f7y7ns" path="res://stages/extra/human_lab/scripts/jeans_continue_humanlab.gd" id="7_5shsc"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_hgcng"]
+[ext_resource type="AudioStream" uid="uid://cg0gjnqrechpf" path="res://music/newermod/virgill - ancient times.mod" id="8_n0vbo"]
 [ext_resource type="TileSet" uid="uid://dtvs1rult8kbe" path="res://tilesets/overworld_green/overworld_green.tres" id="9_o5oyq"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="10_5fktf"]
 [ext_resource type="Script" uid="uid://gym45ehpvnka" path="res://engine/components/cam_area/detection_area.gd" id="10_ah2ff"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="10_uxttx"]
 [ext_resource type="Texture2D" uid="uid://cduq56lwglhyf" path="res://gfx/humanlab_house/house_tileset.png" id="12_i4ioh"]
@@ -170,13 +171,13 @@ physics_layer_0/collision_layer = 112
 physics_layer_0/collision_mask = 0
 sources/0 = SubResource("TileSetAtlasSource_l5rx7")
 
-[sub_resource type="Resource" id="Resource_vf7dv"]
+[sub_resource type="Resource" id="Resource_xwclf"]
 resource_local_to_scene = true
 script = ExtResource("22_pgqek")
 creation_nodepack = ExtResource("21_a663x")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_n0vbo"]
+[sub_resource type="Resource" id="Resource_arjhk"]
 resource_local_to_scene = true
 script = ExtResource("22_pgqek")
 creation_nodepack = ExtResource("21_a663x")
@@ -186,24 +187,6 @@ trans_inheritances = 7
 script = ExtResource("26_0fk3l")
 creation_nodepack = ExtResource("25_lp5f8")
 trans_inheritances = 6
-
-[sub_resource type="Resource" id="Resource_5fktf"]
-resource_local_to_scene = true
-script = ExtResource("22_pgqek")
-creation_nodepack = ExtResource("30_ycv1i")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_xwclf"]
-resource_local_to_scene = true
-script = ExtResource("22_pgqek")
-creation_nodepack = ExtResource("30_ycv1i")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_arjhk"]
-resource_local_to_scene = true
-script = ExtResource("22_pgqek")
-creation_nodepack = ExtResource("30_ycv1i")
-trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_72e8v"]
 resource_local_to_scene = true
@@ -224,6 +207,24 @@ creation_nodepack = ExtResource("30_ycv1i")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_1x031"]
+resource_local_to_scene = true
+script = ExtResource("22_pgqek")
+creation_nodepack = ExtResource("30_ycv1i")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_ip4b6"]
+resource_local_to_scene = true
+script = ExtResource("22_pgqek")
+creation_nodepack = ExtResource("30_ycv1i")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_njyhc"]
+resource_local_to_scene = true
+script = ExtResource("22_pgqek")
+creation_nodepack = ExtResource("30_ycv1i")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_0yp6t"]
 resource_local_to_scene = true
 script = ExtResource("22_pgqek")
 creation_fallback_node = ExtResource("44_80ynh")
@@ -673,10 +674,15 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("4_ndnur")])
+playback_pitch = 1.0
+music = Array[Resource]([ExtResource("8_n0vbo")])
+volume_db = Array[float]([2.1])
 
 [node name="Node" type="Node" parent="MusicLoader" unique_id=29251156]
 script = ExtResource("7_5shsc")
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("10_5fktf")]
+text = Array[String](["Virgill - Ancient Times"])
 
 [node name="Mario" parent="." unique_id=671780175 instance=ExtResource("4_7njjp")]
 position = Vector2(80, 400)
@@ -1009,12 +1015,12 @@ region_rect = Rect2(0, 0, 76, 256)
 
 [node name="QuestionBlock" parent="ебанина" unique_id=1827113373 instance=ExtResource("20_66hy5")]
 position = Vector2(368, -3792)
-result = SubResource("Resource_vf7dv")
+result = SubResource("Resource_xwclf")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock2" parent="ебанина" unique_id=1814044812 instance=ExtResource("20_66hy5")]
 position = Vector2(80, -4432)
-result = SubResource("Resource_n0vbo")
+result = SubResource("Resource_arjhk")
 initially_visible_and_solid = false
 
 [node name="JawsHeadClone" parent="ебанина" unique_id=581333073 instance=ExtResource("23_0uhu6")]
@@ -1091,28 +1097,28 @@ position = Vector2(80, -5184)
 
 [node name="QuestionBlockLife" parent="ебанина" unique_id=197644093 instance=ExtResource("29_16k1k")]
 position = Vector2(592, -8848)
-result = SubResource("Resource_5fktf")
+result = SubResource("Resource_72e8v")
 
 [node name="QuestionBlockLife2" parent="ебанина" unique_id=745879746 instance=ExtResource("29_16k1k")]
 position = Vector2(80, -10064)
-result = SubResource("Resource_xwclf")
+result = SubResource("Resource_6e8o1")
 
 [node name="QuestionBlockLife3" parent="ебанина" unique_id=1840774060 instance=ExtResource("29_16k1k")]
 position = Vector2(144, -10064)
-result = SubResource("Resource_arjhk")
+result = SubResource("Resource_yvw5x")
 
 [node name="QuestionBlockLife4" parent="ебанина" unique_id=1404761561 instance=ExtResource("29_16k1k")]
 position = Vector2(208, -10064)
-result = SubResource("Resource_72e8v")
+result = SubResource("Resource_1x031")
 
 [node name="QuestionBlockLife5" parent="ебанина" unique_id=26022490 instance=ExtResource("29_16k1k")]
 position = Vector2(432, -10000)
-result = SubResource("Resource_6e8o1")
+result = SubResource("Resource_ip4b6")
 initially_visible_and_solid = false
 
 [node name="QuestionBlockLife6" parent="ебанина" unique_id=1568533193 instance=ExtResource("29_16k1k")]
 position = Vector2(464, -10000)
-result = SubResource("Resource_yvw5x")
+result = SubResource("Resource_njyhc")
 initially_visible_and_solid = false
 
 [node name="Grass" parent="ебанина" unique_id=255076620 instance=ExtResource("32_ajtxd")]
@@ -1175,7 +1181,7 @@ texture = ExtResource("39_na2dy")
 
 [node name="QuestionBlockGreenLui" parent="ебанина" unique_id=1420994892 instance=ExtResource("43_upqcs")]
 position = Vector2(48, -3952)
-result = SubResource("Resource_1x031")
+result = SubResource("Resource_0yp6t")
 
 [node name="Parallax2D" type="Parallax2D" parent="ебанина" unique_id=191750811]
 z_index = -999

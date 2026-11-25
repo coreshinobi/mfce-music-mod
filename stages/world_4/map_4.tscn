@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://cx7vsc87xwwgn"]
 
 [ext_resource type="Script" uid="uid://b2miajjwaop0p" path="res://engine/scenes/map/scripts/map.gd" id="1_gb5tm"]
-[ext_resource type="AudioStream" uid="uid://dtgqakdnmh3ax" path="res://music/trancoi_unfinished.xm" id="3_anxmq"]
+[ext_resource type="AudioStream" uid="uid://b6e3n7yb857gm" path="res://music/newermod/Coda - Crusader.ogg" id="3_1nlk2"]
+[ext_resource type="AudioStream" uid="uid://bj1jf8q0d584y" path="res://music/side_a/archangel - the walk.mod" id="3_alriq"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_ke5i4"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="4_alriq"]
 [ext_resource type="Texture2D" uid="uid://usm6n80msr7n" path="res://engine/scenes/map/textures/bg.png" id="4_on85w"]
 [ext_resource type="PackedScene" uid="uid://w4jc7nb1lcsy" path="res://engine/scenes/map/prefabs/player.tscn" id="5_q4gry"]
 [ext_resource type="Texture2D" uid="uid://6h1ie3t61oqs" path="res://gfx/map/maps/map4.png" id="5_qeh7r"]
@@ -47,8 +49,13 @@ metadata/_edit_lock_ = true
 
 [node name="MusicLoader" type="Node" parent="." unique_id=689272756]
 script = ExtResource("3_ke5i4")
-music = Array[Resource]([ExtResource("3_anxmq")])
-volume_db = Array[float]([6.0])
+music_var_1 = Array[Resource]([ExtResource("3_alriq")])
+var_1_volume_db = Array[float]([2.1])
+music = Array[Resource]([ExtResource("3_1nlk2")])
+volume_db = Array[float]([3.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("4_alriq")]
+displaying_mode = 1
 
 [node name="Bg" type="Sprite2D" parent="." unique_id=323005533]
 texture = ExtResource("4_on85w")

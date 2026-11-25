@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b3wlotkb26a5l"
+path="res://.godot/imported/Shiru - Top Gun Level 2.ogg-abb91b6bfff5f8216369bf24472a452d.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Shiru - Top Gun Level 2.ogg"
+dest_files=["res://.godot/imported/Shiru - Top Gun Level 2.ogg-abb91b6bfff5f8216369bf24472a452d.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

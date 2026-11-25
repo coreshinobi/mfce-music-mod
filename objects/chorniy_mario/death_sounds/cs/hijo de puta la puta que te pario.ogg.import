@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://k6ug3rr5u0un"
+path="res://.godot/imported/hijo de puta la puta que te pario.ogg-26bf392387208bfbb2d99ccee458103e.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/hijo de puta la puta que te pario.ogg"
+dest_files=["res://.godot/imported/hijo de puta la puta que te pario.ogg-26bf392387208bfbb2d99ccee458103e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

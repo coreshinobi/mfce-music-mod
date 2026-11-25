@@ -5,7 +5,9 @@
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="3_d4s0c"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="4_6ssq6"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="5_ldwxh"]
-[ext_resource type="AudioStream" uid="uid://cxh66hhdkpcuq" path="res://music/extra/world_u/underground_ocremix.mp3" id="6_7xgap"]
+[ext_resource type="AudioStream" uid="uid://csc4y4kg6ylvx" path="res://music/newermod/dubmood - vodka dance #2.xm" id="6_qm8w8"]
+[ext_resource type="AudioStream" uid="uid://cgyerbe3gfeo3" path="res://music/side_a/syserr - bdmus04.it" id="6_uag8i"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="7_ertpw"]
 [ext_resource type="PackedScene" uid="uid://dw54kg4ssaj3o" path="res://objects/otherworld/secret_otherworld_unlocker_choicer.tscn" id="7_flpge"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="7_koaeu"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="8_076e6"]
@@ -122,7 +124,7 @@ _data = {
 }
 point_count = 2
 
-[sub_resource type="Resource" id="Resource_qm8w8"]
+[sub_resource type="Resource" id="Resource_uag8i"]
 resource_local_to_scene = true
 script = ExtResource("40_okc72")
 creation_fallback_node = ExtResource("38_4rx0t")
@@ -146,10 +148,10 @@ metadata/_custom_type_script = "uid://dh7ob1sbo8lx7"
 script = ExtResource("4_6ssq6")
 tweaked_completion_music = ExtResource("5_ldwxh")
 ignore_fade_in_tweak = false
-music_var_1 = Array[Resource]([])
+music_var_1 = Array[Resource]([ExtResource("6_uag8i")])
 music_var_2 = Array[Resource]([])
 music_var_3 = Array[Resource]([])
-var_1_volume_db = Array[float]([0.0])
+var_1_volume_db = Array[float]([0.8])
 var_1_start_from_sec = Array[float]([0.0])
 var_2_volume_db = Array[float]([0.0])
 var_2_start_from_sec = Array[float]([0.0])
@@ -160,8 +162,10 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("6_7xgap")])
+music = Array[Resource]([ExtResource("6_qm8w8")])
 volume_db = Array[float]([-1.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("7_ertpw")]
 
 [node name="SecretUnlockerOther" parent="." unique_id=1503467839 instance=ExtResource("7_flpge")]
 you_found_text = "a hidden level"
@@ -255,7 +259,7 @@ theme_override_constants/line_spacing = 1
 theme_override_constants/outline_size = 8
 theme_override_fonts/font = ExtResource("16_flpge")
 theme_override_font_sizes/font_size = 12
-text = "WELCOME BACK TO 2014!!!"
+text = "DANGANMAGEDDON!!!"
 horizontal_alignment = 1
 script = ExtResource("17_076e6")
 tween_to = 224
@@ -1111,7 +1115,7 @@ position = Vector2(4800, 1024)
 
 [node name="QuestionBlock" parent="." unique_id=604041065 instance=ExtResource("37_7usrf")]
 position = Vector2(2800, 1232)
-result = SubResource("Resource_qm8w8")
+result = SubResource("Resource_uag8i")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=580548813]
 collision_layer = 1024

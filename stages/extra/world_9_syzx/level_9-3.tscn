@@ -6,11 +6,12 @@
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_c32u3"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="4_dmqcj"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_td102"]
-[ext_resource type="AudioStream" uid="uid://c5khvmh458ujd" path="res://music/extra/world_9_syzx/BasicInstinct.mod" id="4_we8l2"]
-[ext_resource type="AudioStream" uid="uid://b4j4xbu6hjahu" path="res://music/extra/world_9_syzx/!kazan-f.ogg" id="6_qgvxx"]
 [ext_resource type="Script" uid="uid://b5o8y7a4ji17g" path="res://stages/extra/world_9_syzx/music_mixed_tweak.gd" id="7_8360t"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_s518n"]
+[ext_resource type="AudioStream" uid="uid://by2niyeat4ux2" path="res://music/newermod/Coda - Luminous Vein.ogg" id="8_k4ebr"]
+[ext_resource type="AudioStream" uid="uid://dcqpsml1p8twb" path="res://music/newermod/M-Beat (Ft General Levy) - Incredible.ogg" id="9_awdir"]
 [ext_resource type="Script" uid="uid://pnegwh5bhy7i" path="res://objects/music_loader_custom/music_pitch_changer.gd" id="9_k4ebr"]
+[ext_resource type="AudioStream" uid="uid://ispsd2jj1cv3" path="res://music/newermod/Stone (SK) - Red Banana Bomb.mod" id="9_sg8rg"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="10_m4khn"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="10_sg8rg"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="11_k4ebr"]
@@ -18,6 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://6110am7wr7ow" path="res://tilesets/castle/gfx/gray_platform.png" id="12_5a6ry"]
 [ext_resource type="Texture2D" uid="uid://bwpquuu1dl163" path="res://stages/extra/world_9_syzx/gfx/9-3_bg.png" id="12_qtsa2"]
 [ext_resource type="FontFile" uid="uid://b1pi0t5byork2" path="res://engine/components/hud/hud_font.fnt" id="13_hj2e3"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="13_u8wbr"]
 [ext_resource type="TileSet" uid="uid://bg1tccd6vhwi3" path="res://tilesets/overworld_red/overworld_red.tres" id="15_oc8xy"]
 [ext_resource type="Texture2D" uid="uid://bhoixuuxwmlft" path="res://stages/extra/world_9_syzx/gfx/9-3_old_bg.png" id="15_sjd5x"]
 [ext_resource type="Texture2D" uid="uid://7bmareyd2unf" path="res://stages/extra/world_9_syzx/gfx/9-3_volcano.png" id="17_5hn7m"]
@@ -83,23 +85,10 @@ fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(1, 0.5)
 metadata/_snap_enabled = true
 
-[sub_resource type="Resource" id="Resource_k4ebr"]
-resource_local_to_scene = true
-script = ExtResource("25_uqyua")
-creation_nodepack = ExtResource("22_o4y5i")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_awdir"]
-resource_local_to_scene = true
-script = ExtResource("25_uqyua")
-creation_nodepack = ExtResource("22_o4y5i")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_sg8rg"]
 resource_local_to_scene = true
 script = ExtResource("25_uqyua")
-creation_fallback_node = ExtResource("27_1pf0o")
-creation_nodepack = ExtResource("28_4dauf")
+creation_nodepack = ExtResource("22_o4y5i")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_u8wbr"]
@@ -109,6 +98,19 @@ creation_nodepack = ExtResource("22_o4y5i")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_s4y6s"]
+resource_local_to_scene = true
+script = ExtResource("25_uqyua")
+creation_fallback_node = ExtResource("27_1pf0o")
+creation_nodepack = ExtResource("28_4dauf")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_8dyqp"]
+resource_local_to_scene = true
+script = ExtResource("25_uqyua")
+creation_nodepack = ExtResource("22_o4y5i")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_hy58u"]
 resource_local_to_scene = true
 script = ExtResource("25_uqyua")
 creation_fallback_node = ExtResource("27_1pf0o")
@@ -160,9 +162,9 @@ softendo_progress_secret_mode_ids = Array[int]([3])
 script = ExtResource("3_c32u3")
 tweaked_completion_music = ExtResource("4_dmqcj")
 ignore_fade_in_tweak = false
-music_var_1 = Array[Resource]([ExtResource("6_qgvxx")])
-music_var_2 = Array[Resource]([ExtResource("6_qgvxx")])
-music_var_3 = Array[Resource]([ExtResource("4_we8l2")])
+music_var_1 = Array[Resource]([ExtResource("8_k4ebr")])
+music_var_2 = Array[Resource]([ExtResource("9_sg8rg")])
+music_var_3 = Array[Resource]([ExtResource("9_awdir")])
 var_1_volume_db = Array[float]([0.0])
 var_1_start_from_sec = Array[float]([0.0])
 var_2_volume_db = Array[float]([0.0])
@@ -174,7 +176,7 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("4_we8l2"), ExtResource("6_qgvxx")])
+music = Array[Resource]([ExtResource("8_k4ebr"), ExtResource("9_awdir")])
 play_immediately = false
 
 [node name="MusicPitchChanger" type="Node" parent="MusicLoader" unique_id=1388914891]
@@ -188,6 +190,9 @@ only_for_soundtrack_var = Array[bool]([true, false, false, false])
 
 [node name="Node" type="Node" parent="MusicLoader" unique_id=1744342343]
 script = ExtResource("7_8360t")
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("13_u8wbr")]
+text = Array[String](["M-Beat (Ft. General Levy) - Incredible", "Stone (SK) - Red Banana Bomb", "Coda - Luminous Vein"])
 
 [node name="Player" parent="." unique_id=978293064 instance=ExtResource("4_td102")]
 position = Vector2(176, 400)
@@ -468,15 +473,15 @@ position = Vector2(400, 288)
 
 [node name="QuestionBlock" parent="." unique_id=408757199 instance=ExtResource("24_b5kt2")]
 position = Vector2(304, 288)
-result = SubResource("Resource_k4ebr")
+result = SubResource("Resource_sg8rg")
 
 [node name="QuestionBlock2" parent="." unique_id=2003989835 instance=ExtResource("24_b5kt2")]
 position = Vector2(368, 288)
-result = SubResource("Resource_awdir")
+result = SubResource("Resource_u8wbr")
 
 [node name="QuestionBlock3" parent="." unique_id=1576367140 instance=ExtResource("24_b5kt2")]
 position = Vector2(368, 176)
-result = SubResource("Resource_sg8rg")
+result = SubResource("Resource_s4y6s")
 
 [node name="Brick5" parent="." unique_id=1586084884 instance=ExtResource("23_a2b1m")]
 position = Vector2(4336, 272)
@@ -489,11 +494,11 @@ position = Vector2(4464, 304)
 
 [node name="QuestionBlock4" parent="." unique_id=308283797 instance=ExtResource("24_b5kt2")]
 position = Vector2(4432, 304)
-result = SubResource("Resource_u8wbr")
+result = SubResource("Resource_8dyqp")
 
 [node name="QuestionBlock5" parent="." unique_id=919169241 instance=ExtResource("24_b5kt2")]
 position = Vector2(4400, 272)
-result = SubResource("Resource_s4y6s")
+result = SubResource("Resource_hy58u")
 
 [node name="FinishLine" parent="." unique_id=1922043014 instance=ExtResource("33_edj1k")]
 position = Vector2(7555, 416)
@@ -829,6 +834,7 @@ tile_map_data = PackedByteArray("AABpAAkAAQAAAAAAAACtAAwAAQAAAAAAAACuAAsAAQAAAAA
 tile_set = ExtResource("15_oc8xy")
 
 [connection signal="level_completed" from="." to="SecretUnlocker/UnlockMultiple" method="perform_checks_and_unlock"]
+[connection signal="music_started" from="MusicLoader" to="MusicOverlay" method="play"]
 [connection signal="platform_fall" from="Path2D" to="Path2D/PlatformPathGray" method="fall_off"]
 [connection signal="platform_fall" from="Path2D" to="Path2D/PlatformPathGray2" method="fall_off"]
 [connection signal="platform_fall" from="Path2D" to="Path2D/PlatformPathGray3" method="fall_off"]

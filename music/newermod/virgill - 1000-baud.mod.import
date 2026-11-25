@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://ho6df4n2dudh"
+path="res://.godot/imported/virgill - 1000-baud.mod-33b6a6d36e55e22f938ffb8b30505ad3.res"
+
+[deps]
+
+source_file="res://music/newermod/virgill - 1000-baud.mod"
+dest_files=["res://.godot/imported/virgill - 1000-baud.mod-33b6a6d36e55e22f938ffb8b30505ad3.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

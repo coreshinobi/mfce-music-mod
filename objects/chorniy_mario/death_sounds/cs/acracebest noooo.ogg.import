@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cig5dw216u6kw"
+path="res://.godot/imported/acracebest noooo.ogg-bbcc290f383d73f961301d7671571f4e.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/acracebest noooo.ogg"
+dest_files=["res://.godot/imported/acracebest noooo.ogg-bbcc290f383d73f961301d7671571f4e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

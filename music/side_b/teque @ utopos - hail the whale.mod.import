@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://dege2ic3jaex0"
+path="res://.godot/imported/teque @ utopos - hail the whale.mod-40bdb1f1f0f71a170dfa7ca4252357ab.res"
+
+[deps]
+
+source_file="res://music/side_b/teque @ utopos - hail the whale.mod"
+dest_files=["res://.godot/imported/teque @ utopos - hail the whale.mod-40bdb1f1f0f71a170dfa7ca4252357ab.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

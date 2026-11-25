@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b08lg0tl7nk3y"
+path="res://.godot/imported/Ambassadors of Funk featuring M.C. Mario - supermarioworld.ogg-fb820ed2949ab98b830e71835af14c7c.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Ambassadors of Funk featuring M.C. Mario - supermarioworld.ogg"
+dest_files=["res://.godot/imported/Ambassadors of Funk featuring M.C. Mario - supermarioworld.ogg-fb820ed2949ab98b830e71835af14c7c.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=1.75
+bpm=0.0
+beat_count=0
+bar_beats=4

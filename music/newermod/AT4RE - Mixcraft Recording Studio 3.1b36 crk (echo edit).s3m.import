@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://dn5a3vxat786p"
+path="res://.godot/imported/AT4RE - Mixcraft Recording Studio 3.1b36 crk (echo edit).s3m-f68b8d5ca9e5d0fff1972441782d7f67.res"
+
+[deps]
+
+source_file="res://music/newermod/AT4RE - Mixcraft Recording Studio 3.1b36 crk (echo edit).s3m"
+dest_files=["res://.godot/imported/AT4RE - Mixcraft Recording Studio 3.1b36 crk (echo edit).s3m-f68b8d5ca9e5d0fff1972441782d7f67.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b733ciwu0w3ul"
+path="res://.godot/imported/Jet Set Radio Future - Shape Da Future.ogg-4c881b28e346e0d5aee2deb4c8a62b4e.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Jet Set Radio Future - Shape Da Future.ogg"
+dest_files=["res://.godot/imported/Jet Set Radio Future - Shape Da Future.ogg-4c881b28e346e0d5aee2deb4c8a62b4e.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

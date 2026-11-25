@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dj5stmibbvob3"
+path="res://.godot/imported/abreme la puerta vieja conchetumare.ogg-2d9c9b0ae388b16d1dd5f217bb2044f2.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/abreme la puerta vieja conchetumare.ogg"
+dest_files=["res://.godot/imported/abreme la puerta vieja conchetumare.ogg-2d9c9b0ae388b16d1dd5f217bb2044f2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

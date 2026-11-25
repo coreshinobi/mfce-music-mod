@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://p7bnwcffstqf"
+path="res://.godot/imported/The Adventures of Batman and Robin - Not Much Time.ogg-358a4a843da7774f500044ff564071e3.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/The Adventures of Batman and Robin - Not Much Time.ogg"
+dest_files=["res://.godot/imported/The Adventures of Batman and Robin - Not Much Time.ogg-358a4a843da7774f500044ff564071e3.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

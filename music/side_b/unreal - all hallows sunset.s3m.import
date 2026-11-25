@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://cdq8bg8nkk8cn"
+path="res://.godot/imported/unreal - all hallows sunset.s3m-9d640b88195fde58162aa773dfda3701.res"
+
+[deps]
+
+source_file="res://music/side_b/unreal - all hallows sunset.s3m"
+dest_files=["res://.godot/imported/unreal - all hallows sunset.s3m-9d640b88195fde58162aa773dfda3701.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

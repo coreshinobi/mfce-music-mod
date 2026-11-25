@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://cpqplji7jsl8g"
+path="res://.godot/imported/pratap - syokonsulent.xm-f319fc1da077502d13eebac2b35f9bae.res"
+
+[deps]
+
+source_file="res://music/side_b/pratap - syokonsulent.xm"
+dest_files=["res://.godot/imported/pratap - syokonsulent.xm-f319fc1da077502d13eebac2b35f9bae.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

@@ -1,18 +1,22 @@
 [gd_scene format=4 uid="uid://54uirkrgrfbg"]
 
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_qs25b"]
-[ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_n22e2"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_3ap68"]
-[ext_resource type="AudioStream" uid="uid://bqeophqiakq4k" path="res://music/smw2-castle.ogg" id="4_ctyoo"]
+[ext_resource type="AudioStream" uid="uid://c83i34q5w3vhv" path="res://music/side_a/Karbofos - Deja Vu.ogg" id="4_4y2kq"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_jspnb"]
+[ext_resource type="AudioStream" uid="uid://lskqu7a66ntk" path="res://music/newermod/Hi Hi Puffy AmiYumi Kaznapped - Stage Clear.ogg" id="4_pokcx"]
+[ext_resource type="AudioStream" uid="uid://b1md2sqy0uvtb" path="res://music/newermod/Hi Hi Puffy AmiYumi The Genie & the Amp - Roman.ogg" id="5_drlqi"]
 [ext_resource type="AudioStream" uid="uid://dwcak56md3who" path="res://music/smw-underground.ogg" id="5_u4e13"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="6_4y2kq"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="6_lgo78"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_xxxmt"]
 [ext_resource type="TileSet" uid="uid://dtvs1rult8kbe" path="res://tilesets/overworld_green/overworld_green.tres" id="9_xnc8r"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="10_l7gv7"]
 [ext_resource type="TileSet" uid="uid://co4kwf1fb2y5i" path="res://tilesets/castle/castle_tileset.tres" id="11_xkyhv"]
 [ext_resource type="Texture2D" uid="uid://dmwfhcgla7av" path="res://engine/tilesets/castle/gfx/BGCastleVertical.png" id="14_ay7p5"]
+[ext_resource type="FontFile" uid="uid://8het0yea87eq" path="res://gfx/fonts/tahomabd.ttf" id="14_q53wn"]
 [ext_resource type="PackedScene" uid="uid://2yepdgrhpmj3" path="res://engine/objects/bumping_blocks/brick/brick.tscn" id="14_rk3af"]
+[ext_resource type="Script" uid="uid://ck8etkhldnph8" path="res://stages/world_1/scripts/text_secret_passage.gd" id="15_amnnq"]
 [ext_resource type="PackedScene" uid="uid://b6e661f0ry38p" path="res://engine/objects/bumping_blocks/brick/templates/Coin Brick.tscn" id="15_nt7db"]
 [ext_resource type="PackedScene" uid="uid://5ssr5jwpsldi" path="res://engine/objects/bumping_blocks/question_block/templates/Coin Question Block.tscn" id="16_c3qsi"]
 [ext_resource type="PackedScene" uid="uid://b8kgbn8f7lvf0" path="res://engine/objects/items/coin/coin.tscn" id="17_j2bvf"]
@@ -22,14 +26,14 @@
 [ext_resource type="PackedScene" uid="uid://bsdcxwngf5hru" path="res://engine/objects/powerups/fire_flower/fire_flower.tscn" id="21_ov45k"]
 [ext_resource type="PackedScene" uid="uid://dbpihjuw0gc01" path="res://engine/objects/bumping_blocks/question_block/templates/Beetroot Question Block.tscn" id="22_k74ne"]
 [ext_resource type="PackedScene" uid="uid://8a7nemgi0b6q" path="res://engine/objects/powerups/beetroot/beetroot.tscn" id="23_n847a"]
-[ext_resource type="PackedScene" uid="uid://clnvxc3co85ls" path="res://engine/objects/enemies/human_lab/koopa_troopa/coder_clone.tscn" id="24_kfkfl"]
+[ext_resource type="PackedScene" uid="uid://ctbgmug4ek5tf" path="res://objects/hhpayclones/yumi_clone/yumi_clone.tscn" id="24_kfkfl"]
 [ext_resource type="PackedScene" uid="uid://bvolo50530iv7" path="res://engine/objects/enemies/bullet_bill/launcher/bullet_launcher.tscn" id="24_rapeo"]
 [ext_resource type="PackedScene" uid="uid://boprmwc4aw1lr" path="res://engine/objects/bumping_blocks/question_block/templates/gray/Gray Coin Question Block.tscn" id="24_rxmgi"]
-[ext_resource type="PackedScene" uid="uid://bi2hg5giakfce" path="res://engine/objects/enemies/human_lab/goomba/goomba_clone.tscn" id="25_0t1og"]
-[ext_resource type="PackedScene" uid="uid://g6ed3enqcx1d" path="res://engine/objects/enemies/human_lab/bullet_bill/bullet_bill_clone.tscn" id="25_bpc0w"]
-[ext_resource type="PackedScene" uid="uid://bpdl22ol10045" path="res://engine/objects/enemies/human_lab/koopa_bro/big_human_clone_b.tscn" id="26_8cwt8"]
+[ext_resource type="PackedScene" uid="uid://qcjbejcppc1f" path="res://objects/hhpayclones/ami_clone/ami_clone.tscn" id="25_0t1og"]
+[ext_resource type="PackedScene" uid="uid://x46witsu6d5e" path="res://objects/hhpayclones/atchan_clone/atchan_clone.tscn" id="25_bpc0w"]
+[ext_resource type="PackedScene" uid="uid://c3vc7mk4fnxu6" path="res://objects/hhpayclones/julie_clone/julie_clone.tscn" id="26_8cwt8"]
 [ext_resource type="Script" uid="uid://bm81fg3h4j8sj" path="res://engine/scripts/resources/instance_node2d/instance_node2d.gd" id="26_ql2db"]
-[ext_resource type="PackedScene" uid="uid://dxqjmbtsadabq" path="res://engine/objects/enemies/human_lab/spiny/clone_spiny.tscn" id="27_255wt"]
+[ext_resource type="PackedScene" uid="uid://ciwccydxt7mpv" path="res://objects/hhpayclones/harmony_clone/harmony_clone.tscn" id="27_255wt"]
 [ext_resource type="PackedScene" uid="uid://bkaivnr6tufb" path="res://engine/objects/enemies/bullet_bill/launcher/bullet_launcher_base.tscn" id="27_mdp7c"]
 [ext_resource type="PackedScene" uid="uid://5i7dre6a0q0u" path="res://engine/objects/enemies/human_lab/piranha_head/jaws_head_clone.tscn" id="28_m2gy4"]
 [ext_resource type="PackedScene" uid="uid://dfm7d4qtja67b" path="res://engine/objects/core/finish_line/finish_line.tscn" id="33_8eul1"]
@@ -41,6 +45,7 @@
 [ext_resource type="Texture2D" uid="uid://6bwpp568bmq0" path="res://gfx/fancy_graphics/giant_clouds.png" id="36_76w6s"]
 [ext_resource type="Texture2D" uid="uid://vmkr0eaks2fr" path="res://gfx/fancy_graphics/bighill.png" id="37_s6hjm"]
 [ext_resource type="PackedScene" uid="uid://72feht11cer2" path="res://engine/components/audio_area/audio_area_cave.tscn" id="39_yrhfe"]
+[ext_resource type="PackedScene" uid="uid://dh4kf1w7jyseo" path="res://engine/objects/warps/pipe_in.tscn" id="46_k238i"]
 
 [sub_resource type="Gradient" id="Gradient_es0t3"]
 colors = PackedColorArray(0, 0, 0.592157, 1, 0.941176, 0.941176, 0.972549, 1)
@@ -59,36 +64,6 @@ region = Rect2(0, 0, 64, 32)
 script = ExtResource("26_ql2db")
 creation_nodepack = ExtResource("25_bpc0w")
 trans_inheritances = 6
-
-[sub_resource type="Resource" id="Resource_y8xhf"]
-resource_local_to_scene = true
-script = ExtResource("18_7yasp")
-creation_nodepack = ExtResource("17_j2bvf")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_drlqi"]
-resource_local_to_scene = true
-script = ExtResource("18_7yasp")
-creation_nodepack = ExtResource("17_j2bvf")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_4y2kq"]
-resource_local_to_scene = true
-script = ExtResource("18_7yasp")
-creation_nodepack = ExtResource("17_j2bvf")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_pokcx"]
-resource_local_to_scene = true
-script = ExtResource("18_7yasp")
-creation_nodepack = ExtResource("17_j2bvf")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_3bsrs"]
-resource_local_to_scene = true
-script = ExtResource("18_7yasp")
-creation_nodepack = ExtResource("17_j2bvf")
-trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_q53wn"]
 resource_local_to_scene = true
@@ -111,18 +86,48 @@ trans_inheritances = 7
 [sub_resource type="Resource" id="Resource_13u68"]
 resource_local_to_scene = true
 script = ExtResource("18_7yasp")
+creation_nodepack = ExtResource("17_j2bvf")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_cmmed"]
+resource_local_to_scene = true
+script = ExtResource("18_7yasp")
+creation_nodepack = ExtResource("17_j2bvf")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_c1i2g"]
+resource_local_to_scene = true
+script = ExtResource("18_7yasp")
+creation_nodepack = ExtResource("17_j2bvf")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_chign"]
+resource_local_to_scene = true
+script = ExtResource("18_7yasp")
+creation_nodepack = ExtResource("17_j2bvf")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_xhijp"]
+resource_local_to_scene = true
+script = ExtResource("18_7yasp")
+creation_nodepack = ExtResource("17_j2bvf")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_1iuka"]
+resource_local_to_scene = true
+script = ExtResource("18_7yasp")
 creation_fallback_node = ExtResource("20_q6wpg")
 creation_nodepack = ExtResource("21_ov45k")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_cmmed"]
+[sub_resource type="Resource" id="Resource_gl8qk"]
 resource_local_to_scene = true
 script = ExtResource("18_7yasp")
 creation_fallback_node = ExtResource("20_q6wpg")
 creation_nodepack = ExtResource("23_n847a")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_c1i2g"]
+[sub_resource type="Resource" id="Resource_uwb4v"]
 resource_local_to_scene = true
 script = ExtResource("18_7yasp")
 creation_nodepack = ExtResource("17_j2bvf")
@@ -140,13 +145,19 @@ size = Vector2(854.5, 8536)
 [node name="HumanLab-4" type="Node2D" unique_id=382566023]
 script = ExtResource("1_qs25b")
 time = -1
-completion_music = ExtResource("2_n22e2")
+completion_music = ExtResource("4_pokcx")
 jump_to_scene = "res://stages/extra/human_lab/human_lab_map.tscn"
+completion_music_delay_sec = 3.0
 
 [node name="MusicLoader" type="Node" parent="." unique_id=846641162]
 script = ExtResource("3_3ap68")
+tweaked_completion_music = ExtResource("4_pokcx")
+music_var_1 = Array[Resource]([ExtResource("4_4y2kq")])
 music_var_3 = Array[Resource]([ExtResource("5_u4e13")])
-music = Array[Resource]([ExtResource("4_ctyoo")])
+var_1_volume_db = Array[float]([0.6])
+music = Array[Resource]([ExtResource("5_drlqi")])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("6_4y2kq")]
 
 [node name="Mario" parent="." unique_id=16640355 instance=ExtResource("4_jspnb")]
 position = Vector2(144, 400)
@@ -181,6 +192,28 @@ tile_set = ExtResource("11_xkyhv")
 navigation_enabled = false
 
 [node name="HUD" parent="." unique_id=1759151664 instance=ExtResource("10_l7gv7")]
+
+[node name="Label" type="Label" parent="HUD" unique_id=1327384788]
+offset_left = 99.0
+offset_top = -36.0
+offset_right = 550.0
+offset_bottom = -5.0
+pivot_offset = Vector2(103, 16)
+theme_override_colors/font_outline_color = Color(0, 0, 0.435294, 1)
+theme_override_constants/line_spacing = 1
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("14_q53wn")
+theme_override_font_sizes/font_size = 12
+text = "what's that, you want human lab in mario forever remake v1.5?
+sorry! we have human lab at home!"
+horizontal_alignment = 1
+uppercase = true
+script = ExtResource("15_amnnq")
+tween_to = 230
+action_after_sec = 3.0
+change_scene = "res://stages/extra/we_have_human_lab_at_home/deranged_human_lab_map.tscn"
+skip_suspended_profile_save = false
+circle_transition_center_on_player = true
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=621704973]
 
@@ -548,47 +581,47 @@ position = Vector2(592, 272)
 
 [node name="QuestionBlock" parent="." unique_id=2033832560 instance=ExtResource("16_c3qsi")]
 position = Vector2(400, 272)
-result = SubResource("Resource_y8xhf")
+result = SubResource("Resource_q53wn")
 
 [node name="QuestionBlock4" parent="." unique_id=1613245763 instance=ExtResource("16_c3qsi")]
 position = Vector2(368, 112)
-result = SubResource("Resource_drlqi")
+result = SubResource("Resource_amnnq")
 
 [node name="QuestionBlock8" parent="." unique_id=582881049 instance=ExtResource("16_c3qsi")]
 position = Vector2(400, 112)
-result = SubResource("Resource_4y2kq")
+result = SubResource("Resource_k238i")
 
 [node name="QuestionBlock5" parent="." unique_id=17339781 instance=ExtResource("16_c3qsi")]
 position = Vector2(528, 112)
-result = SubResource("Resource_pokcx")
+result = SubResource("Resource_13u68")
 
 [node name="QuestionBlock6" parent="." unique_id=2049914313 instance=ExtResource("16_c3qsi")]
 position = Vector2(464, 112)
-result = SubResource("Resource_3bsrs")
+result = SubResource("Resource_cmmed")
 
 [node name="QuestionBlock7" parent="." unique_id=1138337315 instance=ExtResource("16_c3qsi")]
 position = Vector2(496, 112)
-result = SubResource("Resource_q53wn")
+result = SubResource("Resource_c1i2g")
 
 [node name="QuestionBlock2" parent="." unique_id=1090962745 instance=ExtResource("16_c3qsi")]
 position = Vector2(464, 272)
-result = SubResource("Resource_amnnq")
+result = SubResource("Resource_chign")
 
 [node name="QuestionBlock3" parent="." unique_id=494338435 instance=ExtResource("16_c3qsi")]
 position = Vector2(528, 272)
-result = SubResource("Resource_k238i")
+result = SubResource("Resource_xhijp")
 
 [node name="QuestionBlockFireFlower" parent="." unique_id=1366077856 instance=ExtResource("19_t4upt")]
 position = Vector2(432, 112)
-result = SubResource("Resource_13u68")
+result = SubResource("Resource_1iuka")
 
 [node name="QuestionBlockBeetroot" parent="." unique_id=1847259394 instance=ExtResource("22_k74ne")]
 position = Vector2(336, 272)
-result = SubResource("Resource_cmmed")
+result = SubResource("Resource_gl8qk")
 
 [node name="QuestionBlock10" parent="." unique_id=2127600340 instance=ExtResource("24_rxmgi")]
 position = Vector2(784, 3184)
-result = SubResource("Resource_c1i2g")
+result = SubResource("Resource_uwb4v")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock16" parent="." unique_id=1242787030 instance=ExtResource("24_rxmgi")]
@@ -731,3 +764,10 @@ visible = false
 position = Vector2(404.75, 6804)
 shape = SubResource("RectangleShape2D_h7f14")
 metadata/_edit_lock_ = true
+
+[node name="PipeIn" parent="." unique_id=1607065405 instance=ExtResource("46_k238i")]
+position = Vector2(192, 4848)
+rotation = 3.1415927
+warp_direction = 2
+
+[connection signal="warp_started" from="PipeIn" to="HUD/Label" method="activate"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ioulhpop8dsj"
+path="res://.godot/imported/Grounseed - Groundlife (A-Mix) [Spirit].ogg-0e979b9f861aff1008ddb6c03de43670.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Grounseed - Groundlife (A-Mix) [Spirit].ogg"
+dest_files=["res://.godot/imported/Grounseed - Groundlife (A-Mix) [Spirit].ogg-0e979b9f861aff1008ddb6c03de43670.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=42.45
+bpm=0.0
+beat_count=0
+bar_beats=4

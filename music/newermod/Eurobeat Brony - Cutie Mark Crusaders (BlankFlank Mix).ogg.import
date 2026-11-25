@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b060rcsywchy8"
+path="res://.godot/imported/Eurobeat Brony - Cutie Mark Crusaders (BlankFlank Mix).ogg-3f52a1590a0c0a00a738fa07df4fb560.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Eurobeat Brony - Cutie Mark Crusaders (BlankFlank Mix).ogg"
+dest_files=["res://.godot/imported/Eurobeat Brony - Cutie Mark Crusaders (BlankFlank Mix).ogg-3f52a1590a0c0a00a738fa07df4fb560.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=27.89
+bpm=0.0
+beat_count=0
+bar_beats=4

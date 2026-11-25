@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://gjtg5mwt3b0s"
+path="res://.godot/imported/Vim! - Into The Outside.mod-51bf80a6ef25053abdabfd1a11619029.res"
+
+[deps]
+
+source_file="res://music/newermod/Vim! - Into The Outside.mod"
+dest_files=["res://.godot/imported/Vim! - Into The Outside.mod-51bf80a6ef25053abdabfd1a11619029.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d1354nl2wn1cg"
+path="res://.godot/imported/vincent knurpy.ogg-21e9432cbc4e02286ac632ecf91694bb.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/vincent knurpy.ogg"
+dest_files=["res://.godot/imported/vincent knurpy.ogg-21e9432cbc4e02286ac632ecf91694bb.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

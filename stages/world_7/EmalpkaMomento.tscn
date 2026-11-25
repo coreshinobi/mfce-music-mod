@@ -3,7 +3,8 @@
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_opav8"]
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_vepfa"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_tgtvc"]
-[ext_resource type="AudioStream" uid="uid://bjxgnmvy3r7cs" path="res://music/smas-bowser.ogg" id="5_ljos1"]
+[ext_resource type="AudioStream" uid="uid://b6raeewppitns" path="res://music/newermod/SilverstepP and JoePotato28 - boss.ogg" id="4_ikaa8"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="5_gqxyb"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="6_6mnxq"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="7_oim7o"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="8_2mlf6"]
@@ -37,7 +38,7 @@ height = 480
 fill_from = Vector2(1, 0)
 fill_to = Vector2(1, 1)
 
-[sub_resource type="Resource" id="Resource_d8utb"]
+[sub_resource type="Resource" id="Resource_cnuyr"]
 resource_local_to_scene = true
 script = ExtResource("18_6jqj4")
 creation_fallback_node = ExtResource("16_x00xc")
@@ -60,8 +61,11 @@ jump_to_scene = "res://stages/world_7/map_7.tscn"
 
 [node name="MusicLoader" type="Node" parent="." unique_id=229522720]
 script = ExtResource("3_tgtvc")
-music = Array[Resource]([ExtResource("5_ljos1")])
-volume_db = Array[float]([3.0])
+music = Array[Resource]([ExtResource("4_ikaa8")])
+volume_db = Array[float]([0.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("5_gqxyb")]
+text = Array[String](["SilverstepP and JoePotato28 @ OpenSonic - Boss"])
 
 [node name="Mario" parent="." unique_id=2079945508 instance=ExtResource("6_6mnxq")]
 position = Vector2(80, 400)
@@ -103,7 +107,7 @@ metadata/_edit_lock_ = true
 
 [node name="QuestionBlockBeetroot" parent="." unique_id=1087534516 instance=ExtResource("15_jlee1")]
 position = Vector2(48, 288)
-result = SubResource("Resource_d8utb")
+result = SubResource("Resource_cnuyr")
 initially_visible_and_solid = false
 
 [node name="Brick" parent="." unique_id=76844258 instance=ExtResource("19_j0cl3")]

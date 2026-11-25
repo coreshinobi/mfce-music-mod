@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dxkgjyyspvfxn"
+path="res://.godot/imported/The Ganja Kru - Mash Up Da Place.ogg-1915a035475bb6ba03632b8a9c81ff41.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/The Ganja Kru - Mash Up Da Place.ogg"
+dest_files=["res://.godot/imported/The Ganja Kru - Mash Up Da Place.ogg-1915a035475bb6ba03632b8a9c81ff41.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=95.49
+bpm=0.0
+beat_count=0
+bar_beats=4

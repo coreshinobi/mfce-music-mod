@@ -5,14 +5,19 @@
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="3_dp7va"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="4_gpqcy"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="5_fe86e"]
-[ext_resource type="AudioStream" uid="uid://hjy24yffgitp" path="res://music/extra/world_u/dire_dire_docks.ogg" id="6_lgi5u"]
-[ext_resource type="AudioStream" uid="uid://dvjer3bl0ftxm" path="res://music/extra/world_u/smw-brinstar.ogg" id="7_mxxgs"]
+[ext_resource type="AudioStream" uid="uid://8dm7jtufas47" path="res://music/side_a/Secret of Evermore - Regal Castle.ogg" id="6_jbnu4"]
+[ext_resource type="AudioStream" uid="uid://bt2i71w1ndu8s" path="res://music/side_b/revisq - dr lester green.xm" id="6_laf2w"]
+[ext_resource type="AudioStream" uid="uid://dqy48h5qo343n" path="res://music/side_a/Azumanga Daioh - Genki...ya de.ogg" id="7_8aahq"]
+[ext_resource type="AudioStream" uid="uid://bku3o4to6sb52" path="res://music/side_b/revisq - boombastic anadune.mod" id="7_33mf5"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="8_an03j"]
+[ext_resource type="AudioStream" uid="uid://cxv2xcu5eagh0" path="res://music/newermod/viraxor - bubbles.xm" id="8_laf2w"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="8_u02n5"]
+[ext_resource type="AudioStream" uid="uid://cfbym2rmb6io3" path="res://music/newermod/toal nkor - paradise bird.xm" id="9_33mf5"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="9_bx07w"]
 [ext_resource type="Script" uid="uid://7byhkvlnfxa" path="res://components/secrets_manager/unlock_multiple.gd" id="9_tel57"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="10_idx82"]
 [ext_resource type="TileSet" uid="uid://bkax37l1q8oni" path="res://engine/tilesets/underground/underground.tres" id="11_qwjdh"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="12_8aahq"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="12_ua0kn"]
 [ext_resource type="FontFile" uid="uid://b1pi0t5byork2" path="res://engine/components/hud/hud_font.fnt" id="13_0uutu"]
 [ext_resource type="Texture2D" uid="uid://bw6tt0msakat6" path="res://engine/tilesets/underground/gfx/underground.png" id="14_d3nfx"]
@@ -101,13 +106,13 @@ gradient = SubResource("Gradient_5c5uj")
 height = 18
 fill_to = Vector2(0, 1)
 
-[sub_resource type="Resource" id="Resource_tel57"]
+[sub_resource type="Resource" id="Resource_jbnu4"]
 resource_local_to_scene = true
 script = ExtResource("25_dpbfw")
 creation_nodepack = ExtResource("24_412ap")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_2kp0m"]
+[sub_resource type="Resource" id="Resource_8aahq"]
 resource_local_to_scene = true
 script = ExtResource("25_dpbfw")
 creation_fallback_node = ExtResource("26_2fvdu")
@@ -216,12 +221,12 @@ metadata/_custom_type_script = "uid://dh7ob1sbo8lx7"
 script = ExtResource("4_gpqcy")
 tweaked_completion_music = ExtResource("5_fe86e")
 ignore_fade_in_tweak = false
-music_var_1 = Array[Resource]([])
-music_var_2 = Array[Resource]([])
+music_var_1 = Array[Resource]([ExtResource("6_jbnu4"), ExtResource("6_jbnu4"), ExtResource("7_8aahq")])
+music_var_2 = Array[Resource]([ExtResource("6_laf2w"), ExtResource("6_laf2w"), ExtResource("7_33mf5")])
 music_var_3 = Array[Resource]([])
 var_1_volume_db = Array[float]([0.0])
 var_1_start_from_sec = Array[float]([0.0])
-var_2_volume_db = Array[float]([0.0])
+var_2_volume_db = Array[float]([0.0, 0.0, 0.8])
 var_2_start_from_sec = Array[float]([0.0])
 var_3_volume_db = Array[float]([0.0])
 var_3_start_from_sec = Array[float]([0.0])
@@ -230,9 +235,11 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("6_lgi5u"), ExtResource("6_lgi5u"), ExtResource("7_mxxgs")])
-volume_db = Array[float]([0.0, 0.0, 5.0])
-start_from_sec = Array[float]([0.0, 108.52, 0.0])
+music = Array[Resource]([ExtResource("8_laf2w"), ExtResource("8_laf2w"), ExtResource("9_33mf5")])
+volume_db = Array[float]([0.0, 0.0, 0.8])
+start_from_sec = Array[float]([0.0, 0.0, 0.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("12_8aahq")]
 
 [node name="SecretUnlocker" parent="." unique_id=596987888 instance=ExtResource("8_an03j")]
 secrets = Array[String](["world u normal in kevin mode"])
@@ -1526,11 +1533,11 @@ position = Vector2(592, 112)
 
 [node name="QuestionBlock" parent="." unique_id=1887936978 instance=ExtResource("23_iq25h")]
 position = Vector2(592, 304)
-result = SubResource("Resource_tel57")
+result = SubResource("Resource_jbnu4")
 
 [node name="QuestionBlock2" parent="." unique_id=1334342450 instance=ExtResource("23_iq25h")]
 position = Vector2(4240, 176)
-result = SubResource("Resource_2kp0m")
+result = SubResource("Resource_8aahq")
 
 [node name="CheepBlue" parent="." unique_id=1946420876 instance=ExtResource("28_5vgec")]
 position = Vector2(976, 336)

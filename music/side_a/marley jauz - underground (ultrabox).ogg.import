@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://4hl0ofki05s4"
+path="res://.godot/imported/marley jauz - underground (ultrabox).ogg-3b8708e08e613d4292078201ed9fb997.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/marley jauz - underground (ultrabox).ogg"
+dest_files=["res://.godot/imported/marley jauz - underground (ultrabox).ogg-3b8708e08e613d4292078201ed9fb997.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

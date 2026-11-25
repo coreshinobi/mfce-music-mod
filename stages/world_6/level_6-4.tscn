@@ -3,15 +3,18 @@
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_ibs2y"]
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_s81if"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_c7djl"]
-[ext_resource type="AudioStream" uid="uid://bd7r5d5eb275q" path="res://music/smw-haunted-house.ogg" id="3_yhsec"]
+[ext_resource type="AudioStream" uid="uid://cr1o77v7ix7ah" path="res://music/side_b/shout - jack & jill.mod" id="4_4ufso"]
+[ext_resource type="AudioStream" uid="uid://cgxthd0n65myi" path="res://music/newermod/buddha - battle cry.mod" id="4_aylw0"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_bpv6u"]
+[ext_resource type="AudioStream" uid="uid://df8b7hrvqm6v1" path="res://music/newermod/Toby Fox (ft. Camellia) - Cutie Mew Mew Magic.ogg" id="5_4ufso"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="5_8jj88"]
-[ext_resource type="AudioStream" uid="uid://bexk1qd4psene" path="res://engine/objects/bosses/bowser/music/music_bowser_battle.mod" id="5_k4jhb"]
 [ext_resource type="PackedScene" uid="uid://diivlwjl0y1i7" path="res://engine/objects/bosses/bowser/bowser_trigger.tscn" id="6_ei8jc"]
-[ext_resource type="AudioStream" uid="uid://cnn040q2lodum" path="res://music/smrpg-bowser.ogg" id="7_ofly0"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="6_s7vf2"]
+[ext_resource type="AudioStream" uid="uid://cpqplji7jsl8g" path="res://music/side_b/pratap - syokonsulent.xm" id="6_yikrt"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="8_grjip"]
 [ext_resource type="TileSet" uid="uid://co4kwf1fb2y5i" path="res://tilesets/castle/castle_tileset.tres" id="9_jmvuk"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="10_agw7e"]
+[ext_resource type="AudioStream" uid="uid://bgnm3ln780py3" path="res://music/newermod/Maza - Meathead.mod" id="10_yikrt"]
 [ext_resource type="FontFile" uid="uid://b1pi0t5byork2" path="res://engine/components/hud/hud_font.fnt" id="11_j3ep1"]
 [ext_resource type="Texture2D" uid="uid://bm62kwqcqdgkl" path="res://engine/tilesets/castle/gfx/BGCastle.png" id="12_yr4ue"]
 [ext_resource type="Texture2D" uid="uid://datxucicbvxkp" path="res://engine/tilesets/castle/gfx/BGCastleLoop.png" id="13_hxit3"]
@@ -28,8 +31,11 @@
 [ext_resource type="PackedScene" uid="uid://ltoqkqmxpt65" path="res://engine/objects/powerups/life_mushroom/life_mushroom.tscn" id="30_qvhtu"]
 [ext_resource type="PackedScene" uid="uid://ndc3gacjmer2" path="res://engine/objects/platform/castle_platforms/long_platform.tscn" id="31_k0hgp"]
 [ext_resource type="PackedScene" uid="uid://b3cggc3th4xua" path="res://engine/objects/platform/castle_platforms/double_platform.tscn" id="32_3b6xn"]
+[ext_resource type="AudioStream" uid="uid://btainbny5bu6f" path="res://objects/chorniy_mario/death_sounds/cs/dr1_voice_hca_us.awb.06325.ogg" id="32_ggilo"]
 [ext_resource type="PackedScene" uid="uid://uhf6frao7p1m" path="res://engine/objects/enemies/podoboo/podoboo.tscn" id="32_m2fmy"]
 [ext_resource type="PackedScene" uid="uid://8a7nemgi0b6q" path="res://engine/objects/powerups/beetroot/beetroot.tscn" id="32_p7c7v"]
+[ext_resource type="AudioStream" uid="uid://bdbaldnniebm6" path="res://objects/chorniy_mario/death_sounds/cs/dr1_voice_hca_us.awb.06363.ogg" id="33_crp6o"]
+[ext_resource type="AudioStream" uid="uid://dbj4mq38snmpr" path="res://objects/chorniy_mario/death_sounds/cs/vic_fukawa_99_040.wav" id="34_hvgi4"]
 [ext_resource type="PackedScene" uid="uid://b8kgbn8f7lvf0" path="res://engine/objects/items/coin/coin.tscn" id="34_mtnja"]
 [ext_resource type="PackedScene" uid="uid://crb8jkwa0r1dl" path="res://engine/objects/enemies/spinies/spiny_iron.tscn" id="35_0w14q"]
 [ext_resource type="Script" uid="uid://cnxwjeegbqs4q" path="res://stages/world_6/scripts/maze_script_with_retro.gd" id="36_aylw0"]
@@ -46,6 +52,7 @@
 [ext_resource type="Script" uid="uid://du32vchaulqj6" path="res://engine/objects/enemies/_dead/prefabs/do_killed.gd" id="45_ha8y4"]
 [ext_resource type="Script" uid="uid://bm81fg3h4j8sj" path="res://engine/scripts/resources/instance_node2d/instance_node2d.gd" id="46_4k7d4"]
 [ext_resource type="Texture2D" uid="uid://dryaolxjr37di" path="res://engine/objects/enemies/hammer_bros/textures/green_bro.png" id="47_d05h2"]
+[ext_resource type="PackedScene" uid="uid://b6ulux7lueoko" path="res://objects/human_lab_at_home/genocide_jack_doppelganger/genocide_jack_doppelganger.tscn" id="53_crp6o"]
 
 [sub_resource type="Curve2D" id="Curve2D_k5i2x"]
 _data = {
@@ -58,37 +65,37 @@ script = ExtResource("17_0xvs2")
 creation_nodepack = ExtResource("30_qvhtu")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_07sf7"]
+[sub_resource type="Resource" id="Resource_hvgi4"]
 resource_local_to_scene = true
 script = ExtResource("17_0xvs2")
 creation_nodepack = ExtResource("34_mtnja")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_aylw0"]
+[sub_resource type="Resource" id="Resource_w3t4y"]
 resource_local_to_scene = true
 script = ExtResource("17_0xvs2")
 creation_nodepack = ExtResource("34_mtnja")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_4ufso"]
+[sub_resource type="Resource" id="Resource_ux83e"]
 resource_local_to_scene = true
 script = ExtResource("17_0xvs2")
 creation_nodepack = ExtResource("34_mtnja")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_s7vf2"]
+[sub_resource type="Resource" id="Resource_7n6d8"]
 resource_local_to_scene = true
 script = ExtResource("17_0xvs2")
 creation_nodepack = ExtResource("34_mtnja")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_yikrt"]
+[sub_resource type="Resource" id="Resource_bj6hn"]
 resource_local_to_scene = true
 script = ExtResource("17_0xvs2")
 creation_nodepack = ExtResource("34_mtnja")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_dewm0"]
+[sub_resource type="Resource" id="Resource_ewwnd"]
 resource_local_to_scene = true
 script = ExtResource("17_0xvs2")
 creation_nodepack = ExtResource("34_mtnja")
@@ -186,8 +193,14 @@ completion_center_on_player_after_transition = true
 
 [node name="MusicLoader" type="Node" parent="." unique_id=2139801106]
 script = ExtResource("3_c7djl")
-boss_music_var_1 = ExtResource("5_k4jhb")
-music = Array[Resource]([ExtResource("3_yhsec")])
+music_var_2 = Array[Resource]([ExtResource("4_4ufso")])
+var_2_volume_db = Array[float]([2.1])
+boss_music_var_1 = ExtResource("4_aylw0")
+boss_music_var_2 = ExtResource("6_yikrt")
+boss_music_volume_db = Array[float]([0.0, 0.6])
+music = Array[Resource]([ExtResource("5_4ufso")])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("6_s7vf2")]
 
 [node name="Mario" parent="." unique_id=501887294 instance=ExtResource("4_bpv6u")]
 position = Vector2(240, 272)
@@ -202,7 +215,7 @@ position = Vector2(12672, 224)
 curve = SubResource("Curve2D_k5i2x")
 trigger_area = Rect2(0, 0, 32, 960)
 trigger_bowser = NodePath("../Bowser")
-boss_music = ExtResource("7_ofly0")
+boss_music = ExtResource("10_yikrt")
 
 [node name="CameraArea" parent="." unique_id=2000792283 instance=ExtResource("8_grjip")]
 offset_right = 13725.0
@@ -394,27 +407,27 @@ result = SubResource("Resource_4qj43")
 
 [node name="QuestionBlock9" parent="." unique_id=1722914211 instance=ExtResource("17_634yv")]
 position = Vector2(4240, 176)
-result = SubResource("Resource_07sf7")
+result = SubResource("Resource_hvgi4")
 
 [node name="QuestionBlock10" parent="." unique_id=762906971 instance=ExtResource("17_634yv")]
 position = Vector2(9616, 16)
-result = SubResource("Resource_aylw0")
+result = SubResource("Resource_w3t4y")
 
 [node name="QuestionBlock11" parent="." unique_id=2122037052 instance=ExtResource("17_634yv")]
 position = Vector2(9648, 16)
-result = SubResource("Resource_4ufso")
+result = SubResource("Resource_ux83e")
 
 [node name="QuestionBlock12" parent="." unique_id=948319487 instance=ExtResource("17_634yv")]
 position = Vector2(9904, 16)
-result = SubResource("Resource_s7vf2")
+result = SubResource("Resource_7n6d8")
 
 [node name="QuestionBlock13" parent="." unique_id=1896769189 instance=ExtResource("17_634yv")]
 position = Vector2(9936, 16)
-result = SubResource("Resource_yikrt")
+result = SubResource("Resource_bj6hn")
 
 [node name="QuestionBlock14" parent="." unique_id=1576595548 instance=ExtResource("17_634yv")]
 position = Vector2(10320, 16)
-result = SubResource("Resource_dewm0")
+result = SubResource("Resource_ewwnd")
 
 [node name="QuestionBlock16" parent="." unique_id=1756835265 instance=ExtResource("17_634yv")]
 position = Vector2(4208, 176)
@@ -438,6 +451,7 @@ position = Vector2(13488, 48)
 
 [node name="Checkpoint" parent="." unique_id=298462425 instance=ExtResource("25_ysr70")]
 position = Vector2(6304, 416)
+voice_lines = Array[AudioStream]([ExtResource("32_ggilo"), ExtResource("33_crp6o"), ExtResource("34_hvgi4")])
 
 [node name="GrayPlatformBg" type="Sprite2D" parent="." unique_id=1479539411]
 z_index = -1
@@ -689,6 +703,9 @@ shape = SubResource("RectangleShape2D_xrivr")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D2" unique_id=891461505]
 position = Vector2(7216, 384)
 shape = SubResource("RectangleShape2D_xrivr")
+
+[node name="GenocideJackDoppelganger" parent="." unique_id=105640848 instance=ExtResource("53_crp6o")]
+position = Vector2(8958, 384)
 
 [connection signal="player_enter" from="Area2D" to="Node" method="entered_and_retro"]
 [connection signal="player_enter" from="Area2D3" to="Node2" method="entered_and_retro"]

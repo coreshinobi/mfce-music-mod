@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dxnt8d8y36n37"
+path="res://.godot/imported/OcularNebula - Stay Inside Me (Geometry Dash Practice Mix).ogg-15a25dd07554bbd9eb40bfba90923bb9.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/OcularNebula - Stay Inside Me (Geometry Dash Practice Mix).ogg"
+dest_files=["res://.godot/imported/OcularNebula - Stay Inside Me (Geometry Dash Practice Mix).ogg-15a25dd07554bbd9eb40bfba90923bb9.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

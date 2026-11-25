@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://g6lq326jvb2p"
+path="res://.godot/imported/Marblez78 - Catswing Athletic.ogg-609c83aef0de6aa5021fcc4dc59a60d8.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Marblez78 - Catswing Athletic.ogg"
+dest_files=["res://.godot/imported/Marblez78 - Catswing Athletic.ogg-609c83aef0de6aa5021fcc4dc59a60d8.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=33.06
+bpm=0.0
+beat_count=0
+bar_beats=4

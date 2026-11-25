@@ -5,10 +5,10 @@
 [ext_resource type="Script" uid="uid://dqpjvnpaib56" path="res://stages/cutscenes/starting/scripts/camera_part2.gd" id="2_sc0x8"]
 [ext_resource type="TileSet" uid="uid://dtvs1rult8kbe" path="res://tilesets/overworld_green/overworld_green.tres" id="3_ape4i"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_ne53n"]
-[ext_resource type="AudioStream" uid="uid://cyqasy8ba8rlt" path="res://music/cutscene/smw-ending_part_2.ogg" id="3_uce5m"]
 [ext_resource type="Texture2D" uid="uid://ckfb3opqbapyi" path="res://engine/tilesets/overworld/gfx/tree_tall.png" id="4_c88du"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="4_ov1if"]
 [ext_resource type="Texture2D" uid="uid://csps5gx8et6p5" path="res://engine/scenes/castle_cutscene/textures/castle_small.png" id="5_meq2e"]
+[ext_resource type="AudioStream" uid="uid://s1cfyn8u83nt" path="res://music/newermod/Ace Attorney Trials and Tribulations - Dahlia Hawthorne.ogg" id="5_ne53n"]
 [ext_resource type="Texture2D" uid="uid://cxmve6ifys6u" path="res://stages/cutscenes/gfx/sceneria-flaga.png" id="6_pml58"]
 [ext_resource type="Texture2D" uid="uid://bxtxremt1t6ju" path="res://stages/cutscenes/gfx/house-2.png" id="7_6bl0j"]
 [ext_resource type="Texture2D" uid="uid://bmtptl208bdxl" path="res://stages/cutscenes/gfx/house-1.png" id="8_xrcrj"]
@@ -143,7 +143,7 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("3_uce5m")])
+music = Array[Resource]([ExtResource("5_ne53n")])
 play_globally = 2
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=866536215]

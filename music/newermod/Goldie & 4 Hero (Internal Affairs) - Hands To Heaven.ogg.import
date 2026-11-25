@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b4bmgq0a2h5h3"
+path="res://.godot/imported/Goldie & 4 Hero (Internal Affairs) - Hands To Heaven.ogg-00e0d49519b0b709b280d7b183e4dcd9.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Goldie & 4 Hero (Internal Affairs) - Hands To Heaven.ogg"
+dest_files=["res://.godot/imported/Goldie & 4 Hero (Internal Affairs) - Hands To Heaven.ogg-00e0d49519b0b709b280d7b183e4dcd9.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://crtp1mmy4dsgf"
+path="res://.godot/imported/merge - poppedreng vil ha.mod-e230d49739defde54d265b92b84488fc.res"
+
+[deps]
+
+source_file="res://music/side_a/merge - poppedreng vil ha.mod"
+dest_files=["res://.godot/imported/merge - poppedreng vil ha.mod-e230d49739defde54d265b92b84488fc.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

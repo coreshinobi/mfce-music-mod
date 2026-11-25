@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://c33pkbdyd2nmt"
+path="res://.godot/imported/enacostione - innlevelse.xm-a24e7e8e7083df673874172e06774460.res"
+
+[deps]
+
+source_file="res://music/newermod/enacostione - innlevelse.xm"
+dest_files=["res://.godot/imported/enacostione - innlevelse.xm-a24e7e8e7083df673874172e06774460.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

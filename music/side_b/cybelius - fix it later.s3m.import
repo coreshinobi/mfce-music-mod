@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://cml3636yxmrkp"
+path="res://.godot/imported/cybelius - fix it later.s3m-3e38c68409a479ee1ca932ed0882835d.res"
+
+[deps]
+
+source_file="res://music/side_b/cybelius - fix it later.s3m"
+dest_files=["res://.godot/imported/cybelius - fix it later.s3m-3e38c68409a479ee1ca932ed0882835d.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

@@ -5,8 +5,9 @@
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="3_qm0p7"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="4_ai7kf"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="5_bh331"]
-[ext_resource type="AudioStream" uid="uid://cg5yrockdva1i" path="res://music/extra/world_u/koopas_road.ogg" id="6_ky6i6"]
+[ext_resource type="AudioStream" uid="uid://dxy5lxrtuxrqt" path="res://music/newermod/Danganronpa Ultra Despair Girls - Warriors of Hope.ogg" id="6_1aki3"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="7_8qy0l"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="7_gkh00"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="8_2vxf5"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="9_x475w"]
 [ext_resource type="TileSet" uid="uid://bgdkv8m3grmin" path="res://engine/tilesets/castle/castle_tileset.tres" id="10_4iyu1"]
@@ -101,7 +102,7 @@ animations = [{
 "speed": 6.0
 }]
 
-[sub_resource type="Resource" id="Resource_1aki3"]
+[sub_resource type="Resource" id="Resource_gkh00"]
 resource_local_to_scene = true
 script = ExtResource("21_8diw7")
 creation_nodepack = ExtResource("20_mhejj")
@@ -192,8 +193,10 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("6_ky6i6")])
-start_from_sec = Array[float]([0.32])
+music = Array[Resource]([ExtResource("6_1aki3")])
+start_from_sec = Array[float]([0.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("7_gkh00")]
 
 [node name="Player" parent="." unique_id=1519503469 instance=ExtResource("7_8qy0l")]
 position = Vector2(320, 4880)
@@ -292,7 +295,7 @@ centered = false
 
 [node name="QuestionBlock" parent="." unique_id=1198679562 instance=ExtResource("19_0np7y")]
 position = Vector2(576, 4368)
-result = SubResource("Resource_1aki3")
+result = SubResource("Resource_gkh00")
 
 [node name="BulletLauncher" parent="." unique_id=705641021 instance=ExtResource("22_arein")]
 position = Vector2(16, 2704)

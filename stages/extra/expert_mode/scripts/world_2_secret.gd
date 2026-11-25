@@ -42,12 +42,12 @@ func activate() -> void:
 		music_loader.unpause_music()
 		Thunder._current_hud.show()
 	, CONNECT_ONE_SHOT)
-	await get_tree().create_timer(0.5, false, false).timeout
-	Audio.play_sound(preload("res://objects/chorniy_mario/death_sounds/very_new/sfx_logo.ogg"), marker_2d, false, {bus = "1D Sound"})
-	$AnimationPlayer.play(&"new_animation")
+	await get_tree().create_timer(2.1, false, false).timeout
+	Audio.play_sound(preload("res://sfx/komaru_toki.wav"), marker_2d, false, {bus = "1D Sound"})
+	$komaru.play(&"tokiiiiii")
 	
-	await get_tree().create_timer(6.0, false, false).timeout
-	Audio.play_sound(preload("res://sfx/explode.wav"), marker_2d, false)
+	await get_tree().create_timer(0.8, false, false).timeout
+	Audio.play_sound(preload("res://sfx/explode_secretloud.wav"), marker_2d, false)
 	if Thunder._current_player:
 		Thunder._current_player.jump(37*50)
 		Thunder._current_player.ignore_input = false

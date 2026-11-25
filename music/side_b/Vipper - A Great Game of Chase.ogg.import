@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://3f2r8rv1c8gn"
+path="res://.godot/imported/Vipper - A Great Game of Chase.ogg-57e92b58f9a713aa49c78823b842ab0c.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_b/Vipper - A Great Game of Chase.ogg"
+dest_files=["res://.godot/imported/Vipper - A Great Game of Chase.ogg-57e92b58f9a713aa49c78823b842ab0c.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=8.55
+bpm=0.0
+beat_count=0
+bar_beats=4

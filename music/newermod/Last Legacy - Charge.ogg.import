@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://byfctclkl3784"
+path="res://.godot/imported/Last Legacy - Charge.ogg-58f0567e26becffc8fc0390e770bdffc.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Last Legacy - Charge.ogg"
+dest_files=["res://.godot/imported/Last Legacy - Charge.ogg-58f0567e26becffc8fc0390e770bdffc.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=4.8
+bpm=0.0
+beat_count=0
+bar_beats=4

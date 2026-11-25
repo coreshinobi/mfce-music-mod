@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="2_wyplp"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_ujily"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="4_5b0gg"]
-[ext_resource type="AudioStream" uid="uid://btpyiw5bb11ex" path="res://music/extra/expert_mode/voices in the night.xm" id="5_of3ud"]
+[ext_resource type="AudioStream" uid="uid://pxlimj5sye48" path="res://music/newermod/manwe - orcs war.s3m" id="5_x4acr"]
 [ext_resource type="Script" uid="uid://0h3x5dwndovw" path="res://engine/scripts/nodes/effects/quality_visible.gd" id="6_0yjtt"]
 [ext_resource type="Texture2D" uid="uid://bw6tt0msakat6" path="res://engine/tilesets/underground/gfx/underground.png" id="6_5id74"]
 [ext_resource type="Texture2D" uid="uid://djuoyh4schdj1" path="res://stages/cutscenes/ending/part_4/gfx/broken_tank_bg.png" id="7_c360q"]
@@ -1022,10 +1022,12 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("5_of3ud")])
+playback_pitch = 1.0
+music = Array[Resource]([ExtResource("5_x4acr")])
 play_immediately = false
 stop_all_music_on_start = false
 play_globally = 2
+volume_db = Array[float]([1.4])
 start_from_sec = Array[float]([0.0])
 
 [node name="ParallaxBackground2" type="ParallaxBackground" parent="." unique_id=343100750]

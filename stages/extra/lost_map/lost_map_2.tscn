@@ -4,8 +4,10 @@
 [ext_resource type="AudioStream" uid="uid://ylpjis71vd26" path="res://music/extra/smw-bonus-clear.ogg" id="2_83swy"]
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="3_2ifaf"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="4_kwyfa"]
-[ext_resource type="AudioStream" uid="uid://cwj5jcgsyriug" path="res://music/lostmap/lostmap_2.ogg" id="5_fst8p"]
+[ext_resource type="AudioStream" uid="uid://dmia08remxbyh" path="res://music/newermod/Channel 4 Teletext 4 -Tel Music 2.ogg" id="5_b8r35"]
+[ext_resource type="AudioStream" uid="uid://drd7w8tq5ag3r" path="res://music/side_a/Alone Coder - Baseer.ogg" id="5_jskrc"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="6_e768h"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="6_jskrc"]
 [ext_resource type="AudioStream" uid="uid://csqg16k26jclf" path="res://music/extra/smw-death_extra.ogg" id="7_jto1g"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="8_4qimn"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="9_tv1f1"]
@@ -76,7 +78,7 @@ metadata/_snap_enabled = true
 gradient = SubResource("Gradient_mjv5g")
 width = 400
 
-[sub_resource type="Resource" id="Resource_hs18t"]
+[sub_resource type="Resource" id="Resource_mjv5g"]
 resource_local_to_scene = true
 script = ExtResource("23_fkx3h")
 creation_nodepack = ExtResource("26_dncai")
@@ -92,7 +94,7 @@ completion_music_delay_sec = 4.0
 script = ExtResource("4_kwyfa")
 tweaked_completion_music = ExtResource("2_83swy")
 ignore_fade_in_tweak = false
-music_var_1 = Array[Resource]([])
+music_var_1 = Array[Resource]([ExtResource("5_jskrc")])
 music_var_2 = Array[Resource]([])
 music_var_3 = Array[Resource]([])
 var_1_volume_db = Array[float]([0.0])
@@ -106,8 +108,10 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("5_fst8p")])
-start_from_sec = Array[float]([0.8])
+music = Array[Resource]([ExtResource("5_b8r35")])
+start_from_sec = Array[float]([0.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("6_jskrc")]
 
 [node name="Mario" parent="." unique_id=361946206 instance=ExtResource("6_e768h")]
 position = Vector2(322, 304)
@@ -596,7 +600,7 @@ position = Vector2(8879, 1212)
 
 [node name="QuestionBlockLife" parent="." unique_id=1144270685 instance=ExtResource("25_sea3u")]
 position = Vector2(7408, 112)
-result = SubResource("Resource_hs18t")
+result = SubResource("Resource_mjv5g")
 
 [node name="CheepYellow" parent="." unique_id=287696689 instance=ExtResource("28_b32cb")]
 position = Vector2(7200, 153)

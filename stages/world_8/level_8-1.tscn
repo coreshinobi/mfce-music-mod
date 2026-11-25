@@ -4,7 +4,8 @@
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_1rwt1"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_abmn6"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_2tcy5"]
-[ext_resource type="AudioStream" uid="uid://b8pcdleki0b86" path="res://music/smw-fortress.ogg" id="4_fhqg2"]
+[ext_resource type="AudioStream" uid="uid://b1gwhkek5kyrj" path="res://music/newermod/Toby Fox - SPAWN.ogg" id="4_30ll4"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="5_40te6"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="6_sghht"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_37cig"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="10_7qhka"]
@@ -158,7 +159,11 @@ jump_to_scene = "res://stages/world_8/map_8.tscn"
 
 [node name="MusicLoader" type="Node" parent="." unique_id=1971653752]
 script = ExtResource("3_abmn6")
-music = Array[Resource]([ExtResource("4_fhqg2")])
+music = Array[Resource]([ExtResource("4_30ll4")])
+volume_db = Array[float]([1.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("5_40te6")]
+text = Array[String](["Toby Fox - SPAWN"])
 
 [node name="Mario" parent="." unique_id=331002378 instance=ExtResource("4_2tcy5")]
 position = Vector2(205, 272)

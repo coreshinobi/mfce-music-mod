@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://cmmdbn3mplkrh" path="res://stages/extra/expert_mode/ending_scene/ending_credits.gd" id="1_3wkjl"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="1_jvknq"]
-[ext_resource type="AudioStream" uid="uid://b411reucrqbk6" path="res://music/extra/expert_mode/Liam_the_lemming_-_Deep_Joy.it" id="2_ldx5w"]
 [ext_resource type="Texture2D" uid="uid://b0iqsi0hiekpd" path="res://gfx/cutscene/toad_balloon.png" id="3_175al"]
+[ext_resource type="AudioStream" uid="uid://crieov7cxxcpg" path="res://music/newermod/Denes Nagy @ Wendetta 2175 - Nevermind.MOD" id="3_lw1ue"]
 [ext_resource type="Texture2D" uid="uid://eidowujcvgat" path="res://objects/final_boss_cell/textures/cell_peach_walking.png" id="4_22aeb"]
 [ext_resource type="Texture2D" uid="uid://d3jmf1x2m743j" path="res://tilesets/starland/gfx/Stars-2.png" id="4_hl1cd"]
 [ext_resource type="Texture2D" uid="uid://dsagppu16vuce" path="res://stages/cutscenes/ending/part_4/gfx/toad_walker.png" id="5_ulyfj"]
@@ -627,8 +627,8 @@ goto_path = "res://stages/main_menu/main_menu.tscn"
 
 [node name="MusicLoader" type="Node" parent="." unique_id=1888355422]
 script = ExtResource("1_jvknq")
-music = Array[Resource]([ExtResource("2_ldx5w")])
-volume_db = Array[float]([-1.0])
+music = Array[Resource]([ExtResource("3_lw1ue")])
+volume_db = Array[float]([0.0])
 
 [node name="BG" type="ParallaxBackground" parent="." unique_id=672451422]
 
@@ -697,7 +697,7 @@ anchor_bottom = 1.0
 offset_left = 32.0
 offset_top = 386.0
 offset_right = -32.0
-offset_bottom = 2352.0
+offset_bottom = 2903.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0.439, 1)
@@ -734,21 +734,48 @@ ZIKTHEGREEN
 MASTER48
 MIYAMEON
 
--- [color=yellow]SOUNDTRACKS USED:[/color] --
+-- [color=yellow]SOUNDTRACKS USED @ SHINOBIC MIXTAPE MOD:[/color] --
 [left][color=lightskyblue]TITLE SCREEN:[/color]
-	SLIGHTLY LARGE NC. - SUPERSAW TEST
+	DENES NAGY @ WENDETTA 2175 - MOONLIGHT RAVE
 [color=lightskyblue]INTRO CUTSCENE:[/color]
-	NEOPHRON - VOICES IN THE NIGHT
+	MANWE - ORCS WAR
 [color=lightskyblue]WORLD 1 MAP:[/color]
-	FRED/SURPRISE - AG.MOD
+	REVISQ - C64 AGAIN
+[color=lightskyblue]1-1:[/color]
+	AMBASSADORS OF FUNK FT M.C. MARIO - SUPERMARIOWORLD
+[color=lightskyblue]1-1 BONUS:[/color]
+	VISION CREW - STARGAZER
+[color=lightskyblue]1-2:[/color]
+	R.V. PINE - WATERLOGGED
+[color=lightskyblue]1-2 BONUS:[/color]
+	RIVER347 - SLOW STEP
+[color=lightskyblue]1-3:[/color]
+	HI HI PUFFY AMIYUMI: KAZNAPPED - BOSS: HARMONY
+[color=lightskyblue]1-4:[/color]
+	TOBY FOX @ POKEMON SWORD & SHIELD - BATTLE! (BATTLE TOWER)
 [color=lightskyblue]WORLD 2 MAP:[/color]
-	MALMEN - LOVE AT FIRST SIGHT
+	ACE ATTORNEY: JUSTICE FOR ALL - COURT IS NOW IN SESSION
+	DANGANRONPA V3 - OUR CLASS TRIAL
+[color=lightskyblue]2-1:[/color]
+	PHOENIX WRIGHT: ACE ATTORNEY - TRICKS AND DEDUCTIONS
 [color=lightskyblue]2-1 SECRET:[/color]
-	JOGEIR LILJEDAHL - UNDERWATER
+	TUOMO SALORANTA - THE GLORY OF GOD
+[color=lightskyblue]2-2:[/color]
+	APOLLO JUSTICE: ACE ATTORNEY - PSYCHE-LOCKS 2007
+[color=lightskyblue]2-2 SECRET:[/color]
+	VEER NALES - UNDERWATER MARIO ILLADOME REMIX
+[color=lightskyblue]2-3:[/color]
+	ACE ATTORNEY: TRIALS AND TRIBULATIONS - MASK DEMASQUE
+[color=lightskyblue]2-4:[/color]
+	DANGANRONPA V3 - CLASS TRIAL: DAWN EDITION
+[color=lightskyblue]2-4 BONUS:[/color]
+	MICE - OCEAN
+[color=lightskyblue]2-5:[/color]
+	DANGANRONPA V3 - ARGUMENT -PANIC-
 [color=lightskyblue]WORLD 3 MAP:[/color]
-	ANVIL - BACKWATERS
+	HOFFMAN - JUNGLE LOVE
 [color=lightskyblue]WORLD 3 MAP SECRET:[/color]
-	PUNNIK - ONZE POES EN...
+	INTEC INTERACT - 89-IN-1 GAME SELECT
 [color=lightskyblue]3-2:[/color]
 	SMW CENTRAL - BLIND DEVIL - CHECK THE TEMPERATURE
 [color=lightskyblue]3-3:[/color]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://by2niyeat4ux2"
+path="res://.godot/imported/Coda - Luminous Vein.ogg-cbc573ab7ac94a33ad4d2a32ca603aa1.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Coda - Luminous Vein.ogg"
+dest_files=["res://.godot/imported/Coda - Luminous Vein.ogg-cbc573ab7ac94a33ad4d2a32ca603aa1.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

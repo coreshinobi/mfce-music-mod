@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cnyajhnwk2wr1"
+path="res://.godot/imported/Last Legacy - Desert Castle.ogg-c77b6b009566d1eb0f433f2042b6fb0c.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Last Legacy - Desert Castle.ogg"
+dest_files=["res://.godot/imported/Last Legacy - Desert Castle.ogg-c77b6b009566d1eb0f433f2042b6fb0c.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=2.07
+bpm=0.0
+beat_count=0
+bar_beats=4

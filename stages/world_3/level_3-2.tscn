@@ -2,8 +2,10 @@
 
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_d4ljw"]
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_n6fty"]
-[ext_resource type="AudioStream" uid="uid://cyrq625tllkaw" path="res://music/smb-underground.ogg" id="3_6efq4"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_ephvl"]
+[ext_resource type="AudioStream" uid="uid://ioulhpop8dsj" path="res://music/side_a/Grounseed - Groundlife (A-Mix) [Spirit].ogg" id="4_3xj0p"]
+[ext_resource type="AudioStream" uid="uid://cvou21564lp55" path="res://music/newermod/Chuki Beats - Real Chill Old School Hip Hop Instrumentals Rap Beat #3.ogg" id="4_5crvc"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="5_3xj0p"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="5_vp4bj"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="6_8knoe"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_k0yry"]
@@ -83,7 +85,7 @@ region = Rect2(224, 16, 31, 32)
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_de5sm"]
 
-[sub_resource type="Resource" id="Resource_ey38s"]
+[sub_resource type="Resource" id="Resource_31xo2"]
 resource_local_to_scene = true
 script = ExtResource("23_c4o37")
 creation_fallback_node = ExtResource("21_d1esh")
@@ -91,31 +93,31 @@ creation_nodepack = ExtResource("41_etjqg")
 trans_inheritances = 7
 metadata/_custom_type_script = "uid://chvjy6okoognf"
 
-[sub_resource type="Resource" id="Resource_5crvc"]
+[sub_resource type="Resource" id="Resource_pgfn2"]
 resource_local_to_scene = true
 script = ExtResource("23_c4o37")
 creation_nodepack = ExtResource("37_6l5ih")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_3xj0p"]
-resource_local_to_scene = true
-script = ExtResource("23_c4o37")
-creation_nodepack = ExtResource("25_x5te3")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_31xo2"]
-resource_local_to_scene = true
-script = ExtResource("23_c4o37")
-creation_nodepack = ExtResource("25_x5te3")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_pgfn2"]
-resource_local_to_scene = true
-script = ExtResource("23_c4o37")
-creation_nodepack = ExtResource("25_x5te3")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_mv6it"]
+resource_local_to_scene = true
+script = ExtResource("23_c4o37")
+creation_nodepack = ExtResource("25_x5te3")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_twkug"]
+resource_local_to_scene = true
+script = ExtResource("23_c4o37")
+creation_nodepack = ExtResource("25_x5te3")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_orlph"]
+resource_local_to_scene = true
+script = ExtResource("23_c4o37")
+creation_nodepack = ExtResource("25_x5te3")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_56pu5"]
 resource_local_to_scene = true
 script = ExtResource("23_c4o37")
 creation_nodepack = ExtResource("37_6l5ih")
@@ -129,7 +131,11 @@ lighting_force_hide_on_start = false
 
 [node name="MusicLoader" type="Node" parent="." unique_id=1487707288]
 script = ExtResource("3_ephvl")
-music = Array[Resource]([ExtResource("3_6efq4")])
+music_var_1 = Array[Resource]([ExtResource("4_3xj0p")])
+var_1_volume_db = Array[float]([0.7])
+music = Array[Resource]([ExtResource("4_5crvc")])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("5_3xj0p")]
 
 [node name="Mario" parent="." unique_id=815031438 instance=ExtResource("5_vp4bj")]
 position = Vector2(128, 960)
@@ -870,27 +876,27 @@ position = Vector2(1968, 976)
 
 [node name="QuestionBlock4" parent="." unique_id=755251719 instance=ExtResource("37_mv6it")]
 position = Vector2(1840, 1168)
-result = SubResource("Resource_ey38s")
+result = SubResource("Resource_31xo2")
 
 [node name="QuestionBlock8" parent="." unique_id=389593132 instance=ExtResource("37_mv6it")]
 position = Vector2(4368, 1296)
-result = SubResource("Resource_5crvc")
+result = SubResource("Resource_pgfn2")
 initially_visible_and_solid = false
 exists_once = true
 
 [node name="QuestionBlock6" parent="." unique_id=109667775 instance=ExtResource("37_mv6it")]
 position = Vector2(3120, 1072)
-result = SubResource("Resource_3xj0p")
+result = SubResource("Resource_mv6it")
 initially_visible_and_solid = false
 exists_once = true
 
 [node name="QuestionBlock" parent="." unique_id=221048231 instance=ExtResource("37_mv6it")]
 position = Vector2(4080, 1200)
-result = SubResource("Resource_31xo2")
+result = SubResource("Resource_twkug")
 
 [node name="QuestionBlock7" parent="." unique_id=1935289127 instance=ExtResource("37_mv6it")]
 position = Vector2(4112, 1200)
-result = SubResource("Resource_pgfn2")
+result = SubResource("Resource_orlph")
 
 [node name="HarderDesignNode" parent="." unique_id=2083700217 instance=ExtResource("34_5214x")]
 modulate = Color(0.56, 1, 0.52, 1)
@@ -898,7 +904,7 @@ inverted = true
 
 [node name="QuestionBlock5" parent="HarderDesignNode" unique_id=1014437313 instance=ExtResource("37_mv6it")]
 position = Vector2(2352, 1136)
-result = SubResource("Resource_mv6it")
+result = SubResource("Resource_56pu5")
 initially_visible_and_solid = false
 exists_once = true
 

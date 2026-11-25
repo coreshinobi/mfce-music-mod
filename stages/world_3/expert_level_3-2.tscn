@@ -2,14 +2,15 @@
 
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_o1nao"]
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_ulfts"]
-[ext_resource type="AudioStream" uid="uid://rbc5celaucxd" path="res://music/extra/expert_mode/check_the_temperature.ogg" id="3_3it4p"]
 [ext_resource type="PackedScene" uid="uid://b71msw28e37a" path="res://engine/objects/powerups/red_mushroom/red_mushroom.tscn" id="3_t02sf"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_t507f"]
 [ext_resource type="PackedScene" uid="uid://8a7nemgi0b6q" path="res://engine/objects/powerups/beetroot/beetroot.tscn" id="4_4ruy1"]
+[ext_resource type="AudioStream" uid="uid://dax1p80jnfokt" path="res://music/newermod/Tom & Jerry (4Hero) - Scooby's Dreaming.ogg" id="4_htqay"]
 [ext_resource type="Texture2D" uid="uid://8ek1m41iv2ij" path="res://gfx/backgrounds/underground_cold.png" id="4_wrv70"]
 [ext_resource type="Script" uid="uid://chvjy6okoognf" path="res://engine/objects/powerups/instance_powerup.gd" id="5_0a1x7"]
 [ext_resource type="PackedScene" uid="uid://cvigdw7nldify" path="res://objects/antiafk_expert_mode/antiafk_expert_mode.tscn" id="5_mfn4v"]
 [ext_resource type="PackedScene" uid="uid://ltoqkqmxpt65" path="res://engine/objects/powerups/life_mushroom/life_mushroom.tscn" id="6_lwehr"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="6_wahsg"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="7_1uoc2"]
 [ext_resource type="PackedScene" uid="uid://da16joa30w76a" path="res://engine/objects/enemies/piranha_plants/piranha_green.tscn" id="7_i7kth"]
 [ext_resource type="PackedScene" uid="uid://wqjbkgomnnv0" path="res://engine/objects/enemies/icicle/icicle.tscn" id="7_ifi28"]
@@ -101,7 +102,7 @@ region = Rect2(224, 16, 31, 32)
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_de5sm"]
 normal = Vector2(0, 1)
 
-[sub_resource type="Resource" id="Resource_51nls"]
+[sub_resource type="Resource" id="Resource_ieaos"]
 resource_local_to_scene = true
 script = ExtResource("5_0a1x7")
 creation_fallback_node = ExtResource("3_t02sf")
@@ -109,44 +110,44 @@ creation_nodepack = ExtResource("4_4ruy1")
 trans_inheritances = 7
 metadata/_custom_type_script = "uid://chvjy6okoognf"
 
-[sub_resource type="Resource" id="Resource_htqay"]
-resource_local_to_scene = true
-script = ExtResource("5_0a1x7")
-creation_nodepack = ExtResource("6_lwehr")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_wahsg"]
-resource_local_to_scene = true
-script = ExtResource("5_0a1x7")
-creation_nodepack = ExtResource("6_lwehr")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_ieaos"]
-resource_local_to_scene = true
-script = ExtResource("5_0a1x7")
-creation_nodepack = ExtResource("7_vneak")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_mw26o"]
 resource_local_to_scene = true
 script = ExtResource("5_0a1x7")
-creation_nodepack = ExtResource("7_vneak")
+creation_nodepack = ExtResource("6_lwehr")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_c8mnn"]
 resource_local_to_scene = true
 script = ExtResource("5_0a1x7")
-creation_nodepack = ExtResource("7_vneak")
+creation_nodepack = ExtResource("6_lwehr")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_hhiuf"]
+resource_local_to_scene = true
+script = ExtResource("5_0a1x7")
+creation_nodepack = ExtResource("7_vneak")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_m421u"]
+resource_local_to_scene = true
+script = ExtResource("5_0a1x7")
+creation_nodepack = ExtResource("7_vneak")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_476er"]
+resource_local_to_scene = true
+script = ExtResource("5_0a1x7")
+creation_nodepack = ExtResource("7_vneak")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_ioxgp"]
 resource_local_to_scene = true
 script = ExtResource("5_0a1x7")
 creation_fallback_node = ExtResource("3_t02sf")
 creation_nodepack = ExtResource("4_4ruy1")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_m421u"]
+[sub_resource type="Resource" id="Resource_cp44r"]
 resource_local_to_scene = true
 script = ExtResource("5_0a1x7")
 creation_fallback_node = ExtResource("3_t02sf")
@@ -182,10 +183,13 @@ script = ExtResource("3_t507f")
 var_1_volume_db = Array[float]([-4.0])
 var_2_volume_db = Array[float]([-4.0])
 var_3_volume_db = Array[float]([-4.0])
-music = Array[Resource]([ExtResource("3_3it4p")])
-volume_db = Array[float]([-4.0])
+music = Array[Resource]([ExtResource("4_htqay")])
+volume_db = Array[float]([1.4])
 
 [node name="AntiafkExpertMode" parent="MusicLoader" unique_id=468657061 instance=ExtResource("5_mfn4v")]
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("6_wahsg")]
+text = Array[String](["Tom & Jerry - Scooby's Dreaming"])
 
 [node name="SecretUnlocker2" parent="." unique_id=1462400747 instance=ExtResource("7_o1nao")]
 secrets = Array[String](["expert mode easter eggs"])
@@ -1004,29 +1008,29 @@ position = Vector2(1968, 976)
 
 [node name="QuestionBlock4" parent="." unique_id=1059910207 instance=ExtResource("24_rxwpy")]
 position = Vector2(1840, 1168)
-result = SubResource("Resource_51nls")
+result = SubResource("Resource_ieaos")
 
 [node name="QuestionBlock5" parent="." unique_id=1629279695 instance=ExtResource("24_rxwpy")]
 position = Vector2(2352, 1136)
-result = SubResource("Resource_htqay")
+result = SubResource("Resource_mw26o")
 initially_visible_and_solid = false
 exists_once = true
 
 [node name="QuestionBlock8" parent="." unique_id=2104903288 instance=ExtResource("24_rxwpy")]
 position = Vector2(4368, 1296)
-result = SubResource("Resource_wahsg")
+result = SubResource("Resource_c8mnn")
 initially_visible_and_solid = false
 exists_once = true
 
 [node name="QuestionBlock6" parent="." unique_id=1787264611 instance=ExtResource("24_rxwpy")]
 position = Vector2(3120, 1072)
-result = SubResource("Resource_ieaos")
+result = SubResource("Resource_hhiuf")
 initially_visible_and_solid = false
 exists_once = true
 
 [node name="QuestionBlock" parent="." unique_id=137048215 instance=ExtResource("24_rxwpy")]
 position = Vector2(4080, 1200)
-result = SubResource("Resource_mw26o")
+result = SubResource("Resource_m421u")
 
 [node name="Icicle" parent="." unique_id=1729622805 instance=ExtResource("7_ifi28")]
 position = Vector2(432, 1088)
@@ -1189,15 +1193,15 @@ position = Vector2(6624, 1248)
 
 [node name="QuestionBlock7" parent="." unique_id=1911719995 instance=ExtResource("24_rxwpy")]
 position = Vector2(4112, 1200)
-result = SubResource("Resource_c8mnn")
+result = SubResource("Resource_476er")
 
 [node name="QuestionBlock2" parent="." unique_id=40277921 instance=ExtResource("24_rxwpy")]
 position = Vector2(5520, 1072)
-result = SubResource("Resource_hhiuf")
+result = SubResource("Resource_ioxgp")
 
 [node name="QuestionBlock3" parent="." unique_id=761700518 instance=ExtResource("24_rxwpy")]
 position = Vector2(5872, 1072)
-result = SubResource("Resource_m421u")
+result = SubResource("Resource_cp44r")
 
 [node name="PipeIn2" parent="." unique_id=876233962 instance=ExtResource("20_gu7lq")]
 position = Vector2(2240, 944)

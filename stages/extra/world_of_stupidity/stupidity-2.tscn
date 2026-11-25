@@ -5,13 +5,14 @@
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="2_yw1e4"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_itfqt"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="4_g3f6x"]
-[ext_resource type="AudioStream" uid="uid://bq0ural8bc7d8" path="res://music/extra/-+syndrome_land+-.mod" id="5_l3613"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="6_i7r36"]
+[ext_resource type="AudioStream" uid="uid://ree58wlw6tye" path="res://music/newermod/cyborg jeff - bilsch14.it" id="6_jyyxh"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="7_a0jhp"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="7_vys5j"]
 [ext_resource type="AudioStream" uid="uid://dfhdjdtb7xk4c" path="res://music/extra/hardcore-die-lol.ogg" id="7_wy2mc"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="8_dqxfh"]
-[ext_resource type="AudioStream" uid="uid://cpy66lof7ycli" path="res://engine/objects/players/prefabs/sounds/music-die.ogg" id="8_sdwdi"]
 [ext_resource type="TileSet" uid="uid://dtvs1rult8kbe" path="res://tilesets/overworld_green/overworld_green.tres" id="9_qsg8k"]
+[ext_resource type="AudioStream" uid="uid://cusrgc7jqf7qy" path="res://music/extra/expert_mode/short-die.ogg" id="10_jyyxh"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="10_xbmk2"]
 [ext_resource type="Texture2D" uid="uid://cwh2ca5ds4ury" path="res://stages/extra/world_of_stupidity/world_title.png" id="11_wm5ex"]
 [ext_resource type="Texture2D" uid="uid://dmv5rev5xia3u" path="res://engine/tilesets/overworld/gfx/clouds_looping.png" id="12_fhw8b"]
@@ -44,7 +45,7 @@
 stream_count = 2
 stream_0/stream = ExtResource("7_wy2mc")
 stream_0/volume = 0.0
-stream_1/stream = ExtResource("8_sdwdi")
+stream_1/stream = ExtResource("10_jyyxh")
 stream_1/volume = 0.0
 
 [sub_resource type="Gradient" id="Gradient_33x6y"]
@@ -58,24 +59,6 @@ fill_to = Vector2(0, 1)
 script = ExtResource("27_00row")
 creation_nodepack = ExtResource("26_5xico")
 trans_inheritances = 6
-
-[sub_resource type="Resource" id="Resource_qn7gn"]
-resource_local_to_scene = true
-script = ExtResource("35_rm6nb")
-creation_nodepack = ExtResource("36_t5drk")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_jyyxh"]
-resource_local_to_scene = true
-script = ExtResource("35_rm6nb")
-creation_nodepack = ExtResource("36_t5drk")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_vys5j"]
-resource_local_to_scene = true
-script = ExtResource("35_rm6nb")
-creation_nodepack = ExtResource("36_t5drk")
-trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_6xsqb"]
 resource_local_to_scene = true
@@ -149,6 +132,24 @@ script = ExtResource("35_rm6nb")
 creation_nodepack = ExtResource("36_t5drk")
 trans_inheritances = 7
 
+[sub_resource type="Resource" id="Resource_07gh7"]
+resource_local_to_scene = true
+script = ExtResource("35_rm6nb")
+creation_nodepack = ExtResource("36_t5drk")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_27qph"]
+resource_local_to_scene = true
+script = ExtResource("35_rm6nb")
+creation_nodepack = ExtResource("36_t5drk")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_3fke6"]
+resource_local_to_scene = true
+script = ExtResource("35_rm6nb")
+creation_nodepack = ExtResource("36_t5drk")
+trans_inheritances = 7
+
 [node name="Stupidity-1" type="Node2D" unique_id=1825859864]
 script = ExtResource("1_jhi0k")
 completion_music = ExtResource("2_qn7gn")
@@ -171,11 +172,19 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("5_l3613")])
+playback_pitch = 1.0
+music = Array[Resource]([ExtResource("6_jyyxh")])
+play_globally = 1
+volume_db = Array[float]([6.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("7_vys5j")]
+text = Array[String](["Cyborg Jeff - bilsch14"])
 
 [node name="Mario" parent="." unique_id=1594304412 instance=ExtResource("6_i7r36")]
 position = Vector2(224, 208)
 death_music_override = SubResource("AudioStreamSynchronized_d6pl4")
+death_wait_time = 0.0
+death_stop_music = false
 
 [node name="PlayerCamera2D" type="Camera2D" parent="." unique_id=1738150452]
 editor_draw_screen = false
@@ -775,63 +784,63 @@ position = Vector2(32, 320)
 
 [node name="QuestionBlockPoisonous" parent="." unique_id=1440586620 instance=ExtResource("39_lng57")]
 position = Vector2(784, 272)
-result = SubResource("Resource_qn7gn")
+result = SubResource("Resource_6xsqb")
 
 [node name="QuestionBlockPoisonous2" parent="." unique_id=1783719269 instance=ExtResource("39_lng57")]
 position = Vector2(816, 272)
-result = SubResource("Resource_jyyxh")
+result = SubResource("Resource_ri1tx")
 
 [node name="QuestionBlockPoisonous3" parent="." unique_id=579426637 instance=ExtResource("39_lng57")]
 position = Vector2(1264, 304)
-result = SubResource("Resource_vys5j")
+result = SubResource("Resource_vmmgv")
 
 [node name="QuestionBlockPoisonous4" parent="." unique_id=855429111 instance=ExtResource("39_lng57")]
 position = Vector2(1264, 144)
-result = SubResource("Resource_6xsqb")
+result = SubResource("Resource_iobo3")
 
 [node name="QuestionBlockPoisonous5" parent="." unique_id=1613486541 instance=ExtResource("39_lng57")]
 position = Vector2(1936, 336)
-result = SubResource("Resource_ri1tx")
+result = SubResource("Resource_vmehx")
 
 [node name="QuestionBlockPoisonous6" parent="." unique_id=952089633 instance=ExtResource("39_lng57")]
 position = Vector2(3600, 208)
-result = SubResource("Resource_vmmgv")
+result = SubResource("Resource_g7acw")
 
 [node name="QuestionBlockPoisonous7" parent="." unique_id=1459800929 instance=ExtResource("39_lng57")]
 position = Vector2(3632, 208)
-result = SubResource("Resource_iobo3")
+result = SubResource("Resource_mc0ve")
 
 [node name="QuestionBlockPoisonous8" parent="." unique_id=773757391 instance=ExtResource("39_lng57")]
 position = Vector2(3664, 208)
-result = SubResource("Resource_vmehx")
+result = SubResource("Resource_mk7aq")
 
 [node name="QuestionBlockPoisonous9" parent="." unique_id=1185105560 instance=ExtResource("39_lng57")]
 position = Vector2(3728, 208)
-result = SubResource("Resource_g7acw")
+result = SubResource("Resource_53dmh")
 
 [node name="QuestionBlockPoisonous10" parent="." unique_id=476352123 instance=ExtResource("39_lng57")]
 position = Vector2(4240, 240)
-result = SubResource("Resource_mc0ve")
+result = SubResource("Resource_2cfgh")
 
 [node name="QuestionBlockPoisonous11" parent="." unique_id=979047579 instance=ExtResource("39_lng57")]
 position = Vector2(5072, 240)
-result = SubResource("Resource_mk7aq")
+result = SubResource("Resource_x1kbe")
 
 [node name="QuestionBlockPoisonous12" parent="." unique_id=1000878946 instance=ExtResource("39_lng57")]
 position = Vector2(5328, 208)
-result = SubResource("Resource_53dmh")
+result = SubResource("Resource_byppv")
 
 [node name="QuestionBlockPoisonous13" parent="." unique_id=1306874174 instance=ExtResource("39_lng57")]
 position = Vector2(7376, 144)
-result = SubResource("Resource_2cfgh")
+result = SubResource("Resource_07gh7")
 
 [node name="QuestionBlockPoisonous14" parent="." unique_id=667516275 instance=ExtResource("39_lng57")]
 position = Vector2(7664, 112)
-result = SubResource("Resource_x1kbe")
+result = SubResource("Resource_27qph")
 
 [node name="QuestionBlockPoisonous15" parent="." unique_id=1197549641 instance=ExtResource("39_lng57")]
 position = Vector2(8144, 112)
-result = SubResource("Resource_byppv")
+result = SubResource("Resource_3fke6")
 
 [node name="PiranhaHeadHidden" parent="." unique_id=1750117976 instance=ExtResource("39_ydq7m")]
 position = Vector2(10016, 400)

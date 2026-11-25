@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://b5p4uabd5mi2d"
+path="res://.godot/imported/teque @ guntech - gunkan intro.xm-fd98e0cd1cdf79192928beb81ef0672a.res"
+
+[deps]
+
+source_file="res://music/side_b/teque @ guntech - gunkan intro.xm"
+dest_files=["res://.godot/imported/teque @ guntech - gunkan intro.xm-fd98e0cd1cdf79192928beb81ef0672a.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

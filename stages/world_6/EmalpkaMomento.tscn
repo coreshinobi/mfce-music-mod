@@ -3,7 +3,8 @@
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_t1txt"]
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_glcsw"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_lghic"]
-[ext_resource type="AudioStream" uid="uid://bjxgnmvy3r7cs" path="res://music/smas-bowser.ogg" id="5_rvno6"]
+[ext_resource type="AudioStream" uid="uid://dc21b8e1d2t5p" path="res://music/newermod/Unknown Modland Artist - Prodigy.mod" id="4_1roqf"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="5_0y4h8"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="6_l8yls"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="7_62v1w"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="8_qqduy"]
@@ -45,14 +46,14 @@ fill_to = Vector2(1, 1)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x50b1"]
 size = Vector2(32, 416)
 
-[sub_resource type="Resource" id="Resource_ir1f3"]
+[sub_resource type="Resource" id="Resource_bfumg"]
 resource_local_to_scene = true
 script = ExtResource("14_7k1tp")
 creation_fallback_node = ExtResource("12_j0nor")
 creation_nodepack = ExtResource("22_53nn3")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_1roqf"]
+[sub_resource type="Resource" id="Resource_fuilk"]
 resource_local_to_scene = true
 script = ExtResource("14_7k1tp")
 creation_fallback_node = ExtResource("12_j0nor")
@@ -69,8 +70,11 @@ jump_to_scene = "res://stages/world_6/map_6.tscn"
 
 [node name="MusicLoader" type="Node" parent="." unique_id=1423788284]
 script = ExtResource("3_lghic")
-music = Array[Resource]([ExtResource("5_rvno6")])
+music = Array[Resource]([ExtResource("4_1roqf")])
 volume_db = Array[float]([3.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("5_0y4h8")]
+text = Array[String](["Unknown Modland Artist - Prodigy.mod"])
 
 [node name="Mario" parent="." unique_id=1056751738 instance=ExtResource("6_l8yls")]
 position = Vector2(80, 400)
@@ -308,7 +312,7 @@ rotation = 3.14159
 
 [node name="QuestionBlockGreenLui" parent="." unique_id=1220718205 instance=ExtResource("20_ss0lj")]
 position = Vector2(48, 272)
-result = SubResource("Resource_ir1f3")
+result = SubResource("Resource_bfumg")
 initially_visible_and_solid = false
 
 [node name="Goomba" parent="." unique_id=1414722829 instance=ExtResource("22_b7hhd")]
@@ -326,7 +330,7 @@ rotation = 3.14159
 
 [node name="QuestionBlockFireFlower" parent="." unique_id=803190414 instance=ExtResource("24_12mjj")]
 position = Vector2(1360, 272)
-result = SubResource("Resource_1roqf")
+result = SubResource("Resource_fuilk")
 
 [node name="ArrowsignR" type="Sprite2D" parent="." unique_id=64441830]
 position = Vector2(576, 361)

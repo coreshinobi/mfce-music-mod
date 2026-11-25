@@ -5,10 +5,11 @@
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_nnff1"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_44kkh"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="4_enwkv"]
-[ext_resource type="AudioStream" uid="uid://y87nvi41mws4" path="res://music/extra/trop de voix!.mod" id="4_y2qc8"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="5_joppa"]
 [ext_resource type="Script" uid="uid://cugmax5psc2oo" path="res://engine/objects/players/player_camera_2d.gd" id="6_5keuv"]
+[ext_resource type="AudioStream" uid="uid://c7bqbyoo8rv8a" path="res://music/newermod/rufferto & groo (de) - nagut.mod" id="6_h6j5p"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_3n7mm"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="7_nnff1"]
 [ext_resource type="Texture2D" uid="uid://bnb5am431a3u8" path="res://engine/tilesets/overworld/gfx/woods.png" id="10_2uwrq"]
 [ext_resource type="TileSet" uid="uid://dtvs1rult8kbe" path="res://tilesets/overworld_green/overworld_green.tres" id="10_qifn6"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="10_yqjpt"]
@@ -39,7 +40,7 @@ colors = PackedColorArray(0.231373, 0.482353, 0.639216, 1, 0.94902, 0.992157, 0.
 gradient = SubResource("Gradient_1f5ng")
 width = 480
 
-[sub_resource type="Resource" id="Resource_h6j5p"]
+[sub_resource type="Resource" id="Resource_enwkv"]
 resource_local_to_scene = true
 script = ExtResource("23_3vwqv")
 creation_nodepack = ExtResource("27_41htu")
@@ -88,8 +89,11 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("4_y2qc8")])
+music = Array[Resource]([ExtResource("6_h6j5p")])
 volume_db = Array[float]([5.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("7_nnff1")]
+text = Array[String](["Rufferto & Groo (DE) - Nagut"])
 
 [node name="Player" parent="." unique_id=228292069 instance=ExtResource("4_44kkh")]
 position = Vector2(256, 368)
@@ -206,6 +210,6 @@ message = "welcome to my mysterious shop of wonderful things!"
 
 [node name="RouletteBlock" parent="." unique_id=583610481 instance=ExtResource("26_r0jga")]
 position = Vector2(320, 272)
-result_array = Array[ExtResource("23_3vwqv")]([SubResource("Resource_h6j5p"), SubResource("Resource_ro7vd"), SubResource("Resource_tl0ot"), SubResource("Resource_uuli0")])
+result_array = Array[ExtResource("23_3vwqv")]([SubResource("Resource_enwkv"), SubResource("Resource_ro7vd"), SubResource("Resource_tl0ot"), SubResource("Resource_uuli0")])
 
 [connection signal="stage_ready" from="." to="MessageBlock" method="show_message"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://5h5jjp17x7fg"
+path="res://.godot/imported/lexie try again.ogg-d0491db16cb4a5a8be0fc2dbfa30e2a4.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/lexie try again.ogg"
+dest_files=["res://.godot/imported/lexie try again.ogg-d0491db16cb4a5a8be0fc2dbfa30e2a4.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

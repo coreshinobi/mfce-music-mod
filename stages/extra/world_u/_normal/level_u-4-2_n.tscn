@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="3_dtyce"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="4_0vjtv"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="5_2mqhv"]
-[ext_resource type="AudioStream" uid="uid://cg5yrockdva1i" path="res://music/extra/world_u/koopas_road.ogg" id="6_e01vx"]
+[ext_resource type="AudioStream" uid="uid://bdcftuu52sq6o" path="res://music/side_a/Dimrain47 - At The Speed of Light.ogg" id="6_nd1am"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="7_8bya5"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="8_p0l8n"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="9_jlxkj"]
@@ -101,7 +101,7 @@ animations = [{
 "speed": 6.0
 }]
 
-[sub_resource type="Resource" id="Resource_nd1am"]
+[sub_resource type="Resource" id="Resource_weuie"]
 resource_local_to_scene = true
 script = ExtResource("21_8snal")
 creation_nodepack = ExtResource("20_ls6dn")
@@ -192,8 +192,8 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("6_e01vx")])
-start_from_sec = Array[float]([0.32])
+music = Array[Resource]([ExtResource("6_nd1am")])
+start_from_sec = Array[float]([0.0])
 
 [node name="Player" parent="." unique_id=471378951 instance=ExtResource("7_8bya5")]
 position = Vector2(320, 4880)
@@ -292,7 +292,7 @@ centered = false
 
 [node name="QuestionBlock" parent="." unique_id=502290573 instance=ExtResource("19_tof1e")]
 position = Vector2(576, 4368)
-result = SubResource("Resource_nd1am")
+result = SubResource("Resource_weuie")
 
 [node name="BulletLauncher" parent="." unique_id=1291129468 instance=ExtResource("22_rnlks")]
 position = Vector2(16, 2704)

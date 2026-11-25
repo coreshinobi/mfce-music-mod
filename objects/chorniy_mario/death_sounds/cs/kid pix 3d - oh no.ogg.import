@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bsvkerp7nr478"
+path="res://.godot/imported/kid pix 3d - oh no.ogg-39c1ff29aec12a23b71526e2e6903bea.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/kid pix 3d - oh no.ogg"
+dest_files=["res://.godot/imported/kid pix 3d - oh no.ogg-39c1ff29aec12a23b71526e2e6903bea.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

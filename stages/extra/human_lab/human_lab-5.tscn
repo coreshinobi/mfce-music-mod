@@ -1,12 +1,14 @@
 [gd_scene format=4 uid="uid://nyfj5ovg0sh8"]
 
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_coxvy"]
-[ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_c7252"]
+[ext_resource type="AudioStream" uid="uid://lskqu7a66ntk" path="res://music/newermod/Hi Hi Puffy AmiYumi Kaznapped - Stage Clear.ogg" id="2_wa1fh"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_pifh8"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="4_b0xam"]
-[ext_resource type="AudioStream" uid="uid://no8rqi6mwk8c" path="res://music/smw-overworld.ogg" id="4_tb11i"]
+[ext_resource type="AudioStream" uid="uid://dyrxrst0ayuki" path="res://music/newermod/Hi Hi Puffy AmiYumi The Genie & the Amp - Crane.ogg" id="4_o5yl8"]
+[ext_resource type="AudioStream" uid="uid://bw6apa67o6bgj" path="res://music/side_a/Unknown - Leen's Happy Day.ogg" id="4_wa1fh"]
 [ext_resource type="Script" uid="uid://c6b531vw33sbg" path="res://stages/extra/lost_map/scripts/delete_suspended_progress.gd" id="5_mnsqu"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="5_vjd1l"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="5_wa1fh"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="7_y6jyy"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="8_x3w07"]
 [ext_resource type="TileSet" uid="uid://kqcreyi6o4v" path="res://tilesets/human_lab/human_lab-5.tres" id="9_b6ace"]
@@ -978,14 +980,20 @@ size = Vector2(480, 104)
 [node name="HumanLab-5" type="Node2D" unique_id=368542959]
 script = ExtResource("1_coxvy")
 time = -1
-completion_music = ExtResource("2_c7252")
+completion_music = ExtResource("2_wa1fh")
 completion_write_save = false
 jump_to_scene = "uid://52ow00tuocf5"
 completion_center_on_player_after_transition = true
+completion_music_delay_sec = 3.0
 
 [node name="MusicLoader" type="Node" parent="." unique_id=1877719499]
 script = ExtResource("3_pifh8")
-music = Array[Resource]([ExtResource("4_tb11i")])
+tweaked_completion_music = ExtResource("2_wa1fh")
+music_var_1 = Array[Resource]([ExtResource("4_wa1fh")])
+var_1_volume_db = Array[float]([0.6])
+music = Array[Resource]([ExtResource("4_o5yl8")])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("5_wa1fh")]
 
 [node name="SecretUnlocker" parent="." unique_id=1866418142 instance=ExtResource("4_b0xam")]
 secrets = Array[String](["human laboratory completed", "human lab in secret mode"])
@@ -1370,10 +1378,10 @@ theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 6
 theme_override_fonts/font = ExtResource("38_ptxpk")
 theme_override_font_sizes/font_size = 11
-text = "Keep out!
+text = "Welcome...
 
-house of
-clones!"
+House of
+anything goes!"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
@@ -1393,10 +1401,10 @@ theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 6
 theme_override_fonts/font = ExtResource("38_ptxpk")
 theme_override_font_sizes/font_size = 11
-text = "Keep out!
+text = "Welcome...
 
-house of
-clones!"
+House of
+anything goes!"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
@@ -1415,13 +1423,14 @@ theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 6
 theme_override_fonts/font = ExtResource("38_ptxpk")
 theme_override_font_sizes/font_size = 11
-text = "thanks
-for playing
-with clones!
+text = "Thanks for rocking
+out with us !!!
 
-visit :
 
-marioforever.space"
+hi hi puffy amiyumi
+clones featuring
+a couple of honorable
+mentions!"
 horizontal_alignment = 1
 vertical_alignment = 2
 uppercase = true

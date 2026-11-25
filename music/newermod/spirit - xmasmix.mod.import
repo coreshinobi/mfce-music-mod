@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://bdidk587j6hjw"
+path="res://.godot/imported/spirit - xmasmix.mod-bc42b894ef5eacb1fe157ec547926df6.res"
+
+[deps]
+
+source_file="res://music/newermod/spirit - xmasmix.mod"
+dest_files=["res://.godot/imported/spirit - xmasmix.mod-bc42b894ef5eacb1fe157ec547926df6.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

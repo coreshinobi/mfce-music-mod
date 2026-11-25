@@ -4,9 +4,12 @@
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="2_qgfep"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_2ouu7"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="4_oc0bd"]
-[ext_resource type="AudioStream" uid="uid://c4uts4uk1eqv1" path="res://music/extra/world_u/35map.mp3" id="5_jhaun"]
+[ext_resource type="AudioStream" uid="uid://dun5ui14yvvsq" path="res://music/newermod/Alexander 'Siren' Brandon @ Unreal - Unreal Crypt.s3m" id="5_f4d2s"]
+[ext_resource type="AudioStream" uid="uid://cf302kxc3vdqa" path="res://music/side_a/The Lawnmower Man (SNES) - Virtual Space Industries.ogg" id="5_thfmh"]
 [ext_resource type="Texture2D" uid="uid://ngpm61labj4v" path="res://gfx/map/extra_decos/map_u_bg.png" id="6_ed6dn"]
+[ext_resource type="AudioStream" uid="uid://dtvyvo3bh6tih" path="res://music/newermod/Last Legacy - Marcial Minor.ogg" id="6_f4d2s"]
 [ext_resource type="Texture2D" uid="uid://d188qq2x8yjml" path="res://gfx/map/maps/mapunooverlay.png" id="7_f2npr"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="7_f4d2s"]
 [ext_resource type="Texture2D" uid="uid://bwfpxvqox7s3b" path="res://gfx/map/maps/overlay/mapunormal.png" id="8_t35tq"]
 [ext_resource type="PackedScene" uid="uid://w4jc7nb1lcsy" path="res://engine/scenes/map/prefabs/player.tscn" id="9_jvvk5"]
 [ext_resource type="Texture2D" uid="uid://dairb77q42l6j" path="res://gfx/map/maps/overlay/mapuhard.png" id="9_nht1e"]
@@ -56,12 +59,12 @@ metadata/_edit_lock_ = true
 script = ExtResource("3_2ouu7")
 tweaked_completion_music = ExtResource("4_oc0bd")
 ignore_fade_in_tweak = false
-music_var_1 = Array[Resource]([])
-music_var_2 = Array[Resource]([])
+music_var_1 = Array[Resource]([ExtResource("5_thfmh")])
+music_var_2 = Array[Resource]([ExtResource("5_f4d2s")])
 music_var_3 = Array[Resource]([])
 var_1_volume_db = Array[float]([0.0])
 var_1_start_from_sec = Array[float]([0.0])
-var_2_volume_db = Array[float]([0.0])
+var_2_volume_db = Array[float]([1.0])
 var_2_start_from_sec = Array[float]([0.0])
 var_3_volume_db = Array[float]([0.0])
 var_3_start_from_sec = Array[float]([0.0])
@@ -70,8 +73,11 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("5_jhaun")])
-volume_db = Array[float]([-1.0])
+music = Array[Resource]([ExtResource("6_f4d2s")])
+volume_db = Array[float]([3.5])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("7_f4d2s")]
+displaying_mode = 1
 
 [node name="Bg" type="Sprite2D" parent="." unique_id=1243138461]
 texture_repeat = 2

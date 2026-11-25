@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dp55i6ioab6p8"
+path="res://.godot/imported/Super Danganronpa 2 - Alter Ego of the New World.ogg-6c2d18a290bce37147d8a6d5f9fb3656.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Super Danganronpa 2 - Alter Ego of the New World.ogg"
+dest_files=["res://.godot/imported/Super Danganronpa 2 - Alter Ego of the New World.ogg-6c2d18a290bce37147d8a6d5f9fb3656.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=17.93
+bpm=0.0
+beat_count=0
+bar_beats=4

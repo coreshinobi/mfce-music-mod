@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://mwnthybn1hd1"
+path="res://.godot/imported/merge - forl0beren.mod-60243e36aa6fd9cecc39d9c7fd2abace.res"
+
+[deps]
+
+source_file="res://music/side_a/merge - forl0beren.mod"
+dest_files=["res://.godot/imported/merge - forl0beren.mod-60243e36aa6fd9cecc39d9c7fd2abace.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

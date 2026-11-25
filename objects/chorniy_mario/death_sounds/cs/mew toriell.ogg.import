@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b2520mc4xrp4a"
+path="res://.godot/imported/mew toriell.ogg-1d17d2eb9252ceff14e9e167efb5d934.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/mew toriell.ogg"
+dest_files=["res://.godot/imported/mew toriell.ogg-1d17d2eb9252ceff14e9e167efb5d934.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

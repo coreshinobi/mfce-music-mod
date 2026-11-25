@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b4oxqi66iicgu"
+path="res://.godot/imported/open surge - waterworks.ogg-f309dfed9774da585b7d9717156fc49c.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/open surge - waterworks.ogg"
+dest_files=["res://.godot/imported/open surge - waterworks.ogg-f309dfed9774da585b7d9717156fc49c.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

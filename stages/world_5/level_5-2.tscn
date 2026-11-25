@@ -5,12 +5,14 @@
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="2_e8h8p"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_qyxnf"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="4_24ri4"]
-[ext_resource type="AudioStream" uid="uid://c7mr06ow4mxjn" path="res://music/sirens.mod" id="4_kbaqx"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_ybfdm"]
+[ext_resource type="AudioStream" uid="uid://behwckopy6x0m" path="res://music/newermod/Algorithm - Ethos.ogg" id="6_6gfbr"]
+[ext_resource type="AudioStream" uid="uid://cka53vm1hsp2f" path="res://music/side_a/lu9 - Sirens (Trance Remix).ogg" id="6_mwllm"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="6_qvmkw"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="6_yes4p"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_gb3kj"]
 [ext_resource type="TileSet" uid="uid://dtvs1rult8kbe" path="res://tilesets/overworld_green/overworld_green.tres" id="7_ibols"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="7_mwllm"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="8_lqq7a"]
 [ext_resource type="FontFile" uid="uid://b1pi0t5byork2" path="res://engine/components/hud/hud_font.fnt" id="9_8sfn2"]
 [ext_resource type="PackedScene" uid="uid://btd4qa0fl8542" path="res://engine/objects/platform/platform_path_cloud.tscn" id="11_ikssd"]
@@ -57,7 +59,7 @@ _data = {
 }
 point_count = 2
 
-[sub_resource type="Resource" id="Resource_hxn2w"]
+[sub_resource type="Resource" id="Resource_6k32q"]
 resource_local_to_scene = true
 script = ExtResource("20_sfqk5")
 creation_fallback_node = ExtResource("18_mjtkl")
@@ -73,7 +75,7 @@ jump_to_scene = "res://stages/world_5/map_5.tscn"
 script = ExtResource("3_qyxnf")
 tweaked_completion_music = ExtResource("4_24ri4")
 ignore_fade_in_tweak = false
-music_var_1 = Array[Resource]([])
+music_var_1 = Array[Resource]([ExtResource("6_mwllm")])
 music_var_2 = Array[Resource]([])
 music_var_3 = Array[Resource]([])
 var_1_volume_db = Array[float]([0.0])
@@ -87,7 +89,9 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("4_kbaqx")])
+music = Array[Resource]([ExtResource("6_6gfbr")])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("7_mwllm")]
 
 [node name="SecretUnlocker" parent="." unique_id=201223917 instance=ExtResource("6_yes4p")]
 secrets = Array[String](["all toad houses found"])
@@ -527,7 +531,7 @@ position = Vector2(6567, 176)
 
 [node name="QuestionBlockFireFlower" parent="." unique_id=1128754590 instance=ExtResource("17_mwhn6")]
 position = Vector2(7024, 176)
-result = SubResource("Resource_hxn2w")
+result = SubResource("Resource_6k32q")
 
 [node name="Checkpoint" parent="." unique_id=875037874 instance=ExtResource("21_06nft")]
 position = Vector2(6928, 224)

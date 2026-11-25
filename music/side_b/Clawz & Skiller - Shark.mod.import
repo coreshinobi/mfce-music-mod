@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://dkxvuv32d3rnr"
+path="res://.godot/imported/Clawz & Skiller - Shark.mod-725f6e9d8ecbec602f396478133989b7.res"
+
+[deps]
+
+source_file="res://music/side_b/Clawz & Skiller - Shark.mod"
+dest_files=["res://.godot/imported/Clawz & Skiller - Shark.mod-725f6e9d8ecbec602f396478133989b7.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

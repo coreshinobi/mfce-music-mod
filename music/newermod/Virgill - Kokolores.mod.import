@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://d0r5cy6avs0xc"
+path="res://.godot/imported/Virgill - Kokolores.mod-247bc26a20a2b22e93e52349954d2af3.res"
+
+[deps]
+
+source_file="res://music/newermod/Virgill - Kokolores.mod"
+dest_files=["res://.godot/imported/Virgill - Kokolores.mod-247bc26a20a2b22e93e52349954d2af3.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

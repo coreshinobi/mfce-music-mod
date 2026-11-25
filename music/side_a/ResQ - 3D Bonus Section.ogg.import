@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b7jxkekqonq5r"
+path="res://.godot/imported/ResQ - 3D Bonus Section.ogg-b0af0083db1e5417effded53550c6c9f.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/ResQ - 3D Bonus Section.ogg"
+dest_files=["res://.godot/imported/ResQ - 3D Bonus Section.ogg-b0af0083db1e5417effded53550c6c9f.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=40.01
+bpm=0.0
+beat_count=0
+bar_beats=4

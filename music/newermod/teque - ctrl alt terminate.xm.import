@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://dry8lyf4t3q8n"
+path="res://.godot/imported/teque - ctrl alt terminate.xm-675efc55c11034517f4dc968b16e3183.res"
+
+[deps]
+
+source_file="res://music/newermod/teque - ctrl alt terminate.xm"
+dest_files=["res://.godot/imported/teque - ctrl alt terminate.xm-675efc55c11034517f4dc968b16e3183.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

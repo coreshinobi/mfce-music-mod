@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ddbd837y8t8lg"
+path="res://.godot/imported/ADSRe - Broscore.ogg-6c0a810de2fbbaeb1e0e14b9b5671fae.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/ADSRe - Broscore.ogg"
+dest_files=["res://.godot/imported/ADSRe - Broscore.ogg-6c0a810de2fbbaeb1e0e14b9b5671fae.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

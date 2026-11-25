@@ -1,10 +1,10 @@
 [gd_scene format=4 uid="uid://b121x1i3rwkys"]
 
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_t128l"]
-[ext_resource type="AudioStream" uid="uid://3uk7wm1eaabd" path="res://music/extra/expert_mode/mega-rave.mod" id="2_0k2f3"]
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_mpoo4"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_m8xvw"]
 [ext_resource type="PackedScene" uid="uid://cvigdw7nldify" path="res://objects/antiafk_expert_mode/antiafk_expert_mode.tscn" id="4_3q0am"]
+[ext_resource type="AudioStream" uid="uid://c1vdbvd0t2enm" path="res://music/newermod/zts - worldenddominator.ogg" id="4_m8xvw"]
 [ext_resource type="PackedScene" uid="uid://5pmwnbbklcjj" path="res://engine/objects/enemies/spikes/spike.tscn" id="4_ukhxr"]
 [ext_resource type="AudioStream" uid="uid://cusrgc7jqf7qy" path="res://music/extra/expert_mode/short-die.ogg" id="5_qrabw"]
 [ext_resource type="PackedScene" uid="uid://bcgt87mbq40gx" path="res://engine/objects/enemies/thwomp/thwomp.tscn" id="5_yd7ni"]
@@ -12,6 +12,7 @@
 [ext_resource type="TileSet" uid="uid://co4kwf1fb2y5i" path="res://tilesets/castle/castle_tileset.tres" id="6_36as8"]
 [ext_resource type="PackedScene" uid="uid://boprmwc4aw1lr" path="res://engine/objects/bumping_blocks/question_block/templates/gray/Gray Coin Question Block.tscn" id="6_316o6"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="6_a1eiu"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="6_avrj7"]
 [ext_resource type="PackedScene" uid="uid://d0121yqkw7b6i" path="res://engine/objects/fluid/lava_area.tscn" id="8_empgk"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="9_avrj7"]
 [ext_resource type="Script" uid="uid://0h3x5dwndovw" path="res://engine/scripts/nodes/effects/quality_visible.gd" id="9_x0f4d"]
@@ -146,7 +147,7 @@ creation_fallback_node = ExtResource("18_nhfbo")
 creation_nodepack = ExtResource("19_piktc")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_mpoo4"]
+[sub_resource type="Resource" id="Resource_8yrel"]
 resource_local_to_scene = true
 script = ExtResource("20_tbn5b")
 creation_nodepack = ExtResource("19_q2cba")
@@ -212,11 +213,14 @@ jump_to_scene = "res://stages/world_8/expert_map_8.tscn"
 
 [node name="MusicLoader" type="Node" parent="." unique_id=355157259]
 script = ExtResource("3_m8xvw")
-music = Array[Resource]([ExtResource("2_0k2f3")])
+music = Array[Resource]([ExtResource("4_m8xvw")])
 play_globally = 1
-volume_db = Array[float]([-2.5])
+volume_db = Array[float]([0.1])
 
 [node name="AntiafkExpertMode" parent="MusicLoader" unique_id=2112310334 instance=ExtResource("4_3q0am")]
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("6_avrj7")]
+text = Array[String](["zts - worldenddominator"])
 
 [node name="Mario" parent="." unique_id=1536736556 instance=ExtResource("6_a1eiu")]
 position = Vector2(47, 272)
@@ -316,7 +320,7 @@ result = SubResource("Resource_84omh")
 
 [node name="QuestionBlock28" parent="." unique_id=883780536 instance=ExtResource("6_316o6")]
 position = Vector2(16, 80)
-result = SubResource("Resource_mpoo4")
+result = SubResource("Resource_8yrel")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock27" parent="." unique_id=500541900 instance=ExtResource("6_316o6")]

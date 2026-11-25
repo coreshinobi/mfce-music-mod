@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://efk1p31dit1p"
+path="res://.godot/imported/Terry - Cheap Chip.mod-ae4af12d3f5f8142fe891787d01c4130.res"
+
+[deps]
+
+source_file="res://music/side_b/Terry - Cheap Chip.mod"
+dest_files=["res://.godot/imported/Terry - Cheap Chip.mod-ae4af12d3f5f8142fe891787d01c4130.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

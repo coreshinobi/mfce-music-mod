@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dk5tt7utn58g4"
+path="res://.godot/imported/Intec Interact - 89-in-1 Menu Loop.ogg-9c3bc7e726a41873e822afa33fc231f2.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Intec Interact - 89-in-1 Menu Loop.ogg"
+dest_files=["res://.godot/imported/Intec Interact - 89-in-1 Menu Loop.ogg-9c3bc7e726a41873e822afa33fc231f2.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

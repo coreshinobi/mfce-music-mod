@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c1vdbvd0t2enm"
+path="res://.godot/imported/zts - worldenddominator.ogg-f2070043743a54e037348f548ac40d9f.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/zts - worldenddominator.ogg"
+dest_files=["res://.godot/imported/zts - worldenddominator.ogg-f2070043743a54e037348f548ac40d9f.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=53.576
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://d2hymw2kom88v"
+path="res://.godot/imported/superfml - carnage.mod-ff3d36840ad469839ecb2d6470110040.res"
+
+[deps]
+
+source_file="res://music/side_b/superfml - carnage.mod"
+dest_files=["res://.godot/imported/superfml - carnage.mod-ff3d36840ad469839ecb2d6470110040.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

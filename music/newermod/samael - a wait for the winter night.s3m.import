@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://cg80hir14bffw"
+path="res://.godot/imported/samael - a wait for the winter night.s3m-b873c30386328e529377341de8fef02b.res"
+
+[deps]
+
+source_file="res://music/newermod/samael - a wait for the winter night.s3m"
+dest_files=["res://.godot/imported/samael - a wait for the winter night.s3m-b873c30386328e529377341de8fef02b.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

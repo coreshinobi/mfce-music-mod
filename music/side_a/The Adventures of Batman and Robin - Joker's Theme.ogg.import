@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://1m2iwl3yxsbg"
+path="res://.godot/imported/The Adventures of Batman and Robin - Joker's Theme.ogg-94eec129a6cc60608b97eafcbf8ff22b.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/The Adventures of Batman and Robin - Joker's Theme.ogg"
+dest_files=["res://.godot/imported/The Adventures of Batman and Robin - Joker's Theme.ogg-94eec129a6cc60608b97eafcbf8ff22b.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

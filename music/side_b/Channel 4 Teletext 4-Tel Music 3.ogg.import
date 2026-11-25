@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dyjd34vdsmgm3"
+path="res://.godot/imported/Channel 4 Teletext 4-Tel Music 3.ogg-1a6957f033265f8a3b3b31d0915db3bf.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_b/Channel 4 Teletext 4-Tel Music 3.ogg"
+dest_files=["res://.godot/imported/Channel 4 Teletext 4-Tel Music 3.ogg-1a6957f033265f8a3b3b31d0915db3bf.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

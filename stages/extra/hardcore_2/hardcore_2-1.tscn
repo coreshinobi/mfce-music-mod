@@ -4,12 +4,13 @@
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="2_6rs61"]
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_witpr"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_2sqaq"]
-[ext_resource type="AudioStream" uid="uid://c7mr06ow4mxjn" path="res://music/sirens.mod" id="3_d3hec"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="4_xln5m"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_ypccd"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="6_nloet"]
+[ext_resource type="AudioStream" uid="uid://vsiuftbtmu28" path="res://music/newermod/iteachvader - Objection Funk (Instrumental).ogg" id="6_roepk"]
 [ext_resource type="AudioStream" uid="uid://dfhdjdtb7xk4c" path="res://music/extra/hardcore-die-lol.ogg" id="7_56q2u"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_wjw7s"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="7_wwy81"]
 [ext_resource type="AudioStream" uid="uid://cpy66lof7ycli" path="res://engine/objects/players/prefabs/sounds/music-die.ogg" id="8_ufujk"]
 [ext_resource type="TileSet" uid="uid://dtvs1rult8kbe" path="res://tilesets/overworld_green/overworld_green.tres" id="9_cfor1"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="10_thjwp"]
@@ -48,7 +49,7 @@ height = 480
 fill_from = Vector2(1, 0)
 fill_to = Vector2(1, 1)
 
-[sub_resource type="Resource" id="Resource_vkvdb"]
+[sub_resource type="Resource" id="Resource_irnp4"]
 resource_local_to_scene = true
 script = ExtResource("19_u3e7d")
 creation_nodepack = ExtResource("18_3ulbo")
@@ -83,7 +84,12 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("3_d3hec")])
+playback_pitch = 1.0
+music = Array[Resource]([ExtResource("6_roepk")])
+volume_db = Array[float]([2.5])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("7_wwy81")]
+text = Array[String](["iteachvader - Objection Funk (Instrumental)"])
 
 [node name="Mario" parent="." unique_id=1235946709 instance=ExtResource("4_ypccd")]
 position = Vector2(320, 400)
@@ -184,7 +190,7 @@ metadata/_edit_pinned_properties_ = [&"medium", &"minimum", &"maximum"]
 
 [node name="QuestionBlockLife" parent="." unique_id=1511535961 instance=ExtResource("17_ub02r")]
 position = Vector2(6640, 208)
-result = SubResource("Resource_vkvdb")
+result = SubResource("Resource_irnp4")
 initially_visible_and_solid = false
 exists_once = true
 

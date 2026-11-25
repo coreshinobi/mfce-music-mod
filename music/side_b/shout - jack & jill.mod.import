@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://cr1o77v7ix7ah"
+path="res://.godot/imported/shout - jack & jill.mod-67e70771a05b666e120d9bcb28497451.res"
+
+[deps]
+
+source_file="res://music/side_b/shout - jack & jill.mod"
+dest_files=["res://.godot/imported/shout - jack & jill.mod-67e70771a05b666e120d9bcb28497451.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

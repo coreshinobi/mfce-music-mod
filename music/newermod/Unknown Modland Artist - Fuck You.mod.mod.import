@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://b2eyd8ihd8qpn"
+path="res://.godot/imported/Unknown Modland Artist - Fuck You.mod.mod-c6b8ebd6284d5731cfc6907f927bb03b.res"
+
+[deps]
+
+source_file="res://music/newermod/Unknown Modland Artist - Fuck You.mod.mod"
+dest_files=["res://.godot/imported/Unknown Modland Artist - Fuck You.mod.mod-c6b8ebd6284d5731cfc6907f927bb03b.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

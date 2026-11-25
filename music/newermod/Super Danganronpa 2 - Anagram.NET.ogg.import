@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d21i1rjs85ap5"
+path="res://.godot/imported/Super Danganronpa 2 - Anagram.NET.ogg-641b3f3b205ccfc0a68fc5f15164511b.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Super Danganronpa 2 - Anagram.NET.ogg"
+dest_files=["res://.godot/imported/Super Danganronpa 2 - Anagram.NET.ogg-641b3f3b205ccfc0a68fc5f15164511b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

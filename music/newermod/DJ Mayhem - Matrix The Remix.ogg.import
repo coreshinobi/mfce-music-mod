@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dfuw2wmaye242"
+path="res://.godot/imported/DJ Mayhem - Matrix The Remix.ogg-a825578c7e78bba19f7067a297e31225.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/DJ Mayhem - Matrix The Remix.ogg"
+dest_files=["res://.godot/imported/DJ Mayhem - Matrix The Remix.ogg-a825578c7e78bba19f7067a297e31225.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=12.85
+bpm=0.0
+beat_count=0
+bar_beats=4

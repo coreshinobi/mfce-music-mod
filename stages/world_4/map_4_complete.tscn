@@ -1,16 +1,22 @@
 [gd_scene format=3 uid="uid://bkvd07c6wg8mv"]
 
-[ext_resource type="PackedScene" uid="uid://bxyjgsiel1kgl" path="res://engine/scenes/map/complete_template.tscn" id="1_tkfsl"]
+[ext_resource type="Script" uid="uid://cgmeyo2w81dhx" path="res://engine/scenes/map/scripts/map-complete.gd" id="1_j6db2"]
+[ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="2_forq2"]
 [ext_resource type="Texture2D" uid="uid://ha4rhx5mll7g" path="res://gfx/map/world_names/world_4.png" id="2_mk0er"]
+[ext_resource type="AudioStream" uid="uid://bbj275nkwpnmf" path="res://music/side_a/Alien Soldier - Soldiers Song.ogg" id="3_6iqnw"]
 [ext_resource type="Texture2D" uid="uid://bdjyths6ll254" path="res://gfx/map/maps/completed/map4-complete.png" id="3_g7k4q"]
+[ext_resource type="Texture2D" uid="uid://usm6n80msr7n" path="res://engine/scenes/map/textures/bg.png" id="4_hu2l3"]
 [ext_resource type="Script" uid="uid://0h3x5dwndovw" path="res://engine/scripts/nodes/effects/quality_visible.gd" id="4_ssx6m"]
 [ext_resource type="Texture2D" uid="uid://blumff1vegg4c" path="res://engine/scenes/map/textures/completed.png" id="4_u4d7k"]
 [ext_resource type="Texture2D" uid="uid://bs2o17gts83u2" path="res://gfx/fancy_graphics/gwiazdkowy_mapowy.png" id="5_50uga"]
 [ext_resource type="Texture2D" uid="uid://cri6ax5vkgp6w" path="res://gfx/fancy_graphics/world_texts/MARIO_WORLD_bigger.png" id="5_o4qbn"]
+[ext_resource type="Texture2D" uid="uid://b6hnnpa1sdewh" path="res://engine/scenes/map/textures/mario_icon.png" id="5_q7h18"]
 [ext_resource type="SpriteFrames" uid="uid://bg3rkune5k0d" path="res://gfx/fancy_graphics/world_texts/map_complete.tres" id="6_1xkmf"]
 [ext_resource type="Script" uid="uid://bgq4yksu7kl5m" path="res://gfx/fancy_graphics/scripts/map_star_bg.gd" id="6_21lse"]
+[ext_resource type="Script" uid="uid://84tklnoxykkh" path="res://engine/scenes/map/scripts/player_icon.gd" id="6_frnor"]
 [ext_resource type="Texture2D" uid="uid://ba2l3s3q7xnv3" path="res://gfx/fancy_graphics/world_texts/world_atlas_numbers.png" id="6_rkj8p"]
 [ext_resource type="Texture2D" uid="uid://fekf5mlsjmib" path="res://gfx/map/maps/overlay/map4oblaka.png" id="7_dyb4s"]
+[ext_resource type="Script" uid="uid://dr3vhptgbru6r" path="res://engine/scenes/map/scripts/world_text.gd" id="8_cr36c"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uckvt"]
 atlas = ExtResource("4_u4d7k")
@@ -76,7 +82,7 @@ region = Rect2(0, 68, 206, 34)
 atlas = ExtResource("4_u4d7k")
 region = Rect2(0, 34, 206, 34)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_e7808"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_ypd1c"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -132,66 +138,210 @@ animations = [{
 "speed": 25.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_hgq50"]
+atlas = ExtResource("4_u4d7k")
+region = Rect2(0, 0, 206, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xe64y"]
+atlas = ExtResource("4_u4d7k")
+region = Rect2(0, 34, 206, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qmuah"]
+atlas = ExtResource("4_u4d7k")
+region = Rect2(0, 68, 206, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_107fd"]
+atlas = ExtResource("4_u4d7k")
+region = Rect2(0, 102, 206, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l3rg2"]
+atlas = ExtResource("4_u4d7k")
+region = Rect2(0, 136, 206, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_76khl"]
+atlas = ExtResource("4_u4d7k")
+region = Rect2(0, 170, 206, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_megq4"]
+atlas = ExtResource("4_u4d7k")
+region = Rect2(0, 204, 206, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8oc4u"]
+atlas = ExtResource("4_u4d7k")
+region = Rect2(0, 238, 206, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lyya1"]
+atlas = ExtResource("4_u4d7k")
+region = Rect2(0, 272, 206, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x0p3t"]
+atlas = ExtResource("4_u4d7k")
+region = Rect2(0, 238, 206, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1hjec"]
+atlas = ExtResource("4_u4d7k")
+region = Rect2(0, 204, 206, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lfsea"]
+atlas = ExtResource("4_u4d7k")
+region = Rect2(0, 170, 206, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_efqp6"]
+atlas = ExtResource("4_u4d7k")
+region = Rect2(0, 136, 206, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f0wca"]
+atlas = ExtResource("4_u4d7k")
+region = Rect2(0, 102, 206, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vyfoc"]
+atlas = ExtResource("4_u4d7k")
+region = Rect2(0, 68, 206, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_of8l3"]
+atlas = ExtResource("4_u4d7k")
+region = Rect2(0, 34, 206, 34)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e7808"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hgq50")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xe64y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qmuah")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_107fd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l3rg2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_76khl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_megq4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8oc4u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lyya1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x0p3t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1hjec")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lfsea")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_efqp6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f0wca")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vyfoc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_of8l3")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 25.0
+}]
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_dfame"]
 atlas = ExtResource("6_rkj8p")
 region = Rect2(185, 0, 60, 83)
 filter_clip = true
 
-[node name="Map-complete" unique_id=1945741710 instance=ExtResource("1_tkfsl")]
+[node name="Map-complete" type="Node2D" unique_id=1945741710]
+script = ExtResource("1_j6db2")
 goto_scene = "res://stages/world_5/map_5.tscn"
 world_name = "4"
 
-[node name="WorldText" parent="GUI" parent_id_path=PackedInt32Array(1569131634) index="1" unique_id=2088174941]
-self_modulate = Color(1, 1, 1, 0)
-texture = ExtResource("2_mk0er")
+[node name="MusicLoader" parent="." unique_id=1144641034 instance=ExtResource("2_forq2")]
+music = Array[Resource]([ExtResource("3_6iqnw")])
 
-[node name="BounceMarker" parent="GUI/WorldText" index="0" unique_id=1164216049]
+[node name="Bg" type="Sprite2D" parent="." unique_id=1168485191]
+texture = ExtResource("4_hu2l3")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 3333, 480)
+region_filter_clip_enabled = true
+metadata/_edit_lock_ = true
+
+[node name="GUI" type="CanvasLayer" parent="." unique_id=1569131634]
+
+[node name="MarioIcon" type="Sprite2D" parent="GUI" unique_id=1472972732]
+position = Vector2(581, 436)
+texture = ExtResource("5_q7h18")
+script = ExtResource("6_frnor")
+metadata/_edit_lock_ = true
+
+[node name="WorldText" type="Sprite2D" parent="GUI" unique_id=2088174941]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(320, -64)
+texture = ExtResource("2_mk0er")
+script = ExtResource("8_cr36c")
+
+[node name="BounceMarker" type="Marker2D" parent="GUI/WorldText" unique_id=1164216049]
 position = Vector2(0, 152)
 
-[node name="AnimatedSprite2D" parent="GUI/WorldText" index="1" unique_id=553176203]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="GUI/WorldText" unique_id=553176203]
 visible = false
 position = Vector2(0, 48)
+sprite_frames = SubResource("SpriteFrames_ypd1c")
+autoplay = "default"
 
-[node name="Sprite2D" type="Sprite2D" parent="GUI/WorldText" index="2" unique_id=248251067]
+[node name="Sprite2D" type="Sprite2D" parent="GUI/WorldText" unique_id=248251067]
 texture = ExtResource("2_mk0er")
 script = ExtResource("4_ssx6m")
 maximum = false
 medium = true
 minimum = true
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="GUI/WorldText/Sprite2D" index="0" unique_id=1880322062]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="GUI/WorldText/Sprite2D" unique_id=1880322062]
 position = Vector2(0, 44)
 sprite_frames = SubResource("SpriteFrames_e7808")
 autoplay = "default"
 
-[node name="FancyWorld" type="Sprite2D" parent="GUI/WorldText" index="3" unique_id=993955877]
+[node name="FancyWorld" type="Sprite2D" parent="GUI/WorldText" unique_id=993955877]
 position = Vector2(0, 2)
 texture = ExtResource("5_o4qbn")
 offset = Vector2(-24, 0)
 script = ExtResource("4_ssx6m")
 
-[node name="FancyNumber" type="Sprite2D" parent="GUI/WorldText/FancyWorld" index="0" unique_id=1289151206]
+[node name="FancyNumber" type="Sprite2D" parent="GUI/WorldText/FancyWorld" unique_id=1289151206]
 position = Vector2(112, 0)
 texture = SubResource("AtlasTexture_dfame")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="GUI/WorldText/FancyWorld" index="1" unique_id=1734187940]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="GUI/WorldText/FancyWorld" unique_id=1734187940]
 position = Vector2(0, 43)
 sprite_frames = ExtResource("6_1xkmf")
 autoplay = "default"
 offset = Vector2(0, 24)
 
-[node name="Map4Oblaka" type="Sprite2D" parent="." index="3" unique_id=1025756240]
+[node name="Map4Oblaka" type="Sprite2D" parent="." unique_id=1025756240]
 position = Vector2(802, 160)
 texture = ExtResource("7_dyb4s")
 
-[node name="Map4-complete" type="Sprite2D" parent="." index="4" unique_id=1918930213]
+[node name="Map4-complete" type="Sprite2D" parent="." unique_id=1918930213]
 position = Vector2(340, 256)
 texture = ExtResource("3_g7k4q")
 
-[node name="Node2D" type="Node2D" parent="." index="5" unique_id=643361278]
+[node name="Node2D" type="Node2D" parent="." unique_id=643361278]
 script = ExtResource("4_ssx6m")
 
-[node name="GwiazdkowyMapowy" type="Sprite2D" parent="Node2D" index="0" unique_id=6693050]
+[node name="GwiazdkowyMapowy" type="Sprite2D" parent="Node2D" unique_id=6693050]
 position = Vector2(320, 64)
 texture = ExtResource("5_50uga")
 script = ExtResource("6_21lse")

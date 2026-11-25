@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://cu3u66smf76d6"
+path="res://.godot/imported/hong kong 97 - i love beijing tiananmen.mod-f1bf6abc814b2d786eda94b1ce99f8c4.res"
+
+[deps]
+
+source_file="res://music/newermod/hong kong 97 - i love beijing tiananmen.mod"
+dest_files=["res://.godot/imported/hong kong 97 - i love beijing tiananmen.mod-f1bf6abc814b2d786eda94b1ce99f8c4.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

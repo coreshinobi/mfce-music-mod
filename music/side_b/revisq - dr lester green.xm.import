@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://bt2i71w1ndu8s"
+path="res://.godot/imported/revisq - dr lester green.xm-1f547d6c66d3febc67a2f46134d20e86.res"
+
+[deps]
+
+source_file="res://music/side_b/revisq - dr lester green.xm"
+dest_files=["res://.godot/imported/revisq - dr lester green.xm-1f547d6c66d3febc67a2f46134d20e86.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

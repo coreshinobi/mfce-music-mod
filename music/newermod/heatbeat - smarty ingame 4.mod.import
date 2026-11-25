@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://ctwyeeahg7ntj"
+path="res://.godot/imported/heatbeat - smarty ingame 4.mod-658f42de39d5fc094372a8a3b3e9f6dc.res"
+
+[deps]
+
+source_file="res://music/newermod/heatbeat - smarty ingame 4.mod"
+dest_files=["res://.godot/imported/heatbeat - smarty ingame 4.mod-658f42de39d5fc094372a8a3b3e9f6dc.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

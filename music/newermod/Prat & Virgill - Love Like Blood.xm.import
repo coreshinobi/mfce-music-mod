@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://dey1c1jq10beo"
+path="res://.godot/imported/Prat & Virgill - Love Like Blood.xm-f81a5acf3a4afd51272fdde84c4abf19.res"
+
+[deps]
+
+source_file="res://music/newermod/Prat & Virgill - Love Like Blood.xm"
+dest_files=["res://.godot/imported/Prat & Virgill - Love Like Blood.xm-f81a5acf3a4afd51272fdde84c4abf19.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

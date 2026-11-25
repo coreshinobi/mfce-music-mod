@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://duytw23w7xnvp"
+path="res://.godot/imported/jaja perdedor.ogg-da92b663627a1d3bff0eb81ec78a40ff.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/jaja perdedor.ogg"
+dest_files=["res://.godot/imported/jaja perdedor.ogg-da92b663627a1d3bff0eb81ec78a40ff.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

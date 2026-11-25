@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://7gm3k5c73ene"
+path="res://.godot/imported/vinze - end of the world.mod-adcd2751fcf656c4559d942cbcbf35ba.res"
+
+[deps]
+
+source_file="res://music/newermod/vinze - end of the world.mod"
+dest_files=["res://.godot/imported/vinze - end of the world.mod-adcd2751fcf656c4559d942cbcbf35ba.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

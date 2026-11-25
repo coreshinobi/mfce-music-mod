@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://ds33ulmgbj4e5"
+path="res://.godot/imported/jabi - surrender.mod-8c61f1dcb5eaebcccecc5de87a121a81.res"
+
+[deps]
+
+source_file="res://music/newermod/jabi - surrender.mod"
+dest_files=["res://.godot/imported/jabi - surrender.mod-8c61f1dcb5eaebcccecc5de87a121a81.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cw0wcr55nqr6r"
+path="res://.godot/imported/Bass Selective - Life & Loves Of A Ruffneck.ogg-824d797dd60a107f38d56b085bd09e2e.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Bass Selective - Life & Loves Of A Ruffneck.ogg"
+dest_files=["res://.godot/imported/Bass Selective - Life & Loves Of A Ruffneck.ogg-824d797dd60a107f38d56b085bd09e2e.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

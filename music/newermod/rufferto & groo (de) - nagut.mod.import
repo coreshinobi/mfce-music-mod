@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://c7bqbyoo8rv8a"
+path="res://.godot/imported/rufferto & groo (de) - nagut.mod-83f4c0896f211d60c056d0f192e049bd.res"
+
+[deps]
+
+source_file="res://music/newermod/rufferto & groo (de) - nagut.mod"
+dest_files=["res://.godot/imported/rufferto & groo (de) - nagut.mod-83f4c0896f211d60c056d0f192e049bd.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

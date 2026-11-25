@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bw6apa67o6bgj"
+path="res://.godot/imported/Unknown - Leen's Happy Day.ogg-a2c9b20ee859e4c6fe665e5b43872859.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Unknown - Leen's Happy Day.ogg"
+dest_files=["res://.godot/imported/Unknown - Leen's Happy Day.ogg-a2c9b20ee859e4c6fe665e5b43872859.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

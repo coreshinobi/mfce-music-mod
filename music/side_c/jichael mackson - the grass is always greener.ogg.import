@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://nelhxkp1rd6k"
+path="res://.godot/imported/jichael mackson - the grass is always greener.ogg-b707e8a7965d4aeb1483874abc74be42.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_c/jichael mackson - the grass is always greener.ogg"
+dest_files=["res://.godot/imported/jichael mackson - the grass is always greener.ogg-b707e8a7965d4aeb1483874abc74be42.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

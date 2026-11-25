@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://dasxds0d7pi64"
+path="res://.godot/imported/Manwe - Funky Background.mod-6cd17f04934a9867eb7b172fa08c747c.res"
+
+[deps]
+
+source_file="res://music/newermod/Manwe - Funky Background.mod"
+dest_files=["res://.godot/imported/Manwe - Funky Background.mod-6cd17f04934a9867eb7b172fa08c747c.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

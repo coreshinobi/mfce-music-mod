@@ -4,15 +4,18 @@
 [ext_resource type="Script" uid="uid://db8widi15epm" path="res://engine/scenes/save_game_room/scripts/save_room_logic.gd" id="2_daqfu"]
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_e17d3"]
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="2_jjm06"]
-[ext_resource type="AudioStream" uid="uid://c1va567cln81n" path="res://engine/scenes/save_game_room/music/save_game_room.it" id="3_5sf1o"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="4_5mqnl"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_gl3qo"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="5_1d41w"]
+[ext_resource type="AudioStream" uid="uid://mtm4q73e8trv" path="res://music/newermod/revisq - peculiar dog.mod" id="5_4dwkg"]
+[ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="5_5w725"]
+[ext_resource type="AudioStream" uid="uid://dnmjeg77g80l3" path="res://music/side_a/Vectorman 2 - Lava River (Scene 5 - Fired).ogg" id="5_q1lqq"]
 [ext_resource type="PackedScene" uid="uid://cl58fmmyu8xha" path="res://engine/components/progress_continue/progress_continue_screen.tscn" id="6_drrs7"]
+[ext_resource type="AudioStream" uid="uid://dkbnp75ytpxb" path="res://music/newermod/the vessel - mus_wilting_man.ogg" id="6_q1lqq"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="6_vufed"]
 [ext_resource type="Script" uid="uid://dukosa3hw8lff" path="res://stages/save_game_room/scripts/restore_tweaks_from_minix.gd" id="7_1qauj"]
-[ext_resource type="AudioStream" uid="uid://dsmylka0343rg" path="res://music/extra/kav-humn.mo3" id="7_p8qum"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="9_6jkwo"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="9_kraha"]
 [ext_resource type="Script" uid="uid://dobty8cwhobcy" path="res://stages/save_game_room/scripts/custom_progress_continue_screen.gd" id="10_82cq3"]
 [ext_resource type="Script" uid="uid://clm1anrf3fw3j" path="res://engine/scripts/nodes/general_movement/circle_movement.gd" id="10_cgryk"]
 [ext_resource type="Texture2D" uid="uid://6bwpp568bmq0" path="res://gfx/fancy_graphics/giant_clouds.png" id="10_g7r8l"]
@@ -102,7 +105,6 @@
 [ext_resource type="Script" uid="uid://bvk6gf2qydt4k" path="res://stages/save_game_room/scripts/spider.gd" id="60_hpsoc"]
 [ext_resource type="PackedScene" uid="uid://puywhag5cs1a" path="res://engine/objects/powerups/boomerang_flower/boomerang_flower.tscn" id="61_cu44g"]
 [ext_resource type="Texture2D" uid="uid://dii887xxrfhqi" path="res://gfx/fancy_graphics/cloud_light_effect.png" id="63_ade1j"]
-[ext_resource type="AudioStream" uid="uid://c0niykpi0ounv" path="res://engine/objects/enemies/human_lab/koopa_bro/sfx/throw.wav" id="63_gtcg3"]
 [ext_resource type="Texture2D" uid="uid://c5lb7k53xnvs8" path="res://gfx/sign/sign_saveroom.png" id="63_nbacx"]
 [ext_resource type="PackedScene" uid="uid://rhrex2vth7at" path="res://engine/objects/platform/platform_path.tscn" id="63_qpnqr"]
 [ext_resource type="Texture2D" uid="uid://cwwgmgsjprj1p" path="res://engine/scenes/save_game_room/textures/reset_counter_bg.png" id="64_5nfk3"]
@@ -146,7 +148,6 @@
 [ext_resource type="Texture2D" uid="uid://cin6ygilqlxrq" path="res://gfx/sign/stupidity_star.png" id="94_n4f5q"]
 [ext_resource type="Script" uid="uid://crv7ntibo024r" path="res://engine/objects/enemies/enemy_sprite_rotator.gd" id="95_mg0sh"]
 [ext_resource type="Texture2D" uid="uid://0kdlt7lc7g6d" path="res://gfx/sign/sign_small_upside_down.png" id="96_3comp"]
-[ext_resource type="Texture2D" uid="uid://bnucsxo6tbbgi" path="res://gfx/sign/stupidity_zone.png" id="96_8mrny"]
 [ext_resource type="Texture2D" uid="uid://coxt78xfny30q" path="res://gfx/sign/stupidity_text.png" id="97_hb60x"]
 [ext_resource type="Script" uid="uid://dsfdoosksb5bi" path="res://stages/save_game_room/scripts/progress_continue_skipper.gd" id="100_imftg"]
 [ext_resource type="Script" uid="uid://m8mh06bs6kl6" path="res://stages/save_game_room/scripts/stupidity_warp_node.gd" id="104_d0la8"]
@@ -161,6 +162,7 @@
 [ext_resource type="PackedScene" uid="uid://u6gxj4cj5m4f" path="res://engine/objects/bumping_blocks/message_block/message_block.tscn" id="115_nqbov"]
 [ext_resource type="Script" uid="uid://crkert7xdwe0j" path="res://stages/save_game_room/scripts/achievement_pager.gd" id="117_btyue"]
 [ext_resource type="Script" uid="uid://gxt6safn8vkx" path="res://stages/save_game_room/scripts/pipe_skip_tween.gd" id="119_ur33w"]
+[ext_resource type="AudioStream" uid="uid://f4728ebimwuy" path="res://sfx/Nori!.ogg" id="120_5w725"]
 [ext_resource type="PackedScene" uid="uid://ckcy2nk2urb4f" path="res://stages/save_game_room/objects/achievements_ce_p3.tscn" id="125_4dwkg"]
 [ext_resource type="Texture2D" uid="uid://c8hv4q5tiekro" path="res://gfx/sign/arrow_left.png" id="125_p8qum"]
 [ext_resource type="Script" uid="uid://bbplmsebpp6d0" path="res://stages/save_game_room/scripts/secrets_table.gd" id="126_5w725"]
@@ -176,6 +178,7 @@
 [ext_resource type="PackedScene" uid="uid://dwih13maquoyl" path="res://objects/harder_design_node/harder_design_node.tscn" id="135_b1hml"]
 [ext_resource type="TileSet" uid="uid://duodk2nyl4k2h" path="res://engine/tilesets/overworld/overworld.tres" id="136_g8fdh"]
 [ext_resource type="Shader" uid="uid://cnljy5svxs637" path="res://engine/objects/bumping_blocks/message_block/hsv.gdshader" id="142_a6k2i"]
+[ext_resource type="AudioStream" uid="uid://btainbny5bu6f" path="res://objects/chorniy_mario/death_sounds/cs/dr1_voice_hca_us.awb.06325.ogg" id="142_py0iw"]
 [ext_resource type="Texture2D" uid="uid://dj0o1q1exculv" path="res://gfx/texts/sgr_achievements_angled.png" id="148_wibcd"]
 [ext_resource type="Texture2D" uid="uid://nvgk4qen1dc6" path="res://engine/tilesets/overworld/gfx/green_pipe_cut.png" id="157_m16su"]
 [ext_resource type="Script" uid="uid://vvv5faybavva" path="res://stages/main_menu/scripts/update_checker.gd" id="169_7yric"]
@@ -184,6 +187,7 @@
 [ext_resource type="Texture2D" uid="uid://fwa07n7kaesp" path="res://stages/main_menu/textures/update_now.png" id="171_btyue"]
 [ext_resource type="Script" uid="uid://boeqlf5i7xnmx" path="res://stages/main_menu/scripts/update_modal_sel.gd" id="172_ur33w"]
 [ext_resource type="Texture2D" uid="uid://cb24ytv72ue4t" path="res://engine/scenes/main_menu/textures/restart_cancel.png" id="173_mht4q"]
+[ext_resource type="Texture2D" uid="uid://dmrmjenje26ki" path="res://gfx/sign/miu_iruma_zone.png" id="175_py0iw"]
 [ext_resource type="Texture2D" uid="uid://dij228lqn81y1" path="res://gfx/tilesets/spring/spring_halftiles.png" id="178_obd1x"]
 [ext_resource type="Texture2D" uid="uid://bw6tt0msakat6" path="res://engine/tilesets/underground/gfx/underground.png" id="182_vh3jj"]
 [ext_resource type="PackedScene" uid="uid://bgublkatjfthl" path="res://tilesets/underground/scenes/lamp.tscn" id="183_s8ahf"]
@@ -1172,14 +1176,14 @@ load_path = "res://.godot/imported/cp_star.png-8aad299551c69fcc1fb6b6d3d28cbf85.
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b4vmn"]
 size = Vector2(32, 32)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_4dwkg"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lvqia"]
 resource_local_to_scene = true
 shader = ExtResource("142_a6k2i")
 shader_parameter/hue = 0.12
 shader_parameter/saturation = 0.0
 shader_parameter/value = 0.0
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_q1lqq"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nhn85"]
 resource_local_to_scene = true
 shader = ExtResource("142_a6k2i")
 shader_parameter/hue = 0.12
@@ -1333,12 +1337,12 @@ metadata/save_room_level = true
 
 [node name="MusicLoader" parent="." unique_id=1580248781 instance=ExtResource("2_jjm06")]
 script = ExtResource("4_5mqnl")
-tweaked_completion_music = null
+tweaked_completion_music = ExtResource("5_5w725")
 ignore_fade_in_tweak = true
-music_var_1 = Array[Resource]([])
+music_var_1 = Array[Resource]([ExtResource("5_q1lqq"), ExtResource("6_q1lqq")])
 music_var_2 = Array[Resource]([])
 music_var_3 = Array[Resource]([])
-var_1_volume_db = Array[float]([0.0])
+var_1_volume_db = Array[float]([0.0, 0.3])
 var_1_start_from_sec = Array[float]([0.0])
 var_2_volume_db = Array[float]([0.0])
 var_2_start_from_sec = Array[float]([0.0])
@@ -1349,9 +1353,11 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("3_5sf1o"), ExtResource("7_p8qum")])
-volume_db = Array[float]([0.0, -2.0])
+music = Array[Resource]([ExtResource("5_4dwkg"), ExtResource("6_q1lqq")])
+volume_db = Array[float]([0.0, 0.3])
 metadata/_edit_pinned_properties_ = [&"tweaked_completion_music"]
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("9_kraha")]
 
 [node name="SaveRoomLogic" type="Node" parent="." unique_id=1701583563]
 script = ExtResource("2_daqfu")
@@ -4841,7 +4847,7 @@ secret_completed_values = PackedStringArray()
 level_lock_explain = "level locked! find a passage in expert mode worlds!"
 level_unlock_explain = "you have found this level in expert %s"
 warp_to_scene = "res://stages/extra/human_lab/human_lab_map.tscn"
-warping_sound = ExtResource("63_gtcg3")
+warping_sound = ExtResource("120_5w725")
 use_circle_transition = true
 circle_closing_speed = 0.05
 circle_center_after_middle = true
@@ -5696,6 +5702,17 @@ circle_closing_speed = 0.05
 [node name="Node" type="Node" parent="PipeInStupidity" unique_id=1848780484]
 script = ExtResource("104_d0la8")
 
+[node name="PipeInStupidity2" parent="." unique_id=830057156 instance=ExtResource("21_qg33c")]
+position = Vector2(7521, 368)
+warp_to_scene = "uid://bwmojmg616oxq"
+warping_speed = 56.0
+warping_sound = ExtResource("142_py0iw")
+use_circle_transition = true
+circle_closing_speed = 0.05
+
+[node name="Node" type="Node" parent="PipeInStupidity2" unique_id=1884319782]
+script = ExtResource("104_d0la8")
+
 [node name="KevinLayer" type="CanvasLayer" parent="." unique_id=1350097769]
 
 [node name="Node2D2" type="Node2D" parent="KevinLayer" unique_id=906051285]
@@ -5853,7 +5870,7 @@ font_size = 16
 box_size = Vector2(0, 0)
 
 [node name="AnimatedSprite2D" parent="MessageBlockPlaceholder/Sprites" parent_id_path=PackedInt32Array(716242457, 294550689) index="1" unique_id=1604913855]
-material = SubResource("ShaderMaterial_4dwkg")
+material = SubResource("ShaderMaterial_lvqia")
 
 [node name="Texture" parent="MessageBlockPlaceholder/CanvasLayer/Box" parent_id_path=PackedInt32Array(716242457, 1618357154) index="0" unique_id=1552683647]
 offset_left = -160.0
@@ -5873,7 +5890,7 @@ font_size = 16
 box_size = Vector2(0, 0)
 
 [node name="AnimatedSprite2D" parent="MessageBlock2/Sprites" parent_id_path=PackedInt32Array(851353606, 294550689) index="1" unique_id=1604913855]
-material = SubResource("ShaderMaterial_q1lqq")
+material = SubResource("ShaderMaterial_nhn85")
 
 [node name="Texture" parent="MessageBlock2/CanvasLayer/Box" parent_id_path=PackedInt32Array(851353606, 1618357154) index="0" unique_id=1552683647]
 offset_left = -232.0
@@ -6061,9 +6078,9 @@ theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("57_likrm")
 theme_override_font_sizes/font_size = 11
-text = "human
-laboratory
-world"
+text = "Hi Hi Puffy
+AmiYumi
+Clones!!!"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
@@ -6094,9 +6111,9 @@ theme_override_constants/line_spacing = 0
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("57_likrm")
 theme_override_font_sizes/font_size = 11
-text = "human
-laboratory
-world"
+text = "Hi Hi Puffy
+AmiYumi
+Clones!!!"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
@@ -6281,6 +6298,28 @@ theme_override_font_sizes/font_size = 20
 text = "you've been fooled!
 there is something
 here!"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="Label4" type="Label" parent="Scenery/SignSmallUpsideDown5" unique_id=1497084736]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -461.0
+offset_top = 51.0
+offset_right = -448.0
+offset_bottom = 51.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 1
+theme_override_colors/font_outline_color = Color(0, 0, 0.360784, 1)
+theme_override_constants/line_spacing = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("22_7uvh2")
+theme_override_font_sizes/font_size = 20
+text = "Even more
+Stupidity!"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
@@ -6837,9 +6876,9 @@ theme_override_constants/line_spacing = 2
 theme_override_constants/outline_size = 6
 theme_override_fonts/font = ExtResource("22_7uvh2")
 theme_override_font_sizes/font_size = 20
-text = "stages dedicated to
-ultra super mega hyper
-gooooood players!"
+text = "stages dedicated for
+absolute fucking
+geniuses!"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
@@ -6871,7 +6910,7 @@ theme_override_constants/line_spacing = 2
 theme_override_constants/outline_size = 6
 theme_override_fonts/font = ExtResource("22_7uvh2")
 theme_override_font_sizes/font_size = 24
-text = "sylvester stallone
+text = "miu iruma
 zone!!!"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -6909,8 +6948,8 @@ vertical_alignment = 1
 uppercase = true
 
 [node name="StupidityZone" type="Sprite2D" parent="Scenery" unique_id=388302918]
-position = Vector2(7102, 74)
-texture = ExtResource("96_8mrny")
+position = Vector2(7111, 43)
+texture = ExtResource("175_py0iw")
 centered = false
 script = ExtResource("12_smei1")
 medium = true
@@ -7674,6 +7713,7 @@ metadata/_edit_lock_ = true
 [connection signal="warp_ended" from="Objects/PipeOut3" to="Objects/PipeShortcutSprite" method="go_away"]
 [connection signal="block_triggered" from="Objects/ConsoleBlock" to="Objects/Node2D3/PipeIn" method="queue_free"]
 [connection signal="warp_started" from="PipeInStupidity" to="PipeInStupidity/Node" method="trigger"]
+[connection signal="warp_started" from="PipeInStupidity2" to="PipeInStupidity2/Node" method="trigger"]
 [connection signal="player_enter" from="AreaExtra TRUE" to="CamAreaNewSecrets" method="set_deferred" binds= [&"smooth_transition", true]]
 [connection signal="player_enter" from="AreaExtra TRUE" to="CamAreaExpertMode" method="set_deferred" binds= [&"smooth_transition", true]]
 [connection signal="player_enter" from="AreaExtra FALSE" to="CamAreaNewSecrets" method="set_deferred" binds= [&"smooth_transition", false]]

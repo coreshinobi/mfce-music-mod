@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://di1vs83tjyrc4"
+path="res://.godot/imported/marley jauz & eden_essence - overworld.ogg-b14bd89225a1bf043238fe74bdc0eafe.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/marley jauz & eden_essence - overworld.ogg"
+dest_files=["res://.godot/imported/marley jauz & eden_essence - overworld.ogg-b14bd89225a1bf043238fe74bdc0eafe.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

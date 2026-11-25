@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://bgrftsxv71jqf"
+path="res://.godot/imported/Prikol Software @ Doom2D - Super.xm-2977bf1020eaa7c4fcf7d05f8e446491.res"
+
+[deps]
+
+source_file="res://music/newermod/Prikol Software @ Doom2D - Super.xm"
+dest_files=["res://.godot/imported/Prikol Software @ Doom2D - Super.xm-2977bf1020eaa7c4fcf7d05f8e446491.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

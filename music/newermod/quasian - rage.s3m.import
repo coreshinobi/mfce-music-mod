@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://nmtkmcoqc06w"
+path="res://.godot/imported/quasian - rage.s3m-00e963e5df980a895c9ced670af3610d.res"
+
+[deps]
+
+source_file="res://music/newermod/quasian - rage.s3m"
+dest_files=["res://.godot/imported/quasian - rage.s3m-00e963e5df980a895c9ced670af3610d.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

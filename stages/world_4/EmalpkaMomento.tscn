@@ -4,7 +4,8 @@
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_bsoqt"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_fxted"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_git66"]
-[ext_resource type="AudioStream" uid="uid://bjxgnmvy3r7cs" path="res://music/smas-bowser.ogg" id="4_yxh54"]
+[ext_resource type="AudioStream" uid="uid://llejanvs8aux" path="res://music/newermod/rufferto - cunfuzion.mod" id="4_iiodp"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="5_f3h08"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="6_cwnoy"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_gf4q0"]
 [ext_resource type="Texture2D" uid="uid://b5qvo4xgdxnrv" path="res://engine/objects/effects/wide_clouds_moving/texture.png" id="9_6f22s"]
@@ -36,7 +37,7 @@ colors = PackedColorArray(0.231373, 0.482353, 0.639216, 1, 0.94902, 0.992157, 0.
 gradient = SubResource("Gradient_yisdg")
 width = 480
 
-[sub_resource type="Resource" id="Resource_qdbsm"]
+[sub_resource type="Resource" id="Resource_rbg8s"]
 resource_local_to_scene = true
 script = ExtResource("16_3jwqk")
 creation_fallback_node = ExtResource("14_wejbj")
@@ -148,8 +149,11 @@ jump_to_scene = "res://stages/world_4/map_4.tscn"
 
 [node name="MusicLoader" type="Node" parent="." unique_id=1606417379]
 script = ExtResource("3_fxted")
-music = Array[Resource]([ExtResource("4_yxh54")])
-volume_db = Array[float]([3.0])
+music = Array[Resource]([ExtResource("4_iiodp")])
+volume_db = Array[float]([1.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("5_f3h08")]
+text = Array[String](["Rufferto - Cunfuzion"])
 
 [node name="Mario" parent="." unique_id=948511678 instance=ExtResource("4_git66")]
 position = Vector2(80, 400)
@@ -227,7 +231,7 @@ speed = 100.0
 
 [node name="QuestionBlockBeetroot" parent="." unique_id=539518104 instance=ExtResource("13_m1wxm")]
 position = Vector2(48, 240)
-result = SubResource("Resource_qdbsm")
+result = SubResource("Resource_rbg8s")
 initially_visible_and_solid = false
 
 [node name="Brick" parent="." unique_id=810446204 instance=ExtResource("17_itkrn")]

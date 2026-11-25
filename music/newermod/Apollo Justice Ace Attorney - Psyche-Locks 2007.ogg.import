@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://di4efeymysact"
+path="res://.godot/imported/Apollo Justice Ace Attorney - Psyche-Locks 2007.ogg-0e1d48a737816d59099929aa311311df.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Apollo Justice Ace Attorney - Psyche-Locks 2007.ogg"
+dest_files=["res://.godot/imported/Apollo Justice Ace Attorney - Psyche-Locks 2007.ogg-0e1d48a737816d59099929aa311311df.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=11.6
+bpm=0.0
+beat_count=0
+bar_beats=4

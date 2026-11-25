@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://86jvi3o36lhg"
+path="res://.godot/imported/CoreSHINOBI @ Zetsuboukai - lonewind.mod-30ef77a7c2d3526017b67137588ae464.res"
+
+[deps]
+
+source_file="res://music/side_b/CoreSHINOBI @ Zetsuboukai - lonewind.mod"
+dest_files=["res://.godot/imported/CoreSHINOBI @ Zetsuboukai - lonewind.mod-30ef77a7c2d3526017b67137588ae464.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

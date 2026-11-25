@@ -3,11 +3,13 @@
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_5ey1q"]
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_3irkx"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_e3wc5"]
-[ext_resource type="AudioStream" uid="uid://db2c34365t43f" path="res://music/extra/expert_mode/mus_kze.mo3" id="4_jby1g"]
+[ext_resource type="AudioStream" uid="uid://by8u00aq24rm7" path="res://music/newermod/quasian - second_time.it" id="4_yjxps"]
+[ext_resource type="AudioStream" uid="uid://dmbh6d44c76af" path="res://music/newermod/Unknown Modland Artist - kyxi techno #1.mod" id="5_25ek7"]
 [ext_resource type="PackedScene" uid="uid://cvigdw7nldify" path="res://objects/antiafk_expert_mode/antiafk_expert_mode.tscn" id="5_qhwki"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="5_xgxqh"]
 [ext_resource type="Script" uid="uid://dc824j5folagw" path="res://engine/objects/players/player_camera_autoscroll.gd" id="6_rnu55"]
 [ext_resource type="AudioStream" uid="uid://cusrgc7jqf7qy" path="res://music/extra/expert_mode/short-die.ogg" id="6_ws6nv"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="7_25ek7"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="7_n3euw"]
 [ext_resource type="PackedScene" uid="uid://0s1sj8ke5lyv" path="res://engine/objects/platform/platform_path_tank_floor.tscn" id="8_jv4nu"]
 [ext_resource type="PackedScene" uid="uid://byc6nhxi3as3a" path="res://objects/burning_surface_modifier/burning_surface.tscn" id="9_cjelg"]
@@ -166,7 +168,7 @@ script = ExtResource("20_cjelg")
 creation_nodepack = ExtResource("49_cjelg")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_cjelg"]
+[sub_resource type="Resource" id="Resource_hk6ul"]
 resource_local_to_scene = true
 script = ExtResource("20_cjelg")
 creation_nodepack = ExtResource("30_ws6nv")
@@ -181,12 +183,16 @@ metadata/_edit_lock_ = true
 
 [node name="MusicLoader" type="Node" parent="." unique_id=300978311]
 script = ExtResource("3_e3wc5")
-music = Array[Resource]([ExtResource("4_jby1g")])
+music_var_2 = Array[Resource]([ExtResource("4_yjxps")])
+music = Array[Resource]([ExtResource("5_25ek7")])
 play_globally = 1
-volume_db = Array[float]([2.0])
+volume_db = Array[float]([0.0])
 
 [node name="AntiafkExpertMode" parent="MusicLoader" unique_id=2113773165 instance=ExtResource("5_qhwki")]
 layer = 11
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("7_25ek7")]
+text = Array[String](["Unknown Modland Artist - Kyxi Techno #1"])
 
 [node name="Mario" parent="." unique_id=963192229 instance=ExtResource("5_xgxqh")]
 position = Vector2(192, 400)
@@ -1003,7 +1009,7 @@ position = Vector2(5872, 208)
 position = Vector2(4016, 208)
 result_counter_value = 1.0
 max_items = 1
-result = SubResource("Resource_cjelg")
+result = SubResource("Resource_hk6ul")
 
 [connection signal="scroll_stopped" from="Path2D/PathFollow2D" to="Layer0" method="set_process_mode" binds= [4]]
 

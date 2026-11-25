@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bip6uo718rutu"
+path="res://.godot/imported/Toby Fox - Acid Tunnel of Love.ogg-53703b81ef02fede73ed6a254445d19c.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Toby Fox - Acid Tunnel of Love.ogg"
+dest_files=["res://.godot/imported/Toby Fox - Acid Tunnel of Love.ogg-53703b81ef02fede73ed6a254445d19c.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bj8k0iaf6ssfg"
+path="res://.godot/imported/PUFFY - Hi!Hi! Puffy AmiYumi Show Theme.ogg-53d0e102a584a6718e7b58515d41ce1e.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/PUFFY - Hi!Hi! Puffy AmiYumi Show Theme.ogg"
+dest_files=["res://.godot/imported/PUFFY - Hi!Hi! Puffy AmiYumi Show Theme.ogg-53d0e102a584a6718e7b58515d41ce1e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

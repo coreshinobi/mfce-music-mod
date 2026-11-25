@@ -1,15 +1,16 @@
 [gd_scene format=4 uid="uid://c0r6ld204t00b"]
 
 [ext_resource type="Script" uid="uid://by7oafruhi7h4" path="res://stages/world_1/scripts/level_1_4.gd" id="1_fj1pm"]
+[ext_resource type="AudioStream" uid="uid://bmuvwlbhd56cs" path="res://music/side_a/celsius - look up, look up.mod" id="3_4kvhu"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_orbv5"]
+[ext_resource type="AudioStream" uid="uid://dgttqqmu45xsl" path="res://music/newermod/hoffman - super sharp shooter.mod" id="4_4kvhu"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_vdnd0"]
-[ext_resource type="AudioStream" uid="uid://bqeophqiakq4k" path="res://music/smw2-castle.ogg" id="5_4ib86"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="5_2sssv"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="5_cj6ri"]
-[ext_resource type="AudioStream" uid="uid://bexk1qd4psene" path="res://engine/objects/bosses/bowser/music/music_bowser_battle.mod" id="5_gagp6"]
 [ext_resource type="PackedScene" uid="uid://diivlwjl0y1i7" path="res://engine/objects/bosses/bowser/bowser_trigger.tscn" id="5_lc0ev"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="6_2l2s3"]
-[ext_resource type="AudioStream" uid="uid://cnn040q2lodum" path="res://music/smrpg-bowser.ogg" id="6_mveqt"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_q30hk"]
+[ext_resource type="AudioStream" uid="uid://cgxthd0n65myi" path="res://music/newermod/buddha - battle cry.mod" id="9_4kvhu"]
 [ext_resource type="PackedScene" uid="uid://d0121yqkw7b6i" path="res://engine/objects/fluid/lava_area.tscn" id="9_e7vlv"]
 [ext_resource type="PackedScene" uid="uid://b8kgbn8f7lvf0" path="res://engine/objects/items/coin/coin.tscn" id="9_qrx6l"]
 [ext_resource type="TileSet" uid="uid://co4kwf1fb2y5i" path="res://tilesets/castle/castle_tileset.tres" id="9_y6dwu"]
@@ -73,18 +74,6 @@ gradient = SubResource("Gradient_hjlnd")
 fill_to = Vector2(0, 1)
 metadata/_snap_enabled = true
 
-[sub_resource type="Resource" id="Resource_4kvhu"]
-resource_local_to_scene = true
-script = ExtResource("15_87npw")
-creation_nodepack = ExtResource("9_qrx6l")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_2sssv"]
-resource_local_to_scene = true
-script = ExtResource("15_87npw")
-creation_nodepack = ExtResource("9_qrx6l")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_6dg5o"]
 resource_local_to_scene = true
 script = ExtResource("15_87npw")
@@ -116,6 +105,18 @@ creation_nodepack = ExtResource("9_qrx6l")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_ojfm3"]
+resource_local_to_scene = true
+script = ExtResource("15_87npw")
+creation_nodepack = ExtResource("9_qrx6l")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_l2ny5"]
+resource_local_to_scene = true
+script = ExtResource("15_87npw")
+creation_nodepack = ExtResource("9_qrx6l")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_6c8mi"]
 resource_local_to_scene = true
 script = ExtResource("15_87npw")
 creation_nodepack = ExtResource("9_qrx6l")
@@ -242,8 +243,11 @@ metadata/_edit_lock_ = true
 
 [node name="MusicLoader" type="Node" parent="." unique_id=1149487604]
 script = ExtResource("3_orbv5")
-boss_music_var_1 = ExtResource("5_gagp6")
-music = Array[Resource]([ExtResource("5_4ib86")])
+boss_music_var_1 = ExtResource("3_4kvhu")
+music = Array[Resource]([ExtResource("4_4kvhu")])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("5_2sssv")]
+text = Array[String](["Hoffman - Super Sharp Shooter"])
 
 [node name="SecretUnlocker" parent="." unique_id=292750211 instance=ExtResource("5_cj6ri")]
 secrets = Array[String](["passage to world 3"])
@@ -261,7 +265,7 @@ position = Vector2(8000, 224)
 curve = SubResource("Curve2D_gjfjy")
 trigger_area = Rect2(0, 0, 32, 960)
 trigger_bowser = NodePath("../Bowser")
-boss_music = ExtResource("6_mveqt")
+boss_music = ExtResource("9_4kvhu")
 
 [node name="CameraArea" parent="." unique_id=826602768 instance=ExtResource("7_q30hk")]
 offset_right = 11008.0
@@ -532,39 +536,39 @@ position = Vector2(6560, -16)
 
 [node name="QuestionBlock9" parent="." unique_id=1145346368 instance=ExtResource("36_b28n6")]
 position = Vector2(1232, 208)
-result = SubResource("Resource_4kvhu")
+result = SubResource("Resource_6dg5o")
 
 [node name="QuestionBlock13" parent="." unique_id=711858078 instance=ExtResource("36_b28n6")]
 position = Vector2(3440, 176)
-result = SubResource("Resource_2sssv")
+result = SubResource("Resource_ehxjs")
 
 [node name="QuestionBlock14" parent="." unique_id=661096353 instance=ExtResource("36_b28n6")]
 position = Vector2(3472, 176)
-result = SubResource("Resource_6dg5o")
+result = SubResource("Resource_jscrr")
 
 [node name="QuestionBlock15" parent="." unique_id=270401487 instance=ExtResource("36_b28n6")]
 position = Vector2(3856, 176)
-result = SubResource("Resource_ehxjs")
+result = SubResource("Resource_37fnh")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock16" parent="." unique_id=967608052 instance=ExtResource("36_b28n6")]
 position = Vector2(6096, 272)
-result = SubResource("Resource_jscrr")
+result = SubResource("Resource_44e8m")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock17" parent="." unique_id=914616797 instance=ExtResource("36_b28n6")]
 position = Vector2(6160, 272)
-result = SubResource("Resource_37fnh")
+result = SubResource("Resource_ojfm3")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock18" parent="." unique_id=1359318368 instance=ExtResource("36_b28n6")]
 position = Vector2(6224, 272)
-result = SubResource("Resource_44e8m")
+result = SubResource("Resource_l2ny5")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock19" parent="." unique_id=1916563671 instance=ExtResource("36_b28n6")]
 position = Vector2(6288, 272)
-result = SubResource("Resource_ojfm3")
+result = SubResource("Resource_6c8mi")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock10" parent="." unique_id=82034047 instance=ExtResource("36_b28n6")]
@@ -1282,6 +1286,7 @@ texture = SubResource("GradientTexture2D_4kvhu")
 flip_h = true
 region_rect = Rect2(0, 0, 32, 32)
 
+[connection signal="music_started" from="MusicLoader" to="MusicOverlay" method="play"]
 [connection signal="warp_started" from="PipeIn3" to="SecretUnlocker" method="unlock_secret"]
 [connection signal="warp_started" from="PipeIn3" to="HUD/Label" method="warp_split"]
 [connection signal="warp_started" from="PipeIn3" to="HUD/Label" method="activate"]

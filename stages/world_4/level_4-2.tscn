@@ -3,10 +3,11 @@
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_fu4ch"]
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_px6mq"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_j5dbe"]
-[ext_resource type="AudioStream" uid="uid://rf7ervcy1mpc" path="res://music/smw-athletic-drums.ogg" id="3_qvx0o"]
-[ext_resource type="AudioStream" uid="uid://4qjaoecgim3m" path="res://music/smw-athletic.ogg" id="4_c4sya"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_dghmt"]
+[ext_resource type="AudioStream" uid="uid://db3fhslyhwmxw" path="res://music/newermod/dj mayhem - cold acid.ogg" id="4_hef5i"]
 [ext_resource type="Script" uid="uid://dc824j5folagw" path="res://engine/objects/players/player_camera_autoscroll.gd" id="4_jacnw"]
+[ext_resource type="AudioStream" uid="uid://1m2iwl3yxsbg" path="res://music/side_a/The Adventures of Batman and Robin - Joker's Theme.ogg" id="4_tttbp"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="5_tttbp"]
 [ext_resource type="Texture2D" uid="uid://c2xfexiy1rnqh" path="res://engine/tilesets/overworld/gfx/overworld_classic.png" id="6_hm7st"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="6_r1udk"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_qrpae"]
@@ -60,13 +61,6 @@
 [ext_resource type="Script" uid="uid://0h3x5dwndovw" path="res://engine/scripts/nodes/effects/quality_visible.gd" id="55_ic4t6"]
 [ext_resource type="Texture2D" uid="uid://6bwpp568bmq0" path="res://gfx/fancy_graphics/giant_clouds.png" id="56_a6g3s"]
 [ext_resource type="PackedScene" uid="uid://dwih13maquoyl" path="res://objects/harder_design_node/harder_design_node.tscn" id="57_kngw1"]
-
-[sub_resource type="AudioStreamSynchronized" id="AudioStreamSynchronized_upymj"]
-stream_count = 2
-stream_0/stream = ExtResource("3_qvx0o")
-stream_0/volume = 0.0
-stream_1/stream = ExtResource("4_c4sya")
-stream_1/volume = 0.0
 
 [sub_resource type="Curve2D" id="Curve2D_bsqx3"]
 _data = {
@@ -610,28 +604,16 @@ colors = PackedColorArray(0.188235, 0.529412, 0.607843, 1, 0.94902, 0.992157, 0.
 gradient = SubResource("Gradient_yydt0")
 width = 480
 
-[sub_resource type="Resource" id="Resource_hef5i"]
-resource_local_to_scene = true
-script = ExtResource("15_qhw2e")
-creation_nodepack = ExtResource("14_6c8jn")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_tttbp"]
-resource_local_to_scene = true
-script = ExtResource("15_qhw2e")
-creation_nodepack = ExtResource("14_6c8jn")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_l2gl8"]
 resource_local_to_scene = true
 script = ExtResource("15_qhw2e")
-creation_nodepack = ExtResource("17_ehrx3")
+creation_nodepack = ExtResource("14_6c8jn")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_cvwpn"]
 resource_local_to_scene = true
 script = ExtResource("15_qhw2e")
-creation_nodepack = ExtResource("17_ehrx3")
+creation_nodepack = ExtResource("14_6c8jn")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_h3xa0"]
@@ -643,11 +625,23 @@ trans_inheritances = 7
 [sub_resource type="Resource" id="Resource_f42s4"]
 resource_local_to_scene = true
 script = ExtResource("15_qhw2e")
+creation_nodepack = ExtResource("17_ehrx3")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_o0b1b"]
+resource_local_to_scene = true
+script = ExtResource("15_qhw2e")
+creation_nodepack = ExtResource("17_ehrx3")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_em3sx"]
+resource_local_to_scene = true
+script = ExtResource("15_qhw2e")
 creation_fallback_node = ExtResource("38_fbe0w")
 creation_nodepack = ExtResource("39_ctjmi")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_o0b1b"]
+[sub_resource type="Resource" id="Resource_7u1gj"]
 resource_local_to_scene = true
 script = ExtResource("15_qhw2e")
 creation_nodepack = ExtResource("43_4d0j8")
@@ -775,13 +769,13 @@ animations = [{
 "speed": 40.0
 }]
 
-[sub_resource type="Resource" id="Resource_em3sx"]
+[sub_resource type="Resource" id="Resource_ebv80"]
 resource_local_to_scene = true
 script = ExtResource("15_qhw2e")
 creation_nodepack = ExtResource("14_6c8jn")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_7u1gj"]
+[sub_resource type="Resource" id="Resource_b6gtj"]
 resource_local_to_scene = true
 script = ExtResource("15_qhw2e")
 creation_nodepack = ExtResource("17_ehrx3")
@@ -795,7 +789,10 @@ jump_to_scene = "res://stages/world_4/map_4.tscn"
 
 [node name="MusicLoader" type="Node" parent="." unique_id=810689289]
 script = ExtResource("3_j5dbe")
-music = Array[Resource]([SubResource("AudioStreamSynchronized_upymj")])
+music_var_1 = Array[Resource]([ExtResource("4_tttbp")])
+music = Array[Resource]([ExtResource("4_hef5i")])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("5_tttbp")]
 
 [node name="Mario" parent="." unique_id=310845487 instance=ExtResource("4_dghmt")]
 position = Vector2(336, 400)
@@ -807,6 +804,7 @@ curve = SubResource("Curve2D_bsqx3")
 position = Vector2(320, 240)
 loop = false
 script = ExtResource("4_jacnw")
+speed = 98.0
 stop_on_death = true
 
 [node name="PlayerCamera2D" type="Camera2D" parent="Path2D6/PathFollow2D" unique_id=1148149765]
@@ -874,13 +872,13 @@ metadata/_edit_lock_ = true
 
 [node name="QuestionBlockLife" parent="." unique_id=313865393 instance=ExtResource("13_4nhbf")]
 position = Vector2(240, 240)
-result = SubResource("Resource_hef5i")
+result = SubResource("Resource_l2gl8")
 initially_visible_and_solid = false
 exists_once = true
 
 [node name="QuestionBlockLife2" parent="." unique_id=631470573 instance=ExtResource("13_4nhbf")]
 position = Vector2(304, 240)
-result = SubResource("Resource_tttbp")
+result = SubResource("Resource_cvwpn")
 initially_visible_and_solid = false
 exists_once = true
 
@@ -1063,20 +1061,20 @@ position = Vector2(2384, -144)
 
 [node name="QuestionBlock2" parent="." unique_id=328493128 instance=ExtResource("16_hr71t")]
 position = Vector2(2320, -112)
-result = SubResource("Resource_l2gl8")
+result = SubResource("Resource_h3xa0")
 
 [node name="QuestionBlock3" parent="." unique_id=1255999374 instance=ExtResource("16_hr71t")]
 position = Vector2(2256, -112)
-result = SubResource("Resource_cvwpn")
+result = SubResource("Resource_f42s4")
 
 [node name="QuestionBlock4" parent="." unique_id=1853265231 instance=ExtResource("16_hr71t")]
 position = Vector2(3568, -272)
-result = SubResource("Resource_h3xa0")
+result = SubResource("Resource_o0b1b")
 initially_visible_and_solid = false
 
 [node name="QuestionBlockBeetroot" parent="." unique_id=1292160024 instance=ExtResource("37_8biof")]
 position = Vector2(2288, -112)
-result = SubResource("Resource_f42s4")
+result = SubResource("Resource_em3sx")
 
 [node name="SpinyRed" parent="." unique_id=1548237564 instance=ExtResource("40_x2180")]
 position = Vector2(2640, -112)
@@ -1113,7 +1111,7 @@ position = Vector2(8368, -624)
 
 [node name="QuestionBlockStar" parent="." unique_id=1143735350 instance=ExtResource("42_nnbse")]
 position = Vector2(3600, -272)
-result = SubResource("Resource_o0b1b")
+result = SubResource("Resource_7u1gj")
 initially_visible_and_solid = false
 
 [node name="Path2D" type="Path2D" parent="." unique_id=140710638]
@@ -1399,7 +1397,7 @@ texture = ExtResource("56_a6g3s")
 
 [node name="QuestionBlockLife3" parent="HarderDesignNode2" unique_id=528947840 instance=ExtResource("13_4nhbf")]
 position = Vector2(272, 240)
-result = SubResource("Resource_em3sx")
+result = SubResource("Resource_ebv80")
 initially_visible_and_solid = false
 exists_once = true
 
@@ -1418,7 +1416,7 @@ falling_enabled = true
 
 [node name="QuestionBlock" parent="HarderDesignNode" unique_id=802022594 instance=ExtResource("16_hr71t")]
 position = Vector2(272, 240)
-result = SubResource("Resource_7u1gj")
+result = SubResource("Resource_b6gtj")
 initially_visible_and_solid = false
 exists_once = true
 

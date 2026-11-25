@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://wsb3fbblnyd0"
+path="res://.godot/imported/Prikol Software @ Doom2D - Prostota.xm-557b730cbbfcdc92e920ba492b13ae0b.res"
+
+[deps]
+
+source_file="res://music/newermod/Prikol Software @ Doom2D - Prostota.xm"
+dest_files=["res://.godot/imported/Prikol Software @ Doom2D - Prostota.xm-557b730cbbfcdc92e920ba492b13ae0b.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

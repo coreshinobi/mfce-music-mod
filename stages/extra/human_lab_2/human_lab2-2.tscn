@@ -3,7 +3,9 @@
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_8mikg"]
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_4by0t"]
 [ext_resource type="PackedScene" uid="uid://b636po6fa0tfj" path="res://objects/music_loader_custom/music_loader_custom.tscn" id="3_j7h1e"]
-[ext_resource type="AudioStream" uid="uid://4v6yqbquhsgo" path="res://music/extra/human_lab_2/flying_to_the_party.mo3" id="5_q18p0"]
+[ext_resource type="AudioStream" uid="uid://b060rcsywchy8" path="res://music/newermod/Eurobeat Brony - Cutie Mark Crusaders (BlankFlank Mix).ogg" id="4_60l6a"]
+[ext_resource type="AudioStream" uid="uid://bt2aq2ngi7vkb" path="res://music/side_b/revisq - hash-tu-raz 2.digi" id="4_nurtq"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="5_nurtq"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="6_kbfbx"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="7_5d7fi"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="8_b6rrk"]
@@ -209,23 +211,11 @@ width = 2
 height = 480
 fill_to = Vector2(0, 1)
 
-[sub_resource type="Resource" id="Resource_q18p0"]
+[sub_resource type="Resource" id="Resource_nurtq"]
 resource_local_to_scene = true
 script = ExtResource("36_v7v0s")
 creation_fallback_node = ExtResource("38_7w2b7")
 creation_nodepack = ExtResource("39_5x3yn")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_60l6a"]
-resource_local_to_scene = true
-script = ExtResource("36_v7v0s")
-creation_nodepack = ExtResource("33_jr4qg")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_nurtq"]
-resource_local_to_scene = true
-script = ExtResource("36_v7v0s")
-creation_nodepack = ExtResource("33_jr4qg")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_p5nxr"]
@@ -285,24 +275,36 @@ trans_inheritances = 7
 [sub_resource type="Resource" id="Resource_t12qa"]
 resource_local_to_scene = true
 script = ExtResource("36_v7v0s")
-creation_fallback_node = ExtResource("38_7w2b7")
-creation_nodepack = ExtResource("39_5x3yn")
+creation_nodepack = ExtResource("33_jr4qg")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_6rli3"]
 resource_local_to_scene = true
 script = ExtResource("36_v7v0s")
-creation_fallback_node = ExtResource("38_7w2b7")
-creation_nodepack = ExtResource("39_5x3yn")
+creation_nodepack = ExtResource("33_jr4qg")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_n4m5b"]
 resource_local_to_scene = true
 script = ExtResource("36_v7v0s")
-creation_nodepack = ExtResource("33_jr4qg")
+creation_fallback_node = ExtResource("38_7w2b7")
+creation_nodepack = ExtResource("39_5x3yn")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_hcg2u"]
+resource_local_to_scene = true
+script = ExtResource("36_v7v0s")
+creation_fallback_node = ExtResource("38_7w2b7")
+creation_nodepack = ExtResource("39_5x3yn")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_5vsx4"]
+resource_local_to_scene = true
+script = ExtResource("36_v7v0s")
+creation_nodepack = ExtResource("33_jr4qg")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_jr4qg"]
 resource_local_to_scene = true
 script = ExtResource("36_v7v0s")
 creation_fallback_node = ExtResource("38_7w2b7")
@@ -330,8 +332,14 @@ completion_music = ExtResource("2_4by0t")
 jump_to_scene = "uid://vrcvq5215e4b"
 
 [node name="MusicLoader" parent="." unique_id=1626040725 instance=ExtResource("3_j7h1e")]
-music = Array[Resource]([ExtResource("5_q18p0")])
-volume_db = Array[float]([2.0])
+music_var_2 = Array[Resource]([ExtResource("4_nurtq")])
+var_2_volume_db = Array[float]([4.3])
+playback_pitch = 1.0
+music = Array[Resource]([ExtResource("4_60l6a")])
+volume_db = Array[float]([0.7])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("5_nurtq")]
+text = Array[String](["Eurobeat Brony - Cutie Mark Crusaders (BlankFlank Mix)"])
 
 [node name="Player" parent="." unique_id=2053307038 instance=ExtResource("6_kbfbx")]
 position = Vector2(80, 400)
@@ -1142,7 +1150,7 @@ position = Vector2(8912, 144)
 [node name="Brick37" parent="." unique_id=1603337337 instance=ExtResource("28_t12qa")]
 position = Vector2(8944, 144)
 max_items = 1
-result = SubResource("Resource_q18p0")
+result = SubResource("Resource_nurtq")
 
 [node name="Brick22" parent="." unique_id=1249301212 instance=ExtResource("28_t12qa")]
 position = Vector2(8976, 144)
@@ -1503,72 +1511,72 @@ position = Vector2(2384, 80)
 
 [node name="QuestionBlock" parent="." unique_id=1415472868 instance=ExtResource("35_ww1pu")]
 position = Vector2(1984, 144)
-result = SubResource("Resource_60l6a")
+result = SubResource("Resource_p5nxr")
 
 [node name="QuestionBlock2" parent="." unique_id=1406096718 instance=ExtResource("35_ww1pu")]
 position = Vector2(2048, 144)
-result = SubResource("Resource_nurtq")
+result = SubResource("Resource_6ikl1")
 
 [node name="Brick30" parent="." unique_id=182654647 instance=ExtResource("28_t12qa")]
 position = Vector2(6288, 80)
 
 [node name="QuestionBlock4" parent="." unique_id=2072638525 instance=ExtResource("35_ww1pu")]
 position = Vector2(6256, 80)
-result = SubResource("Resource_p5nxr")
+result = SubResource("Resource_dcqdd")
 
 [node name="QuestionBlock5" parent="." unique_id=115594407 instance=ExtResource("35_ww1pu")]
 position = Vector2(6320, 80)
-result = SubResource("Resource_6ikl1")
+result = SubResource("Resource_e5gx7")
 
 [node name="Brick31" parent="." unique_id=6124359 instance=ExtResource("28_t12qa")]
 position = Vector2(6960, 80)
 
 [node name="QuestionBlock6" parent="." unique_id=1094129794 instance=ExtResource("35_ww1pu")]
 position = Vector2(6928, 80)
-result = SubResource("Resource_dcqdd")
+result = SubResource("Resource_hiub1")
 
 [node name="QuestionBlock7" parent="." unique_id=1546680959 instance=ExtResource("35_ww1pu")]
 position = Vector2(6992, 80)
-result = SubResource("Resource_e5gx7")
+result = SubResource("Resource_x4cgg")
 
 [node name="Brick34" parent="." unique_id=233442554 instance=ExtResource("28_t12qa")]
 position = Vector2(15680, 240)
 
 [node name="QuestionBlock11" parent="." unique_id=2087995789 instance=ExtResource("35_ww1pu")]
 position = Vector2(15616, 240)
-result = SubResource("Resource_hiub1")
+result = SubResource("Resource_eotur")
 
 [node name="QuestionBlock12" parent="." unique_id=1327250259 instance=ExtResource("35_ww1pu")]
 position = Vector2(15648, 240)
-result = SubResource("Resource_x4cgg")
+result = SubResource("Resource_5lnj0")
 
 [node name="QuestionBlock8" parent="." unique_id=142926954 instance=ExtResource("35_ww1pu")]
 position = Vector2(13104, 144)
-result = SubResource("Resource_eotur")
+result = SubResource("Resource_0ypms")
 
 [node name="QuestionBlock9" parent="." unique_id=663987175 instance=ExtResource("35_ww1pu")]
 position = Vector2(13136, 144)
-result = SubResource("Resource_5lnj0")
+result = SubResource("Resource_t12qa")
 
 [node name="QuestionBlock10" parent="." unique_id=2054089953 instance=ExtResource("35_ww1pu")]
 position = Vector2(13168, 144)
-result = SubResource("Resource_0ypms")
+result = SubResource("Resource_6rli3")
 
 [node name="QuestionBlockBeetroot" parent="." unique_id=123299250 instance=ExtResource("37_d3han")]
 position = Vector2(2016, 144)
-result = SubResource("Resource_t12qa")
+result = SubResource("Resource_n4m5b")
 
 [node name="QuestionBlockBeetroot4" parent="." unique_id=687542918 instance=ExtResource("37_d3han")]
 position = Vector2(11952, 176)
-result = SubResource("Resource_6rli3")
+result = SubResource("Resource_hcg2u")
 
 [node name="QuestionBlock3" parent="." unique_id=874293669 instance=ExtResource("35_ww1pu")]
 position = Vector2(4528, 272)
-result = SubResource("Resource_n4m5b")
+result = SubResource("Resource_5vsx4")
 
 [node name="QuestionBlockBeetroot2" parent="." unique_id=1527780703 instance=ExtResource("37_d3han")]
 position = Vector2(4560, 272)
-result = SubResource("Resource_hcg2u")
+result = SubResource("Resource_jr4qg")
 
 [node name="LifeMushroom" parent="." unique_id=1775335956 instance=ExtResource("40_74sf5")]
 position = Vector2(6032, 432)

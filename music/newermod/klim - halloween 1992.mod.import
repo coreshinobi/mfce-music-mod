@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://dk8v0qxmv6t0m"
+path="res://.godot/imported/klim - halloween 1992.mod-4e525553a4d2061cbdcaa9f16d415afc.res"
+
+[deps]
+
+source_file="res://music/newermod/klim - halloween 1992.mod"
+dest_files=["res://.godot/imported/klim - halloween 1992.mod-4e525553a4d2061cbdcaa9f16d415afc.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://d2jlt7lgbffg7"]
+
+[ext_resource type="PackedScene" uid="uid://c7wepa7gbtfh0" path="res://stages/extra/world_of_stupidity/chmurka_debil/stupidity_cloud.tscn" id="1_spmkj"]
+[ext_resource type="Script" uid="uid://c5dnvwdjchb2j" path="res://objects/funny_jumpscares/ze trigger area.gd" id="2_n7in6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mhht4"]
+size = Vector2(60, 56)
+
+[node name="TriggerArea" unique_id=1320607729 instance=ExtResource("1_spmkj")]
+self_modulate = Color(1, 1, 1, 0)
+script = ExtResource("2_n7in6")
+precise_radius_area = NodePath("Area2D")
+
+[node name="Area2D" type="Area2D" parent="." index="0" unique_id=164112133]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" index="0" unique_id=665223163]
+position = Vector2(40, 40)
+shape = SubResource("RectangleShape2D_mhht4")

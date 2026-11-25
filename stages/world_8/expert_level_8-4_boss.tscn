@@ -16,7 +16,6 @@
 [ext_resource type="PackedScene" uid="uid://d2bajdy6e54hb" path="res://objects/final_boss_cell/final_boss_cell.tscn" id="13_yi32i"]
 [ext_resource type="PackedScene" uid="uid://diivlwjl0y1i7" path="res://engine/objects/bosses/bowser/bowser_trigger.tscn" id="14_hmsxh"]
 [ext_resource type="Script" uid="uid://dbkciqq0v08le" path="res://stages/extra/expert_mode/scripts/final_boss_cell_exp.gd" id="15_igud2"]
-[ext_resource type="AudioStream" uid="uid://bwlhej5mao270" path="res://music/smw2-bowser.ogg" id="15_mld3i"]
 [ext_resource type="Script" uid="uid://cj8fmu7ak820a" path="res://stages/extra/expert_mode/scripts/final_bowser_attack_goombabro.gd" id="17_2vl5g"]
 [ext_resource type="Script" uid="uid://fhx73nu140vk" path="res://stages/extra/expert_mode/scripts/final_bowser_attack_lava.gd" id="17_brvmi"]
 [ext_resource type="PackedScene" uid="uid://bq45lxt7bqoma" path="res://engine/objects/bosses/bowser/bowser_edge.tscn" id="17_v5cbv"]
@@ -28,6 +27,7 @@
 [ext_resource type="Script" uid="uid://bd8lyhmdqx8um" path="res://engine/objects/bosses/bowser/bowser_body.gd" id="20_fc8v3"]
 [ext_resource type="Script" uid="uid://b66w23lsb1766" path="res://gfx/fancy_graphics/scripts/lava_light_pulse.gd" id="20_jk6in"]
 [ext_resource type="Texture2D" uid="uid://dfd25j6au1biy" path="res://stages/extra/expert_mode/gfx/final_boss/cell_chain.png" id="20_oyip4"]
+[ext_resource type="AudioStream" uid="uid://bhkxbk2j370ux" path="res://music/newermod/dubmood - e1m777.xm" id="21_3bu1u"]
 [ext_resource type="Script" uid="uid://1n3p7ctv1snn" path="res://engine/scripts/nodes/enemies/enemy_attacked.gd" id="21_igud2"]
 [ext_resource type="AudioStream" uid="uid://be3uvqev2c1p6" path="res://engine/objects/players/prefabs/sounds/kick.wav" id="22_3bu1u"]
 [ext_resource type="Texture2D" uid="uid://ns4mraaknrny" path="res://stages/extra/expert_mode/gfx/final_boss/bowser_bobomb_pre.png" id="22_flo6w"]
@@ -607,7 +607,7 @@ position = Vector2(384, 240)
 curve = SubResource("Curve2D_05e3f")
 trigger_area = Rect2(0, 0, 640, 480)
 trigger_bowser = NodePath("../Bowser")
-boss_music = ExtResource("15_mld3i")
+boss_music = ExtResource("21_3bu1u")
 metadata/_edit_lock_ = true
 
 [node name="Bowser" type="CharacterBody2D" parent="." unique_id=1967254442 groups=["#bowser"]]

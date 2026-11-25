@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://lskqu7a66ntk"
+path="res://.godot/imported/Hi Hi Puffy AmiYumi Kaznapped - Stage Clear.ogg-c2274995daba58779f9765f0ad0b9304.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Hi Hi Puffy AmiYumi Kaznapped - Stage Clear.ogg"
+dest_files=["res://.godot/imported/Hi Hi Puffy AmiYumi Kaznapped - Stage Clear.ogg-c2274995daba58779f9765f0ad0b9304.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

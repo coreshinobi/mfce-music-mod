@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://cxs0nje2e0svh"
+path="res://.godot/imported/viraxor - round borin.xm-a0c2d5254d4e391a5ae1d183dd5b032b.res"
+
+[deps]
+
+source_file="res://music/newermod/viraxor - round borin.xm"
+dest_files=["res://.godot/imported/viraxor - round borin.xm-a0c2d5254d4e391a5ae1d183dd5b032b.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

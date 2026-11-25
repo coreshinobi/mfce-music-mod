@@ -3,9 +3,11 @@
 [ext_resource type="Script" uid="uid://b2miajjwaop0p" path="res://engine/scenes/map/scripts/map.gd" id="1_fs2fj"]
 [ext_resource type="Texture2D" uid="uid://d4fvp045fegbi" path="res://gfx/map/expert_mode_maps/map2.png" id="2_0ijq2"]
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="2_iun7i"]
-[ext_resource type="AudioStream" uid="uid://vaw01jjoeu8e" path="res://music/extra/expert_mode/malmen_-_love_at_first_sight.mo3" id="2_qhqyl"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_jgima"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="4_epv41"]
+[ext_resource type="AudioStream" uid="uid://b8ilpcorl70br" path="res://music/newermod/Ace Attorney Justice for All - Court is Now in Session.ogg" id="5_iun7i"]
+[ext_resource type="AudioStream" uid="uid://cj48kcdsv1ppo" path="res://music/newermod/Danganronpa V3 - Our Class Trial.ogg" id="6_epv41"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="6_jgima"]
 [ext_resource type="Texture2D" uid="uid://usm6n80msr7n" path="res://engine/scenes/map/textures/bg.png" id="6_nfyds"]
 [ext_resource type="PackedScene" uid="uid://w4jc7nb1lcsy" path="res://engine/scenes/map/prefabs/player.tscn" id="8_3u1pw"]
 [ext_resource type="PackedScene" uid="uid://beu6ovtvrvpfc" path="res://engine/scenes/map/prefabs/dot.tscn" id="9_xgvny"]
@@ -70,7 +72,12 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("2_qhqyl")])
+playback_pitch = 1.0
+music = Array[Resource]([ExtResource("5_iun7i"), ExtResource("6_epv41")])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("6_jgima")]
+displaying_mode = 1
+text = Array[String](["Ace Attorney Justice For All - Court is Now in Session", "Danganronpa V3 - Our Class Trial"])
 
 [node name="Bg" type="Sprite2D" parent="." unique_id=316670332]
 texture = ExtResource("6_nfyds")
@@ -225,6 +232,8 @@ position = Vector2(496, 233)
 rotation = -1.57068
 script = ExtResource("28_0bht3")
 level = "res://stages/world_2/expert_level_2-3.tscn"
+music_loader_ref = NodePath("../../MusicLoader")
+change_music_index = 1
 
 [node name="MapPlayerMarker12" type="Marker2D" parent="MarkerSpace" unique_id=1420607359]
 show_behind_parent = true
@@ -261,10 +270,14 @@ position = Vector2(816, 249)
 rotation = -1.57068
 script = ExtResource("28_0bht3")
 level = "res://stages/world_2/expert_level_2-4.tscn"
+music_loader_ref = NodePath("../../MusicLoader")
+change_music_index = 1
 
 [node name="MapPlayerMarkerEmalpka" parent="MarkerSpace" unique_id=468935358 instance=ExtResource("29_taqsc")]
 position = Vector2(936, 249)
 level = "res://stages/world_2/expert_EmalpkaMomento2.tscn"
+music_loader_ref = NodePath("../../MusicLoader")
+change_music_index = 1
 
 [node name="MapPlayerMarker16" type="Marker2D" parent="MarkerSpace" unique_id=113699439]
 show_behind_parent = true
@@ -328,3 +341,5 @@ bonus_level_path = "res://stages/extra/click_bonus_game/maps/bonus_level-2.tscn"
 z_index = 6
 position = Vector2(360, 296)
 texture = ExtResource("38_yidos")
+
+[connection signal="music_started" from="MusicLoader" to="MusicOverlay" method="play"]

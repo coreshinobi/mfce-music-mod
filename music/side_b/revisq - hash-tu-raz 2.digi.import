@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://bt2aq2ngi7vkb"
+path="res://.godot/imported/revisq - hash-tu-raz 2.digi-6abacb630dfefa041585769fb8a80c08.res"
+
+[deps]
+
+source_file="res://music/side_b/revisq - hash-tu-raz 2.digi"
+dest_files=["res://.godot/imported/revisq - hash-tu-raz 2.digi-6abacb630dfefa041585769fb8a80c08.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

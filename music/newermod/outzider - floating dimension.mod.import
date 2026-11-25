@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://kfp7aslktn0m"
+path="res://.godot/imported/outzider - floating dimension.mod-2dc72cb1005ae82f8a3d957ea3036294.res"
+
+[deps]
+
+source_file="res://music/newermod/outzider - floating dimension.mod"
+dest_files=["res://.godot/imported/outzider - floating dimension.mod-2dc72cb1005ae82f8a3d957ea3036294.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

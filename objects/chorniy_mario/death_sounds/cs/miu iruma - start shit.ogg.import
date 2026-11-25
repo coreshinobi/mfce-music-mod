@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://f7crjnitq1gp"
+path="res://.godot/imported/miu iruma - start shit.ogg-05409a7730acbded18611d45c8a6cb12.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/miu iruma - start shit.ogg"
+dest_files=["res://.godot/imported/miu iruma - start shit.ogg-05409a7730acbded18611d45c8a6cb12.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

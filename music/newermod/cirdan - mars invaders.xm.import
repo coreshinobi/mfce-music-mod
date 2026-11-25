@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://sh1e53tvty8k"
+path="res://.godot/imported/cirdan - mars invaders.xm-9ca4095e43ab826fe830bf8f8ac2df64.res"
+
+[deps]
+
+source_file="res://music/newermod/cirdan - mars invaders.xm"
+dest_files=["res://.godot/imported/cirdan - mars invaders.xm-9ca4095e43ab826fe830bf8f8ac2df64.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

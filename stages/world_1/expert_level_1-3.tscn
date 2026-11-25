@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bsdcxwngf5hru" path="res://engine/objects/powerups/fire_flower/fire_flower.tscn" id="3_pqnsa"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_wvf0e"]
 [ext_resource type="PackedScene" uid="uid://vqn6y17pt5mx" path="res://engine/objects/enemies/goombas/goomba.tscn" id="3_ydqjq"]
-[ext_resource type="AudioStream" uid="uid://4qjaoecgim3m" path="res://music/smw-athletic.ogg" id="4_7i33x"]
+[ext_resource type="AudioStream" uid="uid://brngsevku65fc" path="res://music/newermod/Hi Hi Puffy AmiYumi Kaznapped - Boss - Harmony.ogg" id="4_6cprq"]
 [ext_resource type="Script" uid="uid://chvjy6okoognf" path="res://engine/objects/powerups/instance_powerup.gd" id="4_dhsel"]
 [ext_resource type="Texture2D" uid="uid://c2xfexiy1rnqh" path="res://engine/tilesets/overworld/gfx/overworld_classic.png" id="4_fdkdx"]
 [ext_resource type="PackedScene" uid="uid://b8kgbn8f7lvf0" path="res://engine/objects/items/coin/coin.tscn" id="5_vvepb"]
@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://b24hnsctae1a0" path="res://engine/objects/enemies/koopas/koopa_red.tscn" id="6_16llm"]
 [ext_resource type="PackedScene" uid="uid://ltoqkqmxpt65" path="res://engine/objects/powerups/life_mushroom/life_mushroom.tscn" id="6_crbmf"]
 [ext_resource type="PackedScene" uid="uid://cfwg23qiepk42" path="res://gfx/bgs/1-3/wodospad_lava.tscn" id="6_fdkdx"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="6_tw4ia"]
 [ext_resource type="PackedScene" uid="uid://8a7nemgi0b6q" path="res://engine/objects/powerups/beetroot/beetroot.tscn" id="7_7vria"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="7_186ya"]
 [ext_resource type="PackedScene" uid="uid://dor0tmdd8itya" path="res://tilesets/overworld_green/scenes/grass.tscn" id="7_wbv4g"]
@@ -192,44 +193,44 @@ colors = PackedColorArray(0, 0.152941, 0.811765, 1, 0, 0.654902, 0.937255, 1)
 gradient = SubResource("Gradient_tss72")
 width = 489
 
-[sub_resource type="Resource" id="Resource_iw5w3"]
+[sub_resource type="Resource" id="Resource_wvf0e"]
 resource_local_to_scene = true
 script = ExtResource("4_dhsel")
 creation_fallback_node = ExtResource("2_bjmrw")
 creation_nodepack = ExtResource("3_pqnsa")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_6cprq"]
-resource_local_to_scene = true
-script = ExtResource("4_dhsel")
-creation_nodepack = ExtResource("5_vvepb")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_tw4ia"]
-resource_local_to_scene = true
-script = ExtResource("4_dhsel")
-creation_nodepack = ExtResource("9_dthl3")
-trans_inheritances = 7
-
-[sub_resource type="Resource" id="Resource_wvf0e"]
-resource_local_to_scene = true
-script = ExtResource("4_dhsel")
-creation_nodepack = ExtResource("8_h2ok1")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_7i33x"]
 resource_local_to_scene = true
 script = ExtResource("4_dhsel")
-creation_nodepack = ExtResource("8_h2ok1")
+creation_nodepack = ExtResource("5_vvepb")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_186ya"]
 resource_local_to_scene = true
 script = ExtResource("4_dhsel")
-creation_nodepack = ExtResource("5_vvepb")
+creation_nodepack = ExtResource("9_dthl3")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_a35w0"]
+resource_local_to_scene = true
+script = ExtResource("4_dhsel")
+creation_nodepack = ExtResource("8_h2ok1")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_hmkvj"]
+resource_local_to_scene = true
+script = ExtResource("4_dhsel")
+creation_nodepack = ExtResource("8_h2ok1")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_e6nc3"]
+resource_local_to_scene = true
+script = ExtResource("4_dhsel")
+creation_nodepack = ExtResource("5_vvepb")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_ldnmt"]
 resource_local_to_scene = true
 script = ExtResource("4_dhsel")
 creation_nodepack = ExtResource("5_vvepb")
@@ -253,13 +254,13 @@ _data = {
 }
 point_count = 2
 
-[sub_resource type="Resource" id="Resource_hmkvj"]
+[sub_resource type="Resource" id="Resource_5jkr1"]
 resource_local_to_scene = true
 script = ExtResource("4_dhsel")
 creation_nodepack = ExtResource("6_crbmf")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_e6nc3"]
+[sub_resource type="Resource" id="Resource_pjtf4"]
 resource_local_to_scene = true
 script = ExtResource("4_dhsel")
 creation_fallback_node = ExtResource("2_bjmrw")
@@ -273,10 +274,13 @@ jump_to_scene = "res://stages/world_1/expert_map_1.tscn"
 
 [node name="MusicLoader" type="Node" parent="." unique_id=1422900414]
 script = ExtResource("3_wvf0e")
-music = Array[Resource]([ExtResource("4_7i33x")])
-volume_db = Array[float]([4.0])
+music = Array[Resource]([ExtResource("4_6cprq")])
+volume_db = Array[float]([1.1])
 
 [node name="AntiafkExpertMode" parent="MusicLoader" unique_id=326681220 instance=ExtResource("2_1o6pq")]
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("6_tw4ia")]
+text = Array[String](["Hi Hi Puffy AmiYumi: Kaznapped - Boss: Harmony"])
 
 [node name="SecretUnlocker" parent="." unique_id=1353718124 instance=ExtResource("3_fdkdx")]
 secrets = Array[String](["secret goomba party"])
@@ -334,7 +338,7 @@ theme_override_constants/line_spacing = 1
 theme_override_constants/outline_size = 8
 theme_override_fonts/font = ExtResource("24_pjtf4")
 theme_override_font_sizes/font_size = 12
-text = "WELCOME TO PEACH PARTY!"
+text = "LOPUNNY? LOPUNNY!"
 horizontal_alignment = 1
 script = ExtResource("25_l4i22")
 tween_to = 224
@@ -521,7 +525,7 @@ position = Vector2(1328, 272)
 
 [node name="QuestionBlockFireFlower" parent="." unique_id=131671881 instance=ExtResource("36_nsjtx")]
 position = Vector2(1168, 144)
-result = SubResource("Resource_iw5w3")
+result = SubResource("Resource_wvf0e")
 
 [node name="Coin" parent="." unique_id=1551222575 instance=ExtResource("5_vvepb")]
 position = Vector2(1328, 144)
@@ -650,28 +654,28 @@ position = Vector2(1584, 48)
 
 [node name="QuestionBlock" parent="." unique_id=1827810855 instance=ExtResource("9_jmyxu")]
 position = Vector2(6544, 272)
-result = SubResource("Resource_6cprq")
+result = SubResource("Resource_7i33x")
 
 [node name="QuestionBlock6" parent="." unique_id=1233187328 instance=ExtResource("9_jmyxu")]
 position = Vector2(6576, 112)
-result = SubResource("Resource_tw4ia")
+result = SubResource("Resource_186ya")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock2" parent="." unique_id=1843097940 instance=ExtResource("9_jmyxu")]
 position = Vector2(6576, 272)
-result = SubResource("Resource_wvf0e")
+result = SubResource("Resource_a35w0")
 
 [node name="QuestionBlock5" parent="." unique_id=398937986 instance=ExtResource("9_jmyxu")]
 position = Vector2(7088, 272)
-result = SubResource("Resource_7i33x")
+result = SubResource("Resource_hmkvj")
 
 [node name="QuestionBlock3" parent="." unique_id=1130409077 instance=ExtResource("9_jmyxu")]
 position = Vector2(7120, 272)
-result = SubResource("Resource_186ya")
+result = SubResource("Resource_e6nc3")
 
 [node name="QuestionBlock4" parent="." unique_id=1149368831 instance=ExtResource("9_jmyxu")]
 position = Vector2(7152, 272)
-result = SubResource("Resource_a35w0")
+result = SubResource("Resource_ldnmt")
 
 [node name="PlatformPath" parent="." unique_id=1901014474 instance=ExtResource("45_bkd4g")]
 position = Vector2(2128, 320)
@@ -778,7 +782,7 @@ position = Vector2(8000, 224)
 
 [node name="QuestionBlockLife" parent="." unique_id=554903601 instance=ExtResource("49_h7hdg")]
 position = Vector2(7088, 112)
-result = SubResource("Resource_hmkvj")
+result = SubResource("Resource_5jkr1")
 initially_visible_and_solid = false
 exists_once = true
 
@@ -825,7 +829,7 @@ metadata/_edit_pinned_properties_ = [&"medium", &"minimum", &"maximum"]
 
 [node name="QuestionBlockBeetroot" parent="." unique_id=367907969 instance=ExtResource("54_jsh5o")]
 position = Vector2(9264, 240)
-result = SubResource("Resource_e6nc3")
+result = SubResource("Resource_pjtf4")
 initially_visible_and_solid = false
 exists_once = true
 

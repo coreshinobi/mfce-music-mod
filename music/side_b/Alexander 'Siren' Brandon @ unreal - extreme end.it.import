@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://bg0tmwsi6qdkf"
+path="res://.godot/imported/Alexander 'Siren' Brandon @ unreal - extreme end.it-a50bcd22a1d069241fb8344afed9f629.res"
+
+[deps]
+
+source_file="res://music/side_b/Alexander 'Siren' Brandon @ unreal - extreme end.it"
+dest_files=["res://.godot/imported/Alexander 'Siren' Brandon @ unreal - extreme end.it-a50bcd22a1d069241fb8344afed9f629.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

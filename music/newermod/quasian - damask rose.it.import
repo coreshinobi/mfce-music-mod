@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://b4rre2yw1cvkc"
+path="res://.godot/imported/quasian - damask rose.it-7d0119affc1f1a062c38bb68948126fb.res"
+
+[deps]
+
+source_file="res://music/newermod/quasian - damask rose.it"
+dest_files=["res://.godot/imported/quasian - damask rose.it-7d0119affc1f1a062c38bb68948126fb.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

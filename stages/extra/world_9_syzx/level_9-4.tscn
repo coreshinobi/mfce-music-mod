@@ -8,18 +8,20 @@
 [ext_resource type="Script" uid="uid://7byhkvlnfxa" path="res://components/secrets_manager/unlock_multiple.gd" id="4_2ru6i"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_mueup"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="4_tnbv6"]
-[ext_resource type="AudioStream" uid="uid://dfsi4pxy2mjqu" path="res://music/extra/world_9_syzx/the_dark_half.mod" id="5_7cuuq"]
-[ext_resource type="AudioStream" uid="uid://d1f8wfi8w3boq" path="res://music/extra/world_9_syzx/world9_4.ogg" id="5_r3vry"]
 [ext_resource type="Script" uid="uid://dc824j5folagw" path="res://engine/objects/players/player_camera_autoscroll.gd" id="6_xq6mt"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="7_atyno"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_e8dkr"]
 [ext_resource type="Script" uid="uid://b5o8y7a4ji17g" path="res://stages/extra/world_9_syzx/music_mixed_tweak.gd" id="8_e7sdu"]
 [ext_resource type="PackedScene" uid="uid://0s1sj8ke5lyv" path="res://engine/objects/platform/platform_path_tank_floor.tscn" id="8_g4oa6"]
+[ext_resource type="AudioStream" uid="uid://bryelv3g1l6l3" path="res://music/newermod/johan brodd - sharp's theme.ogg" id="8_i1nn3"]
+[ext_resource type="AudioStream" uid="uid://bujbkq35bova3" path="res://music/newermod/Ridiculon - Dream Meater (Rapture Dark).ogg" id="8_ler52"]
 [ext_resource type="Script" uid="uid://pnegwh5bhy7i" path="res://objects/music_loader_custom/music_pitch_changer.gd" id="10_j52a0"]
+[ext_resource type="AudioStream" uid="uid://dat2ltlk3fgom" path="res://music/newermod/Danganronpa V3 - V3 Argument -Break-.ogg" id="10_ler52"]
 [ext_resource type="TileSet" uid="uid://c40wyx3trs5d2" path="res://tilesets/tanks/tank_tileset.tres" id="10_mwhbg"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="10_nvo0c"]
 [ext_resource type="Script" uid="uid://0h3x5dwndovw" path="res://engine/scripts/nodes/effects/quality_visible.gd" id="12_41qxf"]
 [ext_resource type="PackedScene" uid="uid://cfdgwxnth6m3d" path="res://tilesets/tanks/scenes/dark_cloud.tscn" id="13_8i2d4"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="13_71h40"]
 [ext_resource type="Script" uid="uid://cway2863r5lkh" path="res://engine/objects/enemies/spikes/spike.gd" id="14_pkf07"]
 [ext_resource type="FontFile" uid="uid://b1pi0t5byork2" path="res://engine/components/hud/hud_font.fnt" id="14_w4ar6"]
 [ext_resource type="Texture2D" uid="uid://b8idq72xw2p21" path="res://stages/extra/hardcore_2/objects/spike_hard_block_gray.png" id="15_kq7rv"]
@@ -67,7 +69,7 @@ colors = PackedColorArray(0.0313726, 0, 0, 1, 0.156863, 0.156863, 0.156863, 1)
 gradient = SubResource("Gradient_f8ifp")
 fill_to = Vector2(0, 1)
 
-[sub_resource type="Resource" id="Resource_qh15b"]
+[sub_resource type="Resource" id="Resource_71h40"]
 resource_local_to_scene = true
 script = ExtResource("20_qbtdg")
 creation_fallback_node = ExtResource("18_eg66j")
@@ -80,21 +82,21 @@ creation_fallback_node = ExtResource("18_eg66j")
 creation_nodepack = ExtResource("19_dye02")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_cun2g"]
+[sub_resource type="Resource" id="Resource_gu75h"]
 resource_local_to_scene = true
 script = ExtResource("20_qbtdg")
 creation_fallback_node = ExtResource("18_eg66j")
 creation_nodepack = ExtResource("22_1lpa3")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_i1nn3"]
+[sub_resource type="Resource" id="Resource_3sg0d"]
 resource_local_to_scene = true
 script = ExtResource("20_qbtdg")
 creation_fallback_node = ExtResource("18_eg66j")
 creation_nodepack = ExtResource("22_1lpa3")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_ler52"]
+[sub_resource type="Resource" id="Resource_ta4k0"]
 resource_local_to_scene = true
 script = ExtResource("20_qbtdg")
 creation_nodepack = ExtResource("35_onri6")
@@ -139,9 +141,9 @@ softendo_progress_secret_mode_ids = Array[int]([3])
 script = ExtResource("3_c011h")
 tweaked_completion_music = ExtResource("4_tnbv6")
 ignore_fade_in_tweak = false
-music_var_1 = Array[Resource]([ExtResource("5_r3vry")])
-music_var_2 = Array[Resource]([ExtResource("5_r3vry")])
-music_var_3 = Array[Resource]([ExtResource("5_7cuuq")])
+music_var_1 = Array[Resource]([ExtResource("8_ler52")])
+music_var_2 = Array[Resource]([ExtResource("8_i1nn3")])
+music_var_3 = Array[Resource]([ExtResource("10_ler52")])
 var_1_volume_db = Array[float]([0.0])
 var_1_start_from_sec = Array[float]([0.0])
 var_2_volume_db = Array[float]([0.0])
@@ -153,9 +155,10 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("5_7cuuq"), ExtResource("5_r3vry")])
+playback_pitch = 1.0
+music = Array[Resource]([ExtResource("8_i1nn3"), ExtResource("10_ler52")])
 play_immediately = false
-start_from_sec = Array[float]([0.0, 0.5])
+start_from_sec = Array[float]([0.0, 0.0])
 
 [node name="MusicPitchChanger" type="Node" parent="MusicLoader" unique_id=739751611]
 script = ExtResource("10_j52a0")
@@ -168,6 +171,9 @@ only_for_soundtrack_var = Array[bool]([true, false, false, false])
 
 [node name="Node" type="Node" parent="MusicLoader" unique_id=1019118264]
 script = ExtResource("8_e7sdu")
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("13_71h40")]
+text = Array[String](["Danganronpa V3 - Argument -BREAK-"])
 
 [node name="Player" parent="." unique_id=1994126063 instance=ExtResource("4_mueup")]
 position = Vector2(176, 400)
@@ -443,7 +449,7 @@ spikeball_velocity_max = Vector2(100, -50)
 
 [node name="QuestionBlock" parent="." unique_id=571915873 instance=ExtResource("17_wogyh")]
 position = Vector2(816, 144)
-result = SubResource("Resource_qh15b")
+result = SubResource("Resource_71h40")
 
 [node name="QuestionBlock5" parent="." unique_id=2009285550 instance=ExtResource("17_wogyh")]
 position = Vector2(1680, 144)
@@ -451,15 +457,15 @@ result = SubResource("Resource_86gpk")
 
 [node name="QuestionBlock2" parent="." unique_id=724863056 instance=ExtResource("17_wogyh")]
 position = Vector2(3632, 304)
-result = SubResource("Resource_cun2g")
+result = SubResource("Resource_gu75h")
 
 [node name="QuestionBlock4" parent="." unique_id=802758187 instance=ExtResource("17_wogyh")]
 position = Vector2(5680, 208)
-result = SubResource("Resource_i1nn3")
+result = SubResource("Resource_3sg0d")
 
 [node name="QuestionBlock3" parent="." unique_id=998459786 instance=ExtResource("17_wogyh")]
 position = Vector2(4208, 240)
-result = SubResource("Resource_ler52")
+result = SubResource("Resource_ta4k0")
 
 [node name="BulletLauncher3" parent="." unique_id=118536091 instance=ExtResource("23_ty1rn")]
 position = Vector2(1264, 240.16)

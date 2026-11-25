@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://cij8qbsogtvqp"
+path="res://.godot/imported/celsius - justice 96 remix.mod-b4ef3ce76bf0f70c52c0ccc05ad50be1.res"
+
+[deps]
+
+source_file="res://music/newermod/celsius - justice 96 remix.mod"
+dest_files=["res://.godot/imported/celsius - justice 96 remix.mod-b4ef3ce76bf0f70c52c0ccc05ad50be1.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

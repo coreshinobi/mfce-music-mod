@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://b8i0x6pwpoal5"
+path="res://.godot/imported/pete_h - the beatifull.it-5d58b7a7fdbc6abcd92e80a0694b5b54.res"
+
+[deps]
+
+source_file="res://music/newermod/pete_h - the beatifull.it"
+dest_files=["res://.godot/imported/pete_h - the beatifull.it-5d58b7a7fdbc6abcd92e80a0694b5b54.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

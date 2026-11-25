@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://4b414sshnppd"
+path="res://.godot/imported/retrokidknuckles - round 3.ogg-427ab7b907479b19d7e1d7897d258ef0.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/retrokidknuckles - round 3.ogg"
+dest_files=["res://.godot/imported/retrokidknuckles - round 3.ogg-427ab7b907479b19d7e1d7897d258ef0.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=1.87
+bpm=0.0
+beat_count=0
+bar_beats=4

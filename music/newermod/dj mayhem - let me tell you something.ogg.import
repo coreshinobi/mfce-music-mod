@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://k1uw0ka6y13g"
+path="res://.godot/imported/dj mayhem - let me tell you something.ogg-2157bb057ff9c9120218dd02b1225d31.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/dj mayhem - let me tell you something.ogg"
+dest_files=["res://.godot/imported/dj mayhem - let me tell you something.ogg-2157bb057ff9c9120218dd02b1225d31.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

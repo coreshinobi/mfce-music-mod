@@ -6,8 +6,10 @@
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="4_nr56x"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="5_bnspx"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="5_ip8b1"]
-[ext_resource type="AudioStream" uid="uid://cg5yrockdva1i" path="res://music/extra/world_u/koopas_road.ogg" id="5_ywv5m"]
+[ext_resource type="AudioStream" uid="uid://bgc0abrtbuur7" path="res://music/newermod/Hooded Edge - IT'S LIBERATION TIME!!!.ogg" id="6_bx10j"]
+[ext_resource type="AudioStream" uid="uid://bdcftuu52sq6o" path="res://music/side_a/Dimrain47 - At The Speed of Light.ogg" id="6_yew1m"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="8_1474t"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="8_ikfsb"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="8_nr56x"]
 [ext_resource type="TileSet" uid="uid://bgdkv8m3grmin" path="res://engine/tilesets/castle/castle_tileset.tres" id="10_ip8b1"]
 [ext_resource type="TileSet" uid="uid://dtvs1rult8kbe" path="res://tilesets/overworld_green/overworld_green.tres" id="11_bmtmi"]
@@ -100,7 +102,7 @@ animations = [{
 "speed": 6.0
 }]
 
-[sub_resource type="Resource" id="Resource_bx10j"]
+[sub_resource type="Resource" id="Resource_yew1m"]
 resource_local_to_scene = true
 script = ExtResource("20_gft2a")
 creation_nodepack = ExtResource("19_2y6vr")
@@ -171,7 +173,7 @@ metadata/_custom_type_script = "uid://dh7ob1sbo8lx7"
 script = ExtResource("4_nr56x")
 tweaked_completion_music = ExtResource("5_bnspx")
 ignore_fade_in_tweak = false
-music_var_1 = Array[Resource]([])
+music_var_1 = Array[Resource]([ExtResource("6_yew1m")])
 music_var_2 = Array[Resource]([])
 music_var_3 = Array[Resource]([])
 var_1_volume_db = Array[float]([0.0])
@@ -185,8 +187,11 @@ boss_music_var_2 = null
 boss_music_var_3 = null
 boss_music_volume_db = Array[float]([0.0])
 boss_music_start_from_sec = Array[float]([0.0])
-music = Array[Resource]([ExtResource("5_ywv5m")])
-start_from_sec = Array[float]([0.32])
+music = Array[Resource]([ExtResource("6_bx10j")])
+volume_db = Array[float]([1.5])
+start_from_sec = Array[float]([0.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("8_ikfsb")]
 
 [node name="Player" parent="." unique_id=1617791929 instance=ExtResource("5_ip8b1")]
 position = Vector2(320, 4880)
@@ -285,7 +290,7 @@ centered = false
 
 [node name="QuestionBlock" parent="." unique_id=551747393 instance=ExtResource("18_cmuy3")]
 position = Vector2(576, 4368)
-result = SubResource("Resource_bx10j")
+result = SubResource("Resource_yew1m")
 
 [node name="BulletLauncher" parent="." unique_id=1125877001 instance=ExtResource("25_aer1l")]
 position = Vector2(16, 2704)

@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://b00fki5ypl6k2"
+path="res://.godot/imported/virgill - junkie.mod-a712466d01c5bc85ad43fd6e2f22ae61.res"
+
+[deps]
+
+source_file="res://music/newermod/virgill - junkie.mod"
+dest_files=["res://.godot/imported/virgill - junkie.mod-a712466d01c5bc85ad43fd6e2f22ae61.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

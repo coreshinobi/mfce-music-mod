@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://4pequkthpdnn"
+path="res://.godot/imported/muffler - austin powers.mod-0d3c5c44c61b96b382b51d36f1c3b294.res"
+
+[deps]
+
+source_file="res://music/newermod/muffler - austin powers.mod"
+dest_files=["res://.godot/imported/muffler - austin powers.mod-0d3c5c44c61b96b382b51d36f1c3b294.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

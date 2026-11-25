@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://cekfrbebkqjrp"
+path="res://.godot/imported/Yannis Brown - Industrial Fudge VB.mod-b51130042808839bf48d09127c5280d2.res"
+
+[deps]
+
+source_file="res://music/side_b/Yannis Brown - Industrial Fudge VB.mod"
+dest_files=["res://.godot/imported/Yannis Brown - Industrial Fudge VB.mod-b51130042808839bf48d09127c5280d2.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

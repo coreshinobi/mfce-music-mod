@@ -1,11 +1,11 @@
 [gd_scene format=4 uid="uid://b3bt8fm030vlj"]
 
 [ext_resource type="Script" uid="uid://iendjcqnqnrm" path="res://stages/world_8/scripts/level_8-4_boss_level.gd" id="1_jgcj0"]
+[ext_resource type="AudioStream" uid="uid://bp1tlsedrercc" path="res://music/newermod/darryl sloan - cold blood theme.mod" id="3_koyyu"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_rkrt5"]
-[ext_resource type="AudioStream" uid="uid://dtl81bgntkqwv" path="res://music/cutscene/smw-ending_part_1.it" id="3_tdr55"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="4_848hw"]
+[ext_resource type="AudioStream" uid="uid://u83bocqllqcw" path="res://music/newermod/Naofumi Hataya - Cosmic Eternity (Believe In Yourself).ogg" id="4_qiwfr"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_yg3yx"]
-[ext_resource type="AudioStream" uid="uid://cnn040q2lodum" path="res://music/smrpg-bowser.ogg" id="5_6ppj3"]
 [ext_resource type="Script" uid="uid://cv1j6q1os8w8f" path="res://stages/world_8/scripts/story_mode_secret_activator.gd" id="5_hl31x"]
 [ext_resource type="TileSet" uid="uid://co4kwf1fb2y5i" path="res://tilesets/castle/castle_tileset.tres" id="6_3bkkl"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="6_tqj1s"]
@@ -15,7 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="10_8htow"]
 [ext_resource type="PackedScene" uid="uid://bq45lxt7bqoma" path="res://engine/objects/bosses/bowser/bowser_edge.tscn" id="11_cahpd"]
 [ext_resource type="PackedScene" uid="uid://diivlwjl0y1i7" path="res://engine/objects/bosses/bowser/bowser_trigger.tscn" id="14_17qy2"]
-[ext_resource type="AudioStream" uid="uid://bwlhej5mao270" path="res://music/smw2-bowser.ogg" id="15_yrdk2"]
+[ext_resource type="AudioStream" uid="uid://b5om41hp2paed" path="res://music/newermod/Slaze - Virtual Journey.mod" id="15_6iclg"]
 [ext_resource type="PackedScene" uid="uid://bqxorfeujkfsl" path="res://stages/world_8/objects/lava_bowser_8-4.tscn" id="16_8grry"]
 [ext_resource type="PackedScene" uid="uid://d2bajdy6e54hb" path="res://objects/final_boss_cell/final_boss_cell.tscn" id="17_hlk8d"]
 [ext_resource type="Script" uid="uid://0h3x5dwndovw" path="res://engine/scripts/nodes/effects/quality_visible.gd" id="20_h186j"]
@@ -58,14 +58,14 @@ completion_center_on_player_after_transition = true
 [node name="MusicLoader" type="Node" parent="." unique_id=1369727339]
 script = ExtResource("3_rkrt5")
 music_var_1 = Array[Resource]([SubResource("AudioStreamWAV_8xn02")])
-boss_music_var_2 = ExtResource("5_6ppj3")
-boss_music_var_3 = ExtResource("5_6ppj3")
+boss_music_var_2 = ExtResource("3_koyyu")
+boss_music_var_3 = ExtResource("3_koyyu")
 boss_music_volume_db = Array[float]([0.0, 0.0, 0.0])
 boss_music_start_from_sec = Array[float]([0.0, 0.0, 0.0])
-music = Array[Resource]([ExtResource("3_tdr55")])
+music = Array[Resource]([ExtResource("4_qiwfr")])
 play_immediately = false
 play_globally = 2
-volume_db = Array[float]([12.0])
+volume_db = Array[float]([0.0])
 
 [node name="SecretUnlocker" parent="." unique_id=1787091588 instance=ExtResource("4_848hw")]
 secrets = Array[String](["story mode no hit", "story mode no death", "story mode in secret mode", "story mode no warps", "story mode beetroot", "frog challenge completed"])
@@ -114,7 +114,7 @@ position = Vector2(384, 240)
 curve = SubResource("Curve2D_05e3f")
 trigger_area = Rect2(0, 0, 640, 480)
 trigger_bowser = NodePath("../Bowser")
-boss_music = ExtResource("15_yrdk2")
+boss_music = ExtResource("15_6iclg")
 
 [node name="Bowser" parent="." unique_id=1547881085 instance=ExtResource("10_2qv70")]
 position = Vector2(544, 320)

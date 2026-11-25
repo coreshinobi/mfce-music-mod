@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://den24yt2j4kln"
+path="res://.godot/imported/chromag - shock therapy 23.xm-0926a4d8ea8e7114a39a0a9fe0970562.res"
+
+[deps]
+
+source_file="res://music/newermod/chromag - shock therapy 23.xm"
+dest_files=["res://.godot/imported/chromag - shock therapy 23.xm-0926a4d8ea8e7114a39a0a9fe0970562.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

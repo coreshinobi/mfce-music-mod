@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cybf8qmrysnit"
+path="res://.godot/imported/ADSRe - Time for a Killing (Amiga Remix).ogg-6d4d0355093c855a3179c303f418cbe4.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/ADSRe - Time for a Killing (Amiga Remix).ogg"
+dest_files=["res://.godot/imported/ADSRe - Time for a Killing (Amiga Remix).ogg-6d4d0355093c855a3179c303f418cbe4.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=67.58
+bpm=0.0
+beat_count=0
+bar_beats=4

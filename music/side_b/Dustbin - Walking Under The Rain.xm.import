@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://62w11tdon5rl"
+path="res://.godot/imported/Dustbin - Walking Under The Rain.xm-021e8f9905f4e63283d1b428e298caec.res"
+
+[deps]
+
+source_file="res://music/side_b/Dustbin - Walking Under The Rain.xm"
+dest_files=["res://.godot/imported/Dustbin - Walking Under The Rain.xm-021e8f9905f4e63283d1b428e298caec.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

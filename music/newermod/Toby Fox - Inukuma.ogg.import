@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dbrkjgqtc17ln"
+path="res://.godot/imported/Toby Fox - Inukuma.ogg-ba112b96cf9f6a9661b887ea58877e4e.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Toby Fox - Inukuma.ogg"
+dest_files=["res://.godot/imported/Toby Fox - Inukuma.ogg-ba112b96cf9f6a9661b887ea58877e4e.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

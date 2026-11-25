@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://c5cvxuqqjc2m2"
+path="res://.godot/imported/norfair - imaginary date.xm-826b28ff83baff9bd0345a390502ec2f.res"
+
+[deps]
+
+source_file="res://music/newermod/norfair - imaginary date.xm"
+dest_files=["res://.godot/imported/norfair - imaginary date.xm-826b28ff83baff9bd0345a390502ec2f.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

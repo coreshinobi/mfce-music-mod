@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c5w5td2wn02ij"
+path="res://.godot/imported/Tom & Jerry (4Hero) - It's All Over.ogg-cbb949411c322c648747a1e1ab02f657.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Tom & Jerry (4Hero) - It's All Over.ogg"
+dest_files=["res://.godot/imported/Tom & Jerry (4Hero) - It's All Over.ogg-cbb949411c322c648747a1e1ab02f657.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

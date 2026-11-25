@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://ki2vxlbdaq8r"]
 
 [ext_resource type="Script" uid="uid://b2miajjwaop0p" path="res://engine/scenes/map/scripts/map.gd" id="1_shxvx"]
-[ext_resource type="AudioStream" uid="uid://dmwpr14emrk1l" path="res://music/extra/expert_mode/ADMINCRACK - Zoom Player MAX kg.xm" id="2_12v4p"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="2_24cvv"]
 [ext_resource type="Texture2D" uid="uid://55yown2k7wt8" path="res://gfx/map/expert_mode_maps/map4.png" id="2_vpag5"]
 [ext_resource type="Texture2D" uid="uid://d0mdb5l48b4i8" path="res://gfx/map/expert_mode_maps/map4-oblaka.png" id="3_ruvmg"]
+[ext_resource type="AudioStream" uid="uid://dk46q8ww3jdfe" path="res://music/newermod/DJ Ron - Mo Musik (African Chant).ogg" id="3_shxvx"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="4_24cvv"]
 [ext_resource type="Texture2D" uid="uid://usm6n80msr7n" path="res://engine/scenes/map/textures/bg.png" id="4_iwamc"]
 [ext_resource type="Material" uid="uid://dpwcqva66u2sf" path="res://materials/grayscale.tres" id="5_dcjsg"]
 [ext_resource type="PackedScene" uid="uid://w4jc7nb1lcsy" path="res://engine/scenes/map/prefabs/player.tscn" id="7_1m33g"]
@@ -48,8 +49,12 @@ metadata/_edit_lock_ = true
 
 [node name="MusicLoader" type="Node" parent="." unique_id=952629322]
 script = ExtResource("2_24cvv")
-music = Array[Resource]([ExtResource("2_12v4p")])
-volume_db = Array[float]([6.0])
+music = Array[Resource]([ExtResource("3_shxvx")])
+volume_db = Array[float]([0.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("4_24cvv")]
+displaying_mode = 1
+text = Array[String](["DJ Ron - Mo Musik (African Chant)"])
 
 [node name="Bg" type="Sprite2D" parent="." unique_id=580555334]
 texture = ExtResource("4_iwamc")

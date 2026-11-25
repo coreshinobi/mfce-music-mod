@@ -1,15 +1,19 @@
 [gd_scene format=4 uid="uid://brtc0tw8taj68"]
 
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_6d70v"]
-[ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_o8rg7"]
+[ext_resource type="AudioStream" uid="uid://cd2244a0fmxls" path="res://music/newermod/Azumanga Daioh Eye Catch 1.ogg" id="2_ikrb7"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_pw2a1"]
-[ext_resource type="AudioStream" uid="uid://bd7r5d5eb275q" path="res://music/smw-haunted-house.ogg" id="3_uco5t"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_c3l33"]
+[ext_resource type="AudioStream" uid="uid://v48iikjnafou" path="res://music/side_a/Prince of Persia - Stage 9.ogg" id="4_dxybq"]
+[ext_resource type="AudioStream" uid="uid://3f2r8rv1c8gn" path="res://music/side_b/Vipper - A Great Game of Chase.ogg" id="4_lqlh1"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="5_4pleq"]
-[ext_resource type="AudioStream" uid="uid://bexk1qd4psene" path="res://engine/objects/bosses/bowser/music/music_bowser_battle.mod" id="5_xb7db"]
+[ext_resource type="AudioStream" uid="uid://dtygwvlso2h6w" path="res://music/newermod/skool of hard knocks - kan u feel it ('94 mix).ogg" id="5_a2aah"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="6_a2aah"]
 [ext_resource type="PackedScene" uid="uid://diivlwjl0y1i7" path="res://engine/objects/bosses/bowser/bowser_trigger.tscn" id="6_c722j"]
-[ext_resource type="AudioStream" uid="uid://cnn040q2lodum" path="res://music/smrpg-bowser.ogg" id="7_dkxoi"]
+[ext_resource type="AudioStream" uid="uid://cww5fcd2yjfi3" path="res://music/newermod/rubbish - raised fist.mod" id="6_ikrb7"]
+[ext_resource type="AudioStream" uid="uid://blspa03nxjl4r" path="res://music/side_a/Prince of Persia - Fight.ogg" id="6_t1h37"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="8_dbhng"]
+[ext_resource type="AudioStream" uid="uid://cgxthd0n65myi" path="res://music/newermod/buddha - battle cry.mod" id="9_lqlh1"]
 [ext_resource type="TileSet" uid="uid://co4kwf1fb2y5i" path="res://tilesets/castle/castle_tileset.tres" id="9_xp4xt"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="10_lyfkd"]
 [ext_resource type="Texture2D" uid="uid://bg2k5gya1fsae" path="res://tilesets/castle/gfx/gray_pipe_entering_another.png" id="11_5sphv"]
@@ -58,20 +62,20 @@ _data = {
 }
 point_count = 2
 
-[sub_resource type="Resource" id="Resource_b8n3s"]
+[sub_resource type="Resource" id="Resource_dxybq"]
 resource_local_to_scene = true
 script = ExtResource("17_xc7nt")
 creation_fallback_node = ExtResource("15_k864g")
 creation_nodepack = ExtResource("16_c0n35")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_a2aah"]
+[sub_resource type="Resource" id="Resource_t1h37"]
 resource_local_to_scene = true
 script = ExtResource("17_xc7nt")
 creation_nodepack = ExtResource("18_1b7d0")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_lqlh1"]
+[sub_resource type="Resource" id="Resource_f1pjf"]
 resource_local_to_scene = true
 script = ExtResource("17_xc7nt")
 creation_nodepack = ExtResource("18_1b7d0")
@@ -89,7 +93,7 @@ creation_fallback_node = ExtResource("15_k864g")
 creation_nodepack = ExtResource("16_c0n35")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_ikrb7"]
+[sub_resource type="Resource" id="Resource_71lwm"]
 resource_local_to_scene = true
 script = ExtResource("17_xc7nt")
 creation_nodepack = ExtResource("18_1b7d0")
@@ -109,13 +113,13 @@ width = 112
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ds5cq"]
 size = Vector2(9066, 912)
 
-[sub_resource type="Resource" id="Resource_dxybq"]
+[sub_resource type="Resource" id="Resource_tlep0"]
 resource_local_to_scene = true
 script = ExtResource("17_xc7nt")
 creation_nodepack = ExtResource("18_1b7d0")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_t1h37"]
+[sub_resource type="Resource" id="Resource_rnytc"]
 resource_local_to_scene = true
 script = ExtResource("17_xc7nt")
 creation_nodepack = ExtResource("18_1b7d0")
@@ -172,15 +176,22 @@ metadata/_snap_enabled = true
 
 [node name="Level2-5" type="Node2D" unique_id=1929415176]
 script = ExtResource("1_6d70v")
-completion_music = ExtResource("2_o8rg7")
+completion_music = ExtResource("2_ikrb7")
 completion_write_save = false
 jump_to_scene = "res://stages/world_2/end_cutscene_2.tscn"
 completion_center_on_player_after_transition = true
+completion_music_delay_sec = 4.18
 
 [node name="MusicLoader" type="Node" parent="." unique_id=202803105]
 script = ExtResource("3_pw2a1")
-boss_music_var_1 = ExtResource("5_xb7db")
-music = Array[Resource]([ExtResource("3_uco5t")])
+music_var_1 = Array[Resource]([ExtResource("4_dxybq")])
+music_var_2 = Array[Resource]([ExtResource("4_lqlh1")])
+var_2_volume_db = Array[float]([2.1])
+boss_music_var_1 = ExtResource("6_t1h37")
+boss_music_var_2 = ExtResource("6_ikrb7")
+music = Array[Resource]([ExtResource("5_a2aah")])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("6_a2aah")]
 
 [node name="Mario" parent="." unique_id=322643693 instance=ExtResource("4_c3l33")]
 position = Vector2(272, 336)
@@ -195,7 +206,7 @@ position = Vector2(8096, 224)
 curve = SubResource("Curve2D_aapar")
 trigger_area = Rect2(0, 0, 32, 960)
 trigger_bowser = NodePath("../Bowser")
-boss_music = ExtResource("7_dkxoi")
+boss_music = ExtResource("9_lqlh1")
 
 [node name="CameraArea" parent="." unique_id=49278020 instance=ExtResource("8_dbhng")]
 offset_right = 12225.0
@@ -258,15 +269,15 @@ position = Vector2(-48, 16)
 
 [node name="QuestionBlockFireFlower3" parent="." unique_id=1839454837 instance=ExtResource("14_ch858")]
 position = Vector2(11088, 240)
-result = SubResource("Resource_b8n3s")
+result = SubResource("Resource_dxybq")
 
 [node name="QuestionBlock14" parent="." unique_id=836690146 instance=ExtResource("19_e3nug")]
 position = Vector2(3280, 176)
-result = SubResource("Resource_a2aah")
+result = SubResource("Resource_t1h37")
 
 [node name="QuestionBlock15" parent="." unique_id=1707364530 instance=ExtResource("19_e3nug")]
 position = Vector2(3248, 176)
-result = SubResource("Resource_lqlh1")
+result = SubResource("Resource_f1pjf")
 
 [node name="QuestionBlock16" parent="." unique_id=895316149 instance=ExtResource("19_e3nug")]
 position = Vector2(1552, 240)
@@ -279,7 +290,7 @@ initially_visible_and_solid = false
 
 [node name="QuestionBlock17" parent="." unique_id=1178633993 instance=ExtResource("19_e3nug")]
 position = Vector2(496, 176)
-result = SubResource("Resource_ikrb7")
+result = SubResource("Resource_71lwm")
 initially_visible_and_solid = false
 
 [node name="Bowser" parent="." unique_id=955961516 instance=ExtResource("22_khpnh")]
@@ -729,12 +740,12 @@ jumping_height = 368.0
 
 [node name="QuestionBlock17" parent="HarderDesignNode" unique_id=248113417 instance=ExtResource("19_e3nug")]
 position = Vector2(4496, 112)
-result = SubResource("Resource_dxybq")
+result = SubResource("Resource_tlep0")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock18" parent="HarderDesignNode" unique_id=149675137 instance=ExtResource("19_e3nug")]
 position = Vector2(4400, 176)
-result = SubResource("Resource_t1h37")
+result = SubResource("Resource_rnytc")
 initially_visible_and_solid = false
 
 [node name="LavaBowser" parent="." unique_id=352329955 instance=ExtResource("42_kmrk6")]

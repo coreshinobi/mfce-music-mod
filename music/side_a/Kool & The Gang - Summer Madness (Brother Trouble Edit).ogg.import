@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cswwnuihhx57m"
+path="res://.godot/imported/Kool & The Gang - Summer Madness (Brother Trouble Edit).ogg-03f63e1ee481a9a31fb5e3fd62f067fb.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_a/Kool & The Gang - Summer Madness (Brother Trouble Edit).ogg"
+dest_files=["res://.godot/imported/Kool & The Gang - Summer Madness (Brother Trouble Edit).ogg-03f63e1ee481a9a31fb5e3fd62f067fb.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=20.14
+bpm=0.0
+beat_count=0
+bar_beats=4

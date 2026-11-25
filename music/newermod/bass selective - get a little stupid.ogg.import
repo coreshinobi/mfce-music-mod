@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://k4le2n36hmeq"
+path="res://.godot/imported/bass selective - get a little stupid.ogg-0cd755ed62a7b9cf6c9b1cf1d29e3663.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/bass selective - get a little stupid.ogg"
+dest_files=["res://.godot/imported/bass selective - get a little stupid.ogg-0cd755ed62a7b9cf6c9b1cf1d29e3663.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

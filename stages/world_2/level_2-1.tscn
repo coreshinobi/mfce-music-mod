@@ -1,13 +1,16 @@
 [gd_scene format=4 uid="uid://dlti0l2n1ix8d"]
 
 [ext_resource type="Script" uid="uid://dh7ob1sbo8lx7" path="res://engine/scripts/classes/level/level.gd" id="1_0omu6"]
-[ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_i4w4y"]
-[ext_resource type="AudioStream" uid="uid://no8rqi6mwk8c" path="res://music/smw-overworld.ogg" id="3_784ol"]
+[ext_resource type="AudioStream" uid="uid://cd2244a0fmxls" path="res://music/newermod/Azumanga Daioh Eye Catch 1.ogg" id="2_lshfh"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_hmq3v"]
-[ext_resource type="AudioStream" uid="uid://dwcak56md3who" path="res://music/smw-underground.ogg" id="4_y4qvn"]
+[ext_resource type="AudioStream" uid="uid://cla2a0l5hq0al" path="res://music/newermod/Nikola 'Juice' Fox - da jungle is wicked.mod" id="4_7er7x"]
+[ext_resource type="AudioStream" uid="uid://c5lynuq17ucqa" path="res://music/side_a/Battletoads & Double Dragon - Abobo.ogg" id="4_txbb6"]
+[ext_resource type="AudioStream" uid="uid://c74n3yt4v2rp3" path="res://music/side_a/Prince of Persia - Stage 1.ogg" id="5_m5t8n"]
+[ext_resource type="AudioStream" uid="uid://dsbo3s5e2sxdn" path="res://music/newermod/toal nkor - forest dream.mod" id="5_o1756"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="5_qc2in"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="5_uy1ol"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="6_ejrb2"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="6_lshfh"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_25a1y"]
 [ext_resource type="TileSet" uid="uid://dtvs1rult8kbe" path="res://tilesets/overworld_green/overworld_green.tres" id="8_2ilb6"]
 [ext_resource type="Texture2D" uid="uid://uejrjui7n1cg" path="res://engine/tilesets/underground/gfx/blue_hard_block.png" id="9_cionb"]
@@ -81,51 +84,51 @@ colors = PackedColorArray(0, 0, 0, 1, 0, 0.827451, 0.972549, 1)
 gradient = SubResource("Gradient_m7g0b")
 width = 480
 
-[sub_resource type="Resource" id="Resource_g2tvd"]
+[sub_resource type="Resource" id="Resource_oiokl"]
 resource_local_to_scene = true
 script = ExtResource("22_aki8b")
 creation_nodepack = ExtResource("21_0upm2")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_7er7x"]
+[sub_resource type="Resource" id="Resource_r3roc"]
 resource_local_to_scene = true
 script = ExtResource("22_aki8b")
 creation_nodepack = ExtResource("21_0upm2")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_o1756"]
+[sub_resource type="Resource" id="Resource_mcawa"]
 resource_local_to_scene = true
 script = ExtResource("22_aki8b")
 creation_nodepack = ExtResource("21_0upm2")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_lshfh"]
+[sub_resource type="Resource" id="Resource_u4yad"]
 resource_local_to_scene = true
 script = ExtResource("22_aki8b")
 creation_nodepack = ExtResource("21_0upm2")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_txbb6"]
+[sub_resource type="Resource" id="Resource_snn4f"]
 resource_local_to_scene = true
 script = ExtResource("22_aki8b")
 creation_fallback_node = ExtResource("24_vqbdw")
 creation_nodepack = ExtResource("25_ou6dg")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_m5t8n"]
+[sub_resource type="Resource" id="Resource_vi28i"]
 resource_local_to_scene = true
 script = ExtResource("22_aki8b")
 creation_nodepack = ExtResource("21_0upm2")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_oiokl"]
+[sub_resource type="Resource" id="Resource_v4567"]
 resource_local_to_scene = true
 script = ExtResource("22_aki8b")
 creation_fallback_node = ExtResource("24_vqbdw")
 creation_nodepack = ExtResource("35_5q1vn")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_r3roc"]
+[sub_resource type="Resource" id="Resource_tsxku"]
 resource_local_to_scene = true
 script = ExtResource("22_aki8b")
 creation_fallback_node = ExtResource("24_vqbdw")
@@ -137,13 +140,17 @@ size = Vector2(5696, 800)
 
 [node name="Level2-1" type="Node2D" unique_id=229111148]
 script = ExtResource("1_0omu6")
-completion_music = ExtResource("2_i4w4y")
+completion_music = ExtResource("2_lshfh")
 jump_to_scene = "res://stages/world_2/map_2.tscn"
+completion_music_delay_sec = 4.18
 
 [node name="MusicLoader" type="Node" parent="." unique_id=650018738]
 script = ExtResource("3_hmq3v")
-music = Array[Resource]([ExtResource("3_784ol"), ExtResource("4_y4qvn")])
+music_var_1 = Array[Resource]([ExtResource("4_txbb6"), ExtResource("5_m5t8n")])
+music = Array[Resource]([ExtResource("4_7er7x"), ExtResource("5_o1756")])
 volume_db = Array[float]([4.0, 0.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("6_lshfh")]
 
 [node name="SecretUnlocker" parent="." unique_id=1959478216 instance=ExtResource("5_uy1ol")]
 secrets = Array[String](["bowser the devastator", "all secret rooms found"])
@@ -366,27 +373,27 @@ position = Vector2(1456, 112)
 
 [node name="QuestionBlock3" parent="." unique_id=1808313629 instance=ExtResource("20_bx1ru")]
 position = Vector2(3184, 272)
-result = SubResource("Resource_g2tvd")
+result = SubResource("Resource_oiokl")
 
 [node name="QuestionBlock4" parent="." unique_id=1395701393 instance=ExtResource("20_bx1ru")]
 position = Vector2(3312, 272)
-result = SubResource("Resource_7er7x")
+result = SubResource("Resource_r3roc")
 
 [node name="QuestionBlock38" parent="." unique_id=1414571437 instance=ExtResource("20_bx1ru")]
 position = Vector2(3376, 272)
-result = SubResource("Resource_o1756")
+result = SubResource("Resource_mcawa")
 
 [node name="QuestionBlock37" parent="." unique_id=1287097450 instance=ExtResource("20_bx1ru")]
 position = Vector2(3248, 272)
-result = SubResource("Resource_lshfh")
+result = SubResource("Resource_u4yad")
 
 [node name="QuestionBlockFireFlower" parent="." unique_id=2042590128 instance=ExtResource("23_ftcwt")]
 position = Vector2(3600, 208)
-result = SubResource("Resource_txbb6")
+result = SubResource("Resource_snn4f")
 
 [node name="QuestionBlock33" parent="." unique_id=1867912986 instance=ExtResource("20_bx1ru")]
 position = Vector2(5840, 240)
-result = SubResource("Resource_m5t8n")
+result = SubResource("Resource_vi28i")
 initially_visible_and_solid = false
 exists_once = true
 
@@ -617,11 +624,11 @@ metadata/_edit_pinned_properties_ = [&"medium", &"minimum", &"maximum"]
 
 [node name="QuestionBlockBeetroot" parent="." unique_id=1303492741 instance=ExtResource("34_444d5")]
 position = Vector2(1488, 240)
-result = SubResource("Resource_oiokl")
+result = SubResource("Resource_v4567")
 
 [node name="QuestionBlockGreenLui" parent="." unique_id=240170549 instance=ExtResource("36_2x4l8")]
 position = Vector2(6000, 208)
-result = SubResource("Resource_r3roc")
+result = SubResource("Resource_tsxku")
 initially_visible_and_solid = false
 exists_once = true
 
@@ -800,6 +807,7 @@ texture = ExtResource("54_g2tvd")
 region_enabled = true
 region_rect = Rect2(0, 32, 64, 32)
 
+[connection signal="music_started" from="MusicLoader" to="MusicOverlay" method="play"]
 [connection signal="warp_started" from="PipeIn" to="SecretUnlocker" method="progress_secret" binds= [1]]
 [connection signal="warp_started" from="PipeIn3" to="MusicLoader" method="pause_music"]
 [connection signal="warp_started" from="PipeIn3" to="SecretUnlocker" method="unlock_secret"]

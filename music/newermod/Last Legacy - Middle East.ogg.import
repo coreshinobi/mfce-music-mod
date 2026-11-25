@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://biswmkj70v1gk"
+path="res://.godot/imported/Last Legacy - Middle East.ogg-ffd770c21e8e1ffcd237fddc8cdb31ac.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Last Legacy - Middle East.ogg"
+dest_files=["res://.godot/imported/Last Legacy - Middle East.ogg-ffd770c21e8e1ffcd237fddc8cdb31ac.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=6.62
+bpm=0.0
+beat_count=0
+bar_beats=4

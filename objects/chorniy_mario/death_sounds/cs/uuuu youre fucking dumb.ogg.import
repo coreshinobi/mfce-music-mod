@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cjjxpivodqpsg"
+path="res://.godot/imported/uuuu youre fucking dumb.ogg-8abb7fad618e7b5f60a685e63e21b5cd.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/uuuu youre fucking dumb.ogg"
+dest_files=["res://.godot/imported/uuuu youre fucking dumb.ogg-8abb7fad618e7b5f60a685e63e21b5cd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

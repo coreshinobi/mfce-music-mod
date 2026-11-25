@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://b5qlb0pan888w"
+path="res://.godot/imported/Mopz - A Raver.mod-2fe6a9c3ece2232e427493ebaff2a827.res"
+
+[deps]
+
+source_file="res://music/newermod/Mopz - A Raver.mod"
+dest_files=["res://.godot/imported/Mopz - A Raver.mod-2fe6a9c3ece2232e427493ebaff2a827.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://2nxgnbb8vqof"
+path="res://.godot/imported/Algorithm - Bioluminescence.ogg-a27596527d48c02e953743e761b54cf6.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/newermod/Algorithm - Bioluminescence.ogg"
+dest_files=["res://.godot/imported/Algorithm - Bioluminescence.ogg-a27596527d48c02e953743e761b54cf6.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

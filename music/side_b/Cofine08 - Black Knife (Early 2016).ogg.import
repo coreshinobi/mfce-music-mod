@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://hj731uhljgem"
+path="res://.godot/imported/Cofine08 - Black Knife (Early 2016).ogg-996a0e05acec3e27f1d2be1e3e20f76a.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_b/Cofine08 - Black Knife (Early 2016).ogg"
+dest_files=["res://.godot/imported/Cofine08 - Black Knife (Early 2016).ogg-996a0e05acec3e27f1d2be1e3e20f76a.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

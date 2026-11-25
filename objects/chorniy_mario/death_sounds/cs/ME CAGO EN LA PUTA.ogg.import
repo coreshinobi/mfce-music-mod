@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bbp0w0imu8grn"
+path="res://.godot/imported/ME CAGO EN LA PUTA.ogg-1c66523b60c1b82f0030a0c002c2e444.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/ME CAGO EN LA PUTA.ogg"
+dest_files=["res://.godot/imported/ME CAGO EN LA PUTA.ogg-1c66523b60c1b82f0030a0c002c2e444.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

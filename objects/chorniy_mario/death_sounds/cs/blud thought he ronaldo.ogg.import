@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bbxvun8u3fy5w"
+path="res://.godot/imported/blud thought he ronaldo.ogg-4e95931f3f4d7f85c874f4e35155ed9f.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/blud thought he ronaldo.ogg"
+dest_files=["res://.godot/imported/blud thought he ronaldo.ogg-4e95931f3f4d7f85c874f4e35155ed9f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

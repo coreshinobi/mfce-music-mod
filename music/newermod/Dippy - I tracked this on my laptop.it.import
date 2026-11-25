@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://beyckkob2lf0i"
+path="res://.godot/imported/Dippy - I tracked this on my laptop.it-8fb4c75ba8bcb5cc3bcd964d6d1a5251.res"
+
+[deps]
+
+source_file="res://music/newermod/Dippy - I tracked this on my laptop.it"
+dest_files=["res://.godot/imported/Dippy - I tracked this on my laptop.it-8fb4c75ba8bcb5cc3bcd964d6d1a5251.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

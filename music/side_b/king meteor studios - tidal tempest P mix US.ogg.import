@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dmby0llerljv5"
+path="res://.godot/imported/king meteor studios - tidal tempest P mix US.ogg-6ab9874183172541b7980d59da76adef.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/side_b/king meteor studios - tidal tempest P mix US.ogg"
+dest_files=["res://.godot/imported/king meteor studios - tidal tempest P mix US.ogg-6ab9874183172541b7980d59da76adef.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

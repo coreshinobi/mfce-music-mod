@@ -2,7 +2,8 @@
 
 [ext_resource type="Script" uid="uid://b2miajjwaop0p" path="res://engine/scenes/map/scripts/map.gd" id="1_76u5a"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="2_8qyv7"]
-[ext_resource type="AudioStream" uid="uid://b5mjvpo45j35h" path="res://music/extra/smw-hardcore_2_map.ogg" id="3_oiogy"]
+[ext_resource type="AudioStream" uid="uid://dbrkjgqtc17ln" path="res://music/newermod/Toby Fox - Inukuma.ogg" id="3_yknfo"]
+[ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="4_1pw36"]
 [ext_resource type="Texture2D" uid="uid://usm6n80msr7n" path="res://engine/scenes/map/textures/bg.png" id="4_6nsqc"]
 [ext_resource type="Texture2D" uid="uid://dmtlss44tfxmh" path="res://gfx/map/maps/maphardcore2.png" id="5_v2seg"]
 [ext_resource type="PackedScene" uid="uid://w4jc7nb1lcsy" path="res://engine/scenes/map/prefabs/player.tscn" id="6_vb3xu"]
@@ -39,8 +40,12 @@ metadata/_edit_lock_ = true
 
 [node name="MusicLoader" type="Node" parent="." unique_id=581560300]
 script = ExtResource("2_8qyv7")
-music = Array[Resource]([ExtResource("3_oiogy")])
+music = Array[Resource]([ExtResource("3_yknfo")])
 volume_db = Array[float]([3.0])
+
+[node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("4_1pw36")]
+displaying_mode = 1
+text = Array[String](["Toby Fox - Inukuma"])
 
 [node name="Bg" type="Sprite2D" parent="." unique_id=30982528]
 texture = ExtResource("4_6nsqc")
