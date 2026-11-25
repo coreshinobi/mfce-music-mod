@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cvt8n6n5brokt"
+path="res://.godot/imported/the dick killer.ogg-ca8976e33195adc6b834be4b181f17d2.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/the dick killer.ogg"
+dest_files=["res://.godot/imported/the dick killer.ogg-ca8976e33195adc6b834be4b181f17d2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

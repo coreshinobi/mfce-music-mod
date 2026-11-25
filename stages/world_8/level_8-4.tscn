@@ -4,6 +4,7 @@
 [ext_resource type="AudioStream" uid="uid://bqiy8kvcsy0rk" path="res://engine/scripts/classes/level/complete.ogg" id="2_m8hcv"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_ape2l"]
 [ext_resource type="AudioStream" uid="uid://dwilfvcuc5sg5" path="res://music/newermod/Apollo Justice Ace Attorney - Pursuit - Overtaken.ogg" id="4_4yr00"]
+[ext_resource type="AudioStream" uid="uid://b7u0ppr8cvsgx" path="res://music/newermod/weeds - overdrive.mod" id="4_cr5tf"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_qeogt"]
 [ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="5_bbct3"]
 [ext_resource type="Script" uid="uid://dc824j5folagw" path="res://engine/objects/players/player_camera_autoscroll.gd" id="5_f3qrj"]
@@ -89,10 +90,11 @@ metadata/_edit_lock_ = true
 
 [node name="MusicLoader" type="Node" parent="." unique_id=429055094]
 script = ExtResource("3_ape2l")
+music_var_1 = Array[Resource]([ExtResource("4_cr5tf")])
+var_1_volume_db = Array[float]([0.6])
 music = Array[Resource]([ExtResource("4_4yr00")])
 
 [node name="MusicOverlay" parent="." unique_id=1155586920 instance=ExtResource("5_bbct3")]
-text = Array[String](["Apollo Justice: Ace Attorney - Pursuit - Overtaken"])
 
 [node name="Mario" parent="." unique_id=937501622 instance=ExtResource("4_qeogt")]
 position = Vector2(80, 400)

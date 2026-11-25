@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ckw2m12arvfsn"
+path="res://.godot/imported/atama waru waru.ogg-100e1a71f05eadac594e25b792833bdd.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/atama waru waru.ogg"
+dest_files=["res://.godot/imported/atama waru waru.ogg-100e1a71f05eadac594e25b792833bdd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

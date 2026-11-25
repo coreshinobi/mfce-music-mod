@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dxrb7av0w238"
+path="res://.godot/imported/norton furniture.ogg-edffb02c941e3887898e607e0c68b93e.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/norton furniture.ogg"
+dest_files=["res://.godot/imported/norton furniture.ogg-edffb02c941e3887898e607e0c68b93e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://b7u0ppr8cvsgx"
+path="res://.godot/imported/weeds - overdrive.mod-581de0006c78d03045fabbf1e5b00302.res"
+
+[deps]
+
+source_file="res://music/newermod/weeds - overdrive.mod"
+dest_files=["res://.godot/imported/weeds - overdrive.mod-581de0006c78d03045fabbf1e5b00302.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

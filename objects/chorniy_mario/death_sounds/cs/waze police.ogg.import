@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cmalkainlye46"
+path="res://.godot/imported/waze police.ogg-f6b598dc5cfb4320b2e50a671ecaa1aa.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/waze police.ogg"
+dest_files=["res://.godot/imported/waze police.ogg-f6b598dc5cfb4320b2e50a671ecaa1aa.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

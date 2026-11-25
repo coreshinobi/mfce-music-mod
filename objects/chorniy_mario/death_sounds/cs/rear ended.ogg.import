@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://o0rx6872w65i"
+path="res://.godot/imported/rear ended.ogg-3d1a41c0ad18053224d3977466d16d27.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/rear ended.ogg"
+dest_files=["res://.godot/imported/rear ended.ogg-3d1a41c0ad18053224d3977466d16d27.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

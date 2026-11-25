@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://doiih0r3wsc4u"
+path="res://.godot/imported/mr beast dame plata aaaaa.ogg-66ad40a471d11441f3a3b8cb1a86843f.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/mr beast dame plata aaaaa.ogg"
+dest_files=["res://.godot/imported/mr beast dame plata aaaaa.ogg-66ad40a471d11441f3a3b8cb1a86843f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

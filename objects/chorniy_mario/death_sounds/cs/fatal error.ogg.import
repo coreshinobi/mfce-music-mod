@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c43ccrm0jo0cl"
+path="res://.godot/imported/fatal error.ogg-2a0206ffcfe248c99146c6d0fa7ade58.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/fatal error.ogg"
+dest_files=["res://.godot/imported/fatal error.ogg-2a0206ffcfe248c99146c6d0fa7ade58.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

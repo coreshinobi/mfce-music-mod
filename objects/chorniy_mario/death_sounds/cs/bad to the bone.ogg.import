@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c085bbktm2cuw"
+path="res://.godot/imported/bad to the bone.ogg-2d6979de065ebf8d8de135f775158059.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/bad to the bone.ogg"
+dest_files=["res://.godot/imported/bad to the bone.ogg-2d6979de065ebf8d8de135f775158059.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

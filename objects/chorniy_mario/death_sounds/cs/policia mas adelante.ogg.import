@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cfppnxvp76q31"
+path="res://.godot/imported/policia mas adelante.ogg-5123c3578ad2b8969de4f6bcfe935877.oggvorbisstr"
+
+[deps]
+
+source_file="res://objects/chorniy_mario/death_sounds/cs/policia mas adelante.ogg"
+dest_files=["res://.godot/imported/policia mas adelante.ogg-5123c3578ad2b8969de4f6bcfe935877.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

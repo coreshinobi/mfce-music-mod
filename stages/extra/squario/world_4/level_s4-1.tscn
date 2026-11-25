@@ -4,7 +4,7 @@
 [ext_resource type="AudioStream" uid="uid://crvta6brv8cka" path="res://music/extra/mf_flash/smb1_course_clear.ogg" id="2_7042c"]
 [ext_resource type="PackedScene" uid="uid://d3srfe2r6fg2u" path="res://engine/objects/core/music_loader/music_loader.tscn" id="3_lr8pb"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="4_615pj"]
-[ext_resource type="AudioStream" uid="uid://bdha3yeieb7y" path="res://music/extra/squario/mr_puddington.mod" id="5_ja7bc"]
+[ext_resource type="AudioStream" uid="uid://4hl0ofki05s4" path="res://music/side_a/marley jauz - underground (ultrabox).ogg" id="5_ja7bc"]
 [ext_resource type="AudioStream" uid="uid://cyrq625tllkaw" path="res://music/smb-underground.ogg" id="5_sxdpq"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="6_6rfsw"]
 [ext_resource type="AudioStream" uid="uid://do2m1kc1sidik" path="res://music/extra/mf_flash/smb1_player_down.ogg" id="7_mfmdi"]
@@ -88,12 +88,6 @@ region = Rect2(224, 16, 31, 32)
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_de5sm"]
 
-[sub_resource type="Resource" id="Resource_ja7bc"]
-resource_local_to_scene = true
-script = ExtResource("26_nyh8b")
-creation_nodepack = ExtResource("25_dfxcc")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_1qex7"]
 resource_local_to_scene = true
 script = ExtResource("26_nyh8b")
@@ -163,7 +157,7 @@ trans_inheritances = 7
 [sub_resource type="Resource" id="Resource_7xe4k"]
 resource_local_to_scene = true
 script = ExtResource("26_nyh8b")
-creation_nodepack = ExtResource("28_g0wr8")
+creation_nodepack = ExtResource("25_dfxcc")
 trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_soton"]
@@ -175,11 +169,17 @@ trans_inheritances = 7
 [sub_resource type="Resource" id="Resource_o6yds"]
 resource_local_to_scene = true
 script = ExtResource("26_nyh8b")
+creation_nodepack = ExtResource("28_g0wr8")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_vvn8q"]
+resource_local_to_scene = true
+script = ExtResource("26_nyh8b")
 creation_fallback_node = ExtResource("30_q1g5k")
 creation_nodepack = ExtResource("31_4sf1b")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_vvn8q"]
+[sub_resource type="Resource" id="Resource_e4ure"]
 resource_local_to_scene = true
 script = ExtResource("26_nyh8b")
 creation_fallback_node = ExtResource("30_q1g5k")
@@ -437,22 +437,22 @@ rotation = 3.14159
 [node name="Brick159" parent="." unique_id=1063433590 instance=ExtResource("24_6oa3s")]
 position = Vector2(592, 1264)
 max_items = 5
-result = SubResource("Resource_ja7bc")
+result = SubResource("Resource_1qex7")
 
 [node name="Brick160" parent="." unique_id=1840291118 instance=ExtResource("24_6oa3s")]
 position = Vector2(1200, 1264)
 max_items = 5
-result = SubResource("Resource_1qex7")
+result = SubResource("Resource_g6obn")
 
 [node name="Brick161" parent="." unique_id=252813283 instance=ExtResource("24_6oa3s")]
 position = Vector2(1520, 1168)
 max_items = 5
-result = SubResource("Resource_g6obn")
+result = SubResource("Resource_nqgf5")
 
 [node name="Brick162" parent="." unique_id=222050251 instance=ExtResource("24_6oa3s")]
 position = Vector2(1168, 1072)
 max_items = 5
-result = SubResource("Resource_nqgf5")
+result = SubResource("Resource_bncu3")
 
 [node name="Brick3" parent="." unique_id=878490032 instance=ExtResource("24_6oa3s")]
 position = Vector2(464, 1296)
@@ -570,57 +570,57 @@ position = Vector2(1520, 1072)
 
 [node name="QuestionBlock8" parent="." unique_id=89118882 instance=ExtResource("27_1ltsq")]
 position = Vector2(208, 1200)
-result = SubResource("Resource_bncu3")
+result = SubResource("Resource_grt5u")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock12" parent="." unique_id=1059711249 instance=ExtResource("27_1ltsq")]
 position = Vector2(464, 1264)
-result = SubResource("Resource_grt5u")
+result = SubResource("Resource_602hq")
 
 [node name="QuestionBlock14" parent="." unique_id=1541788355 instance=ExtResource("27_1ltsq")]
 position = Vector2(1680, 1168)
-result = SubResource("Resource_602hq")
+result = SubResource("Resource_j0od3")
 
 [node name="QuestionBlock15" parent="." unique_id=922791595 instance=ExtResource("27_1ltsq")]
 position = Vector2(1680, 1296)
-result = SubResource("Resource_j0od3")
+result = SubResource("Resource_t4dbe")
 
 [node name="QuestionBlock16" parent="." unique_id=1534768091 instance=ExtResource("27_1ltsq")]
 position = Vector2(2096, 1296)
-result = SubResource("Resource_t4dbe")
+result = SubResource("Resource_tw1m0")
 
 [node name="QuestionBlock17" parent="." unique_id=2011928179 instance=ExtResource("27_1ltsq")]
 position = Vector2(2096, 1168)
-result = SubResource("Resource_tw1m0")
+result = SubResource("Resource_pw5bi")
 
 [node name="QuestionBlock10" parent="." unique_id=246897586 instance=ExtResource("27_1ltsq")]
 position = Vector2(688, 1264)
-result = SubResource("Resource_pw5bi")
+result = SubResource("Resource_neyd5")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock11" parent="." unique_id=1604021383 instance=ExtResource("27_1ltsq")]
 position = Vector2(944, 1264)
-result = SubResource("Resource_neyd5")
+result = SubResource("Resource_7xe4k")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock9" parent="." unique_id=1489259742 instance=ExtResource("27_1ltsq")]
 position = Vector2(48, 1040)
-result = SubResource("Resource_7xe4k")
+result = SubResource("Resource_soton")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock13" parent="." unique_id=123911491 instance=ExtResource("27_1ltsq")]
 position = Vector2(944, 1104)
-result = SubResource("Resource_soton")
+result = SubResource("Resource_o6yds")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock4" parent="." unique_id=1543000169 instance=ExtResource("27_1ltsq")]
 position = Vector2(48, 1296)
-result = SubResource("Resource_o6yds")
+result = SubResource("Resource_vvn8q")
 initially_visible_and_solid = false
 
 [node name="QuestionBlock5" parent="." unique_id=435859595 instance=ExtResource("27_1ltsq")]
 position = Vector2(1136, 1360)
-result = SubResource("Resource_vvn8q")
+result = SubResource("Resource_e4ure")
 initially_visible_and_solid = false
 
 [node name="PiranhaPink" parent="." unique_id=421690586 instance=ExtResource("34_lcoas")]
@@ -639,7 +639,7 @@ rotation = 3.14159
 
 [node name="KoopaParatroopaRedVertical" parent="." unique_id=1620880386 instance=ExtResource("35_ljjj7")]
 position = Vector2(400, 1072)
-phase = 244.89702516569054
+phase = 244.89702516569056
 
 [node name="KoopaParatroopaGreenJumping" parent="." unique_id=1961112568 instance=ExtResource("36_dfmu4")]
 position = Vector2(624, 1360)
@@ -833,18 +833,18 @@ position = Vector2(1784, 1376)
 position = Vector2(1904, 1392)
 
 [connection signal="collided_wall" from="Layer2/Goomba" to="Layer2/Goomba" method="turn_x"]
-[connection signal="collided_wall" from="Layer2/@CharacterBody2D@146295" to="Layer2/@CharacterBody2D@146295" method="turn_x"]
+[connection signal="collided_wall" from="Layer2/@CharacterBody2D@28997" to="Layer2/@CharacterBody2D@28997" method="turn_x"]
 [connection signal="collided_wall" from="Layer2/SpinyRed" to="Layer2/SpinyRed" method="turn_x"]
-[connection signal="collided_wall" from="Layer2/@CharacterBody2D@146296" to="Layer2/@CharacterBody2D@146296" method="turn_x"]
-[connection signal="collided_wall" from="Layer2/@CharacterBody2D@146297" to="Layer2/@CharacterBody2D@146297" method="turn_x"]
-[connection signal="collided_wall" from="Layer2/@CharacterBody2D@146298" to="Layer2/@CharacterBody2D@146298" method="turn_x"]
-[connection signal="collided_wall" from="Layer2/@CharacterBody2D@146299" to="Layer2/@CharacterBody2D@146299" method="turn_x"]
-[connection signal="collided_wall" from="Layer2/@CharacterBody2D@146300" to="Layer2/@CharacterBody2D@146300" method="turn_x"]
-[connection signal="collided_wall" from="Layer2/@CharacterBody2D@146301" to="Layer2/@CharacterBody2D@146301" method="turn_x"]
-[connection signal="collided_wall" from="Layer2/@CharacterBody2D@146302" to="Layer2/@CharacterBody2D@146302" method="turn_x"]
-[connection signal="collided_wall" from="Layer2/@CharacterBody2D@146303" to="Layer2/@CharacterBody2D@146303" method="turn_x"]
-[connection signal="collided_wall" from="Layer2/@CharacterBody2D@146304" to="Layer2/@CharacterBody2D@146304" method="turn_x"]
-[connection signal="collided_wall" from="Layer2/@CharacterBody2D@146305" to="Layer2/@CharacterBody2D@146305" method="turn_x"]
-[connection signal="collided_wall" from="Layer2/@CharacterBody2D@146306" to="Layer2/@CharacterBody2D@146306" method="turn_x"]
-[connection signal="collided_wall" from="Layer2/@CharacterBody2D@146307" to="Layer2/@CharacterBody2D@146307" method="turn_x"]
-[connection signal="collided_wall" from="Layer2/@CharacterBody2D@146308" to="Layer2/@CharacterBody2D@146308" method="turn_x"]
+[connection signal="collided_wall" from="Layer2/@CharacterBody2D@28998" to="Layer2/@CharacterBody2D@28998" method="turn_x"]
+[connection signal="collided_wall" from="Layer2/@CharacterBody2D@28999" to="Layer2/@CharacterBody2D@28999" method="turn_x"]
+[connection signal="collided_wall" from="Layer2/@CharacterBody2D@29000" to="Layer2/@CharacterBody2D@29000" method="turn_x"]
+[connection signal="collided_wall" from="Layer2/@CharacterBody2D@29001" to="Layer2/@CharacterBody2D@29001" method="turn_x"]
+[connection signal="collided_wall" from="Layer2/@CharacterBody2D@29002" to="Layer2/@CharacterBody2D@29002" method="turn_x"]
+[connection signal="collided_wall" from="Layer2/@CharacterBody2D@29003" to="Layer2/@CharacterBody2D@29003" method="turn_x"]
+[connection signal="collided_wall" from="Layer2/@CharacterBody2D@29004" to="Layer2/@CharacterBody2D@29004" method="turn_x"]
+[connection signal="collided_wall" from="Layer2/@CharacterBody2D@29005" to="Layer2/@CharacterBody2D@29005" method="turn_x"]
+[connection signal="collided_wall" from="Layer2/@CharacterBody2D@29006" to="Layer2/@CharacterBody2D@29006" method="turn_x"]
+[connection signal="collided_wall" from="Layer2/@CharacterBody2D@29007" to="Layer2/@CharacterBody2D@29007" method="turn_x"]
+[connection signal="collided_wall" from="Layer2/@CharacterBody2D@29008" to="Layer2/@CharacterBody2D@29008" method="turn_x"]
+[connection signal="collided_wall" from="Layer2/@CharacterBody2D@29009" to="Layer2/@CharacterBody2D@29009" method="turn_x"]
+[connection signal="collided_wall" from="Layer2/@CharacterBody2D@29010" to="Layer2/@CharacterBody2D@29010" method="turn_x"]
