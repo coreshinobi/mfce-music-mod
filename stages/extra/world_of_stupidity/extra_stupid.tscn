@@ -10,6 +10,7 @@
 [ext_resource type="AudioStream" uid="uid://d0w7hmj1dnot0" path="res://music/newermod/maf 464 - moondust.mod" id="6_ks3gt"]
 [ext_resource type="AudioStream" uid="uid://bx7daf218qf1s" path="res://music/side_a/maF 464 - Virtual Mouton (Cut).xm" id="6_po6oc"]
 [ext_resource type="Script" uid="uid://cugmax5psc2oo" path="res://engine/objects/players/player_camera_2d.gd" id="7_2alqd"]
+[ext_resource type="AudioStream" uid="uid://diior6lp1sfuq" path="res://music/side_b/mosez - superunknown.mod" id="7_57s0f"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="8_jvful"]
 [ext_resource type="AudioStream" uid="uid://cusrgc7jqf7qy" path="res://music/extra/expert_mode/short-die.ogg" id="9_0s3s3"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="11_f7rj8"]
@@ -40,6 +41,7 @@
 [ext_resource type="AudioStream" uid="uid://dif7pckjdmili" path="res://objects/chorniy_mario/death_sounds/cs/amatsuki_fishies.ogg" id="37_po6oc"]
 [ext_resource type="AudioStream" uid="uid://x47meb0gwsdw" path="res://objects/chorniy_mario/death_sounds/cs/amatsuki_bankaccount.ogg" id="38_57s0f"]
 [ext_resource type="AudioStream" uid="uid://56pnwb6lq163" path="res://objects/chorniy_mario/death_sounds/cs/amatsuki_noattend.ogg" id="39_mxyfi"]
+[ext_resource type="PackedScene" uid="uid://b6ulux7lueoko" path="res://objects/human_lab_at_home/genocide_jack_doppelganger/genocide_jack_doppelganger.tscn" id="42_mxyfi"]
 
 [sub_resource type="FontVariation" id="FontVariation_okntd"]
 base_font = ExtResource("16_jvful")
@@ -55,12 +57,6 @@ colors = PackedColorArray(0.490196, 0.619608, 0.752941, 1, 0.94902, 0.992157, 0.
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_2ncfm"]
 gradient = SubResource("Gradient_33x6y")
 fill_to = Vector2(0, 1)
-
-[sub_resource type="Resource" id="Resource_57s0f"]
-resource_local_to_scene = true
-script = ExtResource("33_7qhns")
-creation_nodepack = ExtResource("32_6jv06")
-trans_inheritances = 7
 
 [sub_resource type="Resource" id="Resource_mxyfi"]
 resource_local_to_scene = true
@@ -122,6 +118,12 @@ script = ExtResource("33_7qhns")
 creation_nodepack = ExtResource("32_6jv06")
 trans_inheritances = 7
 
+[sub_resource type="Resource" id="Resource_hxg37"]
+resource_local_to_scene = true
+script = ExtResource("33_7qhns")
+creation_nodepack = ExtResource("32_6jv06")
+trans_inheritances = 7
+
 [node name="Level" type="Node2D" unique_id=2083640226]
 script = ExtResource("1_x5g7s")
 time = -1
@@ -133,7 +135,7 @@ script = ExtResource("4_3cpbb")
 tweaked_completion_music = ExtResource("5_maqcs")
 ignore_fade_in_tweak = false
 music_var_1 = Array[Resource]([ExtResource("6_po6oc")])
-music_var_2 = Array[Resource]([])
+music_var_2 = Array[Resource]([ExtResource("7_57s0f")])
 music_var_3 = Array[Resource]([])
 var_1_volume_db = Array[float]([5.5])
 var_1_start_from_sec = Array[float]([0.0])
@@ -540,54 +542,51 @@ position = Vector2(1898, 184)
 [node name="KoopaBro" parent="." unique_id=1360507668 instance=ExtResource("30_ks3gt")]
 position = Vector2(2160, 400)
 
-[node name="KoopaBro2" parent="." unique_id=1183139489 instance=ExtResource("30_ks3gt")]
-position = Vector2(2736, 400)
-
 [node name="QuestionBlockPoisonous" parent="." unique_id=1077108751 instance=ExtResource("31_672el")]
 position = Vector2(2256, 272)
-result = SubResource("Resource_57s0f")
+result = SubResource("Resource_mxyfi")
 initially_visible_and_solid = false
 
 [node name="QuestionBlockPoisonous2" parent="." unique_id=1716704158 instance=ExtResource("31_672el")]
 position = Vector2(2608, 272)
-result = SubResource("Resource_mxyfi")
+result = SubResource("Resource_v3pjh")
 initially_visible_and_solid = false
 
 [node name="QuestionBlockPoisonous3" parent="." unique_id=1660288025 instance=ExtResource("31_672el")]
 position = Vector2(2800, 272)
-result = SubResource("Resource_v3pjh")
+result = SubResource("Resource_l0mlq")
 
 [node name="QuestionBlockPoisonous4" parent="." unique_id=2052252208 instance=ExtResource("31_672el")]
 position = Vector2(2864, 272)
-result = SubResource("Resource_l0mlq")
+result = SubResource("Resource_806ny")
 
 [node name="QuestionBlockPoisonous5" parent="." unique_id=499109460 instance=ExtResource("31_672el")]
 position = Vector2(2832, 144)
-result = SubResource("Resource_806ny")
+result = SubResource("Resource_dvylo")
 
 [node name="QuestionBlockPoisonous6" parent="." unique_id=985926559 instance=ExtResource("31_672el")]
 position = Vector2(2864, 144)
-result = SubResource("Resource_dvylo")
+result = SubResource("Resource_lc8n4")
 
 [node name="QuestionBlockPoisonous7" parent="." unique_id=1595343013 instance=ExtResource("31_672el")]
 position = Vector2(2896, 144)
-result = SubResource("Resource_lc8n4")
+result = SubResource("Resource_02hij")
 
 [node name="QuestionBlockPoisonous8" parent="." unique_id=537171677 instance=ExtResource("31_672el")]
 position = Vector2(2960, 48)
-result = SubResource("Resource_02hij")
+result = SubResource("Resource_qrfnp")
 
 [node name="QuestionBlockPoisonous9" parent="." unique_id=109312049 instance=ExtResource("31_672el")]
 position = Vector2(2992, 16)
-result = SubResource("Resource_qrfnp")
+result = SubResource("Resource_pwoqo")
 
 [node name="QuestionBlockPoisonous10" parent="." unique_id=385579805 instance=ExtResource("31_672el")]
 position = Vector2(2960, 112)
-result = SubResource("Resource_pwoqo")
+result = SubResource("Resource_gpcn0")
 
 [node name="QuestionBlockPoisonous11" parent="." unique_id=1217560959 instance=ExtResource("31_672el")]
 position = Vector2(2992, 176)
-result = SubResource("Resource_gpcn0")
+result = SubResource("Resource_hxg37")
 
 [node name="FallingQBlock14" parent="." unique_id=1012752737 instance=ExtResource("28_maqcs")]
 position = Vector2(2352, -16)
@@ -730,3 +729,6 @@ position = Vector2(5007, 57)
 [node name="Checkpoint" parent="." unique_id=1170161289 instance=ExtResource("36_ka31u")]
 position = Vector2(5440, 352)
 voice_lines = Array[AudioStream]([ExtResource("37_po6oc"), ExtResource("38_57s0f"), ExtResource("39_mxyfi")])
+
+[node name="GenocideJackDoppelganger" parent="." unique_id=105640848 instance=ExtResource("42_mxyfi")]
+position = Vector2(2736, 384)

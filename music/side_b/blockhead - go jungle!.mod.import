@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://dhy3xjpqxdjr6"
+path="res://.godot/imported/blockhead - go jungle!.mod-4fcc6f96f9e7d3418ad5064d2cbe3572.res"
+
+[deps]
+
+source_file="res://music/side_b/blockhead - go jungle!.mod"
+dest_files=["res://.godot/imported/blockhead - go jungle!.mod-4fcc6f96f9e7d3418ad5064d2cbe3572.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

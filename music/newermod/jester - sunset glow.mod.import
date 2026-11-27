@@ -3,12 +3,12 @@
 importer="dudejoe870.openmptimporter"
 type="AudioStreamMPT"
 uid="uid://w2kkhfc42hrn"
-path="res://.godot/imported/4-3.mod-754d479ca8a95deb91d8643a4f87a510.res"
+path="res://.godot/imported/jester - sunset glow.mod-1b894762bf4809258154a0f83aec6969.res"
 
 [deps]
 
-source_file="res://music/newermod/4-3.mod"
-dest_files=["res://.godot/imported/4-3.mod-754d479ca8a95deb91d8643a4f87a510.res"]
+source_file="res://music/newermod/jester - sunset glow.mod"
+dest_files=["res://.godot/imported/jester - sunset glow.mod-1b894762bf4809258154a0f83aec6969.res"]
 
 [params]
 

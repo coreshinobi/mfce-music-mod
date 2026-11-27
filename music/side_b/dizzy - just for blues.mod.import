@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://cff7kj0shxnar"
+path="res://.godot/imported/dizzy - just for blues.mod-1e6659a7e3101da4e27731b72e2187ea.res"
+
+[deps]
+
+source_file="res://music/side_b/dizzy - just for blues.mod"
+dest_files=["res://.godot/imported/dizzy - just for blues.mod-1e6659a7e3101da4e27731b72e2187ea.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

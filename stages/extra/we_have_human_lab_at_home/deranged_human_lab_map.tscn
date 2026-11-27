@@ -5,7 +5,7 @@
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_72twv"]
 [ext_resource type="AudioStream" uid="uid://c7matagtmeja5" path="res://music/complete_tweaked.ogg" id="4_vnwaw"]
 [ext_resource type="AudioStream" uid="uid://du37kpdt27fub" path="res://music/side_a/retrokidknuckles - acid crash.ogg" id="5_mrreh"]
-[ext_resource type="AudioStream" uid="uid://d2mmjl2y6qitm" path="res://music/side_b/Strobo - Bullshit.mod" id="6_0x1gv"]
+[ext_resource type="AudioStream" uid="uid://dmaxbjifi6ies" path="res://music/side_b/slide - ultimate seduction 3.mod" id="6_my5g0"]
 [ext_resource type="AudioStream" uid="uid://dmindwy8cywel" path="res://music/newermod/spaceman - trabalash.mod" id="7_my5g0"]
 [ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="8_qve02"]
 [ext_resource type="Texture2D" uid="uid://usm6n80msr7n" path="res://engine/scenes/map/textures/bg.png" id="9_y1qis"]
@@ -52,11 +52,11 @@ script = ExtResource("3_72twv")
 tweaked_completion_music = ExtResource("4_vnwaw")
 ignore_fade_in_tweak = false
 music_var_1 = Array[Resource]([ExtResource("5_mrreh")])
-music_var_2 = Array[Resource]([ExtResource("6_0x1gv")])
+music_var_2 = Array[Resource]([ExtResource("6_my5g0")])
 music_var_3 = Array[Resource]([])
 var_1_volume_db = Array[float]([0.8])
 var_1_start_from_sec = Array[float]([0.0])
-var_2_volume_db = Array[float]([0.0])
+var_2_volume_db = Array[float]([2.1])
 var_2_start_from_sec = Array[float]([1.6])
 var_3_volume_db = Array[float]([0.0])
 var_3_start_from_sec = Array[float]([0.0])

@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://h806s82bp4sq"
+path="res://.godot/imported/LHS & Elrico - Elrico VS LHS.xm-eac615be02b76e2bda4d4bb40d92a1fd.res"
+
+[deps]
+
+source_file="res://music/side_b/LHS & Elrico - Elrico VS LHS.xm"
+dest_files=["res://.godot/imported/LHS & Elrico - Elrico VS LHS.xm-eac615be02b76e2bda4d4bb40d92a1fd.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

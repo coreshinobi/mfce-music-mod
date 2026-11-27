@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://dmaxbjifi6ies"
+path="res://.godot/imported/slide - ultimate seduction 3.mod-a4792bf3369f67d358b535a3c5a308d3.res"
+
+[deps]
+
+source_file="res://music/side_b/slide - ultimate seduction 3.mod"
+dest_files=["res://.godot/imported/slide - ultimate seduction 3.mod-a4792bf3369f67d358b535a3c5a308d3.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

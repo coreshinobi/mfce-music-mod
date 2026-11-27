@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://diior6lp1sfuq"
+path="res://.godot/imported/mosez - superunknown.mod-de187182207f134751da4be501f2cb98.res"
+
+[deps]
+
+source_file="res://music/side_b/mosez - superunknown.mod"
+dest_files=["res://.godot/imported/mosez - superunknown.mod-de187182207f134751da4be501f2cb98.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

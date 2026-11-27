@@ -6,8 +6,10 @@
 [ext_resource type="AudioStream" uid="uid://dprnlfl0uylkt" path="res://music/side_a/Battletoads & Double Dragon - Roper.ogg" id="4_2lqlv"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="4_p0ll4"]
 [ext_resource type="AudioStream" uid="uid://dqy48h5qo343n" path="res://music/side_a/Azumanga Daioh - Genki...ya de.ogg" id="5_gaujv"]
+[ext_resource type="AudioStream" uid="uid://bni7g3qyvbd88" path="res://music/side_b/Super Mario Bros 3 - Underwater (Hardcore Edit).it" id="6_gaujv"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="6_k14ad"]
 [ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="6_nmmfv"]
+[ext_resource type="AudioStream" uid="uid://86jvi3o36lhg" path="res://music/side_b/CoreSHINOBI @ Zetsuboukai - lonewind.mod" id="7_2kf4y"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="7_id3b8"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="7_k5rv5"]
 [ext_resource type="AudioStream" uid="uid://k1uw0ka6y13g" path="res://music/newermod/dj mayhem - let me tell you something.ogg" id="7_msora"]
@@ -117,14 +119,14 @@ gradient = SubResource("Gradient_cfp1v")
 height = 16
 fill_to = Vector2(0, 1)
 
-[sub_resource type="Resource" id="Resource_2kf4y"]
+[sub_resource type="Resource" id="Resource_g60sq"]
 resource_local_to_scene = true
 script = ExtResource("23_46wvn")
 creation_fallback_node = ExtResource("21_togic")
 creation_nodepack = ExtResource("22_3xo1v")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_g60sq"]
+[sub_resource type="Resource" id="Resource_jfuhp"]
 resource_local_to_scene = true
 script = ExtResource("23_46wvn")
 creation_nodepack = ExtResource("51_nmmfv")
@@ -139,7 +141,8 @@ completion_music_delay_sec = 4.18
 [node name="MusicLoader" type="Node" parent="." unique_id=705412251]
 script = ExtResource("3_hi7ol")
 music_var_1 = Array[Resource]([ExtResource("4_2lqlv"), ExtResource("5_gaujv")])
-var_2_volume_db = Array[float]([0.0, 4.0])
+music_var_2 = Array[Resource]([ExtResource("6_gaujv"), ExtResource("7_2kf4y")])
+var_2_volume_db = Array[float]([13.3, 4.9])
 var_3_volume_db = Array[float]([0.0, 4.0])
 music = Array[Resource]([ExtResource("7_msora"), ExtResource("8_bc3dy")])
 volume_db = Array[float]([0.0, 4.0])
@@ -601,7 +604,7 @@ position = Vector2(1296, 208)
 [node name="QuestionBlockFireFlower" parent="." unique_id=1172674307 instance=ExtResource("20_uga5i")]
 position = Vector2(464, 336)
 disable_mode = 0
-result = SubResource("Resource_2kf4y")
+result = SubResource("Resource_g60sq")
 
 [node name="CheepBlue" parent="." unique_id=1181613168 instance=ExtResource("31_mffwr")]
 position = Vector2(5200, 192)
@@ -793,7 +796,7 @@ position = Vector2(4432, -816)
 
 [node name="QuestionBlockLife" parent="HarderDesignNode" unique_id=1181572690 instance=ExtResource("50_cvtfh")]
 position = Vector2(3888, -848)
-result = SubResource("Resource_g60sq")
+result = SubResource("Resource_jfuhp")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="HarderDesignNode" unique_id=100528696]
 tile_map_data = PackedByteArray("AADKAPD/AAACAAIAAADKAO//AAACAAEAAADKAO7/AAACAAAAAADJAPD/AAABAAIAAADJAO//AAABAAEAAADJAO7/AAABAAAAAADIAPD/AAABAAIAAADIAO//AAABAAEAAADIAO7/AAABAAAAAADHAPD/AAABAAIAAADHAO//AAABAAEAAADHAO7/AAABAAAAAADGAPD/AAABAAIAAADGAO//AAABAAEAAADGAO7/AAABAAAAAADFAPD/AAABAAIAAADFAO//AAABAAEAAADFAO7/AAABAAAAAADEAPD/AAAAAAIAAADEAO//AAAAAAEAAADEAO7/AAAAAAAAAAC9APD/AAACAAIAAAC9AO//AAACAAEAAAC9AO7/AAACAAAAAAC8APD/AAABAAIAAAC8AO//AAABAAEAAAC8AO7/AAABAAAAAAC7APD/AAABAAIAAAC7AO//AAABAAEAAAC7AO7/AAABAAAAAAC6APD/AAABAAIAAAC6AO//AAABAAEAAAC6AO7/AAABAAAAAAC5APD/AAABAAIAAAC5AO//AAABAAEAAAC5AO7/AAABAAAAAAC4APD/AAABAAIAAAC4AO//AAABAAEAAAC4AO7/AAABAAAAAAC3APD/AAAAAAIAAAC3AO//AAAAAAEAAAC3AO7/AAAAAAAAAACyAOv/AQAAAAAAAACxAOv/AQAAAAAAAACsAOn/AQAAAAAAAACrAOn/AQAAAAAAAAC8AO3/AgAAAAAAAQC6AO3/AgAAAAAAAQDHAO3/AgAAAAAAAQCmAOf/AQAAAAAAAAClAOf/AQAAAAAAAACgAOn/AQAAAAAAAACfAOn/AQAAAAAAAACaAOr/AQAAAAAAAACZAOr/AQAAAAAAAACSAOr/AQAAAAAAAACRAOr/AQAAAAAAAACLAOr/AQAAAAAAAACLAOv/AQAAAAAAAACLAOz/AQAAAAAAAACLAO3/AQAAAAAAAACLAO7/AQAAAAAAAACLAO//AQAAAAAAAACLAPD/AQAAAAAAAACKAOr/AQAAAAAAAACJAOr/AQAAAAAAAACIAOr/AQAAAAAAAACHAOr/AQAAAAAAAACGAOr/AQAAAAAAAACFAOr/AQAAAAAAAACEAOr/AQAAAAAAAACDAOr/AQAAAAAAAACCAOr/AQAAAAAAAACBAOr/AQAAAAAAAACAAOr/AQAAAAAAAAB/AOr/AQAAAAAAAAB+AOr/AQAAAAAAAAB9AOr/AQAAAAAAAAB9AOn/AQAAAAAAAAB9AOj/AQAAAAAAAAB8AOn/AQAAAAAAAAB8AOr/AQAAAAAAAAB7AOr/AQAAAAAAAAB6AOr/AQAAAAAAAAB4AOr/AQAAAAAAAAB3AOr/AQAAAAAAAAB2AOn/AQAAAAAAAAB1AOn/AQAAAAAAAAB1AOj/AQAAAAAAAAB1AOr/AQAAAAAAAAB1AOv/AQAAAAAAAAB1AOz/AQAAAAAAAAB1AO3/AQAAAAAAAAB1AO7/AQAAAAAAAAB1AO//AQAAAAAAAAB1APD/AQAAAAAAAAB2AOr/AQAAAAAAAAB5AOr/AQAAAAAAAABwAOj/AgAAAAAAAgB9AOP/AgAAAAAAAgB0AOL/AgAAAAAAAgCNAOz/AgAAAAAAAgCSAOL/AgAAAAAAAgCXAOf/AgAAAAAAAgCgAOP/AgAAAAAAAgCpAOb/AgAAAAAAAgClAOz/AgAAAAAAAgCGAOb/AgAAAAAAAgC0AOX/AgAAAAAAAgC7AOH/AgAAAAAAAgC/AOf/AgAAAAAAAgC1AO//AgAAAAAACwDCAO//AgAAAAAABAA=")

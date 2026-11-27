@@ -14,8 +14,10 @@
 [ext_resource type="AudioStream" uid="uid://dkbnp75ytpxb" path="res://music/newermod/the vessel - mus_wilting_man.ogg" id="6_q1lqq"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="6_vufed"]
 [ext_resource type="Script" uid="uid://dukosa3hw8lff" path="res://stages/save_game_room/scripts/restore_tweaks_from_minix.gd" id="7_1qauj"]
+[ext_resource type="AudioStream" uid="uid://cqk2vho8upeh5" path="res://music/side_b/revisq - abyss final.mod" id="8_nhn85"]
 [ext_resource type="PackedScene" uid="uid://ugxjxrdao5el" path="res://engine/components/hud/hud.tscn" id="9_6jkwo"]
 [ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="9_kraha"]
+[ext_resource type="AudioStream" uid="uid://bpv1vcugvwa2f" path="res://music/side_b/Penumbra - Run!.ogg" id="9_ywkxl"]
 [ext_resource type="Script" uid="uid://dobty8cwhobcy" path="res://stages/save_game_room/scripts/custom_progress_continue_screen.gd" id="10_82cq3"]
 [ext_resource type="Script" uid="uid://clm1anrf3fw3j" path="res://engine/scripts/nodes/general_movement/circle_movement.gd" id="10_cgryk"]
 [ext_resource type="Texture2D" uid="uid://6bwpp568bmq0" path="res://gfx/fancy_graphics/giant_clouds.png" id="10_g7r8l"]
@@ -1176,14 +1178,14 @@ load_path = "res://.godot/imported/cp_star.png-8aad299551c69fcc1fb6b6d3d28cbf85.
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b4vmn"]
 size = Vector2(32, 32)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_lvqia"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_n7ayv"]
 resource_local_to_scene = true
 shader = ExtResource("142_a6k2i")
 shader_parameter/hue = 0.12
 shader_parameter/saturation = 0.0
 shader_parameter/value = 0.0
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_nhn85"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_k0nct"]
 resource_local_to_scene = true
 shader = ExtResource("142_a6k2i")
 shader_parameter/hue = 0.12
@@ -1340,11 +1342,11 @@ script = ExtResource("4_5mqnl")
 tweaked_completion_music = ExtResource("5_5w725")
 ignore_fade_in_tweak = true
 music_var_1 = Array[Resource]([ExtResource("5_q1lqq"), ExtResource("6_q1lqq")])
-music_var_2 = Array[Resource]([])
+music_var_2 = Array[Resource]([ExtResource("8_nhn85"), ExtResource("9_ywkxl")])
 music_var_3 = Array[Resource]([])
 var_1_volume_db = Array[float]([0.0, 0.3])
 var_1_start_from_sec = Array[float]([0.0])
-var_2_volume_db = Array[float]([0.0])
+var_2_volume_db = Array[float]([4.5, 0.0])
 var_2_start_from_sec = Array[float]([0.0])
 var_3_volume_db = Array[float]([0.0])
 var_3_start_from_sec = Array[float]([0.0])
@@ -4359,8 +4361,8 @@ scroll_active = false
 shortcut_keys_enabled = false
 horizontal_alignment = 1
 script = ExtResource("78_yjld5")
-keyboard_as_button = true
 uppercase = true
+keyboard_as_button = true
 metadata/_custom_type_script = "uid://b3j5nkqkpkikr"
 
 [node name="Unlock" type="RichTextLabel" parent="CanvasLayer/Reset/VBoxContainer" unique_id=811560856]
@@ -4380,8 +4382,8 @@ scroll_active = false
 shortcut_keys_enabled = false
 horizontal_alignment = 1
 script = ExtResource("78_yjld5")
-keyboard_as_button = true
 uppercase = true
+keyboard_as_button = true
 metadata/_custom_type_script = "uid://b3j5nkqkpkikr"
 
 [node name="Unlock2" type="RichTextLabel" parent="CanvasLayer/Reset/VBoxContainer" unique_id=1133359553]
@@ -4401,8 +4403,8 @@ scroll_active = false
 shortcut_keys_enabled = false
 horizontal_alignment = 1
 script = ExtResource("79_ntcy7")
-keyboard_as_button = true
 uppercase = true
+keyboard_as_button = true
 metadata/_custom_type_script = "uid://b3j5nkqkpkikr"
 
 [node name="Secrets" type="Label" parent="CanvasLayer/Reset/VBoxContainer" unique_id=1996004996]
@@ -4472,8 +4474,8 @@ scroll_active = false
 shortcut_keys_enabled = false
 horizontal_alignment = 1
 script = ExtResource("78_yjld5")
-keyboard_as_button = true
 uppercase = true
+keyboard_as_button = true
 metadata/_custom_type_script = "uid://b3j5nkqkpkikr"
 
 [node name="Unlock2" type="RichTextLabel" parent="CanvasLayer/Reset2/VBoxContainer" unique_id=1314156320]
@@ -4493,8 +4495,8 @@ scroll_active = false
 shortcut_keys_enabled = false
 horizontal_alignment = 1
 script = ExtResource("79_ntcy7")
-keyboard_as_button = true
 uppercase = true
+keyboard_as_button = true
 metadata/_custom_type_script = "uid://b3j5nkqkpkikr"
 
 [node name="Secrets" type="Label" parent="CanvasLayer/Reset2/VBoxContainer" unique_id=1863107069]
@@ -5870,7 +5872,7 @@ font_size = 16
 box_size = Vector2(0, 0)
 
 [node name="AnimatedSprite2D" parent="MessageBlockPlaceholder/Sprites" parent_id_path=PackedInt32Array(716242457, 294550689) index="1" unique_id=1604913855]
-material = SubResource("ShaderMaterial_lvqia")
+material = SubResource("ShaderMaterial_n7ayv")
 
 [node name="Texture" parent="MessageBlockPlaceholder/CanvasLayer/Box" parent_id_path=PackedInt32Array(716242457, 1618357154) index="0" unique_id=1552683647]
 offset_left = -160.0
@@ -5890,7 +5892,7 @@ font_size = 16
 box_size = Vector2(0, 0)
 
 [node name="AnimatedSprite2D" parent="MessageBlock2/Sprites" parent_id_path=PackedInt32Array(851353606, 294550689) index="1" unique_id=1604913855]
-material = SubResource("ShaderMaterial_nhn85")
+material = SubResource("ShaderMaterial_k0nct")
 
 [node name="Texture" parent="MessageBlock2/CanvasLayer/Box" parent_id_path=PackedInt32Array(851353606, 1618357154) index="0" unique_id=1552683647]
 offset_left = -232.0
@@ -5985,8 +5987,8 @@ scroll_active = false
 shortcut_keys_enabled = false
 horizontal_alignment = 1
 script = ExtResource("88_ctl7w")
-keyboard_as_button = true
 uppercase = true
+keyboard_as_button = true
 metadata/_custom_type_script = "uid://b3j5nkqkpkikr"
 
 [node name="Label" type="Label" parent="Scenery" unique_id=1156180588]

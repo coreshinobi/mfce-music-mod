@@ -4,6 +4,8 @@
 [ext_resource type="AudioStream" uid="uid://cd2244a0fmxls" path="res://music/newermod/Azumanga Daioh Eye Catch 1.ogg" id="2_ne3i7"]
 [ext_resource type="Script" uid="uid://diwj4k540d7j" path="res://objects/music_loader_custom/music_loader_custom.gd" id="3_bos4p"]
 [ext_resource type="AudioStream" uid="uid://c5cvxuqqjc2m2" path="res://music/newermod/norfair - imaginary date.xm" id="4_as2hk"]
+[ext_resource type="AudioStream" uid="uid://c3i5o4pdsvf4s" path="res://music/newermod/Andreas Viklund - Exquisite [TSEC].xm" id="4_hglsh"]
+[ext_resource type="AudioStream" uid="uid://dbrkjgqtc17ln" path="res://music/newermod/Toby Fox - Inukuma.ogg" id="5_nquir"]
 [ext_resource type="AudioStream" uid="uid://7gmmnwlf41xh" path="res://music/newermod/maf 464 - super moutons v1.2.xm" id="5_uyq1v"]
 [ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="6_ne3i7"]
 [ext_resource type="PackedScene" uid="uid://cat0b6208nfnh" path="res://components/secrets_manager/secret_unlocker.tscn" id="7_ugop1"]
@@ -694,12 +696,6 @@ fill_from = Vector2(1, 0)
 fill_to = Vector2(1, 1)
 metadata/_snap_enabled = true
 
-[sub_resource type="Resource" id="Resource_hglsh"]
-resource_local_to_scene = true
-script = ExtResource("26_pxemf")
-creation_nodepack = ExtResource("25_pa0gk")
-trans_inheritances = 7
-
 [sub_resource type="Resource" id="Resource_nquir"]
 resource_local_to_scene = true
 script = ExtResource("26_pxemf")
@@ -709,11 +705,17 @@ trans_inheritances = 7
 [sub_resource type="Resource" id="Resource_pb7v3"]
 resource_local_to_scene = true
 script = ExtResource("26_pxemf")
+creation_nodepack = ExtResource("25_pa0gk")
+trans_inheritances = 7
+
+[sub_resource type="Resource" id="Resource_ho0sk"]
+resource_local_to_scene = true
+script = ExtResource("26_pxemf")
 creation_fallback_node = ExtResource("22_w2lkt")
 creation_nodepack = ExtResource("30_fjydl")
 trans_inheritances = 7
 
-[sub_resource type="Resource" id="Resource_ho0sk"]
+[sub_resource type="Resource" id="Resource_uu1q6"]
 resource_local_to_scene = true
 script = ExtResource("26_pxemf")
 creation_fallback_node = ExtResource("22_w2lkt")
@@ -731,7 +733,8 @@ lighting_force_hide_on_start = false
 [node name="MusicLoader" type="Node" parent="." unique_id=1065457162]
 script = ExtResource("3_bos4p")
 tweaked_completion_music = ExtResource("2_ne3i7")
-var_2_volume_db = Array[float]([4.0])
+music_var_2 = Array[Resource]([ExtResource("4_hglsh"), ExtResource("5_nquir")])
+var_2_volume_db = Array[float]([0.5, 0.0])
 music = Array[Resource]([ExtResource("4_as2hk"), ExtResource("5_uyq1v")])
 volume_db = Array[float]([0.6, 1.2])
 
@@ -1141,11 +1144,11 @@ position = Vector2(2000, 336)
 
 [node name="QuestionBlockLife" parent="Objects/Bonus" unique_id=92277504 instance=ExtResource("24_spxip")]
 position = Vector2(1200, 272)
-result = SubResource("Resource_hglsh")
+result = SubResource("Resource_nquir")
 
 [node name="QuestionBlockLife2" parent="Objects/Bonus" unique_id=949373382 instance=ExtResource("24_spxip")]
 position = Vector2(1232, 272)
-result = SubResource("Resource_nquir")
+result = SubResource("Resource_pb7v3")
 
 [node name="Coin" parent="Objects/Bonus" unique_id=2045478213 instance=ExtResource("27_8walt")]
 position = Vector2(1424, 16)
@@ -1365,11 +1368,11 @@ position = Vector2(4400, 80)
 
 [node name="QuestionBlockBeetroot" parent="Objects/Bonus" unique_id=534152066 instance=ExtResource("29_2bjwj")]
 position = Vector2(4368, 80)
-result = SubResource("Resource_pb7v3")
+result = SubResource("Resource_ho0sk")
 
 [node name="QuestionBlockBeetroot2" parent="Objects/Bonus" unique_id=830722801 instance=ExtResource("29_2bjwj")]
 position = Vector2(5072, 80)
-result = SubResource("Resource_ho0sk")
+result = SubResource("Resource_uu1q6")
 
 [node name="Enemies" type="Node2D" parent="Objects" unique_id=1161233027]
 

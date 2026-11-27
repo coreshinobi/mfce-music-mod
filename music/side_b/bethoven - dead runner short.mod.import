@@ -1,0 +1,20 @@
+[remap]
+
+importer="dudejoe870.openmptimporter"
+type="AudioStreamMPT"
+uid="uid://bfr5yyephijbn"
+path="res://.godot/imported/bethoven - dead runner short.mod-fcf6706b6b95780f5e3d93b6f15593e9.res"
+
+[deps]
+
+source_file="res://music/side_b/bethoven - dead runner short.mod"
+dest_files=["res://.godot/imported/bethoven - dead runner short.mod-fcf6706b6b95780f5e3d93b6f15593e9.res"]
+
+[params]
+
+force/mono=false
+playback/loop_mode=1
+playback/interpolation=2
+playback/emulate_amiga_filter=0
+load/skip_plugins=false
+load/skip_subsongs_init=false

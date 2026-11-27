@@ -11,7 +11,7 @@
 [ext_resource type="AudioStream" uid="uid://bs3643afoy1oj" path="res://music/side_b/king meteor studios - wacky workbench P mix US.ogg" id="7_wi0cy"]
 [ext_resource type="PackedScene" uid="uid://1do11cr84k7y" path="res://engine/objects/players/player.tscn" id="8_2hk6d"]
 [ext_resource type="AudioStream" uid="uid://dsbo3s5e2sxdn" path="res://music/newermod/toal nkor - forest dream.mod" id="8_h6oxr"]
-[ext_resource type="AudioStream" uid="uid://w2kkhfc42hrn" path="res://music/newermod/4-3.mod" id="8_wi0cy"]
+[ext_resource type="AudioStream" uid="uid://w2kkhfc42hrn" path="res://music/newermod/jester - sunset glow.mod" id="8_wi0cy"]
 [ext_resource type="PackedScene" uid="uid://c5s3uwx77gvab" path="res://components/music_overlay/music_overlay.tscn" id="9_h6oxr"]
 [ext_resource type="Script" uid="uid://xa87t7rc25gj" path="res://objects/player_camera_custom/player_camera_custom.gd" id="9_ovvr3"]
 [ext_resource type="PackedScene" uid="uid://yqftjpfskche" path="res://engine/components/cam_area/cam_area.tscn" id="10_igoly"]
